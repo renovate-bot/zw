@@ -41,15 +41,15 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
     metadata: [{name: 'twitter:card', content: 'summary'}],
-	announcementBar: {
-		id: 'announcementBar-2',
-		content: `⭐️ If you like Z-Shell ZI, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/z-shell/zi">GitHub</a>`,
+		announcementBar: {
+			id: 'announcementBar-2',
+			content: `⭐️ If you like Z-Shell ZI, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/z-shell/zi">GitHub</a>`,
     },
-	algolia: {
-		appId: '9MWZG6YTZH',
-        apiKey: '25296a50114a93564278103ec825b069',
-        indexName: 'dev-z-shell',
-        contextualSearch: true,
+		algolia: {
+			appId: '9MWZG6YTZH',
+      apiKey: '25296a50114a93564278103ec825b069',
+      indexName: 'dev-z-shell',
+      contextualSearch: true,
     },
     hideableSidebar: false,
     colorMode: {
@@ -79,58 +79,58 @@ const config = {
         ],
 
 	  },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Knowledge base:',
-            items: [
-              {
-                label: 'ZI Wiki',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Github Discussions',
-                href: 'https://github.com/z-shell/zi/discussions',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
+		footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'Knowledge base:',
+          items: [
+            {
+              label: 'ZI Wiki',
+              to: '/docs/intro',
+            },
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'Github Discussions',
+              href: 'https://github.com/z-shell/zi/discussions',
+            },
+          ],
+        },
+        {
+          title: 'More',
+          items: [
 //             {
 //                label: 'Blog',
 //                to: '/blog',
 //              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/z-shell/zi',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} Z-Shell ZI, Community.`,
-      },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/z-shell/zi',
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} Z-Shell ZI, Community.`,
+    },
 	  plugins: [
-		[
-		'@docusaurus/plugin-sitemap',
-		{
-		  changefreq: 'weekly',
-		  priority: 0.5,
-		  trailingSlash: false,
-		},
-		],
+			[
+			'@docusaurus/plugin-sitemap',
+				{
+		  		changefreq: 'weekly',
+		  		priority: 0.5,
+		  		trailingSlash: false,
+				},
+			],
 	  ],
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+    prism: {
+    	theme: lightCodeTheme,
+      darkTheme: darkCodeTheme,
 	  },
-    }),
+	}),
 };
 
 module.exports = config;
