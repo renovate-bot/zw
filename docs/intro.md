@@ -4,16 +4,6 @@ id: intro
 title: Introduction
 ---
 
-<div align="center">
-<a href="https://github.com/z-shell/zi"><img src="https://raw.githubusercontent.com/z-shell/zi/main/docs/images/logo.svg" alt="Logo" width="100" height="100"></img></a>
-</div>
-
-<h3><div align="center">
-
-**ZI is a fast and feature-rich plugin manager for [Zsh](https://zsh.sourceforge.io/) - [Unix shell](https://en.wikipedia.org/wiki/Unix_shell).**
-
-</div></h3>
-
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -49,3 +39,55 @@ Install almost everything from [GitHub](https://github.com):
 </Tabs>
 
 ---
+
+## Installation
+
+### Quick install
+
+:::tip
+
+If you prefer stable version with less changes, append `-b <tag>` e.g:
+
+`sh -c "$(curl -fsSL https://git.io/get-zi)" -- -i skip -b v1.0.0`
+
+:::
+
+```shell
+# Will add minimal configuration
+sh -c "$(curl -fsSL https://git.io/get-zi)" --
+
+# Non interactive. Just clone or update repository.
+sh -c "$(curl -fsSL https://git.io/get-zi)" -- -i skip
+
+# Minimal configuration + annexes.
+sh -c "$(curl -fsSL https://git.io/get-zi)" -- -a annex
+
+# Minimal configuration + annexes + zunit.
+sh -c "$(curl -fsSL https://git.io/get-zi)" -- -a zunit
+
+# Minimal configuration with loader
+sh -c "$(curl -fsSL https://git.io/get-zi)" -- -a loader
+
+# Suggest your .zshrc configuration to:
+# https://github.com/z-shell/playground
+sh -c "$(curl -fsSL https://git.io/get-zi)" -- -a ???
+```
+
+### Manual install
+
+Clone repository:
+
+```shell
+zi_home="${HOME}/.zi" && command mkdir -p $zi_home
+command git clone https://github.com/z-shell/zi.git "${zi_home}/bin"
+```
+
+Source `zi.zsh` from your `.zshrc`:
+
+```shell
+zi_home="${HOME}/.zi"
+source "${zi_home}/bin/zi.zsh"
+# Next two lines must be below the above two
+autoload -Uz _zi
+(( ${+_comps} )) && _comps[zi]=_zi
+```
