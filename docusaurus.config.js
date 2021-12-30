@@ -48,7 +48,7 @@ const config = {
 		algolia: {
 			appId: '9MWZG6YTZH',
       apiKey: '25296a50114a93564278103ec825b069',
-      indexName: 'dev-z-shell',
+      indexName: 'dev_z-shell',
       contextualSearch: true,
     },
     hideableSidebar: false,
