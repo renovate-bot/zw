@@ -24,11 +24,11 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/z-shell/z-shell.pages.dev/tree/main',
+          editUrl: 'https://github.com/z-shell/z-shell.pages.dev/tree/develop',
         },
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/z-shell/z-shell.pages.dev/tree/main',
+          editUrl: 'https://github.com/z-shell/z-shell.pages.dev/tree/develop',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
