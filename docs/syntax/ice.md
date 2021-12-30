@@ -232,7 +232,7 @@ zi ice wait'[[ -n ${ZLAST_COMMANDS[(r)cras*]} ]]'
 zi light z-shell/zi-crasis
 ```
 
-- `$ZLAST_COMMANDS` is an array build by [**fast-syntax-highlighting**](https://github.com/z-shell/fast-syntax-highlighting), it contains commands currently entered at prompt,
+- `$ZLAST_COMMANDS` is an array build by [**F-Sy-H**](https://github.com/z-shell/F-Sy-H), it contains commands currently entered at prompt,
 - `(r)` searches for element that matches given pattern (`cras*`) and returns it,
 - `-n` means: not-empty, so it will be true when users enters "cras",
 - after 1 second or less, ZI will detect that `wait''` condition is true, and load the plugin, which provides command _crasis_,
@@ -288,7 +288,7 @@ zi ice wrap-track"func1;func2;…" …
 **Example**
 
 Therefore, to e.g. load and unload the example powerlevel10k prompt in the
-fashion of [**Multiple prompts**](Multiple-prompts/) article, the `precmd`
+fashion of [**Multiple prompts**](docs/multiple-prompts) article, the `precmd`
 function of the plugin – called `_p9k_precmd` (to get the name of the function
 do `echo $precmd_functions` after loading a theme) – should be passed to
 `wrap-track''` ice, like so:
@@ -344,7 +344,7 @@ As it can be seen, creation of four additional Zle-widgets has been recorded
 unload with `MYPROMPT=3` (for example) and the shell state will be clean, ready
 to load a new prompt.
 
-### `src''`, `pick''`, `multisrc''`
+### `src''` `pick''` `multisrc''`
 
 Normally `src''` can be used to specify additional file to source:
 
@@ -465,7 +465,7 @@ time and will allow activation of keyboard in between the snippets. The
 `multisrc''` way doesn't work this way – sourcing many files can cause
 noticeable keyboard freezes (in Turbo).
 
-### `atclone''`, `atpull''`, `atinit''`, `atload''`.
+### `atclone''` `atpull''` `atinit''` `atload''`
 
 There are four code-receiving ices: `atclone`, `atpull`, `atinit`, `atload`.
 Their role is to **receive a portion of Zsh code and execute it in certain
@@ -538,7 +538,7 @@ Plugin report saved to $LASTREPORT
 
 **Practical example**
 
-The same example as in the [**Tracking precmd-based Plugins**](#ice---wrap-track)
+The same example as in the [**Tracking precmd-based Plugins**](#wrap-track)
 article, but using the _exclamation mark_-preceded `atload` instead of `wrap-track`:
 
 ```shell
@@ -553,7 +553,7 @@ zi load romkatv/powerlevel10k
 Summary
 
 The creation of the four additional Zle-widgets will be recorded (see the
-[**article**](#ice---wrap-track) on `wrap-track` for more information) – the effect will
+[**article**](#wrap-track) on `wrap-track` for more information) – the effect will
 be exactly the same as with the `wrap-track` ice. The widgets will be properly
 deleted/restored on the plugin unload with `MYPROMPT=3` (for example) and the
 shell state will be clean, ready to load a new prompt.
