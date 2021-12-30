@@ -13,12 +13,10 @@ slug: /multiple-prompts
 `atload'!…'` – run the `precmd` hooks to make the prompts fully initialized when loaded in the middle of the prompt.
 `precmd` hooks are being normally run before each **new** prompt.
 
-:::
 
 Exclamation mark causes the effects of the functions to be tracked, to allow better unloading, conditions are checked every second,
 you can use conditions like:
 
-:::info
 
 `![[ $PWD == *github* ]]` to change prompt after changing directory to `*github*`, the exclamation mark
 `![[ … ]]` causes prompt to be reset after loading or unloading the plugin,
