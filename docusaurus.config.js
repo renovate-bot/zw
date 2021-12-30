@@ -2,7 +2,7 @@
 // Note: type annotations allow type checking and IDEs autocompletion
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const darkCodeTheme = require('prism-react-renderer/themes/vsDark');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -24,12 +24,11 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/z-shell/docs/tree/cloudflare',
+          editUrl: 'https://github.com/z-shell/z-shell.pages.dev/tree/main',
         },
         blog: {
           showReadingTime: true,
-          editUrl:
-            'https://github.com/z-shell/docs/tree/cloudflare',
+          editUrl: 'https://github.com/z-shell/z-shell.pages.dev/tree/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -41,7 +40,7 @@ const config = {
    themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-	  metadata: [{name: 'twitter:card', content: 'summary'}],
+    /** 	  metadata: [{name: 'twitter:card', content: 'summary'}], */
       algolia: {
         appId: '9MWZG6YTZH',
         apiKey: '25296a50114a93564278103ec825b069',
