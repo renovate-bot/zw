@@ -37,27 +37,27 @@ const config = {
     ],
   ],
 
-   themeConfig:
+  themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-    /** 	  metadata: [{name: 'twitter:card', content: 'summary'}], */
-      algolia: {
-        appId: '9MWZG6YTZH',
+    metadata: [{name: 'twitter:card', content: 'summary'}],
+	announcementBar: {
+		id: 'announcementBar-2',
+		content: `⭐️ If you like Z-Shell ZI, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/z-shell/zi">GitHub</a>`,
+    },
+	algolia: {
+		appId: '9MWZG6YTZH',
         apiKey: '25296a50114a93564278103ec825b069',
         indexName: 'dev-z-shell',
         contextualSearch: true,
-      },
-      hideableSidebar: false,
-      colorMode: {
+    },
+    hideableSidebar: false,
+    colorMode: {
         defaultMode: 'dark',
         disableSwitch: false,
         respectPrefersColorScheme: true,
-	  },
-      announcementBar: {
-        id: 'announcementBar-2',
-        content: `⭐️ If you like Z-Shell ZI, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/z-shell/zi">GitHub</a>`,
-      },
-	  navbar: {
+	},
+	navbar: {
         title: '❮ ZI ❯',
         logo: {
           alt: 'ZI Logo',
@@ -77,7 +77,8 @@ const config = {
 //            position: 'right',
 //          },
         ],
-      },
+
+	  },
       footer: {
         style: 'dark',
         links: [
@@ -115,11 +116,21 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Z-Shell ZI, Community.`,
       },
+	  plugins: [
+		[
+		'@docusaurus/plugin-sitemap',
+		{
+		  changefreq: 'weekly',
+		  priority: 0.5,
+		  trailingSlash: false,
+		},
+		],
+	  ],
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-		  additionalLanguages: ['shell-session', 'git', 'sh', 'markdown', 'bash', 'vim', 'java']
-		},
+		additionalLanguages: ['git', 'markdown', 'shell', 'vim', 'java'],
+	  },
     }),
 };
 
