@@ -45,11 +45,10 @@ const config = {
 				id: 'announcementBar-2',
 				content: `⭐️ If you like Z-Shell ZI, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/z-shell/zi">GitHub</a>`,
     },
-		algolia: {
-			appId: '9MWZG6YTZH',
+	algolia: {
+	  appId: '9MWZG6YTZH',
       apiKey: '25296a50114a93564278103ec825b069',
       indexName: 'dev_z-shell',
-      contextualSearch: true,
     },
     hideableSidebar: false,
     colorMode: {
