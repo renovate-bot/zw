@@ -40,10 +40,10 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-    metadata: [{name: 'twitter:card', content: 'summary'}],
-		announcementBar: {
-			id: 'announcementBar-2',
-			content: `⭐️ If you like Z-Shell ZI, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/z-shell/zi">GitHub</a>`,
+    	metadata: [{name: 'twitter:card', content: 'summary'}],
+			announcementBar: {
+				id: 'announcementBar-2',
+				content: `⭐️ If you like Z-Shell ZI, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/z-shell/zi">GitHub</a>`,
     },
 		algolia: {
 			appId: '9MWZG6YTZH',
@@ -56,8 +56,8 @@ const config = {
         defaultMode: 'dark',
         disableSwitch: false,
         respectPrefersColorScheme: true,
-	},
-	navbar: {
+		},
+		navbar: {
         title: '❮ ZI ❯',
         logo: {
           alt: 'ZI Logo',
