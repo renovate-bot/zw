@@ -2,7 +2,7 @@
 sidebar_position: 1
 id: syntax
 title: Syntax overview
-slug: /Syntax
+slug: /syntax
 ---
 
 ```shell
