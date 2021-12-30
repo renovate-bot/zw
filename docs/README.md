@@ -1,4 +1,4 @@
-# Z-Shell ZI Pages
+# [Z-Shell ZI Pages](https://z-shell.pages.dev)
 
 ### Installation
 
