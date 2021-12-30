@@ -37,30 +37,13 @@ const config = {
     ],
   ],
 
-   themeConfig:
+  themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-    /** 	  metadata: [{name: 'twitter:card', content: 'summary'}], */
-      algolia: {
-        appId: '9MWZG6YTZH',
-        apiKey: '25296a50114a93564278103ec825b069',
-        indexName: 'dev-z-shell',
-        contextualSearch: true,
-      },
-      hideableSidebar: false,
-      colorMode: {
-        defaultMode: 'dark',
-        disableSwitch: false,
-        respectPrefersColorScheme: true,
-	  },
-      announcementBar: {
-        id: 'announcementBar-2',
-        content: `⭐️ If you like Z-Shell ZI, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/z-shell/zi">GitHub</a>`,
-      },
-	  navbar: {
-        title: '❮ ZI ❯',
+      navbar: {
+        title: 'My Site',
         logo: {
-          alt: 'ZI Logo',
+          alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -68,24 +51,24 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Wiki',
-          }
-//          {to: '/blog', label: 'Blog', position: 'left'},
-//          {
-//            href: 'https://github.com/z-shell/zi',
-//            label: 'GitHub',
-//            position: 'right',
-//          },
+            label: 'Tutorial',
+          },
+          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            href: 'https://github.com/facebook/docusaurus',
+            label: 'GitHub',
+            position: 'right',
+          },
         ],
       },
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'Knowledge base:',
+            title: 'Docs',
             items: [
               {
-                label: 'ZI Wiki',
+                label: 'Tutorial',
                 to: '/docs/intro',
               },
             ],
@@ -94,32 +77,39 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Github Discussions',
-                href: 'https://github.com/z-shell/zi/discussions',
+                label: 'Stack Overflow',
+                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              },
+              {
+                label: 'Discord',
+                href: 'https://discordapp.com/invite/docusaurus',
+              },
+              {
+                label: 'Twitter',
+                href: 'https://twitter.com/docusaurus',
               },
             ],
           },
           {
             title: 'More',
             items: [
-//             {
-//                label: 'Blog',
-//                to: '/blog',
-//              },
+              {
+                label: 'Blog',
+                to: '/blog',
+              },
               {
                 label: 'GitHub',
-                href: 'https://github.com/z-shell/zi',
+                href: 'https://github.com/facebook/docusaurus',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Z-Shell ZI, Community.`,
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-		  additionalLanguages: ['shell-session', 'git', 'sh', 'markdown', 'bash', 'vim', 'java']
-		},
+      },
     }),
 };
 
