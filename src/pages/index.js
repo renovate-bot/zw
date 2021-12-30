@@ -30,7 +30,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`Z-Shell ${siteConfig.title} | Wiki Pages`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
