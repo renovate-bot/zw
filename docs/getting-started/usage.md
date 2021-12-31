@@ -5,10 +5,6 @@ title: Usage
 slug: /useage
 ---
 
-[Click here to overview basics](overview).
-It explains usage and some of the more unique features of ZI such as the Turbo mode.
-If you're new to ZI we highly recommend you read it at least once.
-
 ## Plugins and snippets
 
 Plugins can be loaded using `load` or `light`.
@@ -108,8 +104,6 @@ You can use with `lucid`:
 zi ice wait lucid
 zi load z-shell/history-search-multi-word
 ```
-
-</details>
 
 **_F&A:_** What is `ice`?
 
