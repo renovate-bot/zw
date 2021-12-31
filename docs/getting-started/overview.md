@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 id: overview
 title: Overview
 slug: /overview
