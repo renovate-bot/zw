@@ -46,7 +46,7 @@ Install almost everything from [GitHub](https://github.com):
 
 :::tip
 
-If you prefer stable version with less changes, append `-b <tag>` e.g:
+Append `-b <tag>` or `-b <branch>` e.g:
 
 `sh -c "$(curl -fsSL https://git.io/get-zi)" -- -i skip -b v1.0.0`
 
