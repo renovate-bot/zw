@@ -288,7 +288,7 @@ zi ice wrap-track"func1;func2;…" …
 **Example**
 
 Therefore, to e.g. load and unload the example powerlevel10k prompt in the
-fashion of [**Multiple prompts**](docs/multiple-prompts) article, the `precmd`
+fashion of [**Multiple prompts**](multiple-prompts) article, the `precmd`
 function of the plugin – called `_p9k_precmd` (to get the name of the function
 do `echo $precmd_functions` after loading a theme) – should be passed to
 `wrap-track''` ice, like so:
