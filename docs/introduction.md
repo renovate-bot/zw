@@ -2,8 +2,7 @@
 sidebar_position: 1
 id: intro
 title: Introduction
-description: A Swiss Army Knife for Zsh - Unix shell.
-slug: /
+description: A Swiss Army Knife for Zsh - Unix shell
 ---
 
 
