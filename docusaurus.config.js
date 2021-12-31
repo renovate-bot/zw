@@ -115,7 +115,7 @@ const config = {
 //              },
             {
               label: 'GitHub',
-              href: 'https://github.com/z-shell/zi',
+              href: 'https://github.com/z-shell',
             },
           ],
         },
