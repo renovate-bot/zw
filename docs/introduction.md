@@ -41,4 +41,6 @@ Install almost everything from [GitHub](https://github.com):
 </TabItem>
 </Tabs>
 
-<a href="https://asciinema.org/a/459358" target="_blank"><img src="https://asciinema.org/a/459358.svg" /></a>
+<div align="center">
+<script id="asciicast-459358" src="https://asciinema.org/a/459358.js" async></script>
+</div>
