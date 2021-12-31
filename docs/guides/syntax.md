@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 id: syntax
-title: The Syntax
+title: Syntax
 ---
 
 ```shell
