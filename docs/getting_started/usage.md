@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 id: useage
-title: The Usage
+title: Usage
 ---
 
 ## Plugins and snippets
