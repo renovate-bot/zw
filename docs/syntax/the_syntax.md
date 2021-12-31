@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
-id: syntax
-title: Syntax overview
+id: the-syntax
+title: The Syntax
 slug: /syntax
 ---
 
@@ -10,9 +10,8 @@ zi ice …
 zi load … # or zi light, zi snippet
 ```
 
-It is a fundamental ZI syntax. However, a more concise, optimized syntax,
-called _for-syntax_, is also available. It is best presented by a real-world
-example:
+It is a fundamental ZI syntax. However, a more concise, optimized syntax, called _for-syntax_, is also available.
+It is best presented by a real-world example:
 
 ## The `for''` syntax
 

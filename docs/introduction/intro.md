@@ -2,6 +2,7 @@
 sidebar_position: 1
 id: intro
 title: Introduction
+slug: /intro
 ---
 
 import Tabs from '@theme/Tabs';
