@@ -22,7 +22,7 @@ It is active if the ice is empty (or contains only flags – more on them later)
 It works as follows:
 
 1. At first, a recursive search for files of known [file
-   extensions](#supported_file_formats) located not deeper than in
+   extensions](#supported-file-formats) located not deeper than in
    a sub-directory is being performed. All such found files are then extracted.
    - The directory-level limit is to skip extraction of some helper archive
      files, which are typically located somewhere deeper in the directory tree.
@@ -439,7 +439,7 @@ zi ice svn multisrc'); local i; for i in $array; do \
 zi snippet OMZ::lib
 ```
 
-Extended with the [The `for''` syntax](Syntax#the-for-syntax) which can in some situations replace
+Extended with the [The `for''` syntax](syntax#the-for-syntax) which can in some situations replace
 a typical `multisrc''` loading. The point is that this syntax allows to easily specify snippets to
 source – and do this within a single ZI command. Thus, instead of:
 
@@ -491,7 +491,7 @@ The `atpull` ice recognizes a special value: `%atclone` (so the code looks i.e.:
 `atpull'%atclone'`). It causes the contents of the `atclone` ice to be copied
 into the contents of the `atpull` ice. This is handy when the same tasks have to
 be performed on clone **and** on update of plugin or snippet, like e.g.: in the
-[**Direnv example**](Specific-Setup#direnv).
+[**Direnv example**](specific-setup#direnv).
 
 **_Exclamation mark_-preceded `atload`**
 
@@ -547,15 +547,3 @@ zi ice load'![[ $MYPROMPT = 4 ]]' unload'![[ $MYPROMPT != 4 ]]' \
   atload'!source ~/.p10k.zsh; _p9k_precmd'
 zi load romkatv/powerlevel10k
 ```
-
-:::info
-
-Summary
-
-The creation of the four additional Zle-widgets will be recorded (see the
-[**article**](#wrap-track) on `wrap-track` for more information) – the effect will
-be exactly the same as with the `wrap-track` ice. The widgets will be properly
-deleted/restored on the plugin unload with `MYPROMPT=3` (for example) and the
-shell state will be clean, ready to load a new prompt.
-
-:::
