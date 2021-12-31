@@ -1,11 +1,11 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 id: ice-modifiers
 title: Ice Modifiers
 slug: /ice-modifiers
 ---
 
-Following ice modifiers are to be [passed](https://github.com/z-shell/zi/wiki/Alternate-Ice-Syntax/) to `zi ice...` to obtain described effects. The word `ice` means something that's added (like ice to a drink) – and in ZI it means adding a modifier to a next `zi` command, and also something that's temporary because it melts – and this means that the modification will last only for a **single** next `zi` command.
+Following ice modifiers are to be [passed](#Alternate-Syntax) to `zi ice...` to obtain described effects. The word `ice` means something that's added (like ice to a drink) – and in ZI it means adding a modifier to a next `zi` command, and also something that's temporary because it melts – and this means that the modification will last only for a **single** next `zi` command.
 
 Some Ice-modifiers are highlighted and clicking on them will take you to the
 appropriate Wiki page for an extended explanation.
@@ -95,7 +95,7 @@ explicitly stated otherwise.
 |              [**`id-as`**](Ice#id-as)              | Nickname a plugin or snippet, to e.g. create a short handler for long-url snippet.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |                     `compile`                      | Pattern (+ possible `{...}` expansion, like `{a/*,b*}`) to select additional files to compile, e.g. `compile"(pure\|async).zsh"` for `sindresorhus/pure`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |                    `nocompile`                     | Don't try to compile `pick`-pointed files. If passed the exclamation mark (i.e. `nocompile'!'`), then do compile, but after `make''` and `atclone''` (useful if Makefile installs some scripts, to point `pick''` at the location of their installation).                                                                                                                                                                                                                                                                                                                                                                                                         |
-|                     `service`                      | Make following plugin or snippet a _service_, which will be ran in background, and only in single Zshell instance. See [#z-service](https://github.com/search?q=topic%3Az-service+org%3Az-shell&type=Repositories) topic.                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|                     `service`                      | Make following plugin or snippet a _service_, which will be ran in background, and only in single Zshell instance. See [#z-service](https://github.com/search?q=topic%3Azservice+org%3Az-shell&type=Repositories) topic.                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |                   `reset-prompt`                   | Reset the prompt after loading the plugin/snippet (by issuing `zle .reset-prompt`). Note: normally it's sufficient to precede the value of `wait''` ice with `!`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |  [**`bindmap`**](Syntax#the-bindmap-keybindings)   | To hold `;`-separated strings like `Key(s)A -> Key(s)B`, e.g. `^R -> ^T; ^A -> ^B`. In general, `bindmap''`changes bindings (done with the `bindkey` builtin) the plugin does. The example would cause the plugin to map Ctrl-T instead of Ctrl-R, and Ctrl-B instead of Ctrl-A. **Does not work with snippets.**                                                                                                                                                                                                                                                                                                                                                 |
 | [**`trackbinds`**](Syntax#the-bindmap-keybindings) | Shadow but only `bindkey` calls even with `zi light ...`, i.e. even with investigating disabled (fast loading), to allow `bindmap` to remap the key-binds. The same effect has `zi light -b ...`, i.e. additional `-b` option to the `light`-subcommand. **Does not work with snippets.**                                                                                                                                                                                                                                                                                                                                                                         |
@@ -122,7 +122,9 @@ Order of execution of related Ice-mods: `atinit` -> `atpull!` -> `make'!!'` -> `
   `@`, e.g.: `@sharkdp/fd` (collides with the `sh` ice, ZI will take the
   plugin name as `sh"arkdp/fd"`), see the next section for an example.
 
-## The Standard Syntax
+## Alternate Syntax
+
+### The Standard Syntax
 
 The normal way of specifying ices and their values is by concatenating the ice
 name and its value quoted, i.e.:
@@ -134,7 +136,7 @@ zi load …
 
 (note that there's no `ice` subcommand - that is currently being fully allowed)
 
-## The Alternative Syntaxes
+### The Alternative Syntaxes
 
 However, ZI supports also other syntaxes: the equal (`=`) syntax:
 
@@ -157,7 +159,7 @@ zi --wait=1 --from=gh-r --atload="print Hello World"
 zi load …
 ```
 
-## Summary
+### Summary
 
 It's up to the user which syntax to choose. The original motivation behind the
 standard syntax was: to utilize the syntax highlighting of editors like Vim –
