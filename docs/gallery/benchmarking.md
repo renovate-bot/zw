@@ -1,8 +1,7 @@
 ---
-sidebar_position: 4
-id: benchmarking
-title: Benchmarking & Profiling
-slug: /benchmarking
+sidebar_position: 5
+id: benchmarks
+title: Benchmarks
 ---
 
 ```zsh

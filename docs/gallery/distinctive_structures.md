@@ -1,8 +1,7 @@
 ---
 sidebar_position: 3
-id: disinctive-structures
-title: Distinctive structures
-slug: /disinctive-structures
+id: disinctive
+title: Distinctive
 ---
 
 ## LS_COLORS

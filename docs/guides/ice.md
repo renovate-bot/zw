@@ -2,7 +2,6 @@
 sidebar_position: 2
 id: ice
 title: Ice Syntax
-slug: /ice
 ---
 
 F&A: What is ice?

@@ -1,8 +1,7 @@
 ---
 sidebar_position: 2
-id: ohmyzsh-gallery
-title: The Oh My Zsh Gallery
-slug: /ohmyzsh-gallery
+id: ohmyzsh
+title: Oh My Zsh
 ---
 
 ## Using [Turbo mode](overview#turbo-mode-zsh--53) and [`for''` syntax](syntax#the-for-syntax)

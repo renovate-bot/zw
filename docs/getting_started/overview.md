@@ -1,8 +1,7 @@
 ---
 sidebar_position: 2
 id: overview
-title: Overview
-slug: /overview
+title: Quick overview
 ---
 
 In this overview will cover basics for:
@@ -19,9 +18,10 @@ zi load z-shell/H-S-MW
 zi light zsh-users/zsh-syntax-highlighting
 ```
 
-The above commands show two ways of basic plugin loading. <code>load</code> causes reporting to
-be enabled – you can track what plugin does, view the information with `zi report {plugin-name}` and then also unload the plugin with `zi unload {plugin-name}`. `light` is a significantly faster loading without tracking and reporting, by using which user resigns of the ability to view the plugin report
-and to unload it.
+The above commands show two ways of basic plugin loading. <code>load</code> causes reporting to be enabled – you can track what plugin does,
+view the information with `zi report {plugin-name}` and then also unload the plugin with `zi unload {plugin-name}`.
+Using `light` is a significantly faster loading without tracking and reporting,
+by using which user resigns of the ability to view the plugin report and to unload it.
 
 :::note
 

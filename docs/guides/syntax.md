@@ -1,8 +1,7 @@
 ---
 sidebar_position: 1
-id: the-syntax
+id: syntax
 title: The Syntax
-slug: /syntax
 ---
 
 ```shell

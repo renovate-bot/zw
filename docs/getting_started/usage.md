@@ -1,8 +1,7 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 id: useage
-title: Usage
-slug: /useage
+title: The Usage
 ---
 
 ## Plugins and snippets

@@ -1,8 +1,7 @@
 ---
-sidebar_position: 5
-id: preferences-control
-title: Preferences control
-slug: /preferences-control
+sidebar_position: 4
+id: preferences
+title: Preferences
 ---
 
 
