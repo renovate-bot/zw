@@ -20,6 +20,7 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+  themes: ['@docusaurus/theme-live-codeblock'],
   plugins: [],
   presets: [
     [
@@ -27,6 +28,9 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          remarkPlugins: [
+            [require('@docusaurus/remark-plugin-npm2yarn'), {sync: true}],
+          ],
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/z-shell/z-shell.pages.dev/tree/main',
         },
