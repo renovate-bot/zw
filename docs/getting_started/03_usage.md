@@ -2,6 +2,8 @@
 sidebar_position: 3
 id: useage
 title: Usage
+description: Usage examples for Z-Shell ZI
+keywords: [usage, zsh, z-shell, zi]
 ---
 
 ## Plugins and snippets {#plugins-and-snippets}

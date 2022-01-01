@@ -1,7 +1,8 @@
 ---
 id: code
 title: Code documentation
-description: The documentation lists all functions, interactions between them, their comments, and features used.
+description: The documentation lists all functions, interactions between them, their comments, and features used
+keywords: [code, zsh, z-shell, zi]
 ---
 
 - There are `5` ZI's source files, the main one is [`zi.zsh`](https://github.com/z-shell/zi/blob/main/zi.zsh).

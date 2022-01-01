@@ -8,13 +8,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
 	title: '❮ ZI ❯',
 	tagline: 'A Swiss Army Knife for Zsh - Unix shell',
-	url: 'https://z-shell.pages.dev',
+	url: 'https://z-shell.pages.dev/',
 	baseUrl: '/',
 	onBrokenLinks: 'throw',
 	onBrokenMarkdownLinks: 'throw',
 	favicon: 'img/favicon.svg',
 	organizationName: 'z-shell',
-	projectName: 'zi',
+	projectName: 'z-shell.pages.dev',
 
 	presets: [
 		[
@@ -31,20 +31,39 @@ const config = {
 			}),
 		],
 	],
-
+	plugins: ['@docusaurus/theme-live-codeblock'],
+	scripts: [
+		'dist/typesense.min.js',
+		{
+			src: 'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js',
+			async: true,
+		},
+	],
 	themeConfig:
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
-			algolia: {
-				appId: '9MWZG6YTZH',
-				apiKey: '25296a50114a93564278103ec825b069',
-				indexName: 'prod_ZSHELL_ZI',
-			},
 			hideableSidebar: false,
 			colorMode: {
 				defaultMode: 'dark',
 				disableSwitch: false,
 				respectPrefersColorScheme: true,
+				switchConfig: {
+					darkIcon: '🌙',
+					lightIcon: '\u2600',
+					// React inline style object
+					// see https://reactjs.org/docs/dom-elements.html#style
+					darkIconStyle: {
+						marginLeft: '2px',
+					},
+					lightIconStyle: {
+						marginLeft: '1px',
+					},
+				},
+			},
+			algolia: {
+				appId: '9MWZG6YTZH',
+				apiKey: '25296a50114a93564278103ec825b069',
+				indexName: 'prod_ZSHELL_ZI',
 			},
 			navbar: {
 				title: '❮ ZI ❯',
@@ -97,6 +116,13 @@ const config = {
 			prism: {
 				theme: lightCodeTheme,
 				darkTheme: darkCodeTheme,
+			},
+			liveCodeBlock: {
+				/**
+				 * The position of the live playground, above or under the editor
+				 * Possible values: "top" | "bottom"
+				 */
+				playgroundPosition: 'bottom',
 			},
 		}),
 };

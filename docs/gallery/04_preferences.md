@@ -2,6 +2,8 @@
 sidebar_position: 4
 id: preferences
 title: Preferences
+description: Gallery for user Preferences
+keywords: [preferences, zsh, z-shell, zi]
 ---
 
 ## Customizing Paths {#customizing-paths}
@@ -12,13 +14,13 @@ Following variables can be set to custom values, before sourcing ZI.
 declare -A ZI  # initial ZI's hash definition, if configuring before loading ZI, and then:
 ```
 
-| Hash Field                     | Description                                                                                                                                                                                                                                                                                                                                                                                         |
-| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ZI[BIN_DIR]                    | Where ZI code resides, e.g.: "~/.zi/bin"                                                                                                                                                                                                                                                                                                                                                            |
-| ZI[HOME_DIR]                   | Where ZI should create all working directories, e.g.: "~/.zi"                                                                                                                                                                                                                                                                                                                                       |
-| ZI[PLUGINS_DIR]                | Override single working directory – for plugins, e.g. "/opt/zsh/zi/plugins"                                                                                                                                                                                                                                                                                                                         |
-| ZI[COMPLETIONS_DIR]            | As above, but for completion files, e.g. "/opt/zsh/zi/root_completions"                                                                                                                                                                                                                                                                                                                             |
-| ZI[SNIPPETS_DIR]               | As above, but for snippets                                                                                                                                                                                                                                                                                                                                                                          |
+| Hash Field          | Description                                                                 |
+|---------------------|-----------------------------------------------------------------------------|
+| ZI[BIN_DIR]         | Where ZI code resides, e.g.: "~/.zi/bin"                                    |
+| ZI[HOME_DIR]        | Where ZI should create all working directories, e.g.: "~/.zi"               |
+| ZI[PLUGINS_DIR]     | Override single working directory – for plugins, e.g. "/opt/zsh/zi/plugins" |
+| ZI[COMPLETIONS_DIR] | As above, but for completion files, e.g. "/opt/zsh/zi/root_completions"     |
+| ZI[SNIPPETS_DIR]    | As above, but for snippets                                                  |
 |                                |
 | ZI[ZMODULES_DIR]               | Override single working directory – for Zsh modules e.g. "/opt/zsh/zi/zmodules"                                                                                                                                                                                                                                                                                                                     |
 |                                |

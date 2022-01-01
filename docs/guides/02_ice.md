@@ -2,6 +2,8 @@
 sidebar_position: 2
 id: ice
 title: Ice Syntax
+description: Ice syntax documentation
+keywords: [ice, zsh, z-shell, zi]
 ---
 
 :::info

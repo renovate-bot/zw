@@ -2,6 +2,8 @@
 sidebar_position: 4
 id: migration
 title: Migration
+description: Migration to Z-Shell ZI support
+keywords: [migration, zsh, z-shell, zi]
 ---
 
 ### Migration from Oh-My-ZSH {#migration-from-oh-my-zsh}

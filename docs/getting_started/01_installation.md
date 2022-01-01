@@ -2,6 +2,8 @@
 sidebar_position: 1
 id: installation
 title: Installation
+description: Installation guide for Z-Shell ZI
+keywords: [installation, zsh, z-shell, zi]
 ---
 
 ### Quick install {#quick-install}

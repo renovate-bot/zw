@@ -2,60 +2,62 @@
 sidebar_position: 4
 id: commands
 title: Commands
+description: Commands documentation for the Z-Shell ZI
+keywords: [commands, zsh, z-shell, zi]
 ---
 
 ## Commands available with `^TAB` completion {#commands-available-with-tab-completion}
 
-```Systemverilog
-self-update            -- Updates and Compile ❮ ZI ❯
-update                 -- Git update plugin (or all plugins and snippets if --all passed)
-zstatus                -- Checks ❮ ZI ❯ Status
-report                 -- Show plugin's report (or all plugins' if --all passed)
-add-fpath              -- Add plugin folder to $fpath
-bindkeys               -- Lists bindkeys set up by each plugin
-cclear                 -- Clear stray and improper completions
-cd                     -- Go into plugin's directory
-cdclear                -- Clear compdef replay list
-cdisable               -- Disable completion
-cdlist                 -- Show compdef replay list
-cdreplay               -- Replay compdefs (to be done after compinit)
-cenable                -- Enable completion
-changes                -- View plugin's git log
-compile                -- Compile plugin (or all plugins if --all passed)
-compiled               -- Show which plugins are compiled
-compinit               -- Refresh installed completions
-completions    clist   -- List completions in use
-create                 -- Create plugin (also together with Github repository)
-creinstall             -- Install completions for plugin
-csearch                -- Search for available completions from any plugin
-cuninstall             -- Uninstall completions for plugin
-dclear                 -- Clear report of what was going on in session
-delete                 -- Delete plugin
-dreport                -- Report what was going on in session
-dstart         dtrace  -- Start tracking what's going on in session
-dstop                  -- Stop tracking what's going on in session
-dunload                -- Revert changes recorded between dstart and dstop
-edit                   -- Edit plugin's file with $EDITOR
-glance                 -- Look at plugin's source (pygmentize, {,source-}highlight)
-load                   -- Load plugin
-loaded         list    -- Show what plugins are loaded
-ls                     -- List snippets in formatted and colorized manner
-module                 -- Manage binary Zsh module shipped with ❮ ZI ❯, see `zi module help'
-recall                 -- Fetch saved ice modifiers and construct `zi ice ...' command
-recently               -- Show plugins that changed recently, argument is e.g. 1 month 2 days
-run                    -- Execute code inside plugin's folder
-snippet                -- Source (or add to PATH with --command) local or remote file (-f: force - d
-srv                    -- Control a service, command can be: stop,start,restart,next,quit; `next' mo
-status                 -- Git status for plugin (or all plugins if --all passed)
-stress                 -- Test plugin for compatibility with set of options
-times                  -- Statistics on plugin loading times
-uncompile              -- Remove compiled version of plugin (or of all plugins if --all passed)
-unload                 -- Unload plugin
-env-whitelist          -- Allows to specify names (also patterns) of variables left unchanged during
-analytics              -- Show ❮ ZI ❯ Analytics
-control                -- ❮ ZI ❯ Control commands
-man                    -- Manpage
-help                   -- Usage Information
+```shell
+self-update          -- "Updates and Compile ❮ ZI ❯"
+update               -- "Git update plugin (or all plugins and snippets if --all passed)"
+zstatus              -- "Checks ❮ ZI ❯ Status"
+report               -- "Show plugin's report (or all plugins' if --all passed)"
+add-fpath            -- "Add plugin folder to $fpath"
+bindkeys             -- "Lists bindkeys set up by each plugin"
+cclear               -- "Clear stray and improper completions"
+cd                   -- "Go into plugin's directory"
+cdclear              -- "Clear compdef replay list"
+cdisable             -- "Disable completion"
+cdlist               -- "Show compdef replay list"
+cdreplay             -- "Replay compdefs (to be done after compinit)"
+cenable              -- "Enable completion"
+changes              -- "View plugin's git log"
+compile              -- "Compile plugin (or all plugins if --all passed)"
+compiled             -- "Show which plugins are compiled"
+compinit             -- "Refresh installed completions"
+completions   clist  -- "List completions in use"
+create               -- "Create plugin (also together with Github repository)"
+creinstall           -- "Install completions for plugin"
+csearch              -- "Search for available completions from any plugin"
+cuninstall           -- "Uninstall completions for plugin"
+dclear               -- "Clear report of what was going on in session"
+delete               -- "Delete plugin"
+dreport              -- "Report what was going on in session"
+dstart        dtrace -- "Start tracking what's going on in session"
+dstop                -- "Stop tracking what's going on in session"
+dunload              -- "Revert changes recorded between dstart and dstop"
+edit                 -- "Edit plugin's file with $EDITOR"
+glance               -- "Look at plugin's source (pygmentize, {,source-}highlight)"
+load                 -- "Load plugin"
+loaded        list   -- "Show what plugins are loaded"
+ls                   -- "List snippets in formatted and colorized manner"
+module               -- "Manage binary Zsh module shipped with ❮ ZI ❯, see \`zi module help'"
+recall               -- "Fetch saved ice modifiers and construct \`zi ice ...' command"
+recently             -- "Show plugins that changed recently, argument is e.g. 1 month 2 days"
+run                  -- "Execute code inside plugin's folder"
+snippet              -- "Source (or add to PATH with --command) local or remote file"
+srv                  -- "Control a service, command can be: stop,start,restart,next,quit;"
+status               -- "Git status for plugin (or all plugins if --all passed)"
+stress               -- "Test plugin for compatibility with set of options"
+times                -- "Statistics on plugin loading times"
+uncompile            -- "Remove compiled version of plugin (or of all plugins if --all passed)"
+unload               -- "Unload plugin"
+env-whitelist        -- "Allows to specify names (also patterns) of variables left unchanged during"
+analytics            -- "Show ❮ ZI ❯ Analytics"
+control              -- "❮ ZI ❯ Control commands"
+man                  -- "Manpage"
+help                 -- "Usage Information"
 ```
 
 ## Updating ZI and Plugins {#updating-zi-and-plugins}
@@ -156,7 +158,7 @@ If you want to ignore compdefs provided by some plugins or snippets, place their
 before commands loading other plugins or snippets, and issue `zi cdclear` (or
 `zicdclear`, designed to be used in hooks like `atload''`):
 
-```SystemVerilog
+```shell
 source ~/.zi/bin/zi.zsh
 zi snippet OMZP::git
 zi cdclear -q # <- forget completions provided by Git plugin

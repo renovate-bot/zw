@@ -2,6 +2,8 @@
 sidebar_position: 5
 id: benchmarks
 title: Benchmarks
+description: Benchamarking and profiling for Z-Shell ZI
+keywords: [benchmark, zsh, z-shell, zi]
 ---
 
 ```zsh

@@ -2,6 +2,9 @@
 sidebar_position: 2
 id: ohmyzsh
 title: Oh My Zsh
+description: Invocations gallery of Oh My Zsh for Z-Shell ZI
+keywords: [ohmyzsh, zsh, z-shell, zi]
+
 ---
 
 ## Using [Turbo mode](../getting_started/overview#turbo-mode-zsh--53) and [`for''` syntax](../guides/syntax#the-for-syntax) {#using-turbo-mode-and-for-syntax}

@@ -2,6 +2,8 @@
 sidebar_position: 2
 id: overview
 title: Quick overview
+description: Overview of use cases for Z-Shell ZI
+keywords: [overview, zsh, z-shell, zi]
 ---
 
 In this overview will cover basics for:

@@ -2,6 +2,8 @@
 sidebar_position: 3
 id: distinctive
 title: Distinctive
+description: Gallery of uncommon invocations for Z-Shell ZI
+keywords: [uncommon, zsh, z-shell, zi]
 ---
 
 ## LS_COLORS {#ls_colors}

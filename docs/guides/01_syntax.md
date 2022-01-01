@@ -2,6 +2,8 @@
 sidebar_position: 1
 id: syntax
 title: Syntax
+description: Syntax documentation for Z-Shell ZI
+keywords: [syntax, zsh, z-shell, zi]
 ---
 
 ```shell

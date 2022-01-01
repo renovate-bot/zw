@@ -3,6 +3,7 @@ sidebar_position: 1
 id: intro
 title: Introduction
 description: A Swiss Army Knife for Zsh - Unix shell
+keywords: [introduction, zsh, z-shell, zi]
 ---
 
 

@@ -2,6 +2,8 @@
 sidebar_position: 1
 id: collection
 title: Collection
+description: Invocations gallery for Z-Shell ZI
+keywords: [collection, zsh, z-shell, zi]
 ---
 
 ## Programs {#programs}
