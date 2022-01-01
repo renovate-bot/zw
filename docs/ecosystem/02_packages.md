@@ -2,6 +2,8 @@
 sidebar_position: 2
 id: packages
 title: Packages
+description: Packages documentation
+keywords: [package, zsh, z-shell, zi]
 ---
 
 :::tip

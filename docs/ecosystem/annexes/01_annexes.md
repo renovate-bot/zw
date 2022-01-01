@@ -1,12 +1,15 @@
 ---
 sidebar_position: 1
 id: annexes
-title: Annexes
+title: Annexes Guide
+description: Annexes documentation
+keywords: [annex, zsh, z-shell, zi]
 ---
 
-### What Are They? {#what-are-they}
+## What Are They? {#what-are-they}
 
-They are [extensions](https://github.com/z-shell/zannexes) to increase functionality.
+They are [extensions](https://github.com/z-shell/zannexes) which increase functionality.
+Annexes can extend the functionality without adding unnecessary code to main application.
 
 ## What Can They Do? {#what-can-they-do}
 
