@@ -9,10 +9,15 @@ zi ice …
 zi load … # or zi light, zi snippet
 ```
 
+:::info
+
 It is a fundamental ZI syntax. However, a more concise, optimized syntax, called _for-syntax_, is also available.
+
+:::
+
 It is best presented by a real-world example:
 
-## The `for''` syntax
+## The `for''` syntax {#the-for-syntax}
 
 ```shell
 zi as"null" wait"3" lucid for \
@@ -24,11 +29,14 @@ zi as"null" wait"3" lucid for \
   make"PREFIX=$ZPFX" tj/git-extras
 ```
 
-Above single command installs 6 plugins (Git extension packages), with the base
-ices `as"null" wait"3" lucid` that are common to all of the plugins and
-6 plugin-specific add-on ices.
+Above single command installs 6 plugins (Git extension packages),
+ with the base ices `as"null" wait"3" lucid` that are common to all of the plugins and 6 plugin-specific add-on ices.
 
-**Examples of `for''` syntax**
+:::info
+
+Examples of `for''` syntax
+
+:::
 
 Load a few useful binary (i.e.: binary packages from the GitHub Releases) utils:
 
@@ -39,11 +47,14 @@ zi as"null" wait"2" lucid from"gh-r" for \
   sbin"fzf" junegunn/fzf-bin
 ```
 
-Note: `sbin''` is an ice added by the
-[z-a-bin-gem-node](https://github.com/z-shell/z-a-bin-gem-node) annex, it
-provides the command to the command line without altering `$PATH`. If the name
-of the command is the same as the name of the plugin, the ice contents can be
-skipped.
+:::note
+
+- `sbin''` is an ice added by the [z-a-bin-gem-node](https://github.com/z-shell/z-a-bin-gem-node) annex,
+it provides the command to the command line without altering `$PATH`.
+
+- If the name of the command is the same as the name of the plugin, the ice contents can be skipped.
+
+:::
 
 Turbo load some plugins, without any plugin-specific ices:
 
@@ -61,20 +72,29 @@ zi wait lucid for \
   atload"unalias grv" OMZ::plugins/git/git.plugin.zsh
 ```
 
-## The `make''` syntax
+## The `make''` syntax {#the-make-syntax}
 
 ```shell
 zi ice as"program" pick"$ZPFX/bin/git-*" make"PREFIX=$ZPFX"
 zi light tj/git-extras
 ```
 
-- `Makefile` of this project has only one needed target – `install`, which is called by default,
-- it also does building of the scripts that it installs, so it does 2 tasks,
-- for `Makefile` with 2 targets, one could use `make"all install PREFIX=…"`,
-- `pick'…'` will `chmod +x` all matching files and add `$ZPFX/bin/` to `$PATH`,
-- `$ZPFX` is provided by ZI, it is `~/.zi/polaris` by default, can be also customized.
+- `Makefile` of this project has only 2 tasks:
+  1. Install the target.
+  2. Build scripts that is required for installation.
 
-## The `bindmap''` keybindings
+- `Makefile` with 2 tasks, can use:
+  1. `make"all install PREFIX=…"`,
+  2. `pick'…'` will `chmod +x` all matching files and add `$ZPFX/bin/` to `$PATH`.
+
+:::info
+
+`$ZPFX` is provided by ZI, it is set to `~/.zi/polaris` by default.
+However it can changed by specifying custom `$ZPFX=` target if required.
+
+:::
+
+## The `bindmap''` keybindings {#the-bindmap-keybindings}
 
 Sometimes plugins call `bindkey` to assign keyboard shortucts. This can cause
 problems, because multiple plugins can bind the same keys. Also, the user might
@@ -109,15 +129,13 @@ zi bindmap='!" " -> magic-space; !"^ " -> globalias' nocompletions \
 
 **Explanation**
 
-As it can be seen, the `bindmap''` ice has two modes of operation: normal and
-exclamation-mark (`bindmap'!…'`). In the first mode, the remapping is beind done
-from-key to-key, i.e.: `bindmap'fromkey -> to-key'`. In this mode, the given key
-is being changed to the second given key in the `bindkey` command that's being
-actually issued when loading the plugin.
+The `bindmap''` ice has two modes of operation: normal and exclamation-mark (`bindmap'!…'`).
+In the first mode, the remapping is beind done from-key to-key, i.e.: `bindmap'fromkey -> to-key'`.
+The given key is being changed to the second given key in the `bindkey` command that's being actually issued when loading the plugin.
 
-In the second mode, the remapping is being done from-key to-widget, i.e.:
-`bindmap'!from-key -> to-widget'`. In this mode, the given key is being mapped
-to the given widget instead of the widget specified in the `bindkey` command,
+In the second mode, the remapping is being done from-key to-widget, i.e.: `bindmap'!from-key -> to-widget'`.
+In this mode, the given key is being mapped to the given widget instead of the widget specified in the `bindkey` command,
+
 i.e.: instead of:
 
 ```shell
@@ -136,11 +154,11 @@ bindkey " " magic-space
 
 **Using `bindmap''` In Light Mode**
 
-When the investigation mode is on – i.e.: when the full loading mode is being
-used (default in the `for` syntax and when `zi load …` is used) – then the
-`bindmap''` ice works normally. In the non-investigation, i.e.: the light mode
-– activated when `zi light …` or the `light-mode` ice is being used – the
-`bindmap''` is unavailable, unless the `trackbinds` ice is specified, i.e.:
+When the investigation mode is on – i.e.:
+when the full loading mode is being used (default in the `for` syntax
+and when `zi load …` is used) – then the `bindmap''` ice works normally. In the non-investigation, i.e.:
+the light mode – activated when `zi light …` or the `light-mode` ice is being used – the `bindmap''` is unavailable,
+unless the `trackbinds` ice is specified, i.e.:
 
 ```shell
 # With use of the light-mode ice and the for-syntax:

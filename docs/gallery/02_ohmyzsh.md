@@ -4,7 +4,7 @@ id: ohmyzsh
 title: Oh My Zsh
 ---
 
-## Using [Turbo mode](overview#turbo-mode-zsh--53) and [`for''` syntax](syntax#the-for-syntax)
+## Using [Turbo mode](../getting_started/overview#turbo-mode-zsh--53) and [`for''` syntax](../guides/syntax#the-for-syntax) {#using-turbo-mode-and-for-syntax}
 
 ```shell
 # A.
@@ -51,7 +51,7 @@ Above setup loads everything after prompt, because of preceding `wait` ice.
 That is called **Turbo mode**, it shortens Zsh startup time by <u>50%-80%</u>, e.g.
 instead of 200 ms, it'll be getting your shell started up after **40 ms**.
 
-## Without [Turbo](overview#turbo-mode-zsh--53) and [`for''` syntax](syntax#the-for-syntax)
+## Without [Turbo](../getting_started/overview#turbo-mode-zsh--53) and [`for''` syntax](../guides/syntax#the-for-syntax) {#without-turbo-and-for-syntax}
 
 The same setup using the classic syntax and without Turbo mode (prompt will be initially set like in typical,
 normal setup – **you can remove `wait` only from the theme plugin** and its dependencies to have the same effect while still
@@ -83,4 +83,4 @@ zi ice atinit"zicompinit; zicdreplay"
 zi light z-shell/fast-syntax-highlighting
 ```
 
-In general, [Turbo](overview#turbo-mode-zsh--53) can be optionally enabled only for a subset of plugins or for all plugins.
+In general, [Turbo](../getting_started/overview#turbo-mode-zsh--53) can be optionally enabled only for a subset of plugins or for all plugins.

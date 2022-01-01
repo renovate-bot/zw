@@ -4,11 +4,14 @@ id: ice
 title: Ice Syntax
 ---
 
-F&A: What is ice?
+:::info
 
-`ice` is Zi's options command. The option melts like ice and is used only once.
+F&A: What is ice? - `ice` is Zi's options command.
+The option melts like ice and is used only once.
 
-### `extract''`
+:::
+
+### `extract''` {#extract}
 
 **The Automatic Archive-Extraction Ice-Tool**
 
@@ -81,7 +84,7 @@ It recognizes the following options:
    - `extract` ice also skips creating the backup **if** more than one archive
      is found or given as the argument.
 
-#### Supported File Formats
+#### Supported File Formats {#supported-file-formats}
 
 - Zip,
 - RAR,
@@ -96,7 +99,7 @@ It recognizes the following options:
 - 7z,
 - OS X **dmg images**.
 
-### `from''`
+### `from''` {#from}
 
 In order to install and load a plugin whose repository is private - i.e.:
 requires providing credentials in order to log in – use the `from''` ice in the
@@ -125,7 +128,7 @@ In order to change the protocol, use the `proto''` ice.
 By using this method you can clone plugins from e.g. GitHub Enterprise or embed
 the passwords as plain text in `.zshrc`.
 
-### `id-as''`
+### `id-as''` {#id-as}
 
 **Nickname a plugin or snippet**
 
@@ -214,7 +217,7 @@ zi ice wait lucid id-as
 zi load hlissner/zsh-autopair
 ```
 
-### `wait''`
+### `wait''` {#wait}
 
 **Note:** **Turbo mode, i.e. the `wait` ice that implements it needs Zsh >= 5.3.**
 
@@ -245,8 +248,8 @@ zi load unixorn/git-extra-commands
 
 - waits until user enters a `github` directory.
 
-Turbo mode also support a suffix – the letter `a`, `b` or `c`. The meaning is
-illustrated by the following example:
+Turbo mode also support a suffix – the letter `a`, `b` or `c`.
+ The meaning is illustrated by the following example:
 
 ```shell
 zi ice wait"0b" as"command" pick"wd.sh" atinit"echo Firing 1" lucid
@@ -268,7 +271,7 @@ In other words, instead of `wait'1'` you can enter `wait'1a'`, `wait'1b'` and
 `wait'1c'` – to this way **impose order** on the loadings **regardless of the
 order of `zi` commands**.
 
-### `wrap-track''`
+### `wrap-track''` {#wrap-track}
 
 The `wrap-track` ice-mod allows to extend the tracking (i.e. gathering of report
 and unload data) of a plugin beyond the moment of sourcing it's main file(s). It
@@ -287,8 +290,8 @@ zi ice wrap-track"func1;func2;…" …
 **Example**
 
 Therefore, to e.g. load and unload the example powerlevel10k prompt in the
-fashion of [**Multiple prompts**](multiple-prompts) article, the `precmd`
-function of the plugin – called `_p9k_precmd` (to get the name of the function
+fashion of [**Multiple prompts**](../gallery/preferences#multiple-prompts) article,
+ the `precmd` function of the plugin – called `_p9k_precmd` (to get the name of the function
 do `echo $precmd_functions` after loading a theme) – should be passed to
 `wrap-track''` ice, like so:
 
@@ -343,7 +346,7 @@ As it can be seen, creation of four additional Zle-widgets has been recorded
 unload with `MYPROMPT=3` (for example) and the shell state will be clean, ready
 to load a new prompt.
 
-### `src''` `pick''` `multisrc''`
+### `src''` `pick''` `multisrc''` {#src-pick-multisrc}
 
 Normally `src''` can be used to specify additional file to source:
 
@@ -464,7 +467,7 @@ time and will allow activation of keyboard in between the snippets. The
 `multisrc''` way doesn't work this way – sourcing many files can cause
 noticeable keyboard freezes (in Turbo).
 
-### `atclone''` `atpull''` `atinit''` `atload''`
+### `atclone''` `atpull''` `atinit''` `atload''` {#atclone-atpull-atinit-atload}
 
 There are four code-receiving ices: `atclone`, `atpull`, `atinit`, `atload`.
 Their role is to **receive a portion of Zsh code and execute it in certain
@@ -484,13 +487,14 @@ Last, **`atload`** is being activated:
 
 - **after loading** of the associated plugin or snippet.
 
-For convenience, you can use each of the ices multiple times in single `zi ice …` invocation – all the passed commands will be executed in the given order.
+For convenience, you can use each of the ices multiple times in single `zi ice …` invocation
+ – all the passed commands will be executed in the given order.
 
 The `atpull` ice recognizes a special value: `%atclone` (so the code looks i.e.:
 `atpull'%atclone'`). It causes the contents of the `atclone` ice to be copied
 into the contents of the `atpull` ice. This is handy when the same tasks have to
 be performed on clone **and** on update of plugin or snippet, like e.g.: in the
-[**Direnv example**](specific-setup#direnv).
+[**Direnv example**](../gallery/distinctive#direnv).
 
 **_Exclamation mark_-preceded `atload`**
 

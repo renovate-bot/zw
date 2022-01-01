@@ -1,10 +1,10 @@
 ---
 sidebar_position: 1
-id: gallery
-title: Gallery
+id: collection
+title: Collection
 ---
 
-## Programs
+## Programs {#programs}
 
 ```shell
 # junegunn/fzf-bin
@@ -83,14 +83,14 @@ zi id-as"rust" wait=1 as=null sbin="bin/*" lucid rustup \
   z-shell/null
 ```
 
-## Completions
+## Completions {#completions}
 
 ```shell
 zi ice as"completion"
 zi snippet https://github.com/docker/cli/blob/master/contrib/completion/zsh/_docker
 ```
 
-## Scripts
+## Scripts {#scripts}
 
 ```shell
 # ogham/exa also uses the definitions
@@ -138,7 +138,7 @@ zi ice as"program" pick"bin/archey"
 zi load obihann/archey-osx
 ```
 
-## Plugins
+## Plugins {#plugins}
 
 ```shell
 zi ice pick"h.sh"
@@ -209,7 +209,7 @@ zi ice lucid id-as"GitHub-notify" \
 zi light z-shell/zsh-github-issues
 ```
 
-## Services
+## Services {#services}
 
 ```shell
 # a service that runs the redis database, in background, single instance
@@ -226,7 +226,7 @@ zi ice wait"2" lucid service"GIT" pick"zsh-github-issues.service.zsh"
 zi light z-shell/zsh-github-issues
 ```
 
-## Snippets
+## Snippets {#snippets}
 
 ```shell
 zi ice svn pick"completion.zsh" src"git.zsh"
@@ -242,7 +242,7 @@ zi ice svn
 zi snippet OMZ::plugins/osx
 ```
 
-## Themes
+## Themes {#themes}
 
 ```shell
 GEOMETRY_COLOR_DIR=152
@@ -286,7 +286,7 @@ zi ice depth'1' atload"[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh" nocd
 zi light romkatv/powerlevel10k
 ```
 
-## Minimal
+## Minimal {#minimal}
 
 ```shell
 zi wait lucid light-mode for \
@@ -298,7 +298,7 @@ zi wait lucid light-mode for \
   zsh-users/zsh-completions
 ```
 
-- `wait` – load 0 seconds (about 5 ms exactly) after prompt ([Turbo mode](overview#turbo-mode-zsh--53)),
+- `wait` – load 0 seconds (about 5 ms exactly) after prompt ([Turbo mode](../getting_started/overview#turbo-mode-zsh--53)),
 - `lucid` – silence the under-prompt messages ("`Loaded {name of the plugin}`"),
 - `light-mode` – load the plugin in `light` mode, in which the tracking of
   plugin (i.e. activity report gathering, accessible via the `zi report {plugin-name}` subcommand) is being disabled;
@@ -319,7 +319,7 @@ zi wait lucid light-mode for \
   be performed before syntax-highlighting plugin, hence the `atinit''` ice, which will load `compinit` right before loading the plugin,
 - the syntax-highlighting and suggestions plugins are loaded early for a better user experience.
 
-The same setup, but without using [Turbo mode](overview#turbo-mode-zsh--53) (i.e. no `wait''` ice) and without[The `for''` syntax](Syntax#the-for-syntax):
+The same setup, but without using [Turbo mode](../getting_started/overview#turbo-mode-zsh--53) (i.e. no `wait''` ice) and without[The `for''` syntax](../guides/syntax#the-for-syntax):
 
 ```shell
 zi ice blockf atpull'zi creinstall -q .'
@@ -332,5 +332,5 @@ zi light z-shell/F-Sy-H
 zi light zsh-users/zsh-autosuggestions
 ```
 
-Without [Turbo](overview#turbo-mode-zsh--53) the syntax-highlighting plugin can be loaded at the end,
+Without [Turbo](../getting_started/overview#turbo-mode-zsh--53) the syntax-highlighting plugin can be loaded at the end,
 as it doesn't make any difference (the prompt will appear after loading all objects, anyway).

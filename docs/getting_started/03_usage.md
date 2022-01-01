@@ -4,7 +4,7 @@ id: useage
 title: Usage
 ---
 
-## Plugins and snippets
+## Plugins and snippets {#plugins-and-snippets}
 
 Plugins can be loaded using `load` or `light`.
 
@@ -57,7 +57,7 @@ zi ice as"command" from"gh-r" \ # `starship` binary as command, from github rele
 zi light starship/starship
 ```
 
-## Upgrade ZI and plugins
+## Upgrade ZI and plugins {#upgrade-zi-and-plugins}
 
 ZI can be updated to `self-update` and plugins to `update`.
 
@@ -72,11 +72,11 @@ zi update --parallel
 zi update --parallel 40
 ```
 
-## Turbo and lucid
+## Turbo and lucid {#turbo-and-lucid}
 
 Turbo and lucid are the most used options.
 
-### Turbo Mode
+### Turbo Mode {#turbo-mode}
 
 Turbo mode is the key to performance. It can be loaded asynchronously, which makes a huge difference when the amount of plugins increases.
 
@@ -93,7 +93,7 @@ zi ice wait    # also be used in `light` and `snippet`
 zi snippet https://gist.githubusercontent.com/hightemp/5071909/raw/
 ```
 
-### Lucid
+### Lucid {#lucid}
 
 Turbo mode is verbose, so you need an option for quiet.
 
@@ -107,11 +107,11 @@ zi load z-shell/history-search-multi-word
 **_F&A:_** What is `ice`?
 
 `ice` is Zi's options command. The option melts like ice and is used only once.
-(more: [Ice Modifiers](ice-modifiers)).
+(more: [Ice Modifiers](../guides/ice-modifiers)).
 
-## Migration
+## Migration {#migration}
 
-### Migration from Oh-My-ZSH
+### Migration from Oh-My-ZSH {#migration-from-oh-my-zsh}
 
 **Basic**
 
@@ -250,9 +250,9 @@ zi ice as"completion"
 zi snippet OMZP::fd/_fd
 ```
 
-[You can see an extended explanation of Oh-My-Zsh setup in the Wiki](Oh-My-Zsh-Setup/)
+[You can see an extended explanation of Oh-My-Zsh setup in the Wiki](../gallery/ohmyzsh)
 
-### Migration from Prezto
+### Migration from Prezto {#migration-from-prezto}
 
 **Basic**
 
@@ -316,7 +316,7 @@ zi snippet PZTM::completion
 
 Read [zstyle](http://zsh.sourceforge.net/Doc/Release/Zsh-Modules.html#The-zsh_002fzutil-Module) doc (more: [What does `zstyle` do?](https://unix.stackexchange.com/questions/214657/what-does-zstyle-do)).
 
-### Migration from Zgen
+### Migration from Zgen {#migration-from-zgen}
 
 **Oh My Zsh**
 
@@ -357,7 +357,7 @@ zstyle ':prezto:<modulename>:' <option> <values(s)> # Set original prezto style
 
 **General**
 
-`location`: refer [Selection of Files](ice#src-pick-multisrc)
+`location`: refer [Selection of Files](../guides/ice#src-pick-multisrc)
 
 ```shell
 zgen load <repo> [location] [branch]
@@ -366,7 +366,7 @@ zi ice ver"[branch]"
 zi load <repo>
 ```
 
-### Migration from Zplug
+### Migration from Zplug {#migration-from-zplug}
 
 **Basic**
 
@@ -395,7 +395,7 @@ zi load <repo/plugin>
 - `lazy` => `autoload`
 - `depth` => `depth`
 
-## More Examples
+## More Examples {#more-examples}
 
 After installing ZI you can start adding some actions (load some plugins) to `~/.zshrc`, at the bottom. Some examples:
 
@@ -465,6 +465,6 @@ your `~/.zshrc` there if it contains ZI commands.
 
 For some additional examples you can also check out the:
 
-- [Gallery of Invocations](gallery),
-- [Minimal Setup](minimal-setup),
-- [Oh-My-Zsh](Oh-my-zsh-setup).
+- [Gallery of Invocations](../gallery/collection),
+- [Minimal Setup](../gallery/preferences#minimal-setup),
+- [Oh-My-Zsh](../gallery/ohmyzsh).

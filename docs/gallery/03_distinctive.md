@@ -1,10 +1,10 @@
 ---
 sidebar_position: 3
-id: disinctive
+id: distinctive
 title: Distinctive
 ---
 
-## LS_COLORS
+## LS_COLORS {#ls_colors}
 
 A repository [**trapd00r/LS_COLORS**](https://github.com/trapd00r/LS_COLORS) provides a file with color definitions for GNU `ls` command (and also for [**ogham/exa**](https://github.com/ogham/exa).
 
@@ -38,7 +38,7 @@ zi light trapd00r/LS_COLORS
 This way, except for the plugin installation and update, `dircolors` isn't ran,
 just normal sourcing is done. The everyday sourced file (i.e. `clrs.zsh`) is even being compiled to speed up the loading.
 
-## Compiling programs
+## Compiling programs {#compiling-programs}
 
 ```shell
 zi ice as"program" atclone"rm -f src/auto/config.cache; ./configure" \
@@ -67,7 +67,7 @@ zi light vim/vim
 - `make` – as above, but also run the `install` target,
 - `pick"src/vim"` – as above, but for different path (`$ZPFX/bin/vim`).
 
-### Direnv
+### Direnv {#direnv}
 
 The project [**direnv/direnv**](https://github.com/direnv/direnv) registers itself in Z shell to modify the environment on directory change.
 This registration is most often done by `eval "$(direnv hook zsh)"` added to zshrc.

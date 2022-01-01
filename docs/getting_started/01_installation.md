@@ -4,7 +4,7 @@ id: installation
 title: Installation
 ---
 
-### Quick install
+### Quick install {#quick-install}
 
 :::tip
 
@@ -35,7 +35,7 @@ sh -c "$(curl -fsSL https://git.io/get-zi)" -- -a loader
 sh -c "$(curl -fsSL https://git.io/get-zi)" -- -a ???
 ```
 
-### Manual install
+### Manual install {#manual-install}
 
 Clone repository:
 

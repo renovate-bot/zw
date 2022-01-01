@@ -5,7 +5,7 @@ title: Preferences
 ---
 
 
-## Multiple prompts
+## Multiple prompts {#multiple-prompts}
 
 - `load''`      – condition that when fulfilled will cause plugin to be loaded,
 - `unload''`    – as above, but will unload plugin.
