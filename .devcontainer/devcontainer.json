@@ -1,0 +1,25 @@
+{
+	"name": "Node.js",
+	"build": {
+		"dockerfile": "Dockerfile",
+		// Update 'VARIANT' to pick a Node version: 16, 14, 12.
+		// Append -bullseye or -buster to pin to an OS version.
+		// Use -bullseye variants on local arm64/Apple Silicon.
+		"args": {
+			"VARIANT": "16-bullseye"
+		}
+	},
+	"settings": {},
+	"extensions": [
+		"dbaeumer.vscode-eslint"
+	],
+	// "forwardPorts": [],
+	// "postCreateCommand": "yarn install",
+	"remoteUser": "node",
+	"features": {
+		"docker-in-docker": "latest",
+		"git": "latest",
+		"github-cli": "latest",
+		"python": "latest"
+	}
+}
