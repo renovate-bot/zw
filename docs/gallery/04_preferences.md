@@ -4,7 +4,7 @@ id: preferences
 title: Preferences
 ---
 
-## Customizing Paths
+## Customizing Paths {#customizing-paths}
 
 Following variables can be set to custom values, before sourcing ZI.
 
@@ -30,7 +30,7 @@ declare -A ZI  # initial ZI's hash definition, if configuring before loading ZI,
 There is also `$ZPFX`, set by default to `~/.zi/polaris` – a directory
 where software with `Makefile`, etc. can be pointed to, by e.g. `atclone'./configure --prefix=$ZPFX'`.
 
-## Non-GitHub (Local) Plugins
+## Non-GitHub (Local) Plugins {#non-github-local-plugins}
 
 Use `create` subcommand with user name `_local` (the default) to create the plugin's
 skeleton in `$ZI[PLUGINS_DIR]`. It will be not connected with the GitHub repository
@@ -40,7 +40,7 @@ with just the plugin's name (without `_local`, it's optional).
 If the user name will not be `_local`, then ZI will create a repository also on GitHub
 and set up the correct repository origin.
 
-## Extending Git
+## Extending Git {#extending-git}
 
 Several projects provide git extensions. Installing them with ZI has many benefits:
 
@@ -99,7 +99,7 @@ just run:
 zi light-mode for z-shell/z-a-meta-plugins @annexes @ext-git
 ```
 
-## Setopt
+## Setopt {#setopt}
 
 Options are primarily referred to by name.
 These names are case insensitive and underscores are ignored.
@@ -155,7 +155,7 @@ setopt pushdminus               # Swapped the meaning of cd +1 and cd -1; we wan
 setopt promptsubst              # Enables the substitution of parameters inside the prompt each time the prompt is drawn
 ```
 
-## Zstyle
+## Zstyle {#zstyle}
 
 `zstyle` handles the obvious style control for the completion system, but it seems to cover more than just that.
 E.g., the vcs_info module relies on it for display of git status in your prompt.
@@ -192,7 +192,7 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 ```
 
-## Disabling System-Wide `compinit` Call (Ubuntu)
+## Disabling System-Wide `compinit` Call (Ubuntu) {#disabling-system-wide-compinit-call-ubuntu}
 
 On Ubuntu users might get surprised that e.g. their completions work while they didn't
 call `compinit` in their `.zshrc`. That's because the function is being called in `/etc/zshrc`.

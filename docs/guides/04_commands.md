@@ -4,7 +4,7 @@ id: commands
 title: Commands
 ---
 
-## Commands available with `^TAB` completion
+## Commands available with `^TAB` completion {#commands-available-with-tab-completion}
 
 ```Systemverilog
 self-update            -- Updates and Compile ❮ ZI ❯
@@ -58,7 +58,7 @@ man                    -- Manpage
 help                   -- Usage Information
 ```
 
-## Updating ZI and Plugins
+## Updating ZI and Plugins {#updating-zi-and-plugins}
 
 To update ZI issue `zi self-update` in the command line.
 
@@ -76,7 +76,7 @@ The ice modifiers for any plugin or snippet are stored in their directory in a
 updated. There's one other file created there, `.zi_lstupd` – it holds the log of
 the new commits pulled-in in the last update.
 
-## Calling `compinit` Without Turbo Mode
+## Calling `compinit` Without Turbo Mode {#calling-compinit-without-turbo-mode}
 
 With no Turbo mode in use, compinit can be called normally, i.e.: as `autoload compinit; compinit`. This should be done after loading of all plugins and before possibly calling
 `zi cdreplay`.
@@ -124,7 +124,7 @@ with `cdreplay` and single `compinit`: **0.156** sec.
 
 :::
 
-## Calling `compinit` With Turbo Mode
+## Calling `compinit` With Turbo Mode {#calling-compinit-with-turbo-mode}
 
 If you load completions using `wait''` Turbo mode then you can add
 `atinit'zicompinit'` to the syntax-highlighting plugin (which should be the last
@@ -150,7 +150,7 @@ zi wait lucid atload"zicompinit; zicdreplay" blockf for \
     zsh-users/zsh-completions
 ```
 
-### Ignoring Compdefs
+### Ignoring Compdefs {#ignoring-compdefs}
 
 If you want to ignore compdefs provided by some plugins or snippets, place their load commands
 before commands loading other plugins or snippets, and issue `zi cdclear` (or
@@ -176,7 +176,7 @@ The `cdreplay` is important if you use plugins like
 
 Following commands are passed to `zi ...` to obtain described effects.
 
-## Loading and Unloading
+## Loading and Unloading {#loading-and-unloading}
 
 |           Command           | Description                                                                                                                                                                                                                                                                                                          |
 |:---------------------------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -185,7 +185,7 @@ Following commands are passed to `zi ...` to obtain described effects.
 | `unload [-q] {plugin-name}` | Unload plugin loaded with `zi load ...`. `-q` – quiet.                                                                                                                                                                                                                                                               |
 |    `snippet [-f] {url}`     | Source local or remote file (by direct URL). `-f` – don't use cache (force redownload). The URL can use the following shorthands: `PZT::` (Prezto), `PZTM::` (Prezto module), `OMZ::` (Oh My Zsh), `OMZP::` (OMZ plugin), `OMZL::` (OMZ library), `OMZT::` (OMZ theme), e.g.: `PZTM::environment`, `OMZP::git`, etc. |
 
-## Completions Management
+## Completions Management {#completions-management}
 
 |                            Command                            | Description                                                                                                                                           |
 |:-------------------------------------------------------------:|-------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -201,7 +201,7 @@ Following commands are passed to `zi ...` to obtain described effects.
 |                        `cdreplay [-q]`                        | Replay compdefs (to be done after compinit). `-q` – quiet.                                                                                            |
 |                        `cdclear [-q]`                         | Clear compdef replay list. `-q` – quiet.                                                                                                              |
 
-## Tracking of the Active Session
+## Tracking of the Active Session {#tracking-of-the-active-session}
 
 |     Command      | Description                                       |
 |:----------------:|---------------------------------------------------|
@@ -211,7 +211,7 @@ Following commands are passed to `zi ...` to obtain described effects.
 |    `dreport`     | Report what was going on in session.              |
 |     `dclear`     | Clear report of what was going on in session.     |
 
-## Reports and Statistics
+## Reports and Statistics {#reports-and-statistics}
 
 |              Command               | Description                                                                                                                                                |
 |:----------------------------------:|------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -224,7 +224,7 @@ Following commands are passed to `zi ...` to obtain described effects.
 |       `recently [time-spec]`       | Show plugins that changed recently, argument is e.g. 1 month 2 days.                                                                                       |
 |             `bindkeys`             | Lists bindkeys set up by each plugin.                                                                                                                      |
 
-## Compiling
+## Compiling {#compiling}
 
 |             Command              | Description                                                         |
 |:--------------------------------:|---------------------------------------------------------------------|
@@ -232,14 +232,14 @@ Following commands are passed to `zi ...` to obtain described effects.
 | `uncompile {plugin-name}\|--all` | Remove compiled version of plugin. `--all` – do it for all plugins. |
 |            `compiled`            | List plugins that are compiled.                                     |
 
-## Other
+## Other {#other}
 
 |                               Command                               | Description                                                                                                                                                                                                                                                                                                                              |
 |:-------------------------------------------------------------------:|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                            `self-update`                            | Updates and compiles ZI.                                                                                                                                                                                                                                                                                                                 |
-|            `update [-q] [-r] {plugin-name}\|URL\|--all`             | Git update plugin or snippet.<br> `--all` – update all plugins and snippets.<br> `-q` – quiet.<br> `-r` \| `--reset` – run `git reset --hard` / `svn revert` before pulling changes.                                                                                                                                                     |
+|            `update [-q] [-r] {plugin-name}\|URL\|--all`             | Git update plugin or snippet. `--all` – update all plugins and snippets. `-q` – quiet. `-r` \| `--reset` – run `git reset --hard` / `svn revert` before pulling changes.                                                                                                                                                                 |
 |                      `ice <ice specification>`                      | Add ice to next command, argument is e.g. from"gitlab".                                                                                                                                                                                                                                                                                  |
-|             `delete {plugin-name}\|URL\|--clean\|--all`             | Remove plugin or snippet from disk (good to forget wrongly passed ice-mods). <br> `--all` – purge.<br> `--clean` – delete plugins and snippets that are not loaded.                                                                                                                                                                      |
+|             `delete {plugin-name}\|URL\|--clean\|--all`             | Remove plugin or snippet from disk (good to forget wrongly passed ice-mods).  `--all` – purge. `--clean` – delete plugins and snippets that are not loaded.                                                                                                                                                                              |
 |                         `cd {plugin-name}`                          | Cd into plugin's directory. Also support snippets if fed with URL.                                                                                                                                                                                                                                                                       |
 |                        `edit {plugin-name}`                         | Edit plugin's file with \$EDITOR.                                                                                                                                                                                                                                                                                                        |
 |                       `glance {plugin-name}`                        | Look at plugin's source (pygmentize, {,source-}highlight).                                                                                                                                                                                                                                                                               |
@@ -253,7 +253,7 @@ Following commands are passed to `zi ...` to obtain described effects.
 | `add-fpath\|fpath` `[-f\|--front]` `{plugin-name}` `[subdirectory]` | Adds given plugin (not yet snippet) directory to `$fpath`. If the second argument is given, it is appended to the directory path. If the option `-f`/`--front` is given, the directory path is prepended instead of appended to `$fpath`. The `{plugin-name}` can be absolute path, i.e.: it's possible to also add regular directories. |
 |                 `run` `[-l]` `[plugin]` `{command}`                 | Runs the given command in the given plugin's directory. If the option `-l` will be given then the plugin should be skipped – the option will cause the previous plugin to be reused.                                                                                                                                                     |
 
-## Help & Manual
+## Help & Manual {#help--manual}
 
 |  Command   | Description        |
 |:----------:|--------------------|

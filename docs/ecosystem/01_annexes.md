@@ -4,11 +4,11 @@ id: annexes
 title: Annexes
 ---
 
-### What Are They?
+### What Are They? {#what-are-they}
 
 They are [extensions](https://github.com/z-shell/z-annexes) to increase functionality.
 
-## What Can They Do?
+## What Can They Do? {#what-can-they-do}
 
 1. Add a new ZI subcommand (i.e. the command that’s placed after the
    function `zi …` when calling ZI).
@@ -27,7 +27,7 @@ They are [extensions](https://github.com/z-shell/z-annexes) to increase function
 
 4. Register hooks for generating help text, shown by the `zi help` subcommand.
 
-## How To Code Them?
+## How To Code Them? {#how-to-code-them}
 
 Below is an example body of an `atclone` hook (taken from [**zi/z-a-submods**](https://github.com/z-shell/z-a-submods) annex).
 
@@ -113,7 +113,7 @@ Checkout the project which fully implements this idea,
 implements the `atpull` hook, i.e. supports automatic update of the submodules.
 The `z-a-*` prefix is recommended for projects that are being annexes.
 
-## Details
+## Details {#details}
 
 There are 2 or 3 subtypes for each of the hook:
 

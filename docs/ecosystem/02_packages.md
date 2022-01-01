@@ -32,7 +32,7 @@ a `package.json` file with the meta-data in them.
 This way you don't have to (but still can) specify ices, which might be handy
 when the ice-mod list is long and complex.
 
-## Motivation behind packages
+## Motivation behind packages {#motivation-behind-packages}
 
 The motivation for adding such functionality was:
 
@@ -52,7 +52,7 @@ The motivation for adding such functionality was:
 4. So a solution appeared: why not publish a package at GitHub with the plugin
    configurations (i.e.: ice-mod lists) stored in a file?
 
-## Introductory Example
+## Introductory Example {#introductory-example}
 
 This way, instead of the following command used to install `fzf`:
 
@@ -85,7 +85,7 @@ project to refresh and rebuild, like with a "normal" package manager such as
 the installation will be from the source… unless… the user will pick up a binary
 installation by profile-argument specified in the `pack''` ice :)
 
-## Pros Of Using ZI Package For Regular Software Installations
+## Pros Of Using ZI Package For Regular Software Installations {#pros-of-using-zi-package-for-regular-software-installations}
 
 Using ZI to install software where one could use a regular package manager
 has several advantages:
@@ -130,7 +130,7 @@ then to have the `README` converted into a man page by the `remark` Markdown
 processor or other via an `atclone''` ice, as the tool doesn't have any official
 man page).
 
-## The `Z-Shell` Organization
+## The `Z-Shell` Organization {#the-z-shell-organization}
 
 The home for the packages is [Z-Shell](https://github.com/z-shell)
 GitHub organization. You can find the available packages [here](https://github.com/search?q=topic%3Az-packages+org%3Az-shell&type=Repositories), which as of
@@ -161,7 +161,7 @@ GitHub organization. You can find the available packages [here](https://github.c
 - **[firefox-dev](https://github.com/z-shell/firefox-dev)** - Provides the CLI commands firefox-bin and [firefox](https://www.mozilla.org/en-GB/firefox/developer) by extending the `$PATH/bin`.
 - **[zsh](https://github.com/z-shell/zsh)** - Builds and installs the newest [zsh-users/zsh](https://github.com/zsh-users/zsh).
 
-## Adding Your Own Package
+## Adding Your Own Package {#adding-your-own-package}
 
 1. Contact the author to have the repository at the Z-Shell organization.
 
