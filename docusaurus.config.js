@@ -50,8 +50,6 @@ const config = {
 				switchConfig: {
 					darkIcon: '🌙',
 					lightIcon: '\u2600',
-					// React inline style object
-					// see https://reactjs.org/docs/dom-elements.html#style
 					darkIconStyle: {
 						marginLeft: '2px',
 					},
@@ -61,9 +59,9 @@ const config = {
 				},
 			},
 			algolia: {
-				appId: '9MWZG6YTZH',
-				apiKey: '25296a50114a93564278103ec825b069',
-				indexName: 'prod_ZSHELL_ZI',
+				appId: 'R65Z94OME2',
+				apiKey: 'cfea6a2beca30a997104d74111f4e13f',
+				indexName: 'dev_z-shell',
 			},
 			navbar: {
 				title: '❮ ZI ❯',
