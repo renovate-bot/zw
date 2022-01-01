@@ -36,7 +36,7 @@ Install [Rust packages](https://crates.io):
 
 Install almost everything from [GitHub](https://github.com):
 
-[Annexes](https://github.com/z-shell/zi/wiki/Annexes) | [Packages](https://github.com/z-shell/zi/wiki/Packages) | [Annex Meta Plugins](https://github.com/z-shell/zi/wiki/z-a-meta-plugins) | [Gallery of Invocations](https://github.com/z-shell/zi/wiki/Gallery)
+[Annexes](ecosystem/annexes/annexes) | [Packages](ecosystem/packages) | [Meta Plugins](ecosystem/annexes/meta-plugins) | [Gallery of Invocations](https://github.com/z-shell/zi/wiki/Gallery)
 
 </TabItem>
 </Tabs>
