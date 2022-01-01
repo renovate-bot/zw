@@ -6,7 +6,7 @@ title: Annexes
 
 ### What Are They? {#what-are-they}
 
-They are [extensions](https://github.com/z-shell/z-annexes) to increase functionality.
+They are [extensions](https://github.com/z-shell/zannexes) to increase functionality.
 
 ## What Can They Do? {#what-can-they-do}
 
