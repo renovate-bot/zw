@@ -1,0 +1,6 @@
+documentation 📝:
+  - any: ["docs/**/*.md", "docs/*.md"]
+dependencies 📦:
+  - any: [".packages.json"]
+ci 🤖:
+  - any: [".github/workflows/*.yml"]
