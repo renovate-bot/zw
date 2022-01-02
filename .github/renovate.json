@@ -1,7 +1,5 @@
 {
-  "extends": ["config:base", ":disableDependencyDashboard"],
+  "extends": ["config:base"],
   "labels": ["dependencies 📦"],
-  "lockFileMaintenance": { "enabled": true },
-      "matchPackageNames": ["remark-math"],
-      "allowedVersions": "<=3.0"
+  "lockFileMaintenance": { "enabled": true }
 }
