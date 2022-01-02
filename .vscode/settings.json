@@ -1,6 +1,7 @@
 {
   "conventionalCommits.scopes": [
-    "zi pages",
-    "ecosystem"
+    "general",
+    "ecosystem",
+    "workspace"
   ]
 }

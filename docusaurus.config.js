@@ -1,6 +1,9 @@
 // @ts-nocheck
 // Note: type annotations allow type checking and IDEs autocompletion
 
+const math = require('remark-math');
+const katex = require('rehype-katex');
+
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
@@ -21,9 +24,14 @@ const config = {
 			'classic',
 			/** @type {import('@docusaurus/preset-classic').Options} */
 			({
+				debug: true, // force debug plugin usage
 				docs: {
 					sidebarPath: require.resolve('./sidebars.js'),
 					editUrl: 'https://github.com/z-shell/z-shell.pages.dev/tree/main',
+					remarkPlugins: [math],
+					rehypePlugins: [
+						[katex, { strict: false }],
+					],
 				},
 				theme: {
 					customCss: require.resolve('./src/css/custom.css'),
@@ -32,13 +40,11 @@ const config = {
 			}),
 		],
 	],
-	plugins: ['@docusaurus/theme-live-codeblock'],
-	scripts: [
-		'dist/typesense.min.js',
-		{
-			src: 'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js',
-			async: true,
-		},
+	plugins: [
+		'@docusaurus/plugin-content-blog',
+		'@docusaurus/theme-live-codeblock',
+		/** https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-ideal-image */
+		'@docusaurus/plugin-ideal-image',
 	],
 	themeConfig:
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
