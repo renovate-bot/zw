@@ -1,10 +1,13 @@
 ---
-sidebar_position: 3
 id: ice-modifiers
 title: Ice Modifiers
+sidebar_position: 3
+image: https://github.com/z-shell/zi/raw/main/docs/images/logo.png
 description: Documentation for the ice Modifiers
 keywords: [ice-modifiers, zsh, z-shell, zi]
 ---
+
+import APITable from '@site/src/components/APITable';
 
 Following ice modifiers are to be [passed](#alternate-syntax) to `zi ice...` to obtain described effects. The word `ice` means something that's added (like ice to a drink) – and in ZI it means adding a modifier to a next `zi` command, and also something that's temporary because it melts – and this means that the modification will last only for a **single** next `zi` command.
 
@@ -16,8 +19,10 @@ explicitly stated otherwise.
 
 ### Cloning options {#cloning-options}
 
+<APITable>
+
 |        Modifier        | Description                                                                                                                                                                                                                                                                                                         |
-|:----------------------:|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :--------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |        `proto`         | Change protocol to `git`,`ftp`,`ftps`,`ssh`, `rsync`, etc. Default is `https`. **Does not work with snippets.**                                                                                                                                                                                                     |
 | [**`from`**](ice#from) | Clone plugin from given site. Supported are `from"github"` (default), `..."github-rel"`, `..."gitlab"`, `..."bitbucket"`, `..."notabug"` (short names: `gh`, `gh-r`, `gl`, `bb`, `nb`). Can also be a full domain name (e.g. for GitHub enterprise). **Does not work with snippets.**                               |
 |         `ver`          | Used with `from"gh-r"` (i.e. downloading a binary release, e.g. for use with `as"program"`) – selects which version to download. Default is latest, can also be explicitly `ver"latest"`. Works also with regular plugins, checkouts e.g. `ver"abranch"`, i.e. a specific version. **Does not work with snippets.** |
@@ -27,18 +32,26 @@ explicitly stated otherwise.
 |       `pullopts`       | Pass the contents of `pullopts` to `git pull` used when updating plugins. **Does not work with snippets.**                                                                                                                                                                                                          |
 |         `svn`          | Use Subversion for downloading snippet. GitHub supports `SVN` protocol, this allows to clone subdirectories as snippets, e.g. `zi ice svn; zi snippet OMZP::git`. Other ice `pick` can be used to select file to source (default are: `*.plugin.zsh`, `init.zsh`, `*.zsh-theme`). **Does not work with plugins.**   |
 
+</APITable>
+
 ### Selection of Files (To Source, …) {#selection-of-files-to-source}
 
+<APITable>
+
 |                Modifier                 | Description                                                                                                                                                                                                                          |
-|:---------------------------------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :-------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 |   [**`pick`**](ice#src-pick-multisrc)   | Select the file to source, or the file to set as command (when using `snippet --command` or the ice `as"program"`); it is a pattern, alphabetically first matched file is being chosen; e.g. `zi ice pick"*.plugin.zsh"; zi load …`. |
 |   [**`src`**](ice#src-pick-multisrc)    | Specify additional file to source after sourcing main file or after setting up command (via `as"program"`). It is not a pattern but a plain file name.                                                                               |
 | [**`multisrc`**](ice#src-pick-multisrc) | Allows to specify multiple files for sourcing, enumerated with spaces as the separators (e.g. `multisrc'misc.zsh grep.zsh'`) and also using brace-expansion syntax (e.g. `multisrc'{misc,grep}.zsh'`). Supports patterns.            |
 
+</APITable>
+
 ### Conditional Loading {#conditional-loading}
 
+<APITable>
+
 |                        Modifier                         | Description                                                                                                                                                                                                                                                                                                                                                              |
-|:-------------------------------------------------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :-----------------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 |                 [**`wait`**](ice#wait)                  | Postpone loading a plugin or snippet. For `wait'1'`, loading is done `1` second after prompt. For `wait'[[ ... ]]'`, `wait'(( ... ))'`, loading is done when given condition is meet. For `wait'!...'`, prompt is reset after load. Zsh can start 80% (i.e.: 5x) faster thanks to postponed loading. **Fact:** when `wait` is used without value, it works as `wait'0'`. |
 |  [**`load`**](../gallery/preferences#multiple-prompts)  | A condition to check which should cause plugin to load. It will load once, the condition can be still true, but will not trigger second load (unless plugin is unloaded earlier, see `unload` below). E.g.: `load'[[ $PWD = */github* ]]'`.                                                                                                                              |
 | [**`unload`**](../gallery/preferences#multiple-prompts) | A condition to check causing plugin to unload. It will unload once, then only if loaded again. E.g.: `unload'[[ $PWD != */github* ]]'`.                                                                                                                                                                                                                                  |
@@ -48,25 +61,37 @@ explicitly stated otherwise.
 |              `subscribe` / `on-update-of`               | Postpone loading of a plugin or snippet until the given file(s) get updated, e.g. `subscribe'{~/files-*,/tmp/files-*}'`                                                                                                                                                                                                                                                  |
 |                     `trigger-load`                      | Creates a function that loads the associated plugin/snippet, with an option (to use it, precede the ice content with `!`) to automatically forward the call afterwards, to a command of the same name as the function. Can obtain multiple functions to create – sparate with `;`.                                                                                       |
 
+</APITable>
+
 ### Plugin Output {#plugin-output}
 
+<APITable>
+
 | Modifier | Description                                                                                                                                                                                                                                                                                                 |
-|:--------:|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `silent` | Mute plugin's or snippet's `stderr` & `stdout`. Also skip `Loaded ...` message under prompt for `wait`, etc. loaded plugins, and completion-installation messages.                                                                                                                                          |
 | `lucid`  | Skip `Loaded ...` message under prompt for `wait`, etc. loaded plugins (a subset of `silent`).                                                                                                                                                                                                              |
 | `notify` | Output given message under-prompt after successfully loading a plugin/snippet. In case of problems with the loading, output a warning message and the return code. If starts with `!` it will then always output the given message. Hint: if the message is empty, then it will just notify about problems. |
 
+</APITable>
+
 ### Completions {#completions}
 
+<APITable>
+
 |    Modifier     | Description                                                                                                                                                                      |
-|:---------------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :-------------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |    `blockf`     | Disallow plugin to modify `fpath`. Useful when a plugin wants to provide completions in traditional way. ZI can manage completions and plugin can be blocked from exposing them. |
 | `nocompletions` | Don't detect, install and manage completions for this plugin. Completions can be installed later with `zi creinstall {plugin-spec}`.                                             |
 
+</APITable>
+
 ### Command Execution After Cloning, Updating or Loading {#command-execution-after-cloning-updating-or-loading}
 
+<APITable>
+
 |                     Modifier                      | Description                                                                                                                                                                                                                                                                                                  |
-|:-------------------------------------------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :-----------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 |                       `mv`                        | Move file after cloning or after update (then, only if new commits were downloaded). Example: `mv "fzf-* -> fzf"`. It uses `->` as separator for old and new file names. Works also with snippets.                                                                                                           |
 |                       `cp`                        | Copy file after cloning or after update (then, only if new commits were downloaded). Example: `cp "docker-c* -> dcompose"`. Ran after `mv`.                                                                                                                                                                  |
 | [**`atclone`**](ice#atclone-atpull-atinit-atload) | Run command after cloning, within plugin's directory, e.g. `zi ice atclone"echo Cloned"`. Ran also after downloading snippet.                                                                                                                                                                                |
@@ -79,19 +104,27 @@ explicitly stated otherwise.
 |                    `countdown`                    | Causes an interruptable (by Ctrl-C) countdown 5…4…3…2…1…0 to be displayed before executing `atclone''`,`atpull''` and `make` ices                                                                                                                                                                            |
 |                      `reset`                      | Invokes `git reset --hard HEAD` for plugins or `svn revert` for SVN snippets before pulling any new changes. This way `git` or `svn` will not report conflicts if some changes were done in e.g.: `atclone''` ice. For file snippets and `gh-r` plugins it invokes `rm -rf *`.                               |
 
+</APITable>
+
 ### Sticky-Emulation Of Other Shells {#sticky-emulation-of-other-shells}
 
+<APITable>
+
 |    Modifier     | Description                                                                                                                                                                                                                                                                                                                                |
-|:---------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :-------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 |   `sh`, `!sh`   | Source the plugin's (or snippet's) script with `sh` emulation so that also all functions declared within the file will get a _sticky_ emulation assigned – when invoked they'll execute also with the `sh` emulation set-up. The `!sh` version switches additional options that are rather not important from the portability perspective. |
 | `bash`, `!bash` | The same as `sh`, but with the `SH_GLOB` option disabled, so that Bash regular expressions work.                                                                                                                                                                                                                                           |
 |  `ksh`, `!ksh`  | The same as `sh`, but emulating `ksh` shell.                                                                                                                                                                                                                                                                                               |
 |  `csh`, `!csh`  | The same as `sh`, but emulating `csh` shell.                                                                                                                                                                                                                                                                                               |
 
+</APITable>
+
 ### Others {#others}
 
+<APITable>
+
 |                      Modifier                      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-|:--------------------------------------------------:|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :------------------------------------------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |                        `as`                        | Can be `as"program"` (also the alias: `as"command"`), and will cause to add script/program to `$PATH` instead of sourcing (see `pick`). Can also be `as"completion"` – use with plugins or snippets in whose only underscore-starting `_*` files you are interested in. The third possible value is `as"null"` – a shorthand for `pick"/dev/null" nocompletions` – i.e.: it disables the default script-file sourcing and also the installation of completions.                                                                                                                                                                                                   |
 |              [**`id-as`**](ice#id-as)              | Nickname a plugin or snippet, to e.g. create a short handler for long-url snippet.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |                     `compile`                      | Pattern (+ possible `{...}` expansion, like `{a/*,b*}`) to select additional files to compile, e.g. `compile"(pure\|async).zsh"` for `sindresorhus/pure`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
@@ -106,6 +139,8 @@ explicitly stated otherwise.
 |            [**`extract`**](ice#extract)            | Performs archive extraction supporting multiple formats like `zip`, `tar.gz`, etc. and also notably OS X `dmg` images. If it has no value, then it works in the _auto_ mode – it automatically extracts all files of known archive extensions IF they aren't located deeper than in a sub-directory (this is to prevent extraction of some helper archive files, typically located somewhere deeper in the tree). If no such files will be found, then it extracts all found files of known **type** – the type is being read by the `file` Unix command. If not empty, then takes names of the files to extract. Refer to the Wiki page for further information. |
 |                      `subst`                       | Substitute the given string into another string when sourcing the plugin script, e.g.: `zi subst'autoload → autoload -Uz' …`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |                     `autoload`                     | Autoload the given functions (from their files). Equvalent to calling `atinit'autoload the-function'`. Supports renaming of the function – pass `'… → new-name'` or `'… -> new-name'`, e.g.: `zi autoload'fun → my-fun; fun2 → my-fun2'`.                                                                                                                                                                                                                                                                                                                                                                                                                         |
+
+</APITable>
 
 ## Order of Execution {#order-of-execution}
 

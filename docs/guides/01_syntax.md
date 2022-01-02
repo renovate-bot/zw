@@ -2,6 +2,7 @@
 sidebar_position: 1
 id: syntax
 title: Syntax
+image: https://github.com/z-shell/zi/raw/main/docs/images/logo.png
 description: Syntax documentation for Z-Shell ZI
 keywords: [syntax, zsh, z-shell, zi]
 ---
@@ -32,7 +33,7 @@ zi as"null" wait"3" lucid for \
 ```
 
 Above single command installs 6 plugins (Git extension packages),
- with the base ices `as"null" wait"3" lucid` that are common to all of the plugins and 6 plugin-specific add-on ices.
+with the base ices `as"null" wait"3" lucid` that are common to all of the plugins and 6 plugin-specific add-on ices.
 
 :::info
 
@@ -52,7 +53,7 @@ zi as"null" wait"2" lucid from"gh-r" for \
 :::note
 
 - `sbin''` is an ice added by the [z-a-bin-gem-node](https://github.com/z-shell/z-a-bin-gem-node) annex,
-it provides the command to the command line without altering `$PATH`.
+  it provides the command to the command line without altering `$PATH`.
 
 - If the name of the command is the same as the name of the plugin, the ice contents can be skipped.
 
@@ -82,6 +83,7 @@ zi light tj/git-extras
 ```
 
 - `Makefile` of this project has only 2 tasks:
+
   1. Install the target.
   2. Build scripts that is required for installation.
 

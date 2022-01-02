@@ -7,7 +7,6 @@ description: A Swiss Army Knife for Zsh - Unix shell
 keywords: [introduction, zsh, z-shell, zi]
 ---
 
-
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

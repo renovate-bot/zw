@@ -2,6 +2,7 @@
 sidebar_position: 2
 id: ice
 title: Ice Syntax
+image: https://github.com/z-shell/zi/raw/main/docs/images/logo.png
 description: Ice syntax documentation
 keywords: [ice, zsh, z-shell, zi]
 ---
@@ -251,7 +252,7 @@ zi load unixorn/git-extra-commands
 - waits until user enters a `github` directory.
 
 Turbo mode also support a suffix – the letter `a`, `b` or `c`.
- The meaning is illustrated by the following example:
+The meaning is illustrated by the following example:
 
 ```shell
 zi ice wait"0b" as"command" pick"wd.sh" atinit"echo Firing 1" lucid
@@ -293,7 +294,7 @@ zi ice wrap-track"func1;func2;…" …
 
 Therefore, to e.g. load and unload the example powerlevel10k prompt in the
 fashion of [**Multiple prompts**](../gallery/preferences#multiple-prompts) article,
- the `precmd` function of the plugin – called `_p9k_precmd` (to get the name of the function
+the `precmd` function of the plugin – called `_p9k_precmd` (to get the name of the function
 do `echo $precmd_functions` after loading a theme) – should be passed to
 `wrap-track''` ice, like so:
 
@@ -490,7 +491,7 @@ Last, **`atload`** is being activated:
 - **after loading** of the associated plugin or snippet.
 
 For convenience, you can use each of the ices multiple times in single `zi ice …` invocation
- – all the passed commands will be executed in the given order.
+– all the passed commands will be executed in the given order.
 
 The `atpull` ice recognizes a special value: `%atclone` (so the code looks i.e.:
 `atpull'%atclone'`). It causes the contents of the `atclone` ice to be copied

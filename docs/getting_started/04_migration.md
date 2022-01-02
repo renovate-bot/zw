@@ -2,13 +2,14 @@
 sidebar_position: 4
 id: migration
 title: Migration
+image: https://github.com/z-shell/zi/raw/main/docs/images/logo.png
 description: Migration to Z-Shell ZI support
 keywords: [migration, zsh, z-shell, zi]
 ---
 
-### Migration from Oh-My-ZSH {#migration-from-oh-my-zsh}
+## Migration from Oh-My-ZSH {#migration-from-oh-my-zsh}
 
-**Basic**
+### Oh-My-Zsh basics {#oh-my-zsh-basics}
 
 ```shell
 zi snippet <URL>        # Raw Syntax with URL
@@ -18,7 +19,7 @@ zi snippet OMZT::<PATH> # Shorthand OMZ/themes/
 zi snippet OMZP::<PATH> # Shorthand OMZ/plugins/
 ```
 
-**Library**
+### Oh-My-Zsh library {#oh-my-zsh-library}
 
 Importing the [clipboard](https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/clipboard.zsh) and [termsupport](https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/termsupport.zsh) from the Oh-My-Zsh library Sample:
 
@@ -36,9 +37,13 @@ zi snippet OMZL::clipboard.zsh
 zi snippet OMZL::termsupport.zsh
 ```
 
-**Theme**
+### Oh-My-Zsh Themes {#oh-my-zsh-themes}
+
+:::tip
 
 To use **themes** created for Oh My Zsh you might want to first source the `git` library there.
+
+:::
 
 Then you can use the themes as snippets (`zi snippet <file path or GitHub URL>`).
 Some themes require not only Oh My Zsh's Git **library**, but also Git **plugin** (error
@@ -92,7 +97,7 @@ setopt promptsubst
 zi light NicoSantangelo/Alpharized
 ```
 
-**_F&A:_** Error occurs when loading OMZ's theme.
+:::info
 
 If the `git` library will not be loaded, then similar to following errors will be appearing:
 
@@ -101,7 +106,9 @@ If the `git` library will not be loaded, then similar to following errors will b
 ........:1: command not found: git_prompt_short_sha
 ```
 
-**Plugin**
+:::
+
+### Oh-My-Zsh Plugins {#oh-my-zsh-plugins}
 
 If it consists of a single file, you can just load it.
 
@@ -147,9 +154,9 @@ zi snippet OMZP::fd/_fd
 
 [You can see an extended explanation of Oh-My-Zsh setup in the Wiki](../gallery/ohmyzsh)
 
-### Migration from Prezto {#migration-from-prezto}
+## Migration from Prezto {#migration-from-prezto}
 
-**Basic**
+### Prezto basics {#prezto-basics}
 
 ```shell
 zi snippet <URL>        # Raw Syntax with URL
@@ -157,7 +164,7 @@ zi snippet PZT::<PATH>  # Shorthand PZT/ (https://github.com/sorin-ionescu/prezt
 zi snippet PZTM::<PATH> # Shorthand PZT/modules/
 ```
 
-**Modules**
+#### Prezto moduless {#prezto-moduless}
 
 Importing the [environment](https://github.com/sorin-ionescu/prezto/tree/master/modules/environment) and [terminal](https://github.com/sorin-ionescu/prezto/tree/master/modules/terminal) Prezto Modules Sample:
 
@@ -207,15 +214,23 @@ zi ice svn blockf \ # use blockf to prevent any unnecessary additions to fpath, 
 zi snippet PZTM::completion
 ```
 
-**_F&A:_** What is `zstyle`?
+:::tip
+
+What is `zstyle`?
 
 Read [zstyle](http://zsh.sourceforge.net/Doc/Release/Zsh-Modules.html#The-zsh_002fzutil-Module) doc (more: [What does `zstyle` do?](https://unix.stackexchange.com/questions/214657/what-does-zstyle-do)).
 
+:::
+
 ### Migration from Zgen {#migration-from-zgen}
 
-**Oh My Zsh**
+### Oh-My-Zsh difference {#oh-my-zsh-difference}
 
-More reference: check **Migration from Oh-My-ZSH**
+:::note
+
+More reference: check [Migration from Oh-My-ZSH](#migration-from-oh-my-zsh)
+
+:::
 
 ```shell
 # Load ohmyzsh base
@@ -227,9 +242,13 @@ zgen oh-my-zsh <PATH>
 zi snippet OMZ::<PATH>
 ```
 
-**Prezto**
+## Prezto difference {#prezto-difference}
 
-More reference: check **Migration from Prezto**
+:::note
+
+More reference: check [Migration from Prezto](#migration-from-prezto)
+
+:::
 
 ```shell
 # Load Prezto
@@ -250,9 +269,13 @@ zgen prezto <modulename> <option> <value(s)>
 zstyle ':prezto:<modulename>:' <option> <values(s)> # Set original prezto style
 ```
 
-**General**
+### General {#general}
+
+:::info
 
 `location`: refer [Selection of Files](../guides/ice#src-pick-multisrc)
+
+:::
 
 ```shell
 zgen load <repo> [location] [branch]
@@ -261,9 +284,9 @@ zi ice ver"[branch]"
 zi load <repo>
 ```
 
-### Migration from Zplug {#migration-from-zplug}
+## Migration from Zplug {#migration-from-zplug}
 
-**Basic**
+### Zplug basics {#zplug-basics}
 
 ```shell
 zplug <repo/plugin>, tag1:<option1>, tag2:<option2>
@@ -272,7 +295,7 @@ zi ice tag1"<option1>" tag2"<option2>"
 zi load <repo/plugin>
 ```
 
-**Tag comparison**
+### Tag comparison {#tag-comparison}
 
 - `as` => `as`
 - `use` => `pick`, `src`, `multisrc`

@@ -2,6 +2,7 @@
 sidebar_position: 3
 id: useage
 title: Usage
+image: https://github.com/z-shell/zi/raw/main/docs/images/logo.png
 description: Usage examples for Z-Shell ZI
 keywords: [usage, zsh, z-shell, zi]
 ---

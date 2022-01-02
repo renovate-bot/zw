@@ -1,7 +1,7 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 id: packages
-title: Packages
+title: Packages Guide
 description: Packages documentation
 keywords: [package, zsh, z-shell, zi]
 ---

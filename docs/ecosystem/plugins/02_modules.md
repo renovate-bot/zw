@@ -1,8 +1,8 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 id: modules
-title: Zsh Modules
-description: Modules documentation
+title: Modules
+description: Zsh modules documentation
 keywords: [modules, zsh, z-shell, zi]
 ---
 
