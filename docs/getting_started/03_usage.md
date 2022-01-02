@@ -22,9 +22,7 @@ If you want to source local or remote files (using direct URL), you can do so wi
 zi snippet <URL>
 ```
 
-Such lines should be added to `.zshrc`. Snippets are cached locally, use `-f` option to download
-a fresh version of a snippet, or `zi update {URL}`. Can also use `zi update --all` to
-update all snippets (and plugins).
+Such lines should be added to `.zshrc`. Snippets are cached locally, use `-f` option to download a fresh version of a snippet, or `zi update {URL}`. Can also use `zi update --all` to update all snippets (and plugins).
 
 **Example**
 
@@ -109,8 +107,7 @@ zi load z-shell/history-search-multi-word
 
 **_F&A:_** What is `ice`?
 
-`ice` is Zi's options command. The option melts like ice and is used only once.
-(more: [Ice Modifiers](../guides/ice-modifiers)).
+`ice` is Zi's options command. The option melts like ice and is used only once. (more: [Ice Modifiers](../guides/ice-modifiers)).
 
 ## More Examples {#more-examples}
 
@@ -176,9 +173,7 @@ zi ice as"program" make'!' atclone'./direnv hook zsh > zhook.zsh' atpull'%atclon
 zi light direnv/direnv
 ```
 
-If you're interested in more examples then check out the [playground repository](https://github.com/z-shell/playground) where users have uploaded their
-`~/.zshrc` and ZI configurations. Feel free to [submit](https://github.com/z-shell/playground/issues/new?template=request-to-add-zshrc-to-the-zi-configs-repo.md)
-your `~/.zshrc` there if it contains ZI commands.
+If you're interested in more examples then check out the [playground repository](https://github.com/z-shell/playground) where users have uploaded their `~/.zshrc` and ZI configurations. Feel free to [submit](https://github.com/z-shell/playground/issues/new?template=request-to-add-zshrc-to-the-zi-configs-repo.md) your `~/.zshrc` there if it contains ZI commands.
 
 For some additional examples you can also check out the:
 

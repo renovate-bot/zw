@@ -5,9 +5,7 @@ description: Annex - Test documentation
 keywords: [annex, test, zsh, z-shell, zi]
 ---
 
-[Test](https://github.com/z-shell/z-a-test) annex runs tests (via `make test`, for example)
- – if it finds any of them – after installing and updating a plugin or snippet.
-  Simply load it like any other plugin to make it active:
+[Test](https://github.com/z-shell/z-a-test) annex runs tests (via `make test`, for example) – if it finds any of them – after installing and updating a plugin or snippet. Simply load it like any other plugin to make it active:
 
 ```shell
 zi light z-shell/z-a-test
@@ -21,8 +19,7 @@ To run the tests in a verbose mode, issue:
 zstyle :zi:annex:test quiet 0
 ```
 
-before installing or updating the plugin. To skip tests for a single plugin,
-add `notest` ice:
+before installing or updating the plugin. To skip tests for a single plugin, add `notest` ice:
 
 ```shell
 zi ice notest

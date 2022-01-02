@@ -45,16 +45,11 @@ To use **themes** created for Oh My Zsh you might want to first source the `git`
 
 :::
 
-Then you can use the themes as snippets (`zi snippet <file path or GitHub URL>`).
-Some themes require not only Oh My Zsh's Git **library**, but also Git **plugin** (error
-about `current_branch` may appear). Load this Git-plugin as single-file
-snippet directly from OMZ.
+Then you can use the themes as snippets (`zi snippet <file path or GitHub URL>`). Some themes require not only Oh My Zsh's Git **library**, but also Git **plugin** (error about `current_branch` may appear). Load this Git-plugin as single-file snippet directly from OMZ.
 
-Most themes require the `promptsubst` option (`setopt promptsubst` in `zshrc`), if it isn't set, then
-prompt will appear as something like: `... $(build_prompt) ...`.
+Most themes require the `promptsubst` option (`setopt promptsubst` in `zshrc`), if it isn't set, then prompt will appear as something like: `... $(build_prompt) ...`.
 
-You might want to suppress completions provided by the git plugin by issuing `zi cdclear -q`
-(`-q` is for quiet) – see below **Ignoring Compdefs**.
+You might want to suppress completions provided by the git plugin by issuing `zi cdclear -q` (`-q` is for quiet) – see below **Ignoring Compdefs**.
 
 To summarize:
 
@@ -130,8 +125,7 @@ zi snippet OMZP::rbenv
 zi snippet OMZP::ruby
 ```
 
-Use `zi ice svn` if multiple files require an entire subdirectory.
-Like [gitfast](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gitfast), [osx](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/osx):
+Use `zi ice svn` if multiple files require an entire subdirectory. Like [gitfast](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gitfast), [osx](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/osx):
 
 ```shell
 zi ice svn
@@ -141,8 +135,7 @@ zi ice svn
 zi snippet OMZP::osx
 ```
 
-Use `zi ice as"completion"` to directly add single file completion snippets.
-Like [docker](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/docker), [fd](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/fd):
+Use `zi ice as"completion"` to directly add single file completion snippets. Like [docker](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/docker), [fd](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/fd):
 
 ```shell
 zi ice as"completion"
@@ -186,8 +179,7 @@ zi snippet PZTM::environment
 zi snippet PZTM::terminal
 ```
 
-Use `zi ice svn` if multiple files require an entire subdirectory.
-Like [docker](https://github.com/sorin-ionescu/prezto/tree/master/modules/docker), [git](https://github.com/sorin-ionescu/prezto/tree/master/modules/git):
+Use `zi ice svn` if multiple files require an entire subdirectory. Like [docker](https://github.com/sorin-ionescu/prezto/tree/master/modules/docker), [git](https://github.com/sorin-ionescu/prezto/tree/master/modules/git):
 
 ```shell
 zi ice svn
@@ -197,16 +189,14 @@ zi ice svn
 zi snippet PZTM::git
 ```
 
-Use `zi ice as"null"` if don't exist `*.plugin.zsh`, `init.zsh`, `*.zsh-theme*` files in module.
-Like [archive](https://github.com/sorin-ionescu/prezto/tree/master/modules/archive):
+Use `zi ice as"null"` if don't exist `*.plugin.zsh`, `init.zsh`, `*.zsh-theme*` files in module. Like [archive](https://github.com/sorin-ionescu/prezto/tree/master/modules/archive):
 
 ```shell
 zi ice svn as"null"
 zi snippet PZTM::archive
 ```
 
-Use `zi ice atclone"git clone <repo> <location>"` if module have external module.
-Like [completion](https://github.com/sorin-ionescu/prezto/tree/master/modules/completion):
+Use `zi ice atclone"git clone <repo> <location>"` if module have external module. Like [completion](https://github.com/sorin-ionescu/prezto/tree/master/modules/completion):
 
 ```shell
 zi ice svn blockf \ # use blockf to prevent any unnecessary additions to fpath, as zi manages fpath

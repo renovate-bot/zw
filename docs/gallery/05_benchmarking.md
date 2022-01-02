@@ -15,10 +15,7 @@ zi light z-shell/F-Sy-H
 - `atinit''` loads `zsh/zprof` module (shipped with Zsh) before loading the plugin – this starts the profiling,
 - `atload''` works after loading the plugin – shows profiling results (`zprof | head`), unloads `zsh/zprof` - this stops the profiling;
 
-  - While in effect, only a single plugin (in this case `z-shell/F-Sy-H`) will be profiled.
-    The rest plugins will go on completely normally, as when plugins are loaded with `light` - reporting is disabled.
-    Less code is being run in the background – (i.e. the automatic data gathering, during loading of a plugin,
-    for the reports and the possibility to unload the plugin) will be activated and the functions will not appear in the `zprof` report.
+  - While in effect, only a single plugin (in this case `z-shell/F-Sy-H`) will be profiled. The rest plugins will go on completely normally, as when plugins are loaded with `light` - reporting is disabled. Less code is being run in the background – (i.e. the automatic data gathering, during loading of a plugin, for the reports and the possibility to unload the plugin) will be activated and the functions will not appear in the `zprof` report.
 
 - Example `zprof` report:
 
@@ -44,11 +41,12 @@ num calls    time                self                 name
 ```
 
 - the first column is the time is in milliseconds;
+
   - It denotes the amount of time spent in a function in total.
   - For example, `--zi-shadow-autoload` consumed 10.71 ms of the execution time,
 
-- the fourth column is also a time in milliseconds, but it denotes the amount of time spent on executing only of function's **own code**,
-  it doesn't count the time spent in **descendant functions** that are called from the function;
+- the fourth column is also a time in milliseconds, but it denotes the amount of time spent on executing only of function's **own code**, it doesn't count the time spent in **descendant functions** that are called from the function;
+
   - For example, `--zi-shadow-autoload` spent 8.71 ms on executing only its own code.
 
 - the table is sorted on the **self-time** column.

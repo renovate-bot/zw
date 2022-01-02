@@ -10,9 +10,7 @@ keywords: [modules, zsh, z-shell, zi]
 
 [![👾 CodeQL](https://github.com/z-shell/zpmod/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/z-shell/zpmod/actions/workflows/codeql-analysis.yml)
 
-The module is a binary Zsh module (think about `zmodload` Zsh command, it's that topic) which transparently and
-automatically **compiles sourced scripts**. Many plugin managers do not offer a compilation of plugins, the module is
-a solution to this. Even if a plugin manager does compile the plugin's main script (like ZI does).
+The module is a binary Zsh module (think about `zmodload` Zsh command, it's that topic) which transparently and automatically **compiles sourced scripts**. Many plugin managers do not offer a compilation of plugins, the module is a solution to this. Even if a plugin manager does compile the plugin's main script (like ZI does).
 
 ## Installation {#installation}
 
@@ -48,11 +46,7 @@ This command will compile the module and display instructions on what to add to 
 
 ## Measuring Time of sources {#measuring-time-of-sources}
 
-Besides the compilation feature, the module also measures **duration** of each script sourcing.
-Issue `zpmod source-study` after loading the module at top of `~/.zshrc` to see a list of all sourced files with the time the
-sourcing took in milliseconds on the left.
-This feature allows profiling the shell startup. Also, no script can pass through that check and you will obtain a complete list of all loaded scripts,
-like if Zshell itself was investigating this. The list can be surprising.
+Besides the compilation feature, the module also measures **duration** of each script sourcing. Issue `zpmod source-study` after loading the module at top of `~/.zshrc` to see a list of all sourced files with the time the sourcing took in milliseconds on the left. This feature allows profiling the shell startup. Also, no script can pass through that check and you will obtain a complete list of all loaded scripts, like if Zshell itself was investigating this. The list can be surprising.
 
 ## Debugging {#debugging}
 
