@@ -1,14 +1,19 @@
-# [https://z-shell.pages.dev](https://z-shell.pages.dev)
+# Wiki Pages
+
+- [https://z-shell.pages.dev](https://z-shell.pages.dev)
+- [https://z.digitalclouds.dev](https://z.digitalclouds.dev)
+
+## Development
 
 Open in [SandBox](https://codesandbox.io/s/z-shell-pages-dev-4z5ne)
 
-## Installation
+### Installation
 
 ```shell
 yarn
 ```
 
-## Local Development
+### Local Development
 
 ```shell
 yarn start
@@ -16,7 +21,7 @@ yarn start
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-## Build
+### Build
 
 ```shell
 yarn build
@@ -24,7 +29,7 @@ yarn build
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-## Deployment
+### Deployment
 
 Using SSH:
 
