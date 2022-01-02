@@ -17,7 +17,7 @@ Documentation automatically updated every `Thursday 4:30 UTC` at [z-shell/docs](
 | [side.zsh][side.zsh]             |       [adoc][side.adoc], [pdf][install.pdf], [html][install.html]       | Functions, loaded by `*install` and `*autoload` scripts |
 | [install.zsh][install.zsh]       |     [adoc][install.adoc], [pdf][install.pdf], [html][install.html]      | Functions used only when installing a plugin or snippet |
 | [autoload.zsh][autoload.zsh]     |    [adoc][autoload.pdf], [pdf][autoload.pdf], [html][autoload.html]     | Functions used only in interactive `ZI` invocations     |
-| [additional.zsh][additional.zsh] | [adoc][additional.adoc], [pdf][additional.pdf], [html][additional.html] | Functions additonal support                             |
+| [additional.zsh][additional.zsh] | [adoc][additional.adoc], [pdf][additional.pdf], [html][additional.html] | Additonal support for functions                         |
 
 [zi.zsh]: https://github.com/z-shell/zi/blob/main/zi.zsh
 [zi.adoc]: https://github.com/z-shell/docs/blob/main/code/zsdoc/asciidoc/zi.zsh.adoc
