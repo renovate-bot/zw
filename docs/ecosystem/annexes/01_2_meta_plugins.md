@@ -2,7 +2,7 @@
 id: meta-plugins
 title: Meta Plugins
 description: Annex - meta plugins documentation
-keywords: [annex, meta-plugins ,zsh, z-shell, zi]
+keywords: [annex, meta-plugins, zsh, z-shell, zi]
 ---
 
 - [Meta plugins](https://github.com/z-shell/z-a-meta-plugins) annex have the curated, optimal ice lists automatically applied.
@@ -20,24 +20,23 @@ It consumes time to:
 
 - Constantly, over and over collect some new interesting plugins to install/load.
 - Over and over reconstruct the new findings on the new machines.
-- Constantly extend and tweak the ice list of each plugin,
-   so that it's hard on the eyes, especially for an outsider.
+- Constantly extend and tweak the ice list of each plugin, so that it's hard on the eyes, especially for an outsider.
 
 ## Meta Plugins Annex basics {#meta-plugins-annex-basics}
 
-|                        Problem                        | Solution                                                                                                                                                                                                                                                                           |
-|:-----------------------------------------------------:|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|               (1) _finding new plugins_               | the annex contains a curated, broad list of plugins, e.g.: all the console tools like `fd`, `fzf`, `exa`, `ripgrep`, etc.,                                                                                                                                                         |
-| (2) _reconstructing the findings in new environments_ | it's easy to say and memorize e.g.: `zi for console-tools` – one label pulls a group of plugins and also the curated, optimal, default ice lists for each of them,                                                                                                                 |
+| Problem | Solution |
+| :-: | --- |
+| (1) _finding new plugins_ | the annex contains a curated, broad list of plugins, e.g.: all the console tools like `fd`, `fzf`, `exa`, `ripgrep`, etc., |
+| (2) _reconstructing the findings in new environments_ | it's easy to say and memorize e.g.: `zi for console-tools` – one label pulls a group of plugins and also the curated, optimal, default ice lists for each of them, |
 | (3) _constant increase of complexity of the commands_ | the provided, hopefully, best/optimal ices for each plugin are handled transparently and automatically; care is given to each ice list so that the plugin loads without any glitches (e.g.: without "No files for compilation found." message and other, even such slight issues). |
 
 Other unique benefits of the Meta-Plugins annex:
 
-|                           Benefit                           | Description                                                                                                                                                                                                                                                                                                     |
-|:-----------------------------------------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                     plugin dependencies                     | The meta-plugins implement a dependency mechanism (to some extent), so that e.g.: selecting a from-source built [ogham/exa](https://github.com/ogham/exa) will automatically pull-in also the Rust compiler (available under meta-plugin name: `rust-toolchain`).                                               |
+| Benefit | Description |
+| :-: | --- |
+| plugin dependencies | The meta-plugins implement a dependency mechanism (to some extent), so that e.g.: selecting a from-source built [ogham/exa](https://github.com/ogham/exa) will automatically pull-in also the Rust compiler (available under meta-plugin name: `rust-toolchain`). |
 | flexible disabling of chosen sub-plugins in any meta-plugin | A meta-plugin can contain many sub-plugins and it's possible to skip installing some of them by the **skip'plg-1 plg-2…'** ice, e.g.: `zi skip'ripgrep fd' for console-tools`. This way despite that some of the meta-plugins are broad the user still has control over what's and how much is being installed. |
-|               common from-source meta-plugins               | For the plugins that provide the binary programs it is often the case that a meta-plugin exists that'll build the program from source (e.g.: **fuzzy** meta-plugin and its **fuzzy-src** counterpart). This might be handy e.g.: if there's no binary for our machine.                                          |
+| common from-source meta-plugins | For the plugins that provide the binary programs it is often the case that a meta-plugin exists that'll build the program from source (e.g.: **fuzzy** meta-plugin and its **fuzzy-src** counterpart). This might be handy e.g.: if there's no binary for our machine. |
 
 ## The list of the currently available meta-plugin groups {#the-list-of-the-currently-available-meta-plugin-groups}
 

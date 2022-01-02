@@ -2,6 +2,7 @@
 sidebar_position: 1
 id: installation
 title: Installation
+image: https://github.com/z-shell/zi/raw/main/docs/images/logo.png
 description: Installation guide for Z-Shell ZI
 keywords: [installation, zsh, z-shell, zi]
 ---
@@ -12,7 +13,9 @@ keywords: [installation, zsh, z-shell, zi]
 
 Append `-b <tag>` or `-b <branch>` e.g:
 
-`sh -c "$(curl -fsSL https://git.io/get-zi)" -- -i skip -b v1.0.0`
+```shell
+sh -c "$(curl -fsSL https://git.io/get-zi)" -- -i skip -b v1.0.0
+```
 
 :::
 

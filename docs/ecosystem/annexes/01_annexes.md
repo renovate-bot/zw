@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 id: annexes
+slug: /ecosystem/annexes
 title: Annexes Guide
 description: Annexes documentation
 keywords: [annex, zsh, z-shell, zi]
@@ -8,13 +9,11 @@ keywords: [annex, zsh, z-shell, zi]
 
 ## What Are They? {#what-are-they}
 
-They are [extensions](https://github.com/z-shell/zannexes) which increase functionality.
-Annexes can extend the functionality without adding unnecessary code to main application.
+They are [extensions](https://github.com/z-shell/zannexes) which increase functionality. Annexes can extend the functionality without adding unnecessary code to main application.
 
 ## What Can They Do? {#what-can-they-do}
 
-1. Add a new ZI subcommand (i.e. the command that’s placed after the
-   function `zi …` when calling ZI).
+1. Add a new ZI subcommand (i.e. the command that’s placed after the function `zi …` when calling ZI).
 
 2. Add new ice-modifiers.
 
@@ -75,10 +74,7 @@ for mod in "${mods[@]}"; do
 done
 ```
 
-The recommended method of creating a hook is to place its body into a file that
-starts with a right arrow `→` ([more information](https://z-shell.github.io/docs/zsh/Zsh-Plugin-Standard.html#_the_proposed_function_name_prefixes),
-and also a `za-` prefix, e.g. `→za-myproject-atclone-hook` and then to mark it for autoloading via `autoload -Uz →za-myproject-atclone-hook`.
-Then register the hook (presumably in the `myproject.plugin.zsh` file) with the API call:
+The recommended method of creating a hook is to place its body into a file that starts with a right arrow `→` ([more information](https://z-shell.github.io/docs/zsh/Zsh-Plugin-Standard.html#_the_proposed_function_name_prefixes), and also a `za-` prefix, e.g. `→za-myproject-atclone-hook` and then to mark it for autoloading via `autoload -Uz →za-myproject-atclone-hook`. Then register the hook (presumably in the `myproject.plugin.zsh` file) with the API call:
 
 `@zi-register-annex`:
 
@@ -99,11 +95,7 @@ The general syntax of the API call is:
   "{ice-mod1}|{ice-mod2}|…" < hook-type >| subcommand: < new-subcommand-name > }
 ```
 
-The last argument, i.e. the `|`-separated ice-list, is optional. That’s all\!
-After this loading the plugin `myproject` will set up the new ice-mod `submods`
-that will have syntax `submods'{user}/{plugin} –> {output-dir}; …'` and
-will clone submodules when installing the original plugin or snippet\! Example
-real-world use of the ice-mod:
+The last argument, i.e. the `|`-separated ice-list, is optional. That’s all\! After this loading the plugin `myproject` will set up the new ice-mod `submods` that will have syntax `submods'{user}/{plugin} –> {output-dir}; …'` and will clone submodules when installing the original plugin or snippet\! Example real-world use of the ice-mod:
 
 ```shell
 # Load the `zsh-autosuggestions' plugin via Prezto module: `autosuggestions'
@@ -111,25 +103,16 @@ zi ice svn submods'zsh-users/zsh-autosuggestions -> external'
 zi snippet PZT::modules/autosuggestions
 ```
 
-Checkout the project which fully implements this idea,
-[**zi/z-a-submods**](https://github.com/z-shell/z-a-submods). It e.g. also
-implements the `atpull` hook, i.e. supports automatic update of the submodules.
-The `z-a-*` prefix is recommended for projects that are being annexes.
+Checkout the project which fully implements this idea, [**zi/z-a-submods**](https://github.com/z-shell/z-a-submods). It e.g. also implements the `atpull` hook, i.e. supports automatic update of the submodules. The `z-a-*` prefix is recommended for projects that are being annexes.
 
 ## Details {#details}
 
 There are 2 or 3 subtypes for each of the hook:
 
-1. `atinit` or `!atinit` – the `!` version is ran before the `atinit`
-   **ice-mod** (i.e. before `zi ice atinit'echo this!'; …`), while
-   the normal version runs after it.
+1. `atinit` or `!atinit` – the `!` version is ran before the `atinit` **ice-mod** (i.e. before `zi ice atinit'echo this!'; …`), while the normal version runs after it.
 
-2. `atload` or `!atload` – analogous to the `atinit` case: the `!` version runs
-   before the `atload` **ice-mod** (while the normal version runs after it).
+2. `atload` or `!atload` – analogous to the `atinit` case: the `!` version runs before the `atload` **ice-mod** (while the normal version runs after it).
 
 3. `atclone` or `!atclone` – analogous to the `atinit` and `atload` cases.
 
-4. `atpull`, `!atpull` or `%atpull` – the first two are being ran **only when
-   there are new commits to be downloaded** during the update. The `%` version
-   is being **always** run, regardless if the update will pull any actual
-   commits or not, and it is being ran **after** the `atpull` **ice-mod**.
+4. `atpull`, `!atpull` or `%atpull` – the first two are being ran **only when there are new commits to be downloaded** during the update. The `%` version is being **always** run, regardless if the update will pull any actual commits or not, and it is being ran **after** the `atpull` **ice-mod**.

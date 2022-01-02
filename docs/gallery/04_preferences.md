@@ -14,46 +14,38 @@ Following variables can be set to custom values, before sourcing ZI.
 declare -A ZI  # initial ZI's hash definition, if configuring before loading ZI, and then:
 ```
 
-| Hash Field          | Description                                                                 |
-|---------------------|-----------------------------------------------------------------------------|
-| ZI[BIN_DIR]         | Where ZI code resides, e.g.: "~/.zi/bin"                                    |
-| ZI[HOME_DIR]        | Where ZI should create all working directories, e.g.: "~/.zi"               |
-| ZI[PLUGINS_DIR]     | Override single working directory – for plugins, e.g. "/opt/zsh/zi/plugins" |
-| ZI[COMPLETIONS_DIR] | As above, but for completion files, e.g. "/opt/zsh/zi/root_completions"     |
-| ZI[SNIPPETS_DIR]    | As above, but for snippets                                                  |
-|                                |
-| ZI[ZMODULES_DIR]               | Override single working directory – for Zsh modules e.g. "/opt/zsh/zi/zmodules"                                                                                                                                                                                                                                                                                                                     |
-|                                |
-| ZI[ZCOMPDUMP_PATH]             | Path to `.zcompdump` file, with the file included (i.e. its name can be different)                                                                                                                                                                                                                                                                                                                  |
-| ZI[COMPINIT_OPTS]              | Options for `compinit` call (i.e. done by `zicompinit`), use to pass -C to speed up loading                                                                                                                                                                                                                                                                                                         |
-| ZI[MUTE_WARNINGS]              | If set to `1`, then mutes some of the ZI warnings, specifically the `plugin already registered` warning                                                                                                                                                                                                                                                                                             |
+| Hash Field | Description |
+| --- | --- |
+| ZI[BIN_DIR] | Where ZI code resides, e.g.: "~/.zi/bin" |
+| ZI[HOME_DIR] | Where ZI should create all working directories, e.g.: "~/.zi" |
+| ZI[PLUGINS_DIR] | Override single working directory – for plugins, e.g. "/opt/zsh/zi/plugins" |
+| ZI[COMPLETIONS_DIR] | As above, but for completion files, e.g. "/opt/zsh/zi/root_completions" |
+| ZI[SNIPPETS_DIR] | As above, but for snippets |
+|  |
+| ZI[ZMODULES_DIR] | Override single working directory – for Zsh modules e.g. "/opt/zsh/zi/zmodules" |
+|  |
+| ZI[ZCOMPDUMP_PATH] | Path to `.zcompdump` file, with the file included (i.e. its name can be different) |
+| ZI[COMPINIT_OPTS] | Options for `compinit` call (i.e. done by `zicompinit`), use to pass -C to speed up loading |
+| ZI[MUTE_WARNINGS] | If set to `1`, then mutes some of the ZI warnings, specifically the `plugin already registered` warning |
 | ZI[OPTIMIZE_OUT_DISK_ACCESSES] | If set to `1`, then ZI will skip checking if a Turbo-loaded object exists on the disk. By default, ZI skips Turbo for non-existing objects (plugins or snippets) to install them before the first prompt – without any delays, during the normal processing of `zshrc`. This option can give a performance gain of about 10 ms out of 150 ms (i.e.: Zsh will start-up in 140 ms instead of 150 ms). |
 
-There is also `$ZPFX`, set by default to `~/.zi/polaris` – a directory
-where software with `Makefile`, etc. can be pointed to, by e.g. `atclone'./configure --prefix=$ZPFX'`.
+There is also `$ZPFX`, set by default to `~/.zi/polaris` – a directory where software with `Makefile`, etc. can be pointed to, by e.g. `atclone'./configure --prefix=$ZPFX'`.
 
 ## Non-GitHub (Local) Plugins {#non-github-local-plugins}
 
-Use `create` subcommand with user name `_local` (the default) to create the plugin's
-skeleton in `$ZI[PLUGINS_DIR]`. It will be not connected with the GitHub repository
-(because of the user name being `_local`). To enter the plugin's directory use the `cd` command
-with just the plugin's name (without `_local`, it's optional).
+Use `create` subcommand with user name `_local` (the default) to create the plugin's skeleton in `$ZI[PLUGINS_DIR]`. It will be not connected with the GitHub repository (because of the user name being `_local`). To enter the plugin's directory use the `cd` command with just the plugin's name (without `_local`, it's optional).
 
-If the user name will not be `_local`, then ZI will create a repository also on GitHub
-and set up the correct repository origin.
+If the user name will not be `_local`, then ZI will create a repository also on GitHub and set up the correct repository origin.
 
 ## Extending Git {#extending-git}
 
 Several projects provide git extensions. Installing them with ZI has many benefits:
 
 - all files are under `$HOME` – no administrator rights needed,
-- declarative setup (like Chef or Puppet) – copying `.zshrc` to a different account
-  brings also git-related setup,
+- declarative setup (like Chef or Puppet) – copying `.zshrc` to a different account brings also git-related setup,
 - easy update by e.g. `zi update --all`.
 
-Below is a configuration that adds multiple git extensions, loaded in Turbo mode,
-1 second after prompt, with use of the
-[Bin-Gem-Node](https://github.com/z-shell/z-a-bin-gem-node) annex:
+Below is a configuration that adds multiple git extensions, loaded in Turbo mode, 1 second after prompt, with use of the [Bin-Gem-Node](https://github.com/z-shell/z-a-bin-gem-node) annex:
 
 ```shell
 zi as"null" wait"1" lucid for \
@@ -103,31 +95,15 @@ zi light-mode for z-shell/z-a-meta-plugins @annexes @ext-git
 
 ## Setopt {#setopt}
 
-Options are primarily referred to by name.
-These names are case insensitive and underscores are ignored.
-For example, `allexport` is equivalent to `A__lleXP_ort`.
+Options are primarily referred to by name. These names are case insensitive and underscores are ignored. For example, `allexport` is equivalent to `A__lleXP_ort`.
 
-The sense of an option name may be inverted by preceding it with `no`,
-so `setopt No_Beep` is equivalent to `unsetopt beep`.
-This inversion can only be done once, so `nonobeep` is not a synonym for `beep`. Similarly,
-`tify` is not a synonym for `nonotify` (the inversion of `notify`).
+The sense of an option name may be inverted by preceding it with `no`, so `setopt No_Beep` is equivalent to `unsetopt beep`. This inversion can only be done once, so `nonobeep` is not a synonym for `beep`. Similarly, `tify` is not a synonym for `nonotify` (the inversion of `notify`).
 
-Some options also have one or more single letter names.
-There are two sets of single letter options: one used by default,
-and another used to emulate sh/ksh (used when the SH_OPTION_LETTERS option is set).
-The single letter options can be used on the shell command line, or with the set,
-setopt and unsetopt builtins, as normal Unix options preceded by `-`.
+Some options also have one or more single letter names. There are two sets of single letter options: one used by default, and another used to emulate sh/ksh (used when the SH_OPTION_LETTERS option is set). The single letter options can be used on the shell command line, or with the set, setopt and unsetopt builtins, as normal Unix options preceded by `-`.
 
-The sense of the single letter options may be inverted by using `+` instead of `-`.
-Some of the single letter option names refer to an option being off,
-in which case the inversion of that name refers to the option being on.
-For example, `+n` is the short name of `exec`, and `-n` is the short name of its inversion,
-`noexec`.
+The sense of the single letter options may be inverted by using `+` instead of `-`. Some of the single letter option names refer to an option being off, in which case the inversion of that name refers to the option being on. For example, `+n` is the short name of `exec`, and `-n` is the short name of its inversion, `noexec`.
 
-In strings of single letter options supplied to the shell at startup,
-trailing whitespace will be ignored; for example the string `-f ` will be treated just as `-f`,
-but the string `-f i` is an error. This is because many systems which implement the `#!` mechanism
-for calling scripts do not strip trailing whitespace.
+In strings of single letter options supplied to the shell at startup, trailing whitespace will be ignored; for example the string `-f ` will be treated just as `-f`, but the string `-f i` is an error. This is because many systems which implement the `#!` mechanism for calling scripts do not strip trailing whitespace.
 
 ```shell
 #
@@ -159,9 +135,7 @@ setopt promptsubst              # Enables the substitution of parameters inside 
 
 ## Zstyle {#zstyle}
 
-`zstyle` handles the obvious style control for the completion system, but it seems to cover more than just that.
-E.g., the vcs_info module relies on it for display of git status in your prompt.
-You can start by looking at the few explanatory paragraphs in man zshmodules in the zstyle section.
+`zstyle` handles the obvious style control for the completion system, but it seems to cover more than just that. E.g., the vcs_info module relies on it for display of git status in your prompt. You can start by looking at the few explanatory paragraphs in man zshmodules in the zstyle section.
 
 ```shell
 #
@@ -196,10 +170,7 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
 ## Disabling System-Wide `compinit` Call (Ubuntu) {#disabling-system-wide-compinit-call-ubuntu}
 
-On Ubuntu users might get surprised that e.g. their completions work while they didn't
-call `compinit` in their `.zshrc`. That's because the function is being called in `/etc/zshrc`.
-To disable this call – what is needed to avoid the slowdown and if the user loads
-any completion-equipped plugins, i.e. almost on 100% – add the following lines to `~/.zshenv`:
+On Ubuntu users might get surprised that e.g. their completions work while they didn't call `compinit` in their `.zshrc`. That's because the function is being called in `/etc/zshrc`. To disable this call – what is needed to avoid the slowdown and if the user loads any completion-equipped plugins, i.e. almost on 100% – add the following lines to `~/.zshenv`:
 
 ```shell
 # Skip the not helping Ubuntu global compinit
@@ -208,19 +179,17 @@ skip_global_compinit=1
 
 ## Multiple prompts {#multiple-prompts}
 
-- `load''`      – condition that when fulfilled will cause plugin to be loaded,
-- `unload''`    – as above, but will unload plugin.
+- `load''` – condition that when fulfilled will cause plugin to be loaded,
+- `unload''` – as above, but will unload plugin.
 
 :::note
 
-`zi light` loads the plugin without tracking it, while `zi load` tracks the plugin.
-To be able unload the plugin, it has to be loaded with `zi load ...` instead of `zi light ...`.
+`zi light` loads the plugin without tracking it, while `zi load` tracks the plugin. To be able unload the plugin, it has to be loaded with `zi load ...` instead of `zi light ...`.
 
 :::
 
-- `atload'!…'`  – run the `precmd` hooks to make the prompts fully initialized when loaded in the middle of the prompt.
-- `precmd`      – hooks are being normally run before each **new** prompt.
-
+- `atload'!…'` – run the `precmd` hooks to make the prompts fully initialized when loaded in the middle of the prompt.
+- `precmd` – hooks are being normally run before each **new** prompt.
 
 :::info
 
@@ -230,14 +199,12 @@ Exclamation mark causes the effects of the functions to be tracked.
 
 To allow better unloading, conditions are checked every second, you can use conditions like:
 
-- `![[ $PWD == *github* ]]` to change prompt after changing directory to `*github*`,
-  the exclamation mark `![[ … ]]` causes prompt to be reset after loading or unloading the plugin,
-- `pick'/dev/null'`   – disable sourcing of the default-found file,
-- `multisrc''`        – source multiple files,
-- `lucid`             – don't show the under-prompt message that says e.g.: `Loaded geometry-zsh/geometry`,
-- `nocd`              – don't cd into the plugin's directory when executing the
-- `atload''`          – this ice can make the path that's displayed by the theme to point to that directory.
-
+- `![[ $PWD == *github* ]]` to change prompt after changing directory to `*github*`, the exclamation mark `![[ … ]]` causes prompt to be reset after loading or unloading the plugin,
+- `pick'/dev/null'` – disable sourcing of the default-found file,
+- `multisrc''` – source multiple files,
+- `lucid` – don't show the under-prompt message that says e.g.: `Loaded geometry-zsh/geometry`,
+- `nocd` – don't cd into the plugin's directory when executing the
+- `atload''` – this ice can make the path that's displayed by the theme to point to that directory.
 
 ```shell
 # Theme no. 1 - zprompts

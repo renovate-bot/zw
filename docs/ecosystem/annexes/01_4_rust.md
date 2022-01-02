@@ -7,8 +7,7 @@ keywords: [annex, rust, zsh, z-shell, zi]
 
 [Rust](https://github.com/z-shell/z-a-rust) annex installs rust and cargo packages locally inside the plugin or snippet directories.
 
-The crate can then have a so called _shim_ created (name borrowed from `rbenv`) – a script that's located in the standard
-`$PATH` entry "`$ZPFX/bin`" of following contents (example):
+The crate can then have a so called _shim_ created (name borrowed from `rbenv`) – a script that's located in the standard `$PATH` entry "`$ZPFX/bin`" of following contents (example):
 
 ```shell
 #!/usr/bin/env zsh
@@ -28,9 +27,7 @@ As it can be seen shim ultimately provides the binary to the command line.
 
 ## Usage {#usage}
 
-The ZI Annex provides two new ices: `rustup` and `cargo''`. The first one
-installs rust inside the plugin's folder using the official `rustup` installer.
-The second one has the following syntax:
+The ZI Annex provides two new ices: `rustup` and `cargo''`. The first one installs rust inside the plugin's folder using the official `rustup` installer. The second one has the following syntax:
 
 `cargo"[name-of-the-binary-or-path <-] [[!][c|N|E|O]:]{crate-name} [-> {shim-script-name}]'`
 
@@ -80,11 +77,9 @@ Flags meanings:
 - `N` – redirect both standard output and error to `/dev/null`
 - `E` – redirect standard error to `/dev/null`
 - `O` – redirect standard output to `/dev/null`
-- `c` – change the current directory to the plugin's or snippet's directory before
-  executing the command
+- `c` – change the current directory to the plugin's or snippet's directory before executing the command
 
-As the examples showed, the name of the binary to run and the shim name are by default equal to the name of the crate.
-Specifying `{binary-name} <- …` and/or `… -> {shim-name}` allows to override them.
+As the examples showed, the name of the binary to run and the shim name are by default equal to the name of the crate. Specifying `{binary-name} <- …` and/or `… -> {shim-name}` allows to override them.
 
 ## Installation {#installation}
 

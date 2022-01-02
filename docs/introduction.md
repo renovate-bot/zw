@@ -2,13 +2,12 @@
 sidebar_position: 1
 id: intro
 title: Introduction
+image: https://github.com/z-shell/zi/raw/main/docs/images/logo.svg
 description: A Swiss Army Knife for Zsh - Unix shell
 keywords: [introduction, zsh, z-shell, zi]
 ---
 
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 <Tabs>
   <TabItem value="gems" label="RubyGems">
@@ -36,7 +35,7 @@ Install [Rust packages](https://crates.io):
 
 Install almost everything from [GitHub](https://github.com):
 
-[Annexes](ecosystem/annexes/annexes) | [Packages](ecosystem/packages) | [Meta Plugins](ecosystem/annexes/meta-plugins) | [Gallery of Invocations](https://github.com/z-shell/zi/wiki/Gallery)
+[Annexes](ecosystem/annexes) | [Packages](ecosystem/packages) | [Meta Plugins](ecosystem/annexes/meta-plugins) | [Gallery of Invocations](https://github.com/z-shell/zi/wiki/Gallery)
 
 </TabItem>
 </Tabs>

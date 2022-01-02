@@ -5,8 +5,7 @@ description: Annex - Default Ice documentation
 keywords: [annex, default-ice, zsh, z-shell, zi]
 ---
 
-[Default Ice](https://github.com/z-a-default-ice) annex allows setting **default ices** for the next `zi` command.
-It adds subcommand: **default-ice** which has the following synopsis:
+[Default Ice](https://github.com/z-a-default-ice) annex allows setting **default ices** for the next `zi` command. It adds subcommand: **default-ice** which has the following synopsis:
 
 ```shell
 —— default-ice --help/-h --clear/-c --show/-s --get/-g --quiet/-q --stats/-t

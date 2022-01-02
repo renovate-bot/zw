@@ -2,6 +2,7 @@
 sidebar_position: 1
 id: syntax
 title: Syntax
+image: https://github.com/z-shell/zi/raw/main/docs/images/logo.png
 description: Syntax documentation for Z-Shell ZI
 keywords: [syntax, zsh, z-shell, zi]
 ---
@@ -31,8 +32,7 @@ zi as"null" wait"3" lucid for \
   make"PREFIX=$ZPFX" tj/git-extras
 ```
 
-Above single command installs 6 plugins (Git extension packages),
- with the base ices `as"null" wait"3" lucid` that are common to all of the plugins and 6 plugin-specific add-on ices.
+Above single command installs 6 plugins (Git extension packages), with the base ices `as"null" wait"3" lucid` that are common to all of the plugins and 6 plugin-specific add-on ices.
 
 :::info
 
@@ -51,8 +51,7 @@ zi as"null" wait"2" lucid from"gh-r" for \
 
 :::note
 
-- `sbin''` is an ice added by the [z-a-bin-gem-node](https://github.com/z-shell/z-a-bin-gem-node) annex,
-it provides the command to the command line without altering `$PATH`.
+- `sbin''` is an ice added by the [z-a-bin-gem-node](https://github.com/z-shell/z-a-bin-gem-node) annex, it provides the command to the command line without altering `$PATH`.
 
 - If the name of the command is the same as the name of the plugin, the ice contents can be skipped.
 
@@ -82,6 +81,7 @@ zi light tj/git-extras
 ```
 
 - `Makefile` of this project has only 2 tasks:
+
   1. Install the target.
   2. Build scripts that is required for installation.
 
@@ -91,20 +91,15 @@ zi light tj/git-extras
 
 :::info
 
-`$ZPFX` is provided by ZI, it is set to `~/.zi/polaris` by default.
-However it can changed by specifying custom `$ZPFX=` target if required.
+`$ZPFX` is provided by ZI, it is set to `~/.zi/polaris` by default. However it can changed by specifying custom `$ZPFX=` target if required.
 
 :::
 
 ## The `bindmap''` keybindings {#the-bindmap-keybindings}
 
-Sometimes plugins call `bindkey` to assign keyboard shortucts. This can cause
-problems, because multiple plugins can bind the same keys. Also, the user might
-want a different binding(s), which will require a complicated, additional
-`bindkey` commands in `.zshrc`.
+Sometimes plugins call `bindkey` to assign keyboard shortucts. This can cause problems, because multiple plugins can bind the same keys. Also, the user might want a different binding(s), which will require a complicated, additional `bindkey` commands in `.zshrc`.
 
-ZI provides a solution to this problem – the ability to remap the bindkeys
-with a short ice-modifier specification with the `bindmap''` ice.
+ZI provides a solution to this problem – the ability to remap the bindkeys with a short ice-modifier specification with the `bindmap''` ice.
 
 ** Examples of `bindmap''`**
 
@@ -131,12 +126,9 @@ zi bindmap='!" " -> magic-space; !"^ " -> globalias' nocompletions \
 
 **Explanation**
 
-The `bindmap''` ice has two modes of operation: normal and exclamation-mark (`bindmap'!…'`).
-In the first mode, the remapping is beind done from-key to-key, i.e.: `bindmap'fromkey -> to-key'`.
-The given key is being changed to the second given key in the `bindkey` command that's being actually issued when loading the plugin.
+The `bindmap''` ice has two modes of operation: normal and exclamation-mark (`bindmap'!…'`). In the first mode, the remapping is beind done from-key to-key, i.e.: `bindmap'fromkey -> to-key'`. The given key is being changed to the second given key in the `bindkey` command that's being actually issued when loading the plugin.
 
-In the second mode, the remapping is being done from-key to-widget, i.e.: `bindmap'!from-key -> to-widget'`.
-In this mode, the given key is being mapped to the given widget instead of the widget specified in the `bindkey` command,
+In the second mode, the remapping is being done from-key to-widget, i.e.: `bindmap'!from-key -> to-widget'`. In this mode, the given key is being mapped to the given widget instead of the widget specified in the `bindkey` command,
 
 i.e.: instead of:
 
@@ -156,11 +148,7 @@ bindkey " " magic-space
 
 **Using `bindmap''` In Light Mode**
 
-When the investigation mode is on – i.e.:
-when the full loading mode is being used (default in the `for` syntax
-and when `zi load …` is used) – then the `bindmap''` ice works normally. In the non-investigation, i.e.:
-the light mode – activated when `zi light …` or the `light-mode` ice is being used – the `bindmap''` is unavailable,
-unless the `trackbinds` ice is specified, i.e.:
+When the investigation mode is on – i.e.: when the full loading mode is being used (default in the `for` syntax and when `zi load …` is used) – then the `bindmap''` ice works normally. In the non-investigation, i.e.: the light mode – activated when `zi light …` or the `light-mode` ice is being used – the `bindmap''` is unavailable, unless the `trackbinds` ice is specified, i.e.:
 
 ```shell
 # With use of the light-mode ice and the for-syntax:
@@ -173,14 +161,10 @@ zi light z-shell/history-search-multi-word
 
 **Using The `UPAR`, Etc. Shorthands**
 
-There are four special values that can be used on the left side of the bind-map:
-`UPAR`, `DOWNAR`, `LEFTAR`, `RIGHTAR`. They'll match up arrow, down arrow, etc.
-So that it's possible to do:
+There are four special values that can be used on the left side of the bind-map: `UPAR`, `DOWNAR`, `LEFTAR`, `RIGHTAR`. They'll match up arrow, down arrow, etc. So that it's possible to do:
 
 ```shell
 zi bindmap='LEFTAR -> ^F; RIGHTAR -> ^G' …
 ```
 
-The benefits of using the `UPAR`, … shorthands is that they cover multiple
-possible cursor-key codes for each of the cursor key, so that they'll work
-regardless of the terminal being used.
+The benefits of using the `UPAR`, … shorthands is that they cover multiple possible cursor-key codes for each of the cursor key, so that they'll work regardless of the terminal being used.

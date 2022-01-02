@@ -16,11 +16,9 @@ It can be also used to style Zsh completion – more on this below).
 
 :::
 
-Typically one does `eval $( dircolors -b $HOME/LS_COLORS)` to process this file and set the environment for `ls`.
-However this means `dircolors` is run every shell startup.
+Typically one does `eval $( dircolors -b $HOME/LS_COLORS)` to process this file and set the environment for `ls`. However this means `dircolors` is run every shell startup.
 
-This costs much time because a fork has to be done and the program (i.e. `dircolors`) binary needs to be loaded and executed, and because `dircolors`
-loads the colors' definitions and processes them. Following ZI invocation solves this problem:
+This costs much time because a fork has to be done and the program (i.e. `dircolors`) binary needs to be loaded and executed, and because `dircolors` loads the colors' definitions and processes them. Following ZI invocation solves this problem:
 
 ```shell
 zi ice atclone"dircolors -b LS_COLORS > clrs.zsh" \
@@ -37,8 +35,7 @@ zi light trapd00r/LS_COLORS
 - `nocompile'!'` – invokes compilation **after** the `atclone''` ice-mod (the exclamation mark causes this).
 - `atload"…"` – additionally sets up the Zsh completion to use the colors provided by the trapd00r package.
 
-This way, except for the plugin installation and update, `dircolors` isn't ran,
-just normal sourcing is done. The everyday sourced file (i.e. `clrs.zsh`) is even being compiled to speed up the loading.
+This way, except for the plugin installation and update, `dircolors` isn't ran, just normal sourcing is done. The everyday sourced file (i.e. `clrs.zsh`) is even being compiled to speed up the loading.
 
 ## Compiling programs {#compiling-programs}
 
@@ -53,7 +50,6 @@ zi light vim/vim
 - `atpull"%atclone"` – execute the same code `atclone''` is given, but after successful update,
 - `make` – run `make` after `atclone''` and `atpull''` (note: `make'!'` will execute before them),
 - `pick"src/vim"` – set executable flag on `src/vim`, hint that `src/` should be added to `$PATH`.
-
 
 The same but with **installation** (i.e. `make install` is being run) under `$ZPFX` (`~/.zi/polaris` by default):
 
@@ -71,11 +67,9 @@ zi light vim/vim
 
 ### Direnv {#direnv}
 
-The project [**direnv/direnv**](https://github.com/direnv/direnv) registers itself in Z shell to modify the environment on directory change.
-This registration is most often done by `eval "$(direnv hook zsh)"` added to zshrc.
+The project [**direnv/direnv**](https://github.com/direnv/direnv) registers itself in Z shell to modify the environment on directory change. This registration is most often done by `eval "$(direnv hook zsh)"` added to zshrc.
 
-The drawback of this standard procedure is that the `direnv` binary is run on every
-shell startup and significantly slows it down. ZI allows to solve this in the following way:
+The drawback of this standard procedure is that the `direnv` binary is run on every shell startup and significantly slows it down. ZI allows to solve this in the following way:
 
 ```shell
 zi as"program" make'!' atclone'./direnv hook zsh > zhook.zsh' \
@@ -116,7 +110,4 @@ zi light direnv/direnv
 - `make'!'` – execute `make` before `atclone''` and before `atpull''` (see `make` above),
 - `src"zhook.zsh"` – source file `zhook.zsh`.
 
-In general, Direnv works by hooking up to Zsh. The code that does this is
-provided by program `direnv` (built by `make''`). Above `atclone''` puts this
-code into file `zhook.zsh`, `src''` sources it. This way `direnv hook zsh` is
-executed only on clone and update, and Zsh starts faster.
+In general, Direnv works by hooking up to Zsh. The code that does this is provided by program `direnv` (built by `make''`). Above `atclone''` puts this code into file `zhook.zsh`, `src''` sources it. This way `direnv hook zsh` is executed only on clone and update, and Zsh starts faster.
