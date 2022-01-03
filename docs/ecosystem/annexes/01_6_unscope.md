@@ -5,6 +5,8 @@ description: Annex - Unscope documentation
 keywords: [annex, unscope, zsh, z-shell, zi]
 ---
 
+import APITable from '@site/src/components/APITable';
+
 [Unscope](https://github.com/z-shell/z-a-unscope) annex allows to install plugins without specifying the GitHub user name.
 
 It works as follows:
@@ -32,6 +34,8 @@ It works as follows:
 ## Static Mappings {#static-mappings}
 
 Besides the GitHub-API querying, there's also a fixed, curated list of mappings of short names to the full GitHub IDs. The list currently consists of:
+
+<APITable>
 
 |    Short (Nick-) Name     | GitHub ID / scoped ID             |
 | :-----------------------: | --------------------------------- |
@@ -121,13 +125,15 @@ Besides the GitHub-API querying, there's also a fixed, curated list of mappings 
 |        completions        | zsh-users/zsh-completions         |
 |           comps           | zsh-users/zsh-completions         |
 
+</APITable>
+  
 You can let me know if you would like a name to be added to the list.
 
 ## Install with [ZI](https://github.com/z-shell/zi) {#install-with-zi}
 
 Simply load as a regular plugin, i.e.:
 
-```zsh
+```shell
 zi light-mode for z-shell/z-a-unscope
 ```
 
