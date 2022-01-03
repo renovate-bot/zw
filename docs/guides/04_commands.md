@@ -2,7 +2,7 @@
 id: commands
 title: Commands
 sidebar_position: 4
-image: https://github.com/z-shell/zi/raw/main/docs/images/logo.png
+image: /img/z-shell_501x501.png
 description: Commands documentation for the Z-Shell ZI
 keywords: [commands, zsh, z-shell, zi]
 ---

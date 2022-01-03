@@ -2,7 +2,7 @@
 id: ice-modifiers
 title: Ice Modifiers
 sidebar_position: 3
-image: https://github.com/z-shell/zi/raw/main/docs/images/logo.png
+image: /img/z-shell_501x501.png
 description: Documentation for the ice Modifiers
 keywords: [ice-modifiers, zsh, z-shell, zi]
 ---

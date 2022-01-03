@@ -7,7 +7,7 @@ import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
 
 function HomepageHeader() {
-	const { siteConfig } = useDocusaurusContext();
+	const {siteConfig} = useDocusaurusContext();
 	return (
 		<header className={clsx('hero hero--primary', styles.heroBanner)}>
 			<div className="container">
@@ -26,11 +26,12 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-	const { siteConfig } = useDocusaurusContext();
+	const {siteConfig} = useDocusaurusContext();
 	return (
 		<Layout
-			title={`Z-Shell ${siteConfig.title} | Wiki Pages`}
-			description="Description will go into a meta tag in <head />">
+			/** ${siteConfig.title}  */
+			title={`Wiki`}
+			description="A Swiss Army Knife for Zsh - Unix shell">
 			<HomepageHeader />
 			<main>
 				<HomepageFeatures />

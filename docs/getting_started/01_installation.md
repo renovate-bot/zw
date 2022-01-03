@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
 id: installation
 title: Installation
-image: https://github.com/z-shell/zi/raw/main/docs/images/logo.png
+sidebar_position: 1
+image: /img/z-shell_501x501.png
 description: Installation guide for Z-Shell ZI
 keywords: [installation, zsh, z-shell, zi]
 ---

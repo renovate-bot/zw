@@ -7,7 +7,6 @@ coverage
 
 i18n
 versions.json
-docusaurus.config.js
 versioned_sidebars/*.json
 
 examples/

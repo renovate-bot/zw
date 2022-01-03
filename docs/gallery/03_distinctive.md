@@ -1,7 +1,8 @@
 ---
-sidebar_position: 3
 id: distinctive
 title: Distinctive
+sidebar_position: 3
+image: /img/z-shell_501x501.png
 description: Gallery of uncommon invocations for Z-Shell ZI
 keywords: [uncommon, zsh, z-shell, zi]
 ---

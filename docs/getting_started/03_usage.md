@@ -1,8 +1,8 @@
 ---
-sidebar_position: 3
 id: useage
 title: Usage
-image: https://github.com/z-shell/zi/raw/main/docs/images/logo.png
+sidebar_position: 3
+image: /img/z-shell_501x501.png
 description: Usage examples for Z-Shell ZI
 keywords: [usage, zsh, z-shell, zi]
 ---
@@ -24,7 +24,7 @@ zi snippet <URL>
 
 Such lines should be added to `.zshrc`. Snippets are cached locally, use `-f` option to download a fresh version of a snippet, or `zi update {URL}`. Can also use `zi update --all` to update all snippets (and plugins).
 
-**Example**
+### Basic example {#basic-example}
 
 ```shell
 # Plugin history-search-multi-word loaded with investigating.
@@ -38,7 +38,7 @@ zi light z-shell/F-Sy-H
 zi snippet https://gist.githubusercontent.com/hightemp/5071909/raw/
 ```
 
-**Prompt(Theme) Example**
+### Prompts use-case example {#prompts-use-case-example}
 
 This is [powerlevel10k](https://github.com/romkatv/powerlevel10k), [pure](https://github.com/sindresorhus/pure), [starship](https://github.com/starship/starship) sample:
 

@@ -1,7 +1,8 @@
 ---
-sidebar_position: 2
 id: ohmyzsh
 title: Oh My Zsh
+sidebar_position: 2
+image: /img/z-shell_501x501.png
 description: Invocations gallery of Oh My Zsh for Z-Shell ZI
 keywords: [ohmyzsh, zsh, z-shell, zi]
 ---

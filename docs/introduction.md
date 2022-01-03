@@ -2,7 +2,7 @@
 sidebar_position: 1
 id: intro
 title: Introduction
-image: https://github.com/z-shell/zi/raw/main/docs/images/logo.svg
+image: /img/z-shell_501x501.png
 description: A Swiss Army Knife for Zsh - Unix shell
 keywords: [introduction, zsh, z-shell, zi]
 ---

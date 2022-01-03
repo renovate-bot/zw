@@ -2,6 +2,7 @@
 sidebar_position: 5
 id: benchmarks
 title: Benchmarks
+image: /img/z-shell_501x501.png
 description: Benchamarking and profiling for Z-Shell ZI
 keywords: [benchmark, zsh, z-shell, zi]
 ---

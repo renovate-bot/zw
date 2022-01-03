@@ -1,7 +1,8 @@
 ---
-sidebar_position: 1
 id: collection
 title: Collection
+sidebar_position: 1
+image: /img/z-shell_501x501.png
 description: Invocations gallery for Z-Shell ZI
 keywords: [collection, zsh, z-shell, zi]
 ---

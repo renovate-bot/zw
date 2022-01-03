@@ -1,7 +1,7 @@
 ---
 id: code
 title: 🔖 Code documentation
-image: img/logo.png
+image: /img/z-shell_501x501.png
 description: The documentation lists all functions, interactions between them, their comments, and features used
 keywords: [code, documentation, zsh, z-shell, zi]
 ---

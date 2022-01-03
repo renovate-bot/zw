@@ -1,8 +1,8 @@
 ---
-sidebar_position: 4
 id: migration
 title: Migration
-image: https://github.com/z-shell/zi/raw/main/docs/images/logo.png
+sidebar_position: 4
+image: /img/z-shell_501x501.png
 description: Migration to Z-Shell ZI support
 keywords: [migration, zsh, z-shell, zi]
 ---

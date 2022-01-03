@@ -1,10 +1,13 @@
 ---
-sidebar_position: 4
 id: preferences
 title: Preferences
+sidebar_position: 4
+image: /img/z-shell_501x501.png
 description: Gallery for user Preferences
 keywords: [preferences, zsh, z-shell, zi]
 ---
+
+import APITable from '@site/src/components/APITable';
 
 ## Customizing Paths {#customizing-paths}
 
@@ -14,20 +17,24 @@ Following variables can be set to custom values, before sourcing ZI.
 declare -A ZI  # initial ZI's hash definition, if configuring before loading ZI, and then:
 ```
 
+<APITable>
+
 | Hash Field | Description |
 | --- | --- |
-| ZI[BIN_DIR] | Where ZI code resides, e.g.: "~/.zi/bin" |
-| ZI[HOME_DIR] | Where ZI should create all working directories, e.g.: "~/.zi" |
-| ZI[PLUGINS_DIR] | Override single working directory – for plugins, e.g. "/opt/zsh/zi/plugins" |
-| ZI[COMPLETIONS_DIR] | As above, but for completion files, e.g. "/opt/zsh/zi/root_completions" |
-| ZI[SNIPPETS_DIR] | As above, but for snippets |
+| `ZI[BIN_DIR]` | Where ZI code resides, e.g.: "~/.zi/bin" |
+| `ZI[HOME_DIR]` | Where ZI should create all working directories, e.g.: "~/.zi" |
+| `ZI[PLUGINS_DIR]` | Override single working directory – for plugins, e.g. "/opt/zsh/zi/plugins" |
+| `ZI[COMPLETIONS_DIR]` | As above, but for completion files, e.g. "/opt/zsh/zi/root_completions" |
+| `ZI[SNIPPETS_DIR]` | As above, but for snippets |
 |  |
-| ZI[ZMODULES_DIR] | Override single working directory – for Zsh modules e.g. "/opt/zsh/zi/zmodules" |
+| `ZI[ZMODULES_DIR]` | Override single working directory – for Zsh modules e.g. "/opt/zsh/zi/zmodules" |
 |  |
-| ZI[ZCOMPDUMP_PATH] | Path to `.zcompdump` file, with the file included (i.e. its name can be different) |
-| ZI[COMPINIT_OPTS] | Options for `compinit` call (i.e. done by `zicompinit`), use to pass -C to speed up loading |
-| ZI[MUTE_WARNINGS] | If set to `1`, then mutes some of the ZI warnings, specifically the `plugin already registered` warning |
-| ZI[OPTIMIZE_OUT_DISK_ACCESSES] | If set to `1`, then ZI will skip checking if a Turbo-loaded object exists on the disk. By default, ZI skips Turbo for non-existing objects (plugins or snippets) to install them before the first prompt – without any delays, during the normal processing of `zshrc`. This option can give a performance gain of about 10 ms out of 150 ms (i.e.: Zsh will start-up in 140 ms instead of 150 ms). |
+| `ZI[ZCOMPDUMP_PATH]` | Path to `.zcompdump` file, with the file included (i.e. its name can be different) |
+| `ZI[COMPINIT_OPTS]` | Options for `compinit` call (i.e. done by `zicompinit`), use to pass -C to speed up loading |
+| `ZI[MUTE_WARNINGS]` | If set to `1`, then mutes some of the ZI warnings, specifically the `plugin already registered` warning |
+| `ZI[OPTIMIZE_OUT_DISK_ACCESSES]` | If set to `1`, then ZI will skip checking if a Turbo-loaded object exists on the disk. By default, ZI skips Turbo for non-existing objects (plugins or snippets) to install them before the first prompt – without any delays, during the normal processing of `zshrc`. This option can give a performance gain of about 10 ms out of 150 ms (i.e.: Zsh will start-up in 140 ms instead of 150 ms). |
+
+</APITable>
 
 There is also `$ZPFX`, set by default to `~/.zi/polaris` – a directory where software with `Makefile`, etc. can be pointed to, by e.g. `atclone'./configure --prefix=$ZPFX'`.
 
