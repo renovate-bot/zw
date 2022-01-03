@@ -2,7 +2,7 @@
 sidebar_position: 2
 id: overview
 title: Quick overview
-image: img/z-shell_501x501.png
+image: /img/z-shell_501x501.png
 description: Overview of use cases for Z-Shell ZI
 keywords: [overview, zsh, z-shell, zi]
 ---
