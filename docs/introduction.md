@@ -1,13 +1,13 @@
 ---
 sidebar_position: 1
 id: intro
-title: Introduction
+title: 🎉 Introduction
 image: /img/z-shell_501x501.png
 description: A Swiss Army Knife for Zsh - Unix shell
 keywords: [introduction, zsh, z-shell, zi]
 ---
 
-import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'; import BrowserWindow from '@site/src/components/BrowserWindow';
 
 <Tabs>
   <TabItem value="gems" label="RubyGems">
@@ -40,6 +40,6 @@ Install almost everything from [GitHub](https://github.com):
 </TabItem>
 </Tabs>
 
-<div align="center">
+```mdx-code-block
 <a href="https://asciinema.org/a/459358" target="_blank"><img src="https://asciinema.org/a/459358.svg" /></a>
-</div>
+```
