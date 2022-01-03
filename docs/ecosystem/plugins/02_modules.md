@@ -26,7 +26,7 @@ This script can be used with most plugin managers and [ZI](https://github.com/z-
 
 :::
 
-```bash
+```shell
 bash <(curl -fsSL https://raw.githubusercontent.com/z-shell/zpmod/HEAD/build.sh)
 ```
 
@@ -54,7 +54,7 @@ Besides the compilation feature, the module also measures **duration** of each s
 
 To enable debug messages from the module set:
 
-```zsh
+```shell
 typeset -g ZI_MOD_DEBUG=1
 ```
 
@@ -64,7 +64,7 @@ Provides GDBM module as plugin
 
 `zstyles` - The values being set are the defaults. Change the values before loading zgdbm plugin.
 
-```shell
+```shell title="~/.zshrc"
 zstyle ":plugin:zgdbm" cppflags "-I/usr/local/include"  # Additional include directory
 zstyle ":plugin:zgdbm" cflags "-Wall -O2 -g"            # Additional CFLAGS
 zstyle ":plugin:zgdbm" ldflags "-L/usr/local/lib"       # Additional library directory
