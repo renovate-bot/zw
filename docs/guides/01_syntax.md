@@ -20,7 +20,7 @@ It is a fundamental ZI syntax. However, a more concise, optimized syntax, called
 
 It is best presented by a real-world example:
 
-## The `for''` syntax {#the-for-syntax}
+## The `for` syntax {#the-for-syntax}
 
 ```shell
 zi as"null" wait"3" lucid for \
