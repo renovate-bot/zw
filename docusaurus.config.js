@@ -81,11 +81,11 @@ const config = {
 					},
 				},
 			},
-			algolia: {
+			/** algolia: {
 				appId: 'R65Z94OME2',
 				apiKey: 'cfea6a2beca30a997104d74111f4e13f',
 				indexName: 'dev_z-shell',
-			},
+			}, */
 			navbar: {
 				title: '❮ ZI ❯',
 				logo: {
