@@ -272,7 +272,7 @@ Turbo with the empty `wait` ice will postpone the loading `1` ms after that, so 
 
 The ice `lucid` causes the under-prompt message saying `Loaded zsh-users/zsh-autosuggestions` that normally appears for every Turbo-loaded plugin to not show.
 
-### A Quick Glance At [The `for''` syntax](../guides/syntax#the-for-syntax) {#a-quick-glance-at-the-for-syntax}
+### A Quick Glance At [The `for` syntax](../guides/syntax#the-for-syntax) {#a-quick-glance-at-the-for-syntax}
 
 This introduction is based on the classic, two-command syntax (`zi ice …; zi load/light/snippet …`) of ZI. However, there's also available a recently added so-called _for-syntax_. It is the right moment to take a glance at it, by rewriting the above autosuggestions invocation using it:
 
@@ -280,7 +280,7 @@ This introduction is based on the classic, two-command syntax (`zi ice …; zi l
 zi wait lucid atload'_zsh_autosuggest_start' light-mode for zsh-users/zsh-autosuggestions
 ```
 
-The syntax is a more concise one. The single command will work the same as the previous classic-syntax invocation. It also allows solving some typical problems when using ZI, like providing common/default ices for a set of plugins or sourcing multiple files with [`src''` ice](../guides/ice#src-pick-multisrc). For more information refer to the page dedicated to the syntax ([here](../guides/syntax/)).
+The syntax is a more concise one. The single command will work the same as the previous classic-syntax invocation. It also allows solving some typical problems when using ZI, like providing common/default ices for a set of plugins or sourcing multiple files with [`src''` ice](../guides/ice#src-pick-multisrc). For more information refer to the page dedicated to the syntax ([here](../guides/syntax#the-for-syntax)).
 
 ### Turbo Loading sophisticated prompts {#turbo-loading-sophisticated-prompts}
 
