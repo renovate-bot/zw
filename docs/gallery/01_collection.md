@@ -339,7 +339,7 @@ zi wait lucid light-mode for \
 - syntax-highlighting plugins (like [**F-Sy-H**](https://github.com/z-shell/F-Sy-H) or [**zsh-syntax-highlighting**](https://github.com/zsh-users/zsh-syntax-highlighting)) theoretically expect to be loaded last, even after the completion initialization (i.e. `compinit` function), however, in practice, you just have to ensure that such plugin is loaded after plugins that are issuing `compdef`s – which basically means completions that aren't using the underscore-starting function file; the completion initialization still has to be performed before syntax-highlighting plugin, hence the `atinit''` ice, which will load `compinit` right before loading the plugin,
 - the syntax-highlighting and suggestions plugins are loaded early for a better user experience.
 
-The same setup, but without using [Turbo mode](../getting_started/overview#turbo-mode-zsh--53) (i.e. no `wait''` ice) and without[The `for''` syntax](../guides/syntax#the-for-syntax):
+The same setup, but without using [Turbo mode](../getting_started/overview#turbo-mode-zsh--53) (i.e. no `wait''` ice) and without[The `for` syntax](../guides/syntax#the-for-syntax):
 
 ```shell
 zi ice blockf atpull'zi creinstall -q .'
