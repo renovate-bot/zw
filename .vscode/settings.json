@@ -2,6 +2,7 @@
   "conventionalCommits.scopes": [
     "general",
     "ecosystem",
-    "workspace"
+    "workspace",
+    "gallery"
   ]
 }
