@@ -8,7 +8,7 @@ description: Zsh modules & plugins documentation
 keywords: [modules, zsh, z-shell, zi]
 ---
 
-## Module [zpmod](https://github.com/z-shell/zpmod) {#zsh-module-zpmod}
+## Module [zpmod](https://github.com/z-shell/zpmod) {#module-zpmod}
 
 [![👾 CodeQL](https://github.com/z-shell/zpmod/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/z-shell/zpmod/actions/workflows/codeql-analysis.yml)
 
@@ -58,7 +58,7 @@ To enable debug messages from the module set:
 typeset -g ZI_MOD_DEBUG=1
 ```
 
-## Module [zgdbm](https://github.com/z-shell/zgdbm) {#zgdbm}
+## Module [zgdbm](https://github.com/z-shell/zgdbm) {#module-zgdbm}
 
 Provides GDBM module as plugin
 
