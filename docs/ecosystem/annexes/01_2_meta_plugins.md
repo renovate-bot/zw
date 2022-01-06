@@ -42,10 +42,18 @@ Other unique benefits of the Meta-Plugins annex:
 
 ### Annexes {#annexes}
 
-> Consisting of: 1) [z-shell/z-a-unscope](https://github.com/z-shell/z-a-unscope), 2) [z-shell/z-a-readurl](https://github.com/z-shell/z-a-readurl), 3) [z-shell/z-a-patch-dl](https://github.com/z-shell/z-a-patch-dl), 4) [z-shell/z-a-rust](https://github.com/z-shell/z-a-rust), 5) [z-shell/z-a-submods](https://github.com/z-shell/z-a-submods), 6) [z-shell/z-a-bin-gem-node](https://github.com/z-shell/z-a-bin-gem-node).
+> Consisting of: 1) [z-shell/z-a-readurl](https://github.com/z-shell/z-a-readurl), 2) [z-shell/z-a-patch-dl](https://github.com/z-shell/z-a-patch-dl), 3) [z-shell/z-a-rust](https://github.com/z-shell/z-a-rust), 4) [z-shell/z-a-bin-gem-node](https://github.com/z-shell/z-a-bin-gem-node).
 
 ```shell
 zi light-mode for @annexes
+```
+
+### Annexes2 {#annexes2}
+
+> Consisting of: 1) [z-shell/z-a-unscope](https://github.com/z-shell/z-a-unscope), 2) [z-shell/z-a-submods](https://github.com/z-shell/z-a-submods), 3) [z-shell/z-shell/z-a-default-ice](https://github.com/z-shell/z-a-default-ice).
+
+```shell
+zi light-mode for @annexes2
 ```
 
 ### Annexes + Console {#annexes--console}
