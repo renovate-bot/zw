@@ -39,6 +39,17 @@ Install almost everything from [GitHub](https://github.com):
 </TabItem>
 </Tabs>
 
+
+
+- Supports loading [Oh My Zsh](https://z-shell.pages.dev/docs/getting_started/overview#oh-my-zsh-prezto) and [Prezto](https://z-shell.pages.dev/docs/getting_started/overview#oh-my-zsh-prezto) plugins and libraries. Wiki: [migration](https://z-shell.pages.dev/docs/getting_started/migration) from other plugin managers.
+
+- The dedicated [packages](https://z-shell.pages.dev/docs/ecosystem/packages) that offload the user from providing long and complex commands.
+
+- The [annexes](https://z-shell.pages.dev/docs/ecosystem/annexes) allow to extend the plugin manager with new commands.
+
+- Test configurations with docker at [playground](https://github.com/z-shell/playground)
+
+
 <div align="center">
 <a href="https://asciinema.org/a/459358" target="_blank"><img src="https://asciinema.org/a/459358.svg" width="90%" height="100%" /></a>
 </div>
