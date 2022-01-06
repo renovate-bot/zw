@@ -12,12 +12,12 @@ It works as follows:
 - Invoke `snippet` (or simply pass the `http://…` address using the `for` syntax) on the web-page that hosts the URL to the file to download,
 - provide `dlink''` ice with the expected file-download URL replacing the version with the `%VERSION%` keyword, also provide `as''` ice with one of the following values:
 
-  1. `readurl`,
-  2. `readurl|command`,
-  3. `readurl|completion`,
-  4. `readurl|null`.
+1. `readurl`,
+2. `readurl|command`,
+3. `readurl|completion`,
+4. `readurl|null`.
 
-::: note
+:::note
 
 The part after the `|` has the same meaning as in the normal `as''` ice.
 
