@@ -39,5 +39,6 @@ Install almost everything from [GitHub](https://github.com):
 </TabItem>
 </Tabs>
 
-<a href="https://asciinema.org/a/459358" target="_blank"><img src="https://asciinema.org/a/459358.svg" /></a>
-
+<div align="center">
+<a href="https://asciinema.org/a/459358" target="_blank"><img src="https://asciinema.org/a/459358.svg" width="90%" height="70%" /></a>
+</div>
