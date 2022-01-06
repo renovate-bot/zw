@@ -219,7 +219,7 @@ zi lucid \
   load'![[ $MYPROMPT = 1 ]]' \
   unload'![[ $MYPROMPT != 1 ]]' \
   atload'!promptinit; typeset -g PSSHORT=0; prompt sprint3 yellow red green blue' nocd for \
-    z-shell/zprompts0
+    z-shell/zprompts
 ```
 
 ```shell
