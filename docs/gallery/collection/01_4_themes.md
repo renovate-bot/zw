@@ -37,12 +37,22 @@ zi lucid pick"/dev/null" multisrc"{async,pure}.zsh" atload"!prompt_pure_precmd" 
     sindresorhus/pure
 ```
 
+```shell
+# Install as meta plugin
+zi light-mode for @sindresorhus/pure
+```
+
 ### [agkozak/agkozak-zsh-prompt](https://github.com/agkozak/agkozak-zsh-prompt) {#agkozakagkozak-zsh-prompt}
 
 ```shell
 zi lucid nocd atinit"AGKOZAK_COLORS_PROMPT_CHAR='magenta' AGKOZAK_MULTILINE=0 \
 AGKOZAK_PROMPT_CHAR=( ❯ ❯ ❮ ) AGKOZAK_USER_HOST_DISPLAY=0" for \
     agkozak/agkozak-zsh-prompt
+```
+
+```shell
+# Install as meta plugin
+zi light-mode for @agkozak/agkozak-zsh-prompt
 ```
 
 ### [chauncey-garrett/zsh-prompt-garrett](https://github.com/chauncey-garrett/zsh-prompt-garrett) {#chauncey-garrettzsh-prompt-garrett}
@@ -75,7 +85,7 @@ zi load romkatv/gitstatus
 # p10k one-line
 zi ice depth=1; zi light romkatv/powerlevel10k
 
-# p10k meta package
+# p10k as meta plugin
 # Configuration wizard disbled by default, run manually: `p10k configure`.
 zi light-mode for @romkatv
 
