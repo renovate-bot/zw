@@ -58,7 +58,7 @@ zi light-mode for @annexes2
 
 ### Annexes + Console {#annexes--console}
 
-> Consisting of: 1) [z-shell/zi-console](https://github.com/z-shell/zi-console), 2) [z-shell/z-a-unscope](https://github.com/z-shell/z-a-unscope), 3) [z-shell/z-a-readurl](https://github.com/z-shell/z-a-readurl), 4) [z-shell/z-a-patch-dl](https://github.com/z-shell/z-a-patch-dl), 5) [z-shell/z-a-rust](https://github.com/z-shell/z-a-rust), 6) [z-shell/z-a-submods](https://github.com/z-shell/z-a-submods), 7) [z-shell/z-a-bin-gem-node](https://github.com/z-shell/z-a-bin-gem-node).
+> Consisting of: 1) [z-shell/zi-console](https://github.com/z-shell/zi-console), 2) [z-shell/z-a-readurl](https://github.com/z-shell/z-a-readurl), 4) [z-shell/z-a-patch-dl](https://github.com/z-shell/z-a-patch-dl), 5) [z-shell/z-a-rust](https://github.com/z-shell/z-a-rust), 6) [z-shell/z-a-bin-gem-node](https://github.com/z-shell/z-a-bin-gem-node).
 
 ```shell
 zi light-mode for @annexes+con
