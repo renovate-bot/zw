@@ -1,12 +1,11 @@
 ---
 id: code
 title: 🔖 Code documentation
-image: /img/z-shell_501x501.png
 description: The documentation lists all functions, interactions between them, their comments, and features.
 keywords: [code, documentation, zsh, z-shell, zi]
 ---
 
-import APITable from '@site/src/components/APITable';
+import APITable from '@theme/APITable';
 
 :::info
 
