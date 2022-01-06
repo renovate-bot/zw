@@ -23,7 +23,7 @@ const config = {
 	favicon: 'img/favicon.svg',
 	organizationName: 'z-shell',
 	projectName: 'z-shell.pages.dev',
-	stylesheets: [
+	/** stylesheets: [
 		{
 			href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
 			type: 'text/css',
@@ -31,7 +31,7 @@ const config = {
 				'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
 			crossorigin: 'anonymous',
 		},
-	],
+	], */
 	presets: [
 		[
 			'classic',
@@ -39,6 +39,7 @@ const config = {
 			({
 				debug: true, // force debug plugin usage
 				docs: {
+					routeBasePath: '/',
 					sidebarPath: require.resolve('./sidebars.js'),
 					editUrl:
 						'https://github.com/z-shell/z-shell.pages.dev/tree/main',
@@ -52,9 +53,10 @@ const config = {
 			}),
 		],
 	],
+	themes: ['@docusaurus/theme-classic', '@docusaurus/theme-live-codeblock'],
 	plugins: [
 		'@docusaurus/plugin-content-blog',
-		'@docusaurus/theme-live-codeblock',
+		'@docusaurus/plugin-content-pages',
 		/** https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-ideal-image */
 		'@docusaurus/plugin-ideal-image',
 	],
