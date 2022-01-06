@@ -35,7 +35,7 @@ Above single command installs 6 plugins (Git extension packages), with the base 
 
 :::info
 
-Examples of `for''` syntax
+Examples of `for` syntax
 
 :::
 
