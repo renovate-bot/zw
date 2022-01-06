@@ -24,15 +24,16 @@
     "esbenp.prettier-vscode",
     "bierner.markdown-preview-github-styles",
     "oderwat.indent-rainbow",
-    "gruntfuggly.todo-tree"
+    "gruntfuggly.todo-tree",
+    "formulahendry.terminal"
   ],
   // "forwardPorts": [],
   "postCreateCommand": "yarn install",
   "remoteUser": "node",
   "features": {
-    "docker-in-docker": "latest",
+    //  "docker-in-docker": "latest",
     "git": "latest",
-    "github-cli": "latest",
-    "python": "latest"
+    "github-cli": "latest"
+    //  "python": "latest"
   }
 }
