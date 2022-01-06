@@ -2,7 +2,6 @@
 sidebar_position: 1
 id: syntax
 title: Syntax
-image: /img/z-shell_501x501.png
 description: Syntax documentation for Z-Shell ZI
 keywords: [syntax, zsh, z-shell, zi]
 ---
@@ -46,7 +45,7 @@ Load a few useful binary (i.e.: binary packages from the GitHub Releases) utils:
 zi as"null" wait"2" lucid from"gh-r" for \
   mv"exa* -> exa" sbin ogham/exa \
   mv"fd* -> fd" sbin"fd/fd" @sharkdp/fd \
-  sbin"fzf" junegunn/fzf-bin
+  sbin"fzf" junegunn/fzf
 ```
 
 :::note
