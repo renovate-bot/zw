@@ -8,7 +8,7 @@ keywords: [collection, zsh, z-shell, zi]
 
 :::info
 
-Before starting it is recommended to install recommended annexes:
+Before trying out collection it is recommended to install annexes:
 
 ```shell
 zi light-mode for z-shell/z-a-meta-plugins @annexes
