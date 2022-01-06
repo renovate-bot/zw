@@ -13,32 +13,32 @@ import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'; import Bro
 
 Install [RubyGems](https://rubygems.org):
 
-[Annex Bin-Gem-Node](https://github.com/z-shell/zi/wiki/z-a-bin-gem-node) | [Package Any Gem](https://github.com/z-shell/any-gem)
+[Annex Bin-Gem-Node](https://z-shell.pages.dev/docs/ecosystem/annexes/bin-gem-node) | [Package Any Gem](https://github.com/z-shell/any-gem)
 
   </TabItem>
   <TabItem value="node" label="Node modules">
 
 Install [Node modules](https://www.npmjs.com):
 
-[Annex Bin-Gem-Node](https://github.com/z-shell/zi/wiki/z-a-bin-gem-node) | [Package Any Node](https://github.com/z-shell/any-node)
+[Annex Bin-Gem-Node](https://z-shell.pages.dev/docs/ecosystem/annexes/bin-gem-node) | [Package Any Node](https://github.com/z-shell/any-node)
 
   </TabItem>
   <TabItem value="rust" label="Rust packages">
 
 Install [Rust packages](https://crates.io):
 
-[Annex Rust](https://github.com/z-shell/zi/wiki/z-a-rust)
+[Annex Rust](https://z-shell.pages.dev/docs/ecosystem/annexes/rust)
 
   </TabItem>
   <TabItem value="github" label="GitHub" default>
 
 Install almost everything from [GitHub](https://github.com):
 
-[Annexes](ecosystem/annexes) | [Packages](ecosystem/packages) | [Meta Plugins](ecosystem/annexes/meta-plugins) | [Gallery of Invocations](https://github.com/z-shell/zi/wiki/Gallery)
+[Annexes](ecosystem/annexes) | [Packages](ecosystem/packages) | [Meta Plugins](ecosystem/annexes/meta-plugins) | [Gallery of Invocations](https://z-shell.pages.dev/docs/gallery/collection)
 
 </TabItem>
 </Tabs>
 
 <div align="center">
-<a href="https://asciinema.org/a/459358" target="_blank"><img src="https://asciinema.org/a/459358.svg" width="80%" height="90%" /></a>
+<a href="https://asciinema.org/a/459358" target="_blank"><img src="https://asciinema.org/a/459358.svg" width="80%" height="80%" /></a>
 </div>
