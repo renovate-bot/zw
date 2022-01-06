@@ -26,11 +26,7 @@ After executing this command you can then use the dl'' and patch'' ice-mods.
 
 ### How it works – bird's-eye view {#how-it-works--birds-eye-view}
 
-The `sbin''` ice that creates forwarder-scripts instead of forwarder-functions (created by the `fbin''` ice and elaborated in this `How it works …` section) turned out to be the proper, best method for exposing binary programs and scripts. You can jump to the `sbin''` ice [section](#5-sbingncneopath-to-binary---name-of-the-script-) if you want or read on, as the forwarder-scripts are pretty similar to the forwarder-functions elaborated on in the following text:
-
-Below is a diagram explaining the major feature – exposing a binary program or script through a Zsh function of the same name:
-
-![diagram](https://github.com/z-shell/z-a-bin-gem-node/raw/7f9ed8918d15bc0b2fad4329bc867b022856f4e5/docs/images/diag.png)
+The `sbin''` ice that creates forwarder-scripts instead of forwarder-functions (created by the `fbin''` ice and elaborated in this `How it works …` section) turned out to be the proper, best method for exposing binary programs and scripts. You can jump to the `sbin''` ice [section](#5-sbingncneopath-to-binary---name-of-the-script-) if you want.
 
 This way there is no need to add anything to `$PATH` – `z-a-bin-gem-node` will automatically create a function that will wrap the binary and provide it on the command line like if it was being placed in the `$PATH`.
 

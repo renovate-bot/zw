@@ -126,7 +126,7 @@ Besides the GitHub-API querying, there's also a fixed, curated list of mappings 
 |           comps           | zsh-users/zsh-completions         |
 
 </APITable>
-  
+
 You can let me know if you would like a name to be added to the list.
 
 ## Install with [ZI](https://github.com/z-shell/zi) {#install-with-zi}

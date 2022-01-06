@@ -26,10 +26,9 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-	const {siteConfig} = useDocusaurusContext();
+	/** const {siteConfig} = useDocusaurusContext(); ${siteConfig.title} */
 	return (
 		<Layout
-			/** ${siteConfig.title}  */
 			title={`Wiki`}
 			description="A Swiss Army Knife for Zsh - Unix shell">
 			<HomepageHeader />

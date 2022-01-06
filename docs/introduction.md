@@ -2,6 +2,7 @@
 id: intro
 title: 🎉 Introduction
 sidebar_position: 1
+image: /img/logo.png
 description: A Swiss Army Knife for Zsh - Unix shell
 keywords: [introduction, zsh, z-shell, zi]
 ---
@@ -39,8 +40,6 @@ Install almost everything from [GitHub](https://github.com):
 </TabItem>
 </Tabs>
 
-
-
 - Supports loading [Oh My Zsh](https://z-shell.pages.dev/docs/getting_started/overview#oh-my-zsh-prezto) and [Prezto](https://z-shell.pages.dev/docs/getting_started/overview#oh-my-zsh-prezto) plugins and libraries. [Migration guide](https://z-shell.pages.dev/docs/getting_started/migration).
 
 - The [packages](https://z-shell.pages.dev/docs/ecosystem/packages) offload the user from providing long and complex commands.
@@ -48,7 +47,6 @@ Install almost everything from [GitHub](https://github.com):
 - The [annexes](https://z-shell.pages.dev/docs/ecosystem/annexes) allow to extend the plugin manager with new commands.
 
 - Test configurations with docker at [playground](https://github.com/z-shell/playground)
-
 
 <div align="center">
 <a href="https://asciinema.org/a/459358" target="_blank"><img src="https://asciinema.org/a/459358.svg" width="90%" height="100%" /></a>
