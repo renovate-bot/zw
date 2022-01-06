@@ -50,7 +50,7 @@ zi light-mode for @annexes
 
 ### Annexes2 {#annexes2}
 
-> Consisting of: 1) [z-shell/z-shell/z-a-default-ice](https://github.com/z-shell/z-a-default-ice), 2) [z-shell/z-shell/z-a-test](https://github.com/z-shell/z-a-test).
+> Consisting of: 1) [z-shell/z-a-default-ice](https://github.com/z-shell/z-a-default-ice), 2) [z-shell/z-shell/z-a-test](https://github.com/z-shell/z-a-test).
 
 ```shell
 zi light-mode for @annexes2
