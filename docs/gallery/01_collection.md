@@ -2,7 +2,6 @@
 id: collection
 title: Collection
 sidebar_position: 1
-image: /img/z-shell_501x501.png
 description: Invocations gallery for Z-Shell ZI
 keywords: [collection, zsh, z-shell, zi]
 ---
@@ -10,9 +9,20 @@ keywords: [collection, zsh, z-shell, zi]
 ## Programs {#programs}
 
 ```shell
-# junegunn/fzf-bin
+# junegunn/fzf
 zi ice from"gh-r" as"program"
-zi light junegunn/fzf-bin
+zi light junegunn/fzf
+
+# Advanced junegunn/fzf
+zi for \
+  atclone'mkdir -p $ZPFX/{bin,man/man1}' atpull'%atclone' \
+  from'gh-r' dl'
+      https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.zsh -> _fzf_completion;
+      https://raw.githubusercontent.com/junegunn/fzf/master/shell/key-bindings.zsh -> key-bindings.zsh;
+      https://raw.githubusercontent.com/junegunn/fzf/master/man/man1/fzf-tmux.1 -> $ZPFX/man/man1/fzf-tmux.1;
+      https://raw.githubusercontent.com/junegunn/fzf/master/man/man1/fzf.1 -> $ZPFX/man/man1/fzf.1' \
+  id-as'junegunn/fzf' nocompile pick'/dev/null' sbin'fzf' src'key-bindings.zsh' \
+    @junegunn/fzf
 
 # sharkdp/fd
 zi ice as"command" from"gh-r" mv"fd* -> fd" pick"fd/fd"
@@ -33,16 +43,19 @@ zi wait"1" lucid from"gh-r" as"null" for \
   sbin"**/bat" @sharkdp/bat \
   sbin"exa* -> exa" ogham/exa
 
+# Docker Compose
 zi ice from"gh-r" as"program" mv"docker* -> docker-compose"
 zi light docker/compose
 
 # jarun/nnn, a file browser, using the for-syntax
 zi pick"misc/quitcd/quitcd.zsh" sbin make light-mode for jarun/nnn
 
+# Vim
 zi ice as"program" atclone"rm -f src/auto/config.cache; ./configure" \
   atpull"%atclone" make pick"src/vim"
 zi light vim/vim
 
+# Direnv
 zi ice as"program" make'!' atclone'./direnv hook zsh > zhook.zsh' \
   atpull'%atclone' src"zhook.zsh"
 zi light direnv/direnv
@@ -59,6 +72,13 @@ zi light b4b4r07/gotcha
 zi ice as"program" pick"yank" make
 zi light mptre/yank
 
+# A Powerful declarative continuous delivery pipeline with a fully-loaded UI.
+zi for \
+  as'completions' atclone'./argocd* completion zsh > _argocd' \
+  atpull'%atclone' from'gh-r' if'[[ "$(uname -m)" == x86_64 ]]' light-mode \
+  sbin'argocd* -> argocd' wait \
+    argoproj/argo-cd
+
 zi ice atclone'PYENV_ROOT="$PWD" ./libexec/pyenv init - > zpyenv.zsh' \
   atinit'export PYENV_ROOT="$PWD"' atpull"%atclone" \
   as'command' pick'bin/pyenv' src"zpyenv.zsh" nocompile'!'
@@ -72,8 +92,8 @@ zi light z-shell/null
 
 # asciinema
 zi ice as"command" wait lucid \
-  atinit"export PYTHONPATH=$ZPFX/lib/python3.7/site-packages/" \
-  atclone"PYTHONPATH=$ZPFX/lib/python3.7/site-packages/ \
+  atinit"export PYTHONPATH=$ZPFX/lib/python3.9/site-packages/" \
+  atclone"PYTHONPATH=$ZPFX/lib/python3.9/site-packages/ \
     python3 setup.py --quiet install --prefix $ZPFX" \
   atpull'%atclone' test'0' \
   pick"$ZPFX/bin/asciinema"
@@ -115,13 +135,12 @@ zi ice wait"2" lucid as"program" pick"zunit" \
   atclone"./build.zsh" atpull"%atclone"
 zi load molovo/zunit
 
-# revolver and zunit using for'' syntax
+# revolver and zunit using for syntax
 zi for \
   as"program" atclone"ln -sfv revolver.zsh-completion _revolver" \
   atpull"%atclone" pick"revolver" @molovo/revolver \
   as"completion" atclone"./build.zsh; ln -sfv zunit.zsh-completion _zunit" \
   atpull"%atclone" sbin"zunit" @zunit-zsh/zunit
-
 
 zi ice as"program" pick"$ZPFX/bin/git-*" make"PREFIX=$ZPFX" nocompile
 zi light tj/git-extras
@@ -210,6 +229,12 @@ zi ice lucid id-as"GitHub-notify" \
   on-update-of'~/.cache/zsh-github-issues/new_titles.log' \
   notify'New issue: $NOTIFY_MESSAGE'
 zi light z-shell/zsh-github-issues
+
+# Delta is a syntax-highlighting pager for git, diff, and grep output.
+zi for \
+  from'gh-r' \
+  sbin'**/delta -> delta' \
+    dandavison/delta
 ```
 
 ## Services {#services}
