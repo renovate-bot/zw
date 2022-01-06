@@ -41,9 +41,9 @@ Install almost everything from [GitHub](https://github.com):
 
 
 
-- Supports loading [Oh My Zsh](https://z-shell.pages.dev/docs/getting_started/overview#oh-my-zsh-prezto) and [Prezto](https://z-shell.pages.dev/docs/getting_started/overview#oh-my-zsh-prezto) plugins and libraries. Wiki: [migration](https://z-shell.pages.dev/docs/getting_started/migration) from other plugin managers.
+- Supports loading [Oh My Zsh](https://z-shell.pages.dev/docs/getting_started/overview#oh-my-zsh-prezto) and [Prezto](https://z-shell.pages.dev/docs/getting_started/overview#oh-my-zsh-prezto) plugins and libraries. [Migration guide](https://z-shell.pages.dev/docs/getting_started/migration).
 
-- The dedicated [packages](https://z-shell.pages.dev/docs/ecosystem/packages) that offload the user from providing long and complex commands.
+- The [packages](https://z-shell.pages.dev/docs/ecosystem/packages) offload the user from providing long and complex commands.
 
 - The [annexes](https://z-shell.pages.dev/docs/ecosystem/annexes) allow to extend the plugin manager with new commands.
 
