@@ -7,7 +7,7 @@ description: Commands documentation for the Z-Shell ZI
 keywords: [commands, zsh, z-shell, zi]
 ---
 
-import APITable from '@theme/APITable';
+import APITable from '@site/src/components/APITable';
 
 ## Commands available with `^TAB` completion {#commands-available-with-tab-completion}
 
