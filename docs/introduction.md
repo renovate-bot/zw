@@ -2,7 +2,6 @@
 sidebar_position: 1
 id: intro
 title: 🎉 Introduction
-image: /img/z-shell_501x501.png
 description: A Swiss Army Knife for Zsh - Unix shell
 keywords: [introduction, zsh, z-shell, zi]
 ---
@@ -40,6 +39,5 @@ Install almost everything from [GitHub](https://github.com):
 </TabItem>
 </Tabs>
 
-```mdx-code-block
 <a href="https://asciinema.org/a/459358" target="_blank"><img src="https://asciinema.org/a/459358.svg" /></a>
-```
+
