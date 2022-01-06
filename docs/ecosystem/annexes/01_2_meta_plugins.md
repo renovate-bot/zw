@@ -42,7 +42,7 @@ Other unique benefits of the Meta-Plugins annex:
 
 ### Annexes {#annexes}
 
-> Consisting of: 1) [z-shell/z-a-readurl](https://github.com/z-shell/z-a-readurl), 2) [z-shell/z-a-patch-dl](https://github.com/z-shell/z-a-patch-dl), 3) [z-shell/z-a-rust](https://github.com/z-shell/z-a-rust), 4) [z-shell/z-a-bin-gem-node](https://github.com/z-shell/z-a-bin-gem-node).
+> Consisting of: 1) [z-shell/z-a-readurl](https://github.com/z-shell/z-a-readurl), 2) [z-shell/z-a-patch-dl](https://github.com/z-shell/z-a-patch-dl), 3) [z-shell/z-a-submods](https://github.com/z-shell/z-a-submods), 4) [z-shell/z-a-unscope](https://github.com/z-shell/z-a-unscope), 5) [z-shell/z-a-rust](https://github.com/z-shell/z-a-rust), 6) [z-shell/z-a-bin-gem-node](https://github.com/z-shell/z-a-bin-gem-node).
 
 ```shell
 zi light-mode for @annexes
@@ -50,7 +50,7 @@ zi light-mode for @annexes
 
 ### Annexes2 {#annexes2}
 
-> Consisting of: 1) [z-shell/z-a-unscope](https://github.com/z-shell/z-a-unscope), 2) [z-shell/z-a-submods](https://github.com/z-shell/z-a-submods), 3) [z-shell/z-shell/z-a-default-ice](https://github.com/z-shell/z-a-default-ice).
+> Consisting of: 1) [z-shell/z-shell/z-a-default-ice](https://github.com/z-shell/z-a-default-ice), 2) [z-shell/z-shell/z-a-test](https://github.com/z-shell/z-a-test).
 
 ```shell
 zi light-mode for @annexes2
@@ -58,7 +58,7 @@ zi light-mode for @annexes2
 
 ### Annexes + Console {#annexes--console}
 
-> Consisting of: 1) [z-shell/zi-console](https://github.com/z-shell/zi-console), 2) [z-shell/z-a-readurl](https://github.com/z-shell/z-a-readurl), 4) [z-shell/z-a-patch-dl](https://github.com/z-shell/z-a-patch-dl), 5) [z-shell/z-a-rust](https://github.com/z-shell/z-a-rust), 6) [z-shell/z-a-bin-gem-node](https://github.com/z-shell/z-a-bin-gem-node).
+> Consisting of: 1) [z-shell/zi-console](https://github.com/z-shell/zi-console), 2) [z-shell/z-a-readurl](https://github.com/z-shell/z-a-readurl), 3) [z-shell/z-a-patch-dl](https://github.com/z-shell/z-a-patch-dl), 4) [z-shell/z-a-submods](https://github.com/z-shell/z-a-submods), 5) [z-shell/z-a-unscope](https://github.com/z-shell/z-a-unscope), 6) [z-shell/z-a-rust](https://github.com/z-shell/z-a-rust), 7) [z-shell/z-a-bin-gem-node](https://github.com/z-shell/z-a-bin-gem-node).
 
 ```shell
 zi light-mode for @annexes+con
