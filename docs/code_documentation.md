@@ -5,7 +5,7 @@ description: The documentation lists all functions, interactions between them, t
 keywords: [code, documentation, zsh, z-shell, zi]
 ---
 
-import APITable from '@theme/APITable';
+import APITable from '@site/src/components/APITable';
 
 :::info
 
