@@ -26,7 +26,7 @@ keywords: [annex, default-ice, zsh, z-shell, zi]
 zi default-ice lucid from"gh-r"
 
 # Will download from gh-r and also use the lucid ice by default.
-zi wait for
+zi wait for \
   sbin        junegunn/fzf-bin \
   sbin"**/pk" peco/peco
 ```
