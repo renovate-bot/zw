@@ -121,11 +121,11 @@ zi light sindresorhus/pure
 # A glance at the new for-syntax – load all of the above
 # plugins with a single command. For more information see:
 # https://github.com/z-shell/zi/wiki/Syntax/
-zi for \
-  light-mode  zsh-users/zsh-autosuggestions \
-  light-mode  z-shell/fast-syntax-highlighting \
-              z-shell/history-search-multi-word \
-  light-mode pick"async.zsh" src"pure.zsh" \
+zi light-mode for \
+  zsh-users/zsh-autosuggestions \
+  z-shell/F-Sy-H \
+  z-shell/H-S-MW \
+  pick"async.zsh" src"pure.zsh" \
     sindresorhus/pure
 
 # Binary release in the archive, from GitHub-releases page.
@@ -177,6 +177,5 @@ If you're interested in more examples then check out the [playground repository]
 
 For some additional examples you can also check out the:
 
-- [Minimal Setup](../gallery/preferences#minimal-setup),
 - [Collection](../gallery/collection),
 - [Oh-My-Zsh](../gallery/ohmyzsh).
