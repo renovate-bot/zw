@@ -6,6 +6,16 @@ description: Themes & Prompts Collection
 keywords: [collection, themes, prompts, zsh, z-shell, zi]
 ---
 
+:::info
+
+Related: 
+
+1. [Multiple prompts](../../gallery/preferences#multiple-prompts)
+2. [Automatic load/unload based on condition](../../getting_started/overview#automatic-loadunload-based-on-condition)
+3. [Ice `atclone`, `atpull`, `atinit`, `atload`](../../guides/ice#atclone-atpull-atinit-atload)
+
+:::
+
 :::tip
 
 Zsh tweak - map colours to the nearest colour in the available palette.
@@ -13,12 +23,6 @@ Zsh tweak - map colours to the nearest colour in the available palette.
 ```shell
 [[ $COLORTERM = *(24bit|truecolor)* ]] || zmodload zsh/nearcolor
 ```
-
-:::
-
-:::info
-
-Additionally see: [Multiple prompts](../../gallery/preferences#multiple-prompts)
 
 :::
 
