@@ -2,4 +2,9 @@
   "infiniteLoopProtection": true,
   "hardReloadOnChange": true,
   "view": "browser"
+  "template": "z-shell-wiki",
+  "node": "16",
+  "container": {
+    "node": "16"
+  }
 }
