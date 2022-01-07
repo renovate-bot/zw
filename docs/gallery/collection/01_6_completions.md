@@ -6,6 +6,17 @@ description: Completions Collection
 keywords: [collection, completions, zsh, z-shell, zi]
 ---
 
+:::info
+
+Related:
+
+1. [Completions Managment](../../guides/commands#completions-management)
+2. [Calling compinit without turbo mode](../../guides/commands#calling-compinit-without-turbo-mode)
+3. [Calling compinit with turbo mode](../../guides/commands#calling-compinit-with-turbo-mode)
+4. [Ice modifiers/completions](../../guides/ice-modifiers#completions)
+
+:::
+
 :::tip
 
 You can create your own syntax + conditional loading e.g:
@@ -14,7 +25,7 @@ You can create your own syntax + conditional loading e.g:
 # Common ICE modifiers
 
 z_lucid() {
-# ver'master' - to select specific versionor branch . Remove it if not required.
+# ver'master' - to select specific version or branch. Remove it if not required.
 zi ice lucid ver'master' "$@"
 }
 
