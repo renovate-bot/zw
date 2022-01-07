@@ -14,7 +14,7 @@ You can create your own syntax + conditional loading e.g:
 # Common ICE modifiers
 
 z_lucid() {
-# ver'master' - to select specific versionor branch . Remove it if not required.
+# ver'master' - to select specific version or branch, otherwise remove it if not required.
 zi ice lucid ver'master' "$@"
 }
 
