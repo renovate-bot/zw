@@ -10,16 +10,17 @@ keywords: [collection, completions, zsh, z-shell, zi]
 
 Related:
 
-1. [Completions Managment](../../guides/commands#completions-management)
+1. [Completions managment](../../guides/commands#completions-management)
 2. [Calling compinit without turbo mode](../../guides/commands#calling-compinit-without-turbo-mode)
 3. [Calling compinit with turbo mode](../../guides/commands#calling-compinit-with-turbo-mode)
 4. [Ice modifiers/completions](../../guides/ice-modifiers#completions)
+5. [Ice: `src''`, `pick''`, `multisrc''`](../../guides/ice#src-pick-multisrc)
 
 :::
 
 :::tip
 
-You can create your own syntax + conditional loading e.g:
+Create your own syntax + conditional loading e.g:
 
 ```shell
 # Common ICE modifiers
