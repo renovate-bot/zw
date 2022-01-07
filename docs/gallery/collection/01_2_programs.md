@@ -6,36 +6,183 @@ description: Programs Collection
 keywords: [collection, programs, zsh, z-shell, zi]
 ---
 
-### [argoproj/argo-cd](https://github.com/argoproj/argo-cd) {#argoprojargo-cd}
+:::tip
+
+You can create your own syntax + conditional loading e.g:
 
 ```shell
-zi for \
-  as'completions' atclone'./argocd* completion zsh > _argocd' \
-  atpull'%atclone' from'gh-r' if'[[ "$(uname -m)" == x86_64 ]]' light-mode \
-  sbin'argocd* -> argocd' wait \
-    argoproj/argo-cd
+# Common ICE modifiers
+
+z_lucid() {
+# ver'master' - to select specific versionor branch . Remove it if not required.
+zi ice lucid ver'master' "$@"
+}
+
+zi0a() {
+z_lucid wait'0a' "$@"
+}
+
+zi_program() {
+zi0a as'program' "$@"
+}
+
+```
+
+Then load as:
+
+```shell
+zi_program has'...'
+zi light ...
+
+zi_program has'...' pick'...' from'...'
+zi light ...
+
+zi_program has'...'
+zi light ...
+```
+
+:::
+
+## Without [`for`](../../guides/syntax#the-for-syntax) syntax {#without-for-syntax}
+
+### [eth-p/bat-extras](https://github.com/eth-p/bat-extras) {#eth-pbat-extras}
+
+```shell
+zi ice lucid wait as'program' has'bat' pick'src/*'
+zi light eth-p/bat-extras
+```
+
+### [paulirish/git-open](https://github.com/paulirish/git-open) {#paulirishgit-open}
+
+```shell
+zi ice lucid wait as'program' has'git' atclone"cp git-open.1.md $ZPFX/man/man1/git-open.1" atpull'%atclone'
+zi light paulirish/git-open
+```
+
+### [LuRsT/hr](https://github.com/LuRsT/hr) {#lursthr}
+
+```shell
+zi ice lucid wait as'program' atclone"cp hr.1 $ZPFX/man/man1" atpull'%atclone'
+zi light LuRsT/hr
+```
+
+### [z-shell/imgur-album-downloader](https://github.com/z-shell/imgur-album-downloader) {#z-shellimgur-album-downloader}
+
+```shell
+zi ice lucid wait as'program' has'python3' pick'imguralbum.py'
+zi light z-shell/imgur-album-downloader
+```
+
+### [Seirdy/stpv](https://github.com/Seirdy/stpv) {#seirdystpv}
+
+```shell
+zi ice lucid wait as'program' has'fzf' pick'fzfp'
+zi light Seirdy/stpv
+```
+
+```shell
+zi ice lucid wait as'program' has'ueberzug' pick'stpvimg'
+zi light Seirdy/stpv
+```
+
+```shell
+zi ice lucid wait as'program' pick'stpv'
+zi light Seirdy/stpv
+```
+
+### [exiftool/exiftool](https://github.com/exiftool/exiftool) {#exiftoolexiftool}
+
+```shell
+zi ice lucid wait as'program' has'perl' has'convert' pick'exiftool'
+zi light exiftool/exiftool
+```
+
+### [smxi/inxi](https://github.com/smxi/inxi) {#smxiinxi}
+
+```shell
+if [ -z "$SSH_CONNECTION" ]; then
+  zi ice lucid wait as'program' has'perl' pick'inxi'
+  zi light smxi/inxi
+fi
+```
+
+### [dylanaraps/pash](https://github.com/dylanaraps/pash) {#dylanarapspash}
+
+```shell
+zi ice lucid wait as'program' has'gpg'
+zi light dylanaraps/pash
+```
+
+### [aaronNG/reddio](https://gitlab.com/aaronNG/reddio) {#aaronngreddio}
+
+```shell
+zi ice lucid wait as'program' has'jq' pick'reddio' from'gitlab'
+zi light aaronNG/reddio
+```
+
+### [hackerb9/lsix](https://github.com/hackerb9/lsix) {#hackerb9lsix}
+
+```shell
+zi ice lucid wait as'program' has'mogrify'
+zi light hackerb9/lsix
+```
+
+### [denilsonsa/prettyping](https://github.com/denilsonsa/prettyping) {#denilsonsaprettyping}
+
+```shell
+zi ice lucid wait as'program' pick'prettyping' has'ping'
+zi light denilsonsa/prettyping
+```
+
+### [TheLocehiliosan/yadm](https://github.com/TheLocehiliosan/yadm) {#thelocehiliosanyadm}
+
+```shell
+zi ice lucid wait as'program' has'git' pick'yadm' atclone"cp yadm.1 $ZPFX/man/man1" atpull'%atclone'
+zi light TheLocehiliosan/yadm
+```
+
+### [greymd/tmux-xpanes](https://github.com/greymd/tmux-xpanes) {#greymdtmux-xpanes}
+
+```shell
+zi ice lucid wait as'program' has'tmux' pick'bin/xpanes'
+zi light greymd/tmux-xpanes
+```
+
+### [DanielG/dxld-mullvad/blob/master/am-i-mullvad.sh](https://github.com/DanielG/dxld-mullvad/blob/master/am-i-mullvad.sh) {#danielgdxld-mullvadblobmasteram-i-mullvadsh}
+
+```shell
+zi ice lucid wait as'program' has'jq'
+zi snippet 'https://github.com/DanielG/dxld-mullvad/blob/master/am-i-mullvad.sh'
+```
+
+### [sdushantha/farge](https://github.com/sdushantha/farge) {#sdushanthafarge}
+
+```shell
+if [ -n "$WAYLAND_DISPLAY" ]; then
+  zi ice lucid wait as'program' pick'farge'
+  zi light 'sdushantha/farge'
+fi
+```
+
+### [denisidoro/navi](https://github.com/denisidoro/navi) {#denisidoronavi}
+
+```shell
+zi ice lucid wait as'program' has'fzf'
+zi light denisidoro/navi
+```
+
+### [dylanaraps/neofetch](https://github.com/dylanaraps/neofetch) {#dylanarapsneofetch}
+
+```shell
+zi ice lucid wait as'program' pick'neofetch' atclone"cp neofetch.1 $ZPFX/man/man1" atpull'%atclone'
+zi light dylanaraps/neofetch
 ```
 
 ### [junegunn/fzf](https://github.com/junegunn/fzf) {#junegunnfzf}
 
 ```shell
-# fzf
 zi ice from"gh-r" as"program"
 zi light @junegunn/fzf
-
-# fzf advanced
-zi for \
-  atclone'mkdir -p $ZPFX/{bin,man/man1}' atpull'%atclone' \
-  from'gh-r' dl'
-      https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.zsh -> _fzf_completion;
-      https://raw.githubusercontent.com/junegunn/fzf/master/shell/key-bindings.zsh -> key-bindings.zsh;
-      https://raw.githubusercontent.com/junegunn/fzf/master/man/man1/fzf-tmux.1 -> $ZPFX/man/man1/fzf-tmux.1;
-      https://raw.githubusercontent.com/junegunn/fzf/master/man/man1/fzf.1 -> $ZPFX/man/man1/fzf.1' \
-  id-as'junegunn/fzf' nocompile pick'/dev/null' sbin'fzf' src'key-bindings.zsh' \
-    @junegunn/fzf
-
-# Install all fuzzy tools with meta package
-zi light-mode for @fuzzy
 ```
 
 ### [sharkdp/fd](https://github.com/sharkdp/fd) {#sharkdpfd}
@@ -73,12 +220,6 @@ zi ice as"command" from"gh-r" mv"vivid* vivid" sbin"**/vivid(.exe|) -> vivid"
 zi light @sharkdp/vivid
 ```
 
-### Install all the above sharkdp plugins {#install-all-the-above-sharkdp-plugins}
-
-```shell
-zi light-mode for @sharkdp
-```
-
 ### [ogham/exa](https://github.com/ogham/exa) {#oghamexa}
 
 ```shell
@@ -86,27 +227,11 @@ zi ice as"program" from"gh-r" sbin"**/exa -> exa" atclone"cp -vf completions/exa
 zi light ogham/exa
 ```
 
-```shell
-# Example install sharkdp/fd, sharkdp/bat, gham/exa using the 'for' syntax and z-a-bin-gem-node annex
-zi from"gh-r" as"null" for \
-  sbin"fzf" junegunn/fzf \
-  sbin"**/fd" @sharkdp/fd \
-  sbin"**/bat" @sharkdp/bat \
-  sbin"**/hyperfine -> hyperfine" @sharkdp/hyperfine \
-  sbin"**/exa -> exa" atclone"cp -vf completions/exa.zsh _exa" ogham/exa
-```
-
 ### [docker/compose](https://github.com/docker/compose) {#dockercompose}
 
 ```shell
 zi ice from"gh-r" as"program" mv"docker* -> docker-compose"
 zi light docker/compose
-```
-
-### [jarun/nnn](https://github.com/jarun/nnn) {#jarunnnn}
-
-```shell
-zi pick"misc/quitcd/quitcd.zsh" sbin make light-mode for jarun/nnn
 ```
 
 ### [vim/vim](https://github.com/vim/vim) {#vimvim}
@@ -184,6 +309,18 @@ zi ice as"command" wait lucid atinit"export PYTHONPATH=$ZPFX/lib/python3.10/site
 zi load asciinema/asciinema
 ```
 
+## With [`for`](../../guides/syntax#the-for-syntax) syntax {#with-for-syntax}
+
+### [argoproj/argo-cd](https://github.com/argoproj/argo-cd) {#argoprojargo-cd}
+
+```shell
+zi light-mode for \
+  as'completions' atclone'./argocd* completion zsh > _argocd' \
+  atpull'%atclone' from'gh-r' if'[[ "$(uname -m)" == x86_64 ]]' \
+  sbin'argocd* -> argocd' \
+    argoproj/argo-cd
+```
+
 ### [rust-lang/rustup](https://github.com/rust-lang/rustup) {#rust-langrustup}
 
 ```shell
@@ -192,4 +329,46 @@ zi id-as"rust" wait=1 as=null sbin="bin/*" lucid rustup \
   atload="[[ ! -f ${ZI[COMPLETIONS_DIR]}/_cargo ]] && zi creinstall -q rust; \
 export CARGO_HOME=\$PWD; export RUSTUP_HOME=\$PWD/rustup" for \
   z-shell/null
+```
+
+### [jarun/nnn](https://github.com/jarun/nnn) {#jarunnnn}
+
+```shell
+zi pick"misc/quitcd/quitcd.zsh" sbin make light-mode for jarun/nnn
+```
+
+### [junegunn/fzf](https://github.com/junegunn/fzf) {#junegunnfzf}
+
+```shell
+zi for \
+  atclone'mkdir -p $ZPFX/{bin,man/man1}' atpull'%atclone' \
+  from'gh-r' dl'
+      https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.zsh -> _fzf_completion;
+      https://raw.githubusercontent.com/junegunn/fzf/master/shell/key-bindings.zsh -> key-bindings.zsh;
+      https://raw.githubusercontent.com/junegunn/fzf/master/man/man1/fzf-tmux.1 -> $ZPFX/man/man1/fzf-tmux.1;
+      https://raw.githubusercontent.com/junegunn/fzf/master/man/man1/fzf.1 -> $ZPFX/man/man1/fzf.1' \
+  id-as'junegunn/fzf' nocompile pick'/dev/null' sbin'fzf' src'key-bindings.zsh' \
+    @junegunn/fzf
+```
+
+### All Fuzzy tools as meta plugin {#all-fuzzy-tools-as-meta-plugin}
+
+```shell
+zi light-mode for @fuzzy
+```
+
+### [junegunn/fzf](https://github.com/junegunn/fzf), [sharkdp/fd](https://github.com/sharkdp/fd), [sharkdp/bat](https://github.com/sharkdp/bat) & [ogham/exa](https://github.com/ogham/exa) {#junegunnfzf-sharkdpfd-sharkdpbat--oghamexa}
+
+```shell
+zi from"gh-r" as"null" for \
+  sbin"fzf" junegunn/fzf \
+  sbin"**/fd" @sharkdp/fd \
+  sbin"**/bat" @sharkdp/bat \
+  sbin"**/exa -> exa" atclone"cp -vf completions/exa.zsh _exa" ogham/exa
+```
+
+### All [sharkdp](https://github.com/sharkdp) tools as meta plugin {#all-sharkdp-tools-as-meta-plugin}
+
+```shell
+zi light-mode for @sharkdp
 ```

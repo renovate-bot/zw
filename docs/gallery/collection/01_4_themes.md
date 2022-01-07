@@ -6,6 +6,50 @@ description: Themes & Prompts Collection
 keywords: [collection, themes, prompts, zsh, z-shell, zi]
 ---
 
+:::tip
+
+Zsh tweak - map colours to the nearest colour in the available palette.
+
+```shell
+[[ $COLORTERM = *(24bit|truecolor)* ]] || zmodload zsh/nearcolor
+```
+
+:::
+
+:::info
+
+Additionally see: [Multiple prompts](../../gallery/preferences#multiple-prompts)
+
+:::
+
+### [romkatv/powerlevel10k](https://github.com/romkatv/powerlevel10k) {#romkatvpowerlevel10k}
+
+```shell
+# Load prompt if terminal has least 256 colors.
+if [ "${TERM##*-}" = '256color' ] || [ "${terminfo[colors]:?}" -gt 255 ]; then
+zi ice depth=1; zi light romkatv/powerlevel10k
+fi
+```
+
+```shell
+# one-line
+zi ice depth=1; zi light romkatv/powerlevel10k
+```
+
+```shell
+# as meta plugin
+# Configuration wizard disbled by default,
+# post-install run manually: p10k configure
+zi light-mode for @romkatv
+```
+
+```shell
+# After finishing the configuration wizard for the last question:
+# "Apply changes to ~/.zshrc?" choose no - unless you know what you're doing.
+zi ice depth'1' atload"[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh" nocd
+zi light romkatv/powerlevel10k
+```
+
 ### [z-shell/zprompts](https://github.com/z-shell/zprompts) {#z-shellzprompts}
 
 ```shell
@@ -77,20 +121,4 @@ zi load robobenklein/zinc
 # even faster with gitstatus in Turbo mode: https://github.com/romkatv/gitstatus
 zi ice wait'1' atload'zinc_optional_depenency_loaded'
 zi load romkatv/gitstatus
-```
-
-### [romkatv/powerlevel10k](https://github.com/romkatv/powerlevel10k) {#romkatvpowerlevel10k}
-
-```shell
-# p10k one-line
-zi ice depth=1; zi light romkatv/powerlevel10k
-
-# p10k as meta plugin
-# Configuration wizard disbled by default, run manually: `p10k configure`.
-zi light-mode for @romkatv
-
-# After finishing the configuration wizard for the last question:
-# "Apply changes to ~/.zshrc?" choose no - unless you know what you're doing.
-zi ice depth'1' atload"[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh" nocd
-zi light romkatv/powerlevel10k
 ```

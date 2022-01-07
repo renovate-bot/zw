@@ -206,7 +206,7 @@ Exclamation mark causes the effects of the functions to be tracked.
 
 To allow better unloading, conditions are checked every second, you can use conditions like:
 
-- `![[ $PWD == *github* ]]` to change prompt after changing directory to `*github*`, the exclamation mark `![[ … ]]` causes prompt to be reset after loading or unloading the plugin,
+- As an example `![[ $PWD == *github* ]]` or `![[ $MYPROMPT = 1 ]]` to change prompt after changing directory to `*github*`, the exclamation mark `![[ … ]]` causes prompt to be reset after loading or unloading the plugin,
 - `pick'/dev/null'` – disable sourcing of the default-found file,
 - `multisrc''` – source multiple files,
 - `lucid` – don't show the under-prompt message that says e.g.: `Loaded geometry-zsh/geometry`,
