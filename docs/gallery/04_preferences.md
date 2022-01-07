@@ -2,7 +2,7 @@
 id: preferences
 title: Preferences
 sidebar_position: 4
-image: /img/z-shell_501x501.png
+image: /img/logo.png
 description: Gallery for user Preferences
 keywords: [preferences, zsh, z-shell, zi]
 ---
@@ -33,10 +33,9 @@ declare -A ZI  # initial ZI's hash definition, if configuring before loading ZI,
 | `ZI[COMPINIT_OPTS]` | Options for `compinit` call (i.e. done by `zicompinit`), use to pass -C to speed up loading |
 | `ZI[MUTE_WARNINGS]` | If set to `1`, then mutes some of the ZI warnings, specifically the `plugin already registered` warning |
 | `ZI[OPTIMIZE_OUT_DISK_ACCESSES]` | If set to `1`, then ZI will skip checking if a Turbo-loaded object exists on the disk. By default, ZI skips Turbo for non-existing objects (plugins or snippets) to install them before the first prompt – without any delays, during the normal processing of `zshrc`. This option can give a performance gain of about 10 ms out of 150 ms (i.e.: Zsh will start-up in 140 ms instead of 150 ms). |
-
+| `$ZPFX` | set by default to `~/.zi/polaris`, a directory where software with `Makefile`, etc. can be pointed to, by e.g. `atclone'./configure --prefix=$ZPFX'`. |
+    
 </APITable>
-
-There is also `$ZPFX`, set by default to `~/.zi/polaris` – a directory where software with `Makefile`, etc. can be pointed to, by e.g. `atclone'./configure --prefix=$ZPFX'`.
 
 ## Non-GitHub (Local) Plugins {#non-github-local-plugins}
 
