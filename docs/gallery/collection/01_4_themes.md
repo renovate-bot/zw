@@ -8,7 +8,7 @@ keywords: [collection, themes, prompts, zsh, z-shell, zi]
 
 :::info
 
-Related: 
+Related:
 
 1. [Multiple prompts](../../gallery/preferences#multiple-prompts)
 2. [Automatic load/unload based on condition](../../getting_started/overview#automatic-loadunload-based-on-condition)

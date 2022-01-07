@@ -6,7 +6,7 @@ description: Invocations gallery for Z-Shell ZI
 keywords: [collection, zsh, z-shell, zi]
 ---
 
-:::info
+:::caution
 
 Before trying out collection it is recommended to install annexes:
 
@@ -14,15 +14,31 @@ Before trying out collection it is recommended to install annexes:
 zi light-mode for z-shell/z-a-meta-plugins @annexes
 ```
 
+More info: [ecosystem/annexes](../ecosystem/annexes)
+
 :::
 
 :::tip
 
-For more see: [meta packages](../ecosystem/annexes/meta-plugins)
+For additional install methods, please see:
+
+1. [Meta plugins](../ecosystem/annexes/meta-plugins)
+2. [Packages](../ecosystem/packages)
+
+:::
+
+:::note
+
+- [Report issues](https://github.com/z-shell/zi/issues/new/choose)
+- [Suggestions](https://github.com/z-shell/zi/discussions/categories/ideas)
+
+Any contributions you make will benefit everybody else and are greatly appreciated.
 
 :::
 
 ## Minimal {#minimal}
+
+Quick introduction:
 
 ```shell
 zi wait lucid light-mode for \
