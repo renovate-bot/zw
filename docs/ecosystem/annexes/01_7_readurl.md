@@ -72,7 +72,7 @@ The annex provides:
 
 The annex works only with snippets, not plugins.
 
-## Installation {#installation}
+## Install Read URL
 
 Simply load like a regular plugin, i.e.:
 
