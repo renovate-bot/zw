@@ -73,7 +73,7 @@ skip'vivid exa tig' @console-tools
 | @molovo | [color][molovo/color], [revolver][molovo/revolver], [zunit][molovo/zunit] |
 | @sharkdp | [fd][sharkdp/fd], [bat][sharkdp/bat], [hexyl][sharkdp/hexyl], [hyperfine][sharkdp/hyperfine], [vivid][sharkdp/vivid] |
 | @developer-tools | [color][molovo/color], [revolver][molovo/revolver], [zunit][molovo/zunit], [gitignore.plugin.zsh][voronkovich/gitignore.plugin.zsh], [tig][jonas/tig] |
-| @console-tools | [dircolors-material][z-shell/dircolors-material], [fd][sharkdp/fd], [bat][sharkdp/bat], [hexyl][sharkdp/hexyl], [hyperfine][sharkdp/hyperfine], [vivid][sharkdp/vivid], [exa][ogham/exa], [ripgrep][BurntSushi/ripgrep], [tig][jonas/tig] |
+| @console-tools | [dircolors-material][z-shell/dircolors-material] (package), [fd][sharkdp/fd], [bat][sharkdp/bat], [hexyl][sharkdp/hexyl], [hyperfine][sharkdp/hyperfine], [vivid][sharkdp/vivid], [exa][ogham/exa], [ripgrep][BurntSushi/ripgrep], [tig][jonas/tig] |
 | @fuzzy | [fzf][z-shell/fzf] (package), [fzy][z-shell/fzy] (package), [skim][lotabout/skim], [peco][peco/peco] |
 | @fuzzy-src | fzf-go, [fzy][z-shell/fzy], skim-cargo, peco-go |
 | @ext-git | [git-open][paulirish/git-open], [git-recent][paulirish/git-recent], [git-my][davidosomething/git-my], [git-quick-stats][arzzen/git-quick-stats], [git-now][iwata/git-now], [git-extras][tj/git-extras], [forgit][wfxr/forgit] |
@@ -111,7 +111,7 @@ Other unique benefits of the Meta-Plugins annex:
 [z-a-bin-gem-node]: https://github.com/z-shell/z-a-bin-gem-node
 [z-a-readurl]: https://github.com/z-shell/z-a-readurl
 [z-a-patch-dl]: https://github.com/z-shell/z-a-patch-dl
-[z-a-rust]: https://github.com/z-shell/z-a-rust]
+[z-a-rust]: https://github.com/z-shell/z-a-rust
 [z-a-submods]: https://github.com/z-shell/z-a-submods
 [z-a-unscope]: https://github.com/z-shell/z-a-unscope
 [z-a-default-ice]: https://github.com/z-shell/z-a-default-ice
