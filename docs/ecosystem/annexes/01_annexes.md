@@ -3,7 +3,7 @@ id: annexes
 slug: /ecosystem/annexes
 sidebar_position: 1
 title: Annexes Guide
-image: /img/z-shell_501x501.png
+image: /img/logo.png
 description: Annexes documentation
 keywords: [annex, zsh, z-shell, zi]
 ---
@@ -30,9 +30,41 @@ They are [extensions](https://github.com/z-shell/zannexes) which increase functi
 
 4. Register hooks for generating help text, shown by the `zi help` subcommand.
 
+## Annex recommendation
+
+### Required for default functionality:
+
+1. [bin-gem-node](https://github.com/z-shell/z-a-bin-gem-node)
+2. [readurl](https://github.com/z-shell/z-a-readurl)
+3. [patch-dl](https://github.com/z-shell/z-a-patch-dl)
+4. [z-a-rust](https://github.com/z-shell/z-a-rust)
+
+### Recommeded for additional functionality:
+
+1. [z-a-submods](https://github.com/z-shell/z-a-submods)
+2. [z-a-unscope](https://github.com/z-shell/z-a-unscope)
+
+:::tip
+
+Install annexes as meta plugin
+
+All required:
+
+```shell
+zi light-mode for z-shell/z-a-meta-plugins @annexes
+```
+
+All required + recommended:
+
+```shell
+zi light-mode for z-shell/z-a-meta-plugins @annexes+rec
+```
+
+:::
+
 ## How To Code Them? {#how-to-code-them}
 
-Below is an example body of an `atclone` hook (taken from [**zi/z-a-submods**](https://github.com/z-shell/z-a-submods) annex).
+Below is an example body of an `atclone` hook (taken from [**submods**](https://github.com/z-shell/z-a-submods) annex).
 
 It shows how to:
 
