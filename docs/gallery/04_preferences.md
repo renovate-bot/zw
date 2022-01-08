@@ -76,12 +76,10 @@ With [meta-plugins](https://github.com/z-shell/zi/wiki/z-a-meta-plugins) consist
 
 Annexes:
 
-1. [z-shell/z-a-unscope](https://github.com/z-shell/z-a-unscope),
-2. [z-shell/z-a-readurl](https://github.com/z-shell/z-a-readurl),
-3. [z-shell/z-a-patch-dl](https://github.com/z-shell/z-a-patch-dl),
-4. [z-shell/z-a-rust](https://github.com/z-shell/z-a-rust),
-5. [z-shell/z-a-submods](https://github.com/z-shell/z-a-submods),
-6. [z-shell/z-a-bin-gem-node](https://github.com/z-shell/z-a-bin-gem-node).
+1. [z-shell/z-a-readurl](https://github.com/z-shell/z-a-readurl),
+2. [z-shell/z-a-patch-dl](https://github.com/z-shell/z-a-patch-dl),
+3. [z-shell/z-a-rust](https://github.com/z-shell/z-a-rust),
+4. [z-shell/z-a-bin-gem-node](https://github.com/z-shell/z-a-bin-gem-node).
 
 Git tools:
 
@@ -111,32 +109,45 @@ The sense of the single letter options may be inverted by using `+` instead of `
 
 In strings of single letter options supplied to the shell at startup, trailing whitespace will be ignored; for example the string `-f ` will be treated just as `-f`, but the string `-f i` is an error. This is because many systems which implement the `#!` mechanism for calling scripts do not strip trailing whitespace.
 
+### History optimization
+
 ```shell
 #
-# setopts
+# History setopts
 #
-setopt bang_hist                # Treat The '!' Character Specially During Expansion.
-setopt hist_ignore_all_dups     # Remove older duplicate entries from history
-setopt hist_expire_dups_first   # Expire A Duplicate Event First When Trimming History.
-setopt hist_ignore_dups         # Do Not Record An Event That Was Just Recorded Again.
-setopt hist_reduce_blanks       # Remove superfluous blanks from history items
-setopt hist_find_no_dups        # Do Not Display A Previously Found Event.
-setopt hist_ignore_space        # Do Not Record An Event Starting With A Space.
-setopt hist_save_no_dups        # Do Not Write A Duplicate Event To The History File.
-setopt hist_verify              # Do Not Execute Immediately Upon History Expansion.
-setopt append_history           # Allow multiple terminal sessions to all append to one zsh command history
-setopt extended_history         # Show Timestamp In History.
-setopt inc_append_history       # Write To The History File Immediately, Not When The Shell Exits.
-setopt share_history            # Share history between different instances of the shell
-setopt multios                  # Perform implicit tees or cats when multiple redirections are attempted
-setopt interactive_comments     # Allow comments even in interactive shells (especially for Muness)
-setopt pushd_ignore_dups        # Don't push multiple copies of the same directory onto the directory stack
-setopt auto_cd                  # Use cd by typing directory name if it's not a command
-setopt no_beep                  # Don't beep on error
-setopt auto_list                # Automatically list choices on ambiguous completion
-setopt auto_pushd               # Make cd push the old directory onto the directory stack
-setopt pushdminus               # Swapped the meaning of cd +1 and cd -1; we want them to mean the opposite of what they mean
-setopt promptsubst              # Enables the substitution of parameters inside the prompt each time the prompt is drawn
+
+setopt hist_ignore_all_dups   # Remove older duplicate entries from history
+setopt hist_expire_dups_first # Expire A Duplicate Event First When Trimming History.
+setopt hist_ignore_dups       # Do Not Record An Event That Was Just Recorded Again.
+setopt hist_reduce_blanks     # Remove superfluous blanks from history items
+setopt hist_find_no_dups      # Do Not Display A Previously Found Event.
+setopt hist_ignore_space      # Do Not Record An Event Starting With A Space.
+setopt hist_save_no_dups      # Do Not Write A Duplicate Event To The History File.
+setopt hist_verify            # Do Not Execute Immediately Upon History Expansion.
+
+setopt append_history     # Allow multiple terminal sessions to all append to one zsh command history
+setopt extended_history   # Show Timestamp In History.
+setopt inc_append_history # Write To The History File Immediately, Not When The Shell Exits.
+setopt share_history      # Share history between different instances of the shell
+```
+
+### Other tweaks
+
+```shell
+#
+# Tweak setopts
+#
+
+setopt bang_hist             # Treat The '!' Character Specially During Expansion.
+setopt multios               # Perform implicit tees or cats when multiple redirections are attempted
+setopt interactive_comments  # Allow comments even in interactive shells (especially for Muness)
+setopt pushd_ignore_dups     # Don't push multiple copies of the same directory onto the directory stack
+setopt auto_cd               # Use cd by typing directory name if it's not a command
+setopt no_beep               # Don't beep on error
+setopt auto_list             # Automatically list choices on ambiguous completion
+setopt auto_pushd            # Make cd push the old directory onto the directory stack
+setopt pushdminus            # Swapped the meaning of cd +1 and cd -1; we want them to mean the opposite of what they mean
+setopt promptsubst           # Enables the substitution of parameters inside the prompt each time the prompt is drawn
 ```
 
 ## Zstyle {#zstyle}
@@ -147,10 +158,12 @@ setopt promptsubst              # Enables the substitution of parameters inside 
 #
 # zstyle
 #
+
 # Fuzzy matching of completions for when you mistype them:
 zstyle ':completion:*' completer _complete _match _approximate
 zstyle ':completion:*:match:*' original only
 zstyle -e ':completion:*:approximate:*' max-errors 'reply=($((($#PREFIX+$#SUFFIX)/3>7?7:($#PREFIX+$#SUFFIX)/3))numeric)'
+
 # Pretty completions
 zstyle ':completion:*:matches' group 'yes'
 zstyle ':completion:*:options' description 'yes'
@@ -167,6 +180,7 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:
 zstyle ':completion:*:functions' ignored-patterns '(_*|pre(cmd|exec))'
 zstyle ':completion:*' use-cache true
 zstyle ':completion:*' rehash true
+
 # Do menu-driven completion.
 zstyle ':completion:*' menu select
 # Color completion for some things.
