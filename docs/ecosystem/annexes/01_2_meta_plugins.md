@@ -34,7 +34,7 @@ zi light-mode for z-a-meta-plugins @annexes @ext-git @zsh-users
 
 :::
 
-Following commands are examples of how to install meta plugins.
+Following commands are example how to install meta plugins.
 
 - Install annexes:
 
