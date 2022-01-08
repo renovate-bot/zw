@@ -6,9 +6,9 @@ description: Invocations gallery for Z-Shell ZI
 keywords: [collection, zsh, z-shell, zi]
 ---
 
-:::caution
+:::info
 
-Before trying out collection it is recommended to install annexes:
+Some installations may require additional functionally, it can be done by installing required annexes as meta plugin:
 
 ```shell
 zi light-mode for z-shell/z-a-meta-plugins @annexes
