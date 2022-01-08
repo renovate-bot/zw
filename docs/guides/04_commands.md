@@ -2,7 +2,7 @@
 id: commands
 title: Commands
 sidebar_position: 4
-image: /img/z-shell_501x501.png
+image: /img/logo.png
 description: Commands documentation for the Z-Shell ZI
 keywords: [commands, zsh, z-shell, zi]
 ---
@@ -69,7 +69,7 @@ To update ZI issue `zi self-update` in the command line.
 
 To update all plugins and snippets, issue `zi update`. If you wish to update only a single plugin/snippet instead issue `zi update NAME_OF_PLUGIN`. A list of commits will be shown:
 
-<div align="center"><img src="https://github.com/z-shell/zinit/raw/main/doc/img/update.png)" alt="Update" width="80%" /></div>
+<div align="center"><img src="https://github.com/z-shell/zinit/raw/main/doc/img/update.png" alt="Update" width="80%" /></div>
 
 Some plugins require performing an action each time they're updated. One way you can do this is by using the `atpull` ice modifier. For example, writing `zi ice atpull'./configure'` before loading a plugin will execute `./configure` after a successful update. Refer to [Ice Modifiers](ice-modifiers) for more information.
 
