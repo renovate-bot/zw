@@ -212,7 +212,7 @@ Read [zstyle](http://zsh.sourceforge.net/Doc/Release/Zsh-Modules.html#The-zsh_00
 
 :::
 
-### Migration from Zgen {#migration-from-zgen}
+## Migration from Zgen {#migration-from-zgen}
 
 ### Oh-My-Zsh difference {#oh-my-zsh-difference}
 
