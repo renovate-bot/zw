@@ -5,8 +5,6 @@
 
 ## Development
 
-Open in [SandBox](https://codesandbox.io/s/z-shell-pages-dev-4z5ne)
-
 ### Installation
 
 ```shell
