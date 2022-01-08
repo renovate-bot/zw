@@ -21,7 +21,7 @@ zi ice svn submods'zsh-users/zsh-autosuggestions -> external'
 zi snippet PZT::modules/autosuggestions
 ```
 
-## Installation {#installation}
+## Install submods
 
 Simply load as a plugin. The following command will install the annex within ZI:
 
