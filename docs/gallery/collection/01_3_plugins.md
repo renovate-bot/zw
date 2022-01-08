@@ -10,10 +10,10 @@ keywords: [collection, plugins, zsh, z-shell, zi]
 
 Related:
 
-1. [Turbo and Lucid](../../getting_started/useage#turbo-and-lucid)
-2. [The `for` syntax](../../guides/syntax#the-for-syntax)
-3. [Ice Syntax](../../guides/ice)
-4. [Ice Modifiers](../../guides/ice-modifiers)
+1. [Usage: Turbo and Lucid](../../getting_started/useage#turbo-and-lucid)
+2. [Syntax: The `for` syntax](../../guides/syntax#the-for-syntax)
+3. [Guides: Ice Syntax](../../guides/ice)
+4. [Guides: Ice Modifiers](../../guides/ice-modifiers)
 5. [Compiling programs](../../gallery/distinctive#compiling-programs)
 6. [Customizing paths](../../gallery/preferences#customizing-paths)
 7. [The Ice modifiers by `bin-gem-node` annex](../../ecosystem/annexes/bin-gem-node#the-ice-modifiers-provided-by-the-annex)
@@ -211,7 +211,7 @@ zi light leophys/zsh-plugin-fzf-finder
 ### [autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) & [fast-syntax-highlighting](https://github.com/z-shell/F-Sy-H) {#autosuggestions--fast-syntax-highlighting}
 
 ```shell
-zi ice wait lucid atinit"$ZI[COMPINIT_OPTS]=-C; zpcompinit; zpcdreplay"
+zi ice wait lucid atinit"ZI[COMPINIT_OPTS]=-C; zpcompinit; zpcdreplay"
 zi light z-shell/F-Sy-H
 
 zi ice wait lucid atload"!_zsh_autosuggest_start"
