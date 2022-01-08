@@ -65,7 +65,7 @@ skip'vivid exa tig' @console-tools
 | @annexes+rec | @annexes + [submods][z-a-submods], [unscope][z-a-unscope] |
 | @annexes+add | @annexes+rec + [default-ice][z-a-default-ice], [test][z-a-test] |
 | @annexes+con | @annexes + [zi-console][z-shell/zi-console] |
-| @z-shell | [F-Sy-H][z-shell/F-Sy-H], [H-S-MW][z-shell/H-S-MW], [zsh-diff-so-fancy](z-shell/zsh-diff-so-fancy) |
+| @z-shell | [F-Sy-H][z-shell/F-Sy-H], [H-S-MW][z-shell/H-S-MW], [zsh-diff-so-fancy][z-shell/zsh-diff-so-fancy] |
 | @z-shell2 | [zconvey][z-shell/zconvey], [zui][z-shell/zui], [zflai][z-shell/zflai] |
 | @zsh-users | [zsh-syntax-highlighting][zsh-users/zsh-syntax-highlighting], [zsh-autosuggestions][zsh-users/zsh-autosuggestions], [zsh-completions][zsh-users/zsh-completions] |
 | @zsh-users+fast | [F-Sy-H][z-shell/F-Sy-H], [zsh-autosuggestions][zsh-users/zsh-autosuggestions], [zsh-completions][zsh-users/zsh-completions] |
