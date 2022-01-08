@@ -2,7 +2,7 @@
 id: ice
 title: Ice Syntax
 sidebar_position: 2
-image: /img/z-shell_501x501.png
+image: /img/logo.png
 description: Ice syntax documentation
 keywords: [ice, zsh, z-shell, zi]
 ---
