@@ -5,7 +5,9 @@ description: Annex - Default Ice documentation
 keywords: [annex, default-ice, zsh, z-shell, zi]
 ---
 
-[Default Ice](https://github.com/z-a-default-ice) annex allows setting **default ices** for the next `zi` command. It adds subcommand: **default-ice** which has the following synopsis:
+[Default Ice](https://github.com/z-shell/z-a-default-ice) annex allows setting **default ices** for the next `zi` command.
+
+It adds subcommand: **default-ice** which has the following synopsis:
 
 ```shell
 —— default-ice --help/-h --clear/-c --show/-s --get/-g --quiet/-q --stats/-t
@@ -18,6 +20,14 @@ keywords: [annex, default-ice, zsh, z-shell, zi]
  --get/-g	→      return the current ices in Reply hash
  --quiet/-q	→      hide all messages
  --stats/-t	→      show some statistics
+```
+
+## Install default ice
+
+Simply load like a regular plugin, i.e.:
+
+```zsh
+zi light z-shell/z-a-default-ice
 ```
 
 ## Usage with [ZI](https://github.com/z-shell/zi) {#usage-with-zi}
