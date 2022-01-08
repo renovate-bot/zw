@@ -22,7 +22,7 @@ It adds subcommand: **default-ice** which has the following synopsis:
  --stats/-t	→      show some statistics
 ```
 
-## Install default ice
+## Install Default Ice
 
 Simply load like a regular plugin, i.e.:
 
