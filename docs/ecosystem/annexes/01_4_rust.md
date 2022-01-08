@@ -81,7 +81,7 @@ Flags meanings:
 
 As the examples showed, the name of the binary to run and the shim name are by default equal to the name of the crate. Specifying `{binary-name} <- …` and/or `… -> {shim-name}` allows to override them.
 
-## Installation {#installation}
+## Install Rust annex
 
 Simply load like a regular plugin, i.e.:
 
