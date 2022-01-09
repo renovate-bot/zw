@@ -1,6 +1,6 @@
 ---
 id: rust
-title: Rust
+title: Rust Annex
 description: Annex - Rust documentation
 keywords: [annex, rust, zsh, z-shell, zi]
 ---
@@ -66,8 +66,8 @@ zi load z-shell/null
 # A little more complex rustup configuration that uses Bin-Gem-Node annex
 # and installs the cargo completion provided with rustup, using for-syntax
 zi id-as=rust wait=1 as=null sbin="bin/*" lucid rustup \
-	atload="[[ ! -f ${ZI[COMPLETIONS_DIR]}/_cargo ]] && zi creinstall rust; \
-	export CARGO_HOME=\$PWD RUSTUP_HOME=\$PWD/rustup" for \
+  atload="[[ ! -f ${ZI[COMPLETIONS_DIR]}/_cargo ]] && zi creinstall rust; \
+  export CARGO_HOME=\$PWD RUSTUP_HOME=\$PWD/rustup" for \
 z-shell/null
 ```
 

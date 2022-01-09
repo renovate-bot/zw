@@ -1,6 +1,6 @@
 ---
 id: readurl
-title: Read URL
+title: Read URL Annex
 description: Annex - Read URL documentation
 keywords: [annex, readurl, zsh, z-shell, zi]
 ---

@@ -1,6 +1,6 @@
 ---
 id: default-ice
-title: Default Ice
+title: Default Ice Annex
 description: Annex - Default Ice documentation
 keywords: [annex, default-ice, zsh, z-shell, zi]
 ---
@@ -14,12 +14,12 @@ It adds subcommand: **default-ice** which has the following synopsis:
 —— default-ice ice1'value1' ice2'value2' ⋯
 
  Description:
- --help/-h	→      this message
- --show/-s	→      show the currently set default ices
- --clear/-c	→      reset the default ices
- --get/-g	→      return the current ices in Reply hash
- --quiet/-q	→      hide all messages
- --stats/-t	→      show some statistics
+ --help/-h  →      this message
+ --show/-s  →      show the currently set default ices
+ --clear/-c →      reset the default ices
+ --get/-g   →      return the current ices in Reply hash
+ --quiet/-q →      hide all messages
+ --stats/-t →      show some statistics
 ```
 
 ## Install Default Ice {#install-default-ice}

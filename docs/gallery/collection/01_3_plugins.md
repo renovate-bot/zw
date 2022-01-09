@@ -35,7 +35,7 @@ zi ice wait'0c' lucid ...
 zi light ...
 ```
 
-Create your own syntax + conditional loading e.g:
+Create your own syntax e.g:
 
 ```shell
 # Common ICE modifiers
@@ -75,13 +75,6 @@ zi light ...
 
 ## Without [`for`](../../guides/syntax#the-for-syntax) syntax {#without-for-syntax}
 
-### [dandavison/delta](https://github.com/dandavison/delta) {#dandavisondelta}
-
-```shell
-zi ice wait lucid from"gh-r" sbin"**/delta -> delta"
-zi light dandavison/delta
-```
-
 ### [trapd00r/LS_COLORS](https://github.com/trapd00r/LS_COLORS) {#trapd00rls_colors}
 
 ```shell
@@ -94,55 +87,6 @@ zi ice wait lucid reset \
   atpull'%atclone' pick"c.zsh" nocompile'!' \
   atload'zstyle ":completion:*" list-colors “${(s.:.)LS_COLORS}”'
 zi light trapd00r/LS_COLORS
-```
-
-### [molovo/revolver](https://github.com/molovo/revolver) {#molovorevolver}
-
-```shell
-zi ice wait lucid as"program" pick"revolver"
-zi light molovo/revolver
-```
-
-### [zunit-zsh/zunit](https://github.com/zunit-zsh/zunit) {#zunit-zshzunit}
-
-```shell
-zi ice wait lucid as"program" pick"zunit" atclone"./build.zsh" atpull"%atclone"
-zi load @zunit-zsh/zunit
-```
-
-### [tj/git-extras](https://github.com/tj/git-extras) {#tjgit-extras}
-
-```shell
-zi ice wait lucid as"program" pick"$ZPFX/bin/git-*" make"PREFIX=$ZPFX" nocompile
-zi light tj/git-extras
-```
-
-### [Osse/git-scripts/git-unique](https://github.com/Osse/git-scripts/blob/master/git-unique) {#ossegit-scriptsgit-unique}
-
-```shell
-zi ice as"program" id-as"git-unique" pick"git-unique"
-zi snippet https://github.com/Osse/git-scripts/blob/master/git-unique
-```
-
-### [k4rthik/git-cal](https://github.com/k4rthik/git-cal) {#k4rthikgit-cal}
-
-```shell
-zi ice wait lucid as"program" atclone"perl Makefile.PL PREFIX=$ZPFX" atpull"%atclone" make"install" pick"$ZPFX/bin/git-cal"
-zi light k4rthik/git-cal
-```
-
-### [mfaerevaag/wd](https://github.com/mfaerevaag/wd) {#mfaerevaagwd}
-
-```shell
-zi ice wait lucid as"program" cp"wd.sh -> wd" mv"_wd.sh -> _wd" atpull'!git reset --hard' pick"wd"
-zi light mfaerevaag/wd
-```
-
-### [obihann/archey-osx](https://github.com/obihann/archey-osx) {#obihannarchey-osx}
-
-```shell
-zi ice wait lucid as"program" pick"bin/archey"
-zi light obihann/archey-osx
 ```
 
 ### [paoloantinori/hhighlighter](https://github.com/paoloantinori/hhighlighter) {#paoloantinorihhighlighter}
@@ -227,13 +171,6 @@ zi ice lucid id-as"GitHub-notify" on-update-of"~/.cache/zsh-github-issues/new_ti
 zi light z-shell/zsh-github-issues
 ```
 
-### [z-shell/zsh-diff-so-fancy](https://github.com/z-shell/zsh-diff-so-fancy) {#z-shellzsh-diff-so-fancy}
-
-```shell
-zi ice wait lucid as"program" pick"bin/git-dsf"
-zi load z-shell/zsh-diff-so-fancy
-```
-
 ### [zsh-shell/zsh-startify](https://github.com/z-shell/zsh-startify) {#zsh-shellzsh-startify}
 
 ```shell
@@ -286,24 +223,12 @@ zi load z-shell/zredis
 
 ## With [`for`](../../guides/syntax#the-for-syntax) syntax {#with-for-syntax}
 
-### [pemistahl/grex](https://github.com/pemistahl/grex) {#pemistahlgrex}
+### [pemistahl/grex](https://github.com/pemistahl/grex) from GitHub releases {#pemistahlgrex-from-github-releases}
 
 ```shell
 # A command-line tool and library for generating regular expressions from user-provided test cases.
 zi wait lucid for as"command" from"gh-r" sbin"grex" \
     pemistahl/grex
-```
-
-### [molovo/revolver](https://github.com/molovo/revolver) & [zunit-zsh/zunit](https://github.com/zunit-zsh/zunit) {#molovorevolver--zunit-zshzunit}
-
-```shell
-zi wait lucid for \
-  as"program" atclone"ln -sfv revolver.zsh-completion _revolver" \
-  atpull"%atclone" pick"revolver" \
-    @molovo/revolver \
-  as"completion" atclone"./build.zsh; ln -sfv zunit.zsh-completion _zunit" \
-  atpull"%atclone" sbin"zunit" \
-    @zunit-zsh/zunit
 ```
 
 ### [stedolan/jq](https://github.com/stedolan/jq) {#stedolanjq}
@@ -315,7 +240,7 @@ zi wait lucid for atclone"autoreconf -fi \
     stedolan/jq
 ```
 
-### [ahmetb/kubectx](https://github.com/ahmetb/kubectx) {#ahmetbkubectx}
+### [ahmetb/kubectx](https://github.com/ahmetb/kubectx) from GitHub releases {#ahmetbkubectx-from-github-releases}
 
 ```shell
 zi wait lucid for bpick"kubectx;kubens" from"gh-r" \
@@ -323,7 +248,7 @@ zi wait lucid for bpick"kubectx;kubens" from"gh-r" \
     ahmetb/kubectx
 ```
 
-### [github/git-sizer](https://github.com/github/git-sizer) {#githubgit-sizer}
+### [github/git-sizer](https://github.com/github/git-sizer) from GitHub releases {#githubgit-sizer-from-github-releases}
 
 ```shell
 # Compute various size metrics for a Git repository, flagging those that might cause problems.

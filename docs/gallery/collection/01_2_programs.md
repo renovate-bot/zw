@@ -10,7 +10,7 @@ keywords: [collection, programs, zsh, z-shell, zi]
 
 Related:
 
-1. [Overview: as"program"](../../getting_started/overview#asprogram)
+1. [Overview: as'program'](../../getting_started/overview#asprogram)
 2. [Turbo and Lucid](../../getting_started/useage#turbo-and-lucid)
 3. [The `for` syntax](../../guides/syntax#the-for-syntax)
 4. [The `make` syntax](../../guides/syntax#the-make-syntax)
@@ -24,7 +24,7 @@ Related:
 
 :::tip
 
-You can create your own syntax + conditional loading e.g:
+You can create your own syntax e.g:
 
 ```shell
 # Common ICE modifiers
@@ -61,35 +61,98 @@ zi light ...
 
 ## Without [`for`](../../guides/syntax#the-for-syntax) syntax {#without-for-syntax}
 
-### [eth-p/bat-extras](https://github.com/eth-p/bat-extras) {#eth-pbat-extras}
+### GitHub releases: [dandavison/delta](https://github.com/dandavison/delta) {#github-releases-dandavisondelta}
+
+```shell
+zi ice wait lucid as'program' from'gh-r' sbin'**/delta -> delta'
+zi light dandavison/delta
+```
+
+### Script: [molovo/revolver](https://github.com/molovo/revolver) {#script-molovorevolver}
+
+```shell
+zi ice wait lucid as'program' pick'revolver'
+zi light molovo/revolver
+```
+
+### Script: [zunit-zsh/zunit](https://github.com/zunit-zsh/zunit) {#script-zunit-zshzunit}
+
+```shell
+zi ice wait lucid as'program' pick'zunit' atclone'./build.zsh' atpull'%atclone'
+zi load @zunit-zsh/zunit
+```
+
+### Build: [tj/git-extras](https://github.com/tj/git-extras) {#build-tjgit-extras}
+
+```shell
+zi ice wait lucid as'program' pick'$ZPFX/bin/git-*' make'PREFIX=$ZPFX' nocompile
+zi light tj/git-extras
+```
+
+### Script: [Osse/git-scripts/git-unique](https://github.com/Osse/git-scripts/blob/master/git-unique) {#script-ossegit-scriptsgit-unique}
+
+```shell
+zi ice as'program' id-as'git-unique' pick'git-unique'
+zi snippet https://github.com/Osse/git-scripts/blob/master/git-unique
+```
+
+### Build: [k4rthik/git-cal](https://github.com/k4rthik/git-cal) {#k4rthikgit-cal}
+
+```shell
+zi ice wait lucid as'program' atclone'perl Makefile.PL PREFIX=$ZPFX' atpull'%atclone' make'install' pick'$ZPFX/bin/git-cal'
+zi light k4rthik/git-cal
+```
+
+### Script: [mfaerevaag/wd](https://github.com/mfaerevaag/wd) {#script-mfaerevaagwd}
+
+```shell
+zi ice wait lucid as'program' cp'wd.sh -> wd' mv'_wd.sh -> _wd' atpull'!git reset --hard' pick'wd'
+zi light mfaerevaag/wd
+```
+
+### Script: [z-shell/zsh-diff-so-fancy](https://github.com/z-shell/zsh-diff-so-fancy) {#script-z-shellzsh-diff-so-fancy}
+
+```shell
+zi ice wait lucid as'program' pick'bin/git-dsf'
+zi load z-shell/zsh-diff-so-fancy
+```
+
+### Script: [obihann/archey-osx](https://github.com/obihann/archey-osx) {#script-obihannarchey-osx}
+
+```shell
+zi ice wait lucid as'program' pick'bin/archey'
+zi light obihann/archey-osx
+```
+
+### Script: [eth-p/bat-extras](https://github.com/eth-p/bat-extras) {#script-eth-pbat-extras}
 
 ```shell
 zi ice lucid wait as'program' has'bat' pick'src/*'
 zi light eth-p/bat-extras
 ```
 
-### [paulirish/git-open](https://github.com/paulirish/git-open) {#paulirishgit-open}
+### Script: [paulirish/git-open](https://github.com/paulirish/git-open) {#script-paulirishgit-open}
 
 ```shell
 zi ice lucid wait as'program' has'git' atclone"cp git-open.1.md $ZPFX/man/man1/git-open.1" atpull'%atclone'
 zi light paulirish/git-open
 ```
 
-### [LuRsT/hr](https://github.com/LuRsT/hr) {#lursthr}
+### Script: [LuRsT/hr](https://github.com/LuRsT/hr) {#script-lursthr}
 
 ```shell
 zi ice lucid wait as'program' atclone"cp hr.1 $ZPFX/man/man1" atpull'%atclone'
 zi light LuRsT/hr
 ```
 
-### [z-shell/imgur-album-downloader](https://github.com/z-shell/imgur-album-downloader) {#z-shellimgur-album-downloader}
+### Script: [z-shell/imgur-album-downloader](https://github.com/z-shell/imgur-album-downloader) {#z-shellimgur-album-downloader}
 
 ```shell
 zi ice lucid wait as'program' has'python3' pick'imguralbum.py'
 zi light z-shell/imgur-album-downloader
 ```
 
-### [Seirdy/stpv](https://github.com/Seirdy/stpv) {#seirdystpv}
+### Script: [Seirdy/stpv](https://github.com/Seirdy/stpv) {#script-seirdystpv}
 
 ```shell
 zi ice lucid wait as'program' has'fzf' pick'fzfp'
@@ -106,14 +169,14 @@ zi ice lucid wait as'program' pick'stpv'
 zi light Seirdy/stpv
 ```
 
-### [exiftool/exiftool](https://github.com/exiftool/exiftool) {#exiftoolexiftool}
+### Script: [exiftool/exiftool](https://github.com/exiftool/exiftool) {#script-exiftoolexiftool}
 
 ```shell
 zi ice lucid wait as'program' has'perl' has'convert' pick'exiftool'
 zi light exiftool/exiftool
 ```
 
-### [smxi/inxi](https://github.com/smxi/inxi) {#smxiinxi}
+### Script: [smxi/inxi](https://github.com/smxi/inxi) {#script-smxiinxi}
 
 ```shell
 if [ -z "$SSH_CONNECTION" ]; then
@@ -122,56 +185,56 @@ if [ -z "$SSH_CONNECTION" ]; then
 fi
 ```
 
-### [dylanaraps/pash](https://github.com/dylanaraps/pash) {#dylanarapspash}
+### Script: [dylanaraps/pash](https://github.com/dylanaraps/pash) {#dylanarapspash}
 
 ```shell
 zi ice lucid wait as'program' has'gpg'
 zi light dylanaraps/pash
 ```
 
-### [aaronNG/reddio](https://gitlab.com/aaronNG/reddio) {#aaronngreddio}
+### Build: [aaronNG/reddio](https://gitlab.com/aaronNG/reddio) {#aaronngreddio}
 
 ```shell
 zi ice lucid wait as'program' has'jq' pick'reddio' from'gitlab'
 zi light aaronNG/reddio
 ```
 
-### [hackerb9/lsix](https://github.com/hackerb9/lsix) {#hackerb9lsix}
+### Script: [hackerb9/lsix](https://github.com/hackerb9/lsix) {#script-hackerb9lsix}
 
 ```shell
 zi ice lucid wait as'program' has'mogrify'
 zi light hackerb9/lsix
 ```
 
-### [denilsonsa/prettyping](https://github.com/denilsonsa/prettyping) {#denilsonsaprettyping}
+### Snippet: [denilsonsa/prettyping](https://github.com/denilsonsa/prettyping) {#snippet-denilsonsaprettyping}
 
 ```shell
 zi ice lucid wait as'program' pick'prettyping' has'ping'
 zi light denilsonsa/prettyping
 ```
 
-### [TheLocehiliosan/yadm](https://github.com/TheLocehiliosan/yadm) {#thelocehiliosanyadm}
+### Build: [TheLocehiliosan/yadm](https://github.com/TheLocehiliosan/yadm) {#build-thelocehiliosanyadm}
 
 ```shell
 zi ice lucid wait as'program' has'git' pick'yadm' atclone"cp yadm.1 $ZPFX/man/man1" atpull'%atclone'
 zi light TheLocehiliosan/yadm
 ```
 
-### [greymd/tmux-xpanes](https://github.com/greymd/tmux-xpanes) {#greymdtmux-xpanes}
+### Snippet: [greymd/tmux-xpanes](https://github.com/greymd/tmux-xpanes) {#snippet-greymdtmux-xpanes}
 
 ```shell
 zi ice lucid wait as'program' has'tmux' pick'bin/xpanes'
 zi light greymd/tmux-xpanes
 ```
 
-### [DanielG/dxld-mullvad/blob/master/am-i-mullvad.sh](https://github.com/DanielG/dxld-mullvad/blob/master/am-i-mullvad.sh) {#danielgdxld-mullvadblobmasteram-i-mullvadsh}
+### Snippet: [DanielG/dxld-mullvad/blob/master/am-i-mullvad.sh](https://github.com/DanielG/dxld-mullvad/blob/master/am-i-mullvad.sh) {#snippet-danielgdxld-mullvadblobmasteram-i-mullvadsh}
 
 ```shell
 zi ice lucid wait as'program' has'jq'
 zi snippet 'https://github.com/DanielG/dxld-mullvad/blob/master/am-i-mullvad.sh'
 ```
 
-### [sdushantha/farge](https://github.com/sdushantha/farge) {#sdushanthafarge}
+### Build: [sdushantha/farge](https://github.com/sdushantha/farge) {#build-sdushanthafarge}
 
 ```shell
 if [ -n "$WAYLAND_DISPLAY" ]; then
@@ -180,124 +243,163 @@ if [ -n "$WAYLAND_DISPLAY" ]; then
 fi
 ```
 
-### [denisidoro/navi](https://github.com/denisidoro/navi) {#denisidoronavi}
+### GitHub releases: [denisidoro/navi](https://github.com/denisidoro/navi) {#github-releases-denisidoronavi}
 
 ```shell
-zi ice lucid wait as'program' has'fzf'
+zi ice lucid wait as'program' from"gh-r" has'fzf'
 zi light denisidoro/navi
 ```
 
-### [dylanaraps/neofetch](https://github.com/dylanaraps/neofetch) {#dylanarapsneofetch}
+### Build: [dylanaraps/neofetch](https://github.com/dylanaraps/neofetch) {#build-dylanarapsneofetch}
 
 ```shell
 zi ice lucid wait as'program' pick'neofetch' atclone"cp neofetch.1 $ZPFX/man/man1" atpull'%atclone'
 zi light dylanaraps/neofetch
 ```
 
-### [junegunn/fzf](https://github.com/junegunn/fzf) {#junegunnfzf}
+### GitHub releases: [junegunn/fzf](https://github.com/junegunn/fzf) {#github-releases-junegunnfzf}
 
 ```shell
-zi ice from"gh-r" as"program"
+zi ice from"gh-r" as'program'
 zi light @junegunn/fzf
 ```
 
-### [sharkdp/fd](https://github.com/sharkdp/fd) {#sharkdpfd}
+### GitHub releases: [sharkdp/fd](https://github.com/sharkdp/fd) {#github-releases-sharkdpfd}
 
 ```shell
 zi ice as"command" from"gh-r" mv"fd* fd" sbin"**/fd(.exe|) -> fd"
 zi light @sharkdp/fd
 ```
 
-### [sharkdp/bat](https://github.com/sharkdp/bat) {#sharkdpbat}
+### GitHub releases: [sharkdp/bat](https://github.com/sharkdp/bat) {#github-releases-sharkdpbat}
 
 ```shell
 zi ice as"command" from"gh-r" mv"bat* bat" sbin"**/bat(.exe|) -> bat"
 zi light @sharkdp/bat
 ```
 
-### [sharkdp/hexyl](https://github.com/sharkdp/hexyl) {#sharkdphexyl}
+### GitHub releases: [sharkdp/hexyl](https://github.com/sharkdp/hexyl) {#github-releases-sharkdphexyl}
 
 ```shell
 zi ice as"command" from"gh-r" mv"hexyl* hexyl" sbin"**/hexyl(.exe|) -> hexyl"
 zi light @sharkdp/hexyl
 ```
 
-### [sharkdp/hyperfine](https://github.com/sharkdp/hyperfine) {#sharkdphyperfine}
+### GitHub releases: [sharkdp/hyperfine](https://github.com/sharkdp/hyperfine) {#github-releases-sharkdphyperfine}
 
 ```shell
 zi ice as"command" from"gh-r" mv"hyperfine* hyperfine" sbin"**/hyperfine(.exe|) -> hyperfine"
 zi light @sharkdp/hyperfine
 ```
 
-### [sharkdp/vivid](https://github.com/sharkdp/vivid) {#sharkdpvivid}
+### GitHub releases: [sharkdp/vivid](https://github.com/sharkdp/vivid) {#github-releases-sharkdpvivid}
 
 ```shell
 zi ice as"command" from"gh-r" mv"vivid* vivid" sbin"**/vivid(.exe|) -> vivid"
 zi light @sharkdp/vivid
 ```
 
-### [ogham/exa](https://github.com/ogham/exa) {#oghamexa}
+### [Peltoche/lsd](https://github.com/Peltoche/lsd) {#peltochelsd}
+
+#### [Rust annex:](../../ecosystem/annexes/rust) rust and [Peltoche/lsd](https://github.com/Peltoche/lsd) {#rust-annex-rust-and-peltochelsd}
 
 ```shell
-zi ice as"program" from"gh-r" sbin"**/exa -> exa" atclone"cp -vf completions/exa.zsh _exa"
+zi ice rustup cargo"!lsd"
+zi load z-shell/null
+```
+
+### GitHub releases: [ogham/exa](https://github.com/ogham/exa) {#github-releases-oghamexa}
+
+```shell
+zi ice as'program' from'gh-r' sbin'**/exa -> exa' atclone'cp -vf completions/exa.zsh _exa'
 zi light ogham/exa
 ```
 
-### [docker/compose](https://github.com/docker/compose) {#dockercompose}
+#### [Rust annex:](../../ecosystem/annexes/rust) rust and [ogham/exa](https://github.com/ogham/exa) {#rust-annex-rust-and-oghamexa}
 
 ```shell
-zi ice from"gh-r" as"program" mv"docker* -> docker-compose"
+# the `ls' shim exposing the `exa' binary
+zi ice rustup cargo"!exa -> ls"
+zi load z-shell/null
+```
+
+```shell
+# shim with standard error redirected to /dev/null
+zi ice rustup cargo"!E:exa"
+zi load z-shell/null
+```
+
+### [Rust annex:](../../ecosystem/annexes/rust) rust and [ogham/exa](https://github.com/ogham/exa), [Peltoche/lsd](https://github.com/Peltoche/lsd) {#rust-annex-rust-and-oghamexa-peltochelsd}
+
+```shell
+zi ice rustup cargo"exa;lsd"
+zi load z-shell/null
+```
+
+```shell
+# exposes their binaries by altering $PATH
+zi ice rustup cargo'exa;lsd' as"command" pick"bin/(exa|lsd)"
+zi load z-shell/null
+```
+
+### GitHub releases: [docker/compose](https://github.com/docker/compose) {#github-releases-dockercompose}
+
+```shell
+zi ice from"gh-r" as'program' mv'docker* -> docker-compose'
 zi light docker/compose
 ```
 
-### [vim/vim](https://github.com/vim/vim) {#vimvim}
+### Build: [vim/vim](https://github.com/vim/vim) {#build-vimvim}
 
 ```shell
-zi ice as"program" atclone"rm -f src/auto/config.cache; ./configure" \
-  atpull"%atclone" make pick"src/vim"
+zi ice as'program' atclone'rm -f src/auto/config.cache; ./configure' \
+  atpull'%atclone' make pick'src/vim'
 zi light vim/vim
 ```
 
-### [neovim/neovim](https://github.com/neovim/neovim) {#neovimneovim}
+### GitHub releases: [neovim/neovim](https://github.com/neovim/neovim) {#github-releases-neovimneovim}
 
 ```shell
-zi ice as"program" bpick"${bpick}" from"gh-r" sbin"**/bin/nvim -> nvim"
+zi ice as'program' bpick'\${bpick}' from'gh-r' sbin'**/bin/nvim -> nvim'
 zi light neovim/neovim
 ```
 
-### [direnv/direnv](https://github.com/direnv/direnv) {#direnvdirenv}
+### GitHub releases: [direnv/direnv](https://github.com/direnv/direnv) {#github-releases-direnvdirenv}
 
 ```shell
-# Get binary
-zi ice as"program" from"gh-r" mv"direnv* -> direnv"
-zi light direnv/direnv
-# Build using make
-zi ice as"program" make"!" atclone"./direnv hook zsh > zhook.zsh" atpull"%atclone" src"zhook.zsh"
+zi ice as'program' from'gh-r' mv'direnv* -> direnv'
 zi light direnv/direnv
 ```
 
-### [mvdan/sh](https://github.com/mvdan/sh) {#mvdansh}
+### Build: [direnv/direnv](https://github.com/direnv/direnv) {#build-direnvdirenv}
 
 ```shell
-zi ice as"program" from"gh-r" mv"shfmt* -> shfmt"
+zi ice as'program' make'!' atclone'./direnv hook zsh > zhook.zsh' atpull'%atclone' src'zhook.zsh'
+zi light direnv/direnv
+```
+
+### GitHub releases: [mvdan/sh](https://github.com/mvdan/sh) {#github-releases-mvdansh}
+
+```shell
+zi ice as'program' from'gh-r' mv'shfmt* -> shfmt'
 zi light mvdan/sh
 ```
 
-### [b4b4r07/gotcha](https://github.com/b4b4r07/gotcha) {#b4b4r07gotcha}
+### GitHub releases: [b4b4r07/gotcha](https://github.com/b4b4r07/gotcha) {#github-releases-b4b4r07gotcha}
 
 ```shell
-zi ice as"program" from"gh-r" mv"gotcha_* -> gotcha"
+zi ice as'program' from'gh-r' mv'gotcha_* -> gotcha'
 zi light b4b4r07/gotcha
 ```
 
-### [mptre/yank](https://github.com/mptre/yank) {#mptreyank}
+### Build: [mptre/yank](https://github.com/mptre/yank) {#build-mptreyank}
 
 ```shell
-zi ice as"program" pick"yank" make
+zi ice as'program' pick'yank' make
 zi light mptre/yank
 ```
 
-### [pyenv/pyenv](https://github.com/pyenv/pyenv) {#pyenvpyenv}
+### Build: [pyenv/pyenv](https://github.com/pyenv/pyenv) {#build-pyenvpyenv}
 
 ```shell
 zi ice atclone'PYENV_ROOT="$PWD" ./libexec/pyenv init - > zpyenv.zsh' \
@@ -306,17 +408,17 @@ zi ice atclone'PYENV_ROOT="$PWD" ./libexec/pyenv init - > zpyenv.zsh' \
 zi light pyenv/pyenv
 ```
 
-### [sdkman/sdkman-cli](https://github.com/sdkman/sdkman-cli) {#sdkmansdkman-cli}
+### Build: [sdkman/sdkman-cli](https://github.com/sdkman/sdkman-cli) {#build-sdkmansdkman-cli}
 
 ```shell
-zi ice as"program" pick"$ZPFX/sdkman/bin/sdk" id-as'sdkman' run-atpull \
-  atclone"wget https://get.sdkman.io/?rcupdate=false -O scr.sh; SDKMAN_DIR=$ZPFX/sdkman bash scr.sh" \
-  atpull"SDKMAN_DIR=$ZPFX/sdkman sdk selfupdate" \
-  atinit"export SDKMAN_DIR=$ZPFX/sdkman; source $ZPFX/sdkman/bin/sdkman-init.sh"
+zi ice as'program' pick'$ZPFX/sdkman/bin/sdk' id-as'sdkman' run-atpull \
+  atclone'curl -s "https://get.sdkman.io?rcupdate=false" -o scr.sh; SDKMAN_DIR=$ZPFX/sdkman bash scr.sh' \
+  atpull'SDKMAN_DIR=$ZPFX/sdkman sdk selfupdate' \
+  atinit'export SDKMAN_DIR=$ZPFX/sdkman; source $ZPFX/sdkman/bin/sdkman-init.sh'
 zi light z-shell/null
 ```
 
-### [asciinema/asciinema](https://github.com/asciinema/asciinema) {#asciinemaasciinema}
+### Build: [asciinema/asciinema](https://github.com/asciinema/asciinema) {#build-asciinemaasciinema}
 
 ```shell
 zi ice as"command" wait lucid atinit"export PYTHONPATH=$ZPFX/lib/python3.10/site-packages/" \
@@ -327,7 +429,7 @@ zi load asciinema/asciinema
 
 ## With [`for`](../../guides/syntax#the-for-syntax) syntax {#with-for-syntax}
 
-### [argoproj/argo-cd](https://github.com/argoproj/argo-cd) {#argoprojargo-cd}
+### GitHub releases: [argoproj/argo-cd](https://github.com/argoproj/argo-cd) {#github-releases-argoprojargo-cd}
 
 ```shell
 zi light-mode for \
@@ -337,23 +439,42 @@ zi light-mode for \
     argoproj/argo-cd
 ```
 
-### [rust-lang/rustup](https://github.com/rust-lang/rustup) {#rust-langrustup}
+### Build: [molovo/revolver](https://github.com/molovo/revolver) & [zunit-zsh/zunit](https://github.com/zunit-zsh/zunit) {#build-molovorevolver--zunit-zshzunit}
 
 ```shell
-# Installation of Rust compiler environment via the z-a-rust annex
+zi wait lucid for \
+  as'program' atclone'ln -sfv revolver.zsh-completion _revolver' \
+  atpull'%atclone' pick'revolver' \
+    @molovo/revolver \
+  as'completion' atclone'./build.zsh; ln -sfv zunit.zsh-completion _zunit' \
+  atpull'%atclone' sbin'zunit' \
+    @zunit-zsh/zunit
+```
+
+### [Rust annex:](../../ecosystem/annexes/rust) rust compiler environment {#rust-annex-rust-compiler-environment}
+
+```shell
+# Just install rust and make it available globally in the system
+zi ice id-as"rust" wait"0" lucid rustup as"command" pick"bin/rustc" atload="export \
+CARGO_HOME=\$PWD RUSTUP_HOME=\$PWD/rustup"
+zi load z-shell/null
+```
+
+```shell
+# More complex installation.
 zi id-as"rust" wait=1 as=null sbin="bin/*" lucid rustup \
   atload="[[ ! -f ${ZI[COMPLETIONS_DIR]}/_cargo ]] && zi creinstall -q rust; \
 export CARGO_HOME=\$PWD; export RUSTUP_HOME=\$PWD/rustup" for \
   z-shell/null
 ```
 
-### [jarun/nnn](https://github.com/jarun/nnn) {#jarunnnn}
+### Build: [jarun/nnn](https://github.com/jarun/nnn) {#build-jarunnnn}
 
 ```shell
 zi pick"misc/quitcd/quitcd.zsh" sbin make light-mode for jarun/nnn
 ```
 
-### [junegunn/fzf](https://github.com/junegunn/fzf) {#junegunnfzf}
+### More complex [junegunn/fzf](https://github.com/junegunn/fzf) {#more-complex-junegunnfzf}
 
 ```shell
 zi for \
@@ -367,13 +488,13 @@ zi for \
     @junegunn/fzf
 ```
 
-### All Fuzzy tools as meta plugin {#all-fuzzy-tools-as-meta-plugin}
+### Meta plugin: [@fuzzy](../../ecosystem/annexes/meta-plugins#@fuzzy) {#meta-plugin-fuzzy}
 
 ```shell
 zi light-mode for @fuzzy
 ```
 
-### [junegunn/fzf](https://github.com/junegunn/fzf), [sharkdp/fd](https://github.com/sharkdp/fd), [sharkdp/bat](https://github.com/sharkdp/bat) & [ogham/exa](https://github.com/ogham/exa) {#junegunnfzf-sharkdpfd-sharkdpbat--oghamexa}
+### GitHub releases: [junegunn/fzf](https://github.com/junegunn/fzf), [sharkdp/fd](https://github.com/sharkdp/fd), [sharkdp/bat](https://github.com/sharkdp/bat) & [ogham/exa](https://github.com/ogham/exa) {#github-releases-junegunnfzf-sharkdpfd-sharkdpbat--oghamexa}
 
 ```shell
 zi from"gh-r" as"null" for \
@@ -383,7 +504,7 @@ zi from"gh-r" as"null" for \
   sbin"**/exa -> exa" atclone"cp -vf completions/exa.zsh _exa" ogham/exa
 ```
 
-### All [sharkdp](https://github.com/sharkdp) tools as meta plugin {#all-sharkdp-tools-as-meta-plugin}
+### Meta plugin: [@sharkdp](../../ecosystem/annexes/meta-plugins#@sharkdp) {#meta-plugin-sharkdp}
 
 ```shell
 zi light-mode for @sharkdp

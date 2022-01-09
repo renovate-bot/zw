@@ -1,6 +1,6 @@
 ---
 id: submods
-title: Submods
+title: Submods Annex
 description: Annex - Submods documentation
 keywords: [annex, submods, zsh, z-shell, zi]
 ---

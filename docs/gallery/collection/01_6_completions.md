@@ -20,7 +20,7 @@ Related:
 
 :::tip
 
-Create your own syntax + conditional loading e.g:
+Create your own syntax e.g:
 
 ```shell
 # Common ICE modifiers

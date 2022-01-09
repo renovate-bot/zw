@@ -1,7 +1,8 @@
 ---
 slug: /gallery/collection
-title: Overview
+title: Collection overview
 sidebar_position: 1
+image: /img/logo.png
 description: Invocations gallery for Z-Shell ZI
 keywords: [collection, zsh, z-shell, zi]
 ---

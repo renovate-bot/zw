@@ -1,6 +1,6 @@
 ---
 id: test
-title: Test
+title: Test Annex
 description: Annex - Test documentation
 keywords: [annex, test, zsh, z-shell, zi]
 ---

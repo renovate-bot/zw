@@ -1,6 +1,6 @@
 ---
 id: bin-gem-node
-title: Bin Gem Node
+title: Bin Gem Node Annex
 description: Annex - Bin Gem Node documentation
 keywords: [annex, bin-gem-node, zsh, z-shell, zi]
 ---

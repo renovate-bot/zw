@@ -1,6 +1,6 @@
 ---
 id: meta-plugins
-title: Meta Plugins
+title: Meta Plugins Annex
 description: Annex - meta plugins documentation
 keywords: [annex, meta-plugins, zsh, z-shell, zi]
 ---
@@ -59,32 +59,31 @@ skip'vivid exa tig' @console-tools
 
 <APITable>
 
-| Meta plugin name | Consisting plugins                                                                 |
-|------------------|------------------------------------------------------------------------------------|
-| @annexes         | [bin-gem-node][z-a-bin-gem-node], [readurl][z-a-readurl], [patch-dl][z-a-patch-dl], [rust][z-a-rust] |
+| Meta plugin name | Consisting plugins |
+| --- | --- |
+| @annexes | [bin-gem-node][z-a-bin-gem-node], [readurl][z-a-readurl], [patch-dl][z-a-patch-dl], [rust][z-a-rust] |
 | @annexes+rec | @annexes + [submods][z-a-submods], [unscope][z-a-unscope] |
 | @annexes+add | @annexes+rec + [default-ice][z-a-default-ice], [test][z-a-test] |
 | @annexes+con | @annexes + [zi-console][z-shell/zi-console] |
-| @z-shell | [F-Sy-H][z-shell/F-Sy-H], [H-S-MW][z-shell/H-S-MW], [zsh-diff-so-fancy][z-shell/zsh-diff-so-fancy] |
+| @z-shell | [F-Sy-H][z-shell/f-sy-h], [H-S-MW][z-shell/h-s-mw], [zsh-diff-so-fancy][z-shell/zsh-diff-so-fancy] |
 | @z-shell2 | [zconvey][z-shell/zconvey], [zui][z-shell/zui], [zflai][z-shell/zflai] |
 | @zsh-users | [zsh-syntax-highlighting][zsh-users/zsh-syntax-highlighting], [zsh-autosuggestions][zsh-users/zsh-autosuggestions], [zsh-completions][zsh-users/zsh-completions] |
-| @zsh-users+fast | [F-Sy-H][z-shell/F-Sy-H], [zsh-autosuggestions][zsh-users/zsh-autosuggestions], [zsh-completions][zsh-users/zsh-completions] |
+| @zsh-users+fast | [F-Sy-H][z-shell/f-sy-h], [zsh-autosuggestions][zsh-users/zsh-autosuggestions], [zsh-completions][zsh-users/zsh-completions] |
 | @romkatv | [powerlevel10k][romkatv/powerlevel10k] |
 | @molovo | [color][molovo/color], [revolver][molovo/revolver], [zunit][molovo/zunit] |
 | @sharkdp | [fd][sharkdp/fd], [bat][sharkdp/bat], [hexyl][sharkdp/hexyl], [hyperfine][sharkdp/hyperfine], [vivid][sharkdp/vivid] |
 | @developer-tools | [color][molovo/color], [revolver][molovo/revolver], [zunit][molovo/zunit], [gitignore.plugin.zsh][voronkovich/gitignore.plugin.zsh], [tig][jonas/tig] |
-| @console-tools | [dircolors-material][z-shell/dircolors-material] (package), [fd][sharkdp/fd], [bat][sharkdp/bat], [hexyl][sharkdp/hexyl], [hyperfine][sharkdp/hyperfine], [vivid][sharkdp/vivid], [exa][ogham/exa], [ripgrep][BurntSushi/ripgrep], [tig][jonas/tig] |
+| @console-tools | [dircolors-material][z-shell/dircolors-material] (package), [fd][sharkdp/fd], [bat][sharkdp/bat], [hexyl][sharkdp/hexyl], [hyperfine][sharkdp/hyperfine], [vivid][sharkdp/vivid], [exa][ogham/exa], [ripgrep][burntsushi/ripgrep], [tig][jonas/tig] |
 | @fuzzy | [fzf][z-shell/fzf] (package), [fzy][z-shell/fzy] (package), [skim][lotabout/skim], [peco][peco/peco] |
 | @fuzzy-src | fzf-go, [fzy][z-shell/fzy], skim-cargo, peco-go |
 | @ext-git | [git-open][paulirish/git-open], [git-recent][paulirish/git-recent], [git-my][davidosomething/git-my], [git-quick-stats][arzzen/git-quick-stats], [git-now][iwata/git-now], [git-extras][tj/git-extras], [forgit][wfxr/forgit] |
-| @rust-utils |  rust-toolchain, cargo-extensions |
+| @rust-utils | rust-toolchain, cargo-extensions |
 | @py-utils | [pyenv][z-shell/pyenv] (package) |
 | @prezto | PZTM::archive, PZTM::directory, PZTM::utility |
 
 </APITable>
 
 ![screenshot](https://raw.githubusercontent.com/z-shell/z-a-meta-plugins/main/images/fuzzy-mplg-ex.png)
-
 
 It consumes time to:
 
@@ -94,19 +93,19 @@ It consumes time to:
 
 ## Meta Plugins Annex basics {#meta-plugins-annex-basics}
 
-|                        Problem                        | Solution                                                                                                                                                                                                                                                                           |
-|:-----------------------------------------------------:|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|               (1) _finding new plugins_               | the annex contains a curated, broad list of plugins, e.g.: all the console tools like `fd`, `fzf`, `exa`, `ripgrep`, etc.,                                                                                                                                                         |
-| (2) _reconstructing the findings in new environments_ | it's easy to say and memorize e.g.: `zi for console-tools` – one label pulls a group of plugins and also the curated, optimal, default ice lists for each of them,                                                                                                                 |
+| Problem | Solution |
+| :-: | --- |
+| (1) _finding new plugins_ | the annex contains a curated, broad list of plugins, e.g.: all the console tools like `fd`, `fzf`, `exa`, `ripgrep`, etc., |
+| (2) _reconstructing the findings in new environments_ | it's easy to say and memorize e.g.: `zi for console-tools` – one label pulls a group of plugins and also the curated, optimal, default ice lists for each of them, |
 | (3) _constant increase of complexity of the commands_ | the provided, hopefully, best/optimal ices for each plugin are handled transparently and automatically; care is given to each ice list so that the plugin loads without any glitches (e.g.: without "No files for compilation found." message and other, even such slight issues). |
 
 Other unique benefits of the Meta-Plugins annex:
 
-|                           Benefit                           | Description                                                                                                                                                                                                                                                                                                     |
-|:-----------------------------------------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                     Plugin dependencies                     | The meta-plugins implement a dependency mechanism (to some extent), so that e.g.: selecting a from-source built [ogham/exa](https://github.com/ogham/exa) will automatically pull-in also the Rust compiler (available under meta-plugin name: `rust-toolchain`).                                               |
+| Benefit | Description |
+| :-: | --- |
+| Plugin dependencies | The meta-plugins implement a dependency mechanism (to some extent), so that e.g.: selecting a from-source built [ogham/exa](https://github.com/ogham/exa) will automatically pull-in also the Rust compiler (available under meta-plugin name: `rust-toolchain`). |
 | Flexible disabling of chosen sub-plugins in any meta-plugin | A meta-plugin can contain many sub-plugins and it's possible to skip installing some of them by the **skip'plg-1 plg-2…'** ice, e.g.: `zi skip'ripgrep fd' for console-tools`. This way despite that some of the meta-plugins are broad the user still has control over what's and how much is being installed. |
-|               Common from-source meta-plugins               | For the plugins that provide the binary programs it is often the case that a meta-plugin exists that'll build the program from source (e.g.: **fuzzy** meta-plugin and its **fuzzy-src** counterpart). This might be handy e.g.: if there's no binary for our machine.                                          |
+| Common from-source meta-plugins | For the plugins that provide the binary programs it is often the case that a meta-plugin exists that'll build the program from source (e.g.: **fuzzy** meta-plugin and its **fuzzy-src** counterpart). This might be handy e.g.: if there's no binary for our machine. |
 
 [z-a-bin-gem-node]: https://github.com/z-shell/z-a-bin-gem-node
 [z-a-readurl]: https://github.com/z-shell/z-a-readurl
@@ -117,8 +116,8 @@ Other unique benefits of the Meta-Plugins annex:
 [z-a-default-ice]: https://github.com/z-shell/z-a-default-ice
 [z-a-test]: https://github.com/z-shell/z-a-test
 [z-shell/zi-console]: https://github.com/z-shell/zi-console
-[z-shell/F-Sy-H]: https://github.com/z-shell/F-Sy-H
-[z-shell/H-S-MW]: https://github.com/z-shell/H-S-MW
+[z-shell/f-sy-h]: https://github.com/z-shell/F-Sy-H
+[z-shell/h-s-mw]: https://github.com/z-shell/H-S-MW
 [z-shell/zsh-diff-so-fancy]: https://github.com/z-shell/zsh-diff-so-fancy
 [z-shell/zconvey]: https://github.com/z-shell/zconvey
 [z-shell/zui]: https://github.com/z-shell/zui
@@ -139,7 +138,7 @@ Other unique benefits of the Meta-Plugins annex:
 [jonas/tig]: https://github.com/jonas/tig
 [z-shell/dircolors-material]: https://github.com/z-shell/dircolors-material
 [ogham/exa]: https://github.com/ogham/exa
-[BurntSushi/ripgrep]: https://github.com/BurntSushi/ripgrep
+[burntsushi/ripgrep]: https://github.com/BurntSushi/ripgrep
 [z-shell/fzf]: https://github.com/z-shell/fzf
 [z-shell/fzy]: https://github.com/z-shell/fzy
 [lotabout/skim]: https://github.com/lotabout/skim

@@ -1,6 +1,6 @@
 ---
 id: patch-dl
-title: Patch DL
+title: Patch DL Annex
 description: Annex - Patch DL documentation
 keywords: [annex, patch-dl, zsh, z-shell, zi]
 ---
