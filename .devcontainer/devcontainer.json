@@ -27,7 +27,8 @@
     "bierner.markdown-preview-github-styles",
     "oderwat.indent-rainbow",
     "gruntfuggly.todo-tree",
-    "formulahendry.terminal"
+    "formulahendry.terminal",
+    "ms-vscode-remote.remote-ssh"
   ],
   // "forwardPorts": [],
   "postCreateCommand": "yarn install",
