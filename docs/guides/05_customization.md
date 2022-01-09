@@ -1,7 +1,6 @@
 ---
 id: customization
 title: Preferences & Customization
-sidebar_position: 5
 image: /img/logo.png
 description: User Preferences & Customization
 keywords: [customization, preferences, zsh, z-shell, zi]

@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 id: syntax
 title: Syntax
 description: Syntax documentation for Z-Shell ZI

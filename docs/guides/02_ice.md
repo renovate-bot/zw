@@ -1,7 +1,6 @@
 ---
 id: ice
 title: Ice Syntax
-sidebar_position: 2
 image: /img/logo.png
 description: Ice syntax documentation
 keywords: [ice, zsh, z-shell, zi]

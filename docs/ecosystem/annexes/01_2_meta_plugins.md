@@ -1,6 +1,6 @@
 ---
 id: meta-plugins
-title: Meta Plugins Annex
+title: 💠 Meta Plugins
 description: Annex - meta plugins documentation
 keywords: [annex, meta-plugins, zsh, z-shell, zi]
 ---

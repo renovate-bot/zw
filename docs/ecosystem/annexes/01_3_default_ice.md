@@ -1,6 +1,6 @@
 ---
 id: default-ice
-title: Default Ice Annex
+title: 💠 Default Ice
 description: Annex - Default Ice documentation
 keywords: [annex, default-ice, zsh, z-shell, zi]
 ---

@@ -2,7 +2,7 @@
 id: annexes
 slug: /ecosystem/annexes
 sidebar_position: 1
-title: Annexes Guide
+title: 💠 Quick overview
 image: /img/logo.png
 description: Annexes documentation
 keywords: [annex, zsh, z-shell, zi]

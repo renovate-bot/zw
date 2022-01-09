@@ -1,8 +1,7 @@
 ---
 id: modules
-title: Modules
+title: ⚙️ Modules
 slug: /ecosystem/plugins
-sidebar_position: 2
 image: /img/z-shell_501x501.png
 description: Zsh modules & plugins documentation
 keywords: [modules, zsh, z-shell, zi]

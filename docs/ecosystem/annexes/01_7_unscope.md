@@ -1,6 +1,6 @@
 ---
 id: unscope
-title: Unscope Annex
+title: 💠 Unscope
 description: Annex - Unscope documentation
 keywords: [annex, unscope, zsh, z-shell, zi]
 ---

@@ -1,6 +1,6 @@
 ---
 id: rust
-title: Rust Annex
+title: 💠 Rust
 description: Annex - Rust documentation
 keywords: [annex, rust, zsh, z-shell, zi]
 ---
@@ -90,9 +90,9 @@ zi light z-shell/z-a-rust
 
 This installs the annex and makes the `rustup` and `cargo''` ices available.
 
-## Rust tools meta plugin
+## Rust tools meta plugin {#rust-tools-meta-plugin}
 
-To install [Rust utilities](annexes/meta-plugins#@rust-utils), simply run `zi light @rust-utils`, it will install and setup as following:
+To install [Rust utilities](meta-plugins#@rust-utils), simply run `zi light @rust-utils`, it will install and setup as following:
 
 ```shell
 bin-gem-node annex: Created the cargo shim and set +x on the cargo binary

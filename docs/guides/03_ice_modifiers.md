@@ -1,7 +1,6 @@
 ---
 id: ice-modifiers
 title: Ice Modifiers
-sidebar_position: 3
 image: /img/logo.png
 description: Documentation for the ice Modifiers
 keywords: [ice-modifiers, zsh, z-shell, zi]

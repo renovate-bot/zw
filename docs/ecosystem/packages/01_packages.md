@@ -1,9 +1,8 @@
 ---
 id: packages
 slug: /ecosystem/packages
-sidebar_position: 1
-title: Packages Guide
-image: /img/z-shell_501x501.png
+title: 📦 Quick overview
+image: /img/logo.png
 description: Packages documentation
 keywords: [package, zsh, z-shell, zi]
 ---

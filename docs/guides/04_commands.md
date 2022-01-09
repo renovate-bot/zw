@@ -1,7 +1,6 @@
 ---
 id: commands
 title: Commands
-sidebar_position: 4
 image: /img/logo.png
 description: Commands documentation for the Z-Shell ZI
 keywords: [commands, zsh, z-shell, zi]
