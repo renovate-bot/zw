@@ -69,7 +69,6 @@ zi id-as=rust wait=1 as=null sbin="bin/*" lucid rustup \
 	atload="[[ ! -f ${ZI[COMPLETIONS_DIR]}/_cargo ]] && zi creinstall rust; \
 	export CARGO_HOME=\$PWD RUSTUP_HOME=\$PWD/rustup" for \
 z-shell/null
-
 ```
 
 Flags meanings:
@@ -91,9 +90,9 @@ zi light z-shell/z-a-rust
 
 This installs the annex and makes the `rustup` and `cargo''` ices available.
 
-## Rust tools meta package {#rust-tools-meta-package}
+## Rust tools meta plugin
 
-To install Rust utilities, simply run `zi light @rust-utils`, it will install and setup as following:
+To install [Rust utilities](annexes/meta-plugins#@rust-utils), simply run `zi light @rust-utils`, it will install and setup as following:
 
 ```shell
 bin-gem-node annex: Created the cargo shim and set +x on the cargo binary
