@@ -54,7 +54,7 @@ You may safely assume given ice works with both plugins and snippets unless expl
 | [**`load`**](../gallery/preferences#multiple-prompts) | A condition to check which should cause plugin to load. It will load once, the condition can be still true, but will not trigger second load (unless plugin is unloaded earlier, see `unload` below). E.g.: `load'[[ $PWD = */github* ]]'`. |
 | [**`unload`**](../gallery/preferences#multiple-prompts) | A condition to check causing plugin to unload. It will unload once, then only if loaded again. E.g.: `unload'[[ $PWD != */github* ]]'`. |
 | `cloneonly` | Don't load the plugin / snippet, only download it |
-| `if` | Load plugin or snippet only when given condition is fulfilled, for example: `zi ice if'[[ -n "$commands[otool]" ]]'; zi load ...`. |
+| `if` | Load plugin or snippet only when given condition is fulfilled, for example: `zi ice if'[[ -n "$commands[otool]" ]]'; zi load ...` or `zi ice if'[[ $OSTYPE = darwin* ]]'; zi load ...` |
 | `has` | Load plugin or snippet only when given command is available (in \$PATH), e.g. `zi ice has'git' ...` |
 | `subscribe` / `on-update-of` | Postpone loading of a plugin or snippet until the given file(s) get updated, e.g. `subscribe'{~/files-*,/tmp/files-*}'` |
 | `trigger-load` | Creates a function that loads the associated plugin/snippet, with an option (to use it, precede the ice content with `!`) to automatically forward the call afterwards, to a command of the same name as the function. Can obtain multiple functions to create – sparate with `;`. |
