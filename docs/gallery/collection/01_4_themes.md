@@ -28,6 +28,18 @@ Zsh tweak - map colours to the nearest colour in the available palette.
 
 ### [romkatv/powerlevel10k](https://github.com/romkatv/powerlevel10k) {#romkatvpowerlevel10k}
 
+:::info
+
+For powerlevel10k include at the top of `.zshrc`:
+
+```shell title=~/.zshrc
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+```
+
+:::
+
 ```shell
 # Load prompt if terminal has least 256 colors.
 if [ "${TERM##*-}" = '256color' ] || [ "${terminfo[colors]:?}" -gt 255 ]; then
