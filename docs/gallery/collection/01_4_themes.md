@@ -125,6 +125,15 @@ zi ice svn atload"prompt garrett" silent
 zi snippet PZT::modules/prompt
 ```
 
+### [starship/starship](https://github.com/starship/starship)
+
+```shell
+zi ice as"command" from"gh-r" \
+  atclone"./starship init zsh > init.zsh; ./starship completions zsh > _starship" \
+  atpull"%atclone" src"init.zsh"
+zi light starship/starship
+```
+
 ### [robobenklein/zinc](https://github.com/robobenklein/zinc) {#robobenkleinzinc}
 
 ```shell
