@@ -1,10 +1,10 @@
 ---
-id: preferences
-title: Preferences
-sidebar_position: 4
+id: customization
+title: Preferences & Customization
+sidebar_position: 5
 image: /img/logo.png
-description: Gallery for user Preferences
-keywords: [preferences, zsh, z-shell, zi]
+description: User Preferences & Customization
+keywords: [customization, preferences, zsh, z-shell, zi]
 ---
 
 import APITable from '@site/src/components/APITable';
@@ -34,7 +34,7 @@ declare -A ZI  # initial ZI's hash definition, if configuring before loading ZI,
 | `ZI[MUTE_WARNINGS]` | If set to `1`, then mutes some of the ZI warnings, specifically the `plugin already registered` warning |
 | `ZI[OPTIMIZE_OUT_DISK_ACCESSES]` | If set to `1`, then ZI will skip checking if a Turbo-loaded object exists on the disk. By default, ZI skips Turbo for non-existing objects (plugins or snippets) to install them before the first prompt – without any delays, during the normal processing of `zshrc`. This option can give a performance gain of about 10 ms out of 150 ms (i.e.: Zsh will start-up in 140 ms instead of 150 ms). |
 | `$ZPFX` | set by default to `~/.zi/polaris`, a directory where software with `Makefile`, etc. can be pointed to, by e.g. `atclone'./configure --prefix=$ZPFX'`. |
-    
+
 </APITable>
 
 ## Non-GitHub (Local) Plugins {#non-github-local-plugins}
@@ -109,7 +109,7 @@ The sense of the single letter options may be inverted by using `+` instead of `
 
 In strings of single letter options supplied to the shell at startup, trailing whitespace will be ignored; for example the string `-f ` will be treated just as `-f`, but the string `-f i` is an error. This is because many systems which implement the `#!` mechanism for calling scripts do not strip trailing whitespace.
 
-### History optimization
+### History optimization {#history-optimization}
 
 ```shell
 #
@@ -131,7 +131,7 @@ setopt inc_append_history # Write To The History File Immediately, Not When The 
 setopt share_history      # Share history between different instances of the shell
 ```
 
-### Other tweaks
+### Other tweaks {#other-tweaks}
 
 ```shell
 #
@@ -219,8 +219,7 @@ Exclamation mark causes the effects of the functions to be tracked.
 
 To allow better unloading, conditions are checked every second, you can use conditions like:
 
-- As an example `![[ $PWD == *github* ]]` or `![[ $MYPROMPT = 1 ]]` to change prompt after changing directory to `*github*` or then variable `MYPROMPT = 1`,
- the exclamation mark `![[ … ]]` causes prompt to be reset after loading or unloading the plugin,
+- As an example `![[ $PWD == *github* ]]` or `![[ $MYPROMPT = 1 ]]` to change prompt after changing directory to `*github*` or then variable `MYPROMPT = 1`, the exclamation mark `![[ … ]]` causes prompt to be reset after loading or unloading the plugin,
 - `pick'/dev/null'` – disable sourcing of the default-found file,
 - `multisrc''` – source multiple files,
 - `lucid` – don't show the under-prompt message that says e.g.: `Loaded geometry-zsh/geometry`,

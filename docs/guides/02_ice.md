@@ -229,7 +229,7 @@ zi ice wrap-track"func1;func2;…" …
 
 #### Use-case for `wrap-track''` {#use-case-for-wrap-track}
 
-Therefore, to e.g. load and unload the example powerlevel10k prompt in the fashion of [**Multiple prompts**](../gallery/preferences#multiple-prompts) article, the `precmd` function of the plugin – called `_p9k_precmd` (to get the name of the function do `echo $precmd_functions` after loading a theme) – should be passed to `wrap-track''` ice, like so:
+Therefore, to e.g. load and unload the example powerlevel10k prompt in the fashion of [**Multiple prompts**](../guides/customization#multiple-prompts) article, the `precmd` function of the plugin – called `_p9k_precmd` (to get the name of the function do `echo $precmd_functions` after loading a theme) – should be passed to `wrap-track''` ice, like so:
 
 ```shell
 # Load when MYPROMPT == 4
@@ -400,7 +400,7 @@ Last, **`atload`** is being activated:
 
 For convenience, you can use each of the ices multiple times in single `zi ice …` invocation – all the passed commands will be executed in the given order.
 
-The `atpull` ice recognizes a special value: `%atclone` (so the code looks i.e.: `atpull'%atclone'`). It causes the contents of the `atclone` ice to be copied into the contents of the `atpull` ice. This is handy when the same tasks have to be performed on clone **and** on update of plugin or snippet, like e.g.: in the [**Direnv example**](../gallery/distinctive#direnv).
+The `atpull` ice recognizes a special value: `%atclone` (so the code looks i.e.: `atpull'%atclone'`). It causes the contents of the `atclone` ice to be copied into the contents of the `atpull` ice. This is handy when the same tasks have to be performed on clone **and** on update of plugin or snippet, like e.g.: in the [**Direnv example**](../gallery/collection#direnv).
 
 **_Exclamation mark_-preceded `atload`**
 

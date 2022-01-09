@@ -178,4 +178,4 @@ If you're interested in more examples then check out the [playground repository]
 For some additional examples you can also check out the:
 
 - [Collection](../gallery/collection),
-- [Oh-My-Zsh](../gallery/ohmyzsh).
+- [Oh-My-Zsh](../gallery/collection#oh-my-zsh).

@@ -18,7 +18,7 @@ import APITable from '@site/src/components/APITable';
 
 :::
 
-## Install meta plugins
+## Install meta plugins {#install-meta-plugins}
 
 :::note
 

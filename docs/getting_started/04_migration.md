@@ -145,7 +145,7 @@ zi ice as"completion"
 zi snippet OMZP::fd/_fd
 ```
 
-[You can see an extended explanation of Oh-My-Zsh setup in the Wiki](../gallery/ohmyzsh)
+[You can see an extended explanation of Oh-My-Zsh setup in the Wiki](../guides/customization#oh-my-zsh)
 
 ## Migration from Prezto {#migration-from-prezto}
 

@@ -10,7 +10,7 @@ keywords: [collection, themes, prompts, zsh, z-shell, zi]
 
 Related:
 
-1. [Multiple prompts](../../gallery/preferences#multiple-prompts)
+1. [Multiple prompts](../../guides/customization#multiple-prompts)
 2. [Automatic load/unload based on condition](../../getting_started/overview#automatic-loadunload-based-on-condition)
 3. [Ice `atclone`, `atpull`, `atinit`, `atload`](../../guides/ice#atclone-atpull-atinit-atload)
 
@@ -137,7 +137,7 @@ zi ice svn atload"prompt garrett" silent
 zi snippet PZT::modules/prompt
 ```
 
-### [starship/starship](https://github.com/starship/starship)
+### [starship/starship](https://github.com/starship/starship) {#starshipstarship}
 
 ```shell
 zi ice as"command" from"gh-r" \

@@ -16,8 +16,8 @@ Related:
 4. [The `make` syntax](../../guides/syntax#the-make-syntax)
 5. [Ice Syntax](../../guides/ice)
 6. [Ice Modifiers](../../guides/ice-modifiers)
-7. [Compiling programs](../../gallery/distinctive#compiling-programs)
-8. [Customizing paths](../../gallery/preferences#customizing-paths)
+7. [Compiling programs](../../gallery/collection#compiling-programs)
+8. [Customizing paths](../../guides/customization#customizing-paths)
 9. [The Ice modifiers by `bin-gem-node` annex](../../ecosystem/annexes/bin-gem-node#the-ice-modifiers-provided-by-the-annex)
 
 :::

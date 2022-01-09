@@ -2,7 +2,7 @@
 id: ice-modifiers
 title: Ice Modifiers
 sidebar_position: 3
-image: /img/z-shell_501x501.png
+image: /img/logo.png
 description: Documentation for the ice Modifiers
 keywords: [ice-modifiers, zsh, z-shell, zi]
 ---
@@ -51,8 +51,8 @@ You may safely assume given ice works with both plugins and snippets unless expl
 | Modifier | Description |
 | :-: | --- |
 | [**`wait`**](ice#wait) | Postpone loading a plugin or snippet. For `wait'1'`, loading is done `1` second after prompt. For `wait'[[ ... ]]'`, `wait'(( ... ))'`, loading is done when given condition is meet. For `wait'!...'`, prompt is reset after load. Zsh can start 80% (i.e.: 5x) faster thanks to postponed loading. **Fact:** when `wait` is used without value, it works as `wait'0'`. |
-| [**`load`**](../gallery/preferences#multiple-prompts) | A condition to check which should cause plugin to load. It will load once, the condition can be still true, but will not trigger second load (unless plugin is unloaded earlier, see `unload` below). E.g.: `load'[[ $PWD = */github* ]]'`. |
-| [**`unload`**](../gallery/preferences#multiple-prompts) | A condition to check causing plugin to unload. It will unload once, then only if loaded again. E.g.: `unload'[[ $PWD != */github* ]]'`. |
+| [**`load`**](../guides/customization#multiple-prompts) | A condition to check which should cause plugin to load. It will load once, the condition can be still true, but will not trigger second load (unless plugin is unloaded earlier, see `unload` below). E.g.: `load'[[ $PWD = */github* ]]'`. |
+| [**`unload`**](../guides/customization#multiple-prompts) | A condition to check causing plugin to unload. It will unload once, then only if loaded again. E.g.: `unload'[[ $PWD != */github* ]]'`. |
 | `cloneonly` | Don't load the plugin / snippet, only download it |
 | `if` | Load plugin or snippet only when given condition is fulfilled, for example: `zi ice if'[[ -n "$commands[otool]" ]]'; zi load ...` or `zi ice if'[[ $OSTYPE = darwin* ]]'; zi load ...` |
 | `has` | Load plugin or snippet only when given command is available (in \$PATH), e.g. `zi ice has'git' ...` |

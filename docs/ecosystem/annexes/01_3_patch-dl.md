@@ -37,7 +37,7 @@ This command will result in:
 
 ![fbterm example](https://raw.githubusercontent.com/z-shell/z-a-patch-dl/main/images/fbterm-ex.png)
 
-## Install Patch DL
+## Install Patch DL {#install-patch-dl}
 
 Simply load like a plugin, i.e. the following will add the annex to ZI:
 

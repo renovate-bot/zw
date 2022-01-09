@@ -14,8 +14,8 @@ Related:
 2. [Syntax: The `for` syntax](../../guides/syntax#the-for-syntax)
 3. [Guides: Ice Syntax](../../guides/ice)
 4. [Guides: Ice Modifiers](../../guides/ice-modifiers)
-5. [Compiling programs](../../gallery/distinctive#compiling-programs)
-6. [Customizing paths](../../gallery/preferences#customizing-paths)
+5. [Compiling programs](../../gallery/collection#compiling-programs)
+6. [Customizing paths](../../guides/customization#customizing-paths)
 7. [The Ice modifiers by `bin-gem-node` annex](../../ecosystem/annexes/bin-gem-node#the-ice-modifiers-provided-by-the-annex)
 
 :::

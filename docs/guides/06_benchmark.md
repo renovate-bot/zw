@@ -1,10 +1,10 @@
 ---
-sidebar_position: 5
-id: benchmarks
-title: Benchmarks
-image: /img/z-shell_501x501.png
+id: benchmark
+title: Statistics & Benchmark
+sidebar_position: 6
+image: /img/logo.png
 description: Benchamarking and profiling for Z-Shell ZI
-keywords: [benchmark, zsh, z-shell, zi]
+keywords: [statistics, benchmark, zsh, z-shell, zi]
 ---
 
 ```zsh

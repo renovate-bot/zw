@@ -336,6 +336,6 @@ Two prompts, each active in different directories. This technique can be used to
 
 :::tip
 
-See: [multiple prompts](../gallery/preferences#multiple-prompts) for more information. It contains a more real-world examples of a multi-prompt setup, which is being close to what the author uses in his setup.
+See: [multiple prompts](../guides/customization#multiple-prompts) for more information. It contains a more real-world examples of a multi-prompt setup, which is being close to what the author uses in his setup.
 
 :::
