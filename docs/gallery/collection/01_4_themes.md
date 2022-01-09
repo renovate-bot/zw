@@ -90,6 +90,18 @@ zi lucid pick"/dev/null" multisrc"{async,pure}.zsh" atload"!prompt_pure_precmd" 
 zi light-mode for @sindresorhus/pure
 ```
 
+```shell
+# Personalised
+zi light-mode for compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh' atload" \
+  PURE_GIT_UP_ARROW='↑'; PURE_GIT_DOWN_ARROW='↓'; PURE_PROMPT_SYMBOL='ᐳ'; PURE_PROMPT_VICMD_SYMBOL='ᐸ'; \
+  zstyle ':prompt:pure:prompt:success' color 'green' \
+  zstyle ':prompt:pure:git:action' color 'yellow'; \
+  zstyle ':prompt:pure:git:branch' color 'blue'; \
+  zstyle ':prompt:pure:git:dirty' color 'red'; \
+  zstyle ':prompt:pure:path' color 'cyan'" \
+    sindresorhus/pure
+```
+
 ### [agkozak/agkozak-zsh-prompt](https://github.com/agkozak/agkozak-zsh-prompt) {#agkozakagkozak-zsh-prompt}
 
 ```shell
