@@ -61,8 +61,11 @@ const config = {
 		({
 			announcementBar: {
 				id: "zi-announce-1", // Increment on change
-				content: `⭐️ If you like ZI, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/z-shell/zi">GitHub</a> and follow us on <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/zshell_zi" >Twitter</a> ${TwitterSvg}`,
+				content: `⭐️ If you like ❮ ZI ❯, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/z-shell/zi">GitHub</a> and follow us on <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/zshell_zi" >Twitter</a> ${TwitterSvg}`,
+				backgroundColor: "#193C47",
+				textColor: "#F5F6F7",
 			},
+			metadata: [{name: "twitter:card", content: "summary"}],
 			hideableSidebar: false,
 			colorMode: {
 				defaultMode: "dark",
@@ -98,6 +101,10 @@ const config = {
 						label: "Wiki",
 					},
 				],
+			},
+			tableOfContents: {
+				minHeadingLevel: 2,
+				maxHeadingLevel: 5,
 			},
 			footer: {
 				style: "dark",
