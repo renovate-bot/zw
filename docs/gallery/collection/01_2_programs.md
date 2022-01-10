@@ -151,7 +151,7 @@ zi light docker/compose
 #### 11-GH-R: [neovim/neovim](https://github.com/neovim/neovim)
 
 ```shell
-zi ice as'program' bpick'\${bpick}' from'gh-r' sbin'**/bin/nvim -> nvim'
+zi ice as'program' bpick'${bpick}' from'gh-r' sbin'**/bin/nvim -> nvim'
 zi light neovim/neovim
 ```
 
