@@ -3,7 +3,7 @@ id: annexes
 slug: /ecosystem/annexes
 sidebar_position: 1
 title: 💠 Quick overview
-image: /img/logo.png
+image: https://github.com/z-shell.png
 description: Annexes documentation
 keywords: [annex, zsh, z-shell, zi]
 ---
@@ -136,7 +136,7 @@ zi ice svn submods'zsh-users/zsh-autosuggestions -> external'
 zi snippet PZT::modules/autosuggestions
 ```
 
-Checkout the project which fully implements this idea, [**zi/z-a-submods**](https://github.com/z-shell/z-a-submods). It e.g. also implements the `atpull` hook, i.e. supports automatic update of the submodules. The `z-a-*` prefix is recommended for projects that are being annexes.
+Checkout the project which fully implements this idea, [**z-a-submods**](https://github.com/z-shell/z-a-submods). It e.g. also implements the `atpull` hook, i.e. supports automatic update of the submodules. The `z-a-*` prefix is recommended for projects that are being annexes.
 
 ## Details {#details}
 
