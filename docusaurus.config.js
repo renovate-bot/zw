@@ -100,6 +100,10 @@ const config = {
 						position: "left",
 						label: "Wiki",
 					},
+					{
+          				type: 'localeDropdown',
+          				position: 'right',
+        			},	
 				],
 			},
 			tableOfContents: {
