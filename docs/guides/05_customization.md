@@ -94,7 +94,7 @@ just run:
 zi light-mode for z-shell/z-a-meta-plugins @annexes @ext-git
 ```
 
-## Setopt {#setopt}
+## Zsh options `setopt`
 
 Options are primarily referred to by name. These names are case insensitive and underscores are ignored. For example, `allexport` is equivalent to `A__lleXP_ort`.
 
@@ -146,12 +146,13 @@ In strings of single letter options supplied to the shell at startup, trailing w
 
 </APITable>
 
-## Zstyle
+## Style control for the completion system `zstyle`
 
 What does `zstyle` do? - [unix.stackexchange.com/questions/214657/what-does-zstyle-do](https://unix.stackexchange.com/questions/214657/what-does-zstyle-do/239980)
 
-`zstyle` handles the obvious style control for the completion system, but it seems to cover more than just that.
+The `zstyle` handles the obvious style control for the completion system, but it seems to cover more than just that.
 E.g., the vcs_info module relies on it for display of git status in your prompt.
+You can start by looking at the few explanatory paragraphs in `man zshmodules` in the `zstyle` section.
 
 ### Fuzzy matching of completions for when you mistype them:
 
@@ -187,9 +188,7 @@ zstyle ':completion:*' rehash true
 zstyle ':completion:*' menu select
 ```
 
-### Color completion for some things
-
-[Color completion using zsh modules](https://linuxshellaccount.blogspot.com/2008/12/color-completion-using-zsh-modules-on.html)
+### Color completion for [some things](https://linuxshellaccount.blogspot.com/2008/12/color-completion-using-zsh-modules-on.html)
 
 ```shell
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
