@@ -1,6 +1,7 @@
 ---
 id: bin-gem-node
 title: 💠 Bin Gem Node
+image: /img/logo/501x501.png
 description: Annex - Bin Gem Node documentation
 keywords: [annex, bin-gem-node, zsh, z-shell, zi]
 ---
@@ -8,12 +9,28 @@ keywords: [annex, bin-gem-node, zsh, z-shell, zi]
 [Bin Gem Node](https://github.com/z-shell/z-a-bin-gem-node) annex provides functionality, which allows to:
 
 1. Run programs and scripts without adding anything to `$PATH`,
-2. Install and run Ruby [gems](https://github.com/rubygems/rubygems) and [Node](https://github.com/npm/cli) modules from within a local directory with [\$GEM_HOME](https://guides.rubygems.org/command-reference/#gem-environment) and [\$NODE_PATH](https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders) automatically set,
-3. Run programs, scripts and functions with automatic `cd` into the plugin or snippet directory, plus also with automatic standard output & standard error redirecting.
-4. Source scripts through an automatically created function with the above `$GEM_HOME`, `$NODE_PATH` and `cd` features available,
-5. Create the so called `shims` known from [rbenv](https://github.com/rbenv/rbenv) – the same feature as the first item of this enumaration – of running a program without adding anything to `$PATH` with all of the above features, however through an automatic **script** created in `$ZPFX/bin`, not a **function** (the first item uses a function-based mechanism),
-6. Automatic updates of Ruby gems and Node modules during regular plugin and snippet updates with `zi update …`.
-
+2. Install and run Ruby [Gems](https://github.com/rubygems/rubygems),
+   [Node](https://github.com/npm/cli), and [Python](https://python.org)
+   modules from within a local directory with
+   [$GEM_HOME](https://guides.rubygems.org/command-reference/#gem-environment),
+   [$NODE_PATH](https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders),
+   and
+   [$VIRTUALENV](https://docs.python.org/3/tutorial/venv.html)
+   automatically set,
+3. Run programs, scripts, and functions with automatic `cd` into the plugin
+   or snippet directory, plus also with automatic standard output
+   & standard error redirecting.
+4. Source scripts through an automatically created function with the above
+   `$GEM_HOME`, `$NODE_PATH`, `$VIRTUALENV`, and `cd` features available,
+5. Create the so-called `shims` known from
+   [rbenv](https://github.com/rbenv/rbenv) – the same feature as the first
+   item of this enumeration – of running a program without adding anything
+   to `$PATH` with all of the above features, however through an automatic
+   **script** created in `$ZPFX/bin`, not a **function** (the first item
+   uses a function-based mechanism),
+6. Automatic updates of Ruby gems and Node modules during regular plugin and
+   snippet updates with `zi update …`.
+   
 ## Install bin-gem-node {#install-bin-gem-node}
 
 Simply load like a regular plugin, i.e.:
@@ -36,25 +53,25 @@ Also, like already mentioned, instead of the function an automatically created s
 
 ### How it works, in detail {#how-it-works-in-detail}
 
-Suppose that you would want to install `junegunn/fzf-bin` plugin from GitHub Releases, which contains only single file – the `fzf` binary for the selected architecture. It is possible to do it in the standard way – by adding the plugin's directory to the `$PATH`:
+Suppose that you would want to install `junegunn/fzf` plugin from GitHub Releases, which contains only single file – the `fzf` binary for the selected architecture. It is possible to do it in the standard way – by adding the plugin's directory to the `$PATH`:
 
 ```shell
-zi ice as"command" from"github-rel"
-zi load junegunn/fzf-bin
+zi ice as"command" from"gh-r"
+zi load junegunn/fzf
 ```
 
 After this command, the `$PATH` variable will contain e.g.:
 
 ```shell
 % print $PATH
-/home/sg/.zi/plugins/junegunn---fzf-bin:/bin:/usr/bin:/usr/sbin:/sbin
+/home/sg/.zi/plugins/junegunn---fzf:/bin:/usr/bin:/usr/sbin:/sbin
 ```
 
 For many such programs loaded as plugins the PATH can become quite cluttered. I've had 26 entries before switching to `z-a-bin-gem-node`. To solve this, load with use of `sbin''` ice provided and handled by `z-a-bin-gem-node`:
 
 ```shell
 zi ice from"gh-r" sbin"fzf"
-zi load junegunn/fzf-bin
+zi load junegunn/fzf
 ```
 
 The `$PATH` will remain unchanged and a `fzf` forwarder-script, so called _shim_ will be created in `$ZPFX/bin` (`~/.zi/polaris/bin` by default), which is being already added to the `$PATH` by ZI when it is being sourced:
@@ -64,7 +81,7 @@ The `$PATH` will remain unchanged and a `fzf` forwarder-script, so called _shim_
 #!/usr/bin/env zsh
 
 function fzf {
-    local bindir="/home/sg/.zi/plugins/junegunn---fzf-bin"
+    local bindir="/home/sg/.zi/plugins/junegunn---fzf"
     "$bindir"/"fzf" "$@"
 }
 
@@ -99,19 +116,19 @@ The flags have the same meaning as with `fbin''` ice.
 Example:
 
 ```shell
-% zi delete junegunn/fzf-bin
-Delete /home/sg/.zi/plugins/junegunn---fzf-bin?
+% zi delete junegunn/fzf
+Delete /home/sg/.zi/plugins/junegunn---fzf?
 [yY/n…]
 y
 Done (action executed, exit code: 0)
 % zi ice from"gh-r" sbin"fzf"
-% zi load junegunn/fzf-bin
+% zi load junegunn/fzf
 …installation messages…
 % cat $ZPFX/bin/fzf
 #!/usr/bin/env zsh
 
 function fzf {
-    local bindir="/home/sg/.zi/plugins/junegunn---fzf-bin"
+    local bindir="/home/sg/.zi/plugins/junegunn---fzf"
     "$bindir"/"fzf" "$@"
 }
 
@@ -143,11 +160,11 @@ Example:
 
 ```shell
 % zi ice from"gh-r" fbin"g:fzf -> myfzf"
-% zi load junegunn/fzf-bin
+% zi load junegunn/fzf
 % which myfzf
 myfzf () {
-        local bindir="/home/sg/.zi/plugins/junegunn---fzf-bin"
-        local -x GEM_HOME="/home/sg/.zi/plugins/junegunn---fzf-bin"
+        local bindir="/home/sg/.zi/plugins/junegunn---fzf"
+        local -x GEM_HOME="/home/sg/.zi/plugins/junegunn---fzf"
         "$bindir"/"fzf" "$@"
 }
 ```
