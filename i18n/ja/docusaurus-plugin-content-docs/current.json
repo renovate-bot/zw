@@ -1,38 +1,38 @@
 {
   "version.label": {
-    "message": "Next",
+    "message": "次。",
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.🚀 Getting Started": {
-    "message": "🚀 Getting Started",
+    "message": "🚀 入門",
     "description": "The label for category 🚀 Getting Started in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.💡 User Guide": {
-    "message": "💡 User Guide",
+    "message": "💡 ユーザーガイド",
     "description": "The label for category 💡 User Guide in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.✨ Gallery of Invocations": {
-    "message": "✨ Gallery of Invocations",
+    "message": "✨ 呼び出しのギャラリー",
     "description": "The label for category ✨ Gallery of Invocations in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Collection": {
-    "message": "Collection",
+    "message": "コレクション",
     "description": "The label for category Collection in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.🌐 Ecosystem": {
-    "message": "🌐 Ecosystem",
+    "message": "🌐 生態系",
     "description": "The label for category 🌐 Ecosystem in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.💠 Annexes": {
-    "message": "💠 Annexes",
+    "message": "💠 附属書",
     "description": "The label for category 💠 Annexes in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.📦 Packages": {
-    "message": "📦 Packages",
+    "message": "📦 パッケージ",
     "description": "The label for category 📦 Packages in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.⚙️ Plugins & Modules": {
-    "message": "⚙️ Plugins & Modules",
+    "message": "⚙️ プラグインとモジュール",
     "description": "The label for category ⚙️ Plugins & Modules in sidebar tutorialSidebar"
   }
 }
