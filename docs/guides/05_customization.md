@@ -18,17 +18,17 @@ declare -A ZI  # initial ZI's hash definition, if configuring before loading ZI,
 
 <APITable>
 
-| Hash Field | Description |
+| Hash Field            | Description |
 | --- | --- |
-| `ZI[BIN_DIR]` | Where ZI code resides, e.g.: "~/.zi/bin" |
-| `ZI[HOME_DIR]` | Where ZI should create all working directories, e.g.: "~/.zi" |
-| `ZI[PLUGINS_DIR]` | Override single working directory – for plugins, e.g. "/opt/zsh/zi/plugins" |
+| `ZI[BIN_DIR]`         | Where ZI code resides, e.g.: "~/.zi/bin" |
+| `ZI[HOME_DIR]`        | Where ZI should create all working directories, e.g.: "~/.zi" |
+| `ZI[PLUGINS_DIR]`     | Override single working directory – for plugins, e.g. "/opt/zsh/zi/plugins" |
 | `ZI[COMPLETIONS_DIR]` | As above, but for completion files, e.g. "/opt/zsh/zi/root_completions" |
-| `ZI[SNIPPETS_DIR]` | As above, but for snippets |
-| `ZI[ZMODULES_DIR]` | Override single working directory – for Zsh modules e.g. "/opt/zsh/zi/zmodules" |
-| `ZI[ZCOMPDUMP_PATH]` | Path to `.zcompdump` file, with the file included (i.e. its name can be different) |
-| `ZI[COMPINIT_OPTS]` | Options for `compinit` call (i.e. done by `zicompinit`), use to pass -C to speed up loading |
-| `ZI[MUTE_WARNINGS]` | If set to `1`, then mutes some of the ZI warnings, specifically the `plugin already registered` warning |
+| `ZI[SNIPPETS_DIR]`    | As above, but for snippets |
+| `ZI[ZMODULES_DIR]`    | Override single working directory – for Zsh modules e.g. "/opt/zsh/zi/zmodules" |
+| `ZI[ZCOMPDUMP_PATH]`  | Path to `.zcompdump` file, with the file included (i.e. its name can be different) |
+| `ZI[COMPINIT_OPTS]`   | Options for `compinit` call (i.e. done by `zicompinit`), use to pass -C to speed up loading |
+| `ZI[MUTE_WARNINGS]`   | If set to `1`, then mutes some of the ZI warnings, specifically the `plugin already registered` warning |
 | `ZI[OPTIMIZE_OUT_DISK_ACCESSES]` | If set to `1`, then ZI will skip checking if a Turbo-loaded object exists on the disk. By default, ZI skips Turbo for non-existing objects (plugins or snippets) to install them before the first prompt – without any delays, during the normal processing of `zshrc`. This option can give a performance gain of about 10 ms out of 150 ms (i.e.: Zsh will start-up in 140 ms instead of 150 ms). |
 | `$ZPFX` | set by default to `~/.zi/polaris`, a directory where software with `Makefile`, etc. can be pointed to, by e.g. `atclone'./configure --prefix=$ZPFX'`. |
 
@@ -145,20 +145,25 @@ In strings of single letter options supplied to the shell at startup, trailing w
 | `setopt promptsubst`           | Enables the substitution of parameters inside the prompt each time the prompt is drawn. |
 
 </APITable>
-  
-## Zstyle {#zstyle}
 
-`zstyle` handles the obvious style control for the completion system, but it seems to cover more than just that. E.g., the vcs_info module relies on it for display of git status in your prompt. You can start by looking at the few explanatory paragraphs in man zshmodules in the zstyle section.
+## Zstyle
+
+What does `zstyle` do? - [unix.stackexchange.com/questions/214657/what-does-zstyle-do](https://unix.stackexchange.com/questions/214657/what-does-zstyle-do/239980)
+
+`zstyle` handles the obvious style control for the completion system, but it seems to cover more than just that.
+E.g., the vcs_info module relies on it for display of git status in your prompt.
+
+### Fuzzy matching of completions for when you mistype them:
 
 ```shell
-# Fuzzy matching of completions for when you mistype them:
 zstyle ':completion:*' completer _complete _match _approximate
 zstyle ':completion:*:match:*' original only
 zstyle -e ':completion:*:approximate:*' max-errors 'reply=($((($#PREFIX+$#SUFFIX)/3>7?7:($#PREFIX+$#SUFFIX)/3))numeric)'
 ```
 
+### Pretty completions
+
 ```shell
-# Pretty completions
 zstyle ':completion:*:matches' group 'yes'
 zstyle ':completion:*:options' description 'yes'
 zstyle ':completion:*:options' auto-description '%d'
@@ -176,11 +181,17 @@ zstyle ':completion:*' use-cache true
 zstyle ':completion:*' rehash true
 ```
 
+### Do menu-driven completion.
+
 ```shell
-# Do menu-driven completion.
 zstyle ':completion:*' menu select
-# Color completion for some things.
-# http://linuxshellaccount.blogspot.com/2008/12/color-completion-using-zsh-modules-on.html
+```
+
+### Color completion for some things
+
+[Color completion using zsh modules](https://linuxshellaccount.blogspot.com/2008/12/color-completion-using-zsh-modules-on.html)
+
+```shell
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 ```
 
@@ -200,7 +211,8 @@ skip_global_compinit=1
 
 :::note
 
-`zi light` loads the plugin without tracking it, while `zi load` tracks the plugin. To be able unload the plugin, it has to be loaded with `zi load ...` instead of `zi light ...`.
+`zi light` loads the plugin without tracking it, while `zi load` tracks the plugin.
+To be able unload the plugin, it has to be loaded with `zi load ...` instead of `zi light ...`.
 
 :::
 
