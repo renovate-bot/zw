@@ -83,7 +83,7 @@ skip'vivid exa tig' @console-tools
 
 </APITable>
 
-![screenshot](https://raw.githubusercontent.com/z-shell/z-a-meta-plugins/main/images/fuzzy-mplg-ex.png)
+<img src="https://raw.githubusercontent.com/z-shell/z-a-meta-plugins/main/images/fuzzy-mplg-ex.png" alt="screenshot" width="80%" />
 
 It consumes time to:
 
