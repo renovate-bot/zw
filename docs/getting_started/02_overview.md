@@ -9,10 +9,10 @@ keywords: [overview, zsh, z-shell, zi]
 
 In this overview will cover basics for:
 
-- Oh My Zsh & Prezto,
-- Completions,
-- Turbo mode,
-- Ice-mods
+1. Oh My Zsh & Prezto
+2. Completions
+3. Turbo mode
+4. Ice modifiers
 
 ## Basic Plugin Loading {#basic-plugin-loading}
 
