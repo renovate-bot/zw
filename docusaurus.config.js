@@ -150,6 +150,10 @@ const config = {
 				 */
 				playgroundPosition: "bottom",
 			},
+			i18n: {
+    			defaultLocale: 'en',
+    			locales: ['en', 'ja'],
+  			},
 		}),
 	/**
 	stylesheets: [
