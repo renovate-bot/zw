@@ -5,6 +5,8 @@
 
 ## Development
 
+- Easy to translate: [i18n](https://docusaurus.io/docs/i18n/introduction), [tutorial](https://docusaurus.io/docs/i18n/tutorial)
+
 ### Installation
 
 ```shell
@@ -76,3 +78,7 @@ Format:
 [url]
   [name]: [value]
 ```
+
+### Markdown
+
+
