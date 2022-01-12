@@ -50,7 +50,7 @@ Install almost everything from [GitHub](https://github.com):
 
 - The [meta plugins](ecosystem/annexes/meta-plugins) are a curated list of plugins and are automatically installed with pre-configured optimal ices.
 
-- [Playground](https://github.com/z-shell/playground) for the configurations with docker.
+- Docker [playground](https://github.com/z-shell/playground) for the configurations.
 
 - Migration [guide](getting_started/migration).
 
