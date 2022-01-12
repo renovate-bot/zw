@@ -5,6 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
+import Translate, {translate} from '@docusaurus/Translate';
 
 function HomepageHeader() {
 	const {siteConfig} = useDocusaurusContext();
@@ -33,7 +34,7 @@ export default function Home() {
 			description="A Swiss Army Knife for Zsh - Unix shell">
 			<HomepageHeader />
 			<main>
-				<HomepageFeatures />
+			<HomepageFeatures />
 			</main>
 		</Layout>
 	);

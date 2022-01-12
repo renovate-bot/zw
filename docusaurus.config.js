@@ -36,7 +36,11 @@ const config = {
 			async: true,
 		},
 	],
-	*/
+	i18n: {
+    	defaultLocale: 'en',
+    	locales: ['en', 'ja'],
+  	},
+  	*/
 	presets: [
 		[
 			"classic",
@@ -100,11 +104,11 @@ const config = {
 						position: "left",
 						label: "Wiki",
 					},
-					{
+/**					{
           				type: 'localeDropdown',
           				position: 'right',
-        			},	
-				],
+        			},
+*/				],
 			},
 			tableOfContents: {
 				minHeadingLevel: 2,
@@ -154,10 +158,6 @@ const config = {
 				 */
 				playgroundPosition: "bottom",
 			},
-			i18n: {
-    			defaultLocale: 'en',
-    			locales: ['en', 'ja'],
-  			},
 		}),
 	/**
 	stylesheets: [
