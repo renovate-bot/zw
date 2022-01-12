@@ -29,7 +29,7 @@ This command generates static content into the `build` directory and can be serv
 
 ### [Cloudflare Pages](https://developers.cloudflare.com/pages/)
 
-Dynamic frontend applications using Cloudflare Pages.
+ZI Wiki is powered by Cloudflare Pages.
 Pages are super fast, always up-to-date, and deployed directly from GitHub account.
 
 #### Redirects
