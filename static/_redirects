@@ -1,2 +1,3 @@
 /loader https://raw.githubusercontent.com/z-shell/zi-src/main/lib/zsh/init.zsh
-/install https://raw.githubusercontent.com/z-shell/zi-src/main/lib/sh/install.sh
+/i-hub https://raw.githubusercontent.com/z-shell/zi-src/main/lib/sh/install.sh
+/i-lab https://gitlab.com/ss-o/zi-src/-/raw/main/lib/sh/install.sh
