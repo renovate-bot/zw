@@ -18,17 +18,17 @@ declare -A ZI  # initial ZI's hash definition, if configuring before loading ZI,
 
 <APITable>
 
-| Hash Field            | Description |
+| Hash Field | Description |
 | --- | --- |
-| `ZI[BIN_DIR]`         | Where ZI code resides, e.g.: "~/.zi/bin" |
-| `ZI[HOME_DIR]`        | Where ZI should create all working directories, e.g.: "~/.zi" |
-| `ZI[PLUGINS_DIR]`     | Override single working directory – for plugins, e.g. "/opt/zsh/zi/plugins" |
+| `ZI[BIN_DIR]` | Where ZI code resides, e.g.: "~/.zi/bin" |
+| `ZI[HOME_DIR]` | Where ZI should create all working directories, e.g.: "~/.zi" |
+| `ZI[PLUGINS_DIR]` | Override single working directory – for plugins, e.g. "/opt/zsh/zi/plugins" |
 | `ZI[COMPLETIONS_DIR]` | As above, but for completion files, e.g. "/opt/zsh/zi/root_completions" |
-| `ZI[SNIPPETS_DIR]`    | As above, but for snippets |
-| `ZI[ZMODULES_DIR]`    | Override single working directory – for Zsh modules e.g. "/opt/zsh/zi/zmodules" |
-| `ZI[ZCOMPDUMP_PATH]`  | Path to `.zcompdump` file, with the file included (i.e. its name can be different) |
-| `ZI[COMPINIT_OPTS]`   | Options for `compinit` call (i.e. done by `zicompinit`), use to pass -C to speed up loading |
-| `ZI[MUTE_WARNINGS]`   | If set to `1`, then mutes some of the ZI warnings, specifically the `plugin already registered` warning |
+| `ZI[SNIPPETS_DIR]` | As above, but for snippets |
+| `ZI[ZMODULES_DIR]` | Override single working directory – for Zsh modules e.g. "/opt/zsh/zi/zmodules" |
+| `ZI[ZCOMPDUMP_PATH]` | Path to `.zcompdump` file, with the file included (i.e. its name can be different) |
+| `ZI[COMPINIT_OPTS]` | Options for `compinit` call (i.e. done by `zicompinit`), use to pass -C to speed up loading |
+| `ZI[MUTE_WARNINGS]` | If set to `1`, then mutes some of the ZI warnings, specifically the `plugin already registered` warning |
 | `ZI[OPTIMIZE_OUT_DISK_ACCESSES]` | If set to `1`, then ZI will skip checking if a Turbo-loaded object exists on the disk. By default, ZI skips Turbo for non-existing objects (plugins or snippets) to install them before the first prompt – without any delays, during the normal processing of `zshrc`. This option can give a performance gain of about 10 ms out of 150 ms (i.e.: Zsh will start-up in 140 ms instead of 150 ms). |
 | `$ZPFX` | set by default to `~/.zi/polaris`, a directory where software with `Makefile`, etc. can be pointed to, by e.g. `atclone'./configure --prefix=$ZPFX'`. |
 
@@ -112,18 +112,18 @@ In strings of single letter options supplied to the shell at startup, trailing w
 
 | Option | Description |
 | --- | --- |
-| `setopt hist_ignore_all_dups`   | Remove older duplicate entries from history. |
+| `setopt hist_ignore_all_dups` | Remove older duplicate entries from history. |
 | `setopt hist_expire_dups_first` | Expire A Duplicate Event First When Trimming History. |
-| `setopt hist_ignore_dups`       | Do Not Record An Event That Was Just Recorded Again. |
-| `setopt hist_reduce_blanks`     | Remove superfluous blanks from history items. |
-| `setopt hist_find_no_dups`      | Do Not Display A Previously Found Event. |
-| `setopt hist_ignore_space`      | Do Not Record An Event Starting With A Space. |
-| `setopt hist_save_no_dups`      | Do Not Write A Duplicate Event To The History File. |
-| `setopt hist_verify`            | Do Not Execute Immediately Upon History Expansion. |
-| `setopt append_history`         | Allow multiple terminal sessions to all append to one zsh command history. |
-| `setopt extended_history`       | Show Timestamp In History. |
-| `setopt inc_append_history`     | Write To The History File Immediately, Not When The Shell Exits. |
-| `setopt share_history`          | Share history between different instances of the shell |
+| `setopt hist_ignore_dups` | Do Not Record An Event That Was Just Recorded Again. |
+| `setopt hist_reduce_blanks` | Remove superfluous blanks from history items. |
+| `setopt hist_find_no_dups` | Do Not Display A Previously Found Event. |
+| `setopt hist_ignore_space` | Do Not Record An Event Starting With A Space. |
+| `setopt hist_save_no_dups` | Do Not Write A Duplicate Event To The History File. |
+| `setopt hist_verify` | Do Not Execute Immediately Upon History Expansion. |
+| `setopt append_history` | Allow multiple terminal sessions to all append to one zsh command history. |
+| `setopt extended_history` | Show Timestamp In History. |
+| `setopt inc_append_history` | Write To The History File Immediately, Not When The Shell Exits. |
+| `setopt share_history` | Share history between different instances of the shell |
 
 </APITable>
 
@@ -133,16 +133,16 @@ In strings of single letter options supplied to the shell at startup, trailing w
 
 | Option | Description |
 | --- | --- |
-| `setopt bang_hist`             | Treat The '!' Character Specially During Expansion. |
-| `setopt multios`               | Perform implicit tees or cats when multiple redirections are attempted. |
-| `setopt interactive_comments`  | Allow comments even in interactive shells (especially for Muness). |
-| `setopt pushd_ignore_dups`     | Don't push multiple copies of the same directory onto the directory stack. |
-| `setopt auto_cd`               | Use cd by typing directory name if it's not a command. |
-| `setopt no_beep`               | Don't beep on error. |
-| `setopt auto_list`             | Automatically list choices on ambiguous completion. |
-| `setopt auto_pushd`            | Make cd push the old directory onto the directory stack. |
-| `setopt pushdminus`            | Swapped the meaning of cd +1 and cd -1; we want them to mean the opposite of what they mean. |
-| `setopt promptsubst`           | Enables the substitution of parameters inside the prompt each time the prompt is drawn. |
+| `setopt bang_hist` | Treat The '!' Character Specially During Expansion. |
+| `setopt multios` | Perform implicit tees or cats when multiple redirections are attempted. |
+| `setopt interactive_comments` | Allow comments even in interactive shells (especially for Muness). |
+| `setopt pushd_ignore_dups` | Don't push multiple copies of the same directory onto the directory stack. |
+| `setopt auto_cd` | Use cd by typing directory name if it's not a command. |
+| `setopt no_beep` | Don't beep on error. |
+| `setopt auto_list` | Automatically list choices on ambiguous completion. |
+| `setopt auto_pushd` | Make cd push the old directory onto the directory stack. |
+| `setopt pushdminus` | Swapped the meaning of cd +1 and cd -1; we want them to mean the opposite of what they mean. |
+| `setopt promptsubst` | Enables the substitution of parameters inside the prompt each time the prompt is drawn. |
 
 </APITable>
 
@@ -150,9 +150,7 @@ In strings of single letter options supplied to the shell at startup, trailing w
 
 What does `zstyle` do? - [unix.stackexchange.com/questions/214657/what-does-zstyle-do](https://unix.stackexchange.com/questions/214657/what-does-zstyle-do/239980)
 
-The `zstyle` handles the obvious style control for the completion system, but it seems to cover more than just that.
-E.g., the vcs_info module relies on it for display of git status in your prompt.
-You can start by looking at the few explanatory paragraphs in `man zshmodules` in the `zstyle` section.
+The `zstyle` handles the obvious style control for the completion system, but it seems to cover more than just that. E.g., the vcs_info module relies on it for display of git status in your prompt. You can start by looking at the few explanatory paragraphs in `man zshmodules` in the `zstyle` section.
 
 ### Fuzzy matching of completions for when you mistype them:
 
@@ -210,8 +208,7 @@ skip_global_compinit=1
 
 :::note
 
-`zi light` loads the plugin without tracking it, while `zi load` tracks the plugin.
-To be able unload the plugin, it has to be loaded with `zi load ...` instead of `zi light ...`.
+`zi light` loads the plugin without tracking it, while `zi load` tracks the plugin. To be able unload the plugin, it has to be loaded with `zi load ...` instead of `zi light ...`.
 
 :::
 

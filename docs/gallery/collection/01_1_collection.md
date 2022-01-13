@@ -19,6 +19,19 @@ More info: [ecosystem/annexes](../ecosystem/annexes)
 
 :::
 
+## Header search tags
+
+When using search, tag name provides minimal information about visible result.
+
+| Tag name | Install type                               |
+| -------- | ------------------------------------------ |
+| GH-R     | GitHub release                             |
+| SC       | Script                                     |
+| B        | Build                                      |
+| RA       | [Rust Annex](../../ecosystem/annexes/rust) |
+| THP      | Theme / Prompt                             |
+| COMP     | Completion                                 |
+
 :::tip
 
 For additional install methods, please see:

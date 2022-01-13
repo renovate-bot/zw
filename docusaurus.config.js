@@ -37,21 +37,23 @@ const config = {
 		},
 	],
 	i18n: {
-    	defaultLocale: 'en',
-    	locales: ['en', 'ja'],
-  	},
-  	*/
+		defaultLocale: "en",
+		locales: ["en", "ja"],
+	},*/
 	presets: [
 		[
 			"classic",
 			/** @type {import('@docusaurus/preset-classic').Options} */
 			({
-				debug: true, // force debug plugin usage
 				docs: {
 					sidebarPath: require.resolve("./sidebars.js"),
 					editUrl: "https://github.com/z-shell/z-shell.pages.dev/tree/main",
 					remarkPlugins: [math, [npm2yarn, {sync: true}]],
 					rehypePlugins: [katex],
+					docLayoutComponent: "@theme/DocPage",
+					docItemComponent: "@theme/DocItem",
+					showLastUpdateAuthor: true,
+					showLastUpdateTime: true,
 				},
 				theme: {
 					customCss: require.resolve("./src/css/custom.css"),
@@ -104,15 +106,11 @@ const config = {
 						position: "left",
 						label: "Wiki",
 					},
-/**					{
-          				type: 'localeDropdown',
-          				position: 'right',
-        			},
-*/				],
-			},
-			tableOfContents: {
-				minHeadingLevel: 2,
-				maxHeadingLevel: 5,
+					/**{
+						type: "localeDropdown",
+						position: "right",
+					},*/
+				],
 			},
 			footer: {
 				style: "dark",
@@ -157,6 +155,10 @@ const config = {
 				 * Possible values: "top" | "bottom"
 				 */
 				playgroundPosition: "bottom",
+			},
+			tableOfContents: {
+				minHeadingLevel: 2,
+				maxHeadingLevel: 5,
 			},
 		}),
 	/**

@@ -26,7 +26,7 @@ Zsh tweak - map colours to the nearest colour in the available palette.
 
 :::
 
-### [romkatv/powerlevel10k](https://github.com/romkatv/powerlevel10k) {#romkatvpowerlevel10k}
+### THP: [romkatv/powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
 :::info
 
@@ -66,7 +66,14 @@ zi ice depth'1' atload"[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh" nocd
 zi light romkatv/powerlevel10k
 ```
 
-### [z-shell/zprompts](https://github.com/z-shell/zprompts) {#z-shellzprompts}
+### THP: [ohmyzsh/robbyrussell](https://github.com/ohmyzsh/ohmyzsh/blob/master/themes/robbyrussell.zsh-theme)
+
+```shell
+zi wait'!' lucid for OMZL::prompt_info_functions.zsh \
+    OMZT::robbyrussell
+```
+
+### THP: [z-shell/zprompts](https://github.com/z-shell/zprompts)
 
 ```shell
 zi lucid atload"!promptinit; typeset -g PSSHORT=0; \
@@ -74,15 +81,14 @@ prompt sprint3 yellow red green blue" nocd for \
     z-shell/zprompts
 ```
 
-### [halfo/lambda-mod-zsh-theme](https://github.com/halfo/lambda-mod-zsh-theme) {#halfolambda-mod-zsh-theme}
+### THP: [halfo/lambda-mod-zsh-theme](https://github.com/halfo/lambda-mod-zsh-theme)
 
 ```shell
-autoload -Uz colors && colors # Load colors if missing
 zi lucid nocd for \
     halfo/lambda-mod-zsh-theme
 ```
 
-### [geometry-zsh/geometry](https://github.com/geometry-zsh/geometry) {#geometry-zshgeometry}
+### THP: [geometry-zsh/geometry](https://github.com/geometry-zsh/geometry)
 
 ```shell
 zi lucid atload"!geometry::prompt" nocd \
@@ -90,7 +96,7 @@ atinit"GEOMETRY_COLOR_DIR=63 GEOMETRY_PATH_COLOR=63" for \
     geometry-zsh/geometry
 ```
 
-### [sindresorhus/pure](https://github.com/sindresorhus/pure) {#sindresorhuspure}
+### THP: [sindresorhus/pure](https://github.com/sindresorhus/pure)
 
 ```shell
 zi lucid pick"/dev/null" multisrc"{async,pure}.zsh" atload"!prompt_pure_precmd" nocd for \
@@ -114,7 +120,7 @@ zi light-mode for compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh' atload
     sindresorhus/pure
 ```
 
-### [agkozak/agkozak-zsh-prompt](https://github.com/agkozak/agkozak-zsh-prompt) {#agkozakagkozak-zsh-prompt}
+### THP: [agkozak/agkozak-zsh-prompt](https://github.com/agkozak/agkozak-zsh-prompt)
 
 ```shell
 zi lucid nocd atinit"AGKOZAK_COLORS_PROMPT_CHAR='magenta' AGKOZAK_MULTILINE=0 \
@@ -124,10 +130,10 @@ AGKOZAK_PROMPT_CHAR=( ❯ ❯ ❮ ) AGKOZAK_USER_HOST_DISPLAY=0" for \
 
 ```shell
 # Install as meta plugin
-zi light-mode for @agkozak/agkozak-zsh-prompt
+zi for @agkozak/agkozak-zsh-prompt
 ```
 
-### [chauncey-garrett/zsh-prompt-garrett](https://github.com/chauncey-garrett/zsh-prompt-garrett) {#chauncey-garrettzsh-prompt-garrett}
+### THP: [chauncey-garrett/zsh-prompt-garrett](https://github.com/chauncey-garrett/zsh-prompt-garrett)
 
 ```shell
 zi ice atload"fpath+=( \$PWD );"
@@ -137,7 +143,7 @@ zi ice svn atload"prompt garrett" silent
 zi snippet PZT::modules/prompt
 ```
 
-### [starship/starship](https://github.com/starship/starship) {#starshipstarship}
+### THP: [starship/starship](https://github.com/starship/starship)
 
 ```shell
 zi ice as"command" from"gh-r" \
@@ -146,7 +152,7 @@ zi ice as"command" from"gh-r" \
 zi light starship/starship
 ```
 
-### [robobenklein/zinc](https://github.com/robobenklein/zinc) {#robobenkleinzinc}
+### THP: [robobenklein/zinc](https://github.com/robobenklein/zinc)
 
 ```shell
 zi ice wait'!' lucid nocompletions \
