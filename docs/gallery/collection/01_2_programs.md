@@ -1,6 +1,6 @@
 ---
 id: programs
-title: Programs
+title: 🔺 Programs
 sidebar_position: 2
 description: Programs Collection
 keywords: [collection, programs, zsh, z-shell, zi]

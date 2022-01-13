@@ -1,6 +1,6 @@
 ---
 id: completions
-title: Completions
+title: 🔺 Completions
 sidebar_position: 6
 description: Completions Collection
 keywords: [collection, completions, zsh, z-shell, zi]

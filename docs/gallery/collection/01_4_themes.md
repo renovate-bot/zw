@@ -1,6 +1,6 @@
 ---
 id: themes
-title: Themes & Prompts
+title: 🔺 Themes & Prompts
 sidebar_position: 4
 description: Themes & Prompts Collection
 keywords: [collection, themes, prompts, zsh, z-shell, zi]

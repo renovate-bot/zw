@@ -1,6 +1,6 @@
 ---
 id: snippets
-title: Snippets
+title: 🔺 Snippets
 sidebar_position: 5
 description: Snippets Collection
 keywords: [collection, snippets, zsh, z-shell, zi]

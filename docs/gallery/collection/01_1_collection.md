@@ -1,6 +1,6 @@
 ---
 slug: /gallery/collection
-title: Collection overview
+title: 🔺 Collection Guide
 sidebar_position: 1
 image: /img/z-shell_501x501.png
 description: The gallery of invocations
@@ -23,14 +23,14 @@ More info: [ecosystem/annexes](../ecosystem/annexes)
 
 When using search, tag name provides minimal information about visible result.
 
-| Tag name | Install type                               |
-| -------- | ------------------------------------------ |
-| GH-R     | GitHub release                             |
-| SC       | Script                                     |
-| B        | Build                                      |
-| RA       | [Rust Annex](../ecosystem/annexes/rust)    |
-| THP      | Theme / Prompt                             |
-| COMP     | Completion                                 |
+| Tag name | Install type                            |
+| -------- | --------------------------------------- |
+| GH-R     | GitHub release                          |
+| SC       | Script                                  |
+| B        | Build                                   |
+| RA       | [Rust Annex](../ecosystem/annexes/rust) |
+| THP      | Theme / Prompt                          |
+| COMP     | Completion                              |
 
 :::tip
 
@@ -66,11 +66,11 @@ zi wait lucid light-mode for \
     zsh-users/zsh-completions
 ```
 
-| Syntax  | Description |
-|  ---  | :--- |
-| `wait`        | Load 0 seconds (about 5 ms exactly) after prompt ([Turbo mode](../getting_started/overview#turbo-mode-zsh--53)). |
-| `lucid`       | Silence the under-prompt messages ("`Loaded {name of the plugin}`"). |
-| `light-mode`  | Load the plugin in `light` mode, in which the tracking of plugin (i.e. activity report gathering, accessible via the `zi report {plugin-name}`  subcommand) is being disabled; note that for Turbo mode, the performance gains are almost `0`, so in this mode, you can load all plugins with the tracking, i.e.: the `light-mode` ice can be removed from the command. |
+| Syntax | Description |
+| --- | :-- |
+| `wait` |  Load 0 seconds (about 5 ms exactly) after prompt ([Turbo mode](../getting_started/overview#turbo-mode-zsh--53)). |
+| `lucid` | Silence the under-prompt messages ("`Loaded {name of the plugin}`"). |
+| `light-mode` | Load the plugin in `light` mode, in which the tracking of plugin (i.e. activity report gathering, accessible via the `zi report {plugin-name}` subcommand) is being disabled; note that for Turbo mode, the performance gains are almost `0`, so in this mode, you can load all plugins with the tracking, i.e.: the `light-mode` ice can be removed from the command. |
 | `atpull'…'` | Execute after updating the plugin – the command in the ice will install any new completions. |
 | `atinit'…'` | Execute code before loading plugin. |
 | `atload'…'` | Execute code after loading plugin. |
@@ -177,8 +177,7 @@ A repository [**trapd00r/LS_COLORS**](https://github.com/trapd00r/LS_COLORS) pro
 
 Typically one does `eval $( dircolors -b $HOME/LS_COLORS)` to process this file and set the environment for `ls`. However this means `dircolors` is run every shell startup.
 
-This costs much time because a fork has to be done and the program (i.e. `dircolors`) binary needs to be loaded and executed,
-and because `dircolors` loads the colors' definitions and processes them. Following ZI invocation solves this problem:
+This costs much time because a fork has to be done and the program (i.e. `dircolors`) binary needs to be loaded and executed, and because `dircolors` loads the colors' definitions and processes them. Following ZI invocation solves this problem:
 
 ```shell
 zi ice atclone'dircolors -b LS_COLORS > clrs.zsh' \
@@ -188,7 +187,7 @@ zi light trapd00r/LS_COLORS
 ```
 
 | Syntax | Description |
-|  ---  | :--- |
+| --- | :-- |
 | `atclone'…'` | Generate shell script, but instead of passing it to `eval`, save it to file. The `atclone'…'` is being ran on the **installation** while the `atpull'…'` hook is being run on an **update** of the [**trapd00r/LS_COLORS**](https://github.com/trapd00r/LS_COLORS) plugin. |
 | `atpull'%atclone'` | Do the same at any update of the plugin the `%atclone` is just a special string that denotes the `atclone'…'` hook and is copied onto the `atpull'…'` hook. |
 | `pick"clrs.zsh"` | Source the previously generated file `clrs.zsh`. |
@@ -210,13 +209,13 @@ zi as"program" make'!' atclone'./direnv hook zsh > zhook.zsh' \
 ```
 
 | Syntax | Description |
-|  ---  | :--- |
+| --- | :-- |
 | `make'!'` | Compile `direnv` (it's written in Go lang); the exclamation mark means: run the `make` first, before `atclone'…'` and `atpull'…'` hooks. |
 | `atclone'…'` | Initially (right after installing the plugin) generate the registration code and save it to `zhook.zsh` (instead of passing to `eval`). |
 | `atpull'%atclone'` | Regenerate the registration code also on update. The `atclone'…'` runs on **installation** while `atpull'…'` runs on **update** of the plugin. |
-| `src"zhook.zsh"` | Load (`source`) the generated registration code |
-| `pick"direnv"` | Ensure `+x` permission on the binary |
-| `as"program"` | The plugin is a program, there's no main file to the source. |
+| `src'zhook.zsh'` | Load (`source`) the generated registration code |
+| `pick'direnv'` | Ensure `+x` permission on the binary |
+| `as'program'` | The plugin is a program, there's no main file to the source. |
 
 This way registration code is generated once every installation and update, to then be simply sourced without running `direnv`.
 
@@ -230,12 +229,12 @@ zi from"gh-r" as"program" mv"direnv* -> direnv" \
 ```
 
 | Syntax | Description |
-|  ---  | :--- |
-| `from"gh-r"` | Install from **Github releases**. |
-| `mv"direnv* -> direnv"` | After installation, rename `direnv.linux-386` or similar file to `direnv`.
+| --- | :-- |
+| `from'gh-r'` | Install from **Github releases**. |
+| `mv'direnv* -> direnv'` | After installation, rename `direnv.linux-386` or similar file to `direnv`. |
 | `atclone'…'`, `atpull'…'` | As in previous example |
-| `pick"direnv"` | As in previous example. |
-| `as"program"` | As in previous example |
+| `pick'direnv'` | As in previous example. |
+| `as'program'` | As in previous example |
 
 ```shell
 zi ice as"program" make'!' atclone'./direnv hook zsh > zhook.zsh' \
@@ -244,7 +243,7 @@ zi light direnv/direnv
 ```
 
 - `make'!'` – execute `make` before `atclone'…'` and before `atpull'…'` (see `make` above),
-- `src"zhook.zsh"` – source file `zhook.zsh`.
+- `src'zhook.zsh'` – source file `zhook.zsh`.
 
 In general, Direnv works by hooking up to Zsh. The code that does this is provided by program `direnv` (built by `make'…'`). Above `atclone'…'` puts this code into file `zhook.zsh`, `src''` sources it. This way `direnv hook zsh` is executed only on clone and update, and Zsh starts faster.
 
@@ -257,25 +256,25 @@ zi light vim/vim
 ```
 
 | Syntax | Description |
-|  ---  | :--- |
-| `as"program"` | Add file selected by `pick'…'` to `$PATH`, and do not source it. |
-| `atclone"…"` | Execute code after downloading. |
-| `atpull"%atclone"` | Execute the same code `atclone'…'` is given, but after successful update. |
-| `make` | Run `make` after `atclone'…'` and `atpull'…'` (note: `make'!'` will execute before them). |
-| `pick"src/vim"` | Set executable flag on `src/vim`, hint that `src/` should be added to `$PATH`. |
+| --- | :-- |
+| `as'program'` | Add file selected by `pick'…'` to `$PATH`, and do not source it. |
+| `atclone'…'` | Execute code after downloading. |
+| `atpull'%atclone'` | Execute the same code `atclone'…'` is given, but after successful update. |
+| `make` |  Run `make` after `atclone'…'` and `atpull'…'` (note: `make'!'` will execute before them). |
+| `pick'src/vim'` | Set executable flag on `src/vim`, hint that `src/` should be added to `$PATH`. |
 
 The same but with **installation** (i.e. `make install` is being run) under `$ZPFX` (`~/.zi/polaris` by default):
 
 ```shell
-zi ice as"program" atclone"rm -f src/auto/config.cache; \
-  ./configure --prefix=$ZPFX" atpull"%atclone" make"all install" pick"$ZPFX/bin/vim"
+zi ice as'program' atclone'rm -f src/auto/config.cache; \
+  ./configure --prefix=$ZPFX' atpull'%atclone' make'all install' pick'$ZPFX/bin/vim'
 zi light vim/vim
 ```
 
 | Syntax | Description |
-|  ---  | :--- |
-| `as"program"` | As above. |
-| `atclone"…"` | As above **plus** pass `--prefix=$ZPFX` to `./configure`, to set the installation directory. |
-| `atpull"%atclone"` | As above. |
-| `make` | As above, but also run the `install` target. |
-| `pick"src/vim"` | as above, but for different path (`$ZPFX/bin/vim`). |
+| --- | :-- |
+| `as'program'` | As above. |
+| `atclone'…'` | As above **plus** pass `--prefix=$ZPFX` to `./configure`, to set the installation directory. |
+| `atpull'%atclone'` | As above. |
+| `make` |  As above, but also run the `install` target. |
+| `pick'src/vim'` | as above, but for different path (`$ZPFX/bin/vim`). |

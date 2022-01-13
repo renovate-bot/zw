@@ -1,6 +1,6 @@
 ---
 id: plugins
-title: Plugins
+title: 🔺 Plugins
 sidebar_position: 3
 description: Plugins Collection
 keywords: [collection, plugins, zsh, z-shell, zi]
