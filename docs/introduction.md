@@ -16,35 +16,36 @@ import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 <Tabs>
   <TabItem value="gems" label="RubyGems">
 
-Install [RubyGems](https://rubygems.org) and automatically set [$GEM_HOME](https://guides.rubygems.org/command-reference/#gem-environment) within a local directory.
+- Install [RubyGems](https://rubygems.org) 
+- [$GEM_HOME](https://guides.rubygems.org/command-reference/#gem-environment) automatically set.
     
 [Annex Bin-Gem-Node](ecosystem/annexes/bin-gem-node) | [Package Any Gem](https://github.com/z-shell/any-gem)
 
   </TabItem>
   <TabItem value="node" label="Node">
 
-Install [Node](https://www.npmjs.com) modules and automatically set [$NODE_PATH](https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders) within a local directory.
-
+- Install [Node](https://www.npmjs.com) modules
+- [$NODE_PATH](https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders) automatically set.
+    
 [Annex Bin-Gem-Node](ecosystem/annexes/bin-gem-node) | [Package Any Node](https://github.com/z-shell/any-node)
 
   </TabItem>
   <TabItem value="pip" label="Python">
     
-Install [Python](https://python.org/) modules and automatically set [$VIRTUALENV](https://docs.python.org/3/tutorial/venv.html) within a local directory.
+- Install [Python](https://python.org) modules
+- [$VIRTUALENV](https://docs.python.org/3/tutorial/venv.html) automatically set.
     
 [Annex Bin-Gem-Node](ecosystem/annexes/bin-gem-node)
 
   </TabItem>
   <TabItem value="rust" label="Rust packages">
 
-Install [Rust packages](https://crates.io):
-
-[Annex Rust](ecosystem/annexes/rust)
+- Install [Rust packages](https://crates.io) with [rust annex](ecosystem/annexes/rust)
 
   </TabItem>
   <TabItem value="github" label="GitHub" default>
 
-Install almost everything from [GitHub](https://github.com):
+- Install almost everything from [GitHub](https://github.com):
 
 [Annexes](ecosystem/annexes) | [Packages](ecosystem/packages) | [Meta Plugins](ecosystem/annexes/meta-plugins) | [Gallery of Invocations](gallery/collection)
 
