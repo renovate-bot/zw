@@ -14,8 +14,10 @@ zi ice atinit'zmodload zsh/zprof' \
 zi light z-shell/F-Sy-H
 ```
 
-- `atinit''` loads `zsh/zprof` module (shipped with Zsh) before loading the plugin – this starts the profiling,
-- `atload''` works after loading the plugin – shows profiling results (`zprof | head`), unloads `zsh/zprof` - this stops the profiling;
+| Syntax | Description |
+| --- | :-- |
+| `atinit'…'` | loads `zsh/zprof` module (shipped with Zsh) before loading the plugin – this starts the profiling. |
+| `atload'…'` | works after loading the plugin – shows profiling results (`zprof / head`), unloads `zsh/zprof` - this stops the profiling. |
 
 - While in effect, only a single plugin (in this case `z-shell/F-Sy-H`) will be profiled. The rest plugins will go on completely normally, as when plugins are loaded with `light` - reporting is disabled. Less code is being run in the background – (i.e. the automatic data gathering, during loading of a plugin, for the reports and the possibility to unload the plugin) will be activated and the functions will not appear in the `zprof` report.
 

@@ -1,6 +1,6 @@
 ---
 id: commands
-title: Commands
+title: 🛠 Commands
 image: /img/logo.png
 description: Commands documentation for the Z-Shell ZI
 keywords: [commands, zsh, z-shell, zi]
@@ -8,7 +8,7 @@ keywords: [commands, zsh, z-shell, zi]
 
 import APITable from '@site/src/components/APITable';
 
-## Commands available with `^TAB` completion {#commands-available-with-tab-completion}
+## Commands available with `^TAB` completion
 
 ```shell
 self-update          -- "Updates and Compile ❮ ZI ❯"
@@ -74,7 +74,7 @@ Some plugins require performing an action each time they're updated. One way you
 
 The ice modifiers for any plugin or snippet are stored in their directory in a `._zi` subdirectory, hence the plugin doesn't have to be loaded to be correctly updated. There's one other file created there, `.zi_lstupd` – it holds the log of the new commits pulled-in in the last update.
 
-## Calling `compinit` Without Turbo Mode {#calling-compinit-without-turbo-mode}
+## Calling `compinit` Without Turbo Mode
 
 With no Turbo mode in use, compinit can be called normally, i.e.: as `autoload compinit; compinit`. This should be done after loading of all plugins and before possibly calling `zi cdreplay`.
 
@@ -92,7 +92,7 @@ compdef _gnu_generic fd  # this will be intercepted by ZI, because as the compin
                          # ZI provides its own `compdef' function which saves the
                          # completion-definition for later possible re-run with `zi
                          # cdreplay' or `zicdreplay' (the second one can be used in hooks
-                         # like atload'', atinit'', etc.)
+                         # like atload'…', atinit'…', etc.)
 ...
 zi load "other/plugin"
 
@@ -114,7 +114,7 @@ Performance gains are huge, for example, shell startup time with double `compini
 
 :::
 
-## Calling `compinit` With Turbo Mode {#calling-compinit-with-turbo-mode}
+## Calling `compinit` With Turbo Mode
 
 If you load completions using `wait''` Turbo mode then you can add `atinit'zicompinit'` to the syntax-highlighting plugin (which should be the last one loaded, as their (2 projects, [Z-Sy-H](https://github.com/zsh-users/zsh-syntax-highlighting) & [F-Sy-H](https://github.com/z-shell/F-Sy-H)) documentation state), or `atload'zicompinit'` to last completion-related plugin. `zicompinit` is a function that just runs `autoload compinit; compinit`, created for convenience. There's also `zicdreplay` which will replay any caught compdefs so you can also do: `atinit'zicompinit; zicdreplay'`, etc. Basically, the whole topic is the same as normal `compinit` call, but it is done in `atinit` or `atload` hook of the last related plugin with the use of the helper functions (`zicompinit`,`zicdreplay` & `zicdclear` – see below for explanation of the last one). To summarize:
 
@@ -131,7 +131,7 @@ zi wait lucid atload"zicompinit; zicdreplay" blockf for \
     zsh-users/zsh-completions
 ```
 
-### Ignoring Compdefs {#ignoring-compdefs}
+### Ignoring Compdefs
 
 If you want to ignore compdefs provided by some plugins or snippets, place their load commands before commands loading other plugins or snippets, and issue `zi cdclear` (or `zicdclear`, designed to be used in hooks like `atload''`):
 
@@ -154,7 +154,7 @@ The `cdreplay` is important if you use plugins like `OMZP::kubectl` or `asdf-vm/
 
 Following commands are passed to `zi ...` to obtain described effects.
 
-## Loading and Unloading {#loading-and-unloading}
+## Loading and Unloading
 
 <APITable>
 
@@ -167,7 +167,7 @@ Following commands are passed to `zi ...` to obtain described effects.
 
 </APITable>
 
-## Completions Management {#completions-management}
+## Completions Management
 
 <APITable>
 

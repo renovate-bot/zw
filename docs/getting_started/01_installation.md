@@ -7,7 +7,7 @@ description: Installation guide for Z-Shell ZI
 keywords: [installation, zsh, z-shell, zi]
 ---
 
-### Quick install {#quick-install}
+### Quick install
 
 :::tip
 

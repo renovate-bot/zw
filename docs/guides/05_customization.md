@@ -20,16 +20,16 @@ declare -A ZI  # initial ZI's hash definition, if configuring before loading ZI,
 
 | Hash Field | Description |
 | --- | --- |
-| `ZI[BIN_DIR]` | Where ZI code resides, e.g.: "~/.zi/bin" |
-| `ZI[HOME_DIR]` | Where ZI should create all working directories, e.g.: "~/.zi" |
-| `ZI[PLUGINS_DIR]` | Override single working directory – for plugins, e.g. "/opt/zsh/zi/plugins" |
-| `ZI[COMPLETIONS_DIR]` | As above, but for completion files, e.g. "/opt/zsh/zi/root_completions" |
+| `ZI[BIN_DIR]` | Where ZI code resides, e.g: "~/.zi/bin" |
+| `ZI[HOME_DIR]` | Where ZI should create all working directories, e.g: "~/.zi" |
+| `ZI[PLUGINS_DIR]` | Override single working directory – for plugins, e.g: "/opt/zsh/zi/plugins" |
+| `ZI[COMPLETIONS_DIR]` | As above, but for completion files, e.g: "/opt/zsh/zi/root_completions" |
 | `ZI[SNIPPETS_DIR]` | As above, but for snippets |
-| `ZI[ZMODULES_DIR]` | Override single working directory – for Zsh modules e.g. "/opt/zsh/zi/zmodules" |
-| `ZI[ZCOMPDUMP_PATH]` | Path to `.zcompdump` file, with the file included (i.e. its name can be different) |
-| `ZI[COMPINIT_OPTS]` | Options for `compinit` call (i.e. done by `zicompinit`), use to pass -C to speed up loading |
+| `ZI[ZMODULES_DIR]` | Override single working directory – for Zsh modules e.g: "/opt/zsh/zi/zmodules" |
+| `ZI[ZCOMPDUMP_PATH]` | Path to `.zcompdump` file, with the file included (e.g: its name can be different) |
+| `ZI[COMPINIT_OPTS]` | Options for `compinit` call (e.g: done by `zicompinit`), use to pass -C to speed up loading |
 | `ZI[MUTE_WARNINGS]` | If set to `1`, then mutes some of the ZI warnings, specifically the `plugin already registered` warning |
-| `ZI[OPTIMIZE_OUT_DISK_ACCESSES]` | If set to `1`, then ZI will skip checking if a Turbo-loaded object exists on the disk. By default, ZI skips Turbo for non-existing objects (plugins or snippets) to install them before the first prompt – without any delays, during the normal processing of `zshrc`. This option can give a performance gain of about 10 ms out of 150 ms (i.e.: Zsh will start-up in 140 ms instead of 150 ms). |
+| `ZI[OPTIMIZE_OUT_DISK_ACCESSES]` | If set to `1`, then ZI will skip checking if a Turbo-loaded object exists on the disk. By default, ZI skips Turbo for non-existing objects (plugins or snippets) to install them before the first prompt – without any delays, during the normal processing of `zshrc`. This option can give a performance gain of about 10 ms out of 150 ms (e.g: Zsh will start-up in 140 ms instead of 150 ms). |
 | `$ZPFX` | set by default to `~/.zi/polaris`, a directory where software with `Makefile`, etc. can be pointed to, by e.g. `atclone'./configure --prefix=$ZPFX'`. |
 
 </APITable>
@@ -46,7 +46,7 @@ Several projects provide git extensions. Installing them with ZI has many benefi
 
 - all files are under `$HOME` – no administrator rights needed,
 - declarative setup (like Chef or Puppet) – copying `.zshrc` to a different account brings also git-related setup,
-- easy update by e.g. `zi update --all`.
+- easy update by e.g: `zi update --all`.
 
 Below is a configuration that adds multiple git extensions, loaded in Turbo mode, 1 second after prompt, with use of the [Bin-Gem-Node](https://github.com/z-shell/z-a-bin-gem-node) annex:
 
@@ -132,7 +132,7 @@ In strings of single letter options supplied to the shell at startup, trailing w
 <APITable>
 
 | Option | Description |
-| --- | --- |
+| --- | :-- |
 | `setopt bang_hist` | Treat The '!' Character Specially During Expansion. |
 | `setopt multios` | Perform implicit tees or cats when multiple redirections are attempted. |
 | `setopt interactive_comments` | Allow comments even in interactive shells (especially for Muness). |
@@ -203,17 +203,21 @@ skip_global_compinit=1
 
 ## Multiple prompts {#multiple-prompts}
 
-- `load''` – condition that when fulfilled will cause plugin to be loaded,
-- `unload''` – as above, but will unload plugin.
+| Syntax      | Description                                                   |
+| ----------- | :------------------------------------------------------------ |
+| `load'…'`   | condition that when fulfilled will cause plugin to be loaded. |
+| `unload'…'` | as above, but will unload plugin.                             |
 
 :::note
 
-`zi light` loads the plugin without tracking it, while `zi load` tracks the plugin. To be able unload the plugin, it has to be loaded with `zi load ...` instead of `zi light ...`.
+`zi light ……` loads the plugin without tracking it, while `zi load` tracks the plugin. To be able unload the plugin, it has to be loaded with `zi load ……` instead of `zi light ……`.
 
 :::
 
-- `atload'!…'` – run the `precmd` hooks to make the prompts fully initialized when loaded in the middle of the prompt.
-- `precmd` – hooks are being normally run before each **new** prompt.
+| Syntax | Description |
+| --- | :-- |
+| `atload'!…'` | run the `precmd` hooks to make the prompts fully initialized when loaded in the middle of the prompt. |
+| `precmd` | hooks are being normally run before each **new** prompt. |
 
 :::info
 
@@ -225,10 +229,10 @@ To allow better unloading, conditions are checked every second, you can use cond
 
 - As an example `![[ $PWD == *github* ]]` or `![[ $MYPROMPT = 1 ]]` to change prompt after changing directory to `*github*` or then variable `MYPROMPT = 1`, the exclamation mark `![[ … ]]` causes prompt to be reset after loading or unloading the plugin,
 - `pick'/dev/null'` – disable sourcing of the default-found file,
-- `multisrc''` – source multiple files,
-- `lucid` – don't show the under-prompt message that says e.g.: `Loaded geometry-zsh/geometry`,
+- `multisrc'…'` – source multiple files,
+- `lucid` – don't show the under-prompt message that says e.g: `Loaded geometry-zsh/geometry`,
 - `nocd` – don't cd into the plugin's directory when executing the
-- `atload''` – this ice can make the path that's displayed by the theme to point to that directory.
+- `atload'…'` – this ice can make the path that's displayed by the theme to point to that directory.
 
 ```shell
 # Theme no. 1 - zprompts
