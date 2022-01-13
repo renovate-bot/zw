@@ -83,7 +83,3 @@ Format:
 [url]
   [name]: [value]
 ```
-
-### Markdown
-
-
