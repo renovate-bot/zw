@@ -28,7 +28,7 @@ When using search, tag name provides minimal information about visible result.
 | GH-R     | GitHub release                             |
 | SC       | Script                                     |
 | B        | Build                                      |
-| RA       | [Rust Annex](../../ecosystem/annexes/rust) |
+| RA       | [Rust Annex](../ecosystem/annexes/rust)    |
 | THP      | Theme / Prompt                             |
 | COMP     | Completion                                 |
 
