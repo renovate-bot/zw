@@ -14,7 +14,7 @@ Some Ice-modifiers are highlighted and clicking on them will take you to the app
 
 You may safely assume given ice works with both plugins and snippets unless explicitly stated otherwise.
 
-### Cloning options {#cloning-options}
+## Cloning options {#cloning-options}
 
 <APITable>
 
@@ -31,7 +31,7 @@ You may safely assume given ice works with both plugins and snippets unless expl
 
 </APITable>
 
-### Selection of Files (To Source, …) {#selection-of-files-to-source}
+## Selection of Files (To Source, …) {#selection-of-files-to-source}
 
 <APITable>
 
@@ -43,7 +43,7 @@ You may safely assume given ice works with both plugins and snippets unless expl
 
 </APITable>
 
-### Conditional Loading {#conditional-loading}
+## Conditional Loading {#conditional-loading}
 
 <APITable>
 
@@ -60,7 +60,7 @@ You may safely assume given ice works with both plugins and snippets unless expl
 
 </APITable>
 
-### Plugin Output {#plugin-output}
+## Plugin Output {#plugin-output}
 
 <APITable>
 
@@ -72,7 +72,7 @@ You may safely assume given ice works with both plugins and snippets unless expl
 
 </APITable>
 
-### Completions {#completions}
+## Completions {#completions}
 
 <APITable>
 
@@ -83,7 +83,7 @@ You may safely assume given ice works with both plugins and snippets unless expl
 
 </APITable>
 
-### Command Execution After Cloning, Updating or Loading {#command-execution-after-cloning-updating-or-loading}
+## Command Execution After Cloning, Updating or Loading {#command-execution-after-cloning-updating-or-loading}
 
 <APITable>
 
@@ -103,7 +103,7 @@ You may safely assume given ice works with both plugins and snippets unless expl
 
 </APITable>
 
-### Sticky-Emulation Of Other Shells {#sticky-emulation-of-other-shells}
+## Sticky-Emulation Of Other Shells {#sticky-emulation-of-other-shells}
 
 <APITable>
 
@@ -116,7 +116,7 @@ You may safely assume given ice works with both plugins and snippets unless expl
 
 </APITable>
 
-### Others {#others}
+## Others {#others}
 
 <APITable>
 
@@ -186,6 +186,6 @@ zi --wait=1 --from=gh-r --atload="print Hello World"
 zi load …
 ```
 
-### Summary {#summary}
+## Summary {#summary}
 
 It's up to the user which syntax to choose. The original motivation behind the standard syntax was: to utilize the syntax highlighting of editors like Vim – and have the strings following ice names colorized with a distinct color and this way separated from them. However, with the [zi/zi-vim-syntax](https://github.com/z-shell/zi-vim-syntax) syntax definition this motivation can be superseded with the ZI-specific highlighting, at least for Vim.
