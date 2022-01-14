@@ -17,7 +17,7 @@ Some installations may require additional functionally, it can be done by instal
 zi light-mode for z-shell/z-a-meta-plugins @annexes
 ```
 
-More info: [ecosystem/annexes](../ecosystem/annexes)
+More info: [ecosystem/annexes](/docs/ecosystem/annexes)
 
 :::
 
@@ -27,21 +27,21 @@ For the [search](https://z-shell.pages.dev/search/?q=GH-R), prefixed tags helps 
 
 <APITable>
 
-| Tag name | Install type                            |
-| -------- | --------------------------------------- |
-| GH-R     | GitHub release                          |
-| SC       | Script                                  |
-| B        | Build                                   |
-| RA       | [Rust Annex](../ecosystem/annexes/rust) |
-| THP      | Theme / Prompt                          |
-| COMP     | Completion                              |
+| Tag name | Install type                               |
+| -------- | ------------------------------------------ |
+| GH-R     | GitHub release                             |
+| SC       | Script                                     |
+| B        | Build                                      |
+| RA       | [Rust Annex](/docs/ecosystem/annexes/rust) |
+| THP      | Theme / Prompt                             |
+| COMP     | Completion                                 |
 
 </APITable>
 
 :::tip Additional installation methods
 
-1. [Meta plugins](../ecosystem/annexes/meta-plugins)
-2. [Packages](../ecosystem/packages)
+1. [Meta plugins](/docs/ecosystem/annexes/meta-plugins)
+2. [Packages](/docs/ecosystem/packages)
 
 :::
 
@@ -58,7 +58,7 @@ Any contributions you make will benefit everybody else and are greatly appreciat
 
 ### Minimal {#minimal}
 
-#### With [Turbo mode](../getting_started/overview#turbo-mode-zsh--53) (i.e. no `wait` ice) and with [`for`](../guides/syntax#the-for-syntax) syntax: {#with-turbo-mode-ie-no-wait-ice-and-with-for-syntax}
+#### With [Turbo mode](../getting_started/overview#turbo-mode-zsh--53) (i.e. no `wait` ice) and with [`for`](/docs/guides/syntax#the-for-syntax) syntax: {#with-turbo-mode-ie-no-wait-ice-and-with-for-syntax}
 
 ```shell title=~/.zshrc
 zi wait lucid light-mode for \
@@ -74,7 +74,7 @@ zi wait lucid light-mode for \
 
 | Syntax | Description |
 | --- | :-- |
-| `wait` |  Load 0 seconds (about 5 ms exactly) after prompt ([Turbo mode](../getting_started/overview#turbo-mode-zsh--53)). |
+| `wait` |  Load 0 seconds (about 5 ms exactly) after prompt ([Turbo mode](/docs/getting_started/overview#turbo-mode-zsh--53)). |
 | `lucid` | Silence the under-prompt messages ("`Loaded {name of the plugin}`"). |
 | `light-mode` | Load the plugin in `light` mode, in which the tracking of plugin (i.e. activity report gathering, accessible via the `zi report {plugin-name}` subcommand) is being disabled; note that for Turbo mode, the performance gains are almost `0`, so in this mode, you can load all plugins with the tracking, i.e.: the `light-mode` ice can be removed from the command. |
 | `atpull'…'` | Execute after updating the plugin – the command in the ice will install any new completions. |
@@ -88,7 +88,7 @@ zi wait lucid light-mode for \
 - syntax-highlighting plugins (like [**F-Sy-H**](https://github.com/z-shell/F-Sy-H) or [**zsh-syntax-highlighting**](https://github.com/zsh-users/zsh-syntax-highlighting)) theoretically expect to be loaded last, even after the completion initialization (i.e. `compinit` function), however, in practice, you just have to ensure that such plugin is loaded after plugins that are issuing `compdef` – which basically means completions that aren't using the underscore-starting function file; the completion initialization still has to be performed before syntax-highlighting plugin, hence the `atinit''` ice, which will load `compinit` right before loading the plugin,
 - the syntax-highlighting and suggestions plugins are loaded early for a better user experience.
 
-#### The same setup, but without using [Turbo mode](../getting_started/overview#turbo-mode-zsh--53) (i.e. no `wait` ice) and without [the `for` syntax](../guides/syntax#the-for-syntax): {#the-same-setup-but-without-using-turbo-mode-ie-no-wait-ice-and-without-the-for-syntax}
+#### The same setup, but without using [Turbo mode](/docs/getting_started/overview#turbo-mode-zsh--53) (i.e. no `wait` ice) and without [the `for` syntax](/docs/guides/syntax#the-for-syntax): {#the-same-setup-but-without-using-turbo-mode-ie-no-wait-ice-and-without-the-for-syntax}
 
 ```shell
 zi ice blockf atpull'zi creinstall -q .'
@@ -101,11 +101,11 @@ zi light z-shell/F-Sy-H
 zi light zsh-users/zsh-autosuggestions
 ```
 
-Without [Turbo](../getting_started/overview#turbo-mode-zsh--53) the syntax-highlighting plugin can be loaded at the end, as it doesn't make any difference (the prompt will appear after loading all objects, anyway).
+Without [Turbo](/docs/getting_started/overview#turbo-mode-zsh--53) the syntax-highlighting plugin can be loaded at the end, as it doesn't make any difference (the prompt will appear after loading all objects, anyway).
 
 ### Oh-My-Zsh {#oh-my-zsh}
 
-#### With [Turbo mode](../getting_started/overview#turbo-mode-zsh--53) and [`for` syntax](../guides/syntax#the-for-syntax) {#with-turbo-mode-and-for-syntax}
+#### With [Turbo mode](/docs/getting_started/overview#turbo-mode-zsh--53) and [`for` syntax](/docs/guides/syntax#the-for-syntax) {#with-turbo-mode-and-for-syntax}
 
 ```shell
 # A.
@@ -147,7 +147,7 @@ zi wait lucid for \
 
 Above setup loads everything after prompt, because of preceding `wait` ice. That is called **Turbo mode**, it shortens Zsh startup time by <u>50%-80%</u>, e.g. instead of 200 ms, it'll be getting your shell started up after **40 ms**.
 
-#### Without [Turbo](../getting_started/overview#turbo-mode-zsh--53) and [`for` syntax](../guides/syntax#the-for-syntax) {#without-turbo-and-for-syntax}
+#### Without [Turbo](/docs/getting_started/overview#turbo-mode-zsh--53) and [`for` syntax](/docs/guides/syntax#the-for-syntax) {#without-turbo-and-for-syntax}
 
 The same setup using the classic syntax and without Turbo mode (prompt will be initially set like in typical, normal setup – **you can remove `wait` only from the theme plugin** and its dependencies to have the same effect while still using Turbo for everything remaining):
 
@@ -177,7 +177,7 @@ zi ice atinit"zicompinit; zicdreplay"
 zi light z-shell/F-Sy-H
 ```
 
-In general, [Turbo](../getting_started/overview#turbo-mode-zsh--53) can be optionally enabled only for a subset of plugins or for all plugins.
+In general, [Turbo](/docs/getting_started/overview#turbo-mode-zsh--53) can be optionally enabled only for a subset of plugins or for all plugins.
 
 ### LS_COLORS {#ls_colors}
 
@@ -201,7 +201,7 @@ zi light trapd00r/LS_COLORS
 | `atclone'…'` | Generate shell script, but instead of passing it to `eval`, save it to file. The `atclone'…'` is being ran on the **installation** while the `atpull'…'` hook is being run on an **update** of the [**trapd00r/LS_COLORS**](https://github.com/trapd00r/LS_COLORS) plugin. |
 | `atpull'%atclone'` | Do the same at any update of the plugin the `%atclone` is just a special string that denotes the `atclone'…'` hook and is copied onto the `atpull'…'` hook. |
 | `pick"clrs.zsh"` | Source the previously generated file `clrs.zsh`. |
-| `nocompile'!'` | Invokes compilation **after** the `atclone'…'` [ice-modifier](../guides/ice-modifiers) (the exclamation mark causes this). |
+| `nocompile'!'` | Invokes compilation **after** the `atclone'…'` [ice-modifier](/docs/guides/ice-modifiers) (the exclamation mark causes this). |
 | `atload'…'` | Additionally sets up the Zsh completion to use the colors provided by the trapd00r package. |
 
 </APITable>

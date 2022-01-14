@@ -14,9 +14,9 @@ They are [extensions](https://github.com/z-shell/zannexes) which increase functi
 
 ## What Can They Do? {#what-can-they-do}
 
-1. Add a new ZI subcommand (i.e. the [command](../../../guides/commands) that’s placed after the function `zi …` when calling ZI).
+1. Add a new ZI subcommand (i.e. the [command](/docs/guides/commands) that’s placed after the function `zi …` when calling ZI).
 
-2. Add new [ice-modifiers](../../../guides/ice-modifiers).
+2. Add new [ice-modifiers](/docs/guides/ice-modifiers).
 
 3. Register four type of hooks:
 
@@ -46,7 +46,7 @@ They are [extensions](https://github.com/z-shell/zannexes) which increase functi
 
 :::tip
 
-Install annexes as [meta plugin](/ecosystem/annexes/meta-plugins)
+Install annexes as [meta plugin](/docs/ecosystem/annexes/meta-plugins)
 
 All required:
 
@@ -70,7 +70,7 @@ It shows how to:
 
 1. Obtain the arguments passed to the hook.
 
-2. Use an [ice-modifier](../../../guides/ice-modifiers).
+2. Use an [ice-modifier](/docs/guides/ice-modifiers).
 
 3. It also shows an useful snippet that will trim the whitespace in array elements (see `# (4) …` in the code).
 
@@ -128,7 +128,7 @@ The general syntax of the API call is:
   "{ice-mod1}|{ice-mod2}|…" < hook-type >| subcommand: < new-subcommand-name > }
 ```
 
-The last argument, i.e. the `|`-separated ice-list, is optional. That’s all\! After this loading the plugin `myproject` will set up the new [ice-modifier](../../guides/ice-modifiers) `submods` that will have syntax `submods'{user}/{plugin} –> {output-dir}; …'` and will clone submodules when installing the original plugin or snippet\! Example real-world use of the ice-mod:
+The last argument, i.e. the `|`-separated ice-list, is optional. That’s all\! After this loading the plugin `myproject` will set up the new [ice-modifier](/docs/guides/ice-modifiers) `submods` that will have syntax `submods'{user}/{plugin} –> {output-dir}; …'` and will clone submodules when installing the original plugin or snippet\! Example real-world use of the ice-mod:
 
 ```shell
 # Load the `zsh-autosuggestions' plugin via Prezto module: `autosuggestions'
