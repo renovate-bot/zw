@@ -458,20 +458,20 @@ zi load z-shell/null
 
 the `$PATH` is being changed within `atload` ice. ZI's tracking records `$PATH` changes and withdraws them on plugin unload, and also shows information loading:
 
-<pre><code>$ zi report test
+```shell title=$ zi report test
 Report for test plugin
-<span class="hljs-blue">----------------------</span>
+----------------------
 Source  (reporting enabled)
 
-<span class="hljs-orange">PATH elements added:</span>
+PATH elements added:
 /home/sg/share
-</code></pre>
+```
 
 As it can be seen, the `atload` code is being correctly tracked and can be unloaded & viewed. Below is the result of using the `unload` subcommand to unload the `test` plugin:
 
 ```shell
 zi unload test
-<span class="hljs-blue">--- Unloading plugin: test ---</span>
+--- Unloading plugin: test ---
 Removing PATH element /home/sg/share
 Unregistering plugin test
 Plugin report saved to $LASTREPORT
