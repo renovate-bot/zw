@@ -1,24 +1,23 @@
 ---
 id: syntax
-title: ✍️  Syntax
-description: Syntax documentation for Z-Shell ZI
+title: ✍️ Syntax
+description: Syntax documentation for ZI
+image: /img/logo/501x501.png
 keywords: [syntax, zsh, z-shell, zi]
 ---
 
+## The fundamental syntax
+
 ```shell
-zi ice …
-zi load … # or zi light, zi snippet
+zi ice ……
+zi load ……
+zi light ……
+zi snippet ……
 ```
 
-:::info
-
-It is a fundamental ZI syntax. However, a more concise, optimized syntax, called `for` syntax, is also available.
-
-:::
-
-It is best presented by a real-world example:
-
 ## The `for` syntax {#the-for-syntax}
+
+The `for` syntax is a more concise and more optimized syntax. It is best presented by a real-world example:
 
 ```shell
 zi as"null" wait"3" lucid for \
@@ -32,11 +31,7 @@ zi as"null" wait"3" lucid for \
 
 Above single command installs 6 plugins (Git extension packages), with the base ices `as"null" wait"3" lucid` that are common to all of the plugins and 6 plugin-specific add-on ices.
 
-:::info
-
-Examples of `for` syntax
-
-:::
+### Use cases of `for` syntax
 
 Load a few useful binary (i.e.: binary packages from the GitHub Releases) utils:
 
