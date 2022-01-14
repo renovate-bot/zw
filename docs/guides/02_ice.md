@@ -285,7 +285,8 @@ zi load romkatv/powerlevel10k
 
 This way the actions done during the first call to `_p9k_precmd()` will be normally recorded, which can be viewed in the report of the [**romkatv/powerlevel10k**](https://github.com/romkatv/powerlevel10k) theme:
 
-```shell title=~ zi report romkatv/powerlevel10k:
+```shell
+➜ zi report romkatv/powerlevel10k:
 Report for romkatv/powerlevel10k plugin
 ---------------------------------------
 Source powerlevel10k.zsh-theme (reporting enabled)
@@ -467,7 +468,8 @@ zi load z-shell/null
 
 the `$PATH` is being changed within `atload` ice. ZI's tracking records `$PATH` changes and withdraws them on plugin unload, and also shows information loading:
 
-```shell title=$ zi report test
+```shell
+➜ zi report test
 Report for test plugin
 ----------------------
 Source  (reporting enabled)
