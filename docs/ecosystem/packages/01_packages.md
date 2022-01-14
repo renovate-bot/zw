@@ -134,7 +134,7 @@ The home for the packages is [Z-Shell](https://github.com/z-shell) GitHub organi
 
 ## Adding Your Own Package {#adding-your-own-package}
 
-1. Contact the author to have the repository at the Z-Shell organization.
+1. Contact the author to have the repository at the [Z-Shell](https://github.com/z-shell) organization.
 
 2. Populate the `package.json` – I suggest grabbing the one for `fzf` or `doctoc` and doing a few substitutions like `doctoc` → `your-project` and then simply filling the `default` profile in the `zi-ices` object – it's obvious how to do this.
 
