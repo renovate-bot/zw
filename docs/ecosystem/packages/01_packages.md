@@ -7,7 +7,7 @@ description: Packages documentation
 keywords: [package, zsh, z-shell, zi]
 ---
 
-## The [any-gem](https://github.com/z-shell/any-gem) and [any-node](https://github.com/z-shell/any-node) packages
+## The [any-gem](https://github.com/z-shell/any-gem) and [any-node](https://github.com/z-shell/any-node) packages {#the-any-gem-and-any-node-packages}
 
 They allow to install any Gem(s) or Node module(s) locally in a newly created plugin directory. For example:
 
@@ -34,7 +34,7 @@ Shims are correctly removed when deleting a plugin with `zi delete ……`
 The so-called packages are GitHub repositories holding a `package.json` file with the meta-data in them.
 This way you don't have to (but still can) specify ices, which might be handy when the ice-mod list is long and complex.
 
-## Motivation behind packages
+## Motivation behind packages {#motivation-behind-packages}
 
 The motivation for adding such functionality was:
 

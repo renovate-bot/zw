@@ -14,7 +14,7 @@ zi ice svn
 zi snippet OMZ::plugins/osx
 ```
 
-### SC: [z-shell/z](https://github.com/z-shell/z)
+### SC: [z-shell/z](https://github.com/z-shell/z) {#sc-z-shellz}
 
 ```shell
 zi lucid light-mode for pick"z.sh" z-shell/z

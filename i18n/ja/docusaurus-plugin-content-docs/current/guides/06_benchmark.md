@@ -6,20 +6,24 @@ description: Benchamarking and profiling for Z-Shell ZI
 keywords: [statistics, benchmark, zsh, z-shell, zi]
 ---
 
-```zsh
+## Profile plugins {#profile-plugins}
+
+```shell title=~/.zshrc
 zi ice atinit'zmodload zsh/zprof' \
   atload'zprof | head -n 20; zmodload -u zsh/zprof'
 zi light z-shell/F-Sy-H
 ```
 
-- `atinit''` loads `zsh/zprof` module (shipped with Zsh) before loading the plugin – this starts the profiling,
-- `atload''` works after loading the plugin – shows profiling results (`zprof | head`), unloads `zsh/zprof` - this stops the profiling;
+| Syntax | Description |
+| --- | :-- |
+| `atinit'…'` | loads `zsh/zprof` module (shipped with Zsh) before loading the plugin – this starts the profiling. |
+| `atload'…'` | works after loading the plugin – shows profiling results (`zprof / head`), unloads `zsh/zprof` - this stops the profiling. |
 
-  - While in effect, only a single plugin (in this case `z-shell/F-Sy-H`) will be profiled. The rest plugins will go on completely normally, as when plugins are loaded with `light` - reporting is disabled. Less code is being run in the background – (i.e. the automatic data gathering, during loading of a plugin, for the reports and the possibility to unload the plugin) will be activated and the functions will not appear in the `zprof` report.
+- While in effect, only a single plugin (in this case `z-shell/F-Sy-H`) will be profiled. The rest plugins will go on completely normally, as when plugins are loaded with `light` - reporting is disabled. Less code is being run in the background – (i.e. the automatic data gathering, during loading of a plugin, for the reports and the possibility to unload the plugin) will be activated and the functions will not appear in the `zprof` report.
 
 - Example `zprof` report:
 
-```Systemverilog
+```shell
 num calls    time                self                 name
 ---------------------------------------------------------------------------
  1)  1 57,76 57,76 57,91%  57,76 57,76 57,91% _zsh_highlight_bind_widgets
@@ -50,3 +54,34 @@ num calls    time                self                 name
   - For example, `--zi-shadow-autoload` spent 8.71 ms on executing only its own code.
 
 - the table is sorted on the **self-time** column.
+
+## Profile `.zshrc` startup {#profile-zshrc-startup}
+
+```shell title=~/.zshrc
+# Specify true to enable
+PROFILE_STARTUP=false
+
+# Place at the top of .zshrc
+if [[ "$PROFILE_STARTUP" == true ]]; then
+  zmodload zsh/zprof
+  # http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html
+  PS4=$'%D{%M%S%.} %N:%i> '
+  exec 3>&2 2>$HOME/startlog.$$
+  setopt xtrace prompt_subst
+fi
+
+# ... ...
+# ...
+# Here is your .zshrc content.
+# ...
+# ... ...
+
+# Place at the bottom of .zshrc
+if [[ "$PROFILE_STARTUP" == true ]]; then
+  unsetopt xtrace
+  exec 2>&3 3>&-
+  zprof > ~/zshprofile$(date +'%s')
+fi
+```
+
+The next time your `.zshrc` is sourced it will generate 2 files in the `$HOME` directory.

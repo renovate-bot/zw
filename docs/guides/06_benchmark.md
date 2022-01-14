@@ -6,7 +6,7 @@ description: Benchamarking and profiling for Z-Shell ZI
 keywords: [statistics, benchmark, zsh, z-shell, zi]
 ---
 
-## Profile plugins
+## Profile plugins {#profile-plugins}
 
 ```shell title=~/.zshrc
 zi ice atinit'zmodload zsh/zprof' \
@@ -55,7 +55,7 @@ num calls    time                self                 name
 
 - the table is sorted on the **self-time** column.
 
-## Profile `.zshrc` startup
+## Profile `.zshrc` startup {#profile-zshrc-startup}
 
 ```shell title=~/.zshrc
 # Specify true to enable

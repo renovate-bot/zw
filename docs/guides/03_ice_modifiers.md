@@ -14,7 +14,7 @@ Some Ice-modifiers are highlighted and clicking on them will take you to the app
 
 You may safely assume given ice works with both plugins and snippets unless explicitly stated otherwise.
 
-## Cloning options
+## Cloning options {#cloning-options}
 
 <APITable>
 

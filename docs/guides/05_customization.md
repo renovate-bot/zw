@@ -94,7 +94,7 @@ just run:
 zi light-mode for z-shell/z-a-meta-plugins @annexes @ext-git
 ```
 
-## Zsh options `setopt`
+## Zsh options `setopt` {#zsh-options-setopt}
 
 Options are primarily referred to by name. These names are case insensitive and underscores are ignored. For example, `allexport` is equivalent to `A__lleXP_ort`.
 
@@ -146,13 +146,13 @@ In strings of single letter options supplied to the shell at startup, trailing w
 
 </APITable>
 
-## Style control for the completion system `zstyle`
+## Style control for the completion system `zstyle` {#style-control-for-the-completion-system-zstyle}
 
 What does `zstyle` do? - [unix.stackexchange.com/questions/214657/what-does-zstyle-do](https://unix.stackexchange.com/questions/214657/what-does-zstyle-do/239980)
 
 The `zstyle` handles the obvious style control for the completion system, but it seems to cover more than just that. E.g., the vcs_info module relies on it for display of git status in your prompt. You can start by looking at the few explanatory paragraphs in `man zshmodules` in the `zstyle` section.
 
-### Fuzzy matching of completions for when you mistype them:
+### Fuzzy matching of completions for when you mistype them: {#fuzzy-matching-of-completions-for-when-you-mistype-them}
 
 ```shell
 zstyle ':completion:*' completer _complete _match _approximate
@@ -160,7 +160,7 @@ zstyle ':completion:*:match:*' original only
 zstyle -e ':completion:*:approximate:*' max-errors 'reply=($((($#PREFIX+$#SUFFIX)/3>7?7:($#PREFIX+$#SUFFIX)/3))numeric)'
 ```
 
-### Pretty completions
+### Pretty completions {#pretty-completions}
 
 ```shell
 zstyle ':completion:*:matches' group 'yes'
@@ -180,13 +180,13 @@ zstyle ':completion:*' use-cache true
 zstyle ':completion:*' rehash true
 ```
 
-### Do menu-driven completion.
+### Do menu-driven completion. {#do-menu-driven-completion}
 
 ```shell
 zstyle ':completion:*' menu select
 ```
 
-### Color completion for [some things](https://linuxshellaccount.blogspot.com/2008/12/color-completion-using-zsh-modules-on.html)
+### Color completion for [some things](https://linuxshellaccount.blogspot.com/2008/12/color-completion-using-zsh-modules-on.html) {#color-completion-for-some-things}
 
 ```shell
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
@@ -203,10 +203,14 @@ skip_global_compinit=1
 
 ## Multiple prompts {#multiple-prompts}
 
+<APITable>
+
 | Syntax      | Description                                                   |
 | ----------- | :------------------------------------------------------------ |
 | `load'…'`   | condition that when fulfilled will cause plugin to be loaded. |
 | `unload'…'` | as above, but will unload plugin.                             |
+
+</APITable>
 
 :::note
 
@@ -214,10 +218,14 @@ skip_global_compinit=1
 
 :::
 
+<APITable>
+
 | Syntax | Description |
 | --- | :-- |
 | `atload'!…'` | run the `precmd` hooks to make the prompts fully initialized when loaded in the middle of the prompt. |
 | `precmd` | hooks are being normally run before each **new** prompt. |
+
+</APITable>
 
 :::info
 
@@ -227,12 +235,19 @@ Exclamation mark causes the effects of the functions to be tracked.
 
 To allow better unloading, conditions are checked every second, you can use conditions like:
 
-- As an example `![[ $PWD == *github* ]]` or `![[ $MYPROMPT = 1 ]]` to change prompt after changing directory to `*github*` or then variable `MYPROMPT = 1`, the exclamation mark `![[ … ]]` causes prompt to be reset after loading or unloading the plugin,
-- `pick'/dev/null'` – disable sourcing of the default-found file,
-- `multisrc'…'` – source multiple files,
-- `lucid` – don't show the under-prompt message that says e.g: `Loaded geometry-zsh/geometry`,
-- `nocd` – don't cd into the plugin's directory when executing the
-- `atload'…'` – this ice can make the path that's displayed by the theme to point to that directory.
+<APITable>
+
+| Condition | Description |
+| --- | :-- |
+| `![[ $PWD == *github* ]]` | Change prompt after changing directory to `*github*`. |
+| `![[ $MYPROMPT = 1 ]]` | Change prompt when variable `MYPROMPT = 1` is true. |
+| `![[ … ]]` | The exclamation mark causes prompt to be reset after loading or unloading the plugin `pick'/dev/null'` – disable sourcing of the default-found file. |
+| `multisrc'…'` | Source multiple files. |
+| `lucid` | Don't show the under-prompt message that says e.g: `Loaded geometry-zsh/geometry`. |
+| `nocd` | Don't cd into the plugin's directory when executing the `atload'…'`. |
+| `atload'…'` | This ice can make the path that's displayed by the theme to point to that directory. |
+
+</APITable>
 
 ```shell
 # Theme no. 1 - zprompts

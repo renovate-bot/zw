@@ -71,7 +71,7 @@ zi wait lucid for \
   atload"unalias grv" OMZ::plugins/git/git.plugin.zsh
 ```
 
-## The `make'…'` syntax
+## The `make'…'` syntax {#the-make-syntax}
 
 ```shell
 zi ice as"program" pick"$ZPFX/bin/git-*" make"PREFIX=$ZPFX"

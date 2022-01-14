@@ -18,18 +18,18 @@ declare -A ZI  # initial ZI's hash definition, if configuring before loading ZI,
 
 <APITable>
 
-| Hash Field            | Description |
+| Hash Field | Description |
 | --- | --- |
-| `ZI[BIN_DIR]`         | Where ZI code resides, e.g.: "~/.zi/bin" |
-| `ZI[HOME_DIR]`        | Where ZI should create all working directories, e.g.: "~/.zi" |
-| `ZI[PLUGINS_DIR]`     | Override single working directory – for plugins, e.g. "/opt/zsh/zi/plugins" |
-| `ZI[COMPLETIONS_DIR]` | As above, but for completion files, e.g. "/opt/zsh/zi/root_completions" |
-| `ZI[SNIPPETS_DIR]`    | As above, but for snippets |
-| `ZI[ZMODULES_DIR]`    | Override single working directory – for Zsh modules e.g. "/opt/zsh/zi/zmodules" |
-| `ZI[ZCOMPDUMP_PATH]`  | Path to `.zcompdump` file, with the file included (i.e. its name can be different) |
-| `ZI[COMPINIT_OPTS]`   | Options for `compinit` call (i.e. done by `zicompinit`), use to pass -C to speed up loading |
-| `ZI[MUTE_WARNINGS]`   | If set to `1`, then mutes some of the ZI warnings, specifically the `plugin already registered` warning |
-| `ZI[OPTIMIZE_OUT_DISK_ACCESSES]` | If set to `1`, then ZI will skip checking if a Turbo-loaded object exists on the disk. By default, ZI skips Turbo for non-existing objects (plugins or snippets) to install them before the first prompt – without any delays, during the normal processing of `zshrc`. This option can give a performance gain of about 10 ms out of 150 ms (i.e.: Zsh will start-up in 140 ms instead of 150 ms). |
+| `ZI[BIN_DIR]` | Where ZI code resides, e.g: "~/.zi/bin" |
+| `ZI[HOME_DIR]` | Where ZI should create all working directories, e.g: "~/.zi" |
+| `ZI[PLUGINS_DIR]` | Override single working directory – for plugins, e.g: "/opt/zsh/zi/plugins" |
+| `ZI[COMPLETIONS_DIR]` | As above, but for completion files, e.g: "/opt/zsh/zi/root_completions" |
+| `ZI[SNIPPETS_DIR]` | As above, but for snippets |
+| `ZI[ZMODULES_DIR]` | Override single working directory – for Zsh modules e.g: "/opt/zsh/zi/zmodules" |
+| `ZI[ZCOMPDUMP_PATH]` | Path to `.zcompdump` file, with the file included (e.g: its name can be different) |
+| `ZI[COMPINIT_OPTS]` | Options for `compinit` call (e.g: done by `zicompinit`), use to pass -C to speed up loading |
+| `ZI[MUTE_WARNINGS]` | If set to `1`, then mutes some of the ZI warnings, specifically the `plugin already registered` warning |
+| `ZI[OPTIMIZE_OUT_DISK_ACCESSES]` | If set to `1`, then ZI will skip checking if a Turbo-loaded object exists on the disk. By default, ZI skips Turbo for non-existing objects (plugins or snippets) to install them before the first prompt – without any delays, during the normal processing of `zshrc`. This option can give a performance gain of about 10 ms out of 150 ms (e.g: Zsh will start-up in 140 ms instead of 150 ms). |
 | `$ZPFX` | set by default to `~/.zi/polaris`, a directory where software with `Makefile`, etc. can be pointed to, by e.g. `atclone'./configure --prefix=$ZPFX'`. |
 
 </APITable>
@@ -46,7 +46,7 @@ Several projects provide git extensions. Installing them with ZI has many benefi
 
 - all files are under `$HOME` – no administrator rights needed,
 - declarative setup (like Chef or Puppet) – copying `.zshrc` to a different account brings also git-related setup,
-- easy update by e.g. `zi update --all`.
+- easy update by e.g: `zi update --all`.
 
 Below is a configuration that adds multiple git extensions, loaded in Turbo mode, 1 second after prompt, with use of the [Bin-Gem-Node](https://github.com/z-shell/z-a-bin-gem-node) annex:
 
@@ -94,7 +94,7 @@ just run:
 zi light-mode for z-shell/z-a-meta-plugins @annexes @ext-git
 ```
 
-## Zsh options `setopt`
+## Zsh options `setopt` {#zsh-options-setopt}
 
 Options are primarily referred to by name. These names are case insensitive and underscores are ignored. For example, `allexport` is equivalent to `A__lleXP_ort`.
 
@@ -112,18 +112,18 @@ In strings of single letter options supplied to the shell at startup, trailing w
 
 | Option | Description |
 | --- | --- |
-| `setopt hist_ignore_all_dups`   | Remove older duplicate entries from history. |
+| `setopt hist_ignore_all_dups` | Remove older duplicate entries from history. |
 | `setopt hist_expire_dups_first` | Expire A Duplicate Event First When Trimming History. |
-| `setopt hist_ignore_dups`       | Do Not Record An Event That Was Just Recorded Again. |
-| `setopt hist_reduce_blanks`     | Remove superfluous blanks from history items. |
-| `setopt hist_find_no_dups`      | Do Not Display A Previously Found Event. |
-| `setopt hist_ignore_space`      | Do Not Record An Event Starting With A Space. |
-| `setopt hist_save_no_dups`      | Do Not Write A Duplicate Event To The History File. |
-| `setopt hist_verify`            | Do Not Execute Immediately Upon History Expansion. |
-| `setopt append_history`         | Allow multiple terminal sessions to all append to one zsh command history. |
-| `setopt extended_history`       | Show Timestamp In History. |
-| `setopt inc_append_history`     | Write To The History File Immediately, Not When The Shell Exits. |
-| `setopt share_history`          | Share history between different instances of the shell |
+| `setopt hist_ignore_dups` | Do Not Record An Event That Was Just Recorded Again. |
+| `setopt hist_reduce_blanks` | Remove superfluous blanks from history items. |
+| `setopt hist_find_no_dups` | Do Not Display A Previously Found Event. |
+| `setopt hist_ignore_space` | Do Not Record An Event Starting With A Space. |
+| `setopt hist_save_no_dups` | Do Not Write A Duplicate Event To The History File. |
+| `setopt hist_verify` | Do Not Execute Immediately Upon History Expansion. |
+| `setopt append_history` | Allow multiple terminal sessions to all append to one zsh command history. |
+| `setopt extended_history` | Show Timestamp In History. |
+| `setopt inc_append_history` | Write To The History File Immediately, Not When The Shell Exits. |
+| `setopt share_history` | Share history between different instances of the shell |
 
 </APITable>
 
@@ -132,29 +132,27 @@ In strings of single letter options supplied to the shell at startup, trailing w
 <APITable>
 
 | Option | Description |
-| --- | --- |
-| `setopt bang_hist`             | Treat The '!' Character Specially During Expansion. |
-| `setopt multios`               | Perform implicit tees or cats when multiple redirections are attempted. |
-| `setopt interactive_comments`  | Allow comments even in interactive shells (especially for Muness). |
-| `setopt pushd_ignore_dups`     | Don't push multiple copies of the same directory onto the directory stack. |
-| `setopt auto_cd`               | Use cd by typing directory name if it's not a command. |
-| `setopt no_beep`               | Don't beep on error. |
-| `setopt auto_list`             | Automatically list choices on ambiguous completion. |
-| `setopt auto_pushd`            | Make cd push the old directory onto the directory stack. |
-| `setopt pushdminus`            | Swapped the meaning of cd +1 and cd -1; we want them to mean the opposite of what they mean. |
-| `setopt promptsubst`           | Enables the substitution of parameters inside the prompt each time the prompt is drawn. |
+| --- | :-- |
+| `setopt bang_hist` | Treat The '!' Character Specially During Expansion. |
+| `setopt multios` | Perform implicit tees or cats when multiple redirections are attempted. |
+| `setopt interactive_comments` | Allow comments even in interactive shells (especially for Muness). |
+| `setopt pushd_ignore_dups` | Don't push multiple copies of the same directory onto the directory stack. |
+| `setopt auto_cd` | Use cd by typing directory name if it's not a command. |
+| `setopt no_beep` | Don't beep on error. |
+| `setopt auto_list` | Automatically list choices on ambiguous completion. |
+| `setopt auto_pushd` | Make cd push the old directory onto the directory stack. |
+| `setopt pushdminus` | Swapped the meaning of cd +1 and cd -1; we want them to mean the opposite of what they mean. |
+| `setopt promptsubst` | Enables the substitution of parameters inside the prompt each time the prompt is drawn. |
 
 </APITable>
 
-## Style control for the completion system `zstyle`
+## Style control for the completion system `zstyle` {#style-control-for-the-completion-system-zstyle}
 
 What does `zstyle` do? - [unix.stackexchange.com/questions/214657/what-does-zstyle-do](https://unix.stackexchange.com/questions/214657/what-does-zstyle-do/239980)
 
-The `zstyle` handles the obvious style control for the completion system, but it seems to cover more than just that.
-E.g., the vcs_info module relies on it for display of git status in your prompt.
-You can start by looking at the few explanatory paragraphs in `man zshmodules` in the `zstyle` section.
+The `zstyle` handles the obvious style control for the completion system, but it seems to cover more than just that. E.g., the vcs_info module relies on it for display of git status in your prompt. You can start by looking at the few explanatory paragraphs in `man zshmodules` in the `zstyle` section.
 
-### Fuzzy matching of completions for when you mistype them:
+### Fuzzy matching of completions for when you mistype them: {#fuzzy-matching-of-completions-for-when-you-mistype-them}
 
 ```shell
 zstyle ':completion:*' completer _complete _match _approximate
@@ -162,7 +160,7 @@ zstyle ':completion:*:match:*' original only
 zstyle -e ':completion:*:approximate:*' max-errors 'reply=($((($#PREFIX+$#SUFFIX)/3>7?7:($#PREFIX+$#SUFFIX)/3))numeric)'
 ```
 
-### Pretty completions
+### Pretty completions {#pretty-completions}
 
 ```shell
 zstyle ':completion:*:matches' group 'yes'
@@ -182,13 +180,13 @@ zstyle ':completion:*' use-cache true
 zstyle ':completion:*' rehash true
 ```
 
-### Do menu-driven completion.
+### Do menu-driven completion. {#do-menu-driven-completion}
 
 ```shell
 zstyle ':completion:*' menu select
 ```
 
-### Color completion for [some things](https://linuxshellaccount.blogspot.com/2008/12/color-completion-using-zsh-modules-on.html)
+### Color completion for [some things](https://linuxshellaccount.blogspot.com/2008/12/color-completion-using-zsh-modules-on.html) {#color-completion-for-some-things}
 
 ```shell
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
@@ -205,18 +203,29 @@ skip_global_compinit=1
 
 ## Multiple prompts {#multiple-prompts}
 
-- `load''` – condition that when fulfilled will cause plugin to be loaded,
-- `unload''` – as above, but will unload plugin.
+<APITable>
+
+| Syntax      | Description                                                   |
+| ----------- | :------------------------------------------------------------ |
+| `load'…'`   | condition that when fulfilled will cause plugin to be loaded. |
+| `unload'…'` | as above, but will unload plugin.                             |
+
+</APITable>
 
 :::note
 
-`zi light` loads the plugin without tracking it, while `zi load` tracks the plugin.
-To be able unload the plugin, it has to be loaded with `zi load ...` instead of `zi light ...`.
+`zi light ……` loads the plugin without tracking it, while `zi load` tracks the plugin. To be able unload the plugin, it has to be loaded with `zi load ……` instead of `zi light ……`.
 
 :::
 
-- `atload'!…'` – run the `precmd` hooks to make the prompts fully initialized when loaded in the middle of the prompt.
-- `precmd` – hooks are being normally run before each **new** prompt.
+<APITable>
+
+| Syntax | Description |
+| --- | :-- |
+| `atload'!…'` | run the `precmd` hooks to make the prompts fully initialized when loaded in the middle of the prompt. |
+| `precmd` | hooks are being normally run before each **new** prompt. |
+
+</APITable>
 
 :::info
 
@@ -226,12 +235,19 @@ Exclamation mark causes the effects of the functions to be tracked.
 
 To allow better unloading, conditions are checked every second, you can use conditions like:
 
-- As an example `![[ $PWD == *github* ]]` or `![[ $MYPROMPT = 1 ]]` to change prompt after changing directory to `*github*` or then variable `MYPROMPT = 1`, the exclamation mark `![[ … ]]` causes prompt to be reset after loading or unloading the plugin,
-- `pick'/dev/null'` – disable sourcing of the default-found file,
-- `multisrc''` – source multiple files,
-- `lucid` – don't show the under-prompt message that says e.g.: `Loaded geometry-zsh/geometry`,
-- `nocd` – don't cd into the plugin's directory when executing the
-- `atload''` – this ice can make the path that's displayed by the theme to point to that directory.
+<APITable>
+
+| Condition | Description |
+| --- | :-- |
+| `![[ $PWD == *github* ]]` | Change prompt after changing directory to `*github*`. |
+| `![[ $MYPROMPT = 1 ]]` | Change prompt when variable `MYPROMPT = 1` is true. |
+| `![[ … ]]` | The exclamation mark causes prompt to be reset after loading or unloading the plugin `pick'/dev/null'` – disable sourcing of the default-found file. |
+| `multisrc'…'` | Source multiple files. |
+| `lucid` | Don't show the under-prompt message that says e.g: `Loaded geometry-zsh/geometry`. |
+| `nocd` | Don't cd into the plugin's directory when executing the `atload'…'`. |
+| `atload'…'` | This ice can make the path that's displayed by the theme to point to that directory. |
+
+</APITable>
 
 ```shell
 # Theme no. 1 - zprompts

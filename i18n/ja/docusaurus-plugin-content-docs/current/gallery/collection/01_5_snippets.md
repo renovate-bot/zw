@@ -1,6 +1,6 @@
 ---
 id: snippets
-title: Snippets
+title: 🔺 Snippets
 sidebar_position: 5
 description: Snippets Collection
 keywords: [collection, snippets, zsh, z-shell, zi]
@@ -12,4 +12,10 @@ zi snippet OMZ::lib
 
 zi ice svn
 zi snippet OMZ::plugins/osx
+```
+
+### SC: [z-shell/z](https://github.com/z-shell/z) {#sc-z-shellz}
+
+```shell
+zi lucid light-mode for pick"z.sh" z-shell/z
 ```

@@ -83,15 +83,15 @@ skip'vivid exa tig' @console-tools
 
 </APITable>
 
-![screenshot](https://raw.githubusercontent.com/z-shell/z-a-meta-plugins/main/images/fuzzy-mplg-ex.png)
+---
+
+## Meta Plugins Annex basics {#meta-plugins-annex-basics}
 
 It consumes time to:
 
 - Constantly, over and over collect some new interesting plugins to install/load.
 - Over and over reconstruct the new findings on the new machines.
 - Constantly extend and tweak the ice list of each plugin, so that it's hard on the eyes, especially for an outsider.
-
-## Meta Plugins Annex basics {#meta-plugins-annex-basics}
 
 | Problem | Solution |
 | :-: | --- |
@@ -106,6 +106,8 @@ Other unique benefits of the Meta-Plugins annex:
 | Plugin dependencies | The meta-plugins implement a dependency mechanism (to some extent), so that e.g.: selecting a from-source built [ogham/exa](https://github.com/ogham/exa) will automatically pull-in also the Rust compiler (available under meta-plugin name: `rust-toolchain`). |
 | Flexible disabling of chosen sub-plugins in any meta-plugin | A meta-plugin can contain many sub-plugins and it's possible to skip installing some of them by the **skip'plg-1 plg-2…'** ice, e.g.: `zi skip'ripgrep fd' for console-tools`. This way despite that some of the meta-plugins are broad the user still has control over what's and how much is being installed. |
 | Common from-source meta-plugins | For the plugins that provide the binary programs it is often the case that a meta-plugin exists that'll build the program from source (e.g.: **fuzzy** meta-plugin and its **fuzzy-src** counterpart). This might be handy e.g.: if there's no binary for our machine. |
+
+<img src="https://raw.githubusercontent.com/z-shell/z-a-meta-plugins/main/images/fuzzy-mplg-ex.png" alt="screenshot" width="90%" />
 
 [z-a-bin-gem-node]: https://github.com/z-shell/z-a-bin-gem-node
 [z-a-readurl]: https://github.com/z-shell/z-a-readurl

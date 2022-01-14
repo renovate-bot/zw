@@ -2,35 +2,36 @@
 id: packages
 slug: /ecosystem/packages
 title: 📦 Quick overview
-image: /img/logo.png
+image: /img/logo/501x501.png
 description: Packages documentation
 keywords: [package, zsh, z-shell, zi]
 ---
 
-:::tip
-
-There are two interesting packages:
-
-- [any-gem](https://github.com/z-shell/any-gem),
-- [any-node](https://github.com/z-shell/any-node).
+## The [any-gem](https://github.com/z-shell/any-gem) and [any-node](https://github.com/z-shell/any-node) packages {#the-any-gem-and-any-node-packages}
 
 They allow to install any Gem(s) or Node module(s) locally in a newly created plugin directory. For example:
-
-:::
 
 ```shell
 zi pack param='GEM -> rails' for any-gem
 zi pack param='MOD -> doctoc' for any-node
-# To have the command in zshrc, add an id-as'' ice so that
-# ZI knows that the package is already installed
-# (also: the Unicode arrow is allowed)
+```
+
+If installation used in the `.zshrc` file then use `id-as'…'`, then ZI knows that the package is already installed.
+
+:::note
+
+The Unicode arrow is allowed in ZI syntax as in example below. 
+
+:::
+
+```shell
 zi id-as=jekyll pack param='GEM → jekyll' for any-gem
 ```
 
-The binaries will be exposed without altering the PATH via shims (Bin-Gem-Node annex is needed). Shims are correctly removed when deleting a plugin with `zi delete ….`
+The binaries will be exposed without altering the PATH via shims ([bin-gem-node](../ecosystem/annexes/bin-gem-node) annex is needed). 
+Shims are correctly removed when deleting a plugin with `zi delete ……`
 
-ZI can install from so-called _packages_ – GitHub repositories holding a `package.json` file with the meta-data in them.
-
+The so-called packages are GitHub repositories holding a `package.json` file with the meta-data in them.
 This way you don't have to (but still can) specify ices, which might be handy when the ice-mod list is long and complex.
 
 ## Motivation behind packages {#motivation-behind-packages}
@@ -42,12 +43,12 @@ The motivation for adding such functionality was:
 2. It has multiple package-manager -like features, such as:
 
    - it can run `Makefiles`,
-   - automatically provide _shims_ (i.e.: forwarder scripts) for the binaries,
+   - automatically provide shims (i.e.: forwarder scripts) for the binaries,
    - extend `$PATH` to expose the binaries, and more.
 
 3. In general, ZI has many hooks which allow surprising things, however, their content often evolves to a gradually better and better one and it's hard to keep track of the current version of them.
 
-4. So a solution appeared: why not publish a package at GitHub with the plugin configurations (i.e.: ice-mod lists) stored in a file?
+4. So a solution appeared: why not publish a package at GitHub with the plugin configurations (i.e.: [ice-modifiers](../../guides/ice-modifiers lists) stored in a file?
 
 ## Introductory Example {#introductory-example}
 
@@ -84,7 +85,7 @@ Using ZI to install software where one could use a regular package manager has s
 
 2. **Pro:** You can influence the installation easily by specifying ZI ice-mods, e.g.:
 
-   ```
+   ```shell
    zi pack=bgn atclone="cp fzy.1 $ZPFX/man/man1" for fzy
    ```
 
@@ -133,7 +134,7 @@ The home for the packages is [Z-Shell](https://github.com/z-shell) GitHub organi
 
 ## Adding Your Own Package {#adding-your-own-package}
 
-1. Contact the author to have the repository at the Z-Shell organization.
+1. Contact the author to have the repository at the [Z-Shell](https://github.com/z-shell) organization.
 
 2. Populate the `package.json` – I suggest grabbing the one for `fzf` or `doctoc` and doing a few substitutions like `doctoc` → `your-project` and then simply filling the `default` profile in the `zi-ices` object – it's obvious how to do this.
 

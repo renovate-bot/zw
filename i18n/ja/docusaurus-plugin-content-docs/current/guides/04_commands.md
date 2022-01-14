@@ -1,6 +1,6 @@
 ---
 id: commands
-title: Commands
+title: 🛠 Commands
 image: /img/logo.png
 description: Commands documentation for the Z-Shell ZI
 keywords: [commands, zsh, z-shell, zi]
@@ -92,7 +92,7 @@ compdef _gnu_generic fd  # this will be intercepted by ZI, because as the compin
                          # ZI provides its own `compdef' function which saves the
                          # completion-definition for later possible re-run with `zi
                          # cdreplay' or `zicdreplay' (the second one can be used in hooks
-                         # like atload'', atinit'', etc.)
+                         # like atload'…', atinit'…', etc.)
 ...
 zi load "other/plugin"
 

@@ -1,6 +1,6 @@
 ---
 id: syntax
-title: Syntax
+title: ✍️  Syntax
 description: Syntax documentation for Z-Shell ZI
 keywords: [syntax, zsh, z-shell, zi]
 ---
@@ -12,7 +12,7 @@ zi load … # or zi light, zi snippet
 
 :::info
 
-It is a fundamental ZI syntax. However, a more concise, optimized syntax, called _for-syntax_, is also available.
+It is a fundamental ZI syntax. However, a more concise, optimized syntax, called `for` syntax, is also available.
 
 :::
 
@@ -49,7 +49,7 @@ zi as"null" wait"2" lucid from"gh-r" for \
 
 :::note
 
-- `sbin''` is an ice added by the [z-a-bin-gem-node](https://github.com/z-shell/z-a-bin-gem-node) annex, it provides the command to the command line without altering `$PATH`.
+- `sbin'…'` is an ice added by the [z-a-bin-gem-node](https://github.com/z-shell/z-a-bin-gem-node) annex, it provides the command to the command line without altering `$PATH`.
 
 - If the name of the command is the same as the name of the plugin, the ice contents can be skipped.
 
@@ -71,7 +71,7 @@ zi wait lucid for \
   atload"unalias grv" OMZ::plugins/git/git.plugin.zsh
 ```
 
-## The `make''` syntax {#the-make-syntax}
+## The `make'…'` syntax {#the-make-syntax}
 
 ```shell
 zi ice as"program" pick"$ZPFX/bin/git-*" make"PREFIX=$ZPFX"
@@ -93,13 +93,13 @@ zi light tj/git-extras
 
 :::
 
-## The `bindmap''` keybindings {#the-bindmap-keybindings}
+## The `bindmap'…'` keybindings {#the-bindmap-keybindings}
 
 Sometimes plugins call `bindkey` to assign keyboard shortucts. This can cause problems, because multiple plugins can bind the same keys. Also, the user might want a different binding(s), which will require a complicated, additional `bindkey` commands in `.zshrc`.
 
-ZI provides a solution to this problem – the ability to remap the bindkeys with a short ice-modifier specification with the `bindmap''` ice.
+ZI provides a solution to this problem – the ability to remap the bindkeys with a short ice-modifier specification with the `bindmap'…'` ice.
 
-### Examples of `bindmap''` {#examples-of-bindmap}
+### Examples of `bindmap'…'` {#examples-of-bindmap}
 
 ```shell
 # Map Ctrl-G instead of Ctrl-R for the history searcher.
@@ -124,9 +124,9 @@ zi bindmap='!" " -> magic-space; !"^ " -> globalias' nocompletions \
 
 ### Explanation {#explanation}
 
-The `bindmap''` ice has two modes of operation: normal and exclamation-mark (`bindmap'!…'`). In the first mode, the remapping is beind done from-key to-key, i.e.: `bindmap'fromkey -> to-key'`. The given key is being changed to the second given key in the `bindkey` command that's being actually issued when loading the plugin.
+The `bindmap'…'` ice has two modes of operation: normal and exclamation-mark (`bindmap'!…'`). In the first mode, the remapping is beind done from-key to-key, i.e.: `bindmap'fromkey -> to-key'`. The given key is being changed to the second given key in the `bindkey` command that's being actually issued when loading the plugin.
 
-In the second mode, the remapping is being done from-key to-widget, i.e.: `bindmap'!from-key -> to-widget'`. In this mode, the given key is being mapped to the given widget instead of the widget specified in the `bindkey` command,
+In the second mode, the remapping is being done from-key to-widget, e.g: `bindmap'!from-key -> to-widget'`. In this mode, the given key is being mapped to the given widget instead of the widget specified in the `bindkey` command,
 
 i.e.: instead of:
 
@@ -144,9 +144,9 @@ bindkey " " magic-space
 
 (for the `bindmap='!" " -> magic-space; !"^ " -> globalias'` ice).
 
-### Using `bindmap''` In Light Mode {#using-bindmap-in-light-mode}
+### Using `bindmap'…'` In Light Mode {#using-bindmap-in-light-mode}
 
-When the investigation mode is on – i.e.: when the full loading mode is being used (default in the `for` syntax and when `zi load …` is used) – then the `bindmap''` ice works normally. In the non-investigation, i.e.: the light mode – activated when `zi light …` or the `light-mode` ice is being used – the `bindmap''` is unavailable, unless the `trackbinds` ice is specified, i.e.:
+When the investigation mode is on – i.e.: when the full loading mode is being used (default in the `for` syntax and when `zi load …` is used) – then the `bindmap'…'` ice works normally. In the non-investigation, i.e.: the light mode – activated when `zi light ……` or the `light-mode` ice is being used – the `bindmap'…'` is unavailable, unless the `trackbinds` ice is specified, i.e.:
 
 ```shell
 # With use of the light-mode ice and the for-syntax:
