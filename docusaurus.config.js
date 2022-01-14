@@ -25,10 +25,6 @@ const config = {
 		"@docusaurus/plugin-ideal-image",
 	],
 	scripts: [
-		/**
-		// String format.
-		"https://docusaurus.io/script.js",
-		// Object format.*/
 		{
 			src: "https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js",
 			async: true,
@@ -97,7 +93,6 @@ const config = {
 				apiKey: "9ec9227571a8499464ac9389f1ab1616",
 				indexName: "dev-z-shell",
 			},
-			image: "img/logo/501x501.png",
 			navbar: {
 				title: "❮ ZI ❯",
 				logo: {
