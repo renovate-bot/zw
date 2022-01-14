@@ -14,9 +14,9 @@ They are [extensions](https://github.com/z-shell/zannexes) which increase functi
 
 ## What Can They Do? {#what-can-they-do}
 
-1. Add a new ZI subcommand (i.e. the [command](../../guides/commands) that’s placed after the function `zi …` when calling ZI).
+1. Add a new ZI subcommand (i.e. the [command](../guides/commands) that’s placed after the function `zi …` when calling ZI).
 
-2. Add new [ice-modifiers](../../guides/ice-modifiers).
+2. Add new [ice-modifiers](../guides/ice-modifiers).
 
 3. Register four type of hooks:
 
@@ -46,7 +46,7 @@ They are [extensions](https://github.com/z-shell/zannexes) which increase functi
 
 :::tip
 
-Install annexes as [meta plugin](ecosystem/annexes/meta-plugins)
+Install annexes as [meta plugin](/ecosystem/annexes/meta-plugins)
 
 All required:
 
