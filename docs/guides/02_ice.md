@@ -76,7 +76,7 @@ It recognizes the following options:
 - bz2,
 - xz,
 - 7z,
-- deb **debien images**,
+- deb **debian packages**,
 - OS X **dmg images**.
 
 ## `from'…'` {#from}
