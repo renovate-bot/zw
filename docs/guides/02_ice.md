@@ -10,11 +10,9 @@ keywords: [ice, zsh, z-shell, zi]
 <img src="/img/include/ice-239x200.png" alt="ice" width="239" height="200" />
 </div>
 
-:::info
+:::info F&A: What is ice? 
 
-**F&A**: What is **ice**? 
-
-- The word **ice** means something that's added (like ice to a drink) – and in ZI syntax it means adding a modifier to a next zi command, and also something that's temporary because it melts – and this means that the modification will last only for a single next zi command.
+The word **ice** means something that's added (like ice to a drink) – and in ZI syntax it means adding a modifier to a next zi command, and also something that's temporary because it melts – and this means that the modification will last only for a single next zi command.
 
 :::
 
