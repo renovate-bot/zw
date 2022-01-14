@@ -3,7 +3,7 @@ id: ice
 title: 🧊 Ice Syntax
 image: /img/include/ice-239x200.png
 description: Ice syntax documentation
-keywords: [ice, ,syntax, zsh, z-shell, zi]
+keywords: [ice, syntax, zsh, z-shell, zi]
 ---
 
 <div align="right">
