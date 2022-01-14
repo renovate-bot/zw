@@ -17,7 +17,7 @@ zi snippet ……
 
 ## The `for` syntax {#the-for-syntax}
 
-The `for` syntax is a more concise and more optimized syntax. It is best presented by a real-world example:
+The `for` [syntax](https://z-shell.pages.dev/search/?q=syntax) is a more concise and more optimized. It is best presented by a real-world example:
 
 ```shell
 zi as"null" wait"3" lucid for \
@@ -29,11 +29,11 @@ zi as"null" wait"3" lucid for \
   make"PREFIX=$ZPFX" tj/git-extras
 ```
 
-Above single command installs 6 plugins (Git extension packages), with the base ices `as"null" wait"3" lucid` that are common to all of the plugins and 6 plugin-specific add-on ices.
+Above single command installs 6 plugins ([Git extension](https://z-shell.pages.dev/search/?q=git+ext) packages), with the base ices `as"null" wait"3" lucid` that are common to all of the plugins and 6 plugin-specific add-on ices.
 
 ### Use cases of `for` syntax
 
-Load a few useful binary (i.e.: binary packages from the GitHub Releases) utils:
+Load a few useful binary (i.e.: [binary packages from the GitHub Releases](https://z-shell.pages.dev/search/?q=GH-R)) utils:
 
 ```shell
 zi as"null" wait"2" lucid from"gh-r" for \
@@ -44,13 +44,13 @@ zi as"null" wait"2" lucid from"gh-r" for \
 
 :::note
 
-- `sbin'…'` is an ice added by the [z-a-bin-gem-node](https://github.com/z-shell/z-a-bin-gem-node) annex, it provides the command to the command line without altering `$PATH`.
+- `sbin'…'` is an [ice](https://z-shell.pages.dev/search/?q=ice) added by the [z-a-bin-gem-node](https://z-shell.pages.dev/search/?q=bin+gem+node) [annex](https://z-shell.pages.dev/search/?q=annex), it provides the command to the command line without altering `$PATH`.
 
 - If the name of the command is the same as the name of the plugin, the ice contents can be skipped.
 
 :::
 
-Turbo load some plugins, without any plugin-specific ices:
+[Turbo](https://z-shell.pages.dev/search/?q=turbo+mode) load some plugins, without any plugin-specific ices:
 
 ```shell
 zi wait lucid for \
@@ -73,12 +73,12 @@ zi ice as"program" pick"$ZPFX/bin/git-*" make"PREFIX=$ZPFX"
 zi light tj/git-extras
 ```
 
-- `Makefile` of this project has only 2 tasks:
+The `Makefile` of the project above has only 2 tasks:
 
   1. Install the target.
   2. Build scripts that is required for installation.
 
-- `Makefile` with 2 tasks, can use:
+The `Makefile` with 2 tasks, can use:
   1. `make"all install PREFIX=…"`,
   2. `pick'…'` will `chmod +x` all matching files and add `$ZPFX/bin/` to `$PATH`.
 
@@ -86,13 +86,15 @@ zi light tj/git-extras
 
 `$ZPFX` is provided by ZI, it is set to `~/.zi/polaris` by default. However it can changed by specifying custom `$ZPFX=` target if required.
 
+More information: [guides/customization](/docs/guides/customization)
+
 :::
 
 ## The `bindmap'…'` keybindings {#the-bindmap-keybindings}
 
-Sometimes plugins call `bindkey` to assign keyboard shortucts. This can cause problems, because multiple plugins can bind the same keys. Also, the user might want a different binding(s), which will require a complicated, additional `bindkey` commands in `.zshrc`.
+Sometimes plugins call [bindkey](https://z-shell.pages.dev/search/?q=binkey) to assign keyboard shortucts. This can cause problems, because multiple plugins can bind the same keys. Also, the user might want a different binding(s), which will require a complicated, additional `bindkey` commands in `.zshrc`.
 
-ZI provides a solution to this problem – the ability to remap the bindkeys with a short ice-modifier specification with the `bindmap'…'` ice.
+ZI provides a solution to this problem – the ability to remap the bindkeys with a short [ice-modifier](https://z-shell.pages.dev/search/?q=ice+modifier) specification with the `bindmap'…'` [ice](/docs/guides/ice).
 
 ### Examples of `bindmap'…'` {#examples-of-bindmap}
 
