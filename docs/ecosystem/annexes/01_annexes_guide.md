@@ -14,9 +14,9 @@ They are [extensions](https://github.com/z-shell/zannexes) which increase functi
 
 ## What Can They Do? {#what-can-they-do}
 
-1. Add a new ZI subcommand (i.e. the [command](../guides/commands) that’s placed after the function `zi …` when calling ZI).
+1. Add a new ZI subcommand (i.e. the [command](../../../guides/commands) that’s placed after the function `zi …` when calling ZI).
 
-2. Add new [ice-modifiers](../guides/ice-modifiers).
+2. Add new [ice-modifiers](../../../guides/ice-modifiers).
 
 3. Register four type of hooks:
 
@@ -70,7 +70,7 @@ It shows how to:
 
 1. Obtain the arguments passed to the hook.
 
-2. Use an [ice-modifier](../../guides/ice-modifiers).
+2. Use an [ice-modifier](../../../guides/ice-modifiers).
 
 3. It also shows an useful snippet that will trim the whitespace in array elements (see `# (4) …` in the code).
 
