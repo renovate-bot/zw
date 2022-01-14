@@ -3,7 +3,7 @@ id: ice
 title: 🧊 Ice Syntax
 image: /img/include/ice-239x200.png
 description: Ice syntax documentation
-keywords: [ice, zsh, z-shell, zi]
+keywords: [ice, ,syntax, zsh, z-shell, zi]
 ---
 
 <div align="right">
@@ -50,7 +50,7 @@ The value of the ice can begin with a two special characters:
 
 The flags can be combined in any order, e.g: `extract'!-'`.
 
-## `ziextract`
+### `ziextract`
 
 Sometimes a more uncommon unpacking operation is needed.
 In such case you can directly use the function that implements the ice – it is called `ziextract`. 
