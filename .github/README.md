@@ -12,9 +12,9 @@
 
 ### Guidelines
 
-When referring to something that might need additional information has to be linked to a search:
+When referring to something that might need additional information - it has to be linked to a search or a specific place in a wiki.
 
-- `[load plugin](/search/?q=load+plugin)` which will result: [load plugin](https://z-shell.pages.dev/search/?q=load+plugin)) or a specific place in a wiki.  
+- `[load plugin](/search/?q=load+plugin)` which will result: [load plugin](https://z-shell.pages.dev/search/?q=load+plugin)). 
   - It is required at least once for the first mentioning on a page.
   - If the link of the first mentioning exists, then it can be ignored.
   - If there is no additional information, when it has to be created and documented.
