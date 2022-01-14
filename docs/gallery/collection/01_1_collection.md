@@ -19,9 +19,9 @@ More info: [ecosystem/annexes](../ecosystem/annexes)
 
 :::
 
-## Header search tags
+## Header pefixed tags
 
-When using search, tag name provides minimal information about visible result.
+For the [search](https://z-shell.pages.dev/search/?q=GH-R), prefixed tags helps as minimal description the visible results.
 
 | Tag name | Install type                            |
 | -------- | --------------------------------------- |
