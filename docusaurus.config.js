@@ -55,10 +55,14 @@ const config = {
 					showLastUpdateAuthor: true,
 					showLastUpdateTime: true,
 				},
+				pages: {
+          			remarkPlugins: [math, [npm2yarn, {sync: true}]],
+         			rehypePlugins: [katex],
+        		},
+				blog: false,
 				theme: {
 					customCss: require.resolve("./src/css/custom.css"),
 				},
-				blog: false,
 			}),
 		],
 	],
