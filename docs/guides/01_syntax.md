@@ -29,7 +29,7 @@ zi as"null" wait"3" lucid for \
   make"PREFIX=$ZPFX" tj/git-extras
 ```
 
-Above single command installs 6 plugins ([Git extension](https://z-shell.pages.dev/search/?q=git+ext) packages), with the base ices `as"null" wait"3" lucid` that are common to all of the plugins and 6 plugin-specific add-on ices.
+Above single command installs 6 plugins ([git extension](https://z-shell.pages.dev/search/?q=git+ext) packages), with the base ices `as"null" wait"3" lucid` that are common to all of the plugins and 6 plugin-specific add-on ices.
 
 ### Use cases of `for` syntax
 
@@ -58,7 +58,7 @@ zi wait lucid for \
   urbainvaes/fzf-marks
 ```
 
-Load two Oh My Zsh files as snippets, in Turbo:
+Load two [Oh My Zsh](https://z-shell.pages.dev/search/?q=oh+my+zsh) files as [snippets](https://z-shell.pages.dev/search/?q=snippets), in Turbo:
 
 ```shell
 zi wait lucid for \
@@ -143,7 +143,7 @@ bindkey " " magic-space
 
 ### Using `bindmap'…'` In Light Mode {#using-bindmap-in-light-mode}
 
-When the investigation mode is on – i.e.: when the full loading mode is being used (default in the `for` syntax and when `zi load …` is used) – then the `bindmap'…'` ice works normally. In the non-investigation, i.e.: the light mode – activated when `zi light ……` or the `light-mode` ice is being used – the `bindmap'…'` is unavailable, unless the `trackbinds` ice is specified, i.e.:
+When the investigation mode is on – i.e.: when the full loading mode is being used (default in the `for` syntax and when `zi load …` is used) – then the `bindmap'…'` ice works normally. In the non-investigation, i.e.: the [light mode](https://z-shell.pages.dev/search/?q=light+mode) – activated when `zi light ……` or the `light-mode` ice is being used – the `bindmap'…'` is unavailable, unless the `trackbinds` ice is specified, i.e.:
 
 ```shell
 # With use of the light-mode ice and the for-syntax:
