@@ -23,7 +23,7 @@ More info: [ecosystem/annexes](../ecosystem/annexes)
 
 ## Header pefixed tags {#header-pefixed-tags}
 
-For the [search](https://z-shell.pages.dev/search/?q=GH-R), prefixed tags helps as minimal description the visible results.
+For the [search](https://z-shell.pages.dev/search/?q=GH-R), prefixed tags helps as minimal description to the visible results.
 
 <APITable>
 
