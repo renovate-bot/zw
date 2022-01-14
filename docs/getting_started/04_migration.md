@@ -157,7 +157,7 @@ zi snippet PZT::<PATH>  # Shorthand PZT/ (https://github.com/sorin-ionescu/prezt
 zi snippet PZTM::<PATH> # Shorthand PZT/modules/
 ```
 
-#### Prezto moduless {#prezto-moduless}
+### Prezto moduless {#prezto-moduless}
 
 Importing the [environment](https://github.com/sorin-ionescu/prezto/tree/master/modules/environment) and [terminal](https://github.com/sorin-ionescu/prezto/tree/master/modules/terminal) Prezto Modules Sample:
 
@@ -232,7 +232,7 @@ zgen oh-my-zsh <PATH>
 zi snippet OMZ::<PATH>
 ```
 
-## Prezto difference {#prezto-difference}
+### Prezto difference {#prezto-difference}
 
 :::note
 
