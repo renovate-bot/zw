@@ -60,11 +60,11 @@ const config = {
         			priority: 0.5,
         		},
         		gtag: {
-        			trackingID: 'G-42QP74YV1E',
+        			trackingID: 'G-46BGZ6PZR4',
           			anonymizeIP: true,
         		},
         		googleAnalytics: {
-		        	trackingID: 'G-42QP74YV1E',
+		        	trackingID: 'G-46BGZ6PZR4',
           			anonymizeIP: true,
 		        },
 			}),
