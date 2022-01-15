@@ -20,12 +20,12 @@ const config = {
 	staticDirectories: ["static"],
 	themes: ["live-codeblock"],
 	plugins: ["content-blog", "ideal-image"],
-	scripts: [
+	/**scripts: [
 		{
 			src: "https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js",
 			async: true,
 		},
-	],
+	],*/
 	/** i18n: {
 		defaultLocale: "en",
 		locales: ["en", "ja"],
@@ -119,7 +119,7 @@ const config = {
 				title: "❮ ZI ❯",
 				logo: {
 					alt: "ZI Logo",
-					src: "img/logo.svg",
+					src: "img/logo.png",
 				},
 				items: [
 					{
