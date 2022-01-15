@@ -144,7 +144,7 @@ const config = {
 				title: "❮ ZI ❯",
 				logo: {
 					alt: "ZI Logo",
-					src: "img/logo.png",
+					src: "img/logo.svg",
 			        width: 32,
         			height: 32,
 				},
