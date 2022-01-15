@@ -21,7 +21,7 @@ More info: [ecosystem/annexes](/docs/ecosystem/annexes)
 
 :::
 
-## Header pefixed tags {#header-pefixed-tags}
+## Prefixed header tags
 
 For the [search](https://z-shell.pages.dev/search/?q=GH-R), prefixed tags helps as minimal description to the visible results.
 
