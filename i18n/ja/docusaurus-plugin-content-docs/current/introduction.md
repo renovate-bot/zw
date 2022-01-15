@@ -5,6 +5,7 @@ sidebar_position: 1
 image: /img/logo/501x501.png
 description: A Swiss Army Knife for Zsh - Unix shell
 keywords: [introduction, zsh, z-shell, zi]
+custom_edit_url: https://github.com/z-shell/z-shell.pages.dev/blob/main/i18n/ja/docusaurus-plugin-content-docs/current/introduction.md
 ---
 
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'

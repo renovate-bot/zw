@@ -39,8 +39,8 @@ const config = {
 					customCss: require.resolve("./src/css/custom.css"),
 				},
 				docs: {
-					sidebarPath: require.resolve("./sidebars.js"),
-					editUrl: ({versionDocsDirPath, docPath}) => {
+				  sidebarPath: require.resolve("./sidebars.js"),
+				  editUrl: ({versionDocsDirPath, docPath}) => {
 						return `https://github.com/z-shell/z-shell.pages.dev/tree/main/${versionDocsDirPath}/${docPath}`;
 					},
 					remarkPlugins: [math, [npm2yarn, {sync: true}]],
@@ -49,6 +49,8 @@ const config = {
 					docItemComponent: "@theme/DocItem",
 					showLastUpdateAuthor: true,
 					showLastUpdateTime: true,
+					editLocalizedFiles: true,
+					editCurrentVersion: true,
 				},
 				pages: {
 					remarkPlugins: [math, [npm2yarn, {sync: true}]],
