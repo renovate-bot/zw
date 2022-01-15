@@ -1,6 +1,6 @@
 documentation 📝:
   - any: ["docs/**/*.md", "docs/*.md"]
 dependencies 📦:
-  - any: ["package.json"]
+  - any: ["package.json", "yarn.lock"]
 ci 🤖:
   - any: [".github/workflows/*.yml"]
