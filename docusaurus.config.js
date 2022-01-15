@@ -26,10 +26,10 @@ const config = {
 			async: true,
 		},
 	],*/
-	/** i18n: {
+	i18n: {
 		defaultLocale: "en",
 		locales: ["en", "ja"],
-	},*/
+	},
 	presets: [
 		[
 			"classic",
@@ -155,10 +155,10 @@ const config = {
 						position: "left",
 						label: "Wiki",
 					},
-					/**{
+					{
 						type: "localeDropdown",
 						position: "right",
-					},*/
+					},
 					{
 						href: "https://github.com/z-shell/zi",
 						position: "right",
