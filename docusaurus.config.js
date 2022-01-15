@@ -9,7 +9,7 @@ const config = {
 	title: "❮ ZI ❯",
 	titleDelimiter: "|",
 	tagline: "A Swiss Army Knife for Zsh - Unix shell",
-	url: "https://z-shell.pages.dev",
+	url: "https://z.digitalclouds.dev",
 	trailingSlash: false,
 	baseUrl: "/",
 	onBrokenLinks: "throw",
@@ -35,8 +35,10 @@ const config = {
 			"classic",
 			/** @type {import('@docusaurus/preset-classic').Options} */
 			({
+				theme: {
+					customCss: require.resolve("./src/css/custom.css"),
+				},
 				docs: {
-					path: "docs",
 					sidebarPath: require.resolve("./sidebars.js"),
 					editUrl: ({versionDocsDirPath, docPath}) => {
 						return `https://github.com/z-shell/z-shell.pages.dev/tree/main/${versionDocsDirPath}/${docPath}`;
@@ -53,9 +55,14 @@ const config = {
 					rehypePlugins: [katex],
 				},
 				blog: false,
-				theme: {
-					customCss: require.resolve("./src/css/custom.css"),
-				},
+				sitemap: {
+					changefreq: "daily",
+        			priority: 0.5,
+        		},
+        		/** Will be passed to @docusaurus/plugin-google-gtag (only enabled when explicitly specified)
+        		gtag: {},
+        		// Will be passed to @docusaurus/plugin-google-analytics (only enabled when explicitly specified)
+		        googleAnalytics: {},*/
 			}),
 		],
 	],
