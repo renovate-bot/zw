@@ -66,9 +66,11 @@ help                 -- "Usage Information"
 
 To update ZI issue `zi self-update` in the command line.
 
-To update all plugins and snippets, issue `zi update`. If you wish to update only a single plugin/snippet instead issue `zi update NAME_OF_PLUGIN`. A list of commits will be shown:
+To update all plugins and snippets, issue `zi update`. 
 
 <div align="center"><img src="/img/include/update.png" alt="Update" /></div>
+
+If you wish to update only a single plugin/snippet instead issue `zi update NAME_OF_PLUGIN`. A list of commits will be shown if any.
 
 Some plugins require performing an action each time they're updated. One way you can do this is by using the `atpull` ice modifier. For example, writing `zi ice atpull'./configure'` before loading a plugin will execute `./configure` after a successful update. Refer to [Ice Modifiers](/search/?q=ice-modifiers) for more information.
 
@@ -120,14 +122,17 @@ Performance gains are huge, for example, shell startup time with double `compini
 
 ## Calling `compinit` with turbo mode {#calling-compinit-with-turbo-mode}
 
-If you load completions using `wait'…'` Turbo mode then you can add `atinit'zicompinit'` to the syntax-highlighting plugin (which should be the last one loaded, as their (2 projects, [Z-Sy-H](https://github.com/zsh-users/zsh-syntax-highlighting) & [F-Sy-H](https://github.com/z-shell/F-Sy-H)) documentation state), or `atload'zicompinit'` to last completion-related plugin. `zicompinit` is a function that just runs `autoload compinit; compinit`, created for convenience. There's also `zicdreplay` which will replay any caught compdefs so you can also do: `atinit'zicompinit; zicdreplay'`, etc. Basically, the whole topic is the same as normal `compinit` call, but it is done in `atinit` or `atload` hook of the last related plugin with the use of the helper functions (`zicompinit`,`zicdreplay` & `zicdclear` – see below for explanation of the last one). To summarize:
+If you load completions using `wait'…'` [turbo mode](/search?q=turbo+mode) then you can add `atinit'zicompinit'` to the syntax-highlighting plugin (which should be the last one loaded, as their (2 projects, [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) & [F-Sy-H](https://github.com/z-shell/F-Sy-H)) documentation state), or `atload'zicompinit'` to last completion-related plugin. `zicompinit` is a function that just runs `autoload compinit; compinit`, created for convenience. There's also `zicdreplay` which will replay any caught compdefs so you can also do: `atinit'zicompinit; zicdreplay'`, etc. Basically, the whole topic is the same as normal `compinit` call, but it is done in `atinit` or `atload` hook of the last related plugin with the use of the helper functions (`zicompinit`,`zicdreplay` & `zicdclear` – see below for explanation of the last one).
 
-```shell
+### Summary of `compinit` call:
+
+```shell {10} title=~/.zshrc
 source ~/.zi/bin/zi.zsh
 
 # Load using the for-syntax
 zi wait lucid for \
     "some/plugin"
+    
 zi wait lucid for \
     "other/plugin"
 
@@ -244,16 +249,16 @@ Following commands are passed to `zi ……` to obtain described effects.
 | :-: | --- | --- | --- |
 | `self-update` | Updates and compiles ZI. |
 | `update [-q] [-r] '……' | URL [--all]` | Git update plugin or snippet. `--all` – update all plugins and snippets. `-q` – quiet. `-r` | `--reset` – run `git reset --hard` / `svn revert` before pulling changes. |
-| `ice '……'` | Add ice to next command, argument is e.g. from"gitlab". |
-| `delete '……' | URL | [--clean] [--all]` | Remove plugin or snippet from disk (good to forget wrongly passed ice-mods). `--all` – purge. `--clean` – delete plugins and snippets that are not loaded. |
-| `cd '……'` | Jump into plugin's directory. Also support snippets if fed with URL. |
-| `edit '……'` | Edit plugin's file with \$EDITOR. |
-| `glance '……'` | Look at plugin's source (pygmentize, {,source-}highlight). |
-| `stress '……'` | Test plugin for compatibility with set of options. |
-| `changes '……'` | View plugin's git log. |
-| `create '……'` | Create plugin (also together with GitHub repository). |
+| `ice '…'` | Add ice to next command, argument is e.g. from"gitlab". |
+| `delete '…' | URL | [--clean] [--all]` | Remove plugin or snippet from disk (good to forget wrongly passed ice-mods). `--all` – purge. `--clean` – delete plugins and snippets that are not loaded. |
+| `cd '…'` | Jump into plugin's directory. Also support snippets if fed with URL. |
+| `edit '…'` | Edit plugin's file with \$EDITOR. |
+| `glance '…'` | Look at plugin's source (pygmentize, {,source-}highlight). |
+| `stress '…'` | Test plugin for compatibility with set of options. |
+| `changes '…'` | View plugin's git log. |
+| `create '…'` | Create plugin (also together with GitHub repository). |
 | `srv {service-id} [cmd]` | Control a service, command can be: stop,start,restart,next,quit; `next` moves the service to another Zshell. |
-| `recall '……' | URL` | Fetch saved ice modifiers and construct `zi ice ……` command. |
+| `recall '…' | URL` | Fetch saved ice modifiers and construct `zi ice ……` command. |
 | `env-whitelist [-v] [-h] {env..}` | Allows to specify names (also patterns) of variables left unchanged during an unload. `-v` – verbose. |
 | `module` | Manage binary Zsh module shipped with ZI, see `zi module help`. |
 | `add-fpath | fpath` `[-f | --front]` `'……'` `[subdirectory]` | Adds given plugin (not yet snippet) directory to `$fpath`. If the second argument is given, it is appended to the directory path. If the option `-f`/`--front` is given, the directory path is prepended instead of appended to `$fpath`. The `'……'` can be absolute path, i.e.: it's possible to also add regular directories. |
