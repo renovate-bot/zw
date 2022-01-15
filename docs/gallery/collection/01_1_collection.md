@@ -21,7 +21,7 @@ More info: [ecosystem/annexes](/docs/ecosystem/annexes)
 
 :::
 
-## Prefixed header tags
+## Header pefixed tags {#header-pefixed-tags}
 
 For the [search](https://z-shell.pages.dev/search/?q=GH-R), prefixed tags helps as minimal description to the visible results.
 
@@ -58,9 +58,9 @@ Any contributions you make will benefit everybody else and are greatly appreciat
 
 ### Minimal {#minimal}
 
-#### With [Turbo mode](../getting_started/overview#turbo-mode-zsh--53) (i.e. no `wait` ice) and with [`for`](/docs/guides/syntax#the-for-syntax) syntax: {#with-turbo-mode-ie-no-wait-ice-and-with-for-syntax}
+#### With [Turbo mode](../getting_started/overview#turbo-mode-zsh--53) and with [`for`](/docs/guides/syntax#the-for-syntax) syntax
 
-```shell title=~/.zshrc
+```shell {1} title=~/.zshrc
 zi wait lucid light-mode for \
   atinit"zicompinit; zicdreplay" \
     z-shell/F-Sy-H \
@@ -85,17 +85,21 @@ zi wait lucid light-mode for \
 
 </APITable>
 
-- syntax-highlighting plugins (like [**F-Sy-H**](https://github.com/z-shell/F-Sy-H) or [**zsh-syntax-highlighting**](https://github.com/zsh-users/zsh-syntax-highlighting)) theoretically expect to be loaded last, even after the completion initialization (i.e. `compinit` function), however, in practice, you just have to ensure that such plugin is loaded after plugins that are issuing `compdef` – which basically means completions that aren't using the underscore-starting function file; the completion initialization still has to be performed before syntax-highlighting plugin, hence the `atinit''` ice, which will load `compinit` right before loading the plugin,
+- syntax-highlighting plugins (like [F-Sy-H](https://github.com/z-shell/F-Sy-H) or [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)) theoretically expect to be loaded last, even after the completion initialization (i.e. `compinit` function), however, in practice, you just have to ensure that such plugin is loaded after plugins that are issuing `compdef` – which basically means completions that aren't using the underscore-starting function file; the completion initialization still has to be performed before syntax-highlighting plugin, hence the `atinit'…'` ice, which will load `compinit` right before loading the plugin,
 - the syntax-highlighting and suggestions plugins are loaded early for a better user experience.
 
-#### The same setup, but without using [Turbo mode](/docs/getting_started/overview#turbo-mode-zsh--53) (i.e. no `wait` ice) and without [the `for` syntax](/docs/guides/syntax#the-for-syntax): {#the-same-setup-but-without-using-turbo-mode-ie-no-wait-ice-and-without-the-for-syntax}
+#### Without using [Turbo mode](/docs/getting_started/overview#turbo-mode-zsh--53) and without the [`for`](/docs/guides/syntax#the-for-syntax) syntax
 
 ```shell
 zi ice blockf atpull'zi creinstall -q .'
 zi light zsh-users/zsh-completions
 
+(…)
+
 autoload compinit
 compinit
+
+(…)
 
 zi light z-shell/F-Sy-H
 zi light zsh-users/zsh-autosuggestions
@@ -105,7 +109,7 @@ Without [Turbo](/docs/getting_started/overview#turbo-mode-zsh--53) the syntax-hi
 
 ### Oh-My-Zsh {#oh-my-zsh}
 
-#### With [Turbo mode](/docs/getting_started/overview#turbo-mode-zsh--53) and [`for` syntax](/docs/guides/syntax#the-for-syntax) {#with-turbo-mode-and-for-syntax}
+#### With [Turbo mode](/docs/getting_started/overview#turbo-mode-zsh--53) and [`for`](/docs/guides/syntax#the-for-syntax) syntax
 
 ```shell
 # A.
@@ -147,7 +151,7 @@ zi wait lucid for \
 
 Above setup loads everything after prompt, because of preceding `wait` ice. That is called **Turbo mode**, it shortens Zsh startup time by <u>50%-80%</u>, e.g. instead of 200 ms, it'll be getting your shell started up after **40 ms**.
 
-#### Without [Turbo](/docs/getting_started/overview#turbo-mode-zsh--53) and [`for` syntax](/docs/guides/syntax#the-for-syntax) {#without-turbo-and-for-syntax}
+#### Without [Turbo](/docs/getting_started/overview#turbo-mode-zsh--53) and [`for`](/docs/guides/syntax#the-for-syntax) syntax
 
 The same setup using the classic syntax and without Turbo mode (prompt will be initially set like in typical, normal setup – **you can remove `wait` only from the theme plugin** and its dependencies to have the same effect while still using Turbo for everything remaining):
 
@@ -181,7 +185,7 @@ In general, [Turbo](/docs/getting_started/overview#turbo-mode-zsh--53) can be op
 
 ### LS_COLORS {#ls_colors}
 
-A repository [**trapd00r/LS_COLORS**](https://github.com/trapd00r/LS_COLORS) provides a file with color definitions for GNU `ls` command (and also for [**ogham/exa**](https://github.com/ogham/exa).
+A repository [trapd00r/LS_COLORS](https://github.com/trapd00r/LS_COLORS) provides a file with color definitions for GNU `ls` command (and also for [ogham/exa](https://github.com/ogham/exa).
 
 Typically one does `eval $( dircolors -b $HOME/LS_COLORS)` to process this file and set the environment for `ls`. However this means `dircolors` is run every shell startup.
 
@@ -235,7 +239,7 @@ zi as"program" make'!' atclone'./direnv hook zsh > zhook.zsh' \
 
 This way registration code is generated once every installation and update, to then be simply sourced without running `direnv`.
 
-The project is also available as a binary Github release. This distribution can be installed by:
+The project is also available as a binary [Github releases](https://github.com/direnv/direnv/releases/). This distribution can be installed by:
 
 ```shell
 zi from"gh-r" as"program" mv"direnv* -> direnv" \
@@ -248,7 +252,7 @@ zi from"gh-r" as"program" mv"direnv* -> direnv" \
 
 | Syntax | Description |
 | --- | :-- |
-| `from'gh-r'` | Install from **Github releases**. |
+| `from'gh-r'` | Install from [Github releases](https://github.com/direnv/direnv/releases/). |
 | `mv'direnv* -> direnv'` | After installation, rename `direnv.linux-386` or similar file to `direnv`. |
 | `atclone'…'`, `atpull'…'` | As in previous example |
 | `pick'direnv'` | As in previous example. |
