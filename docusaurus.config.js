@@ -19,7 +19,7 @@ const config = {
 	projectName: "z-shell.pages.dev",
 	staticDirectories: ["static"],
 	themes: ["live-codeblock"],
-	plugins: ["content-blog", "ideal-image"],
+	plugins: [],
 	/**scripts: [
 		{
 			src: "https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js",
@@ -55,6 +55,23 @@ const config = {
 					rehypePlugins: [katex],
 				},
 				blog: {
+					editUrl: ({locale, blogDirPath, blogPath, permalink}) => {
+						return `https://github.com/z-shell/z-shell.pages.dev/tree/main/${blogDirPath}/${blogPath}`;
+					},
+					editLocalizedFiles: false,
+					include: ['**/*.{md,mdx}'],
+					exclude: [
+						'**/_*.{js,jsx,ts,tsx,md,mdx}',
+						'**/_*/**',
+						'**/*.test.{js,jsx,ts,tsx}',
+						'**/__tests__/**',
+					],
+					blogListComponent: '@theme/BlogListPage',
+					blogPostComponent: '@theme/BlogPostPage',
+					blogTagsListComponent: '@theme/BlogTagsListPage',
+					blogTagsPostsComponent: '@theme/BlogTagsPostsPage',
+					remarkPlugins: [math, [npm2yarn, {sync: true}]],
+					rehypePlugins: [katex],
 				    blogTitle: '❮ ZI ❯ Blog',
           			blogDescription: 'News, Changes & Updates',
 			        postsPerPage: 'ALL',

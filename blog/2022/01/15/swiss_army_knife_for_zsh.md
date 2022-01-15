@@ -12,11 +12,11 @@ image: /img/logo/501x501.png
 hide_table_of_contents: true
 ---
 
-<div align="center"><h2>
+<div align="center">
 
- ❮ [ZI](https://z-shell.pages.dev/) ❯ **is a fast and feature-rich plugin manager for [Zsh](https://zsh.sourceforge.io/) - [Unix shell](https://en.wikipedia.org/wiki/Unix_shell).** 
+##  ❮ [ZI](https://z-shell.pages.dev/) ❯ **is a fast and feature-rich plugin manager for [Zsh](https://zsh.sourceforge.io/) - [Unix shell](https://en.wikipedia.org/wiki/Unix_shell).** 
   
-</div></h2>
+</div>
 
 ### Fast user experience
 
