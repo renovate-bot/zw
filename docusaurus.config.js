@@ -54,7 +54,15 @@ const config = {
 					remarkPlugins: [math, [npm2yarn, {sync: true}]],
 					rehypePlugins: [katex],
 				},
-				blog: false,
+				blog: {
+				    blogTitle: '❮ ZI ❯ Blog',
+          			blogDescription: 'News, Changes & Updates',
+			        postsPerPage: 'ALL',
+		        	feedOptions: {
+            		type: 'all',
+            		copyright: `Copyright © ${new Date().getFullYear()} Z-Shell ZI, Community.`,
+		            },
+				},
 				sitemap: {
 					changefreq: "daily",
         			priority: 0.5,
