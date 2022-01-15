@@ -81,17 +81,17 @@ const config = {
 		            },
 				},
 				sitemap: {
-					changefreq: "daily",
+					changefreq: "weekly",
         			priority: 0.5,
         		},
         		gtag: {
         			trackingID: 'G-46BGZ6PZR4',
           			anonymizeIP: true,
         		},
-        		googleAnalytics: {
+        		/**googleAnalytics: {
 		        	trackingID: 'G-46BGZ6PZR4',
           			anonymizeIP: true,
-		        },
+		        },*/
 			}),
 		],
 	],
@@ -145,6 +145,8 @@ const config = {
 				logo: {
 					alt: "ZI Logo",
 					src: "img/logo.png",
+			        width: 32,
+        			height: 32,
 				},
 				items: [
 					{
