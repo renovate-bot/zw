@@ -11,8 +11,6 @@ import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'
 
 ![zi-git-logo](/img/zi-git.png)
 
----
-
 <Tabs>
   <TabItem value="gems" label="RubyGems">
 
@@ -51,14 +49,28 @@ Install almost everything from [GitHub](https://github.com):
 
 ---
 
-- The [meta plugins](ecosystem/annexes/meta-plugins) allow to install groups of plugins via a single, friendly label.
+- [Turbo mode](getting_started/overview#turbo-mode-zsh--53) that yields **50-80%** faster Zsh startup.
 
-- The [packages](ecosystem/packages) offload the user from providing long and complex commands.
+- [Meta plugins](/search?q=meta+plugins) allow to install groups of plugins via a single, friendly label.
 
-- The [annexes](ecosystem/annexes) allow to extend the plugin manager with new commands.
+- [Packages](/search?q=packages) offload the user from providing long and complex commands.
+
+- [Annexes](/search?q=annexes) allow to extend the plugin manager with new commands.
 
 - Supports [Oh My Zsh](getting_started/overview#oh-my-zsh-prezto) and [Prezto](getting_started/overview#oh-my-zsh-prezto) plugins and libraries ([migration](getting_started/migration)).
 
-- Docker [playground](https://github.com/z-shell/playground) for the configurations.
+- Does not use `$FPATH`, loading multiple plugins don't clutter `$FPATH` with the same number of entries (e.g. 10, 15, or more).
+- Code is immune to `KSH_ARRAYS` and other options typically causing compatibility problems.
+- Do not require `sudo`, and provides many workarounds (e.g: setting so-called **shims** locally).
 
-- Preview at [asciinema.org](https://asciinema.org/a/459358)
+Provides reports and statistics about:
+
+- What **aliases**, **functions**, **bindkeys**, **Zle widgets**, **zstyles**, **completions**, **variables**, `$PATH`, and `$FPATH` elements a plugin has set up.
+- Allows to quickly familiarize oneself with a new plugin and provides rich and easy-to-digest information that might be helpful on various occasions.
+- Supports the unloading of plugins and the ability to list, (un)install, and selectively disable, enable plugin's completions.
+- Additional provides functionality to easily create your own plugins (locally/remote).
+
+---
+
+- Docker [playground](https://github.com/z-shell/playground) for the configurations.
+- Preview ZI at [asciinema.org](https://asciinema.org/a/459358)

@@ -62,19 +62,19 @@ man                  -- "Manpage"
 help                 -- "Usage Information"
 ```
 
-## Updating ZI and Plugins {#updating-zi-and-plugins}
+## Updating ZI and plugins {#updating-zi-and-plugins}
 
 To update ZI issue `zi self-update` in the command line.
 
 To update all plugins and snippets, issue `zi update`. If you wish to update only a single plugin/snippet instead issue `zi update NAME_OF_PLUGIN`. A list of commits will be shown:
 
-<div align="center"><img src="https://github.com/z-shell/zinit/raw/main/doc/img/update.png" alt="Update" width="80%" /></div>
+<div align="center"><img src="/img/include/update.png" alt="Update" /></div>
 
 Some plugins require performing an action each time they're updated. One way you can do this is by using the `atpull` ice modifier. For example, writing `zi ice atpull'./configure'` before loading a plugin will execute `./configure` after a successful update. Refer to [Ice Modifiers](/search/?q=ice-modifiers) for more information.
 
 The ice modifiers for any plugin or snippet are stored in their directory in a `._zi` subdirectory, hence the plugin doesn't have to be loaded to be correctly updated. There's one other file created there, `.zi_lstupd` – it holds the log of the new commits pulled-in in the last update.
 
-## Calling `compinit` Without Turbo Mode {#calling-compinit-without-turbo-mode}
+## Calling `compinit` without turbo mode {#calling-compinit-without-turbo-mode}
 
 With no Turbo mode in use, compinit can be called normally, i.e.: as `autoload compinit; compinit`. This should be done after loading of all plugins and before possibly calling `zi cdreplay`.
 
@@ -118,7 +118,7 @@ Performance gains are huge, for example, shell startup time with double `compini
 
 :::
 
-## Calling `compinit` With Turbo Mode {#calling-compinit-with-turbo-mode}
+## Calling `compinit` with turbo mode {#calling-compinit-with-turbo-mode}
 
 If you load completions using `wait'…'` Turbo mode then you can add `atinit'zicompinit'` to the syntax-highlighting plugin (which should be the last one loaded, as their (2 projects, [Z-Sy-H](https://github.com/zsh-users/zsh-syntax-highlighting) & [F-Sy-H](https://github.com/z-shell/F-Sy-H)) documentation state), or `atload'zicompinit'` to last completion-related plugin. `zicompinit` is a function that just runs `autoload compinit; compinit`, created for convenience. There's also `zicdreplay` which will replay any caught compdefs so you can also do: `atinit'zicompinit; zicdreplay'`, etc. Basically, the whole topic is the same as normal `compinit` call, but it is done in `atinit` or `atload` hook of the last related plugin with the use of the helper functions (`zicompinit`,`zicdreplay` & `zicdclear` – see below for explanation of the last one). To summarize:
 
@@ -135,7 +135,7 @@ zi wait lucid atload"zicompinit; zicdreplay" blockf for \
     zsh-users/zsh-completions
 ```
 
-### Ignoring Compdefs {#ignoring-compdefs}
+### Ignoring compdefs {#ignoring-compdefs}
 
 If you want to ignore compdefs provided by some plugins or snippets, place their load commands before commands loading other plugins or snippets, and issue `zi cdclear` (or `zicdclear`, designed to be used in hooks like `atload'…'`):
 
@@ -160,7 +160,7 @@ The `cdreplay` is important if you use plugins like `OMZP::kubectl` or `asdf-vm/
 
 Following commands are passed to `zi ……` to obtain described effects.
 
-## Loading and Unloading {#loading-and-unloading}
+## Loading and unloading {#loading-and-unloading}
 
 <APITable>
 
@@ -173,7 +173,7 @@ Following commands are passed to `zi ……` to obtain described effects.
 
 </APITable>
 
-## Completions Management {#completions-management}
+## Completions management {#completions-management}
 
 <APITable>
 
@@ -193,7 +193,7 @@ Following commands are passed to `zi ……` to obtain described effects.
 
 </APITable>
 
-## Tracking of the Active Session {#tracking-of-the-active-session}
+## Tracking of the active session {#tracking-of-the-active-session}
 
 <APITable>
 
@@ -207,7 +207,7 @@ Following commands are passed to `zi ……` to obtain described effects.
 
 </APITable>
 
-## Reports and Statistics {#reports-and-statistics}
+## Reports and statistics {#reports-and-statistics}
 
 <APITable>
 
@@ -236,7 +236,7 @@ Following commands are passed to `zi ……` to obtain described effects.
 
 </APITable>
 
-## Other {#other}
+## Other commands {#other-commands}
 
 <APITable>
 

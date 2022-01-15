@@ -31,7 +31,7 @@ You may safely assume given ice works with both plugins and snippets unless expl
 
 </APITable>
 
-## Selection of Files (To Source, …) {#selection-of-files-to-source}
+## Selection of files (`source '…'`) {#selection-of-files-source}
 
 <APITable>
 
@@ -43,7 +43,7 @@ You may safely assume given ice works with both plugins and snippets unless expl
 
 </APITable>
 
-## Conditional Loading {#conditional-loading}
+## Conditional loading {#conditional-loading}
 
 <APITable>
 
@@ -60,7 +60,7 @@ You may safely assume given ice works with both plugins and snippets unless expl
 
 </APITable>
 
-## Plugin Output {#plugin-output}
+## Plugin output {#plugin-output}
 
 <APITable>
 
@@ -83,7 +83,7 @@ You may safely assume given ice works with both plugins and snippets unless expl
 
 </APITable>
 
-## Command Execution After Cloning, Updating or Loading {#command-execution-after-cloning-updating-or-loading}
+## Command execution after cloning, updating or loading {#command-execution-after-cloning-updating-or-loading}
 
 <APITable>
 
@@ -103,13 +103,13 @@ You may safely assume given ice works with both plugins and snippets unless expl
 
 </APITable>
 
-## Sticky-Emulation Of Other Shells {#sticky-emulation-of-other-shells}
+## Sticky-Emulation Of other shells {#sticky-emulation-of-other-shells}
 
 <APITable>
 
 | Modifier | Description |
 | :-: | --- |
-| `sh`, `!sh` | Source the plugin's (or snippet's) script with `sh` emulation so that also all functions declared within the file will get a _sticky_ emulation assigned – when invoked they'll execute also with the `sh` emulation set-up. The `!sh` version switches additional options that are rather not important from the portability perspective. |
+| `sh`, `!sh` | Source the plugin's (or snippet's) script with `sh` emulation so that also all functions declared within the file will get a **sticky** emulation assigned – when invoked they'll execute also with the `sh` emulation set-up. The `!sh` version switches additional options that are rather not important from the portability perspective. |
 | `bash`, `!bash` | The same as `sh`, but with the `SH_GLOB` option disabled, so that Bash regular expressions work. |
 | `ksh`, `!ksh` | The same as `sh`, but emulating `ksh` shell. |
 | `csh`, `!csh` | The same as `sh`, but emulating `csh` shell. |
@@ -139,20 +139,22 @@ You may safely assume given ice works with both plugins and snippets unless expl
 
 </APITable>
 
-## Order of Execution {#order-of-execution}
+## Order of execution {#order-of-execution}
 
-Order of execution of related Ice-mods: `atinit` -> `atpull!` -> `make'!!'` -> `mv` -> `cp` -> `make!` -> `atclone`/`atpull` -> `make` -> `(plugin script loading)` -> `src` -> `multisrc` -> `atload`.
+Order of execution of related Ice-modifiers is as follows:
 
-## A Few Remarks {#a-few-remarks}
+`atinit` -> `atpull!` -> `make'!!'` -> `mv` -> `cp` -> `make!` -> `atclone`/`atpull` -> `make` -> `(plugin script loading)` -> `src` -> `multisrc` -> `atload`.
+
+## A few remarks {#a-few-remarks}
 
 - The syntax automatically detects if the object is a snippet or a plugin, by checking if the object is an URL, i.e.: if it starts with `http*://` or `OMZ::`, etc.
 - To load a local-file snippet (which will be treaten as a local-directory plugin by default) use the `is-snippet` ice,
 - To load a plugin in `light` mode use the `light-mode` ice.
 - If the plugin name collides with an ice name, precede the plugin name with `@`, e.g.: `@sharkdp/fd` (collides with the `sh` ice, ZI will take the plugin name as `sh"arkdp/fd"`), see the next section for an example.
 
-## Alternate Syntax {#alternate-syntax}
+## Alternate syntax {#alternate-syntax}
 
-### The Standard Syntax {#the-standard-syntax}
+### The standard syntax {#the-standard-syntax}
 
 The normal way of specifying ices and their values is by concatenating the ice name and its value quoted, i.e.:
 
@@ -163,7 +165,7 @@ zi load …
 
 (note that there's no `ice` subcommand - that is currently being fully allowed)
 
-### The Alternative Syntaxes {#the-alternative-syntaxes}
+### The alternative syntaxes {#the-alternative-syntaxes}
 
 However, ZI supports also other syntaxes: the equal (`=`) syntax:
 

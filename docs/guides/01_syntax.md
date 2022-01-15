@@ -6,7 +6,7 @@ image: /img/logo/501x501.png
 keywords: [syntax, zsh, z-shell, zi]
 ---
 
-## The fundamental syntax
+## The fundamental syntax {#the-fundamental-syntax}
 
 ```shell
 zi ice ……
@@ -31,7 +31,7 @@ zi as"null" wait"3" lucid for \
 
 Above single command installs 6 plugins ([git extension](https://z-shell.pages.dev/search/?q=git+ext) packages), with the base ices `as"null" wait"3" lucid` that are common to all of the plugins and 6 plugin-specific add-on ices.
 
-### Use cases of `for` syntax
+### Use cases of `for` syntax {#use-cases-of-for-syntax}
 
 Load a few useful binary (i.e.: [binary packages from the GitHub Releases](https://z-shell.pages.dev/search/?q=GH-R)) utils:
 
@@ -75,12 +75,13 @@ zi light tj/git-extras
 
 The `Makefile` of the project above has only 2 tasks:
 
-  1. Install the target.
-  2. Build scripts that is required for installation.
+1. Install the target.
+2. Build scripts that is required for installation.
 
 The `Makefile` with 2 tasks, can use:
-  1. `make"all install PREFIX=…"`,
-  2. `pick'…'` will `chmod +x` all matching files and add `$ZPFX/bin/` to `$PATH`.
+
+1. `make"all install PREFIX=…"`,
+2. `pick'…'` will `chmod +x` all matching files and add `$ZPFX/bin/` to `$PATH`.
 
 :::info
 
