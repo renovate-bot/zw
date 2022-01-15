@@ -8,7 +8,7 @@
 - name: "documentation 📝"
   color: 0052cc
   description: "Solely about the documentation of the project."
-  name: "i18n 🌐"
+- name: "i18n 🌐"
   color: "#0052cc"
   description: "Internationalization"
 - name: "enhancement ✨"
