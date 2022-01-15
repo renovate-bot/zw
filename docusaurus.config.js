@@ -9,7 +9,7 @@ const config = {
 	title: "❮ ZI ❯",
 	titleDelimiter: "|",
 	tagline: "A Swiss Army Knife for Zsh - Unix shell",
-	url: "https://z.digitalclouds.dev",
+	url: "https://z-shell.pages.dev",
 	trailingSlash: false,
 	baseUrl: "/",
 	onBrokenLinks: "throw",
@@ -59,9 +59,11 @@ const config = {
 					changefreq: "daily",
         			priority: 0.5,
         		},
-        		/** Will be passed to @docusaurus/plugin-google-gtag (only enabled when explicitly specified)
-        		gtag: {},
-        		// Will be passed to @docusaurus/plugin-google-analytics (only enabled when explicitly specified)
+        		gtag: {
+        			trackingID: 'G-42QP74YV1E',
+          			anonymizeIP: true,
+        		},
+        		/** Will be passed to @docusaurus/plugin-google-analytics (only enabled when explicitly specified)
 		        googleAnalytics: {},*/
 			}),
 		],
