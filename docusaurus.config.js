@@ -63,8 +63,10 @@ const config = {
         			trackingID: 'G-42QP74YV1E',
           			anonymizeIP: true,
         		},
-        		/** Will be passed to @docusaurus/plugin-google-analytics (only enabled when explicitly specified)
-		        googleAnalytics: {},*/
+        		googleAnalytics: {
+		        	trackingID: 'G-42QP74YV1E',
+          			anonymizeIP: true,
+		        },
 			}),
 		],
 	],
