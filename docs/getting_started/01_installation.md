@@ -9,13 +9,9 @@ keywords: [installation, zsh, z-shell, zi]
 
 <!-- Notice: This file is ahead of i18n -->
 
-<div align="center">
-  
-[![⚙️ Install Library](https://github.com/z-shell/zi-src/actions/workflows/check-sh.yml/badge.svg?branch=main)](https://github.com/z-shell/zi-src/actions/workflows/check-sh.yml)
-  
-</div>
-
 :::info Available installer links
+
+[![⚙️ Install Library](https://github.com/z-shell/zi-src/actions/workflows/check-sh.yml/badge.svg?branch=main)](https://github.com/z-shell/zi-src/actions/workflows/check-sh.yml)
 
 - [Git.io](https://git.io/get-zi): `https://git.io/get-zi`
 - [GitHub](https:z-shell.pages.dev/i-hub): `https:z-shell.pages.dev/i-hub`
@@ -67,7 +63,7 @@ Clone repository:
 
 ```shell
 zi_home="${HOME}/.zi" && command mkdir -p $zi_home
-command git clone https://github.com/z-shell/zi.git "${zi_home}/bin"
+git clone https://github.com/z-shell/zi.git "${zi_home}/bin"
 ```
 
 Source `zi.zsh` from your `.zshrc`:
@@ -82,4 +78,4 @@ autoload -Uz _zi
 
 ## Post install
 
-After installing and reloading the shell (`exec zsh`) compile ZI with `zi self-update`.
+Reload the shell with `exec zsh` and compile ZI with `zi self-update`.
