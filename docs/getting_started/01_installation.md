@@ -7,8 +7,6 @@ description: ZI installation guide
 keywords: [installation, zsh, z-shell, zi]
 ---
 
-<!-- Notice: This file is ahead of i18n -->
-
 :::info Available installer links
 
 [![⚙️ Install Library](https://github.com/z-shell/zi-src/actions/workflows/check-sh.yml/badge.svg?branch=main)](https://github.com/z-shell/zi-src/actions/workflows/check-sh.yml)
@@ -62,7 +60,7 @@ sh -c "$(curl -fsSL https://git.io/get-zi)" -- -a ???
 Clone repository:
 
 ```shell
-zi_home="${HOME}/.zi" && command mkdir -p $zi_home
+zi_home="${HOME}/.zi" && mkdir -p $zi_home
 git clone https://github.com/z-shell/zi.git "${zi_home}/bin"
 ```
 
