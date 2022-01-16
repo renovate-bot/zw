@@ -28,9 +28,11 @@ The Unicode arrow is allowed in ZI syntax as in example below.
 zi id-as=jekyll pack param='GEM → jekyll' for any-gem
 ```
 
-The binaries will be exposed without altering the PATH via shims ([bin-gem-node](../ecosystem/annexes/bin-gem-node) annex is needed). Shims are correctly removed when deleting a plugin with `zi delete ……`
+The binaries will be exposed without altering the PATH via shims ([bin-gem-node](../ecosystem/annexes/bin-gem-node) annex is needed).
+Shims are correctly removed when deleting a plugin with `zi delete ……`
 
-The so-called packages are GitHub repositories holding a `package.json` file with the meta-data in them. This way you don't have to (but still can) specify ices, which might be handy when the ice-mod list is long and complex.
+The so-called packages are GitHub repositories holding a `package.json` file with the meta-data in them.
+This way you don't have to (but still can) specify ices, which might be handy when the ice-mod list is long and complex.
 
 ## Motivation behind packages {#motivation-behind-packages}
 

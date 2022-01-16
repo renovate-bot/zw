@@ -9,10 +9,10 @@ keywords: [overview, zsh, z-shell, zi]
 
 In this overview will cover basics for:
 
-1. Oh My Zsh & Prezto
-2. Completions
-3. Turbo mode
-4. Ice modifiers
+1. [Oh My Zsh & Prezto](/search?q=Oh+My+Zsh+%26+Prezto)
+2. [Completions](/search?q=completions)
+3. [Turbo mode](/search?q=turbo+mode)
+4. [Ice modifiers](/search?q=ice+modifiers)
 
 ## Basic Plugin Loading {#basic-plugin-loading}
 
@@ -21,7 +21,7 @@ zi load z-shell/H-S-MW
 zi light zsh-users/zsh-syntax-highlighting
 ```
 
-The above commands show two ways of basic plugin loading. <code>load</code> causes reporting to be enabled – you can track what plugin does, view the information with `zi report {plugin-name}` and then also unload the plugin with `zi unload {plugin-name}`. Using `light` is a significantly faster loading without tracking and reporting, by using which user resigns of the ability to view the plugin report and to unload it.
+The above commands show two ways of basic plugin loading. `load` causes reporting to be enabled – you can track what plugin does, view the information with `zi report {plugin-name}` and then also unload the plugin with `zi unload {plugin-name}`. Using `light` is a significantly faster loading without tracking and reporting, by using which user resigns of the ability to view the plugin report and to unload it.
 
 :::note
 
@@ -101,11 +101,11 @@ zi ice as"program" mv"httpstat.sh -> httpstat" \
 zi light b4b4r07/httpstat
 ```
 
-If `atpull` starts with an exclamation mark, then it will be run before `git pull`, and before `mv`. Nevertheless, `atpull`, `mv`, `cp` are run **only if new commits are to be fetched**. So in summary, when the user runs `zi update b4b4r07/httpstat` to update this plugin, and there are new commits, what happens first is that `git reset --hard` is run – and it **restores** original `httpstat.sh`, **then** `git pull` is ran and it downloads new commits (doing fast-forward), **then** `mv` is running again so that the command is `httpstat` not `httpstat.sh`. This way the `mv` ice can be used to induce permanent changes into the plugin's contents without blocking the ability to update it with `git` (or with `subversion` in case of snippets, more on this below at [**\*\***](#on_svn_revert)).
+If `atpull` starts with an exclamation mark, then it will be run before `git pull`, and before `mv`. Nevertheless, `atpull`, `mv`, `cp` are run **only if new commits are to be fetched**. So in summary, when the user runs `zi update b4b4r07/httpstat` to update this plugin, and there are new commits, what happens first is that `git reset --hard` is run – and it **restores** original `httpstat.sh`, **then** `git pull` is ran and it downloads new commits (doing fast-forward), **then** `mv` is running again so that the command is `httpstat` not `httpstat.sh`. This way the `mv` ice can be used to induce permanent changes into the plugin's contents without blocking the ability to update it with `git` (or with `subversion` in case of snippets, more on this below).
 
 :::info
 
-For exclamation mark to not be expanded by Zsh an interactive session, use `'…'` not `"…"` to enclose contents of `atpull` ice-mod.\*\*
+For exclamation mark to not be expanded by Zsh an interactive session, use `'…'` not `"…"` to enclose contents of `atpull` [ice-modifier](/search?q=ice-modifier).
 
 :::
 
@@ -122,7 +122,7 @@ zi snippet \
 
 :::tip
 
-Snippets also support `atpull` ice-mod, so it’s possible to do e.g. `atpull'!svn revert'`. There’s also `atinit` ice-mod, executed before each loading of plugin or snippet.
+Snippets also support `atpull` [ice-modifier](/search?q=ice-modifier), so it’s possible to do e.g. `atpull'!svn revert'`. There’s also `atinit` ice-modfier, executed before each loading of plugin or snippet.
 
 :::
 
@@ -222,13 +222,13 @@ zi snippet PZT::modules/docker
 
 Snippets too have completions installed by default, like plugins.
 
-## Turbo Mode (Zsh \>= 5.3) {#turbo-mode-zsh--53}
+## Turbo Mode (Zsh >= 5.3) {#turbo-mode-zsh--53}
 
 The ice-mod `wait` allows the user to postpone the loading of a plugin to the moment when the processing of `.zshrc` is finished and the first prompt is being shown. It is like Windows – during startup, it shows desktop even though it still loads data in the background. This has drawbacks but is for sure better than a blank screen for 10 minutes. And here, in ZI, there are no drawbacks of this approach – no lags, freezes, etc. – the command line is fully usable while the plugins are being loaded, for any number of plugins.
 
 :::info
 
-Turbo will speed up Zsh startup by <u>50%–80%</u>. For example, instead of 200 ms, it'll be 40 ms.
+Turbo will speed up Zsh startup by **50%–80%**. For example, instead of 200 ms, it'll be 40 ms.
 
 :::
 

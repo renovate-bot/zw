@@ -1,4 +1,5 @@
 // @ts-nocheck
+const path = require("path");
 const math = require("remark-math");
 const katex = require("rehype-katex");
 const npm2yarn = require("@docusaurus/remark-plugin-npm2yarn");
@@ -20,16 +21,21 @@ const config = {
 	staticDirectories: ["static"],
 	themes: ["live-codeblock"],
 	plugins: [],
+	i18n: {
+		defaultLocale: "en",
+		locales: ["en", "ja"],
+	},
 	/**scripts: [
 		{
 			src: "https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js",
 			async: true,
 		},
 	],*/
-	i18n: {
-		defaultLocale: "en",
-		locales: ["en", "ja"],
-	},
+	/**stylesheets: [
+		{
+			href: "http://mydomain.com/style.css",
+		},
+	],*/
 	presets: [
 		[
 			"classic",
@@ -39,61 +45,43 @@ const config = {
 					customCss: require.resolve("./src/css/custom.css"),
 				},
 				docs: {
-				  sidebarPath: require.resolve("./sidebars.js"),
-				  editUrl: ({versionDocsDirPath, docPath}) => {
-						return `https://github.com/z-shell/z-shell.pages.dev/tree/main/${versionDocsDirPath}/${docPath}`;
-					},
+					sidebarPath: require.resolve("./sidebars.js"),
+					editUrl: "https://github.com/z-shell/z-shell.pages.dev/tree/main/",
+					editLocalizedFiles: true,
+					showLastUpdateTime: true,
+					showLastUpdateAuthor: true,
 					remarkPlugins: [math, [npm2yarn, {sync: true}]],
 					rehypePlugins: [katex],
-					docLayoutComponent: "@theme/DocPage",
-					docItemComponent: "@theme/DocItem",
-					showLastUpdateAuthor: true,
-					showLastUpdateTime: true,
-					editLocalizedFiles: true,
-					editCurrentVersion: true,
 				},
 				pages: {
 					remarkPlugins: [math, [npm2yarn, {sync: true}]],
 					rehypePlugins: [katex],
 				},
 				blog: {
-					editUrl: ({locale, blogDirPath, blogPath, permalink}) => {
-						return `https://github.com/z-shell/z-shell.pages.dev/tree/main/${blogDirPath}/${blogPath}`;
-					},
-					editLocalizedFiles: false,
-					include: ['**/*.{md,mdx}'],
-					exclude: [
-						'**/_*.{js,jsx,ts,tsx,md,mdx}',
-						'**/_*/**',
-						'**/*.test.{js,jsx,ts,tsx}',
-						'**/__tests__/**',
-					],
-					blogListComponent: '@theme/BlogListPage',
-					blogPostComponent: '@theme/BlogPostPage',
-					blogTagsListComponent: '@theme/BlogTagsListPage',
-					blogTagsPostsComponent: '@theme/BlogTagsPostsPage',
+					editUrl: "https://github.com/z-shell/z-shell.pages.dev/tree/main/",
+					editLocalizedFiles: true,
 					remarkPlugins: [math, [npm2yarn, {sync: true}]],
 					rehypePlugins: [katex],
-				    blogTitle: '❮ ZI ❯ Blog',
-          			blogDescription: 'News, Changes & Updates',
-			        postsPerPage: 'ALL',
-		        	feedOptions: {
-            		type: 'all',
-            		copyright: `Copyright © ${new Date().getFullYear()} Z-Shell ZI, Community.`,
-		            },
+					blogTitle: "❮ ZI ❯ Blog",
+					blogDescription: "News, Changes & Updates",
+					postsPerPage: "ALL",
+					feedOptions: {
+						type: "all",
+						copyright: `Copyright © ${new Date().getFullYear()} Z-Shell ZI, Community.`,
+					},
 				},
 				sitemap: {
 					changefreq: "weekly",
-        			priority: 0.5,
-        		},
-        		gtag: {
-        			trackingID: 'G-46BGZ6PZR4',
-          			anonymizeIP: true,
-        		},
-        		/**googleAnalytics: {
-		        	trackingID: 'G-46BGZ6PZR4',
-          			anonymizeIP: true,
-		        },*/
+					priority: 0.5,
+				},
+				gtag: {
+					trackingID: "G-46BGZ6PZR4",
+					anonymizeIP: true,
+				},
+				googleAnalytics: {
+					trackingID: "G-46BGZ6PZR4",
+					anonymizeIP: true,
+				},
 			}),
 		],
 	],
@@ -128,6 +116,7 @@ const config = {
 				appId: "4FTAL4NR6O",
 				apiKey: "9ec9227571a8499464ac9389f1ab1616",
 				indexName: "dev-z-shell",
+				contextualSearch: true,
 			},
 			prism: {
 				theme: require("prism-react-renderer/themes/github"),
@@ -147,8 +136,8 @@ const config = {
 				logo: {
 					alt: "ZI Logo",
 					src: "img/logo.svg",
-			        width: 32,
-        			height: 32,
+					width: 32,
+					height: 32,
 				},
 				items: [
 					{
@@ -207,13 +196,6 @@ const config = {
 				copyright: `Copyright © ${new Date().getFullYear()} Z-Shell ZI, Community.`,
 			},
 		}),
-	/**
-	stylesheets: [
-		{
-			href: "http://mydomain.com/style.css",
-		},
-	],
-	*/
 };
 
 module.exports = config;

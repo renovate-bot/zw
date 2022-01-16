@@ -238,5 +238,9 @@
   "theme.tags.tagsPageTitle": {
     "message": "タグ",
     "description": "The title of the tag list page"
+  },
+  "homepage.button": {
+    "message": "✨ それを機能させ、正しくし、速くしなさい ✨",
+    "description": "The homepage button to wiki introduction"
   }
 }
