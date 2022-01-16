@@ -3,11 +3,31 @@ id: installation
 title: Installation
 sidebar_position: 1
 image: /img/logo.png
-description: Installation guide for Z-Shell ZI
+description: ZI installation guide
+image: /img/logo/501x501.png
 keywords: [installation, zsh, z-shell, zi]
 ---
 
-### Quick install {#quick-install}
+<!-- Notice: This file is ahead of i18n -->
+
+<div align="center">
+  
+[![⚙️ Install Library](https://github.com/z-shell/zi-src/actions/workflows/check-sh.yml/badge.svg?branch=main)](https://github.com/z-shell/zi-src/actions/workflows/check-sh.yml)
+  
+</div>
+
+:::info Available installer links
+
+- [Git.io](https://git.io/get-zi): `https://git.io/get-zi`
+- [GitHub](https:z-shell.pages.dev/i-hub): `https:z-shell.pages.dev/i-hub`
+- [GitLab Mirror](https:z-shell.pages.dev/i-lab): `https:z-shell.pages.dev/i-lab`
+- [Direct](https://raw.githubusercontent.com/z-shell/zi-src/main/lib/sh/install.sh): `https://raw.githubusercontent.com/z-shell/zi-src/main/lib/sh/install.sh`
+
+> Report an [issue](https://github.com/z-shell/zi/issues/new/choose)
+
+:::
+
+## Quick install {#quick-install}
 
 :::tip
 
@@ -18,6 +38,8 @@ sh -c "$(curl -fsSL https://git.io/get-zi)" -- -i skip -b v1.0.0
 ```
 
 :::
+
+Following commands installs and modifies `.zshrc` with the chosen option unless the `.zshrc` file contains command `zi` - then will be skipped.
 
 ```shell
 # Will add minimal configuration
@@ -40,7 +62,7 @@ sh -c "$(curl -fsSL https://git.io/get-zi)" -- -a loader
 sh -c "$(curl -fsSL https://git.io/get-zi)" -- -a ???
 ```
 
-### Manual install {#manual-install}
+## Manual install {#manual-install}
 
 Clone repository:
 
@@ -58,3 +80,7 @@ source "${zi_home}/bin/zi.zsh"
 autoload -Uz _zi
 (( ${+_comps} )) && _comps[zi]=_zi
 ```
+
+## Post install
+
+After installing and reloading the shell (`exec zsh`) compile ZI with `zi self-update`.
