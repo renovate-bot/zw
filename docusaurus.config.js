@@ -46,7 +46,7 @@ const config = {
 				},
 				docs: {
 					sidebarPath: require.resolve("./sidebars.js"),
-					editUrl: "https://github.com/z-shell/z-shell.pages.dev/tree/main/",
+					editUrl: "https://github.com/z-shell/z-shell.pages.dev/tree/develop/",
 					editLocalizedFiles: true,
 					showLastUpdateTime: true,
 					showLastUpdateAuthor: true,
@@ -58,7 +58,7 @@ const config = {
 					rehypePlugins: [katex],
 				},
 				blog: {
-					editUrl: "https://github.com/z-shell/z-shell.pages.dev/tree/main/",
+					editUrl: "https://github.com/z-shell/z-shell.pages.dev/tree/develop/",
 					editLocalizedFiles: true,
 					remarkPlugins: [math, [npm2yarn, {sync: true}]],
 					rehypePlugins: [katex],
