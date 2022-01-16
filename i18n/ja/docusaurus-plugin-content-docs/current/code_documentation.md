@@ -3,6 +3,7 @@ id: code
 title: 🔖 Code documentation
 description: The documentation lists all functions, interactions between them, their comments, and features.
 keywords: [code, documentation, zsh, z-shell, zi]
+custom_edit_url: https://github.com/z-shell/z-shell.pages.dev/blob/main/i18n/ja/docusaurus-plugin-content-docs/current/code_documentation.md
 ---
 
 import APITable from '@site/src/components/APITable';
