@@ -12,7 +12,7 @@
 
 ### Guidelines
 
-**Note**: Any changes made will be crawled `every day at 01:10 am (UTC)` and reflected in the search.
+#### [1]: Any changes made will be crawled `every day at 01:10 am (UTC)` and reflected in the search.
 
 When referring to something that might need additional information - it has to be linked to a search or a specific place in a wiki.
 
@@ -20,6 +20,13 @@ When referring to something that might need additional information - it has to b
   - It is required at least once for the first mentioning on a page.
   - If the link of the first mentioning exists, then it can be ignored.
   - If there is no additional information, when it has to be created and documented.
+
+#### [2]: If any file modified at `docs/` 1 of 2 has to be done: 
+
+- It has to contain comment - `<!-- Out of sync -->`
+- Accordingly apply to files at `i18n/[locale]/docusaurus-plugin-content-docs/current`
+
+When it is reasonable - [crowdin](https://crowdin.com/) will be added for translations.
 
 #### Translations
 
