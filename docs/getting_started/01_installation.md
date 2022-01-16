@@ -34,7 +34,7 @@ sh -c "$(curl -fsSL https://git.io/get-zi)" -- -i skip -b v1.0.0
 
 :::
 
-Following commands installs and modifies `.zshrc` with the chosen option unless the `.zshrc` file contains command `zi` - then will be skipped.
+Following commands installs ZI and modifies `.zshrc` with the chosen option unless the `.zshrc` file contains command `zi` - then will be skipped.
 
 ```shell
 # Will add minimal configuration
