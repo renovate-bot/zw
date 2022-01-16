@@ -21,7 +21,7 @@ zi load z-shell/H-S-MW
 zi light zsh-users/zsh-syntax-highlighting
 ```
 
-上記のコマンドは2通りの基本的なプラグインの読み込み方法です。`load`はレポート(プラグインが何をするかの追跡)を可能にし、`zi report {plugin-name}`で情報を出力でき、`zi unload {plugin-name}`でプラグインをアンロードすることができます。`light`を使うことでトラッキングとレポートを行わないことで大幅に読み込みが早くなり、レポートを表示したりとアンロードを放棄できます。
+上記のコマンドは2通りの基本的なプラグインの読み込み方法です。`load`はレポート(プラグインが何をするかの追跡)を可能にし、`zi report {plugin-name}`で情報を出力でき、`zi unload {plugin-name}`でプラグインをアンロードすることができます。`light`ではトラッキングとレポートを行わないことで大幅に読み込みが早くなり、レポートを表示したりとアンロードを放棄できます。
 
 :::note
 
@@ -76,24 +76,25 @@ ice修飾子では、`"…"`や`'…'`、`$'…'`を指定できます。ice修�
 
 ## as"program" {#asprogram}
 
-A plugin might not be a file for sourcing, but a command to be added to `$PATH`. To obtain this effect, use ice-modifier `as` with value `program` (or an alias value `command`).
+あるプラグインはファイルを読み込むだけではなく、`$PATH`にコマンドを追加するかもしれません。この効果を得るには、ice修飾子`as`とその値に`program`(またはエイリアスの`command`)を指定します。
 
 ```shell
 zi ice as"program" cp"httpstat.sh -> httpstat" pick"httpstat"
 zi light b4b4r07/httpstat
 ```
 
-The above command will add plugin directory to `$PATH`, copy file `httpstat.sh` into `httpstat` and add execution rights (`+x`) to the file selected with `pick`, i.e. to `httpstat`. Another ice-mod exists, `mv`, which works like `cp` but **moves** a file instead of **copying** it. `mv` is ran before `cp`.
+上記のコマンドは`$PATH`にプラグインディレクトリを追加し、`httpstat.sh`を`httpstat`としてコピーして`pick`で選択されたファイル、すなわち`httpstat`へ実行権限(`+x`)を付与します。別のice修飾子`mv`もあり、これは`cp`のように動きますが、ファイルを**コピー**する代わりに`移動`します。`mv`は`cp`より前に動作します。
+
 
 :::tip
 
-The `cp` and `mv` ices (and also as some other ones, like `atclone`) are being run when the plugin or snippet is being _installed_. To test them again first delete the plugin or snippet by `zi delete PZT::modules/osx` (for example).
+ice修飾子`cp`と`mv`(他に`atclone`などもあります)は、プラグインやスニペットがインストールする時に実行されます。それらを再度試したい場合、はじめに`zi delete PZT::modules/osx`などのコマンドでプラグインやスニペットを削除してください。
 
 :::
 
 ## atpull"…" {#atpull}
 
-Copying file is safe for doing later updates – original files of the repository are unmodified and `Git` will report no conflicts. However, `mv` also can be used, if a proper `atpull` (an ice–modifier ran at **update** of plugin) will be used:
+ファイルをコピーしておくことはあとで更新する場合にも安全です。リポジトリの元のファイルは変更されませんし、`Git`もコンフリクトを報告しません。しかし、適切な`atpull`(プラグインの**更新時**に実行されるice修飾子)を使用すれば、`mv`も使用も使用できます。
 
 ```shell
 zi ice as"program" mv"httpstat.sh -> httpstat" \
@@ -101,17 +102,17 @@ zi ice as"program" mv"httpstat.sh -> httpstat" \
 zi light b4b4r07/httpstat
 ```
 
-If `atpull` starts with an exclamation mark, then it will be run before `git pull`, and before `mv`. Nevertheless, `atpull`, `mv`, `cp` are run **only if new commits are to be fetched**. So in summary, when the user runs `zi update b4b4r07/httpstat` to update this plugin, and there are new commits, what happens first is that `git reset --hard` is run – and it **restores** original `httpstat.sh`, **then** `git pull` is ran and it downloads new commits (doing fast-forward), **then** `mv` is running again so that the command is `httpstat` not `httpstat.sh`. This way the `mv` ice can be used to induce permanent changes into the plugin's contents without blocking the ability to update it with `git` (or with `subversion` in case of snippets, more on this below).
+`atpull`が`!`で始まる場合、`git pull`と`mv`の前に実行されます。しかし、`atpull`, `mv`, `cp`は**新しいコミットをフェッチする時にのみ**実行されます。つまり、ユーザがプラグインを更新するために`zi update b4b4r07/httpstat`を実行して、新しいコミットが存在した場合、初めに`git reset --hard`が実行されて、元の`httpstat.sh`が**復元**され、**それから**`git pull`が実行されて新しいコミットをダウンロード(fast-forwardで)し、**次に**`mv`を再び実行してコマンドが`httpstat.sh`ではなく`httpstat`になります。このようにすることで、ice修飾子`mv`では、`git`(スニペットで`subversion`を使用する場合に関しては下記を参照)による更新を妨げることなく永続的にプラグインの更新を取り込むことができます。
 
 :::info
 
-For exclamation mark to not be expanded by Zsh an interactive session, use `'…'` not `"…"` to enclose contents of `atpull` [ice-modifier](/search?q=ice-modifier).
+`!`をZshの対話形式のセッションで展開されないようにするには、`atpull`[ice-modifier](/search?q=ice-modifier)の内容を`"…"`ではなく`'…'`で囲ってください。
 
 :::
 
 ## Snippets as commands {#snippets-as-commands}
 
-Commands can also be added to `$PATH` using **snippets**. For example:
+**スニペット**を使うことで、、`$PATH`にコマンドを追加することもできます。例えば、
 
 ```shell {2,4}
 zi ice mv"httpstat.sh -> httpstat" \
