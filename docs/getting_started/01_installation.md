@@ -2,9 +2,8 @@
 id: installation
 title: Installation
 sidebar_position: 1
-image: /img/logo.png
-description: ZI installation guide
 image: /img/logo/501x501.png
+description: ZI installation guide
 keywords: [installation, zsh, z-shell, zi]
 ---
 
