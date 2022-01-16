@@ -5,6 +5,7 @@ sidebar_position: 2
 image: /img/z-shell_501x501.png
 description: Overview of use cases for Z-Shell ZI
 keywords: [overview, zsh, z-shell, zi]
+custom_edit_url: https://github.com/z-shell/z-shell.pages.dev/blob/main/i18n/ja/docusaurus-plugin-content-docs/current/getting_started/02_overview.md
 ---
 
 この概要では下記に関する基礎を含んでいます:
