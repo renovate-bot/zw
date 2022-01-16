@@ -12,6 +12,8 @@
 
 ### Guidelines
 
+**Note**: Any changes made will be crawled `every day at 01:10 am (UTC)` and reflected in the search.
+
 When referring to something that might need additional information - it has to be linked to a search or a specific place in a wiki.
 
 - `[load plugin](/search/?q=load+plugin)` which will result: [load plugin](https://z-shell.pages.dev/search/?q=load+plugin)). 
