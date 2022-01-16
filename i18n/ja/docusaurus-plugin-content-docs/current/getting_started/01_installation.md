@@ -5,6 +5,7 @@ sidebar_position: 1
 image: /img/logo.png
 description: Installation guide for Z-Shell ZI
 keywords: [installation, zsh, z-shell, zi]
+custom_edit_url: https://github.com/z-shell/z-shell.pages.dev/blob/main/i18n/ja/docusaurus-plugin-content-docs/current/getting_started/01_installation.md
 ---
 
 ### Quick install {#quick-install}
