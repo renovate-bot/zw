@@ -1,5 +1,4 @@
 // @ts-nocheck
-const path = require("path");
 const math = require("remark-math");
 const katex = require("rehype-katex");
 const npm2yarn = require("@docusaurus/remark-plugin-npm2yarn");
