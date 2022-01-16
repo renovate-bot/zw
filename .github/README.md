@@ -1,23 +1,45 @@
-<h2 align="center">
+<h1 align="center">
   <a href="https://github.com/z-shell/zi">
     <img src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="80" height="80">
   </a>
 ❮ ZI ❯ Wiki Pages
-</h2>
+</h1><div align="center">
 
-- [https://z-shell.pages.dev](https://z-shell.pages.dev)
-- [https://z.digitalclouds.dev](https://z.digitalclouds.dev)
+[![Tweet][twitter-badge]][twitter-link] [![Visual Studio Code](https://img.shields.io/badge/--007ACC?logo=visual%20studio%20code&logoColor=ffffff)](https://open.vscode.dev/z-shell/z-shell.pages.dev)
+
+<a href="https://github.com/z-shell/zi/issues/new?assignees=&labels=bug+%F0%9F%90%9E&template=01_bug_report.yml&title=bug%3A+">《 Report an issue 》</a>
+· <a href="https://github.com/z-shell/z-shell.pages.dev/issues/new?assignees=&labels=documentation+%F0%9F%92%A1&template=01_request_documentation.yml&title=feat%3A+">《 Request a documentation 》</a>
+· <a href="https://github.com/z-shell/zi/discussions">《 Ask a Question 》</a>
+</div>
 
 ## Development
 
 ### Guidelines
 
-When referring to something that might need additional information - it has to be linked to a search or a specific place in a wiki.
+> General [contributing guidelines](https://github.com/z-shell/zi/blob/main/docs/CONTRIBUTING.md) for the [Z-Shell](https://github.com/z-shell) organization.
 
-- `[load plugin](/search/?q=load+plugin)` which will result: [load plugin](https://z-shell.pages.dev/search/?q=load+plugin)). 
+#### [1]: Any changes made will be crawled `every day at 01:10 am (UTC)` and reflected in the search.
+
+When referring to something that might need additional information - it has to be linked to a search or a specific place in a wiki e.g:
+
+**Files under** `docs/`: 
+
+- `[load plugin](/search/?q=load+plugin)` - result: [load plugin](https://z-shell.pages.dev/search/?q=load+plugin)), 
+
+**Files under** `i18/[locale]/docusaurus-plugin-content-docs/current`:
+
+- `[ice コマンドは](/ja/search?q=ice+コマンドは)` - result: [ice コマンドは](https://z-shell.pages.dev/ja/search?q=ice+%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AF)), 
+
   - It is required at least once for the first mentioning on a page.
   - If the link of the first mentioning exists, then it can be ignored.
   - If there is no additional information, when it has to be created and documented.
+
+#### [2]: If any file modified at `docs/` 1 of 2 has to be done: 
+
+- It has to contain comment - `<!-- Out of sync -->`
+- Accordingly apply to files at `i18n/[locale]/docusaurus-plugin-content-docs/current`
+
+When it is reasonable - [crowdin](https://crowdin.com/) will be added for translations.
 
 #### Translations
 
@@ -106,3 +128,7 @@ Format:
 [url]
   [name]: [value]
 ```
+
+[twitter-badge]: https://badgen.net/badge/icon/twitter?icon=twitter&label
+[twitter-acc]: https://twitter.com/zshell_zi
+[twitter-link]: https://twitter.com/intent/tweet?text=A%20Swiss%20Army%20Knife%20for%20Zsh%20-%20Unix%20shell%20%20@zshell_zi&url=https://github.com/z-shell/zi&hashtags=zsh,zi,zshell
