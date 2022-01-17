@@ -74,6 +74,6 @@ autoload -Uz _zi
 (( ${+_comps} )) && _comps[zi]=_zi
 ```
 
-## Post install
+## Post install {#post-install}
 
 Reload the shell with `exec zsh` and compile ZI with `zi self-update`.

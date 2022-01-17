@@ -1,0 +1,38 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.🚀 Getting Started": {
+    "message": "🚀 Getting Started",
+    "description": "The label for category 🚀 Getting Started in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.💡 User Guide": {
+    "message": "💡 User Guide",
+    "description": "The label for category 💡 User Guide in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.✨ Gallery of Invocations": {
+    "message": "✨ Gallery of Invocations",
+    "description": "The label for category ✨ Gallery of Invocations in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.📌 Collection": {
+    "message": "📌 Collection",
+    "description": "The label for category 📌 Collection in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🌐 Ecosystem": {
+    "message": "🌐 Ecosystem",
+    "description": "The label for category 🌐 Ecosystem in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.💠 Annexes": {
+    "message": "💠 Annexes",
+    "description": "The label for category 💠 Annexes in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.📦 Packages": {
+    "message": "📦 Packages",
+    "description": "The label for category 📦 Packages in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.⚙️ Plugins & Modules": {
+    "message": "⚙️ Plugins & Modules",
+    "description": "The label for category ⚙️ Plugins & Modules in sidebar tutorialSidebar"
+  }
+}
