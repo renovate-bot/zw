@@ -11,9 +11,9 @@ keywords: [installation, zsh, z-shell, zi]
 
 [![⚙️ Install Library](https://github.com/z-shell/zi-src/actions/workflows/check-sh.yml/badge.svg?branch=main)](https://github.com/z-shell/zi-src/actions/workflows/check-sh.yml)
 
-- Git.io: `https://git.io/get-zi`
-- GitHub: `https:z-shell.pages.dev/i-hub`
-- GitLab Mirror: `https:z-shell.pages.dev/i-lab`
+- [Git.io](https://git.io/get-zi): `https://git.io/get-zi`
+- [GitHub](https://z-shell.pages.dev/i-hub): `https://z-shell.pages.dev/i-hub`
+- [GitLab Mirror](https://z-shell.pages.dev/i-lab): `https://z-shell.pages.dev/i-lab`
 - [Direct](https://raw.githubusercontent.com/z-shell/zi-src/main/lib/sh/install.sh): `https://raw.githubusercontent.com/z-shell/zi-src/main/lib/sh/install.sh`
 
 > Report an [issue](https://github.com/z-shell/zi/issues/new/choose)
