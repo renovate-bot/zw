@@ -12,11 +12,7 @@
 · <a href="https://github.com/z-shell/zi/discussions">《 Ask a Question 》</a>
 </div>
 
-## ✨ Contributors
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are greatly appreciated.
-
-### 🥇 Thanks goes to:
+## 🥇 Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -31,6 +27,8 @@ Contributions are what make the open-source community such an amazing place to l
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are greatly appreciated.
 
 ## Development
 
