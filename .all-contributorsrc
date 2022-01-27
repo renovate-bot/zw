@@ -4,17 +4,6 @@
   ],
   "imageSize": 80,
   "commit": false,
-  "contributors": [
-    {
-      "login": "lunarxlark",
-      "name": "lunarxlark",
-      "avatar_url": "https://avatars.githubusercontent.com/u/18758150?v=4",
-      "profile": "http://lunarxlark.dev",
-      "contributions": [
-        "translation"
-      ]
-    }
-  ],
   "contributorsPerLine": 7,
   "projectName": "z-shell.pages.dev",
   "projectOwner": "z-shell",
