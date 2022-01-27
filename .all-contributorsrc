@@ -1,8 +1,8 @@
 {
   "files": [
-    "README.md"
+    ".github/CONTRIBUTORS.md"
   ],
-  "imageSize": 100,
+  "imageSize": 80,
   "commit": false,
   "contributors": [
     {
@@ -20,5 +20,5 @@
   "projectOwner": "z-shell",
   "repoType": "github",
   "repoHost": "https://github.com",
-  "skipCi": true
+  "skipCi": false
 }
