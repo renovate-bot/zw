@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "lunarxlark",
+      "name": "lunarxlark",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18758150?v=4",
+      "profile": "http://lunarxlark.dev",
+      "contributions": [
+        "translation"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "z-shell.pages.dev",
+  "projectOwner": "z-shell",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
