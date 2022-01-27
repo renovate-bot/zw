@@ -15,4 +15,4 @@ package 📦:
 plugin 🧿:
   - any: ["docs/ecosystem/plugins/*", "i18n/*/docusaurus-plugin-content-docs/current/ecosystem/plugins/*"]
 ci 🤖:
-  - any: [".github/workflows/*.yml"]
+  - any: [".github/workflows/*.yml", ".all-contributorsrc"]
