@@ -28,7 +28,7 @@
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are greatly appreciated.
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any kind of contributions you make will benefit everybody else and are greatly appreciated!
 
 ## Development
 
