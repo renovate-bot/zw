@@ -1,6 +1,7 @@
 {
   "files": [
-    ".github/CONTRIBUTORS.md"
+    ".github/CONTRIBUTORS.md",
+    "CONTRIBUTORS.md"
   ],
   "imageSize": 80,
   "commit": false,
