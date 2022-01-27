@@ -1,6 +1,18 @@
-# Contributing Guidelines
+---
+title: Contributing Guidelines Update
+description: "Contributing is a great way to learn more about social coding on Github, new technologies and and their ecosystems."
+slug: contributing-guidlines-update
+authors:
+  - name: Salvydas Lukosius
+    title: Z-Shell ZI Maintainer
+    url: https://github.com/ss-o
+    image_url: https://github.com/ss-o.png
+tags: [opensource, productivity, github, codenewbie]
+image: /img/logo/501x501.png
+hide_table_of_contents: false
+---
 
-When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
+When contributing, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
 Please note we have a [code of conduct](https://github.com/z-shell/zi/blob/main/docs/CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
 
 ## Knowledge Base
