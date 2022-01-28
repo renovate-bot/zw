@@ -1,9 +1,13 @@
 ---
 id: modules
-title: ⚙️ Modules
+title: '⚙️ Modules'
 image: /img/z-shell_501x501.png
 description: Zsh modules & plugins documentation
-keywords: [modules, zsh, z-shell, zi]
+keywords:
+  - modules
+  - zsh
+  - z-shell
+  - zi
 ---
 
 ## Module [zpmod](https://github.com/z-shell/zpmod) {#module-zpmod}
