@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkzi_wiki_pages=self.webpackChunkzi_wiki_pages||[]).push([[3409],{1701:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/codenewbie","name":"codenewbie","count":1,"permalink":"/blog/tags/codenewbie"}')}}]);
