@@ -38,7 +38,7 @@ The `sbin''` ice that creates forwarder-scripts instead of forwarder-functions (
 
 This way there is no need to add anything to `$PATH` – `z-a-bin-gem-node` will automatically create a function that will wrap the binary and provide it on the command line like if it was being placed in the `$PATH`.
 
-Also, like mentioned in the enumeration, the function can automatically export `$GEM_HOME`, `$NODE_PATH`, `$VIRTUALENV` shell variables and also automatically cd into the plugin or snippet directory right before executing the binary and then cd back to the original directory after the execution is finished.
+Also, like mentioned in the enumeration, the function can automatically export `$GEM_HOME`, `$NODE_PATH`, `$VIRTUALENV` shell variables and also automatically `cd` into the plugin or snippet directory right before executing the binary and then cd back to the original directory after the execution is finished.
 
 Also, like already mentioned, instead of the function an automatically created script – so called `shim` – can be used for the same purpose and with the same functionality, so that the command is being accessible practically fully normally – not only in the live Zsh session (only within which the functions created by `fbin''` exist), but also from any Zsh script.
 
@@ -99,7 +99,7 @@ There are 7 ice modifiers provided and handled by the annex:
 | [`ferc''`](#ferc) | The same as [`fsrc''`](#fscr), but using an alternate script-loading method. |
 
 </APITable>
-
+    
 ### The Ice Modifiers Provided By The Annex in detail {#the-ice-modifiers-provided-by-the-annex-in-detail}
 
 #### `SBIN''` {#sbin}
@@ -139,7 +139,7 @@ fzf "$@"
 - trailing component of the snippet URL,
 - for any alphabetically first executable file.
 
-#### `FBIN''` {#fbin}
+#### `FBIN''`
 
 `fbin'[{g|n|c|N|E|O}:]{path-to-binary}[ -> {name-of-the-function}]; …'`
 
@@ -358,6 +358,7 @@ zi shim-list [-h/--help] [-t|--this-dir] [-i|--from-ices] \
 
 </APITable>
 
+    
 ## Cygwin Support {#cygwin-support}
 
 The `sbin''` ice has an explicit Cygwin support – it creates additional, **extra shim files** – Windows batch scripts that allow to run the shielded applications from e.g.: Windows run dialog – if the `~/.zi/polaris/bin` directory is being added to the Windows `PATH` environment variable, for example (it is a good idea to do so, IMHO). The Windows shims have the same name as the standard ones (which are also being created, normally) plus the `.cmd` extension. You can test the feature by e.g.: installing Firefox from the ZI package via:
