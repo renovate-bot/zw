@@ -123,7 +123,7 @@ zi snippet \
 
 :::tip
 
-Snippets also support `atpull` [ice-modifier](/search?q=ice-modifier), so it’s possible to do e.g. `atpull'!svn revert'`. There’s also `atinit` ice-modfier, executed before each loading of plugin or snippet.
+Snippets also support `atpull` [ice-modifier](/search?q=ice-modifier), so it’s possible to do e.g. `atpull'!svn revert'`. There’s also `atinit` ice-modifier, executed before each loading of plugin or snippet.
 
 :::
 
@@ -160,7 +160,7 @@ zi creinstall zsh-users/zsh-completions # install
 
 :::
 
-To see what completions **all** plugins provide, in tabular formatting and with name of each plugin, use:
+To see what completions **all** plugins provide, in tabular formatting and with the name of each plugin, use:
 
 ```shell
 zini clist
@@ -265,7 +265,7 @@ zi light zsh-users/zsh-autosuggestions
 
 Explanation:
 
-Autosuggestions uses the `precmd` hook, which is being called right after processing `zshrc` – `precmd` hooks are being called **right before displaying each prompt**.
+Autosuggestions use the `precmd` hook, which is being called right after processing `zshrc` – `precmd` hooks are being called **right before displaying each prompt**.
 
 Turbo with the empty `wait` ice will postpone the loading `1` ms after that, so `precmd` will not be called at that first prompt. This makes autosuggestions inactive at the first prompt.
 
@@ -329,7 +329,7 @@ Two prompts, each active in different directories. This technique can be used to
 
 :::note
 
-- The difference with `wait` is that `load` / `unload` are constantly active, not only till first activation.
+- The difference with `wait` is that `load` / `unload` are constantly active, not only till the first activation.
 
 - Note that for the unloading of a plugin to work the plugin needs to be loaded with tracking (so `zi load …`, not `zi light …`). Tracking causes a slight slowdown, however, this doesn’t influence Zsh startup time when using Turbo mode.
 
@@ -337,6 +337,6 @@ Two prompts, each active in different directories. This technique can be used to
 
 :::tip
 
-See: [multiple prompts](../guides/customization#multiple-prompts) for more information. It contains a more real-world examples of a multi-prompt setup, which is being close to what the author uses in his setup.
+See: [multiple prompts](../guides/customization#multiple-prompts) for more information. It contains more real-world examples of a multi-prompt setup, which is being close to what the author uses in his setup.
 
 :::
