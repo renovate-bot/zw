@@ -3,8 +3,12 @@ id: useage
 title: Usage
 sidebar_position: 3
 image: /img/z-shell_501x501.png
-description: Usage examples for Z-Shell ZI
-keywords: [usage, zsh, z-shell, zi]
+description: How to use ZI
+keywords:
+  - how-to-use
+  - zsh
+  - z-shell
+  - zi
 ---
 
 ## Plugins and snippets {#plugins-and-snippets}
@@ -22,7 +26,7 @@ If you want to source local or remote files (using direct URL), you can do so wi
 zi snippet <URL>
 ```
 
-Such lines should be added to `.zshrc`. Snippets are cached locally, use `-f` option to download a fresh version of a snippet, or `zi update {URL}`. Can also use `zi update --all` to update all snippets (and plugins).
+Such lines should be added to `.zshrc`. Snippets are cached locally, use the `-f` option to download a fresh version of a snippet, or `zi update {URL}`. Can also use `zi update --all` to update all snippets (and plugins).
 
 ### Basic example {#basic-example}
 
@@ -58,7 +62,7 @@ zi ice as"command" from"gh-r" \ # `starship` binary as command, from github rele
 zi light starship/starship
 ```
 
-## Upgrade ZI and plugins {#upgrade-zi-and-plugins}
+## Upgrade ZI and plugins
 
 ZI can be updated to `self-update` and plugins to `update`.
 
@@ -173,7 +177,7 @@ zi ice as"program" make'!' atclone'./direnv hook zsh > zhook.zsh' atpull'%atclon
 zi light direnv/direnv
 ```
 
-If you're interested in more examples then check out the [playground repository](https://github.com/z-shell/playground) where users have uploaded their `~/.zshrc` and ZI configurations. Feel free to [submit](https://github.com/z-shell/playground/issues/new?template=request-to-add-zshrc-to-the-zi-configs-repo.md) your `~/.zshrc` there if it contains ZI commands.
+If you're interested in more examples then check out the [playground repository](https://github.com/z-shell/playground) where users have uploaded the `~/.zshrc` and other ZI configurations. Feel free to [submit](https://github.com/z-shell/playground/issues/new?template=request-to-add-zshrc-to-the-zi-configs-repo.md) your `~/.zshrc` there if it contains ZI commands.
 
 For some additional examples you can also check out the:
 
