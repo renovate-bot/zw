@@ -26,6 +26,36 @@ Aliased to the above (improved SEO): [z.digitalclouds.dev](https://z.digitalclou
   - Preview, develop, test branch: **gh-pages**
   - Deploy with: `yarn deploy` -->
 
+## Development
+
+### Guidelines
+
+> General [contributing guidelines](https://github.com/z-shell/zi/blob/main/docs/CONTRIBUTING.md) for the [Z-Shell](https://github.com/z-shell) organization.
+
+#### Any changes made will be crawled `every 2 days at 01:10 am (UTC)` and reflected in the search.
+
+When referring to something that might need additional information - it has to be linked to a search or a specific place in a wiki e.g:
+
+- `[load plugin](/search/?q=load+plugin)` - result: [load plugin](https://z-shell.pages.dev/search/?q=load+plugin)), 
+- `[ice コマンドは](/ja/search?q=ice+コマンドは)` - result: [ice コマンドは](https://z-shell.pages.dev/ja/search?q=ice+%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AF)), 
+
+  - It is required at least once for the first mention on a page.
+  - If the link of the first mentioning exists, then it can be ignored.
+  - If there is no additional information when it has to be created and documented.
+
+#### Translations
+
+**Breaking change:** Do not modify files under `i18n` as it will conflict and will be overwritten.
+
+Translations are handled with [Crowdin](https://docusaurus.io/docs/2.0.0-beta.14/i18n/crowdin), **Google's neural machine translation technology** and **Google Cloud Machine Learning Engine**.
+
+How to translate? Just follow the links below, After a short introduction simply check or vote if you agree with translation with 1 click. To request a new language or additional access just open a new issue to discuss it 🙃. 
+
+Thanks for taking the time to contribute! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are greatly appreciated 💕.
+
+- Translate: [z.digitalclouds.dev/translate](https://z.digitalclouds.dev/translate).
+- Proofreader: [z.digitalclouds.dev/proofreader](https://z.digitalclouds.dev/proofreader).
+
 ## 🥇 Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
@@ -42,36 +72,6 @@ Aliased to the above (improved SEO): [z.digitalclouds.dev](https://z.digitalclou
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any kind of contributions you make will benefit everybody else and are greatly appreciated!
-
-## Development
-
-### Guidelines
-
-> General [contributing guidelines](https://github.com/z-shell/zi/blob/main/docs/CONTRIBUTING.md) for the [Z-Shell](https://github.com/z-shell) organization.
-
-#### [1]: Any changes made will be crawled `every day at 01:10 am (UTC)` and reflected in the search.
-
-When referring to something that might need additional information - it has to be linked to a search or a specific place in a wiki e.g:
-
-**Files under** `docs/`: 
-
-- `[load plugin](/search/?q=load+plugin)` - result: [load plugin](https://z-shell.pages.dev/search/?q=load+plugin)), 
-
-**Files under** `i18/[locale]/docusaurus-plugin-content-docs/current`:
-
-- `[ice コマンドは](/ja/search?q=ice+コマンドは)` - result: [ice コマンドは](https://z-shell.pages.dev/ja/search?q=ice+%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AF)), 
-
-  - It is required at least once for the first mentioning on a page.
-  - If the link of the first mentioning exists, then it can be ignored.
-  - If there is no additional information, when it has to be created and documented.
-
-#### Translations
-
-- [Tutorial](https://docusaurus.io/docs/i18n/tutorial)
-- [Crowdin](https://docusaurus.io/docs/2.0.0-beta.14/i18n/crowdin)
-- [i18n](https://docusaurus.io/docs/i18n/introduction)
 
 ### Installation
 
