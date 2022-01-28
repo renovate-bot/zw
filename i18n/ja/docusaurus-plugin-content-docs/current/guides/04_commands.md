@@ -3,7 +3,7 @@ id: commands
 title: 🛠 Commands
 image: /img/logo/501x501.png
 description: ZI Commands
-keywords: [commands, zsh, z-shell, zi]
+keywords: [コマンド, zsh, z-shell, zi]
 ---
 
 import APITable from '@site/src/components/APITable';
