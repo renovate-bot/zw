@@ -1,8 +1,13 @@
 ---
 id: default-ice
-title: 💠 Default Ice
+title: '💠 Default Ice'
 description: Annex - Default Ice documentation
-keywords: [annex, default-ice, zsh, z-shell, zi]
+keywords:
+  - annex
+  - default-ice
+  - zsh
+  - z-shell
+  - zi
 ---
 
 [Default Ice](https://github.com/z-shell/z-a-default-ice) annex allows setting **default ices** for the next `zi` command.
