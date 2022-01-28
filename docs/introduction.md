@@ -9,8 +9,6 @@ keywords: [introduction, zsh, z-shell, zi]
 
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'
 
-![zi-git-logo](/img/zi-git.png)
-
 <Tabs>
   <TabItem value="gems" label="RubyGems">
 
