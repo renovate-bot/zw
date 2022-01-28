@@ -4,267 +4,302 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/ja/blog',
-    component: ComponentCreator('/ja/blog','9d5'),
+    path: '/__docusaurus/debug',
+    component: ComponentCreator('/__docusaurus/debug','3d6'),
     exact: true
   },
   {
-    path: '/ja/blog/archive',
-    component: ComponentCreator('/ja/blog/archive','708'),
+    path: '/__docusaurus/debug/config',
+    component: ComponentCreator('/__docusaurus/debug/config','914'),
     exact: true
   },
   {
-    path: '/ja/blog/contributing-guidlines-update',
-    component: ComponentCreator('/ja/blog/contributing-guidlines-update','c16'),
+    path: '/__docusaurus/debug/content',
+    component: ComponentCreator('/__docusaurus/debug/content','c28'),
     exact: true
   },
   {
-    path: '/ja/blog/swiss-army-knife-for-zsh',
-    component: ComponentCreator('/ja/blog/swiss-army-knife-for-zsh','c28'),
+    path: '/__docusaurus/debug/globalData',
+    component: ComponentCreator('/__docusaurus/debug/globalData','3cf'),
     exact: true
   },
   {
-    path: '/ja/blog/tags',
-    component: ComponentCreator('/ja/blog/tags','b17'),
+    path: '/__docusaurus/debug/metadata',
+    component: ComponentCreator('/__docusaurus/debug/metadata','31b'),
     exact: true
   },
   {
-    path: '/ja/blog/tags/codenewbie',
-    component: ComponentCreator('/ja/blog/tags/codenewbie','84e'),
+    path: '/__docusaurus/debug/registry',
+    component: ComponentCreator('/__docusaurus/debug/registry','0da'),
     exact: true
   },
   {
-    path: '/ja/blog/tags/github',
-    component: ComponentCreator('/ja/blog/tags/github','836'),
+    path: '/__docusaurus/debug/routes',
+    component: ComponentCreator('/__docusaurus/debug/routes','244'),
     exact: true
   },
   {
-    path: '/ja/blog/tags/opensource',
-    component: ComponentCreator('/ja/blog/tags/opensource','26a'),
+    path: '/blog',
+    component: ComponentCreator('/blog','268'),
     exact: true
   },
   {
-    path: '/ja/blog/tags/productivity',
-    component: ComponentCreator('/ja/blog/tags/productivity','c90'),
+    path: '/blog/archive',
+    component: ComponentCreator('/blog/archive','f4c'),
     exact: true
   },
   {
-    path: '/ja/blog/tags/zsh',
-    component: ComponentCreator('/ja/blog/tags/zsh','374'),
+    path: '/blog/contributing-guidlines-update',
+    component: ComponentCreator('/blog/contributing-guidlines-update','731'),
     exact: true
   },
   {
-    path: '/ja/search',
-    component: ComponentCreator('/ja/search','4b9'),
+    path: '/blog/swiss-army-knife-for-zsh',
+    component: ComponentCreator('/blog/swiss-army-knife-for-zsh','f9a'),
     exact: true
   },
   {
-    path: '/ja/docs',
-    component: ComponentCreator('/ja/docs','bb4'),
+    path: '/blog/tags',
+    component: ComponentCreator('/blog/tags','e13'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/codenewbie',
+    component: ComponentCreator('/blog/tags/codenewbie','3a8'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/github',
+    component: ComponentCreator('/blog/tags/github','42c'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/opensource',
+    component: ComponentCreator('/blog/tags/opensource','37d'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/productivity',
+    component: ComponentCreator('/blog/tags/productivity','a9c'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/zsh',
+    component: ComponentCreator('/blog/tags/zsh','2e2'),
+    exact: true
+  },
+  {
+    path: '/search',
+    component: ComponentCreator('/search','79a'),
+    exact: true
+  },
+  {
+    path: '/docs',
+    component: ComponentCreator('/docs','76b'),
     routes: [
       {
-        path: '/ja/docs/code',
-        component: ComponentCreator('/ja/docs/code','53d'),
+        path: '/docs/code',
+        component: ComponentCreator('/docs/code','7cd'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/ecosystem/annexes',
-        component: ComponentCreator('/ja/docs/ecosystem/annexes','d57'),
+        path: '/docs/ecosystem/annexes',
+        component: ComponentCreator('/docs/ecosystem/annexes','012'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/ecosystem/annexes/bin-gem-node',
-        component: ComponentCreator('/ja/docs/ecosystem/annexes/bin-gem-node','97d'),
+        path: '/docs/ecosystem/annexes/bin-gem-node',
+        component: ComponentCreator('/docs/ecosystem/annexes/bin-gem-node','fcf'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/ecosystem/annexes/default-ice',
-        component: ComponentCreator('/ja/docs/ecosystem/annexes/default-ice','c4a'),
+        path: '/docs/ecosystem/annexes/default-ice',
+        component: ComponentCreator('/docs/ecosystem/annexes/default-ice','c58'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/ecosystem/annexes/meta-plugins',
-        component: ComponentCreator('/ja/docs/ecosystem/annexes/meta-plugins','0e5'),
+        path: '/docs/ecosystem/annexes/meta-plugins',
+        component: ComponentCreator('/docs/ecosystem/annexes/meta-plugins','520'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/ecosystem/annexes/patch-dl',
-        component: ComponentCreator('/ja/docs/ecosystem/annexes/patch-dl','b5b'),
+        path: '/docs/ecosystem/annexes/patch-dl',
+        component: ComponentCreator('/docs/ecosystem/annexes/patch-dl','ff3'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/ecosystem/annexes/readurl',
-        component: ComponentCreator('/ja/docs/ecosystem/annexes/readurl','0e3'),
+        path: '/docs/ecosystem/annexes/readurl',
+        component: ComponentCreator('/docs/ecosystem/annexes/readurl','7ad'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/ecosystem/annexes/rust',
-        component: ComponentCreator('/ja/docs/ecosystem/annexes/rust','9f9'),
+        path: '/docs/ecosystem/annexes/rust',
+        component: ComponentCreator('/docs/ecosystem/annexes/rust','70f'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/ecosystem/annexes/submods',
-        component: ComponentCreator('/ja/docs/ecosystem/annexes/submods','809'),
+        path: '/docs/ecosystem/annexes/submods',
+        component: ComponentCreator('/docs/ecosystem/annexes/submods','124'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/ecosystem/annexes/test',
-        component: ComponentCreator('/ja/docs/ecosystem/annexes/test','55d'),
+        path: '/docs/ecosystem/annexes/test',
+        component: ComponentCreator('/docs/ecosystem/annexes/test','328'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/ecosystem/annexes/unscope',
-        component: ComponentCreator('/ja/docs/ecosystem/annexes/unscope','1c3'),
+        path: '/docs/ecosystem/annexes/unscope',
+        component: ComponentCreator('/docs/ecosystem/annexes/unscope','624'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/ecosystem/packages',
-        component: ComponentCreator('/ja/docs/ecosystem/packages','9ab'),
+        path: '/docs/ecosystem/packages',
+        component: ComponentCreator('/docs/ecosystem/packages','0f8'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/ecosystem/plugins/modules',
-        component: ComponentCreator('/ja/docs/ecosystem/plugins/modules','f82'),
+        path: '/docs/ecosystem/plugins/modules',
+        component: ComponentCreator('/docs/ecosystem/plugins/modules','f71'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/ecosystem/plugins/startify',
-        component: ComponentCreator('/ja/docs/ecosystem/plugins/startify','6b4'),
+        path: '/docs/ecosystem/plugins/startify',
+        component: ComponentCreator('/docs/ecosystem/plugins/startify','bae'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/ecosystem/plugins/zconvey',
-        component: ComponentCreator('/ja/docs/ecosystem/plugins/zconvey','0e5'),
+        path: '/docs/ecosystem/plugins/zconvey',
+        component: ComponentCreator('/docs/ecosystem/plugins/zconvey','104'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/gallery/collection',
-        component: ComponentCreator('/ja/docs/gallery/collection','956'),
+        path: '/docs/gallery/collection',
+        component: ComponentCreator('/docs/gallery/collection','ac8'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/gallery/collection/completions',
-        component: ComponentCreator('/ja/docs/gallery/collection/completions','556'),
+        path: '/docs/gallery/collection/completions',
+        component: ComponentCreator('/docs/gallery/collection/completions','62b'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/gallery/collection/plugins',
-        component: ComponentCreator('/ja/docs/gallery/collection/plugins','703'),
+        path: '/docs/gallery/collection/plugins',
+        component: ComponentCreator('/docs/gallery/collection/plugins','269'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/gallery/collection/programs',
-        component: ComponentCreator('/ja/docs/gallery/collection/programs','b89'),
+        path: '/docs/gallery/collection/programs',
+        component: ComponentCreator('/docs/gallery/collection/programs','1fd'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/gallery/collection/services',
-        component: ComponentCreator('/ja/docs/gallery/collection/services','c79'),
+        path: '/docs/gallery/collection/services',
+        component: ComponentCreator('/docs/gallery/collection/services','576'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/gallery/collection/snippets',
-        component: ComponentCreator('/ja/docs/gallery/collection/snippets','10d'),
+        path: '/docs/gallery/collection/snippets',
+        component: ComponentCreator('/docs/gallery/collection/snippets','64f'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/gallery/collection/themes',
-        component: ComponentCreator('/ja/docs/gallery/collection/themes','026'),
+        path: '/docs/gallery/collection/themes',
+        component: ComponentCreator('/docs/gallery/collection/themes','d5d'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/getting_started/installation',
-        component: ComponentCreator('/ja/docs/getting_started/installation','cdf'),
+        path: '/docs/getting_started/installation',
+        component: ComponentCreator('/docs/getting_started/installation','bfe'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/getting_started/migration',
-        component: ComponentCreator('/ja/docs/getting_started/migration','c32'),
+        path: '/docs/getting_started/migration',
+        component: ComponentCreator('/docs/getting_started/migration','801'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/getting_started/overview',
-        component: ComponentCreator('/ja/docs/getting_started/overview','df3'),
+        path: '/docs/getting_started/overview',
+        component: ComponentCreator('/docs/getting_started/overview','6f9'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/getting_started/useage',
-        component: ComponentCreator('/ja/docs/getting_started/useage','f89'),
+        path: '/docs/getting_started/useage',
+        component: ComponentCreator('/docs/getting_started/useage','ad3'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/guides/benchmark',
-        component: ComponentCreator('/ja/docs/guides/benchmark','cf4'),
+        path: '/docs/guides/benchmark',
+        component: ComponentCreator('/docs/guides/benchmark','a9e'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/guides/commands',
-        component: ComponentCreator('/ja/docs/guides/commands','b99'),
+        path: '/docs/guides/commands',
+        component: ComponentCreator('/docs/guides/commands','5da'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/guides/customization',
-        component: ComponentCreator('/ja/docs/guides/customization','6df'),
+        path: '/docs/guides/customization',
+        component: ComponentCreator('/docs/guides/customization','7f1'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/guides/ice',
-        component: ComponentCreator('/ja/docs/guides/ice','278'),
+        path: '/docs/guides/ice',
+        component: ComponentCreator('/docs/guides/ice','043'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/guides/ice-modifiers',
-        component: ComponentCreator('/ja/docs/guides/ice-modifiers','1ef'),
+        path: '/docs/guides/ice-modifiers',
+        component: ComponentCreator('/docs/guides/ice-modifiers','1d3'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/guides/syntax',
-        component: ComponentCreator('/ja/docs/guides/syntax','944'),
+        path: '/docs/guides/syntax',
+        component: ComponentCreator('/docs/guides/syntax','3a5'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/ja/docs/intro',
-        component: ComponentCreator('/ja/docs/intro','012'),
+        path: '/docs/intro',
+        component: ComponentCreator('/docs/intro','0d3'),
         exact: true,
         'sidebar': "tutorialSidebar"
       }
     ]
   },
   {
-    path: '/ja/',
-    component: ComponentCreator('/ja/','4c9'),
+    path: '/',
+    component: ComponentCreator('/','deb'),
     exact: true
   },
   {

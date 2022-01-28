@@ -1,27 +1,27 @@
 {
-  "permalink": "/ja/blog/contributing-guidlines-update",
+  "permalink": "/blog/contributing-guidlines-update",
   "editUrl": "https://github.com/z-shell/zw/tree/main/blog/2022/01/27/contributing_guidelines_update.md",
   "source": "@site/blog/2022/01/27/contributing_guidelines_update.md",
   "title": "Contributing Guidelines Update",
   "description": "Contributing is a great way to learn more about social coding on Github, new technologies and and their ecosystems.",
   "date": "2022-01-27T00:00:00.000Z",
-  "formattedDate": "2022年1月27日",
+  "formattedDate": "January 27, 2022",
   "tags": [
     {
       "label": "opensource",
-      "permalink": "/ja/blog/tags/opensource"
+      "permalink": "/blog/tags/opensource"
     },
     {
       "label": "productivity",
-      "permalink": "/ja/blog/tags/productivity"
+      "permalink": "/blog/tags/productivity"
     },
     {
       "label": "github",
-      "permalink": "/ja/blog/tags/github"
+      "permalink": "/blog/tags/github"
     },
     {
       "label": "codenewbie",
-      "permalink": "/ja/blog/tags/codenewbie"
+      "permalink": "/blog/tags/codenewbie"
     }
   ],
   "readingTime": 7.555,
@@ -59,6 +59,6 @@
   },
   "nextItem": {
     "title": "A Swiss Army Knife for Zsh - Unix shell",
-    "permalink": "/ja/blog/swiss-army-knife-for-zsh"
+    "permalink": "/blog/swiss-army-knife-for-zsh"
   }
 }

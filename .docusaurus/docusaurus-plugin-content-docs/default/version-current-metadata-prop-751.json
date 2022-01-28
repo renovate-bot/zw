@@ -11,7 +11,7 @@
       {
         "type": "link",
         "label": "🎉 Introduction",
-        "href": "/ja/docs/intro",
+        "href": "/docs/intro",
         "docId": "intro"
       },
       {
@@ -23,25 +23,25 @@
           {
             "type": "link",
             "label": "Installation",
-            "href": "/ja/docs/getting_started/installation",
+            "href": "/docs/getting_started/installation",
             "docId": "getting_started/installation"
           },
           {
             "type": "link",
             "label": "Quick overview",
-            "href": "/ja/docs/getting_started/overview",
+            "href": "/docs/getting_started/overview",
             "docId": "getting_started/overview"
           },
           {
             "type": "link",
             "label": "Usage",
-            "href": "/ja/docs/getting_started/useage",
+            "href": "/docs/getting_started/useage",
             "docId": "getting_started/useage"
           },
           {
             "type": "link",
             "label": "Migration",
-            "href": "/ja/docs/getting_started/migration",
+            "href": "/docs/getting_started/migration",
             "docId": "getting_started/migration"
           }
         ]
@@ -55,37 +55,37 @@
           {
             "type": "link",
             "label": "✍️ Syntax",
-            "href": "/ja/docs/guides/syntax",
+            "href": "/docs/guides/syntax",
             "docId": "guides/syntax"
           },
           {
             "type": "link",
             "label": "🧊 Ice Syntax",
-            "href": "/ja/docs/guides/ice",
+            "href": "/docs/guides/ice",
             "docId": "guides/ice"
           },
           {
             "type": "link",
             "label": "🧊 Ice Modifiers",
-            "href": "/ja/docs/guides/ice-modifiers",
+            "href": "/docs/guides/ice-modifiers",
             "docId": "guides/ice-modifiers"
           },
           {
             "type": "link",
             "label": "🛠 Commands",
-            "href": "/ja/docs/guides/commands",
+            "href": "/docs/guides/commands",
             "docId": "guides/commands"
           },
           {
             "type": "link",
             "label": "Preferences & Customization",
-            "href": "/ja/docs/guides/customization",
+            "href": "/docs/guides/customization",
             "docId": "guides/customization"
           },
           {
             "type": "link",
             "label": "Statistics & Benchmark",
-            "href": "/ja/docs/guides/benchmark",
+            "href": "/docs/guides/benchmark",
             "docId": "guides/benchmark"
           }
         ]
@@ -105,43 +105,43 @@
               {
                 "type": "link",
                 "label": "🔺 Collection Guide",
-                "href": "/ja/docs/gallery/collection",
+                "href": "/docs/gallery/collection",
                 "docId": "gallery/collection/01_1_collection"
               },
               {
                 "type": "link",
                 "label": "🔺 Programs",
-                "href": "/ja/docs/gallery/collection/programs",
+                "href": "/docs/gallery/collection/programs",
                 "docId": "gallery/collection/programs"
               },
               {
                 "type": "link",
                 "label": "🔺 Plugins",
-                "href": "/ja/docs/gallery/collection/plugins",
+                "href": "/docs/gallery/collection/plugins",
                 "docId": "gallery/collection/plugins"
               },
               {
                 "type": "link",
                 "label": "🔺 Themes & Prompts",
-                "href": "/ja/docs/gallery/collection/themes",
+                "href": "/docs/gallery/collection/themes",
                 "docId": "gallery/collection/themes"
               },
               {
                 "type": "link",
                 "label": "🔺 Snippets",
-                "href": "/ja/docs/gallery/collection/snippets",
+                "href": "/docs/gallery/collection/snippets",
                 "docId": "gallery/collection/snippets"
               },
               {
                 "type": "link",
                 "label": "🔺 Completions",
-                "href": "/ja/docs/gallery/collection/completions",
+                "href": "/docs/gallery/collection/completions",
                 "docId": "gallery/collection/completions"
               },
               {
                 "type": "link",
                 "label": "🔺 Services",
-                "href": "/ja/docs/gallery/collection/services",
+                "href": "/docs/gallery/collection/services",
                 "docId": "gallery/collection/services"
               }
             ]
@@ -163,61 +163,61 @@
               {
                 "type": "link",
                 "label": "💠 Quick overview",
-                "href": "/ja/docs/ecosystem/annexes",
+                "href": "/docs/ecosystem/annexes",
                 "docId": "ecosystem/annexes/annexes"
               },
               {
                 "type": "link",
                 "label": "💠 Bin Gem Node",
-                "href": "/ja/docs/ecosystem/annexes/bin-gem-node",
+                "href": "/docs/ecosystem/annexes/bin-gem-node",
                 "docId": "ecosystem/annexes/bin-gem-node"
               },
               {
                 "type": "link",
                 "label": "💠 Meta Plugins",
-                "href": "/ja/docs/ecosystem/annexes/meta-plugins",
+                "href": "/docs/ecosystem/annexes/meta-plugins",
                 "docId": "ecosystem/annexes/meta-plugins"
               },
               {
                 "type": "link",
                 "label": "💠 Default Ice",
-                "href": "/ja/docs/ecosystem/annexes/default-ice",
+                "href": "/docs/ecosystem/annexes/default-ice",
                 "docId": "ecosystem/annexes/default-ice"
               },
               {
                 "type": "link",
                 "label": "💠 Patch DL",
-                "href": "/ja/docs/ecosystem/annexes/patch-dl",
+                "href": "/docs/ecosystem/annexes/patch-dl",
                 "docId": "ecosystem/annexes/patch-dl"
               },
               {
                 "type": "link",
                 "label": "💠 Read URL",
-                "href": "/ja/docs/ecosystem/annexes/readurl",
+                "href": "/docs/ecosystem/annexes/readurl",
                 "docId": "ecosystem/annexes/readurl"
               },
               {
                 "type": "link",
                 "label": "💠 Submods",
-                "href": "/ja/docs/ecosystem/annexes/submods",
+                "href": "/docs/ecosystem/annexes/submods",
                 "docId": "ecosystem/annexes/submods"
               },
               {
                 "type": "link",
                 "label": "💠 Unscope",
-                "href": "/ja/docs/ecosystem/annexes/unscope",
+                "href": "/docs/ecosystem/annexes/unscope",
                 "docId": "ecosystem/annexes/unscope"
               },
               {
                 "type": "link",
                 "label": "💠 Rust",
-                "href": "/ja/docs/ecosystem/annexes/rust",
+                "href": "/docs/ecosystem/annexes/rust",
                 "docId": "ecosystem/annexes/rust"
               },
               {
                 "type": "link",
                 "label": "💠 Test",
-                "href": "/ja/docs/ecosystem/annexes/test",
+                "href": "/docs/ecosystem/annexes/test",
                 "docId": "ecosystem/annexes/test"
               }
             ]
@@ -231,7 +231,7 @@
               {
                 "type": "link",
                 "label": "📦 Quick overview",
-                "href": "/ja/docs/ecosystem/packages",
+                "href": "/docs/ecosystem/packages",
                 "docId": "ecosystem/packages/packages"
               }
             ]
@@ -245,19 +245,19 @@
               {
                 "type": "link",
                 "label": "⚙️ ZConvey",
-                "href": "/ja/docs/ecosystem/plugins/zconvey",
+                "href": "/docs/ecosystem/plugins/zconvey",
                 "docId": "ecosystem/plugins/zconvey"
               },
               {
                 "type": "link",
                 "label": "⚙️ Startify",
-                "href": "/ja/docs/ecosystem/plugins/startify",
+                "href": "/docs/ecosystem/plugins/startify",
                 "docId": "ecosystem/plugins/startify"
               },
               {
                 "type": "link",
                 "label": "⚙️ Modules",
-                "href": "/ja/docs/ecosystem/plugins/modules",
+                "href": "/docs/ecosystem/plugins/modules",
                 "docId": "ecosystem/plugins/modules"
               }
             ]
@@ -267,7 +267,7 @@
       {
         "type": "link",
         "label": "🔖 Code documentation",
-        "href": "/ja/docs/code",
+        "href": "/docs/code",
         "docId": "code"
       }
     ]

@@ -11,7 +11,7 @@ export default {
   "organizationName": "z-shell",
   "projectName": "zw",
   "trailingSlash": false,
-  "baseUrl": "/ja/",
+  "baseUrl": "/",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "throw",
   "favicon": "img/favicon.svg",
@@ -19,7 +19,36 @@ export default {
     "static"
   ],
   "themes": [],
-  "plugins": [],
+  "plugins": [
+    [
+      "@docusaurus/plugin-pwa",
+      {
+        "debug": true,
+        "offlineModeActivationStrategies": [
+          "appInstalled",
+          "standalone",
+          "queryString"
+        ],
+        "pwaHead": [
+          {
+            "tagName": "link",
+            "rel": "icon",
+            "href": "/img/logo.png"
+          },
+          {
+            "tagName": "link",
+            "rel": "manifest",
+            "href": "/manifest.json"
+          },
+          {
+            "tagName": "meta",
+            "name": "theme-color",
+            "content": "rgb(37, 194, 160)"
+          }
+        ]
+      }
+    ]
+  ],
   "i18n": {
     "defaultLocale": "en",
     "locales": [
@@ -33,10 +62,10 @@ export default {
       "classic",
       {
         "theme": {
-          "customCss": "/workspaces/zw/src/css/custom.css"
+          "customCss": "/home/sall/Codespace/zi_workspace/github/z-shell/zw/src/css/custom.css"
         },
         "docs": {
-          "sidebarPath": "/workspaces/zw/sidebars.js",
+          "sidebarPath": "/home/sall/Codespace/zi_workspace/github/z-shell/zw/sidebars.js",
           "editUrl": "https://github.com/z-shell/zw/tree/main/",
           "editLocalizedFiles": true,
           "showLastUpdateTime": true,
