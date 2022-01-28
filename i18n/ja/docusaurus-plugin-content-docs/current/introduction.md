@@ -62,9 +62,7 @@ Install almost everything from [GitHub](https://github.com):
 - Supports [Oh My Zsh](getting_started/overview#oh-my-zsh-prezto) and [Prezto](getting_started/overview#oh-my-zsh-prezto) plugins and libraries ([migration](getting_started/migration)).
 
 - Does not use `$FPATH`, loading multiple plugins doesn't clutter `$FPATH` with the same number of entries (e.g. 10, 15, or more).
-
 - Code is immune to `KSH_ARRAYS` and other options typically causing compatibility problems.
-
 - Do not require `sudo`, and provide many workarounds (e.g: setting so-called **shims** locally).
 
 ## Reports and statistics
