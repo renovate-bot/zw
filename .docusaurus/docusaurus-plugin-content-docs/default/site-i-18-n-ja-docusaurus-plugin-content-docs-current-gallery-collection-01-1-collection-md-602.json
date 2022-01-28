@@ -1,0 +1,39 @@
+{
+  "unversionedId": "gallery/collection/01_1_collection",
+  "id": "gallery/collection/01_1_collection",
+  "title": "🔺 Collection Guide",
+  "description": "The gallery of invocations",
+  "source": "@site/i18n/ja/docusaurus-plugin-content-docs/current/gallery/collection/01_1_collection.md",
+  "sourceDirName": "gallery/collection",
+  "slug": "/gallery/collection",
+  "permalink": "/ja/docs/gallery/collection",
+  "editUrl": "https://github.com/z-shell/zw/tree/main/i18n/ja/docusaurus-plugin-content-docs/current/gallery/collection/01_1_collection.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1642322710,
+  "formattedLastUpdatedAt": "2022/1/16",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "slug": "/gallery/collection",
+    "title": "🔺 Collection Guide",
+    "sidebar_position": 1,
+    "image": "/img/z-shell_501x501.png",
+    "description": "The gallery of invocations",
+    "keywords": [
+      "collection",
+      "zsh",
+      "z-shell",
+      "zi"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Statistics & Benchmark",
+    "permalink": "/ja/docs/guides/benchmark"
+  },
+  "next": {
+    "title": "🔺 Programs",
+    "permalink": "/ja/docs/gallery/collection/programs"
+  }
+}

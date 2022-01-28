@@ -39,7 +39,7 @@
   color: fbca04
   description: "Change in project dependencies."
 
-- name: "Fix ⚡"
+- name: "fix ⚡"
   color: f510f4
   description: "Has been fixed and is therefore considered resolved."
 - name: "triage 📑"

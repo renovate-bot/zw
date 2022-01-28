@@ -1,0 +1,39 @@
+{
+  "unversionedId": "guides/benchmark",
+  "id": "guides/benchmark",
+  "title": "Statistics & Benchmark",
+  "description": "Benchamarking and profiling for Z-Shell ZI",
+  "source": "@site/docs/guides/06_benchmark.md",
+  "sourceDirName": "guides",
+  "slug": "/guides/benchmark",
+  "permalink": "/docs/guides/benchmark",
+  "editUrl": "https://github.com/z-shell/zw/tree/main/docs/guides/06_benchmark.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1642151914,
+  "formattedLastUpdatedAt": "1/14/2022",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "id": "benchmark",
+    "title": "Statistics & Benchmark",
+    "image": "/img/logo.png",
+    "description": "Benchamarking and profiling for Z-Shell ZI",
+    "keywords": [
+      "statistics",
+      "benchmark",
+      "zsh",
+      "z-shell",
+      "zi"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Preferences & Customization",
+    "permalink": "/docs/guides/customization"
+  },
+  "next": {
+    "title": "🔺 Collection Guide",
+    "permalink": "/docs/gallery/collection"
+  }
+}

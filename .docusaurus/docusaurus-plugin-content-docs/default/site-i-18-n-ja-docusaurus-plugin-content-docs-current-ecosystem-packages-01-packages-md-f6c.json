@@ -1,0 +1,39 @@
+{
+  "unversionedId": "ecosystem/packages/packages",
+  "id": "ecosystem/packages/packages",
+  "title": "📦 Quick overview",
+  "description": "Packages documentation",
+  "source": "@site/i18n/ja/docusaurus-plugin-content-docs/current/ecosystem/packages/01_packages.md",
+  "sourceDirName": "ecosystem/packages",
+  "slug": "/ecosystem/packages",
+  "permalink": "/ja/docs/ecosystem/packages",
+  "editUrl": "https://github.com/z-shell/zw/tree/main/i18n/ja/docusaurus-plugin-content-docs/current/ecosystem/packages/01_packages.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1642322710,
+  "formattedLastUpdatedAt": "2022/1/16",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "packages",
+    "slug": "/ecosystem/packages",
+    "title": "📦 Quick overview",
+    "image": "/img/logo/501x501.png",
+    "description": "Packages documentation",
+    "keywords": [
+      "package",
+      "zsh",
+      "z-shell",
+      "zi"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "💠 Test",
+    "permalink": "/ja/docs/ecosystem/annexes/test"
+  },
+  "next": {
+    "title": "⚙️ ZConvey",
+    "permalink": "/ja/docs/ecosystem/plugins/zconvey"
+  }
+}

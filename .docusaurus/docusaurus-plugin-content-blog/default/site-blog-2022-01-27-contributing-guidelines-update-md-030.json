@@ -1,0 +1,64 @@
+{
+  "permalink": "/ja/blog/contributing-guidlines-update",
+  "editUrl": "https://github.com/z-shell/zw/tree/main/blog/2022/01/27/contributing_guidelines_update.md",
+  "source": "@site/blog/2022/01/27/contributing_guidelines_update.md",
+  "title": "Contributing Guidelines Update",
+  "description": "Contributing is a great way to learn more about social coding on Github, new technologies and and their ecosystems.",
+  "date": "2022-01-27T00:00:00.000Z",
+  "formattedDate": "2022年1月27日",
+  "tags": [
+    {
+      "label": "opensource",
+      "permalink": "/ja/blog/tags/opensource"
+    },
+    {
+      "label": "productivity",
+      "permalink": "/ja/blog/tags/productivity"
+    },
+    {
+      "label": "github",
+      "permalink": "/ja/blog/tags/github"
+    },
+    {
+      "label": "codenewbie",
+      "permalink": "/ja/blog/tags/codenewbie"
+    }
+  ],
+  "readingTime": 7.555,
+  "truncated": false,
+  "authors": [
+    {
+      "name": "Salvydas Lukosius",
+      "title": "Z-Shell ZI Maintainer",
+      "url": "https://github.com/ss-o",
+      "image_url": "https://github.com/ss-o.png",
+      "imageURL": "https://github.com/ss-o.png"
+    }
+  ],
+  "frontMatter": {
+    "title": "Contributing Guidelines Update",
+    "description": "Contributing is a great way to learn more about social coding on Github, new technologies and and their ecosystems.",
+    "slug": "contributing-guidlines-update",
+    "authors": [
+      {
+        "name": "Salvydas Lukosius",
+        "title": "Z-Shell ZI Maintainer",
+        "url": "https://github.com/ss-o",
+        "image_url": "https://github.com/ss-o.png",
+        "imageURL": "https://github.com/ss-o.png"
+      }
+    ],
+    "tags": [
+      "opensource",
+      "productivity",
+      "github",
+      "codenewbie"
+    ],
+    "image": "/img/logo/501x501.png",
+    "hide_table_of_contents": false
+  },
+  "nextItem": {
+    "title": "A Swiss Army Knife for Zsh - Unix shell",
+    "permalink": "/ja/blog/swiss-army-knife-for-zsh"
+  }
+}

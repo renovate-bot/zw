@@ -1,0 +1,37 @@
+{
+  "unversionedId": "ecosystem/annexes/rust",
+  "id": "ecosystem/annexes/rust",
+  "title": "💠 Rust",
+  "description": "Annex - Rust documentation",
+  "source": "@site/docs/ecosystem/annexes/01_8_rust.md",
+  "sourceDirName": "ecosystem/annexes",
+  "slug": "/ecosystem/annexes/rust",
+  "permalink": "/docs/ecosystem/annexes/rust",
+  "editUrl": "https://github.com/z-shell/zw/tree/main/docs/ecosystem/annexes/01_8_rust.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1641761287,
+  "formattedLastUpdatedAt": "1/9/2022",
+  "frontMatter": {
+    "id": "rust",
+    "title": "💠 Rust",
+    "description": "Annex - Rust documentation",
+    "keywords": [
+      "annex",
+      "rust",
+      "zsh",
+      "z-shell",
+      "zi"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "💠 Unscope",
+    "permalink": "/docs/ecosystem/annexes/unscope"
+  },
+  "next": {
+    "title": "💠 Test",
+    "permalink": "/docs/ecosystem/annexes/test"
+  }
+}

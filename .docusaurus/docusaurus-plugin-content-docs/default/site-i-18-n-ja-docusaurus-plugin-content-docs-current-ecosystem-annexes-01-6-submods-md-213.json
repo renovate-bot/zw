@@ -1,0 +1,37 @@
+{
+  "unversionedId": "ecosystem/annexes/submods",
+  "id": "ecosystem/annexes/submods",
+  "title": "💠 Submods",
+  "description": "Annex - Submods documentation",
+  "source": "@site/i18n/ja/docusaurus-plugin-content-docs/current/ecosystem/annexes/01_6_submods.md",
+  "sourceDirName": "ecosystem/annexes",
+  "slug": "/ecosystem/annexes/submods",
+  "permalink": "/ja/docs/ecosystem/annexes/submods",
+  "editUrl": "https://github.com/z-shell/zw/tree/main/i18n/ja/docusaurus-plugin-content-docs/current/ecosystem/annexes/01_6_submods.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1642322710,
+  "formattedLastUpdatedAt": "2022/1/16",
+  "frontMatter": {
+    "id": "submods",
+    "title": "💠 Submods",
+    "description": "Annex - Submods documentation",
+    "keywords": [
+      "annex",
+      "submods",
+      "zsh",
+      "z-shell",
+      "zi"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "💠 Read URL",
+    "permalink": "/ja/docs/ecosystem/annexes/readurl"
+  },
+  "next": {
+    "title": "💠 Unscope",
+    "permalink": "/ja/docs/ecosystem/annexes/unscope"
+  }
+}

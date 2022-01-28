@@ -1,0 +1,39 @@
+{
+  "unversionedId": "gallery/collection/plugins",
+  "id": "gallery/collection/plugins",
+  "title": "🔺 Plugins",
+  "description": "Plugins Collection",
+  "source": "@site/i18n/ja/docusaurus-plugin-content-docs/current/gallery/collection/01_3_plugins.md",
+  "sourceDirName": "gallery/collection",
+  "slug": "/gallery/collection/plugins",
+  "permalink": "/ja/docs/gallery/collection/plugins",
+  "editUrl": "https://github.com/z-shell/zw/tree/main/i18n/ja/docusaurus-plugin-content-docs/current/gallery/collection/01_3_plugins.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1642322710,
+  "formattedLastUpdatedAt": "2022/1/16",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "plugins",
+    "title": "🔺 Plugins",
+    "sidebar_position": 3,
+    "description": "Plugins Collection",
+    "keywords": [
+      "collection",
+      "plugins",
+      "zsh",
+      "z-shell",
+      "zi"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🔺 Programs",
+    "permalink": "/ja/docs/gallery/collection/programs"
+  },
+  "next": {
+    "title": "🔺 Themes & Prompts",
+    "permalink": "/ja/docs/gallery/collection/themes"
+  }
+}

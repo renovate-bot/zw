@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkzi_wiki_pages=self.webpackChunkzi_wiki_pages||[]).push([[8225],{2043:function(e){e.exports=JSON.parse('{"allTagsPath":"/ja/blog/tags","slug":"/ja/blog/tags/opensource","name":"opensource","count":2,"permalink":"/ja/blog/tags/opensource"}')}}]);

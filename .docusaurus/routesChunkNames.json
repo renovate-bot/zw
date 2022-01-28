@@ -1,0 +1,236 @@
+{
+  "/ja/blog-9d5": {
+    "component": "a6aa9e1f",
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "c209a9a5"
+      },
+      {
+        "content": "4f649d07"
+      }
+    ],
+    "metadata": "1ae33c86"
+  },
+  "/ja/blog/archive-708": {
+    "component": "9e4087bc",
+    "archive": "cc7922b4"
+  },
+  "/ja/blog/contributing-guidlines-update-c16": {
+    "component": "ccc49370",
+    "sidebar": "814f3328",
+    "content": "0306296d"
+  },
+  "/ja/blog/swiss-army-knife-for-zsh-c28": {
+    "component": "ccc49370",
+    "sidebar": "814f3328",
+    "content": "352f0e19"
+  },
+  "/ja/blog/tags-b17": {
+    "component": "01a85c17",
+    "sidebar": "814f3328",
+    "tags": "9d1be773"
+  },
+  "/ja/blog/tags/codenewbie-84e": {
+    "component": "6875c492",
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "c209a9a5"
+      }
+    ],
+    "metadata": "a0121d2b"
+  },
+  "/ja/blog/tags/github-836": {
+    "component": "6875c492",
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "c209a9a5"
+      },
+      {
+        "content": "4f649d07"
+      }
+    ],
+    "metadata": "ea4b46e4"
+  },
+  "/ja/blog/tags/opensource-26a": {
+    "component": "6875c492",
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "c209a9a5"
+      },
+      {
+        "content": "4f649d07"
+      }
+    ],
+    "metadata": "edebaba4"
+  },
+  "/ja/blog/tags/productivity-c90": {
+    "component": "6875c492",
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "c209a9a5"
+      },
+      {
+        "content": "4f649d07"
+      }
+    ],
+    "metadata": "293c9807"
+  },
+  "/ja/blog/tags/zsh-374": {
+    "component": "6875c492",
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "4f649d07"
+      }
+    ],
+    "metadata": "24694f58"
+  },
+  "/ja/search-4b9": {
+    "component": "1a4e3797"
+  },
+  "/ja/docs-bb4": {
+    "component": "1be78505",
+    "versionMetadata": "935f2afb"
+  },
+  "/ja/docs/code-53d": {
+    "component": "17896441",
+    "content": "88186957"
+  },
+  "/ja/docs/ecosystem/annexes-d57": {
+    "component": "17896441",
+    "content": "22f57663"
+  },
+  "/ja/docs/ecosystem/annexes/bin-gem-node-97d": {
+    "component": "17896441",
+    "content": "4af1ab5b"
+  },
+  "/ja/docs/ecosystem/annexes/default-ice-c4a": {
+    "component": "17896441",
+    "content": "e3c91486"
+  },
+  "/ja/docs/ecosystem/annexes/meta-plugins-0e5": {
+    "component": "17896441",
+    "content": "d7d0c6f1"
+  },
+  "/ja/docs/ecosystem/annexes/patch-dl-b5b": {
+    "component": "17896441",
+    "content": "da21c5a9"
+  },
+  "/ja/docs/ecosystem/annexes/readurl-0e3": {
+    "component": "17896441",
+    "content": "c81d0b50"
+  },
+  "/ja/docs/ecosystem/annexes/rust-9f9": {
+    "component": "17896441",
+    "content": "7c5f6824"
+  },
+  "/ja/docs/ecosystem/annexes/submods-809": {
+    "component": "17896441",
+    "content": "213af22f"
+  },
+  "/ja/docs/ecosystem/annexes/test-55d": {
+    "component": "17896441",
+    "content": "60c6da36"
+  },
+  "/ja/docs/ecosystem/annexes/unscope-1c3": {
+    "component": "17896441",
+    "content": "523befd5"
+  },
+  "/ja/docs/ecosystem/packages-9ab": {
+    "component": "17896441",
+    "content": "f6cea0fe"
+  },
+  "/ja/docs/ecosystem/plugins/modules-f82": {
+    "component": "17896441",
+    "content": "78c7c0d9"
+  },
+  "/ja/docs/ecosystem/plugins/startify-6b4": {
+    "component": "17896441",
+    "content": "278872cf"
+  },
+  "/ja/docs/ecosystem/plugins/zconvey-0e5": {
+    "component": "17896441",
+    "content": "66999549"
+  },
+  "/ja/docs/gallery/collection-956": {
+    "component": "17896441",
+    "content": "60219570"
+  },
+  "/ja/docs/gallery/collection/completions-556": {
+    "component": "17896441",
+    "content": "a8f0dd14"
+  },
+  "/ja/docs/gallery/collection/plugins-703": {
+    "component": "17896441",
+    "content": "c8e10b55"
+  },
+  "/ja/docs/gallery/collection/programs-b89": {
+    "component": "17896441",
+    "content": "ca2632ee"
+  },
+  "/ja/docs/gallery/collection/services-c79": {
+    "component": "17896441",
+    "content": "7d83fb32"
+  },
+  "/ja/docs/gallery/collection/snippets-10d": {
+    "component": "17896441",
+    "content": "b9cae849"
+  },
+  "/ja/docs/gallery/collection/themes-026": {
+    "component": "17896441",
+    "content": "77977f7f"
+  },
+  "/ja/docs/getting_started/installation-cdf": {
+    "component": "17896441",
+    "content": "f94dcadb"
+  },
+  "/ja/docs/getting_started/migration-c32": {
+    "component": "17896441",
+    "content": "fbd81cf0"
+  },
+  "/ja/docs/getting_started/overview-df3": {
+    "component": "17896441",
+    "content": "407dc586"
+  },
+  "/ja/docs/getting_started/useage-f89": {
+    "component": "17896441",
+    "content": "d09d838d"
+  },
+  "/ja/docs/guides/benchmark-cf4": {
+    "component": "17896441",
+    "content": "59e3921b"
+  },
+  "/ja/docs/guides/commands-b99": {
+    "component": "17896441",
+    "content": "c0d0fae7"
+  },
+  "/ja/docs/guides/customization-6df": {
+    "component": "17896441",
+    "content": "2210623c"
+  },
+  "/ja/docs/guides/ice-278": {
+    "component": "17896441",
+    "content": "2568216f"
+  },
+  "/ja/docs/guides/ice-modifiers-1ef": {
+    "component": "17896441",
+    "content": "3156fac8"
+  },
+  "/ja/docs/guides/syntax-944": {
+    "component": "17896441",
+    "content": "970a481e"
+  },
+  "/ja/docs/intro-012": {
+    "component": "17896441",
+    "content": "a7be5cf0"
+  },
+  "/ja/-4c9": {
+    "component": "c4f5d8e4",
+    "config": "5e9f5e1a"
+  }
+}

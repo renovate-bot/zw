@@ -1,0 +1,37 @@
+{
+  "unversionedId": "ecosystem/annexes/patch-dl",
+  "id": "ecosystem/annexes/patch-dl",
+  "title": "💠 Patch DL",
+  "description": "Annex - Patch DL documentation",
+  "source": "@site/docs/ecosystem/annexes/01_4_patch-dl.md",
+  "sourceDirName": "ecosystem/annexes",
+  "slug": "/ecosystem/annexes/patch-dl",
+  "permalink": "/docs/ecosystem/annexes/patch-dl",
+  "editUrl": "https://github.com/z-shell/zw/tree/main/docs/ecosystem/annexes/01_4_patch-dl.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1641761287,
+  "formattedLastUpdatedAt": "1/9/2022",
+  "frontMatter": {
+    "id": "patch-dl",
+    "title": "💠 Patch DL",
+    "description": "Annex - Patch DL documentation",
+    "keywords": [
+      "annex",
+      "patch-dl",
+      "zsh",
+      "z-shell",
+      "zi"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "💠 Default Ice",
+    "permalink": "/docs/ecosystem/annexes/default-ice"
+  },
+  "next": {
+    "title": "💠 Read URL",
+    "permalink": "/docs/ecosystem/annexes/readurl"
+  }
+}

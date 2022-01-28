@@ -1,0 +1,39 @@
+{
+  "unversionedId": "guides/ice",
+  "id": "guides/ice",
+  "title": "🧊 Ice Syntax",
+  "description": "Ice syntax documentation",
+  "source": "@site/i18n/ja/docusaurus-plugin-content-docs/current/guides/02_ice.md",
+  "sourceDirName": "guides",
+  "slug": "/guides/ice",
+  "permalink": "/ja/docs/guides/ice",
+  "editUrl": "https://github.com/z-shell/zw/tree/main/i18n/ja/docusaurus-plugin-content-docs/current/guides/02_ice.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1642322710,
+  "formattedLastUpdatedAt": "2022/1/16",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "ice",
+    "title": "🧊 Ice Syntax",
+    "image": "/img/include/ice-239x200.png",
+    "description": "Ice syntax documentation",
+    "keywords": [
+      "ice",
+      "syntax",
+      "zsh",
+      "z-shell",
+      "zi"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "✍️ Syntax",
+    "permalink": "/ja/docs/guides/syntax"
+  },
+  "next": {
+    "title": "🧊 Ice Modifiers",
+    "permalink": "/ja/docs/guides/ice-modifiers"
+  }
+}

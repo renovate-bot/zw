@@ -147,6 +147,7 @@ Creates a wrapper function of the name the same as the last segment of the path 
 
 <APITable>
 
+
 | Flag | Description |
 | :-- | :-- |
 | `g` | Set `$GEM_HOME` variable to `{plugin-dir}`. |
@@ -156,6 +157,7 @@ Creates a wrapper function of the name the same as the last segment of the path 
 | `N` |  Append `&>/dev/null` to the call of the binary, i.e. redirect both standard output and standard error to `/dev/null`. |
 | `E` |  Append `2>/dev/null` to the call of the binary, i.e. redirect standard error to `/dev/null`. |
 | `O` |  Append `>/dev/null` to the call of the binary, i.e. redirect standard output to `/dev/null`. |
+
 
 </APITable>
 
@@ -360,7 +362,9 @@ zi shim-list [-h/--help] [-t|--this-dir] [-i|--from-ices] \
 
 ## Cygwin Support
 
-The `sbin''` ice has an explicit Cygwin support – it creates additional, **extra shim files** – Windows batch scripts that allow to run the shielded applications from e.g.: Windows run dialog – if the `~/.zi/polaris/bin` directory is being added to the Windows `PATH` environment variable, for example (it is a good idea to do so, IMHO). The Windows shims have the same name as the standard ones (which are also being created, normally) plus the `.cmd` extension. You can test the feature by e.g.: installing Firefox from the ZI package via:
+The `sbin''` ice has an explicit Cygwin support
+  – it creates additional, **extra shim files** – Windows batch scripts that allow to run the shielded applications from e.g.: Windows run dialog
+  – if the `~/.zi/polaris/bin` directory is being added to the Windows `PATH` environment variable, for example (it is a good idea to do so, IMHO). The Windows shims have the same name as the standard ones (which are also being created, normally) plus the `.cmd` extension. You can test the feature by e.g.: installing Firefox from the ZI package via:
 
 ```shell
 zi pack=bgn for firefox

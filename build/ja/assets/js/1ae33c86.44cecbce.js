@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkzi_wiki_pages=self.webpackChunkzi_wiki_pages||[]).push([[9819],{5215:function(e){e.exports=JSON.parse('{"permalink":"/ja/blog","page":1,"postsPerPage":2,"totalPages":1,"totalCount":2,"previousPage":null,"nextPage":null,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
