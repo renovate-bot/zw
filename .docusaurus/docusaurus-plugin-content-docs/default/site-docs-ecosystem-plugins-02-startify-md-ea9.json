@@ -1,0 +1,39 @@
+{
+  "unversionedId": "ecosystem/plugins/startify",
+  "id": "ecosystem/plugins/startify",
+  "title": "⚙️ Startify",
+  "description": "Zsh Plugin Startify documentation",
+  "source": "@site/docs/ecosystem/plugins/02_startify.md",
+  "sourceDirName": "ecosystem/plugins",
+  "slug": "/ecosystem/plugins/startify",
+  "permalink": "/docs/ecosystem/plugins/startify",
+  "editUrl": "https://github.com/z-shell/zw/tree/main/docs/ecosystem/plugins/02_startify.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1642376565,
+  "formattedLastUpdatedAt": "1/16/2022",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "startify",
+    "title": "⚙️ Startify",
+    "image": "/img/z-shell_501x501.png",
+    "description": "Zsh Plugin Startify documentation",
+    "keywords": [
+      "startify",
+      "plugin",
+      "zsh",
+      "z-shell",
+      "zi"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "⚙️ ZConvey",
+    "permalink": "/docs/ecosystem/plugins/zconvey"
+  },
+  "next": {
+    "title": "⚙️ Modules",
+    "permalink": "/docs/ecosystem/plugins/modules"
+  }
+}

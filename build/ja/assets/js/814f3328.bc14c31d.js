@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkzi_wiki_pages=self.webpackChunkzi_wiki_pages||[]).push([[2535],{5641:function(i){i.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Contributing Guidelines Update","permalink":"/ja/blog/contributing-guidlines-update"},{"title":"A Swiss Army Knife for Zsh - Unix shell","permalink":"/ja/blog/swiss-army-knife-for-zsh"}]}')}}]);

@@ -1,0 +1,37 @@
+{
+  "unversionedId": "ecosystem/annexes/meta-plugins",
+  "id": "ecosystem/annexes/meta-plugins",
+  "title": "💠 Meta Plugins",
+  "description": "Annex - meta plugins documentation",
+  "source": "@site/docs/ecosystem/annexes/01_2_meta_plugins.md",
+  "sourceDirName": "ecosystem/annexes",
+  "slug": "/ecosystem/annexes/meta-plugins",
+  "permalink": "/docs/ecosystem/annexes/meta-plugins",
+  "editUrl": "https://github.com/z-shell/zw/tree/main/docs/ecosystem/annexes/01_2_meta_plugins.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1642012936,
+  "formattedLastUpdatedAt": "1/12/2022",
+  "frontMatter": {
+    "id": "meta-plugins",
+    "title": "💠 Meta Plugins",
+    "description": "Annex - meta plugins documentation",
+    "keywords": [
+      "annex",
+      "meta-plugins",
+      "zsh",
+      "z-shell",
+      "zi"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "💠 Bin Gem Node",
+    "permalink": "/docs/ecosystem/annexes/bin-gem-node"
+  },
+  "next": {
+    "title": "💠 Default Ice",
+    "permalink": "/docs/ecosystem/annexes/default-ice"
+  }
+}

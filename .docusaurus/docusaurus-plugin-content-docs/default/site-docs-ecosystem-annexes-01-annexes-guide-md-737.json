@@ -1,0 +1,40 @@
+{
+  "unversionedId": "ecosystem/annexes/annexes",
+  "id": "ecosystem/annexes/annexes",
+  "title": "💠 Quick overview",
+  "description": "Annexes documentation",
+  "source": "@site/docs/ecosystem/annexes/01_annexes_guide.md",
+  "sourceDirName": "ecosystem/annexes",
+  "slug": "/ecosystem/annexes",
+  "permalink": "/docs/ecosystem/annexes",
+  "editUrl": "https://github.com/z-shell/zw/tree/main/docs/ecosystem/annexes/01_annexes_guide.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1642186903,
+  "formattedLastUpdatedAt": "1/14/2022",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "annexes",
+    "slug": "/ecosystem/annexes",
+    "sidebar_position": 1,
+    "title": "💠 Quick overview",
+    "image": "https://github.com/z-shell.png",
+    "description": "Annexes documentation",
+    "keywords": [
+      "annex",
+      "zsh",
+      "z-shell",
+      "zi"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🔺 Services",
+    "permalink": "/docs/gallery/collection/services"
+  },
+  "next": {
+    "title": "💠 Bin Gem Node",
+    "permalink": "/docs/ecosystem/annexes/bin-gem-node"
+  }
+}

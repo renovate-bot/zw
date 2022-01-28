@@ -1,0 +1,39 @@
+{
+  "unversionedId": "guides/customization",
+  "id": "guides/customization",
+  "title": "Preferences & Customization",
+  "description": "User Preferences & Customization",
+  "source": "@site/i18n/ja/docusaurus-plugin-content-docs/current/guides/05_customization.md",
+  "sourceDirName": "guides",
+  "slug": "/guides/customization",
+  "permalink": "/ja/docs/guides/customization",
+  "editUrl": "https://github.com/z-shell/zw/tree/main/i18n/ja/docusaurus-plugin-content-docs/current/guides/05_customization.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1642322710,
+  "formattedLastUpdatedAt": "2022/1/16",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "customization",
+    "title": "Preferences & Customization",
+    "image": "https://github.com/z-shell.png",
+    "description": "User Preferences & Customization",
+    "keywords": [
+      "customization",
+      "preferences",
+      "zsh",
+      "z-shell",
+      "zi"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🛠 Commands",
+    "permalink": "/ja/docs/guides/commands"
+  },
+  "next": {
+    "title": "Statistics & Benchmark",
+    "permalink": "/ja/docs/guides/benchmark"
+  }
+}

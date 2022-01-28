@@ -1,0 +1,37 @@
+{
+  "unversionedId": "ecosystem/annexes/readurl",
+  "id": "ecosystem/annexes/readurl",
+  "title": "💠 Read URL",
+  "description": "Annex - Read URL documentation",
+  "source": "@site/docs/ecosystem/annexes/01_5_readurl.md",
+  "sourceDirName": "ecosystem/annexes",
+  "slug": "/ecosystem/annexes/readurl",
+  "permalink": "/docs/ecosystem/annexes/readurl",
+  "editUrl": "https://github.com/z-shell/zw/tree/main/docs/ecosystem/annexes/01_5_readurl.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1641761287,
+  "formattedLastUpdatedAt": "1/9/2022",
+  "frontMatter": {
+    "id": "readurl",
+    "title": "💠 Read URL",
+    "description": "Annex - Read URL documentation",
+    "keywords": [
+      "annex",
+      "readurl",
+      "zsh",
+      "z-shell",
+      "zi"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "💠 Patch DL",
+    "permalink": "/docs/ecosystem/annexes/patch-dl"
+  },
+  "next": {
+    "title": "💠 Submods",
+    "permalink": "/docs/ecosystem/annexes/submods"
+  }
+}

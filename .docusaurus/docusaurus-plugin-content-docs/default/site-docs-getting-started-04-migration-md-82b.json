@@ -1,0 +1,39 @@
+{
+  "unversionedId": "getting_started/migration",
+  "id": "getting_started/migration",
+  "title": "Migration",
+  "description": "Migration to ZI",
+  "source": "@site/docs/getting_started/04_migration.md",
+  "sourceDirName": "getting_started",
+  "slug": "/getting_started/migration",
+  "permalink": "/docs/getting_started/migration",
+  "editUrl": "https://github.com/z-shell/zw/tree/main/docs/getting_started/04_migration.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1643341372,
+  "formattedLastUpdatedAt": "1/28/2022",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "migration",
+    "title": "Migration",
+    "sidebar_position": 4,
+    "image": "/img/z-shell_501x501.png",
+    "description": "Migration to ZI",
+    "keywords": [
+      "migration",
+      "zsh",
+      "z-shell",
+      "zi"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Usage",
+    "permalink": "/docs/getting_started/useage"
+  },
+  "next": {
+    "title": "✍️ Syntax",
+    "permalink": "/docs/guides/syntax"
+  }
+}

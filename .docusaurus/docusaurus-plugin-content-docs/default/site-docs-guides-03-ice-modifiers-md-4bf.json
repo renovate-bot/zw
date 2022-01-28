@@ -1,0 +1,38 @@
+{
+  "unversionedId": "guides/ice-modifiers",
+  "id": "guides/ice-modifiers",
+  "title": "🧊 Ice Modifiers",
+  "description": "Documentation for the ice Modifiers",
+  "source": "@site/docs/guides/03_ice_modifiers.md",
+  "sourceDirName": "guides",
+  "slug": "/guides/ice-modifiers",
+  "permalink": "/docs/guides/ice-modifiers",
+  "editUrl": "https://github.com/z-shell/zw/tree/main/docs/guides/03_ice_modifiers.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1642221831,
+  "formattedLastUpdatedAt": "1/15/2022",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "ice-modifiers",
+    "title": "🧊 Ice Modifiers",
+    "image": "/img/logo.png",
+    "description": "Documentation for the ice Modifiers",
+    "keywords": [
+      "ice-modifiers",
+      "zsh",
+      "z-shell",
+      "zi"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🧊 Ice Syntax",
+    "permalink": "/docs/guides/ice"
+  },
+  "next": {
+    "title": "🛠 Commands",
+    "permalink": "/docs/guides/commands"
+  }
+}

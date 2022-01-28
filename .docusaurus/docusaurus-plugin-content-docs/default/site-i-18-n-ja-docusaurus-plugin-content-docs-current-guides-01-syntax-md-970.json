@@ -1,0 +1,38 @@
+{
+  "unversionedId": "guides/syntax",
+  "id": "guides/syntax",
+  "title": "✍️ Syntax",
+  "description": "ZI Syntax",
+  "source": "@site/i18n/ja/docusaurus-plugin-content-docs/current/guides/01_syntax.md",
+  "sourceDirName": "guides",
+  "slug": "/guides/syntax",
+  "permalink": "/ja/docs/guides/syntax",
+  "editUrl": "https://github.com/z-shell/zw/tree/main/i18n/ja/docusaurus-plugin-content-docs/current/guides/01_syntax.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1643341372,
+  "formattedLastUpdatedAt": "2022/1/28",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "syntax",
+    "title": "✍️ Syntax",
+    "image": "/img/logo/501x501.png",
+    "description": "ZI Syntax",
+    "keywords": [
+      "構文",
+      "zsh",
+      "z-shell",
+      "zi"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Migration",
+    "permalink": "/ja/docs/getting_started/migration"
+  },
+  "next": {
+    "title": "🧊 Ice Syntax",
+    "permalink": "/ja/docs/guides/ice"
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "docusaurus-plugin-google-gtag": {
+    "default": {
+      "trackingID": "G-46BGZ6PZR4",
+      "anonymizeIP": true,
+      "id": "default"
+    }
+  },
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/ja/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/ja/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "code",
+              "path": "/ja/docs/code",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ecosystem/annexes/annexes",
+              "path": "/ja/docs/ecosystem/annexes",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ecosystem/annexes/bin-gem-node",
+              "path": "/ja/docs/ecosystem/annexes/bin-gem-node",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ecosystem/annexes/default-ice",
+              "path": "/ja/docs/ecosystem/annexes/default-ice",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ecosystem/annexes/meta-plugins",
+              "path": "/ja/docs/ecosystem/annexes/meta-plugins",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ecosystem/annexes/patch-dl",
+              "path": "/ja/docs/ecosystem/annexes/patch-dl",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ecosystem/annexes/readurl",
+              "path": "/ja/docs/ecosystem/annexes/readurl",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ecosystem/annexes/rust",
+              "path": "/ja/docs/ecosystem/annexes/rust",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ecosystem/annexes/submods",
+              "path": "/ja/docs/ecosystem/annexes/submods",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ecosystem/annexes/test",
+              "path": "/ja/docs/ecosystem/annexes/test",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ecosystem/annexes/unscope",
+              "path": "/ja/docs/ecosystem/annexes/unscope",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ecosystem/packages/packages",
+              "path": "/ja/docs/ecosystem/packages",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ecosystem/plugins/modules",
+              "path": "/ja/docs/ecosystem/plugins/modules",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ecosystem/plugins/startify",
+              "path": "/ja/docs/ecosystem/plugins/startify",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ecosystem/plugins/zconvey",
+              "path": "/ja/docs/ecosystem/plugins/zconvey",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "gallery/collection/01_1_collection",
+              "path": "/ja/docs/gallery/collection",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "gallery/collection/completions",
+              "path": "/ja/docs/gallery/collection/completions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "gallery/collection/plugins",
+              "path": "/ja/docs/gallery/collection/plugins",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "gallery/collection/programs",
+              "path": "/ja/docs/gallery/collection/programs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "gallery/collection/services",
+              "path": "/ja/docs/gallery/collection/services",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "gallery/collection/snippets",
+              "path": "/ja/docs/gallery/collection/snippets",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "gallery/collection/themes",
+              "path": "/ja/docs/gallery/collection/themes",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting_started/installation",
+              "path": "/ja/docs/getting_started/installation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting_started/migration",
+              "path": "/ja/docs/getting_started/migration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting_started/overview",
+              "path": "/ja/docs/getting_started/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting_started/useage",
+              "path": "/ja/docs/getting_started/useage",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "guides/benchmark",
+              "path": "/ja/docs/guides/benchmark",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "guides/commands",
+              "path": "/ja/docs/guides/commands",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "guides/customization",
+              "path": "/ja/docs/guides/customization",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "guides/ice",
+              "path": "/ja/docs/guides/ice",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "guides/ice-modifiers",
+              "path": "/ja/docs/guides/ice-modifiers",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "guides/syntax",
+              "path": "/ja/docs/guides/syntax",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/ja/docs/intro",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/ja/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

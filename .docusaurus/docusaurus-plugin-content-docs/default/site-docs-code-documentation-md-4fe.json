@@ -1,0 +1,33 @@
+{
+  "unversionedId": "code",
+  "id": "code",
+  "title": "🔖 Code documentation",
+  "description": "The documentation lists all functions, interactions between them, their comments, and features.",
+  "source": "@site/docs/code_documentation.md",
+  "sourceDirName": ".",
+  "slug": "/code",
+  "permalink": "/docs/code",
+  "editUrl": "https://github.com/z-shell/zw/tree/main/docs/code_documentation.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1641429344,
+  "formattedLastUpdatedAt": "1/6/2022",
+  "frontMatter": {
+    "id": "code",
+    "title": "🔖 Code documentation",
+    "description": "The documentation lists all functions, interactions between them, their comments, and features.",
+    "keywords": [
+      "code",
+      "documentation",
+      "zsh",
+      "z-shell",
+      "zi"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "⚙️ Modules",
+    "permalink": "/docs/ecosystem/plugins/modules"
+  }
+}

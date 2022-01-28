@@ -1,0 +1,39 @@
+{
+  "unversionedId": "getting_started/overview",
+  "id": "getting_started/overview",
+  "title": "Quick overview",
+  "description": "Overview of use cases for Z-Shell ZI",
+  "source": "@site/i18n/ja/docusaurus-plugin-content-docs/current/getting_started/02_overview.md",
+  "sourceDirName": "getting_started",
+  "slug": "/getting_started/overview",
+  "permalink": "/ja/docs/getting_started/overview",
+  "editUrl": "https://github.com/z-shell/zw/tree/main/i18n/ja/docusaurus-plugin-content-docs/current/getting_started/02_overview.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1643341372,
+  "formattedLastUpdatedAt": "2022/1/28",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "overview",
+    "title": "Quick overview",
+    "sidebar_position": 2,
+    "image": "/img/z-shell_501x501.png",
+    "description": "Overview of use cases for Z-Shell ZI",
+    "keywords": [
+      "overview",
+      "zsh",
+      "z-shell",
+      "zi"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/ja/docs/getting_started/installation"
+  },
+  "next": {
+    "title": "Usage",
+    "permalink": "/ja/docs/getting_started/useage"
+  }
+}

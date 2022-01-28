@@ -1,0 +1,38 @@
+{
+  "unversionedId": "guides/syntax",
+  "id": "guides/syntax",
+  "title": "✍️ Syntax",
+  "description": "ZI Syntax",
+  "source": "@site/docs/guides/01_syntax.md",
+  "sourceDirName": "guides",
+  "slug": "/guides/syntax",
+  "permalink": "/docs/guides/syntax",
+  "editUrl": "https://github.com/z-shell/zw/tree/main/docs/guides/01_syntax.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1643341372,
+  "formattedLastUpdatedAt": "1/28/2022",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "syntax",
+    "title": "✍️ Syntax",
+    "image": "/img/logo/501x501.png",
+    "description": "ZI Syntax",
+    "keywords": [
+      "syntax",
+      "zsh",
+      "z-shell",
+      "zi"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Migration",
+    "permalink": "/docs/getting_started/migration"
+  },
+  "next": {
+    "title": "🧊 Ice Syntax",
+    "permalink": "/docs/guides/ice"
+  }
+}

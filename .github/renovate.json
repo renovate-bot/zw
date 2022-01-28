@@ -2,23 +2,24 @@
   "extends": [
     "config:base"
   ],
-  "lockFileMaintenance": { "enabled": true },
+  "lockFileMaintenance": {
+    "enabled": true
+  },
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
       "automerge": true
     },
     {
-      "matchDepTypes": ["devDependencies"],
+      "matchDepTypes": [
+        "devDependencies"
+      ],
       "automerge": true
-    },
-    {
-      "matchPackageNames": ["rehype-katex"],
-      "allowedVersions": "<=4.0.0"
-    },
-    {
-      "matchPackageNames": ["remark-math"],
-      "allowedVersions": "<=3.0.1"
     }
   ]
 }
