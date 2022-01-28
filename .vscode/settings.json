@@ -1,8 +1,9 @@
 {
   "conventionalCommits.scopes": [
-    "general",
     "ecosystem",
     "workspace",
-    "gallery"
+    "general",
+    "gallery",
+    "i18n"
   ]
 }

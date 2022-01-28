@@ -12,6 +12,20 @@
 · <a href="https://github.com/z-shell/zi/discussions">《 Ask a Question 》</a>
 </div>
 
+## Deployments
+
+Cloudflare's global network: [z-shell.pages.dev](https://z-shell.pages.dev)
+  - Preview branches (<hash>.<project>.pages.dev): **All non-Production branches**
+  - Production branch: **main**
+  
+Aliased to the above (improved SEO): [z.digitalclouds.dev](https://z.digitalclouds.dev)
+  - Preview deployments: **develop**
+  - Production branch: **main**
+  
+Github pages: [zw.digitalclouds.dev](https://zw.digitalclouds.dev)
+  - Preview, develop, test branch: **gh-pages**
+  - Deploy with: `yarn deploy`
+
 ## 🥇 Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
