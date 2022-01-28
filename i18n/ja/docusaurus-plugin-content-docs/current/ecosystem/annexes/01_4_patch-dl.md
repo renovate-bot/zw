@@ -1,8 +1,13 @@
 ---
 id: patch-dl
-title: 💠 Patch DL
+title: '💠 Patch DL'
 description: Annex - Patch DL documentation
-keywords: [annex, patch-dl, zsh, z-shell, zi]
+keywords:
+  - annex
+  - patch-dl
+  - zsh
+  - z-shell
+  - zi
 ---
 
 [Patch DL](https://github.com/z-shell/z-a-patch-dl) annex downloads files and applies patches and adds two ice modifiers:
