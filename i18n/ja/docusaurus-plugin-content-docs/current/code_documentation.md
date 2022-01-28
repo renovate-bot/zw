@@ -1,8 +1,13 @@
 ---
 id: code
-title: 🔖 Code documentation
+title: '🔖 Code documentation'
 description: The documentation lists all functions, interactions between them, their comments, and features.
-keywords: [code, documentation, zsh, z-shell, zi]
+keywords:
+  - code
+  - documentation
+  - zsh
+  - z-shell
+  - zi
 ---
 
 import APITable from '@site/src/components/APITable';
@@ -39,26 +44,3 @@ Documentation updated on changes at [z-shell/docs](https://github.com/z-shell/do
 | [Zsh Native Scripting Handbook][zsh-native-scripting-handbook.html] | Handbook to keep Zsh constructs that are fast, robust, and do not depend on external tools. Such code is similar to Ruby or Perl and less like top-down shell scripts. |
 
 </APITable>
-
-[zi.zsh]: https://github.com/z-shell/zi/blob/main/zi.zsh
-[zi.adoc]: https://github.com/z-shell/docs/blob/main/code/zsdoc/asciidoc/zi.zsh.adoc
-[zi.pdf]: https://github.com/z-shell/docs/blob/main/code/zsdoc/pdf/zi.zsh.pdf
-[zi.html]: https://z-shell.github.io/docs/code/html/zi.zsh.html
-[side.zsh]: https://github.com/z-shell/zi/blob/main/lib/zsh/side.zsh
-[side.adoc]: https://github.com/z-shell/docs/blob/main/code/zsdoc/asciidoc/side.zsh.adoc
-[side.pdf]: https://github.com/z-shell/docs/blob/main/code/zsdoc/pdf/side.zsh.pdf
-[side.html]: https://z-shell.github.io/docs/code/html/side.zsh.html
-[install.zsh]: https://github.com/z-shell/zi/blob/main/lib/zsh/install.zsh
-[install.adoc]: https://github.com/z-shell/docs/blob/main/code/zsdoc/asciidoc/install.zsh.adoc
-[install.pdf]: https://github.com/z-shell/docs/blob/main/code/zsdoc/pdf/install.zsh.pdf
-[install.html]: https://z-shell.github.io/docs/code/html/install.zsh.html
-[autoload.zsh]: https://github.com/z-shell/zi/blob/main/lib/zsh/autoload.zsh
-[autoload.adoc]: https://github.com/z-shell/docs/blob/main/code/zsdoc/asciidoc/autoload.zsh.adoc
-[autoload.pdf]: https://github.com/z-shell/docs/blob/main/code/zsdoc/pdf/autoload.zsh.pdf
-[autoload.html]: https://z-shell.github.io/docs/code/html/autoload.zsh.html
-[additional.zsh]: https://github.com/z-shell/zi/blob/main/lib/zsh/additional.zsh
-[additional.adoc]: https://github.com/z-shell/docs/blob/main/code/zsdoc/asciidoc/additional.zsh.adoc
-[additional.pdf]: https://github.com/z-shell/docs/blob/main/code/zsdoc/pdf/additional.zsh.pdf
-[additional.html]: https://z-shell.github.io/docs/code/html/additional.zsh.html
-[zsh-plugin-standart.html]: https://z-shell.github.io/docs/zsh/Zsh-Plugin-Standard.html
-[zsh-native-scripting-handbook.html]: https://z-shell.github.io/docs/zsh/Zsh-Native-Scripting-Handbook.html
