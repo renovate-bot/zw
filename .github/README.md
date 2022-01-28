@@ -22,9 +22,9 @@ Aliased to the above (improved SEO): [z.digitalclouds.dev](https://z.digitalclou
   - Preview deployments: **develop**
   - Production branch: **main**
   
-Github pages: [zw.digitalclouds.dev](https://zw.digitalclouds.dev)
+<!-- Github pages: [zw.digitalclouds.dev](https://zw.digitalclouds.dev)
   - Preview, develop, test branch: **gh-pages**
-  - Deploy with: `yarn deploy`
+  - Deploy with: `yarn deploy` -->
 
 ## 🥇 Contributors
 
