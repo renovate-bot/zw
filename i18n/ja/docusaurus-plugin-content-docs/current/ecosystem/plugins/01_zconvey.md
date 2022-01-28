@@ -1,9 +1,14 @@
 ---
 id: zconvey
-title: ⚙️ ZConvey
+title: '⚙️ ZConvey'
 image: /img/z-shell_501x501.png
 description: Zsh Plugin ZConvey documentation
-keywords: [zconvey, plugin, zsh, z-shell, zi]
+keywords:
+  - zconvey
+  - plugin
+  - zsh
+  - z-shell
+  - zi
 ---
 
 ZConvey integrates multiple Zsh sessions. They are given an ID, optionally a NAME (both unique), and can send commands to each other. Use this to switch all your Zshells to given directory, via `zc-all cd $PWD`! Also, there's `zc-bg-notify` **script** (not a function), that will show notification under prompt of every active Zsh session. You can call this script from any program, Bash or GUI.
@@ -12,7 +17,7 @@ Video – view on [asciinema](https://asciinema.org/a/156726). You can resize t
 
 [![asciicast](https://asciinema.org/a/156726.png)](https://asciinema.org/a/156726)
 
-## [Zstyle](/ja/search?q=zstyle) for ZConvey
+## [Zstyles](/search?q=zstyle) for ZConvey {#zstyles-for-zconvey}
 
 The values being set are the defaults. They must be set before loading the plugin.
 
@@ -32,16 +37,16 @@ zstyle ":plugin:zconvey" timestamp_from "datetime"  # Use zsh/datetime module fo
 
 ## ZConvey commands {#zconvey-commands}
 
-| Command | Description |
-| --- | :-- |
-| `zc` | Sends to other session; use "-a" option to be asked for target and a command to send |
-| `zc-ls` | Lists all active and named sessions |
-| `zc-id` | Shows ID and NAME of current session |
-| `zc-all` | The same as `zc`, but targets are all other active sessions (with `-f` also busy sessions) |
-| `zc-take` | Takes a name for current or selected sessions, schematically renames any conflicting sessions |
-| `zc-logo` | The same as `zc-id`, but in a form of an on-screen logo; bound to Ctrl-O Ctrl-I |
-| `zc-rename` | Assigns name to current or selected session; won't rename if there's a session with the same name |
-| `zc-bg-notify` | In subdirectory `cmds`, link it to `/usr/local/bin`, etc. or load with e.g. ZI |
+| Command        | Description                                                                                       |
+| -------------- |:------------------------------------------------------------------------------------------------- |
+| `zc`           | Sends to other session; use "-a" option to be asked for target and a command to send              |
+| `zc-ls`        | Lists all active and named sessions                                                               |
+| `zc-id`        | Shows ID and NAME of current session                                                              |
+| `zc-all`       | The same as `zc`, but targets are all other active sessions (with `-f` also busy sessions)        |
+| `zc-take`      | Takes a name for current or selected sessions, schematically renames any conflicting sessions     |
+| `zc-logo`      | The same as `zc-id`, but in a form of an on-screen logo; bound to Ctrl-O Ctrl-I                   |
+| `zc-rename`    | Assigns name to current or selected session; won't rename if there's a session with the same name |
+| `zc-bg-notify` | In subdirectory `cmds`, link it to `/usr/local/bin`, etc. or load with e.g. ZI                    |
 
 The main command is `zc` (yet it is rather rarely used, I'm always sending to all sessions with `zc-all`). It is used to execute commands on other sessions. `zc-ls` is the main tool to obtain overall information on sessions. `zc-take` is a nice rename tool to quickly name a few sessions. Keyboard shortcut Ctrl-O Ctrl-I will show current session's ID and NAME in form of an on-screen logo.
 
@@ -49,7 +54,7 @@ The main command is `zc` (yet it is rather rarely used, I'm always sending to al
 
 Add `zi load z-shell/zconvey` to your `.zshrc` file. ZI will clone the plugin the next time you start zsh. To update issue `zi update z-shell/zconvey`.
 
-ZI can load in [turbo-mode](/ja/search?q=turbo+and+lucid), below is an example configuration.
+ZI can load in [turbo-mode](/search?q=turbo+and+lucid), below is an example configuration.
 
 ```shell
 zi ice wait"0"
@@ -63,7 +68,7 @@ zi ice wait"0" as"command" pick"cmds/zc-bg-notify" silent
 zi light z-shell/zconvey
 ```
 
-## Manual ZConvey installation
+## Manual ZConvey installation {#manual-zconvey-installation}
 
 **The plugin is "standalone"**, which means that only sourcing it is needed. So to install, unpack `zconvey` somewhere and add
 
@@ -75,4 +80,4 @@ to `zshrc`.
 
 If using a plugin manager, then `ZI` is recommended, but you can use any other too, and also install with `Oh My Zsh` (by copying directory to `~/.oh-my-zsh/custom/plugins`).
 
-The plugin integrates with my other plugin [Zsh Select](https://github.com/z-shell/zsh-select). Install it with e.g. ZI to be able to use `-a` option for `zc` command.
+The plugin integrates with my other plugin [Zsh-Select](https://github.com/z-shell/zsh-select). Install it with e.g. ZI to be able to use `-a` option for `zc` command.

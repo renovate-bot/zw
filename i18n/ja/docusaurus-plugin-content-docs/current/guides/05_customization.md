@@ -3,7 +3,12 @@ id: customization
 title: Preferences & Customization
 image: https://github.com/z-shell.png
 description: User Preferences & Customization
-keywords: [customization, preferences, zsh, z-shell, zi]
+keywords:
+  - customization
+  - preferences
+  - zsh
+  - z-shell
+  - zi
 ---
 
 import APITable from '@site/src/components/APITable';
@@ -104,7 +109,7 @@ Some options also have one or more single letter names. There are two sets of si
 
 The sense of the single letter options may be inverted by using `+` instead of `-`. Some of the single letter option names refer to an option being off, in which case the inversion of that name refers to the option being on. For example, `+n` is the short name of `exec`, and `-n` is the short name of its inversion, `noexec`.
 
-In strings of single letter options supplied to the shell at startup, trailing whitespace will be ignored; for example the string `-f ` will be treated just as `-f`, but the string `-f i` is an error. This is because many systems which implement the `#!` mechanism for calling scripts do not strip trailing whitespace.
+In strings of single letter options supplied to the shell at startup, trailing whitespace will be ignored; for example the string `-f` will be treated just as `-f`, but the string `-f i` is an error. This is because many systems which implement the `#!` mechanism for calling scripts do not strip trailing whitespace.
 
 ### History optimization {#history-optimization}
 

@@ -1,8 +1,13 @@
 ---
 id: readurl
-title: 💠 Read URL
+title: '💠 Read URL'
 description: Annex - Read URL documentation
-keywords: [annex, readurl, zsh, z-shell, zi]
+keywords:
+  - annex
+  - readurl
+  - zsh
+  - z-shell
+  - zi
 ---
 
 [Read URL](https://github.com/z-shell/z-a-readurl) annex allows to automatically download the newest version of a file to which URL is hosted on a webpage.

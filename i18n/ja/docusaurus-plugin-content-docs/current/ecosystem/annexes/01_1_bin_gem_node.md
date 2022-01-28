@@ -1,9 +1,14 @@
 ---
 id: bin-gem-node
-title: 💠 Bin Gem Node
+title: '💠 Bin Gem Node'
 image: /img/logo/501x501.png
 description: Annex - Bin Gem Node documentation
-keywords: [annex, bin-gem-node, zsh, z-shell, zi]
+keywords:
+  - annex
+  - bin-gem-node
+  - zsh
+  - z-shell
+  - zi
 ---
 
 import APITable from '@site/src/components/APITable';
@@ -33,7 +38,7 @@ The `sbin''` ice that creates forwarder-scripts instead of forwarder-functions (
 
 This way there is no need to add anything to `$PATH` – `z-a-bin-gem-node` will automatically create a function that will wrap the binary and provide it on the command line like if it was being placed in the `$PATH`.
 
-Also, like mentioned in the enumeration, the function can automatically export `$GEM_HOME`, `$NODE_PATH`, `$VIRTUALENV` shell variables and also automatically cd into the plugin or snippet directory right before executing the binary and then cd back to the original directory after the execution is finished.
+Also, like mentioned in the enumeration, the function can automatically export `$GEM_HOME`, `$NODE_PATH`, `$VIRTUALENV` shell variables and also automatically `cd` into the plugin or snippet directory right before executing the binary and then cd back to the original directory after the execution is finished.
 
 Also, like already mentioned, instead of the function an automatically created script – so called `shim` – can be used for the same purpose and with the same functionality, so that the command is being accessible practically fully normally – not only in the live Zsh session (only within which the functions created by `fbin''` exist), but also from any Zsh script.
 
@@ -90,7 +95,7 @@ There are 7 ice modifiers provided and handled by the annex:
 | [`node''`](#node) | Installs and updates node_modules + creates functions for binaries of the modules. |
 | [`pip''`](#pip)   | Installs and updates python packages into a virtualenv + creates functions for binaries of the packages. |
 | [`fmod''`](#fmod) | Creates wrapping functions for other functions. |
-| [`fsrc''`](#fsrc) | Creates functions that source given scripts. |
+| [`fsrc''`](#fscr) | Creates functions that source given scripts. |
 | [`ferc''`](#ferc) | The same as [`fsrc''`](#fscr), but using an alternate script-loading method. |
 
 </APITable>

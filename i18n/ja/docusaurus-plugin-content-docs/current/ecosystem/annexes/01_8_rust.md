@@ -1,8 +1,13 @@
 ---
 id: rust
-title: 💠 Rust
+title: '💠 Rust'
 description: Annex - Rust documentation
-keywords: [annex, rust, zsh, z-shell, zi]
+keywords:
+  - annex
+  - rust
+  - zsh
+  - z-shell
+  - zi
 ---
 
 [Rust](https://github.com/z-shell/z-a-rust) annex installs rust and cargo packages locally inside the plugin or snippet directories.

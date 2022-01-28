@@ -19,6 +19,10 @@
     "message": "Github Discussions",
     "description": "The label of footer link with label=Github Discussions linking to https://github.com/z-shell/zi/discussions"
   },
+  "link.item.label.Discord": {
+    "message": "Discord",
+    "description": "The label of footer link with label=Discord linking to https://discord.gg/8W7yVpX9Hg"
+  },
   "link.item.label.GitHub": {
     "message": "GitHub",
     "description": "The label of footer link with label=GitHub linking to https://github.com/z-shell"
@@ -30,9 +34,5 @@
   "copyright": {
     "message": "Copyright © 2022 Z-Shell ZI, Community.",
     "description": "The footer copyright"
-  },
-  "link.item.label.Discord": {
-    "message": "Discord",
-    "description": "The label of footer link with label=Discord linking to https://discord.gg/8W7yVpX9Hg"
   }
 }

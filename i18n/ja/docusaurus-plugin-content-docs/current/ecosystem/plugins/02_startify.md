@@ -1,9 +1,14 @@
 ---
 id: startify
-title: ⚙️ Startify
+title: '⚙️ Startify'
 image: /img/z-shell_501x501.png
 description: Zsh Plugin Startify documentation
-keywords: [startify, plugin, zsh, z-shell, zi]
+keywords:
+  - startify
+  - plugin
+  - zsh
+  - z-shell
+  - zi
 ---
 
 A plugin that aims at providing what [vim-startify](https://github.com/mhinz/vim-startify) plugin does, but in Zsh. The analogy isn't fully easy to make. `vim-startify` states - it provides dynamically created headers or footers and uses configurable lists to show recently used or bookmarked files and persistent sessions.
@@ -26,7 +31,7 @@ A plugin that aims at providing what [vim-startify](https://github.com/mhinz/vim
 
 `zsh-startify` accumulates data in its own history file. To pre-fill it quickly with a few of entries (basing on the regular history) you can run the `__from-zhistory-accumulate` command.
 
-## [Zstyles](/ja/search?q=zstyle) for Startify {#zstyles-for-startify}
+## [Zstyles](/search?q=zstyle) for Startify {#zstyles-for-startify}
 
 The zstyles used to configure the plugin (add such commands anywhere in the `zshrc`):
 
