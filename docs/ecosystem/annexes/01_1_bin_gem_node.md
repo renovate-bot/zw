@@ -86,9 +86,9 @@ There are 7 ice modifiers provided and handled by the annex:
 | :-- | :-- |
 | [`sbin''`](#sbin) | Creates `shims` for binaries and scripts. |
 | [`fbin''`](#fbin) | Creates functions for binaries and scripts. |
-| [`gem''`](#gem)   | Installs and updates gems + creates functions for gems' binaries. |
+| [`gem''`](#gem) | Installs and updates gems + creates functions for gems' binaries. |
 | [`node''`](#node) | Installs and updates node_modules + creates functions for binaries of the modules. |
-| [`pip''`](#pip)   | Installs and updates python packages into a virtualenv + creates functions for binaries of the packages. |
+| [`pip''`](#pip) | Installs and updates python packages into a virtualenv + creates functions for binaries of the packages. |
 | [`fmod''`](#fmod) | Creates wrapping functions for other functions. |
 | [`fsrc''`](#fsrc) | Creates functions that source given scripts. |
 | [`ferc''`](#ferc) | The same as [`fsrc''`](#fscr), but using an alternate script-loading method. |
@@ -142,17 +142,15 @@ Creates a wrapper function of the name the same as the last segment of the path 
 
 <APITable>
 
-
 | Flag | Description |
 | :-- | :-- |
 | `g` | Set `$GEM_HOME` variable to `{plugin-dir}`. |
 | `n` | Set `$NODE_PATH` variable to `{plugin-dir}/node_modules`. |
 | `p` | Set `$VIRTUALENV` variable to `{plugin-dir}/venv`. |
 | `c` | `cd` to the plugin's directory before running the program and then cd back after it has been run. |
-| `N` | Append `&>/dev/null` to the call of the binary, i.e. redirect both standard output and standard error to `/dev/null`. |
-| `E` | Append `2>/dev/null` to the call of the binary, i.e. redirect standard error to `/dev/null`. |
-| `O` | Append `>/dev/null` to the call of the binary, i.e. redirect standard output to `/dev/null`. |
-
+| `N` |  Append `&>/dev/null` to the call of the binary, i.e. redirect both standard output and standard error to `/dev/null`. |
+| `E` |  Append `2>/dev/null` to the call of the binary, i.e. redirect standard error to `/dev/null`. |
+| `O` |  Append `>/dev/null` to the call of the binary, i.e. redirect standard output to `/dev/null`. |
 
 </APITable>
 
@@ -346,21 +344,18 @@ zi shim-list [-h/--help] [-t|--this-dir] [-i|--from-ices] \
 
 | Flag | Description |
 | :-- | :-- |
-| `-h` `--help`       | Shows a usage information. |
-| `-t` `--this-dir`   | Istructs ZI to look for shims in the current directory instead of `$ZPFX/bin`. |
-| `-i` `--from-ices`  | Normally the code looks for the shim files by examining their contents (shims created by BGN annex have a fixed structure); this option instructs ZI to show the list of shims that results from the `sbin''` ice of the loaded plugins; i.e.: if a plugin has `sbin'git-open'`, for example, then this means that there has to be such shim already created. |
+| `-h` `--help` | Shows a usage information. |
+| `-t` `--this-dir` | Istructs ZI to look for shims in the current directory instead of `$ZPFX/bin`. |
+| `-i` `--from-ices` | Normally the code looks for the shim files by examining their contents (shims created by BGN annex have a fixed structure); this option instructs ZI to show the list of shims that results from the `sbin''` ice of the loaded plugins; i.e.: if a plugin has `sbin'git-open'`, for example, then this means that there has to be such shim already created. |
 | `-o` `--one-line` | Display the list of shim files without line breaks, in single line, after spaces. |
 | `-s` `--short` | Don't show the plugin/snippet that the shim belongs to. |
 | `-c` `--cat` | Displays contents of each of the found shim (unimplemented yet). |
 
 </APITable>
 
-
 ## Cygwin Support
 
-The `sbin''` ice has an explicit Cygwin support
-  – it creates additional, **extra shim files** – Windows batch scripts that allow to run the shielded applications from e.g.: Windows run dialog
-  – if the `~/.zi/polaris/bin` directory is being added to the Windows `PATH` environment variable, for example (it is a good idea to do so, IMHO). The Windows shims have the same name as the standard ones (which are also being created, normally) plus the `.cmd` extension. You can test the feature by e.g.: installing Firefox from the ZI package via:
+The `sbin''` ice has an explicit Cygwin support – it creates additional, **extra shim files** – Windows batch scripts that allow to run the shielded applications from e.g.: Windows run dialog – if the `~/.zi/polaris/bin` directory is being added to the Windows `PATH` environment variable, for example (it is a good idea to do so, IMHO). The Windows shims have the same name as the standard ones (which are also being created, normally) plus the `.cmd` extension. You can test the feature by e.g.: installing Firefox from the ZI package via:
 
 ```shell
 zi pack=bgn for firefox
