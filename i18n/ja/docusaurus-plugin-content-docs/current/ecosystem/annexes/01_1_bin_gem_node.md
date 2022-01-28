@@ -95,14 +95,14 @@ There are 7 ice modifiers provided and handled by the annex:
 | [`node''`](#node) | Installs and updates node_modules + creates functions for binaries of the modules. |
 | [`pip''`](#pip)   | Installs and updates python packages into a virtualenv + creates functions for binaries of the packages. |
 | [`fmod''`](#fmod) | Creates wrapping functions for other functions. |
-| [`fsrc''`](#fsrc) | Creates functions that source given scripts. |
+| [`fsrc''`](#fscr) | Creates functions that source given scripts. |
 | [`ferc''`](#ferc) | The same as [`fsrc''`](#fscr), but using an alternate script-loading method. |
 
 </APITable>
-    
-### The Ice Modifiers Provided By The Annex in detail {#the-ice-modifiers-provided-by-the-annex-in-detail}
 
-#### `SBIN''` {#sbin}
+### The Ice Modifiers Provided By The Annex:
+
+#### `SBIN''`
 
 `sbin'[{g|n|c|N|E|O}:]{path-to-binary}[ -> {name-of-the-script}]; …'`
 
@@ -179,7 +179,7 @@ The ice can be empty. It will then try to create the function for:
 - trailing component of the snippet URL,
 - for any alphabetically first executable file.
 
-#### `GEM''` {#gem}
+#### `GEM''`
 
 `gem'{gem-name}; …'`
 
@@ -202,7 +202,7 @@ asciidoctor () {
 }
 ```
 
-#### `NODE''` {#node}
+#### `NODE''`
 
 `node'{node-module}; …'`
 
@@ -233,7 +233,7 @@ remark () {
 
 In this case the name of the binary program provided by the node module is different from its name, hence the second form with the `b <- a -> c` syntax has been used.
 
-#### `PIP''` {#pip}
+#### `PIP''`
 
 `pip'{pip-package}; …'`
 
@@ -264,7 +264,7 @@ ansible () {
 
 In this case the name of the binary program provided by the node module is different from its name, hence the second form with the `b <- a -> c` syntax has been used.
 
-#### `FMOD''` {#fmod}
+#### `FMOD''`
 
 `fmod'[{g|n|c|N|E|O}:]{function-name}; …'`
 
@@ -299,11 +299,11 @@ LICENSE
 README.md
 ```
 
-#### `FSCR''` {#fscr}
+#### `FSCR''`
 
 `fsrc'[{g|n|c|N|E|O}:]{path-to-script}[ -> {name-of-the-function}]; …'`
 
-#### `FERC''` {#ferc}
+#### `FERC''`
 
 `ferc'[{g|n|c|N|E|O}:]{path-to-script}[ -> {name-of-the-function}]; …'`
 
