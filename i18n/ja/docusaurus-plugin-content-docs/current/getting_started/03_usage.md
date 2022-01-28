@@ -4,7 +4,11 @@ title: Usage
 sidebar_position: 3
 image: /img/z-shell_501x501.png
 description: How to use ZI
-keywords: [使い方, zsh, z-shell, zi]
+keywords:
+  - how-to-use
+  - zsh
+  - z-shell
+  - zi
 ---
 
 ## Plugins and snippets {#plugins-and-snippets}

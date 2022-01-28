@@ -1,10 +1,14 @@
 ---
 id: packages
 slug: /ecosystem/packages
-title: 📦 Quick overview
+title: '📦 Quick overview'
 image: /img/logo/501x501.png
 description: Packages documentation
-keywords: [package, zsh, z-shell, zi]
+keywords:
+  - package
+  - zsh
+  - z-shell
+  - zi
 ---
 
 ## The [any-gem](https://github.com/z-shell/any-gem) and [any-node](https://github.com/z-shell/any-node) packages {#the-any-gem-and-any-node-packages}
@@ -28,11 +32,9 @@ The Unicode arrow is allowed in ZI syntax as in example below.
 zi id-as=jekyll pack param='GEM → jekyll' for any-gem
 ```
 
-The binaries will be exposed without altering the PATH via shims ([bin-gem-node](../ecosystem/annexes/bin-gem-node) annex is needed).
-Shims are correctly removed when deleting a plugin with `zi delete ……`
+The binaries will be exposed without altering the PATH via shims ([bin-gem-node](../ecosystem/annexes/bin-gem-node) annex is needed). Shims are correctly removed when deleting a plugin with `zi delete ……`
 
-The so-called packages are GitHub repositories holding a `package.json` file with the meta-data in them.
-This way you don't have to (but still can) specify ices, which might be handy when the ice-mod list is long and complex.
+The so-called packages are GitHub repositories holding a `package.json` file with the meta-data in them. This way you don't have to (but still can) specify ices, which might be handy when the ice-mod list is long and complex.
 
 ## Motivation behind packages {#motivation-behind-packages}
 
@@ -48,7 +50,7 @@ The motivation for adding such functionality was:
 
 3. In general, ZI has many hooks which allow surprising things, however, their content often evolves to a gradually better and better one and it's hard to keep track of the current version of them.
 
-4. So a solution appeared: why not publish a package at GitHub with the plugin configurations (i.e.: [ice-modifiers](../../guides/ice-modifiers lists) stored in a file?
+4. So a solution appeared: why not publish a package at GitHub with the plugin configurations (i.e.: \[ice-modifiers\](../../guides/ice-modifiers lists) stored in a file?
 
 ## Introductory Example {#introductory-example}
 

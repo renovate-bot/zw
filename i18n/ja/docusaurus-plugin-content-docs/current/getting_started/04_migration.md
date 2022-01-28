@@ -4,7 +4,11 @@ title: Migration
 sidebar_position: 4
 image: /img/z-shell_501x501.png
 description: Migration to ZI
-keywords: [マイグレーション, zsh, z-shell, zi]
+keywords:
+  - migration
+  - zsh
+  - z-shell
+  - zi
 ---
 
 ## Migration from Oh-My-ZSH {#migration-from-oh-my-zsh}

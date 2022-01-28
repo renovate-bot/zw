@@ -1,9 +1,14 @@
 ---
 id: services
-title: 🔺 Services
+title: '🔺 Services'
 sidebar_position: 7
 description: Services Collection
-keywords: [collection, services, zsh, z-shell, zi]
+keywords:
+  - collection
+  - services
+  - zsh
+  - z-shell
+  - zi
 ---
 
 ```shell
