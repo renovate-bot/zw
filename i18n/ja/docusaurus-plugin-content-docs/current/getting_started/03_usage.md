@@ -11,7 +11,7 @@ keywords:
   - zi
 ---
 
-## Plugins and snippets
+## Plugins and snippets {#plugins-and-snippets}
 
 Plugins can be loaded using `load` or `light`.
 
