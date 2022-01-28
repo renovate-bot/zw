@@ -9,7 +9,7 @@ const config = {
 	title: "❮ ZI ❯",
 	titleDelimiter: "|",
 	tagline: "A Swiss Army Knife for Zsh - Unix shell",
-	url: "https://zw.digitalclouds.dev",
+	url: "https://z-shell.pages.dev",
 	organizationName: "z-shell",
 	projectName: "zw",
 	trailingSlash: false,
@@ -123,7 +123,7 @@ const config = {
 			},
 			tableOfContents: {
 				minHeadingLevel: 2,
-				maxHeadingLevel: 4,
+				maxHeadingLevel: 5,
 			},
 			navbar: {
 				hideOnScroll: true,
@@ -131,8 +131,8 @@ const config = {
 				logo: {
 					alt: "ZI Logo",
 					src: "img/logo.svg",
-					width: 32,
-					height: 32,
+					width: 28,
+					height: 28,
 				},
 				items: [
 					{
