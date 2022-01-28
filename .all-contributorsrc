@@ -1,5 +1,5 @@
 {
-  "projectName": "z-shell.pages.dev",
+  "projectName": "zw",
   "projectOwner": "z-shell",
   "repoType": "github",
   "repoHost": "https://github.com",
@@ -19,7 +19,17 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "the-ryujin",
+      "name": "竜神信仰",
+      "avatar_url": "https://avatars.githubusercontent.com/u/98503588?v=4",
+      "profile": "https://github.com/the-ryujin",
+      "contributions": [
+        "maintenance"
+      ]
     }
   ],
-  "contributorsPerLine": 7
+  "contributorsPerLine": 7,
+  "skipCi": true
 }
