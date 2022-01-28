@@ -30,12 +30,8 @@ files: [
   # Pages files
   #  "source" : "/src/pages/**/*",
   #  "translation" : "/i18n/%two_letters_code%/docusaurus-plugin-content-pages/**/%original_file_name%",
-  #  "ignore" : [/**/*.js, /**/*.jsx, /**/*.ts, /**/*.tsx, /**/*.css],
   # Files or directories for ignore
-  # e.g. ["/**/?.txt", "/**/[0-9].txt", "/**/*\?*.txt"]
-  #"ignore" : [],
-
-  #
+     "ignore" : [/**/*.js, /**/*.jsx, /**/*.ts, /**/*.tsx, /**/*.css],
   # The dest allows you to specify a file name in Crowdin
   # e.g. "/messages.json"
   #
