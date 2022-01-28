@@ -1,5 +1,5 @@
 documentation 📝:
-  - any: ["docs/**/*.md", "docs/*.md", "i18n/*/docusaurus-plugin-content-docs/current/**.md"]
+  - any: ["docs/**/*.md", "i18n/**/docusaurus-plugin-content-docs/**"]
 dependencies 📦:
   - any: ["package.json", "yarn.lock"]
 enhancement ✨:
@@ -9,10 +9,10 @@ maintenance 📈:
 i18n 🌐:
   - any: ["i18n/**"]
 annex 💠:
-  - any: ["docs/ecosystem/annexes/*", "i18n/*/docusaurus-plugin-content-docs/current/ecosystem/annexes/*"]
+  - any: ["docs/ecosystem/annexes/**", "i18n/**/docusaurus-plugin-content-docs/current/ecosystem/annexes/*"]
 package 📦:
-  - any: ["docs/ecosystem/packages", "i18n/*/docusaurus-plugin-content-docs/current/ecosystem/packages/*"]
+  - any: ["docs/ecosystem/packages*", "i18n/**/docusaurus-plugin-content-docs/current/ecosystem/packages/*"]
 plugin 🧿:
-  - any: ["docs/ecosystem/plugins/*", "i18n/*/docusaurus-plugin-content-docs/current/ecosystem/plugins/*"]
+  - any: ["docs/ecosystem/plugins/**", "i18n/**/docusaurus-plugin-content-docs/current/ecosystem/plugins/*"]
 ci 🤖:
   - any: [".github/workflows/*.yml", ".all-contributorsrc"]
