@@ -20,6 +20,14 @@
         "devDependencies"
       ],
       "automerge": true
+    },
+    {
+      "matchPackageNames": ["rehype-katex"],
+      "allowedVersions": "<=4.0.0"
+    },
+    {
+      "matchPackageNames": ["remark-math"],
+      "allowedVersions": "<=3.0.1"
     }
   ]
 }
