@@ -21,7 +21,7 @@ jobs:
         upload_translations: true
       # download options
         download_translations: true
-        language: 'ja'
+      #  language: ''
         push_translations: true
       # This is the name of the git branch that Crowdin will create when opening a pull request.
       # This branch does NOT need to be manually created. It will be created automatically by the action.
