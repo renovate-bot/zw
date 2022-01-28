@@ -1,3 +1,8 @@
 /loader https://raw.githubusercontent.com/z-shell/zi-src/main/lib/zsh/init.zsh
 /i-hub https://raw.githubusercontent.com/z-shell/zi-src/main/lib/sh/install.sh
 /i-lab https://gitlab.com/ss-o/zi-src/-/raw/main/lib/sh/install.sh
+/discussions https://github.com/z-shell/zi/discussions
+/discord https://discord.gg/8W7yVpX9Hg
+/twitter https://twitter.com/zshell_zi
+/github https://github.com/z-shell
+/ /ja 302 Country=ja

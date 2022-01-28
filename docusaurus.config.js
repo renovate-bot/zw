@@ -9,16 +9,16 @@ const config = {
 	title: "❮ ZI ❯",
 	titleDelimiter: "|",
 	tagline: "A Swiss Army Knife for Zsh - Unix shell",
-	url: "https://z-shell.pages.dev",
+	url: "https://zw.digitalclouds.dev",
+	organizationName: "z-shell",
+	projectName: "zw",
 	trailingSlash: false,
 	baseUrl: "/",
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "throw",
 	favicon: "img/favicon.svg",
-	organizationName: "z-shell",
-	projectName: "z-shell.pages.dev",
 	staticDirectories: ["static"],
-	themes: ["live-codeblock"],
+	themes: [],
 	plugins: [],
 	i18n: {
 		defaultLocale: "en",
@@ -45,7 +45,7 @@ const config = {
 				},
 				docs: {
 					sidebarPath: require.resolve("./sidebars.js"),
-					editUrl: "https://github.com/z-shell/z-shell.pages.dev/tree/main/",
+					editUrl: "https://github.com/z-shell/zw/tree/main/",
 					editLocalizedFiles: true,
 					showLastUpdateTime: true,
 					showLastUpdateAuthor: true,
@@ -57,30 +57,26 @@ const config = {
 					rehypePlugins: [katex],
 				},
 				blog: {
-					editUrl: "https://github.com/z-shell/z-shell.pages.dev/tree/main/",
+					editUrl: "https://github.com/z-shell/zw/tree/main/",
 					editLocalizedFiles: true,
 					remarkPlugins: [math, [npm2yarn, {sync: true}]],
 					rehypePlugins: [katex],
 					blogTitle: "❮ ZI ❯ Blog",
 					blogDescription: "News, Changes & Updates",
 					postsPerPage: "ALL",
-					feedOptions: {
-						type: "all",
-						copyright: `Copyright © ${new Date().getFullYear()} Z-Shell ZI, Community.`,
-					},
 				},
 				sitemap: {
-					changefreq: "weekly",
+					changefreq: "daily",
 					priority: 0.5,
 				},
 				gtag: {
 					trackingID: "G-46BGZ6PZR4",
 					anonymizeIP: true,
 				},
-				googleAnalytics: {
+				/** googleAnalytics: {
 					trackingID: "G-46BGZ6PZR4",
 					anonymizeIP: true,
-				},
+				},*/
 			}),
 		],
 	],
@@ -104,7 +100,7 @@ const config = {
 					darkIcon: "🌙",
 					lightIcon: "\u2600",
 					darkIconStyle: {
-						marginLeft: "2px",
+						marginLeft: "1px",
 					},
 					lightIconStyle: {
 						marginLeft: "1px",
@@ -175,6 +171,10 @@ const config = {
 							{
 								label: "Github Discussions",
 								href: "https://github.com/z-shell/zi/discussions",
+							},
+							{
+								label: "Discord",
+								href: "https://discord.gg/8W7yVpX9Hg",
 							},
 						],
 					},
