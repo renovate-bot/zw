@@ -4,15 +4,19 @@ title: Quick overview
 sidebar_position: 2
 image: /img/z-shell_501x501.png
 description: Overview of use cases for Z-Shell ZI
-keywords: [overview, zsh, z-shell, zi]
+keywords:
+  - overview
+  - zsh
+  - z-shell
+  - zi
 ---
 
-この概要では下記に関する基礎を含んでいます:
+In this overview will cover basics for:
 
-1. [Oh My Zsh & Prezto](/ja/search?q=Oh+My+Zsh+%26+Prezto)
-2. [Completions](/ja/search?q=completions)
-3. [Turbo mode](/ja/search?q=turbo+mode)
-4. [Ice 修飾子](/ja/search?q=Ice+修飾子)
+1. [Oh My Zsh & Prezto](/search?q=Oh+My+Zsh+%26+Prezto)
+2. [Completions](/search?q=completions)
+3. [Turbo mode](/search?q=turbo+mode)
+4. [Ice modifiers](/search?q=ice+modifiers)
 
 ## Basic Plugin Loading {#basic-plugin-loading}
 
@@ -21,80 +25,79 @@ zi load z-shell/H-S-MW
 zi light zsh-users/zsh-syntax-highlighting
 ```
 
-上記のコマンドは2通りの基本的なプラグインの読み込み方法です。`load`はレポート(プラグインが何をするかの追跡)を可能にし、`zi report {plugin-name}`で情報を出力でき、`zi unload {plugin-name}`でプラグインをアンロードすることができます。`light`ではトラッキングとレポートを行わないことで大幅に読み込みが早くなり、レポートを表示したりとアンロードを放棄できます。
+The above commands show two ways of basic plugin loading. `load` causes reporting to be enabled – you can track what plugin does, view the information with `zi report {plugin-name}` and then also unload the plugin with `zi unload {plugin-name}`. Using `light` is a significantly faster loading without tracking and reporting, by using which user resigns of the ability to view the plugin report and to unload it.
 
 :::note
 
-ターボモードでは、トラッキングによる速度低下は無視できる程度です。
+In Turbo mode the slowdown caused by tracking is negligible..
 
 :::
 
 ## Oh My Zsh, Prezto {#oh-my-zsh-prezto}
 
-Oh MyZshとPreztoのプラグインを読み込むには、`snippet`機能を使用してください。Snippetsは`curl`, `wget`等で単一ファイルをURLから直接ダウンロードします。(ダウンローツールは自動検出されて実行されます)。例:
+To load Oh My Zsh and Prezto plugins, use the `snippet` feature. Snippets are single files downloaded by `curl`, `wget`, etc. (automatic detection of the download tool is being performed) directly from the URL. For example:
 
 ```shell
 zi snippet 'https://github.com/robbyrussell/oh-my-zsh/raw/master/plugins/git/git.plugin.zsh'
 zi snippet 'https://github.com/sorin-ionescu/prezto/blob/master/modules/helper/init.zsh'
 ```
 
-また、Oh My ZshとPreztoに対しては短縮形 `OMZ::` と `PZT::` も使えます。
+Also, for Oh My Zsh and Prezto, you can use `OMZ::` and `PZT::` shorthands:
 
 ```shell
 zi snippet OMZ::plugins/git/git.plugin.zsh
 zi snippet PZT::modules/helper/init.zsh
 ```
 
-さらに、snippetsはGitやSubversionプロトコルもサポートしています。これにより複数ファイル(例えば、Preztoのモジュールを構成する2つ以上のファイル e.g. `init.zsh` と `alias.zsh`)の読み込みも可能です。指定なしの場合に読み込むファイルは `*.plugin.zsh`, `init.zsh`, `*.zsh-theme`です:
+Moreover, snippets support Subversion protocol, supported also by Github. This allows loading snippets that are multi-file (for example, a Prezto module can consist of two or more files, e.g. `init.zsh` and `alias.zsh`). Default files that will be sourced are: `*.plugin.zsh`, `init.zsh`, `*.zsh-theme`:
 
 ```shell {3}
-# URLがディレクトリを指し示す場合
+# URL points to a directory
 zi ice svn
 zi snippet PZT::modules/docker
 ```
 
 ## Snippets and Performance {#snippets-and-performance}
 
-`curl`, `wget`等やSubversionを一緒に使うことで、Oh My ZshとPrezto、または他フレームワーク固有のコードをほぼ回避できます。これにより`ZI`のパフォーマンスが向上し、高速でコンパクトになります。(メモリ使用量を低く抑え読み込み時間を短くすることができます。)
+Using `curl`, `wget`, etc. along with Subversion allows to almost completely avoid code dedicated to Oh My Zsh and Prezto, and also to other frameworks. This gives profits in performance of `ZI`, it is really fast and also compact (causing low memory footprint and short loading time).
 
 ## Ice-Modifiers {#ice-modifiers}
 
 :::info
 
-[ice修飾子](../guides/ice-modifiers)の詳細はリンクを参照してください。
+See: [ice-modifiers](../guides/ice-modifiers) for more information.
 
 :::
 
-`zi ice`コマンドは、次のコマンドにのみice修飾子を付与します。この考え方は、"氷"が飲み物やコーヒーに入れられるようなもので、これをZIに置き換えると、iceは次のZIコマンドへ変更を与えることを意味しています。また、溶けること(つまり長く続かない)は、ZIの中ではその変更は次のZIコマンドにのみ有効ということです。ice修飾子"**pick**"を使うと、明示的に**読み込むファイルを選択できます**。
+The command `zi ice` provides ice-modifiers for single next command. The logic is that "ice" is something that’s added (e.g. to a drink or a coffee) – and in the ZI sense this means that ice is a modifier added to the next ZI command, and also something that melts (so it doesn’t last long) – and in the ZI use it means that the modifier lasts for only single next ZI command. Using one other ice-modifier "**pick**" users can explicitly **select the file to source**:
 
 ```shell {1}
 zi ice svn pick"init.zsh"
 zi snippet PZT::modules/git
 ```
 
-ice修飾子では、`"…"`や`'…'`、`$'…'`を指定できます。ice修飾子名の後に`":"`は必要ありません(次のように`=`を使うことでも正しく動きますが。 e.g. `pick="init.zsh"`や`pick=init.zsh`)。`vim`や`emacs`のようなエディタや`zsh-users/zsh-syntax-highlighting`, `z-shell-F-Sy-H`だとice修飾子に指定している内容がハイライトされます。
+Content of ice-modifier is simply put into `"…"`, `'…'`, or `$'…'`. No need for `":"` after the ice-mod name (although it's allowed, so as the equal sign `=`, so e.g. `pick="init.zsh"` or `pick=init.zsh` are being correctly recognized). This way editors like `vim` and `emacs` and also `zsh-users/zsh-syntax-highlighting` and `z-shell/F-Sy-H` will highlight contents of ice-modifiers.
 
 ## as"program" {#asprogram}
 
-あるプラグインはファイルを読み込むだけではなく、`$PATH`にコマンドを追加するかもしれません。この効果を得るには、ice修飾子`as`とその値に`program`(またはエイリアスの`command`)を指定します。
+A plugin might not be a file for sourcing, but a command to be added to `$PATH`. To obtain this effect, use ice-modifier `as` with value `program` (or an alias value `command`).
 
 ```shell
 zi ice as"program" cp"httpstat.sh -> httpstat" pick"httpstat"
 zi light b4b4r07/httpstat
 ```
 
-上記のコマンドは`$PATH`にプラグインディレクトリを追加し、`httpstat.sh`を`httpstat`としてコピーして`pick`で選択されたファイル、すなわち`httpstat`へ実行権限(`+x`)を付与します。別のice修飾子`mv`もあり、これは`cp`のように動きますが、ファイルを**コピー**する代わりに`移動`します。`mv`は`cp`より前に動作します。
-
+The above command will add plugin directory to `$PATH`, copy file `httpstat.sh` into `httpstat` and add execution rights (`+x`) to the file selected with `pick`, i.e. to `httpstat`. Another ice-mod exists, `mv`, which works like `cp` but **moves** a file instead of **copying** it. `mv` is ran before `cp`.
 
 :::tip
 
-ice修飾子`cp`と`mv`(他に`atclone`などもあります)は、プラグインやスニペットがインストールする時に実行されます。それらを再度試したい場合、はじめに`zi delete PZT::modules/osx`などのコマンドでプラグインやスニペットを削除してください。
+The `cp` and `mv` ices (and also as some other ones, like `atclone`) are being run when the plugin or snippet is being _installed_. To test them again first delete the plugin or snippet by `zi delete PZT::modules/osx` (for example).
 
 :::
 
 ## atpull"…" {#atpull}
 
-ファイルをコピーしておくことはあとで更新する場合にも安全です。リポジトリの元のファイルは変更されませんし、`Git`もコンフリクトを報告しません。しかし、適切な`atpull`(プラグインの**更新時**に実行されるice修飾子)を使用すれば、`mv`も使用も使用できます。
+Copying file is safe for doing later updates – original files of the repository are unmodified and `Git` will report no conflicts. However, `mv` also can be used, if a proper `atpull` (an ice–modifier ran at **update** of plugin) will be used:
 
 ```shell
 zi ice as"program" mv"httpstat.sh -> httpstat" \
@@ -102,17 +105,17 @@ zi ice as"program" mv"httpstat.sh -> httpstat" \
 zi light b4b4r07/httpstat
 ```
 
-`atpull`が`!`で始まる場合、`git pull`と`mv`の前に実行されます。しかし、`atpull`, `mv`, `cp`は**新しいコミットをフェッチする時にのみ**実行されます。つまり、ユーザがプラグインを更新するために`zi update b4b4r07/httpstat`を実行して、新しいコミットが存在した場合、初めに`git reset --hard`が実行されて、元の`httpstat.sh`が**復元**され、**それから**`git pull`が実行されて新しいコミットをダウンロード(fast-forwardで)し、**次に**`mv`を再び実行してコマンドが`httpstat.sh`ではなく`httpstat`になります。このようにすることで、ice修飾子`mv`では、`git`(スニペットで`subversion`を使用する場合に関しては下記を参照)による更新を妨げることなく永続的にプラグインの更新を取り込むことができます。
+If `atpull` starts with an exclamation mark, then it will be run before `git pull`, and before `mv`. Nevertheless, `atpull`, `mv`, `cp` are run **only if new commits are to be fetched**. So in summary, when the user runs `zi update b4b4r07/httpstat` to update this plugin, and there are new commits, what happens first is that `git reset --hard` is run – and it **restores** original `httpstat.sh`, **then** `git pull` is ran and it downloads new commits (doing fast-forward), **then** `mv` is running again so that the command is `httpstat` not `httpstat.sh`. This way the `mv` ice can be used to induce permanent changes into the plugin's contents without blocking the ability to update it with `git` (or with `subversion` in case of snippets, more on this below).
 
 :::info
 
-`!`をZshの対話形式のセッションで展開されないようにするには、`atpull`[ice-modifier](/search?q=ice-modifier)の内容を`"…"`ではなく`'…'`で囲ってください。
+For exclamation mark to not be expanded by Zsh an interactive session, use `'…'` not `"…"` to enclose contents of `atpull` [ice-modifier](/search?q=ice-modifier).
 
 :::
 
 ## Snippets as commands {#snippets-as-commands}
 
-**スニペット**を使うことで、、`$PATH`にコマンドを追加することもできます。例えば、
+Commands can also be added to `$PATH` using **snippets**. For example:
 
 ```shell {2,4}
 zi ice mv"httpstat.sh -> httpstat" \
@@ -123,7 +126,7 @@ zi snippet \
 
 :::tip
 
-Snippets also support `atpull` [ice-modifier](/search?q=ice-modifier), so it’s possible to do e.g. `atpull'!svn revert'`. There’s also `atinit` ice-modfier, executed before each loading of plugin or snippet.
+Snippets also support `atpull` [ice-modifier](/search?q=ice-modifier), so it’s possible to do e.g. `atpull'!svn revert'`. There’s also `atinit` ice-modifier, executed before each loading of plugin or snippet.
 
 :::
 
@@ -160,7 +163,7 @@ zi creinstall zsh-users/zsh-completions # install
 
 :::
 
-To see what completions **all** plugins provide, in tabular formatting and with name of each plugin, use:
+To see what completions **all** plugins provide, in tabular formatting and with the name of each plugin, use:
 
 ```shell
 zini clist
@@ -265,7 +268,7 @@ zi light zsh-users/zsh-autosuggestions
 
 Explanation:
 
-Autosuggestions uses the `precmd` hook, which is being called right after processing `zshrc` – `precmd` hooks are being called **right before displaying each prompt**.
+Autosuggestions use the `precmd` hook, which is being called right after processing `zshrc` – `precmd` hooks are being called **right before displaying each prompt**.
 
 Turbo with the empty `wait` ice will postpone the loading `1` ms after that, so `precmd` will not be called at that first prompt. This makes autosuggestions inactive at the first prompt.
 
@@ -329,7 +332,7 @@ Two prompts, each active in different directories. This technique can be used to
 
 :::note
 
-- The difference with `wait` is that `load` / `unload` are constantly active, not only till first activation.
+- The difference with `wait` is that `load` / `unload` are constantly active, not only till the first activation.
 
 - Note that for the unloading of a plugin to work the plugin needs to be loaded with tracking (so `zi load …`, not `zi light …`). Tracking causes a slight slowdown, however, this doesn’t influence Zsh startup time when using Turbo mode.
 
@@ -337,6 +340,6 @@ Two prompts, each active in different directories. This technique can be used to
 
 :::tip
 
-See: [multiple prompts](../guides/customization#multiple-prompts) for more information. It contains a more real-world examples of a multi-prompt setup, which is being close to what the author uses in his setup.
+See: [multiple prompts](../guides/customization#multiple-prompts) for more information. It contains more real-world examples of a multi-prompt setup, which is being close to what the author uses in his setup.
 
 :::
