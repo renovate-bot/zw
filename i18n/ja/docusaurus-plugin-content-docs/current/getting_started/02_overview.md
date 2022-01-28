@@ -25,7 +25,7 @@ zi load z-shell/H-S-MW
 zi light zsh-users/zsh-syntax-highlighting
 ```
 
-The above commands show two ways of basic plugin loading. `load` causes reporting to be enabled – you can track what plugin does, view the information with `zi report {plugin-name}` and then also unload the plugin with `zi unload {plugin-name}`. Using `light` is a significantly faster loading without tracking and reporting, by using which user resigns of the ability to view the plugin report and to unload it.
+The above commands show two ways of basic plugin loading. `load`はレポート(プラグインが何をするかの追跡)を可能にし、`zi report {plugin-name}`で情報を出力でき、`zi unload {plugin-name}`でプラグインをアンロードすることができます。 Using `light` is a significantly faster loading without tracking and reporting, by using which user resigns of the ability to view the plugin report and to unload it.
 
 :::note
 
@@ -59,7 +59,7 @@ zi snippet PZT::modules/docker
 
 ## Snippets and Performance {#snippets-and-performance}
 
-Using `curl`, `wget`, etc. along with Subversion allows to almost completely avoid code dedicated to Oh My Zsh and Prezto, and also to other frameworks. This gives profits in performance of `ZI`, it is really fast and also compact (causing low memory footprint and short loading time).
+Using `curl`, `wget`, etc. along with Subversion allows to almost completely avoid code dedicated to Oh My Zsh and Prezto, and also to other frameworks. これにより`ZI`のパフォーマンスが向上し、高速でコンパクトになります。 (メモリ使用量を低く抑え読み込み時間を短くすることができます。
 
 ## Ice-Modifiers {#ice-modifiers}
 
@@ -69,35 +69,35 @@ See: [ice-modifiers](../guides/ice-modifiers) for more information.
 
 :::
 
-The command `zi ice` provides ice-modifiers for single next command. The logic is that "ice" is something that’s added (e.g. to a drink or a coffee) – and in the ZI sense this means that ice is a modifier added to the next ZI command, and also something that melts (so it doesn’t last long) – and in the ZI use it means that the modifier lasts for only single next ZI command. Using one other ice-modifier "**pick**" users can explicitly **select the file to source**:
+The command `zi ice` provides ice-modifiers for single next command. この考え方は、"氷"が飲み物やコーヒーに入れられるようなもので、これをZIに置き換えると、iceは次のZIコマンドへ変更を与えることを意味しています。 また、溶けること(つまり長く続かない)は、ZIの中ではその変更は次のZIコマンドにのみ有効ということです。 ice修飾子"**pick**"を使うと、明示的に**読み込むファイルを選択できます**。
 
 ```shell {1}
 zi ice svn pick"init.zsh"
 zi snippet PZT::modules/git
 ```
 
-Content of ice-modifier is simply put into `"…"`, `'…'`, or `$'…'`. No need for `":"` after the ice-mod name (although it's allowed, so as the equal sign `=`, so e.g. `pick="init.zsh"` or `pick=init.zsh` are being correctly recognized). This way editors like `vim` and `emacs` and also `zsh-users/zsh-syntax-highlighting` and `z-shell/F-Sy-H` will highlight contents of ice-modifiers.
+ice修飾子では、`"… "`や`'… '`、`$'… ice修飾子名の後に<code>":"`は必要ありません(次のように`=`を使うことでも正しく動きますが。 e.g. `pick="init.zsh"`や`pick=init.zsh`)。 This way editors like `vim` and `emacs` and also `zsh-users/zsh-syntax-highlighting` and `z-shell/F-Sy-H` will highlight contents of ice-modifiers.
 
 ## as"program" {#asprogram}
 
-A plugin might not be a file for sourcing, but a command to be added to `$PATH`. To obtain this effect, use ice-modifier `as` with value `program` (or an alias value `command`).
+A plugin might not be a file for sourcing, but a command to be added to `$PATH`. この効果を得るには、ice修飾子`as`とその値に`program`(またはエイリアスの`command`)を指定します。
 
 ```shell
 zi ice as"program" cp"httpstat.sh -> httpstat" pick"httpstat"
 zi light b4b4r07/httpstat
 ```
 
-The above command will add plugin directory to `$PATH`, copy file `httpstat.sh` into `httpstat` and add execution rights (`+x`) to the file selected with `pick`, i.e. to `httpstat`. Another ice-mod exists, `mv`, which works like `cp` but **moves** a file instead of **copying** it. `mv` is ran before `cp`.
+The above command will add plugin directory to `$PATH`, copy file `httpstat.sh` into `httpstat` and add execution rights (`+x`) to the file selected with `pick`, i.e. to `httpstat`. 別のice修飾子`mv`もあり、これは`cp`のように動きますが、ファイルを**コピー**する代わりに`移動`します。 `mv` is ran before `cp`.
 
 :::tip
 
-The `cp` and `mv` ices (and also as some other ones, like `atclone`) are being run when the plugin or snippet is being _installed_. To test them again first delete the plugin or snippet by `zi delete PZT::modules/osx` (for example).
+ice修飾子`cp`と`mv`(他に`atclone`などもあります)は、プラグインやスニペットがインストールする時に実行されます。 それらを再度試したい場合、はじめに`zi delete PZT::modules/osx`などのコマンドでプラグインやスニペットを削除してください。
 
 :::
 
 ## atpull"…" {#atpull}
 
-Copying file is safe for doing later updates – original files of the repository are unmodified and `Git` will report no conflicts. However, `mv` also can be used, if a proper `atpull` (an ice–modifier ran at **update** of plugin) will be used:
+Copying file is safe for doing later updates – original files of the repository are unmodified and `Git` will report no conflicts. しかし、適切な`atpull`(プラグインの**更新時**に実行されるice修飾子)を使用すれば、`mv`も使用も使用できます。
 
 ```shell
 zi ice as"program" mv"httpstat.sh -> httpstat" \
@@ -105,17 +105,17 @@ zi ice as"program" mv"httpstat.sh -> httpstat" \
 zi light b4b4r07/httpstat
 ```
 
-If `atpull` starts with an exclamation mark, then it will be run before `git pull`, and before `mv`. Nevertheless, `atpull`, `mv`, `cp` are run **only if new commits are to be fetched**. So in summary, when the user runs `zi update b4b4r07/httpstat` to update this plugin, and there are new commits, what happens first is that `git reset --hard` is run – and it **restores** original `httpstat.sh`, **then** `git pull` is ran and it downloads new commits (doing fast-forward), **then** `mv` is running again so that the command is `httpstat` not `httpstat.sh`. This way the `mv` ice can be used to induce permanent changes into the plugin's contents without blocking the ability to update it with `git` (or with `subversion` in case of snippets, more on this below).
+`atpull`が`!`で始まる場合、`git pull`と`mv`の前に実行されます。 Nevertheless, `atpull`, `mv`, `cp` are run **only if new commits are to be fetched**. つまり、ユーザがプラグインを更新するために`zi update b4b4r07/httpstat`を実行して、新しいコミットが存在した場合、初めに`git reset --hard`が実行されて、元の`httpstat.sh`が**復元**され、**それから**`git pull`が実行されて新しいコミットをダウンロード(fast-forwardで)し、**次に**`mv`を再び実行してコマンドが`httpstat.sh`ではなく`httpstat`になります。 このようにすることで、ice修飾子`mv`では、`git`(スニペットで`subversion`を使用する場合に関しては下記を参照)による更新を妨げることなく永続的にプラグインの更新を取り込むことができます。
 
 :::info
 
-For exclamation mark to not be expanded by Zsh an interactive session, use `'…'` not `"…"` to enclose contents of `atpull` [ice-modifier](/search?q=ice-modifier).
+`!`をZshの対話形式のセッションで展開されないようにするには、`atpull`[ice-modifier](/search?q=ice-modifier)の内容を`"… "`ではなく`'… '`で囲ってください。
 
 :::
 
 ## Snippets as commands {#snippets-as-commands}
 
-Commands can also be added to `$PATH` using **snippets**. For example:
+**スニペット**を使うことで、、`$PATH`にコマンドを追加することもできます。 For example:
 
 ```shell {2,4}
 zi ice mv"httpstat.sh -> httpstat" \
