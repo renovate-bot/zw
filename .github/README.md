@@ -15,7 +15,7 @@
 ## Deployments
 
 Cloudflare's global network: [z-shell.pages.dev](https://z-shell.pages.dev)
-  - Preview branches (<hash>.<project>.pages.dev): **All non-Production branches**
+  - Preview branches (`<hash>.z-shell.pages.dev`): **All non-Production branches**
   - Production branch: **main**
   
 Aliased to the above (improved SEO): [z.digitalclouds.dev](https://z.digitalclouds.dev)
@@ -66,16 +66,10 @@ When referring to something that might need additional information - it has to b
   - If the link of the first mentioning exists, then it can be ignored.
   - If there is no additional information, when it has to be created and documented.
 
-#### [2]: If any file modified at `docs/` 1 of 2 has to be done: 
-
-- It has to contain comment - `<!-- Out of sync -->`
-- Accordingly apply to files at `i18n/[locale]/docusaurus-plugin-content-docs/current`
-
-When it is reasonable - [crowdin](https://crowdin.com/) will be added for translations.
-
 #### Translations
 
 - [Tutorial](https://docusaurus.io/docs/i18n/tutorial)
+- [Crowdin](https://docusaurus.io/docs/2.0.0-beta.14/i18n/crowdin)
 - [i18n](https://docusaurus.io/docs/i18n/introduction)
 
 ### Installation
