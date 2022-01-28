@@ -3,8 +3,12 @@ id: installation
 title: Installation
 sidebar_position: 1
 image: /img/logo/501x501.png
-description: ZI installation guide
-keywords: [installation, zsh, z-shell, zi]
+description: ZI Installation Guide
+keywords:
+  - installation
+  - zsh
+  - z-shell
+  - zi
 ---
 
 :::info Available installer links
@@ -24,7 +28,7 @@ keywords: [installation, zsh, z-shell, zi]
 
 :::tip
 
-必要であれば `-b <tag>` または `-b <branch>` を追加してください。 e.g:
+If required append `-b <tag>` or `-b <branch>` e.g:
 
 ```shell
 sh -c "$(curl -fsSL https://git.io/get-zi)" -- -i skip -b v1.0.0
@@ -35,45 +39,45 @@ sh -c "$(curl -fsSL https://git.io/get-zi)" -- -i skip -b v1.0.0
 Following commands installs ZI and modifies `.zshrc` with the chosen option unless the `.zshrc` file contains command `zi` - then will be skipped.
 
 ```shell
-# 最小限の設定でインストールしたい場合.
+# Will add minimal configuration
 sh -c "$(curl -fsSL https://git.io/get-zi)" --
 
-# 非対話形式。リポジトリのクローンとアップデートのみ.
+# Non interactive. Just clone or update repository.
 sh -c "$(curl -fsSL https://git.io/get-zi)" -- -i skip
 
-# 最低限の設定 + annexes.
+# Minimal configuration + annexes.
 sh -c "$(curl -fsSL https://git.io/get-zi)" -- -a annex
 
-# 最低限の設定 + annexes + zunit.
+# Minimal configuration + annexes + zunit.
 sh -c "$(curl -fsSL https://git.io/get-zi)" -- -a zunit
 
-# 最低限の設定 with loader
+# Minimal configuration with loader
 sh -c "$(curl -fsSL https://git.io/get-zi)" -- -a loader
 
-# あなたの .zshrc の設定を教えてください
+# Suggest your .zshrc configuration to:
 # https://github.com/z-shell/playground
 sh -c "$(curl -fsSL https://git.io/get-zi)" -- -a ???
 ```
 
-### Manual install {#manual-install}
+## Manual install {#manual-install}
 
-リポジトリをクローン:
+Clone repository:
 
 ```shell
 zi_home="${HOME}/.zi" && mkdir -p $zi_home
 git clone https://github.com/z-shell/zi.git "${zi_home}/bin"
 ```
 
-`.zshrc` から`zi.zsh` を読み込む:
+Source `zi.zsh` from your `.zshrc`:
 
 ```shell
 zi_home="${HOME}/.zi"
 source "${zi_home}/bin/zi.zsh"
-# 下記2行は上記2行より後に記述しなければいけない
+# Next two lines must be below the above two
 autoload -Uz _zi
 (( ${+_comps} )) && _comps[zi]=_zi
 ```
 
-## Post install
+## Post install {#post-install}
 
 Reload the shell with `exec zsh` and compile ZI with `zi self-update`.
