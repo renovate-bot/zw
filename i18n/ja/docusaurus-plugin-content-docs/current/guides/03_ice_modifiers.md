@@ -1,9 +1,13 @@
 ---
 id: ice-modifiers
-title: 🧊 Ice Modifiers
+title: '🧊 Ice Modifiers'
 image: /img/logo.png
 description: Documentation for the ice Modifiers
-keywords: [ice-modifiers, zsh, z-shell, zi]
+keywords:
+  - ice-modifiers
+  - zsh
+  - z-shell
+  - zi
 ---
 
 import APITable from '@site/src/components/APITable';

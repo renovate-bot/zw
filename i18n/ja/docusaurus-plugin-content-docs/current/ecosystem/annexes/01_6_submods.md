@@ -1,8 +1,13 @@
 ---
 id: submods
-title: 💠 Submods
+title: '💠 Submods'
 description: Annex - Submods documentation
-keywords: [annex, submods, zsh, z-shell, zi]
+keywords:
+  - annex
+  - submods
+  - zsh
+  - z-shell
+  - zi
 ---
 
 [Submods](https://github.com/z-shell/z-a-submods) annex allows ZI to clone additional submodules when installing a plugin or snippet. The submodules are then automatically updated on the `zi update …` command.

@@ -1,9 +1,13 @@
 ---
 id: syntax
-title: ✍️ Syntax
+title: '✍️ Syntax'
 image: /img/logo/501x501.png
 description: ZI Syntax
-keywords: [構文, zsh, z-shell, zi]
+keywords:
+  - syntax
+  - zsh
+  - z-shell
+  - zi
 ---
 
 ## The fundamental syntax

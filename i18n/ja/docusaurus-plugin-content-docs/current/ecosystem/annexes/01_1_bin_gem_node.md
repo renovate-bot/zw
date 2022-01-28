@@ -1,10 +1,17 @@
 ---
 id: bin-gem-node
-title: 💠 Bin Gem Node
+title: '💠 Bin Gem Node'
 image: /img/logo/501x501.png
 description: Annex - Bin Gem Node documentation
-keywords: [annex, bin-gem-node, zsh, z-shell, zi]
+keywords:
+  - annex
+  - bin-gem-node
+  - zsh
+  - z-shell
+  - zi
 ---
+
+import APITable from '@site/src/components/APITable';
 
 [Bin Gem Node](https://github.com/z-shell/z-a-bin-gem-node) annex provides functionality, which allows to:
 
@@ -74,18 +81,24 @@ fzf "$@"
 
 Running the script will forward the call to the program accessed through an embedded path to it. Thus, no `$PATH` changes are needed!
 
-## The Ice Modifiers Provided By The Annex {#the-ice-modifiers-provided-by-the-annex}
+## The Ice Modifiers Provided By The Annex
 
-There are 7 ice-modifiers provided and handled by the annex. They are:
+There are 7 ice modifiers provided and handled by the annex:
 
-- [`sbin''`](#sbin) – creates `shims` for binaries and scripts.
-- [`fbin''`](#fbin) – creates functions for binaries and scripts.
-- [`gem''`](#gem) – installs and updates gems + creates functions for gems' binaries.
-- [`node''`](#node) – installs and updates node_modules + creates functions for binaries of the modules.
-- [`pip''`](#pip) – installs and updates python packages into a virtualenv + creates functions for binaries of the packages.
-- [`fmod''`](#fmod) – creates wrapping functions for other functions.
-- [`fsrc''`](#fsrc) – creates functions that source given scripts.
-- [`ferc''`](#ferc) – the same as [`fsrc''`](#fscr), but using an alternate script-loading method.
+<APITable>
+
+| Ice modifier | Description |
+| :-- | :-- | 
+| [`sbin''`](#sbin) | Creates `shims` for binaries and scripts. |
+| [`fbin''`](#fbin) | Creates functions for binaries and scripts. |
+| [`gem''`](#gem)   | Installs and updates gems + creates functions for gems' binaries. |
+| [`node''`](#node) | Installs and updates node_modules + creates functions for binaries of the modules. |
+| [`pip''`](#pip)   | Installs and updates python packages into a virtualenv + creates functions for binaries of the packages. |
+| [`fmod''`](#fmod) | Creates wrapping functions for other functions. |
+| [`fsrc''`](#fsrc) | Creates functions that source given scripts. |
+| [`ferc''`](#ferc) | The same as [`fsrc''`](#fscr), but using an alternate script-loading method. |
+
+</APITable>
 
 ### The Ice Modifiers Provided By The Annex in detail {#the-ice-modifiers-provided-by-the-annex-in-detail}
 
@@ -130,15 +143,21 @@ fzf "$@"
 
 `fbin'[{g|n|c|N|E|O}:]{path-to-binary}[ -> {name-of-the-function}]; …'`
 
-Creates a wrapper function of the name the same as the last segment of the path or as `{name-of-the-function}`. The optional preceding flags mean:
+Creates a wrapper function of the name the same as the last segment of the path or as `{name-of-the-function}`.
 
-- `g` – set `$GEM_HOME` variable to `{plugin-dir}`,
-- `n` – set `$NODE_PATH` variable to `{plugin-dir}/node_modules`,
-- `p` – set `$VIRTUALENV` variable to `{plugin-dir}/venv`,
-- `c` – cd to the plugin's directory before running the program and then cd back after it has been run,
-- `N` – append `&>/dev/null` to the call of the binary, i.e. redirect both standard output and standard error to `/dev/null`,
-- `E` – append `2>/dev/null` to the call of the binary, i.e. redirect standard error to `/dev/null`,
-- `O` – append `>/dev/null` to the call of the binary, i.e. redirect standard output to `/dev/null`.
+<APITable>
+
+| Flag | Description |
+| :-- | :-- |
+| `g` | Set `$GEM_HOME` variable to `{plugin-dir}`. |
+| `n` | Set `$NODE_PATH` variable to `{plugin-dir}/node_modules`. |
+| `p` | Set `$VIRTUALENV` variable to `{plugin-dir}/venv`. |
+| `c` | `cd` to the plugin's directory before running the program and then cd back after it has been run. |
+| `N` | Append `&>/dev/null` to the call of the binary, i.e. redirect both standard output and standard error to `/dev/null`. |
+| `E` | Append `2>/dev/null` to the call of the binary, i.e. redirect standard error to `/dev/null`. |
+| `O` | Append `>/dev/null` to the call of the binary, i.e. redirect standard output to `/dev/null`. |
+
+</APITable>
 
 Example:
 
@@ -319,21 +338,25 @@ There's an additional ZI command that's provided by this annex –`shim-list`. I
 
 ![shim-list invocation](https://github.com/z-shell/z-a-bin-gem-node/raw/7f9ed8918d15bc0b2fad4329bc867b022856f4e5/docs/images/shim-list.png)
 
-Available options are:
+Available flags are:
 
 ```shell
 zi shim-list [-h/--help] [-t|--this-dir] [-i|--from-ices] \
       [-o|--one-line] [-s|--short] [-c|--cat]
 ```
 
-The options' meanings:
+<APITable>
 
-- `-h/--help` – shows a usage information,
-- `-t/--this-dir` – instructs ZI to look for shims in the current directory instead of `$ZPFX/bin`,
-- `-i/--from-ices` – normally the code looks for the shim files by examining their contents (shims created by BGN annex have a fixed structure); this option instructs ZI to show the list of shims that results from the `sbin''` ice of the loaded plugins; i.e.: if a plugin has `sbin'git-open'`, for example, then this means that there has to be such shim already created,
-- `-o/--one-line` – display the list of shim files without line breaks, in single line, after spaces,
-- `-s/--short` – don't show the plugin/snippet that the shim belongs to,
-- `-c/--cat` – displays contents of each of the found shim (unimplemented yet).
+| Flag | Description |
+| :-- | :-- |
+| `-h` `--help`       | Shows a usage information. |
+| `-t` `--this-dir`   | Istructs ZI to look for shims in the current directory instead of `$ZPFX/bin`. |
+| `-i` `--from-ices`  | Normally the code looks for the shim files by examining their contents (shims created by BGN annex have a fixed structure); this option instructs ZI to show the list of shims that results from the `sbin''` ice of the loaded plugins; i.e.: if a plugin has `sbin'git-open'`, for example, then this means that there has to be such shim already created. |
+| `-o` `--one-line` | Display the list of shim files without line breaks, in single line, after spaces. |
+| `-s` `--short` | Don't show the plugin/snippet that the shim belongs to. |
+| `-c` `--cat` | Displays contents of each of the found shim (unimplemented yet). |
+
+</APITable>
 
 ## Cygwin Support {#cygwin-support}
 

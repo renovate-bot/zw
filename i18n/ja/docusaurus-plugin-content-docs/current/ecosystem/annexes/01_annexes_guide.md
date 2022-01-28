@@ -2,10 +2,14 @@
 id: annexes
 slug: /ecosystem/annexes
 sidebar_position: 1
-title: 💠 Quick overview
+title: '💠 Quick overview'
 image: https://github.com/z-shell.png
 description: Annexes documentation
-keywords: [annex, zsh, z-shell, zi]
+keywords:
+  - annex
+  - zsh
+  - z-shell
+  - zi
 ---
 
 ## What Are They? {#what-are-they}

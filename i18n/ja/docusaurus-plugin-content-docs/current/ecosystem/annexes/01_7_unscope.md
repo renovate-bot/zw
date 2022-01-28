@@ -1,8 +1,13 @@
 ---
 id: unscope
-title: 💠 Unscope
+title: '💠 Unscope'
 description: Annex - Unscope documentation
-keywords: [annex, unscope, zsh, z-shell, zi]
+keywords:
+  - annex
+  - unscope
+  - zsh
+  - z-shell
+  - zi
 ---
 
 import APITable from '@site/src/components/APITable';
