@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkzi_wiki_pages=self.webpackChunkzi_wiki_pages||[]).push([[5677],{5731:function(s){s.exports=JSON.parse('{"allTagsPath":"/ja/blog/tags","slug":"/ja/blog/tags/zsh","name":"zsh","count":1,"permalink":"/ja/blog/tags/zsh"}')}}]);
