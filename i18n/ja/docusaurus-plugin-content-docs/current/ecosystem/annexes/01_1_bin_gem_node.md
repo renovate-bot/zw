@@ -1,9 +1,14 @@
 ---
 id: bin-gem-node
-title: 💠 Bin Gem Node
+title: '💠 Bin Gem Node'
 image: /img/logo/501x501.png
 description: Annex - Bin Gem Node documentation
-keywords: [annex, bin-gem-node, zsh, z-shell, zi]
+keywords:
+  - annex
+  - bin-gem-node
+  - zsh
+  - z-shell
+  - zi
 ---
 
 [Bin Gem Node](https://github.com/z-shell/z-a-bin-gem-node) annex provides functionality, which allows to:
