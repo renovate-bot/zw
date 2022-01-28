@@ -1,10 +1,14 @@
 ---
 slug: /gallery/collection
-title: 🔺 Collection Guide
+title: '🔺 Collection Guide'
 sidebar_position: 1
 image: /img/z-shell_501x501.png
 description: The gallery of invocations
-keywords: [collection, zsh, z-shell, zi]
+keywords:
+  - collection
+  - zsh
+  - z-shell
+  - zi
 ---
 
 import APITable from '@site/src/components/APITable';
