@@ -95,7 +95,7 @@ There are 7 ice modifiers provided and handled by the annex:
 
 </APITable>
 
-### The Ice Modifiers Provided By The Annex
+### The Ice Modifiers by the Annex
 
 #### `SBIN''`
 
