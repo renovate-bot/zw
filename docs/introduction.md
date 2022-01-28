@@ -4,7 +4,7 @@ title: 🎉 Introduction
 sidebar_position: 1
 image: /img/logo/501x501.png
 description: Introduction to a Swiss Army Knife for Zsh.
-keywords: [序文, zsh, z-shell, zi]
+keywords: [introduction, zsh, z-shell, zi]
 ---
 
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'
