@@ -1,0 +1,25 @@
+changelog:
+  exclude:
+    labels:
+      - ignore-for-release
+    authors:
+      - ss-o
+  categories:
+    - title: Breaking Changes 🛠
+      labels:
+        - breaking-change 💥
+    - title: Introduced New Features 🎉
+      labels:
+        - new-feature 🎉
+    - title: Yields corrections 🔧
+      labels:
+        - fix ⚡
+    - title: Generic maintenance tasks.
+      labels:
+        - maintenance 📈
+    - title: Improved performance.
+      labels:
+        - performance 🚀
+    - title: Addressing a vulnerability or security risk.
+      labels:
+        - security 🛡️

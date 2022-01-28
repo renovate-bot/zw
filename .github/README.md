@@ -12,6 +12,24 @@
 · <a href="https://github.com/z-shell/zi/discussions">《 Ask a Question 》</a>
 </div>
 
+## 🥇 Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/lunarxlark"><img src="https://avatars.githubusercontent.com/u/18758150?v=4?s=80" width="80px;" alt=""/><br /><sub><b>lunarxlark</b></sub></a><br /><a href="#translation-lunarxlark" title="Translation">🌍</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any kind of contributions you make will benefit everybody else and are greatly appreciated!
+
 ## Development
 
 ### Guidelines

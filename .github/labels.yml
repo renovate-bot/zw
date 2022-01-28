@@ -39,9 +39,9 @@
   color: fbca04
   description: "Change in project dependencies."
 
-- name: "in-progress ⚡"
+- name: "Fix ⚡"
   color: f510f4
-  description: "Issue is currently being worked on by a developer."
+  description: "Has been fixed and is therefore considered resolved."
 - name: "triage 📑"
   color: fbca04
   description: "The issue is awaiting investigation."
@@ -73,7 +73,7 @@
 - name: "resolved ☑️"
   color: 0e8a16
   description: "The issue has been fixed and is therefore considered resolved."
-#- name: "priority-hight 🔥"
+#- name: "Breaking Changes 🔥"
 #  color: ee0701
 #  description: "Must be addressed as soon as possible."
 #- name: "priority-medium 📌"
