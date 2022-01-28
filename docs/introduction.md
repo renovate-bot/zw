@@ -3,8 +3,8 @@ id: intro
 title: 🎉 Introduction
 sidebar_position: 1
 image: /img/logo/501x501.png
-description: A Swiss Army Knife for Zsh - Unix shell
-keywords: [introduction, zsh, z-shell, zi]
+description: Introduction to a Swiss Army Knife for Zsh.
+keywords: [序文, zsh, z-shell, zi]
 ---
 
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'
@@ -51,7 +51,7 @@ Install almost everything from [GitHub](https://github.com):
 
 - [Turbo mode](getting_started/overview#turbo-mode-zsh--53) that yields **50-80%** faster Zsh startup.
 
-- [Meta plugins](/search?q=meta+plugins) allow to install groups of plugins via a single, friendly label.
+- [Meta plugins](/search?q=meta+plugins) allow installing groups of plugins via a single, friendly label.
 
 - [Packages](/search?q=packages) offload the user from providing long and complex commands.
 
@@ -59,16 +59,40 @@ Install almost everything from [GitHub](https://github.com):
 
 - Supports [Oh My Zsh](getting_started/overview#oh-my-zsh-prezto) and [Prezto](getting_started/overview#oh-my-zsh-prezto) plugins and libraries ([migration](getting_started/migration)).
 
-- Does not use `$FPATH`, loading multiple plugins don't clutter `$FPATH` with the same number of entries (e.g. 10, 15, or more).
+- Does not use `$FPATH`, loading multiple plugins doesn't clutter `$FPATH` with the same number of entries (e.g. 10, 15, or more).
 - Code is immune to `KSH_ARRAYS` and other options typically causing compatibility problems.
-- Do not require `sudo`, and provides many workarounds (e.g: setting so-called **shims** locally).
+- Do not require `sudo`, and provide many workarounds (e.g: setting so-called **shims** locally).
 
 Provides reports and statistics about:
 
 - What **aliases**, **functions**, **bindkeys**, **Zle widgets**, **zstyles**, **completions**, **variables**, `$PATH`, and `$FPATH` elements a plugin has set up.
 - Allows to quickly familiarize oneself with a new plugin and provides rich and easy-to-digest information that might be helpful on various occasions.
 - Supports the unloading of plugins and the ability to list, (un)install, and selectively disable, enable plugin's completions.
-- Additional provides functionality to easily create your own plugins (locally/remote).
+- Provides functionality to create your plugins (locally/remote).
+
+---
+
+- Docker [playground](https://github.com/z-shell/playground) for the configurations.
+- Preview ZI at [asciinema.org](https://asciinema.org/a/459358)- [Turbo mode](getting_started/overview#turbo-mode-zsh--53) that yields **50-80%** faster Zsh startup.
+
+- [Meta plugins](/search?q=meta+plugins) allow installing groups of plugins via a single, friendly label.
+
+- [Packages](/search?q=packages) offload the user from providing long and complex commands.
+
+- [Annexes](/search?q=annexes) allow to extend the plugin manager with new commands.
+
+- Supports [Oh My Zsh](getting_started/overview#oh-my-zsh-prezto) and [Prezto](getting_started/overview#oh-my-zsh-prezto) plugins and libraries ([migration](getting_started/migration)).
+
+- Does not use `$FPATH`, loading multiple plugins doesn't clutter `$FPATH` with the same number of entries (e.g. 10, 15, or more).
+- Code is immune to `KSH_ARRAYS` and other options typically causing compatibility problems.
+- Do not require `sudo`, and provide many workarounds (e.g: setting so-called **shims** locally).
+
+Provides reports and statistics about:
+
+- What **aliases**, **functions**, **bindkeys**, **Zle widgets**, **zstyles**, **completions**, **variables**, `$PATH`, and `$FPATH` elements a plugin has set up.
+- Allows to quickly familiarize oneself with a new plugin and provides rich and easy-to-digest information that might be helpful on various occasions.
+- Supports the unloading of plugins and the ability to list, (un)install, and selectively disable, enable plugin's completions.
+- Provides functionality to create your plugins (locally/remote).
 
 ---
 
