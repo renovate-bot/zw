@@ -1,0 +1,39 @@
+{
+  "unversionedId": "getting_started/useage",
+  "id": "getting_started/useage",
+  "title": "Usage",
+  "description": "How to use ZI",
+  "source": "@site/docs/getting_started/03_usage.md",
+  "sourceDirName": "getting_started",
+  "slug": "/getting_started/useage",
+  "permalink": "/docs/getting_started/useage",
+  "editUrl": "https://github.com/z-shell/zw/tree/main/docs/getting_started/03_usage.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1643341372,
+  "formattedLastUpdatedAt": "1/28/2022",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "useage",
+    "title": "Usage",
+    "sidebar_position": 3,
+    "image": "/img/z-shell_501x501.png",
+    "description": "How to use ZI",
+    "keywords": [
+      "how-to-use",
+      "zsh",
+      "z-shell",
+      "zi"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quick overview",
+    "permalink": "/docs/getting_started/overview"
+  },
+  "next": {
+    "title": "Migration",
+    "permalink": "/docs/getting_started/migration"
+  }
+}

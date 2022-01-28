@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkzi_wiki_pages=self.webpackChunkzi_wiki_pages||[]).push([[3975],{2559:function(a){a.exports=JSON.parse('{"allTagsPath":"/ja/blog/tags","slug":"/ja/blog/tags/productivity","name":"productivity","count":2,"permalink":"/ja/blog/tags/productivity"}')}}]);

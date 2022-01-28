@@ -17,7 +17,7 @@ import APITable from '@site/src/components/APITable';
 5. Create the so-called `shims` known from [rbenv](https://github.com/rbenv/rbenv) – the same feature as the first item of this enumeration – of running a program without adding anything to `$PATH` with all of the above features, however through an automatic **script** created in `$ZPFX/bin`, not a **function** (the first item uses a function-based mechanism),
 6. Automatic updates of Ruby gems and Node modules during regular plugin and snippet updates with `zi update …`.
 
-## Install bin-gem-node {#install-bin-gem-node}
+## Install bin-gem-node
 
 Simply load like a regular plugin, i.e.:
 
@@ -27,7 +27,7 @@ zi light z-shell/z-a-bin-gem-node
 
 After executing this command you can then use the dl'' and patch'' ice-mods.
 
-### How it works – bird's-eye view {#how-it-works--birds-eye-view}
+### How it works – bird's-eye view
 
 The `sbin''` ice that creates forwarder-scripts instead of forwarder-functions (created by the `fbin''` ice and elaborated in this `How it works …` section) turned out to be the proper, best method for exposing binary programs and scripts. You can jump to the `sbin''` ice [section](#5-sbingncneopath-to-binary---name-of-the-script-) if you want.
 
@@ -37,7 +37,7 @@ Also, like mentioned in the enumeration, the function can automatically export `
 
 Also, like already mentioned, instead of the function an automatically created script – so called `shim` – can be used for the same purpose and with the same functionality, so that the command is being accessible practically fully normally – not only in the live Zsh session (only within which the functions created by `fbin''` exist), but also from any Zsh script.
 
-### How it works, in detail {#how-it-works-in-detail}
+### How it works
 
 Suppose that you would want to install `junegunn/fzf` plugin from GitHub Releases, which contains only single file – the `fzf` binary for the selected architecture. It is possible to do it in the standard way – by adding the plugin's directory to the `$PATH`:
 
@@ -83,21 +83,21 @@ There are 7 ice modifiers provided and handled by the annex:
 <APITable>
 
 | Ice modifier | Description |
-| :-- | :-- | 
+| :-- | :-- |
 | [`sbin''`](#sbin) | Creates `shims` for binaries and scripts. |
 | [`fbin''`](#fbin) | Creates functions for binaries and scripts. |
-| [`gem''`](#gem)   | Installs and updates gems + creates functions for gems' binaries. |
+| [`gem''`](#gem) | Installs and updates gems + creates functions for gems' binaries. |
 | [`node''`](#node) | Installs and updates node_modules + creates functions for binaries of the modules. |
-| [`pip''`](#pip)   | Installs and updates python packages into a virtualenv + creates functions for binaries of the packages. |
+| [`pip''`](#pip) | Installs and updates python packages into a virtualenv + creates functions for binaries of the packages. |
 | [`fmod''`](#fmod) | Creates wrapping functions for other functions. |
 | [`fsrc''`](#fsrc) | Creates functions that source given scripts. |
 | [`ferc''`](#ferc) | The same as [`fsrc''`](#fscr), but using an alternate script-loading method. |
 
 </APITable>
-    
-### The Ice Modifiers Provided By The Annex in detail {#the-ice-modifiers-provided-by-the-annex-in-detail}
 
-#### `SBIN''` {#sbin}
+### The Ice Modifiers by the Annex
+
+#### `SBIN''`
 
 `sbin'[{g|n|c|N|E|O}:]{path-to-binary}[ -> {name-of-the-script}]; …'`
 
@@ -134,7 +134,7 @@ fzf "$@"
 - trailing component of the snippet URL,
 - for any alphabetically first executable file.
 
-#### `FBIN''` {#fbin}
+#### `FBIN''`
 
 `fbin'[{g|n|c|N|E|O}:]{path-to-binary}[ -> {name-of-the-function}]; …'`
 
@@ -148,9 +148,9 @@ Creates a wrapper function of the name the same as the last segment of the path 
 | `n` | Set `$NODE_PATH` variable to `{plugin-dir}/node_modules`. |
 | `p` | Set `$VIRTUALENV` variable to `{plugin-dir}/venv`. |
 | `c` | `cd` to the plugin's directory before running the program and then cd back after it has been run. |
-| `N` | Append `&>/dev/null` to the call of the binary, i.e. redirect both standard output and standard error to `/dev/null`. |
-| `E` | Append `2>/dev/null` to the call of the binary, i.e. redirect standard error to `/dev/null`. |
-| `O` | Append `>/dev/null` to the call of the binary, i.e. redirect standard output to `/dev/null`. |
+| `N` |  Append `&>/dev/null` to the call of the binary, i.e. redirect both standard output and standard error to `/dev/null`. |
+| `E` |  Append `2>/dev/null` to the call of the binary, i.e. redirect standard error to `/dev/null`. |
+| `O` |  Append `>/dev/null` to the call of the binary, i.e. redirect standard output to `/dev/null`. |
 
 </APITable>
 
@@ -174,7 +174,7 @@ The ice can be empty. It will then try to create the function for:
 - trailing component of the snippet URL,
 - for any alphabetically first executable file.
 
-#### `GEM''` {#gem}
+#### `GEM''`
 
 `gem'{gem-name}; …'`
 
@@ -197,7 +197,7 @@ asciidoctor () {
 }
 ```
 
-#### `NODE''` {#node}
+#### `NODE''`
 
 `node'{node-module}; …'`
 
@@ -228,7 +228,7 @@ remark () {
 
 In this case the name of the binary program provided by the node module is different from its name, hence the second form with the `b <- a -> c` syntax has been used.
 
-#### `PIP''` {#pip}
+#### `PIP''`
 
 `pip'{pip-package}; …'`
 
@@ -259,7 +259,7 @@ ansible () {
 
 In this case the name of the binary program provided by the node module is different from its name, hence the second form with the `b <- a -> c` syntax has been used.
 
-#### `FMOD''` {#fmod}
+#### `FMOD''`
 
 `fmod'[{g|n|c|N|E|O}:]{function-name}; …'`
 
@@ -294,11 +294,11 @@ LICENSE
 README.md
 ```
 
-#### `FSCR''` {#fscr}
+#### `FSCR''`
 
 `fsrc'[{g|n|c|N|E|O}:]{path-to-script}[ -> {name-of-the-function}]; …'`
 
-#### `FERC''` {#ferc}
+#### `FERC''`
 
 `ferc'[{g|n|c|N|E|O}:]{path-to-script}[ -> {name-of-the-function}]; …'`
 
@@ -344,17 +344,16 @@ zi shim-list [-h/--help] [-t|--this-dir] [-i|--from-ices] \
 
 | Flag | Description |
 | :-- | :-- |
-| `-h` `--help`       | Shows a usage information. |
-| `-t` `--this-dir`   | Istructs ZI to look for shims in the current directory instead of `$ZPFX/bin`. |
-| `-i` `--from-ices`  | Normally the code looks for the shim files by examining their contents (shims created by BGN annex have a fixed structure); this option instructs ZI to show the list of shims that results from the `sbin''` ice of the loaded plugins; i.e.: if a plugin has `sbin'git-open'`, for example, then this means that there has to be such shim already created. |
+| `-h` `--help` | Shows a usage information. |
+| `-t` `--this-dir` | Istructs ZI to look for shims in the current directory instead of `$ZPFX/bin`. |
+| `-i` `--from-ices` | Normally the code looks for the shim files by examining their contents (shims created by BGN annex have a fixed structure); this option instructs ZI to show the list of shims that results from the `sbin''` ice of the loaded plugins; i.e.: if a plugin has `sbin'git-open'`, for example, then this means that there has to be such shim already created. |
 | `-o` `--one-line` | Display the list of shim files without line breaks, in single line, after spaces. |
 | `-s` `--short` | Don't show the plugin/snippet that the shim belongs to. |
 | `-c` `--cat` | Displays contents of each of the found shim (unimplemented yet). |
 
 </APITable>
 
-    
-## Cygwin Support {#cygwin-support}
+## Cygwin Support
 
 The `sbin''` ice has an explicit Cygwin support – it creates additional, **extra shim files** – Windows batch scripts that allow to run the shielded applications from e.g.: Windows run dialog – if the `~/.zi/polaris/bin` directory is being added to the Windows `PATH` environment variable, for example (it is a good idea to do so, IMHO). The Windows shims have the same name as the standard ones (which are also being created, normally) plus the `.cmd` extension. You can test the feature by e.g.: installing Firefox from the ZI package via:
 

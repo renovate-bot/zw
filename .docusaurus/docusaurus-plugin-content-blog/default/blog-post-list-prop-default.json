@@ -1,0 +1,13 @@
+{
+  "title": "Recent posts",
+  "items": [
+    {
+      "title": "Contributing Guidelines Update",
+      "permalink": "/ja/blog/contributing-guidlines-update"
+    },
+    {
+      "title": "A Swiss Army Knife for Zsh - Unix shell",
+      "permalink": "/ja/blog/swiss-army-knife-for-zsh"
+    }
+  ]
+}

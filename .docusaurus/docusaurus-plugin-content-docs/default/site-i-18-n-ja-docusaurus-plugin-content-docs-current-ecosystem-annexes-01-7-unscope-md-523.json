@@ -1,0 +1,37 @@
+{
+  "unversionedId": "ecosystem/annexes/unscope",
+  "id": "ecosystem/annexes/unscope",
+  "title": "💠 Unscope",
+  "description": "Annex - Unscope documentation",
+  "source": "@site/i18n/ja/docusaurus-plugin-content-docs/current/ecosystem/annexes/01_7_unscope.md",
+  "sourceDirName": "ecosystem/annexes",
+  "slug": "/ecosystem/annexes/unscope",
+  "permalink": "/ja/docs/ecosystem/annexes/unscope",
+  "editUrl": "https://github.com/z-shell/zw/tree/main/i18n/ja/docusaurus-plugin-content-docs/current/ecosystem/annexes/01_7_unscope.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1642322710,
+  "formattedLastUpdatedAt": "2022/1/16",
+  "frontMatter": {
+    "id": "unscope",
+    "title": "💠 Unscope",
+    "description": "Annex - Unscope documentation",
+    "keywords": [
+      "annex",
+      "unscope",
+      "zsh",
+      "z-shell",
+      "zi"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "💠 Submods",
+    "permalink": "/ja/docs/ecosystem/annexes/submods"
+  },
+  "next": {
+    "title": "💠 Rust",
+    "permalink": "/ja/docs/ecosystem/annexes/rust"
+  }
+}

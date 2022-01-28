@@ -1,0 +1,37 @@
+{
+  "unversionedId": "ecosystem/annexes/test",
+  "id": "ecosystem/annexes/test",
+  "title": "💠 Test",
+  "description": "Annex - Test documentation",
+  "source": "@site/i18n/ja/docusaurus-plugin-content-docs/current/ecosystem/annexes/01_9_test.md",
+  "sourceDirName": "ecosystem/annexes",
+  "slug": "/ecosystem/annexes/test",
+  "permalink": "/ja/docs/ecosystem/annexes/test",
+  "editUrl": "https://github.com/z-shell/zw/tree/main/i18n/ja/docusaurus-plugin-content-docs/current/ecosystem/annexes/01_9_test.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1642322710,
+  "formattedLastUpdatedAt": "2022/1/16",
+  "frontMatter": {
+    "id": "test",
+    "title": "💠 Test",
+    "description": "Annex - Test documentation",
+    "keywords": [
+      "annex",
+      "test",
+      "zsh",
+      "z-shell",
+      "zi"
+    ]
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "💠 Rust",
+    "permalink": "/ja/docs/ecosystem/annexes/rust"
+  },
+  "next": {
+    "title": "📦 Quick overview",
+    "permalink": "/ja/docs/ecosystem/packages"
+  }
+}

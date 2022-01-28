@@ -1,0 +1,20 @@
+{
+  "defaultLocale": "en",
+  "locales": [
+    "en",
+    "ja"
+  ],
+  "currentLocale": "ja",
+  "localeConfigs": {
+    "en": {
+      "label": "English",
+      "direction": "ltr",
+      "htmlLang": "en"
+    },
+    "ja": {
+      "label": "日本語",
+      "direction": "ltr",
+      "htmlLang": "ja"
+    }
+  }
+}
