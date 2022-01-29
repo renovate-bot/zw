@@ -35,7 +35,7 @@ In Turbo mode the slowdown caused by tracking is negligible..
 
 ## Oh My Zsh, Prezto {#oh-my-zsh-prezto}
 
-To load Oh My Zsh and Prezto plugins, use the `snippet` feature. Snippets are single files downloaded by `curl`, `wget`, etc. (automatic detection of the download tool is being performed) directly from the URL. For example:
+To load Oh My Zsh and Prezto plugins, use the `snippet` feature. スニペットは、 `curl`、 `wget`などによって URL から直接ダウンロードされる（ダウンロードツールの自動検出が行われている）単一ファイルです。 例:
 
 ```shell
 zi snippet 'https://github.com/robbyrussell/oh-my-zsh/raw/master/plugins/git/git.plugin.zsh'
@@ -226,7 +226,7 @@ zi snippet PZT::modules/docker
 
 Snippets too have completions installed by default, like plugins.
 
-## Turbo Mode (Zsh >= 5.3) {#turbo-mode-zsh--53}
+## ターボモード（Zsh >= 5.3） {#turbo-mode-zsh--53}
 
 The ice-mod `wait` allows the user to postpone the loading of a plugin to the moment when the processing of `.zshrc` is finished and the first prompt is being shown. It is like Windows – during startup, it shows desktop even though it still loads data in the background. This has drawbacks but is for sure better than a blank screen for 10 minutes. And here, in ZI, there are no drawbacks of this approach – no lags, freezes, etc. – the command line is fully usable while the plugins are being loaded, for any number of plugins.
 
