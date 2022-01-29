@@ -68,7 +68,7 @@ const config = {
 				},
 				docs: {
 					sidebarPath: require.resolve("./sidebars.js"),
-					editUrl: "https://github.com/z-shell/zw/tree/main/",
+					editUrl: "https://github.com/z-shell/zw/tree/main/", /** https://crwd.in/z-shell-zi */
 					editLocalizedFiles: false,
 					showLastUpdateTime: true,
 					showLastUpdateAuthor: true,
