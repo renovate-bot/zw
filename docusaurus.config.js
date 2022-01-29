@@ -52,12 +52,12 @@ const config = {
 		defaultLocale: "en",
 		locales: ["en", "ja"],
 	},
-	/**scripts: [
+	scripts: [
 		{
 			src: "https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js",
 			async: true,
 		},
-	],*/
+	],
 	/**stylesheets: [
 		{
 			href: "http://mydomain.com/style.css",
@@ -80,10 +80,13 @@ const config = {
 					remarkPlugins: [math, [npm2yarn, {sync: true}]],
 					rehypePlugins: [katex],
 				},
-				pages: {},
+				pages: {
+					remarkPlugins: [math, [npm2yarn, {sync: true}]],
+					rehypePlugins: [katex],
+					},
 				blog: {
 					editUrl: "https://github.com/z-shell/zw/tree/main/",
-					editLocalizedFiles: true,
+					editLocalizedFiles: false,
 					remarkPlugins: [math, [npm2yarn, {sync: true}]],
 					rehypePlugins: [katex],
 					blogTitle: "❮ ZI ❯ Blog",
@@ -92,16 +95,15 @@ const config = {
 				},
 				sitemap: {
 					changefreq: "weekly",
-					priority: 0.5,
 				},
 				gtag: {
 					trackingID: "G-46BGZ6PZR4",
 					anonymizeIP: true,
 				},
-				/** googleAnalytics: {
+					googleAnalytics: {
 					trackingID: "G-42QP74YV1E",
 					anonymizeIP: true,
-				},*/
+				},
 			}),
 		],
 	],
@@ -116,7 +118,7 @@ const config = {
 			},
 			image: "img/logo/501x501.png",
 			metadata: [{name: "twitter:card", content: "summary"}],
-			hideableSidebar: false,
+			hideableSidebar: true,
 			colorMode: {
 				defaultMode: "dark",
 				disableSwitch: false,
@@ -148,7 +150,7 @@ const config = {
 			},
 			tableOfContents: {
 				minHeadingLevel: 2,
-				maxHeadingLevel: 5,
+				maxHeadingLevel: 6,
 			},
 			navbar: {
 				hideOnScroll: true,
