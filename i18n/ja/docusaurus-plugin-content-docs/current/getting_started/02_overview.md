@@ -76,7 +76,7 @@ zi ice svn pick"init.zsh"
 zi snippet PZT::modules/git
 ```
 
-Content of ice-modifier is simply put into `"…"`, `'…'`, or `$'…'`. ice修飾子名の後に`":"`は必要ありません(次のように`=`を使うことでも正しく動きますが。 e.g. `pick="init.zsh"`や`pick=init.zsh`)。 This way editors like `vim` and `emacs` and also `zsh-users/zsh-syntax-highlighting` and `z-shell/F-Sy-H` will highlight contents of ice-modifiers.
+ice修飾子では、`"… "`や`'… '`、`$'… ice修飾子名の後に<code>":"`は必要ありません(次のように`=`を使うことでも正しく動きますが。 e.g. `pick="init.zsh"`や`pick=init.zsh`)。 This way editors like `vim` and `emacs` and also `zsh-users/zsh-syntax-highlighting` and `z-shell/F-Sy-H` will highlight contents of ice-modifiers.
 
 ## as"program" {#asprogram}
 
@@ -97,7 +97,7 @@ ice修飾子`cp`と`mv`(他に`atclone`などもあります)は、プラグイ�
 
 ## atpull"…" {#atpull}
 
-Copying file is safe for doing later updates – original files of the repository are unmodified and `Git` will report no conflicts. しかし、適切な `atpull` (プラグインの**更新時**に実行されるice修飾子) を使用すれば、`mv` も使用も使用できます。
+Copying file is safe for doing later updates – original files of the repository are unmodified and `Git` will report no conflicts. しかし、適切な`atpull`(プラグインの**更新時**に実行されるice修飾子)を使用すれば、`mv`も使用も使用できます。
 
 ```shell
 zi ice as"program" mv"httpstat.sh -> httpstat" \
@@ -105,11 +105,11 @@ zi ice as"program" mv"httpstat.sh -> httpstat" \
 zi light b4b4r07/httpstat
 ```
 
-`atpull` が `!` で始まる場合、`git pull`と`mv` の前に実行されます。 Nevertheless, `atpull`, `mv`, `cp` are run **only if new commits are to be fetched**. つまり、ユーザがプラグインを更新するために `zi update b4b4r07/httpstat` を実行して、新しいコミットが存在した場合、初めに`git reset --hard` が実行されて、元の `httpstat.sh` が**復元** され、**それから**`git pull` が実行されて新しいコミットをダウンロード(fast-forwardで)し、**次に**`mv` を再び実行してコマンドが `httpstat.sh` ではなく`httpstat` になります。 このようにすることで、ice修飾子`mv`では、`git`(スニペットで`subversion`を使用する場合に関しては下記を参照)による更新を妨げることなく永続的にプラグインの更新を取り込むことができます。
+`atpull`が`!`で始まる場合、`git pull`と`mv`の前に実行されます。 Nevertheless, `atpull`, `mv`, `cp` are run **only if new commits are to be fetched**. つまり、ユーザがプラグインを更新するために`zi update b4b4r07/httpstat`を実行して、新しいコミットが存在した場合、初めに`git reset --hard`が実行されて、元の`httpstat.sh`が**復元**され、**それから**`git pull`が実行されて新しいコミットをダウンロード(fast-forwardで)し、**次に**`mv`を再び実行してコマンドが`httpstat.sh`ではなく`httpstat`になります。 このようにすることで、ice修飾子`mv`では、`git`(スニペットで`subversion`を使用する場合に関しては下記を参照)による更新を妨げることなく永続的にプラグインの更新を取り込むことができます。
 
 :::info
 
-For exclamation mark to not be expanded by Zsh an interactive session, use `'…'` not `"…"` to enclose contents of `atpull` [ice-modifier](/search?q=ice-modifier).
+`!`をZshの対話形式のセッションで展開されないようにするには、`atpull`[ice-modifier](/search?q=ice-modifier)の内容を`"… "`ではなく`'… '`で囲ってください。
 
 :::
 
