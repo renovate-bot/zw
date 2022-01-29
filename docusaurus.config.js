@@ -58,11 +58,6 @@ const config = {
 			async: true,
 		},
 	],
-	/**stylesheets: [
-		{
-			href: "http://mydomain.com/style.css",
-		},
-	],*/
 	presets: [
 		[
 			"classic",
