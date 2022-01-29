@@ -9,19 +9,18 @@ const config = {
 	title: "❮ ZI ❯",
 	titleDelimiter: "|",
 	tagline: "A Swiss Army Knife for Zsh - Unix shell",
-	url: "https://z-shell.pages.dev",
+	url: "https://z.digitalclouds.dev",
+	baseUrl: "/",
 	organizationName: "z-shell",
 	projectName: "zw",
 	trailingSlash: false,
-	baseUrl: "/",
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "throw",
 	favicon: "img/favicon.svg",
 	staticDirectories: ["static"],
 	themes: [],
 	plugins: [
-		    [
-      '@docusaurus/plugin-pwa',
+		    ["@docusaurus/plugin-pwa",
       {
         debug: true,
         offlineModeActivationStrategies: [
@@ -38,7 +37,7 @@ const config = {
           {
             tagName: 'link',
             rel: 'manifest',
-            href: '/manifest.json', // your PWA manifest
+            href: '/manifest.json',
           },
           {
             tagName: 'meta',
@@ -95,7 +94,7 @@ const config = {
 					postsPerPage: "ALL",
 				},
 				sitemap: {
-					changefreq: "daily",
+					changefreq: "weekly",
 					priority: 0.5,
 				},
 				gtag: {
@@ -166,9 +165,9 @@ const config = {
 				items: [
 					{
 						type: "doc",
-						docId: "intro",
+						docId: "docs/intro",
 						position: "left",
-						label: "Wiki",
+						label: "Docs",
 					},
 					{
 						type: "localeDropdown",
@@ -190,7 +189,7 @@ const config = {
 						items: [
 							{
 								label: "Introduction",
-								to: "/docs/intro",
+								to: "intro",
 							},
 						],
 					},
