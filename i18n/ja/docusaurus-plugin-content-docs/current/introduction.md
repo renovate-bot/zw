@@ -1,9 +1,9 @@
 ---
 id: intro
-title: '🎉 Introduction'
+title: '🎉 はじめに'
 sidebar_position: 1
 image: /img/logo/501x501.png
-description: Introduction to a Swiss Army Knife for Zsh.
+description: Zsh用のスイスアーミーナイフの紹介。
 keywords:
   - introduction
   - zsh
@@ -65,7 +65,7 @@ Install almost everything from [GitHub](https://github.com):
 - Code is immune to `KSH_ARRAYS` and other options typically causing compatibility problems.
 - Do not require `sudo`, and provide many workarounds (e.g: setting so-called **shims** locally).
 
-## Reports and statistics
+## レポートと統計
 
 - What **aliases**, **functions**, **bindkeys**, **Zle widgets**, **zstyles**, **completions**, **variables**, `$PATH`, and `$FPATH` elements a plugin has set up.
 - Allows to quickly familiarize oneself with a new plugin and provides rich and easy-to-digest information that might be helpful on various occasions.
