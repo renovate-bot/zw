@@ -36,7 +36,6 @@ Documentation updated on changes at [z-shell/docs](https://github.com/z-shell/do
 | File | Description |
 | --- | --- |
 | [Zsh Plugin Standart](https://z-shell.github.io/docs/zsh/Zsh-Plugin-Standard.html) | Proposed enhancements and codifications of the definition of a "Zsh the plugin" and the actions of plugin managers – standardization. The document covers the information on how to write a Zsh plugin. |
-| [Zsh Native Scripting Handbook](https://z-shell.github.io/docs/zsh/Zsh-Native-Scripting-Handbook.html
-) | Handbook to keep Zsh constructs that are fast, robust, and do not depend on external tools. Such code is similar to Ruby or Perl and less like top-down shell scripts. |
+| [Zsh Native Scripting Handbook](https://z-shell.github.io/docs/zsh/Zsh-Native-Scripting-Handbook.html) | Handbook to keep Zsh constructs that are fast, robust, and do not depend on external tools. Such code is similar to Ruby or Perl and less like top-down shell scripts. |
 
 </APITable>
