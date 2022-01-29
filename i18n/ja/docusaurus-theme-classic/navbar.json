@@ -3,8 +3,8 @@
     "message": "❮ ZI ❯",
     "description": "The title in the navbar"
   },
-  "item.label.Wiki": {
-    "message": "Wiki",
-    "description": "Navbar item with label Wiki"
+  "item.label.Docs": {
+    "message": "Docs",
+    "description": "Navbar item with label Docs"
   }
 }
