@@ -9,7 +9,7 @@ const config = {
 	title: "❮ ZI ❯",
 	titleDelimiter: "|",
 	tagline: "A Swiss Army Knife for Zsh - Unix shell",
-	url: "https://z.digitalclouds.dev",
+	url: "https://z-shell.pages.dev",
 	baseUrl: "/",
 	organizationName: "z-shell",
 	projectName: "zw",
