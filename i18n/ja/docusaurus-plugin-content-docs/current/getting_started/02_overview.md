@@ -91,13 +91,13 @@ The above command will add plugin directory to `$PATH`, copy file `httpstat.sh` 
 
 :::tip
 
-ice修飾子`cp`と`mv`(他に`atclone`などもあります)は、プラグインやスニペットがインストールする時に実行されます。 To test them again first delete the plugin or snippet by `zi delete PZT::modules/osx` (for example).
+ice修飾子`cp`と`mv`(他に`atclone`などもあります)は、プラグインやスニペットがインストールする時に実行されます。 それらを再度試したい場合、はじめに`zi delete PZT::modules/osx`などのコマンドでプラグインやスニペットを削除してください。
 
 :::
 
 ## atpull"…" {#atpull}
 
-Copying file is safe for doing later updates – original files of the repository are unmodified and `Git` will report no conflicts. However, `mv` also can be used, if a proper `atpull` (an ice–modifier ran at **update** of plugin) will be used:
+Copying file is safe for doing later updates – original files of the repository are unmodified and `Git` will report no conflicts. しかし、適切な `atpull` (プラグインの**更新時**に実行されるice修飾子) を使用すれば、`mv` も使用も使用できます。
 
 ```shell
 zi ice as"program" mv"httpstat.sh -> httpstat" \
@@ -105,7 +105,7 @@ zi ice as"program" mv"httpstat.sh -> httpstat" \
 zi light b4b4r07/httpstat
 ```
 
-If `atpull` starts with an exclamation mark, then it will be run before `git pull`, and before `mv`. Nevertheless, `atpull`, `mv`, `cp` are run **only if new commits are to be fetched**. So in summary, when the user runs `zi update b4b4r07/httpstat` to update this plugin, and there are new commits, what happens first is that `git reset --hard` is run – and it **restores** original `httpstat.sh`, **then** `git pull` is ran and it downloads new commits (doing fast-forward), **then** `mv` is running again so that the command is `httpstat` not `httpstat.sh`. This way the `mv` ice can be used to induce permanent changes into the plugin's contents without blocking the ability to update it with `git` (or with `subversion` in case of snippets, more on this below).
+`atpull` が `!` で始まる場合、`git pull`と`mv` の前に実行されます。 Nevertheless, `atpull`, `mv`, `cp` are run **only if new commits are to be fetched**. つまり、ユーザがプラグインを更新するために `zi update b4b4r07/httpstat` を実行して、新しいコミットが存在した場合、初めに`git reset --hard` が実行されて、元の `httpstat.sh` が**復元** され、**それから**`git pull` が実行されて新しいコミットをダウンロード(fast-forwardで)し、**次に**`mv` を再び実行してコマンドが `httpstat.sh` ではなく`httpstat` になります。 このようにすることで、ice修飾子`mv`では、`git`(スニペットで`subversion`を使用する場合に関しては下記を参照)による更新を妨げることなく永続的にプラグインの更新を取り込むことができます。
 
 :::info
 
@@ -115,7 +115,7 @@ For exclamation mark to not be expanded by Zsh an interactive session, use `'…
 
 ## Snippets as commands {#snippets-as-commands}
 
-Commands can also be added to `$PATH` using **snippets**. For example:
+**スニペット**を使うことで、、`$PATH`にコマンドを追加することもできます。 For example:
 
 ```shell {2,4}
 zi ice mv"httpstat.sh -> httpstat" \
