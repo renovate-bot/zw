@@ -74,16 +74,13 @@ const config = {
 				docs: {
 					sidebarPath: require.resolve("./sidebars.js"),
 					editUrl: "https://github.com/z-shell/zw/tree/main/",
-					editLocalizedFiles: true,
+					editLocalizedFiles: false,
 					showLastUpdateTime: true,
 					showLastUpdateAuthor: true,
 					remarkPlugins: [math, [npm2yarn, {sync: true}]],
 					rehypePlugins: [katex],
 				},
-				pages: {
-					remarkPlugins: [math, [npm2yarn, {sync: true}]],
-					rehypePlugins: [katex],
-				},
+				pages: {},
 				blog: {
 					editUrl: "https://github.com/z-shell/zw/tree/main/",
 					editLocalizedFiles: true,
@@ -102,7 +99,7 @@ const config = {
 					anonymizeIP: true,
 				},
 				/** googleAnalytics: {
-					trackingID: "G-46BGZ6PZR4",
+					trackingID: "G-42QP74YV1E",
 					anonymizeIP: true,
 				},*/
 			}),
@@ -165,7 +162,7 @@ const config = {
 				items: [
 					{
 						type: "doc",
-						docId: "docs/intro",
+						docId: "intro",
 						position: "left",
 						label: "Docs",
 					},
