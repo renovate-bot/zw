@@ -13,23 +13,7 @@
 · <a href="https://github.com/z-shell/zi/discussions">《 Ask a Question 》</a>
 </div>
 
-## Deployments
-
-Cloudflare's global network: [z-shell.pages.dev](https://z-shell.pages.dev)
-  - Preview branches (`<hash>.z-shell.pages.dev`): **All non-Production branches**
-  - Production branch: **main**
-  
-Aliased to the above (improved SEO): [z.digitalclouds.dev](https://z.digitalclouds.dev)
-  - Preview deployments: **develop**
-  - Production branch: **main**
-  
-<!-- Github pages: [zw.digitalclouds.dev](https://zw.digitalclouds.dev)
-  - Preview, develop, test branch: **gh-pages**
-  - Deploy with: `yarn deploy` -->
-
-## Development
-
-### Guidelines
+## Development Guidelines
 
 > General [contributing guidelines](https://github.com/z-shell/zi/blob/main/docs/CONTRIBUTING.md) for the [Z-Shell](https://github.com/z-shell) organization.
 
@@ -46,16 +30,9 @@ When referring to something that might need additional information - it has to b
 
 #### Translations
 
-**Breaking change:** Do not modify files under `i18n` as it will conflict and will be overwritten.
+🔥 **Breaking change:**
 
-Translations are handled with [Crowdin](https://docusaurus.io/docs/2.0.0-beta.14/i18n/crowdin), **Google's neural machine translation technology** and **Google Cloud Machine Learning Engine**.
-
-How to translate? Just follow the links below, After a short introduction simply check or vote if you agree with translation with 1 click. To request a new language or additional access just open a new issue to discuss it 🙃. 
-
-Thanks for taking the time to contribute! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are greatly appreciated 💕.
-
-- Translate: [z.digitalclouds.dev/translate](https://z.digitalclouds.dev/translate).
-- Proofreader: [z.digitalclouds.dev/proofreader](https://z.digitalclouds.dev/proofreader).
+Do not modify files under in the repository as it will conflict and will be overwritten. Please see [Discussions](https://github.com/z-shell/zw/discussions/73) to collaborate on translations. 💕
 
 ## 🥇 Contributors
 
