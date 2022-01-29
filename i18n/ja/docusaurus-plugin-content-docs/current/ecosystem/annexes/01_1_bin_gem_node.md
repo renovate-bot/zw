@@ -81,7 +81,7 @@ fzf "$@"
 
 Running the script will forward the call to the program accessed through an embedded path to it. Thus, no `$PATH` changes are needed!
 
-## The Ice Modifiers Provided By The Annex
+## 別館が提供する氷修飾剤
 
 There are 7 ice modifiers provided and handled by the annex:
 

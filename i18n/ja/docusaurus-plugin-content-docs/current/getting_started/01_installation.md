@@ -42,19 +42,19 @@ Following commands installs ZI and modifies `.zshrc` with the chosen option unle
 # Will add minimal configuration
 sh -c "$(curl -fsSL https://git.io/get-zi)" --
 
-# Non interactive. Just clone or update repository.
+# Non interactive. リポジトリのクローンとアップデートのみ.
 sh -c "$(curl -fsSL https://git.io/get-zi)" -- -i skip
 
-# Minimal configuration + annexes.
+# 最低限の設定 + annexes.
 sh -c "$(curl -fsSL https://git.io/get-zi)" -- -a annex
 
-# Minimal configuration + annexes + zunit.
+# 最低限の設定 + annexes + zunit.
 sh -c "$(curl -fsSL https://git.io/get-zi)" -- -a zunit
 
-# Minimal configuration with loader
+# 最低限の設定 with loader
 sh -c "$(curl -fsSL https://git.io/get-zi)" -- -a loader
 
-# Suggest your .zshrc configuration to:
+# あなたの .zshrc の設定を教えてください
 # https://github.com/z-shell/playground
 sh -c "$(curl -fsSL https://git.io/get-zi)" -- -a ???
 ```
@@ -68,12 +68,12 @@ zi_home="${HOME}/.zi" && mkdir -p $zi_home
 git clone https://github.com/z-shell/zi.git "${zi_home}/bin"
 ```
 
-Source `zi.zsh` from your `.zshrc`:
+`.zshrc` から`zi.zsh` を読み込む:
 
 ```shell
 zi_home="${HOME}/.zi"
 source "${zi_home}/bin/zi.zsh"
-# Next two lines must be below the above two
+# 下記2行は上記2行より後に記述しなければいけない
 autoload -Uz _zi
 (( ${+_comps} )) && _comps[zi]=_zi
 ```
