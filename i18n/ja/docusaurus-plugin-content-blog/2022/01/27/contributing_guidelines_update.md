@@ -3,17 +3,21 @@ title: Contributing Guidelines Update
 description: "Contributing is a great way to learn more about social coding on Github, new technologies and and their ecosystems."
 slug: contributing-guidlines-update
 authors:
-  - name: Salvydas Lukosius
+  - 
+    name: Salvydas Lukosius
     title: Z-Shell ZI Maintainer
     url: https://github.com/ss-o
     image_url: https://github.com/ss-o.png
-tags: [opensource, productivity, github, codenewbie]
+tags:
+  - opensource
+  - productivity
+  - github
+  - codenewbie
 image: /img/logo/501x501.png
 hide_table_of_contents: false
 ---
 
-When contributing, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
-Please note we have a [code of conduct](https://github.com/z-shell/zi/blob/main/docs/CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
+When contributing, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change. Please note we have a [code of conduct](https://github.com/z-shell/zi/blob/main/docs/CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
 
 ## Knowledge Base
 
@@ -23,8 +27,7 @@ Please note we have a [code of conduct](https://github.com/z-shell/zi/blob/main/
 
 ### Need some help regarding the basics?🤔
 
-You can refer to the following articles on basics of Git and Github and also contact the Project Mentors,
-in case you are stuck:
+You can refer to the following articles on basics of Git and Github and also contact the Project Mentors, in case you are stuck:
 
 - [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
 - [Cloning a Repo](https://help.github.com/en/desktop/contributing-to-projects/creating-an-issue-or-pull-request)
@@ -44,8 +47,7 @@ Below you will find the process and workflow used to review and merge your chang
 
 ### Step 1 : Fork the Project
 
-- Fork this Repository. This will create a Local Copy of this Repository on your Github Profile.
-  Keep a reference to the original project in `upstream` remote.
+- Fork this Repository. This will create a Local Copy of this Repository on your Github Profile. Keep a reference to the original project in `upstream` remote.
 
 ```bash
 git clone https://github.com/<your-username>/<repo-name>
@@ -107,8 +109,7 @@ git push -u origin Branch_Name
 
 ### Step 6 : Pull Request
 
-- Go to your repository in browser and click on compare and pull requests.
-  Then add a title and description to your pull request that explains your contribution.
+- Go to your repository in browser and click on compare and pull requests. Then add a title and description to your pull request that explains your contribution.
 
 ## Recommendations
 
@@ -131,9 +132,7 @@ Please try to create bug reports that are:
 
 ### How to submit a Pull Request
 
-1. Search our repository for open or closed
-   [Pull Requests](https://github.com/z-shell/zi/pulls)
-   that relate to your submission. You don't want to duplicate effort.
+1. Search our repository for open or closed [Pull Requests](https://github.com/z-shell/zi/pulls) that relate to your submission. You don't want to duplicate effort.
 2. Fork the project
 3. Create your feature branch (`git checkout -b feat/amazing_feature`)
 4. Commit your changes (`git commit -m 'feat: add amazing_feature'`) Z-Shell ZI uses [conventional commits](https://www.conventionalcommits.org), so please follow the specification in your commit messages.
@@ -159,8 +158,7 @@ Contributing is also a great way to learn more about social coding on Github, ne
 - Squash your commits into a single commit with git's [interactive rebase](https://help.github.com/articles/interactive-rebase). Create a new branch if necessary.
 - Push your branch to your fork on Github, the remote `origin`.
 - From your fork open a pull request in the correct branch. Target the project's `develop` branch if there is one, else go for `main`!
-- Once the pull request is approved and merged you can pull the changes from `upstream` to your local repo and delete
-  your extra branch(es).
+- Once the pull request is approved and merged you can pull the changes from `upstream` to your local repo and delete your extra branch(es).
 
 > Always write your commit messages in the present tense. Your commit message should describe what the commit, when applied, does to the code – not what you did to the code. ([examples](https://www.google.com/search?q=english+"present+tense+example"))
 
@@ -206,33 +204,26 @@ Instead of adding non-essential images to repository link them to markdown files
 
 ### New contributors
 
-New contributors should be welcomed to the community by existing members,
-helped with PR workflow, and directed to relevant documentation and
-communication channels.
+New contributors should be welcomed to the community by existing members, helped with PR workflow, and directed to relevant documentation and communication channels.
 
 ### Member
 
-Members are continuously active contributors in the community. They can have
-issues and PRs assigned to them, and pre-submit tests are automatically run for their PRs. Members are expected to remain active contributors to the community.
+Members are continuously active contributors in the community. They can have issues and PRs assigned to them, and pre-submit tests are automatically run for their PRs. Members are expected to remain active contributors to the community.
 
 ### Established community members
 
-Established community members are expected to demonstrate their adherence to the principles in this document.
-Familiarity with project organization, roles, policies, procedures, conventions, etc., and technical and/or writing ability.
-Role-specific expectations, responsibilities, and requirements are enumerated
-below.
+Established community members are expected to demonstrate their adherence to the principles in this document. Familiarity with project organization, roles, policies, procedures, conventions, etc., and technical and/or writing ability. Role-specific expectations, responsibilities, and requirements are enumerated below.
 
 ### Requirements
 
 - Enabled two-factor authentication on their GitHub account.
 - Actively contributing to 1 or more repositories altenatively ensure your sponsors are @mentioned on the issue.
 
-This section outlines the various responsibilities of contributor roles in
-Z-shell. Responsibilities for most roles are scoped to these subprojects.
+This section outlines the various responsibilities of contributor roles in Z-shell. Responsibilities for most roles are scoped to these subprojects.
 
-| Role     | Responsibilities                        | Requirements                                                       | Defined by                                                |
-| -------- | --------------------------------------- | ------------------------------------------------------------------ | --------------------------------------------------------- |
-| Member   | Active contributor in the community     | Sponsored by reviewers or multiple contributions to the project    | Z-shell GitHub org member                                 |
+| Role     | Responsibilities                        | Requirements                                                       | Defined by                                                                                   |
+| -------- | --------------------------------------- | ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------- |
+| Member   | Active contributor in the community     | Sponsored by reviewers or multiple contributions to the project    | Z-shell GitHub org member                                                                    |
 | Reviewer | Review contributions from other members | History of review and authorship in a subproject                   | [CODEOWNERS](https://github.com/z-shell/zi/blob/main/.github/CODEOWNERS) file reviewer entry |
 | Approver | Contributions acceptance approval       | Highly experienced active reviewer and contributor to a subproject | [CODEOWNERS](https://github.com/z-shell/zi/blob/main/.github/CODEOWNERS) file approver entry |
 
