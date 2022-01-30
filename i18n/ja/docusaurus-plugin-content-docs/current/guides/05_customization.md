@@ -1,10 +1,10 @@
 ---
 id: customization
-title: Preferences & Customization
+title: 環境設定 & カスタマイズ
 image: https://github.com/z-shell.png
-description: User Preferences & Customization
+description: ユーザプリファレンス & カスタマイズ
 keywords:
-  - customization
+  - カスタマイズ
   - preferences
   - zsh
   - z-shell
@@ -13,9 +13,9 @@ keywords:
 
 import APITable from '@site/src/components/APITable';
 
-## Customizing Paths {#customizing-paths}
+## パスをカスタマイズする {#customizing-paths}
 
-Following variables can be set to custom values, before sourcing ZI.
+ZI をソースする前に、次の変数をカスタム値に設定できます。
 
 ```shell
 declare -A ZI  # initial ZI's hash definition, if configuring before loading ZI, and then:
@@ -39,19 +39,19 @@ declare -A ZI  # initial ZI's hash definition, if configuring before loading ZI,
 
 </APITable>
 
-## Non-GitHub (Local) Plugins {#non-github-local-plugins}
+## GitHub 以外 (ローカル) プラグイン {#non-github-local-plugins}
 
-Use `create` subcommand with user name `_local` (the default) to create the plugin's skeleton in `$ZI[PLUGINS_DIR]`. It will be not connected with the GitHub repository (because of the user name being `_local`). To enter the plugin's directory use the `cd` command with just the plugin's name (without `_local`, it's optional).
+`create` subcommand with user name `_local` (default) を使用して、プラグインのスケルトンを `$ZI[PLUGINS_DIR]` で作成します。 GitHub リポジトリには接続されません (ユーザ名が `_local`であるため)。 プラグインのディレクトリに入るには、プラグイン名だけで `cd` コマンドを使います ( `_local`は省略可能です)。
 
-If the user name will not be `_local`, then ZI will create a repository also on GitHub and set up the correct repository origin.
+ユーザ名が `_local`でない場合、ZI は GitHub にもリポジトリを作成し、正しいリポジトリオリジンをセットアップします。
 
-## Extending Git {#extending-git}
+## Git を拡張する {#extending-git}
 
-Several projects provide git extensions. Installing them with ZI has many benefits:
+いくつかのプロジェクトが git 拡張機能を提供しています。 ZI でインストールすると、次のような多くの利点があります。
 
-- all files are under `$HOME` – no administrator rights needed,
-- declarative setup (like Chef or Puppet) – copying `.zshrc` to a different account brings also git-related setup,
-- easy update by e.g: `zi update --all`.
+- すべてのファイルが `$HOME` 未満です。管理者権限は不要です。
+- 宣言的なセットアップ（Chef や Puppet など）- `.zshrc` を別のアカウントにコピーすると、Git 関連の設定も行われます。
+- 例による簡単な更新： `zi update --all`。
 
 Below is a configuration that adds multiple git extensions, loaded in Turbo mode, 1 second after prompt, with use of the [Bin-Gem-Node](https://github.com/z-shell/z-a-bin-gem-node) annex:
 
@@ -72,7 +72,7 @@ zi as"null" wait"1" lucid for \
             z-shell/git-url
 ```
 
-The target directory for installed files is `$ZPFX` (`~/.zi/polaris` by default).
+インストールされるファイルのターゲットディレクトリは `$ZPFX` (既定では`~/.zi/polaris`) です。
 
 With [meta-plugins](https://github.com/z-shell/zi/wiki/z-a-meta-plugins) consisting of:
 
@@ -101,17 +101,17 @@ zi light-mode for z-shell/z-a-meta-plugins @annexes @ext-git
 
 ## Zsh options `setopt` {#zsh-options-setopt}
 
-Options are primarily referred to by name. These names are case insensitive and underscores are ignored. For example, `allexport` is equivalent to `A__lleXP_ort`.
+オプションは主に名前で参照されます。 これらの名前は大文字と小文字を区別せず、アンダースコアは無視されます。 たとえば、 `allexport` は `a__llExp_ort`に相当します。
 
-The sense of an option name may be inverted by preceding it with `no`, so `setopt No_Beep` is equivalent to `unsetopt beep`. This inversion can only be done once, so `nonobeep` is not a synonym for `beep`. Similarly, `tify` is not a synonym for `nonotify` (the inversion of `notify`).
+オプション名の意味は、その前に `no`をつけることで逆転することがあるので、 `setopt No_Beep` は `unsetopt のビープ音に相当する`。 この反転は一度しかできないので、 `nonobeep` は `beep`の同義語ではありません。 同様に、 `tify` は `nonotify` ( `通知`の反転) のシノニムではありません。
 
-Some options also have one or more single letter names. There are two sets of single letter options: one used by default, and another used to emulate sh/ksh (used when the SH_OPTION_LETTERS option is set). The single letter options can be used on the shell command line, or with the set, setopt and unsetopt builtins, as normal Unix options preceded by `-`.
+一部のオプションには、1つ以上の1文字の名前もあります。 単一文字のオプションには 2 つのセットがあります。1 つはデフォルトで使用され、もう 1 つは sh/ksh (SH_OPTION_LETTERS オプションが設定されている場合に使われる) をエミュレートするために使われます。 一文字のオプションは、通常の Unix オプションに先行する `-`と同じく、シェルコマンドライン、または組込みコマンド set、setopt、unsetopt とともに使用することができます。
 
-The sense of the single letter options may be inverted by using `+` instead of `-`. Some of the single letter option names refer to an option being off, in which case the inversion of that name refers to the option being on. For example, `+n` is the short name of `exec`, and `-n` is the short name of its inversion, `noexec`.
+一文字オプションの意味は、 `-`の代わりに `+` を使うことで逆にすることができます。 一文字のオプション名の中には、オプションがオフになっていることを表すものもあり、その場合、その名前の反転はオンになっているオプションを指します。 たとえば、 `+n` は `exec`の短縮名で、 `-n` はその反転の短縮名です。 `noexec`。
 
-In strings of single letter options supplied to the shell at startup, trailing whitespace will be ignored; for example the string `-f` will be treated just as `-f`, but the string `-f i` is an error. This is because many systems which implement the `#!` mechanism for calling scripts do not strip trailing whitespace.
+起動時にシェルに与えられた 1 文字のオプションの文字列では、末尾の空白は無視されます。たとえば、文字列 `-f` は `-f`として扱われますが、文字列 `-f i` はエラーです。 これは、スクリプトを呼び出すための `#!` メカニズムを実装する多くのシステムが、末尾の空白文字を除去しないためです。
 
-### History optimization {#history-optimization}
+### 履歴の最適化 {#history-optimization}
 
 <APITable>
 
@@ -132,7 +132,7 @@ In strings of single letter options supplied to the shell at startup, trailing w
 
 </APITable>
 
-### Other tweaks {#other-tweaks}
+### その他の調整 {#other-tweaks}
 
 <APITable>
 
@@ -151,11 +151,11 @@ In strings of single letter options supplied to the shell at startup, trailing w
 
 </APITable>
 
-## Style control for the completion system `zstyle` {#style-control-for-the-completion-system-zstyle}
+## 完了システムのスタイルコントロール `zstyle` {#style-control-for-the-completion-system-zstyle}
 
-What does `zstyle` do? - [unix.stackexchange.com/questions/214657/what-does-zstyle-do](https://unix.stackexchange.com/questions/214657/what-does-zstyle-do/239980)
+`zstyle` は何をしますか？ - [unix.stackexchange.com/questions/214657/what-does-zstyle-do](https://unix.stackexchange.com/questions/214657/what-does-zstyle-do/239980)
 
-The `zstyle` handles the obvious style control for the completion system, but it seems to cover more than just that. E.g., the vcs_info module relies on it for display of git status in your prompt. You can start by looking at the few explanatory paragraphs in `man zshmodules` in the `zstyle` section.
+`zstyle` は、補完システムの明らかなスタイルコントロールを処理しますが、それだけではありません。 例えば、vcs_info モジュールはプロンプトに git status を表示するためにこれに依存しています。 まず、 `zstyle` セクションの `man zshmodules` にあるいくつかの説明パラグラフを見ることから始めることができます。
 
 ### Fuzzy matching of completions for when you mistype them: {#fuzzy-matching-of-completions-for-when-you-mistype-them}
 
@@ -197,16 +197,16 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 ```
 
-## Disabling System-Wide `compinit` Call (Ubuntu) {#disabling-system-wide-compinit-call-ubuntu}
+## 無効化システム全体の `compinit` コール（Ubuntuの） {#disabling-system-wide-compinit-call-ubuntu}
 
-On Ubuntu users might get surprised that e.g. their completions work while they didn't call `compinit` in their `.zshrc`. That's because the function is being called in `/etc/zshrc`. To disable this call – what is needed to avoid the slowdown and if the user loads any completion-equipped plugins, i.e. almost on 100% – add the following lines to `~/.zshenv`:
+Ubuntuでは、 `.zshrc` で `compinit` を呼び出さなかった時など、完了が動作することに驚くかもしれません。 これは、関数が `/etc/zshrc`で呼び出されているためです。 この呼び出しを無効にするには（速度低下を回避するために必要なこと）、ユーザーが完了機能を備えたプラグインをロードする場合、つまりほぼ100％の場合、次の行を `〜/に追加します。 zshenv`：
 
 ```shell
 # Skip the not helping Ubuntu global compinit
 skip_global_compinit=1
 ```
 
-## Multiple prompts {#multiple-prompts}
+## 複数のプロンプト {#multiple-prompts}
 
 <APITable>
 
@@ -234,11 +234,11 @@ skip_global_compinit=1
 
 :::info
 
-Exclamation mark causes the effects of the functions to be tracked.
+感嘆符を使用すると、機能の効果が追跡されます。
 
 :::
 
-To allow better unloading, conditions are checked every second, you can use conditions like:
+より良いアンロードを可能にするために、条件は毎秒チェックされます。次のような条件を使用できます。
 
 <APITable>
 

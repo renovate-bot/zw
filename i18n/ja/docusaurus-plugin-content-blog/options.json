@@ -4,11 +4,11 @@
     "description": "The title for the blog used in SEO"
   },
   "description": {
-    "message": "News, Changes & Updates",
+    "message": "ニュース、変更、更新",
     "description": "The description for the blog used in SEO"
   },
   "sidebar.title": {
-    "message": "Recent posts",
+    "message": "最近の投稿",
     "description": "The label for the left sidebar"
   }
 }
