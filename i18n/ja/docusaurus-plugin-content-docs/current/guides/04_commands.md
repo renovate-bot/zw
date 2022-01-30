@@ -1,10 +1,10 @@
 ---
 id: commands
-title: '🛠 Commands'
+title: '🛠コマンド'
 image: /img/logo/501x501.png
-description: ZI Commands
+description: ZI コマンド
 keywords:
-  - commands
+  - コマンド
   - zsh
   - z-shell
   - zi
@@ -12,7 +12,7 @@ keywords:
 
 import APITable from '@site/src/components/APITable';
 
-## Commands available with <kbd>^TAB</kbd> completion {#commands-available-with-tab-completion}
+## で使用可能なコマンド <kbd>^ TAB</kbd> 完了 {#commands-available-with-tab-completion}
 
 ```shell title="zi ^TAB"
 self-update          -- "Updates and Compile ❮ ZI ❯"
@@ -66,21 +66,21 @@ man                  -- "Manpage"
 help                 -- "Usage Information"
 ```
 
-## Updating ZI and plugins
+## ZIとプラグインの更新
 
-To update ZI issue `zi self-update` in the command line.
+ZI を更新するには、コマンドラインで `zi self-update` を発行します。
 
-To update all plugins and snippets, issue `zi update`.
+すべてのプラグインとスニペットを更新するには、 `zi update`を発行します。
 
 <div align="center"><img src="/img/include/update.png" alt="Update" /></div>
 
-If you wish to update only a single plugin/snippet instead issue `zi update NAME_OF_PLUGIN`. A list of commits will be shown if any.
+プラグイン/スニペットを 1 つだけ更新したい場合は、 `zi update NAME_OF_PLUGIN`を発行します。 コミットのリストがあれば表示されます。
 
 Some plugins require performing an action each time they're updated. One way you can do this is by using the `atpull` ice modifier. For example, writing `zi ice atpull'./configure'` before loading a plugin will execute `./configure` after a successful update. Refer to [Ice Modifiers](/search/?q=ice-modifiers) for more information.
 
 The ice modifiers for any plugin or snippet are stored in their directory in a `._zi` subdirectory, hence the plugin doesn't have to be loaded to be correctly updated. There's one other file created there, `.zi_lstupd` – it holds the log of the new commits pulled-in in the last update.
 
-## Calling `compinit` without turbo mode {#calling-compinit-without-turbo-mode}
+## ターボモードなしで `compinit` を呼び出す {#calling-compinit-without-turbo-mode}
 
 With no Turbo mode in use, compinit can be called normally, i.e.: as `autoload compinit; compinit`. This should be done after loading of all plugins and before possibly calling `zi cdreplay`.
 
@@ -120,15 +120,15 @@ This allows calling compinit once.
 
 :::tip
 
-Performance gains are huge, for example, shell startup time with double `compinit`: **0.980** sec, with `cdreplay` and single `compinit`: **0.156** sec.
+パフォーマンスの向上は、巨大例えば、シェル起動時間二重である `compinit`： **0.980** 秒と `cdreplay` 及び単 `compinit`： **0.156** 秒。
 
 :::
 
-## Calling `compinit` with turbo mode
+## ターボモードで `compinit` を呼び出す
 
 If you load completions using `wait'…'` [turbo mode](/search?q=turbo+mode) then you can add `atinit'zicompinit'` to the syntax-highlighting plugin (which should be the last one loaded, as their (2 projects, [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) & [F-Sy-H](https://github.com/z-shell/F-Sy-H)) documentation state), or `atload'zicompinit'` to last completion-related plugin. `zicompinit` is a function that just runs `autoload compinit; compinit`, created for convenience. There's also `zicdreplay` which will replay any caught compdefs so you can also do: `atinit'zicompinit; zicdreplay'`, etc. Basically, the whole topic is the same as normal `compinit` call, but it is done in `atinit` or `atload` hook of the last related plugin with the use of the helper functions (`zicompinit`,`zicdreplay` & `zicdclear` – see below for explanation of the last one).
 
-### Summary of `compinit` call: {#summary-of-compinit-call}
+### `compinit` コールのサマリー: {#summary-of-compinit-call}
 
 ```shell {10} title=~/.zshrc
 source ~/.zi/bin/zi.zsh
@@ -144,7 +144,7 @@ zi wait lucid atload"zicompinit; zicdreplay" blockf for \
     zsh-users/zsh-completions
 ```
 
-### Ignoring compdefs {#ignoring-compdefs}
+### compdef を無視する {#ignoring-compdefs}
 
 If you want to ignore compdefs provided by some plugins or snippets, place their load commands before commands loading other plugins or snippets, and issue `zi cdclear` (or `zicdclear`, designed to be used in hooks like `atload'…'`):
 
@@ -169,7 +169,7 @@ The `cdreplay` is important if you use plugins like `OMZP::kubectl` or `asdf-vm/
 
 Following commands are passed to `zi …` to obtain described effects.
 
-## Loading and unloading {#loading-and-unloading}
+## ロードとアンロード {#loading-and-unloading}
 
 <APITable>
 
@@ -182,7 +182,7 @@ Following commands are passed to `zi …` to obtain described effects.
 
 </APITable>
 
-## Completions management {#completions-management}
+## 完了管理 {#completions-management}
 
 <APITable>
 
@@ -202,7 +202,7 @@ Following commands are passed to `zi …` to obtain described effects.
 
 </APITable>
 
-## Tracking of the active session {#tracking-of-the-active-session}
+## アクティブセッションのトラッキング {#tracking-of-the-active-session}
 
 <APITable>
 
@@ -216,7 +216,7 @@ Following commands are passed to `zi …` to obtain described effects.
 
 </APITable>
 
-## Reports and statistics {#reports-and-statistics}
+## レポートと統計 {#reports-and-statistics}
 
 <APITable>
 
@@ -234,7 +234,7 @@ Following commands are passed to `zi …` to obtain described effects.
 
 </APITable>
 
-## Compiling
+## コンパイル中
 
 <APITable>
 
@@ -246,7 +246,7 @@ Following commands are passed to `zi …` to obtain described effects.
 
 </APITable>
 
-## Other commands {#other-commands}
+## その他のコマンド {#other-commands}
 
 <APITable>
 
@@ -271,7 +271,7 @@ Following commands are passed to `zi …` to obtain described effects.
 
 </APITable>
 
-## Help & Manual {#help--manual}
+## ヘルプ & マニュアル {#help--manual}
 
 <APITable>
 
