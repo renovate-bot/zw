@@ -73,7 +73,7 @@ const config = {
         	if (locale !== 'en') {
       	  	return `https://crowdin.com/project/z-shell-zi/${locale}`;
     	    		}
-  	        		return `"https://github.com/z-shell/zw/tree/main/"`;
+  	        		return `"https://github.com/z-shell/zw/tree/main/`;
 	        		},
 					/**editUrl: "https://github.com/z-shell/zw/tree/main/",*/
 					editLocalizedFiles: false,
