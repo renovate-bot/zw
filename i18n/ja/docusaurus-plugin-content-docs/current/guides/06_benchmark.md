@@ -1,17 +1,17 @@
 ---
 id: benchmark
-title: Statistics & Benchmark
+title: 統計 & ベンチマーク
 image: /img/logo.png
-description: Benchamarking and profiling for Z-Shell ZI
+description: Z-Shell ZI のベンチマークとプロファイリング
 keywords:
-  - statistics
-  - benchmark
+  - 統計学
+  - ベンチマーク
   - zsh
   - z-shell
   - zi
 ---
 
-## Profile plugins {#profile-plugins}
+## プロファイルプラグイン {#profile-plugins}
 
 ```shell title=~/.zshrc
 zi ice atinit'zmodload zsh/zprof' \
@@ -60,7 +60,7 @@ num calls    time                self                 name
 
 - the table is sorted on the **self-time** column.
 
-## Profile `.zshrc` startup {#profile-zshrc-startup}
+## プロファイル `.zshrc` スタートアップ {#profile-zshrc-startup}
 
 ```shell title=~/.zshrc
 # Specify true to enable
@@ -89,4 +89,4 @@ if [[ "$PROFILE_STARTUP" == true ]]; then
 fi
 ```
 
-The next time your `.zshrc` is sourced it will generate 2 files in the `$HOME` directory.
+次回あなたの `.zshrc` がソース化されると、 `$HOME` ディレクトリに2つのファイルが生成されます。
