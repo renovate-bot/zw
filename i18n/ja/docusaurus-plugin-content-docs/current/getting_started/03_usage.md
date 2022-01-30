@@ -1,9 +1,9 @@
 ---
 id: useage
-title: Usage
+title: 使い方
 sidebar_position: 3
 image: /img/z-shell_501x501.png
-description: How to use ZI
+description: ZIの使い方
 keywords:
   - how-to-use
   - zsh
