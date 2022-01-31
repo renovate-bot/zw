@@ -20,7 +20,7 @@ keywords:
 - [GitLab Mirror](https://z-shell.pages.dev/i-lab): `https://z-shell.pages.dev/i-lab`
 - [Direct](https://raw.githubusercontent.com/z-shell/zi-src/main/lib/sh/install.sh): `https://raw.githubusercontent.com/z-shell/zi-src/main/lib/sh/install.sh`
 
-> Report an [issue](https://github.com/z-shell/zi/issues/new/choose)
+> [の問題](https://github. com/z-shell/zi/issues/new/choose)を報告する
 
 :::
 

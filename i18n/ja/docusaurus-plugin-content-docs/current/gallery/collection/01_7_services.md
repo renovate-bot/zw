@@ -4,7 +4,7 @@ title: '🔺 Services'
 sidebar_position: 7
 description: Services Collection
 keywords:
-  - collection
+  - コレクション
   - services
   - zsh
   - z-shell
