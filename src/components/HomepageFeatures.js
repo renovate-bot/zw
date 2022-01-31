@@ -1,37 +1,41 @@
 import React from "react";
 import clsx from "clsx";
 import styles from "./HomepageFeatures.module.css";
+import Translate, {translate} from "@docusaurus/Translate";
 
 const FeatureList = [
 	{
-		title: "Yields 50-80% faster Zsh startup",
+		title: "Yields 50-80% Faster Zsh Startup",
 		Svg: require("../../static/img/turbo.svg").default,
 		description: (
-			<>
+			<Translate
+				id="home.fetaure1" description="Description of first featured banner in homepage">
 				It allows postponing the loading of a plugin to the moment when the
 				processing of `.zshrc` is finished and the first prompt is being shown.
-			</>
+			</Translate>
 		),
 	},
 	{
 		title: "Focus on What Matters",
 		Svg: require("../../static/img/stats.svg").default,
 		description: (
-			<>
+			<Translate
+				id="home.fetaure2" description="Description of second featured banner in homepage">
 				Provides the statistics about the plugins, such as describing what
 				aliases, functions, bindkeys, Zle widgets, zstyles, completions,
 				variables, `PATH` and `FPATH` elements a plugin has set up
-			</>
+			</Translate>
 		),
 	},
 	{
-		title: "Supports",
+		title: "Wide Scopes for Integration",
 		Svg: require("../../static/img/zsh.svg").default,
 		description: (
-			<>
-				Supports Oh My Zsh, Prezto plugins, and libraries. The implementation
-				isn't framework-specific and allows to use of all that is preferred.
-			</>
+			<Translate
+				id="home.fetaure3" description="Description of third featured banner in homepage">
+				Supports Oh My Zsh, Prezto and creation of your own plugins, and libraries. The implementation
+				isn't framework-specific - include only if and when required.
+			</Translate>
 		),
 	},
 ];
