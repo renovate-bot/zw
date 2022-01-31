@@ -4,12 +4,12 @@ description: "Contributing is a great way to learn more about social coding on G
 slug: contributing-guidlines-update
 authors:
   - name: Salvydas Lukosius
-    title: Maintainer
+    title: Z-Shell ZI Maintainer
     url: https://github.com/ss-o
     image_url: https://github.com/ss-o.png
 tags: [opensource, productivity, github, codenewbie]
 image: /img/logo/501x501.png
-hide_table_of_contents: true
+hide_table_of_contents: false
 ---
 
 When contributing, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
