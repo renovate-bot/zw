@@ -53,12 +53,12 @@ const config = {
 		defaultLocale: "en",
 		locales: ["en", "ja"],
 	},
-	scripts: [
+	/**scripts: [
 		{
 			src: "https://crowdin.com/js/crowdjet/crowdjet.js",
 			async: true,
 		},
-	],
+	],*/
 	presets: [
 		[
 			"classic",
@@ -234,6 +234,10 @@ const config = {
 							},
 							{
 								html: `
+									<script
+  									type="text/javascript"
+								  	src="https://crowdin.com/js/crowdjet/crowdjet.js">
+									</script>
 									<div
   									id="crowdjet-container"
   									data-project-id="494115"
