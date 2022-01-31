@@ -74,7 +74,6 @@ const config = {
 						if (locale !== "en") {
 							return `https://crowdin.com/project/z-shell-zi/${locale}`;
 						}
-						const nextVersionDocsDirPath = "docs";
 						return `https://github.com/z-shell/zw/tree/main/${versionDocsDirPath}/${docPath}`;
 					},
 					editLocalizedFiles: false,
@@ -93,13 +92,11 @@ const config = {
 						}
 						return `https://github.com/z-shell/zw/tree/main/${blogDirPath}/${blogPath}`;
 					},
-					editUrl: "https://github.com/z-shell/zw/tree/main/",
 					editLocalizedFiles: false,
 					blogTitle: "❮ ZI ❯ Blog",
 					blogDescription: "News, Changes & Updates",
 					postsPerPage: "ALL",
 					blogSidebarTitle: "All our posts",
-					postsPerPage: 5,
 				},
 				sitemap: {
 					changefreq: "weekly",
