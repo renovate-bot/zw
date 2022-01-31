@@ -18,7 +18,7 @@ const config = {
 	onBrokenMarkdownLinks: "warn",
 	favicon: "img/favicon.svg",
 	staticDirectories: ["static"],
-  themes: ['live-codeblock'],
+	themes: ["live-codeblock"],
 	plugins: [
 		[
 			"@docusaurus/plugin-pwa",
@@ -69,14 +69,14 @@ const config = {
 				},
 				debug: true,
 				docs: {
-				sidebarPath: require.resolve("./sidebars.js"),
-        editUrl: ({locale, versionDocsDirPath, docPath}) => {
-         		if (locale !== 'en') {
-      	  		return `https://crowdin.com/project/z-shell-zi/${locale}`;
-    	    	},
-  	      	return `https://github.com/z-shell/zw/tree/main/${versionDocsDirPath}/${docPath}`;
-	        },
-						/**editUrl: "https://github.com/z-shell/zw/tree/main/",
+					sidebarPath: require.resolve("./sidebars.js"),
+					editUrl: ({locale, versionDocsDirPath, docPath}) => {
+						if (locale !== "en") {
+							return `https://crowdin.com/project/z-shell-zi/${locale}`;
+						}
+						const nextVersionDocsDirPath = "docs";
+						return `https://github.com/z-shell/zw/tree/main/${versionDocsDirPath}/${docPath}`;
+					},
 					editLocalizedFiles: false,
 					showLastUpdateTime: true,
 					showLastUpdateAuthor: true,
@@ -84,17 +84,22 @@ const config = {
 					rehypePlugins: [katex],
 				},
 				pages: {
-					remarkPlugins: [math, [npm2yarn, {sync: true}]],
-					rehypePlugins: [katex],
+					remarkPlugins: [npm2yarn],
 				},
 				blog: {
+					editUrl: ({locale, blogDirPath, blogPath}) => {
+						if (locale !== "en") {
+							return `https://crowdin.com/project/z-shell-zi/${locale}`;
+						}
+						return `https://github.com/z-shell/zw/tree/main/${blogDirPath}/${blogPath}`;
+					},
 					editUrl: "https://github.com/z-shell/zw/tree/main/",
 					editLocalizedFiles: false,
-					remarkPlugins: [math, [npm2yarn, {sync: true}]],
-					rehypePlugins: [katex],
 					blogTitle: "❮ ZI ❯ Blog",
 					blogDescription: "News, Changes & Updates",
 					postsPerPage: "ALL",
+					blogSidebarTitle: "All our posts",
+					postsPerPage: 5,
 				},
 				sitemap: {
 					changefreq: "weekly",
@@ -176,11 +181,11 @@ const config = {
 						type: "localeDropdown",
 						position: "right",
 						dropdownItemsAfter: [
-            	{
-                href: 'https://github.com/z-shell/zw/discussions/73',
-                label: 'Help Us Translate',
-              },
-            ],
+							{
+								href: "https://github.com/z-shell/zw/discussions/73",
+								label: "Help Us Translate",
+							},
+						],
 					},
 					{
 						href: "https://github.com/z-shell/zi",
@@ -194,11 +199,15 @@ const config = {
 				style: "dark",
 				links: [
 					{
-						title: "Docs",
+						title: "More",
 						items: [
 							{
 								label: "Introduction",
 								to: "/docs/intro",
+							},
+							{
+								label: "News & Blog",
+								to: "/blog",
 							},
 						],
 					},
@@ -225,6 +234,19 @@ const config = {
 							{
 								label: "Twitter",
 								href: "https://twitter.com/zshell_zi",
+							},
+							{
+								html: `
+									<div
+  									id="crowdjet-container"
+  									data-project-id="494115"
+  									style="bottom: 90px; left: 20px;">
+									</div>
+									<div
+  									id="crowdjet-expand-container"
+  									style="bottom: 10px; left: 20px;">
+									</div>
+              	`,
 							},
 						],
 					},
