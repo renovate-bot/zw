@@ -53,22 +53,7 @@ const config = {
 		defaultLocale: "en",
 		locales: ["en", "ja"],
 	},
-	scripts: [
-		/**
-		<script
-		  type="text/javascript"
-		  src="https://crowdin.com/js/crowdjet/crowdjet.js">
-		</script>
-		<div
-  			id="crowdjet-container"
-  			data-project-id="494115"
-  			style="bottom: 90px; left: 20px;">
-		</div>
-		<div
-  			id="crowdjet-expand-container"
-  			style="bottom: 10px; left: 20px;">
-		</div>
-	],*/
+	scripts: [],
 	presets: [
 		[
 			"classic",
@@ -115,10 +100,6 @@ const config = {
 					trackingID: "G-46BGZ6PZR4",
 					anonymizeIP: true,
 				},
-				/**googleAnalytics: {
-					trackingID: "G-42QP74YV1E",
-					anonymizeIP: true,
-				},*/
 			}),
 		],
 	],
@@ -226,8 +207,8 @@ const config = {
 								href: "https://github.com/z-shell/zi/discussions",
 							},
 							{
-								label: "Discord",
-								href: "https://discord.gg/8W7yVpX9Hg",
+								label: "Crowdin Translations",
+								href: "https://crowdin.com/project/z-shell-zi/discussions",
 							},
 						],
 					},
@@ -242,9 +223,7 @@ const config = {
 								label: "Twitter",
 								href: "https://twitter.com/zshell_zi",
 							},
-							/**{
-								html: ``,
-							},*/
+							/**{ html: ``, },*/
 						],
 					},
 				],
