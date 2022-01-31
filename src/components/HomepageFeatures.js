@@ -28,7 +28,7 @@ const FeatureList = [
 		),
 	},
 	{
-		title: "Wide Scopes for Integration",
+		title: "Wide Scope for Integration",
 		Svg: require("../../static/img/zsh.svg").default,
 		description: (
 			<Translate
