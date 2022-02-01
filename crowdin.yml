@@ -3,7 +3,7 @@ api_token_env: CROWDIN_PERSONAL_TOKEN
 commit_message: "[ci skip]"
 preserve_hierarchy: true
 pull_request_labels: [
-  "l10n 🗣""
+  "l10n 🗣"
 ]
 files: [
     # JSON translation files
