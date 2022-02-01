@@ -5,7 +5,7 @@ slug: contributing-guidlines-update
 authors:
   - 
     name: Salvydas Lukosius
-    title: Z-Shell ZI Maintainer
+    title: Maintainer
     url: https://github.com/ss-o
     image_url: https://github.com/ss-o.png
 tags:
@@ -14,7 +14,7 @@ tags:
   - github
   - codenewbie
 image: /img/logo/501x501.png
-hide_table_of_contents: false
+hide_table_of_contents: true
 ---
 
 When contributing, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change. Please note we have a [code of conduct](https://github.com/z-shell/zi/blob/main/docs/CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
