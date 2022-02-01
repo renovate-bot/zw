@@ -246,5 +246,25 @@
   "theme.PwaReloadPopup.closeButtonAriaLabel": {
     "message": "クローズ",
     "description": "The ARIA label for close button of PWA reload popup"
+  },
+  "home.fetaure1": {
+    "message": "It allows postponing the loading of a plugin to the moment when the processing of `.zshrc` is finished and the first prompt is being shown.",
+    "description": "Description of first featured banner in homepage"
+  },
+  "theme.Playground.result": {
+    "message": "Result",
+    "description": "The result label of the live codeblocks"
+  },
+  "theme.Playground.liveEditor": {
+    "message": "Live Editor",
+    "description": "The live editor label of the live codeblocks"
+  },
+  "home.fetaure2": {
+    "message": "Provides the statistics about the plugins, such as describing what aliases, functions, bindkeys, Zle widgets, zstyles, completions, variables, `PATH` and `FPATH` elements a plugin has set up",
+    "description": "Description of second featured banner in homepage"
+  },
+  "home.fetaure3": {
+    "message": "Supports Oh My Zsh, Prezto and creation of your own plugins, and libraries. The implementation isn't framework-specific - include only if and when required.",
+    "description": "Description of third featured banner in homepage"
   }
 }
