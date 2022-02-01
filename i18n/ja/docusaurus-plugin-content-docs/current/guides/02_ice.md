@@ -221,12 +221,12 @@ it waits until user enters a `github` directory.
 Turbo mode also support a suffix – the letter `a`, `b` or `c`. The meaning is illustrated by the following example:
 
 ```shell
-zi ice wait"0b" as"command" pick"wd.sh" atinit"echo Firing 1" lucid
-zi light mfaerevaag/wd
-zi ice wait"0a" as"command" pick"wd.sh" atinit"echo Firing 2" lucid
-zi light mfaerevaag/wd
+zi ice wait "0b" as "command" pick "wd.sh" atinit "echo Firing 1" lucid
+zi light mfaerevaag / wd
+zi ice wait "0a" as "command" pick "wd.sh" atinit "echo Firing 2" lucid
+zi light mfaerevaag / wd
 
-# The output
+＃出力
 Firing 2
 Firing 1
 ```
