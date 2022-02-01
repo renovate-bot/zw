@@ -11,6 +11,9 @@
 - name: "i18n 🌐"
   color: "0052cc"
   description: "Internationalization"
+- name: "l10n 🗣""
+  color: "0052cc"
+  description: "Localization"
 - name: "enhancement ✨"
   color: 006b75
   description: "Enhancement of the code, not introducing new features."
