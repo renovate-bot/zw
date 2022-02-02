@@ -14,7 +14,7 @@ keywords:
 import APITable from '@site/src/components/APITable';
 
 <div align="right">
-<img src="/img/include/ice-239x200.png" alt="ice" width="239" height="200" />
+<img src="/static/img/logo/zi/png/ice-239x200.png" alt="ice" width="239" height="200" />
 </div>
 
 :::info F&A: What is ice?
