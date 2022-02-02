@@ -38,5 +38,9 @@
   "copyright": {
     "message": "Copyright © 2022 Z-Shell ZI, Community.",
     "description": "The footer copyright"
+  },
+  "link.item.label.Crowdin Translations": {
+    "message": "Crowdin Translations",
+    "description": "The label of footer link with label=Crowdin Translations linking to https://crowdin.com/project/z-shell-zi/discussions"
   }
 }
