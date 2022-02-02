@@ -1,17 +1,10 @@
 ---
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-P7NJRGN');</script>
-<!-- End Google Tag Manager -->
 id: intro
 title: 🎉 Introduction
 sidebar_position: 1
 image: /img/logo/501x501.png
 description: Introduction to a Swiss Army Knife for Zsh.
-keywords: [introduction, zsh, z-shell, zi]
+keywords: [introduction, zsh, zinit, zi, oh-my-zsh, ohmyzsh]
 ---
 
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'

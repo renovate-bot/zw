@@ -2,7 +2,7 @@
 id: code
 title: 🔖 Code documentation
 description: The documentation lists all functions, interactions between them, their comments, and features.
-keywords: [code, documentation, zsh, z-shell, zi]
+keywords: [code, documentation, zsh, zinit, zi, oh-my-zsh, ohmyzsh]
 ---
 
 import APITable from '@site/src/components/APITable';

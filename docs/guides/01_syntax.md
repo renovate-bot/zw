@@ -3,7 +3,7 @@ id: syntax
 title: ✍️ Syntax
 image: /img/logo/501x501.png
 description: ZI Syntax
-keywords: [syntax, zsh, z-shell, zi]
+keywords: [syntax, zsh, zinit, zi, oh-my-zsh, ohmyzsh, hotw-to-use]
 ---
 
 ## The fundamental syntax

@@ -4,6 +4,7 @@
     "workspace",
     "general",
     "gallery",
-    "i18n"
+    "i18n",
+    "optimization"
   ]
 }
