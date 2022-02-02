@@ -1,107 +1,103 @@
 {
-{
-  "name": "ZI Wiki",
-  "short_name": "Wiki",
-  "theme_color": "#2196f3",
-  "background_color": "#424242",
-  "display": "standalone",
-  "scope": "./",
-  "start_url": "./index.html",
-  "related_applications": [
-    {
-      "platform": "webapp",
-      "url": "https://z-shell.pages.dev/manifest.json"
+  {
+    "name": "ZI Wiki",
+    "short_name": "Wiki",
+    "theme_color": "#2196f3",
+    "background_color": "#424242",
+    "display": "standalone",
+    "scope": "./",
+    "start_url": "./index.html",
+    "related_applications": [
+      {
+        "platform": "webapp",
+        "url": "https://z-shell.pages.dev/manifest.json"
+      },
+      "prefer_related_applications": true,
+      "icons": [
+        {
+          "src": "img/svg/zsh.svg",
+          "type": "image/svg+xml",
+          "sizes": "192x192"
+        },
+        {
+          "src": "img/svg/turbo.svg",
+          "type": "image/svg+xml",
+          "sizes": "192x192"
+        },
+        {
+          "src": "img/svg/stats.svg",
+          "type": "image/svg+xml",
+          "sizes": "192x192"
+        },
+        {
+          "src": "img/logo.svg",
+          "type": "image/svg+xml",
+          "sizes": "192x192"
+        },
+        {
+          "src": "img/logo.png",
+          "type": "image/png",
+          "sizes": "128x128"
+        },
+        {
+          "src": "img/favicon.svg",
+          "type": "image/svg+xml",
+          "sizes": "48x48"
+        },
+        {
+          "src": "img/favicon.png",
+          "type": "image/png",
+          "sizes": "48x48"
+        },
+        {
+          "src": "img/logo/zi/png/128x128.png",
+          "type": "image/png",
+          "sizes": "128x128"
+        },
+        {
+          "src": "img/logo/zi/png/501x501.png",
+          "type": "image/png",
+          "sizes": "501x501"
+        },
+        {
+          "src": "img/logo/other/png/dl.png",
+          "type": "image/png",
+          "sizes": "620x620"
+        },
+        {
+          "src": "img/logo/gem/gem/gem.png",
+          "type": "image/png",
+          "sizes": "620x480"
+        },
+        {
+          "src": "img/include/i18n.png",
+          "type": "image/png",
+          "sizes": "1024x860"
+        },
+        {
+          "src": "img/logo/zi/png/ice-239x200.png",
+          "type": "image/png",
+          "sizes": "220x200"
+        },
+        {
+          "src": "img/logo/zi/png/ice.png",
+          "type": "image/png",
+          "sizes": "920x800"
+        },
+        {
+          "src": "img/logo/node/png/node.png",
+          "type": "image/png",
+          "sizes": "1024x1024"
+        },
+        {
+          "src": "img/logo/other/png/piece.png",
+          "type": "image/png",
+          "sizes": "920x800"
+        },
+        {
+          "src": "img/logo/zi/png/z_git.png",
+          "type": "image/png",
+          "sizes": "1820x380"
+        }
+      ]
     }
-  ],
-  "icons": [
-    {
-      "src": "img/zsh.svg",
-      "type": "image/svg+xml",
-      "sizes": "192x192"
-    },
-    {
-      "src": "img/turbo.svg",
-      "type": "image/svg+xml",
-      "sizes": "192x192"
-    },
-    {
-      "src": "img/stats.svg",
-      "type": "image/svg+xml",
-      "sizes": "192x192"
-    },
-    {
-      "src": "img/logo.svg",
-      "type": "image/svg+xml",
-      "sizes": "192x192"
-    },
-    {
-      "src": "img/logo.png",
-      "type": "image/png",
-      "sizes": "128x128"
-    },
-    {
-      "src": "img/favicon.svg",
-      "type": "image/svg+xml",
-      "sizes": "48x48"
-    },
-    {
-      "src": "img/favicon.png",
-      "type": "image/png",
-      "sizes": "48x48"
-    },
-    {
-      "src": "img/logo/128x128.png",
-      "type": "image/png",
-      "sizes": "128x128"
-    },
-      "src": "img/logo/501x501.png",
-      "type": "image/png",
-      "sizes": "501x501"
-    },
-    {
-      "src": "img/include/dl.png",
-      "type": "image/png",
-      "sizes": "620x620"
-    },
-    {
-      "src": "img/include/gem.png",
-      "type": "image/png",
-      "sizes": "620x480"
-    },
-    {
-      "src": "img/include/i18n.png",
-      "type": "image/png",
-      "sizes": "1024x860"
-    },
-    {
-      "src": "img/include/ice-239x200.png",
-      "type": "image/png",
-      "sizes": "220x200"
-    },
-    {
-      "src": "img/include/ice.png",
-      "type": "image/png",
-      "sizes": "920x800"
-    },
-    {
-      "src": "img/include/node.png",
-      "type": "image/png",
-      "sizes": "1024x1024"
-    },
-    {
-      "src": "img/include/piece.png",
-      "type": "image/png",
-      "sizes": "920x800"
-    },
-    {
-      "src": "img/include/zi-lolcat.png",
-      "type": "image/png",
-      "sizes": "960x600"
-    },
-    {
-      "src": "img/zi-git.png",
-      "type": "image/png",
-      "sizes": "1820x380"
-    }
-  ]
-}
