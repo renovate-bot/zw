@@ -99,7 +99,7 @@ const config = {
 					changefreq: "weekly",
 				},
 				gtag: {
-					trackingID: "G-CTPP37F5VK",
+					trackingID: "G-JMKV9V825Z",
 					anonymizeIP: true,
 				},
 			}),
