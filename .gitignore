@@ -1,3 +1,6 @@
+# We will configure the CI to download the Crowdin translations at build time and keep them outside of Git.
+/i18n
+
 # Dependencies
 /node_modules
 
