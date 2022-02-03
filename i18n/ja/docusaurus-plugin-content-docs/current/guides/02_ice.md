@@ -14,7 +14,7 @@ keywords:
 import APITable from '@site/src/components/APITable';
 
 <div align="right">
-<img src="/img/include/ice-239x200.png" alt="ice" width="239" height="200" />
+<img src="/static/img/logo/zi/png/ice-239x200.png" alt="ice" width="239" height="200" />
 </div>
 
 :::info F&A: What is ice?
@@ -220,7 +220,7 @@ it waits until user enters a `github` directory.
 
 Turbo mode also support a suffix – the letter `a`, `b` or `c`. The meaning is illustrated by the following example:
 
-```shell {1} {4}
+```shell
 zi ice wait"0b" as"command" pick"wd.sh" atinit"echo Firing 1" lucid
 zi light mfaerevaag/wd
 

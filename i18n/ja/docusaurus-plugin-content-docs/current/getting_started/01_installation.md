@@ -5,10 +5,13 @@ sidebar_position: 1
 image: /img/logo/501x501.png
 description: ZI Installation Guide
 keywords:
-  - installation
+  - install
+  - setup
   - zsh
-  - z-shell
+  - zinit
   - zi
+  - oh-my-zsh
+  - ohmyzsh
 ---
 
 :::info Available installer links

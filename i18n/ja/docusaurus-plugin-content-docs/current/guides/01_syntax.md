@@ -6,8 +6,11 @@ description: ZI Syntax
 keywords:
   - syntax
   - zsh
-  - z-shell
+  - zinit
   - zi
+  - oh-my-zsh
+  - ohmyzsh
+  - hotw-to-use
 ---
 
 ## The fundamental syntax
