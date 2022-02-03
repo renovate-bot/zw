@@ -28,6 +28,16 @@
       "contributions": [
         "maintenance"
       ]
+    },
+    {
+      "login": "wicoop",
+      "name": "William Cooper",
+      "avatar_url": "https://avatars.githubusercontent.com/u/60315017?v=4",
+      "profile": "https://github.com/wicoop",
+      "contributions": [
+        "maintenance",
+        "security"
+      ]
     }
   ],
   "contributorsPerLine": 7,
