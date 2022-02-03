@@ -115,7 +115,7 @@ const config = {
 				textColor: "#F5F6F7",
 				isCloseable: true,
 			},
-			image: "img/logo/501x501.png",
+			image: "/img/logo/501x501.png",
 			metadata: [{name: "twitter:card", content: "summary"}],
 			autoCollapseSidebarCategories: true,
 			hideableSidebar: true,
@@ -157,7 +157,7 @@ const config = {
 				title: "❮ ZI ❯",
 				logo: {
 					alt: "ZI Logo",
-					src: "img/logo.svg",
+					src: "/img/logo.svg",
 					width: 32,
 					height: 32,
 				},
