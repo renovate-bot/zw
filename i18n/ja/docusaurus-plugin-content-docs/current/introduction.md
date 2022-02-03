@@ -51,7 +51,7 @@ Install almost everything from [GitHub](https://github.com):
 </TabItem>
 </Tabs>
 
-<img src="img/logo/zi/png/z_git.png" alt="git_friendly" />
+<img src="/img/logo/zi/png/z_git.png" alt="git_friendly" />
 
 - [Turbo mode](getting_started/overview#turbo-mode-zsh--53) that yields **50-80%** faster Zsh startup.
 
@@ -71,8 +71,8 @@ Install almost everything from [GitHub](https://github.com):
 
 - What **aliases**, **functions**, **bindkeys**, **Zle widgets**, **zstyles**, **completions**, **variables**, `$PATH`, and `$FPATH` elements a plugin has set up.
 - Allows to quickly familiarize oneself with a new plugin and provides rich and easy-to-digest information that might be helpful on various occasions.
-- Supports the unloading of plugins and the ability to list, (un)install, and selectively disable, enable plugin's completions.
-- Provides functionality to create your plugins (locally/remote).
+- プラグインのアンロードと、プラグインの完了を一覧表示、（アン）インストール、および選択的に無効にする機能をサポートします。
+- プラグインを作成する機能を提供します（ローカル/リモート）。
 - Docker [playground](https://github.com/z-shell/playground) for the configurations.
 - Preview ZI at [asciinema.org](https://asciinema.org/a/459358)
 
