@@ -1,12 +1,13 @@
 ---
 name: 📊 Build Performance
 
+# Note! you can't safely use "pull_request_target" here
+# This workflow is mostly useful for "internal PRs"
+# External PRs won't be able to post a PR comment
+#
+# See https://github.com/preactjs/compressed-size-action/issues/54
+# See https://securitylab.github.com/research/github-actions-preventing-pwn-requests
 on:
-  # Note! you can't safely use "pull_request_target" here
-  # This workflow is mostly useful for "internal PRs"
-  # External PRs won't be able to post a PR comment
-  # See https://github.com/preactjs/compressed-size-action/issues/54
-  # See https://securitylab.github.com/research/github-actions-preventing-pwn-requests
   pull_request:
     branches:
       - main
@@ -33,7 +34,7 @@ jobs:
           minimum-change-threshold: 30
           compression: none
 
-build-time:
+  build-time:
     name: 💹 Build Time Perf
     timeout-minutes: 30
     runs-on: ubuntu-latest
