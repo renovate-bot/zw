@@ -51,7 +51,7 @@ Install almost everything from [GitHub](https://github.com):
 </TabItem>
 </Tabs>
 
-<img src="img/logo/zi/png/z_git.png" alt="git_friendly" />
+<img src="/img/logo/zi/png/z_git.png" alt="git_friendly" />
 
 - [Turbo mode](getting_started/overview#turbo-mode-zsh--53) that yields **50-80%** faster Zsh startup.
 
