@@ -18,8 +18,12 @@ jobs:
       - name: ⤵️ Check out code from GitHub
         uses: actions/checkout@v2
       - name: ♻️ Prepare
-        run: |
-          printf '%s\n' "Perform some tasks when needed."
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'yarn'
+      - run: yarn
+      - run: yarn build
       - name: 🚀 Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
