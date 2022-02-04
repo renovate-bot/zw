@@ -1,13 +1,14 @@
 ---
 name: 🚀 Deploy GH Pages
 
+# GitHub Pages can be used as alternative.
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows: 
-      - 👾 CodeQL
-    types:
-      - completed
+#  workflow_run:
+#    workflows: 
+#      - 👾 CodeQL
+#    types:
+#      - completed
 
 jobs:
   deploy:
