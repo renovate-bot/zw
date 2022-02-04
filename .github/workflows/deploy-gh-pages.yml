@@ -1,0 +1,30 @@
+---
+name: 🚀 Deploy GH Pages
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: 
+      - 👾 CodeQL
+    types:
+      - completed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - name: ⤵️ Check out code from GitHub
+        uses: actions/checkout@v2
+      - name: ♻️ Prepare
+        run: |
+          printf '%s\n' "Perform some tasks when needed."
+      - name: 🚀 Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: build
+          allow_empty_commit: true
+          keep_files: true
