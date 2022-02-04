@@ -154,15 +154,7 @@ const config = {
 				isCloseable: true,
 			},
 			image: "img/logo/501x501.png",
-			metadata: [
-				{
-					name: "twitter:card", content: "summary_large_image",
-					name: "twitter:url", content: "https://z.digitalclouds.dev/",
-					name: "twitter:title", content: "❮ ZI ❯",
-					name: "twitter:description", content: "A Swiss Army Knife for Zsh - Unix shell",
-					name: "twitter:image", content: "img/logo/501x501.png",
-				}
-			],
+			metadata: [{name: "twitter:card", content: "summary_large_image"}],
 			autoCollapseSidebarCategories: true,
 			hideableSidebar: true,
 			colorMode: {
