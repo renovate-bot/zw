@@ -28,7 +28,7 @@ jobs:
       - uses: preactjs/compressed-size-action@v2
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          build-script: build:en
+          build-script: build
           pattern: '{build/assets/js/main*js,build/assets/css/styles*css,.docusaurus/globalData.json,build/index.html,build/blog/index.html,build/blog/**/swiss-army-knife-for-zsh/*,build/docs/index.html,build/docs/getting_started/installation.html}'
           strip-hash: '\.([^;]\w{7})\.'
           minimum-change-threshold: 30
@@ -45,12 +45,10 @@ jobs:
           cache: yarn
       - name: ✨ Installation
         run: yarn
-
       # Ensure build with a cold cache does not increase too much
       - name: Build (cold cache)
         run: yarn build --locale en
         timeout-minutes: 8
-
       # Ensure build with a warm cache does not increase too much
       - name: Build (warm cache)
         run: yarn build --locale en
