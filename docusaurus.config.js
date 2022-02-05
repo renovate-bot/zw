@@ -1,12 +1,17 @@
 // @ts-nocheck
-const math = require("remark-math");
+/**const math = require("remark-math");
 const katex = require("rehype-katex");
-/*const npm2yarn = require("@docusaurus/remark-plugin-npm2yarn");*/
+const npm2yarn = require("@docusaurus/remark-plugin-npm2yarn");*/
 const TwitterSvg =
 	'<svg style="fill: #1DA1F2; vertical-align: middle;" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>';
 /** For easier Crowdin distribution Widget should be added on a CDN level, needs some additional checks */
 /**const CrowdinWidget = `<script type="text/javascript" src="https://crowdin.com/js/crowdjet/crowdjet.js"></script><div id="crowdjet-container" data-project-id="494115" style="bottom: 90px; left: 20px;"></div><div id="crowdjet-expand-container" style="bottom: 10px; left: 20px;"></div>`;*/
 /** @type {import('@docusaurus/types').Config} */
+/**
+const isDev = process.env.NODE_ENV === "development";
+const isDeployPreview = !!process.env.NETLIFY && process.env.CONTEXT === "netlify-deploy-preview";
+const CloudflarePages = !!process.env.CF_PAGES && process.env.CONTEXT === "cloudflare-pages-deploy";
+*/
 const config = {
 	url: "https://z-shell.pages.dev",
 	title: "❮ ZI ❯",
@@ -23,24 +28,31 @@ const config = {
 	themes: ["live-codeblock"],
 	plugins: [
 		[
+			"@docusaurus/plugin-ideal-image",
+			{
+				quality: 70,
+				max: 1030, // max resized -image's size.
+				min: 640, // min resized image's size. if original is lower, use that size.
+				steps: 2, // the max number of images generated between min and max (inclusive)
+				disableInDev: false,
+			},
+		],
+		[
 			"@docusaurus/plugin-pwa",
 			{
-				debug: true,
-				offlineModeActivationStrategies: [
-					"appInstalled",
-					"standalone",
-					"queryString",
-				],
+				/* https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-pwa#configuration */
+				debug: false,
+				offlineModeActivationStrategies: ["appInstalled", "standalone", "queryString"],
 				pwaHead: [
 					{
 						tagName: "link",
 						rel: "icon",
-						href: "img/logo.png",
+						href: "/img/logo.png",
 					},
 					{
 						tagName: "link",
 						rel: "manifest",
-						href: "manifest.json",
+						href: "/manifest.json",
 					},
 					{
 						tagName: "meta",
@@ -60,7 +72,7 @@ const config = {
 					{
 						tagName: "link",
 						rel: "apple-touch-icon",
-						href: "img/logo.png",
+						href: "/img/logo.png",
 					},
 					{
 						tagName: "link",
@@ -71,7 +83,7 @@ const config = {
 					{
 						tagName: "meta",
 						name: "msapplication-TileImage",
-						content: "img/logo.png",
+						content: "/img/logo.png",
 					},
 					{
 						tagName: "meta",
@@ -86,56 +98,54 @@ const config = {
 		defaultLocale: "en",
 		locales: ["en", "ja"],
 	},
+	/**
+	customFields: {
+    image: "",
+    keywords: [],
+  },
 	scripts: [],
+	*/
 	presets: [
 		[
 			"classic",
 			/** @type {import('@docusaurus/preset-classic').Options} */
 			({
-				theme: {
-					customCss: require.resolve("./src/css/custom.css"),
-				},
 				debug: true,
 				docs: {
+					/* https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs#configuration */
 					sidebarPath: require.resolve("./sidebars.js"),
 					editUrl: ({locale, versionDocsDirPath, docPath}) => {
 						if (locale !== "en") {
 							return `https://crowdin.com/project/z-shell-zi/${locale}`;
-						}
+						} /* If locale NOT en (English), then redirect to translation files (Crowdin) */
 						return `https://github.com/z-shell/zw/tree/main/${versionDocsDirPath}/${docPath}`;
-					},
-					editLocalizedFiles: false,
+					} /* If locale IS en (English), then redirect to latest source files. (GitHub) */,
 					showLastUpdateTime: true,
 					showLastUpdateAuthor: true,
-					remarkPlugins: [math],
-					rehypePlugins: [katex],
 				},
+				/* https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog#configuration */
 				blog: {
 					editUrl: ({locale, blogDirPath, blogPath}) => {
 						if (locale !== "en") {
 							return `https://crowdin.com/project/z-shell-zi/${locale}`;
-						}
+						} /* If locale NOT en (English), then redirect to translation files (Crowdin) */
 						return `https://github.com/z-shell/zw/tree/main/${blogDirPath}/${blogPath}`;
-					},
-					editLocalizedFiles: false,
+					} /* If locale IS en (English), then redirect to latest source files. (GitHub) */,
 					blogTitle: "❮ ZI ❯ Blog",
-					blogDescription: "News, Changes & Updates",
-					postsPerPage: "ALL",
+					postsPerPage: 5,
+					blogSidebarCount: "ALL",
 					blogSidebarTitle: "All our posts",
+					authorsMapPath: ".github/authors.yml",
 				},
 				pages: {
-					mdxPageComponent: "@theme/MDXPage",
-					remarkPlugins: [require("remark-math")],
-					rehypePlugins: [],
-					beforeDefaultRemarkPlugins: [],
-					beforeDefaultRehypePlugins: [],
+					/* https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-pages#configuration */
+				},
+				theme: {
+					customCss: [require.resolve("./src/css/custom.css")],
 				},
 				sitemap: {
 					changefreq: "weekly",
 				},
-				/**googleAnalytics: {
-          trackingID: 'UA-141789564-1',
-          anonymizeIP: true,*/
 				gtag: {
 					trackingID: "UA-219199352-1",
 					anonymizeIP: true,
@@ -143,15 +153,7 @@ const config = {
 			}),
 		],
 	],
-	stylesheets: [
-		{
-			href: "https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css",
-			type: "text/css",
-			integrity:
-				"sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM",
-			crossorigin: "anonymous",
-		},
-	],
+	stylesheets: [],
 	themeConfig:
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
@@ -162,7 +164,7 @@ const config = {
 				textColor: "#F5F6F7",
 				isCloseable: true,
 			},
-			image: "img/logo/501x501.png",
+			image: "/img/logo/zi/png/c2.png",
 			metadata: [{name: "twitter:card", content: "summary_large_image"}],
 			autoCollapseSidebarCategories: true,
 			hideableSidebar: true,
@@ -197,7 +199,7 @@ const config = {
 			},
 			tableOfContents: {
 				minHeadingLevel: 2,
-				maxHeadingLevel: 6,
+				maxHeadingLevel: 5,
 			},
 			navbar: {
 				hideOnScroll: true,
@@ -244,7 +246,7 @@ const config = {
 								to: "docs/intro",
 							},
 							{
-								label: "News & Blog",
+								label: "Blog Posts",
 								to: "blog",
 							},
 						],
