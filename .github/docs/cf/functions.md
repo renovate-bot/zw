@@ -20,7 +20,7 @@ Using a `/functions` directory will generate a routing table based on the files 
 
 For example, assume this directory structure:
 
-```
+```tree
 ├── ...
 ├── functions
 |   └── api
@@ -37,7 +37,7 @@ For example, assume this directory structure:
 
 The following routes will be generated based on the file structure, mapping the URL pattern to the `/functions` file that will be invoked:
 
-```
+```shell
 /api/time => ./functions/api/time.ts
 /api/todos => ./functions/api/todos/index.ts
 /api/todos/* => ./functions/api/todos/[id].ts
