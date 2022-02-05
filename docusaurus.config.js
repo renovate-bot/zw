@@ -57,27 +57,27 @@ const config = {
 						name: "apple-mobile-web-app-status-bar-style",
 						content: "#000",
 					},
-          {
-            tagName: 'link',
-            rel: 'apple-touch-icon',
-            href: 'img/logo.png',
-          },
-          {
-            tagName: 'link',
-            rel: 'mask-icon',
-            href: 'img/logo.png',
-            color: 'rgb(46, 184, 138)',
-          },
-          {
-            tagName: 'meta',
-            name: 'msapplication-TileImage',
-            content: 'img/logo.png',
-          },
-          {
-            tagName: 'meta',
-            name: 'msapplication-TileColor',
-            content: '#000',
-          },
+					{
+						tagName: "link",
+						rel: "apple-touch-icon",
+						href: "img/logo.png",
+					},
+					{
+						tagName: "link",
+						rel: "mask-icon",
+						href: "img/logo.png",
+						color: "rgb(46, 184, 138)",
+					},
+					{
+						tagName: "meta",
+						name: "msapplication-TileImage",
+						content: "img/logo.png",
+					},
+					{
+						tagName: "meta",
+						name: "msapplication-TileColor",
+						content: "#000",
+					},
 				],
 			},
 		],
@@ -110,7 +110,6 @@ const config = {
 					remarkPlugins: [math],
 					rehypePlugins: [katex],
 				},
-				pages: {},
 				blog: {
 					editUrl: ({locale, blogDirPath, blogPath}) => {
 						if (locale !== "en") {
@@ -124,11 +123,21 @@ const config = {
 					postsPerPage: "ALL",
 					blogSidebarTitle: "All our posts",
 				},
+				pages: {
+					mdxPageComponent: "@theme/MDXPage",
+					remarkPlugins: [require("remark-math")],
+					rehypePlugins: [],
+					beforeDefaultRemarkPlugins: [],
+					beforeDefaultRehypePlugins: [],
+				},
 				sitemap: {
 					changefreq: "weekly",
 				},
+				/**googleAnalytics: {
+          trackingID: 'UA-141789564-1',
+          anonymizeIP: true,*/
 				gtag: {
-					trackingID: "G-JMKV9V825Z",
+					trackingID: "UA-219199352-1",
 					anonymizeIP: true,
 				},
 			}),

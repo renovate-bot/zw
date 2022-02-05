@@ -7,9 +7,8 @@
 
 [![Tweet][twitter-badge]][twitter-link] [![Visual Studio Code](https://img.shields.io/badge/--007ACC?logo=visual%20studio%20code&logoColor=ffffff)](https://open.vscode.dev/z-shell/z-shell.pages.dev) [![Crowdin](https://badges.crowdin.net/z-shell-zi/localized.svg)](https://crowdin.com/project/z-shell-zi)
 
-<a href="https://github.com/z-shell/zi/issues/new?assignees=&labels=bug+%F0%9F%90%9E&template=01_bug_report.yml&title=bug%3A+">《 Report an issue 》</a>
-· <a href="https://github.com/z-shell/z-shell.pages.dev/issues/new?assignees=&labels=documentation+%F0%9F%92%A1&template=01_request_documentation.yml&title=feat%3A+">《 Request a documentation 》</a>
-· <a href="https://github.com/z-shell/zi/discussions">《 Ask a Question 》</a>
+<a href="https://github.com/z-shell/zi/issues/new?assignees=&labels=bug+%F0%9F%90%9E&template=01_bug_report.yml&title=bug%3A+">《 Report an issue 》</a> · <a href="https://github.com/z-shell/z-shell.pages.dev/issues/new?assignees=&labels=documentation+%F0%9F%92%A1&template=01_request_documentation.yml&title=feat%3A+">《 Request a documentation 》</a> · <a href="https://github.com/z-shell/zi/discussions">《 Ask a Question 》</a>
+
 </div>
 
 ## Development Guidelines
@@ -20,8 +19,8 @@
 
 When referring to something that might need additional information - it has to be linked to a search or a specific place in a wiki e.g:
 
-- `[load plugin](/search/?q=load+plugin)` - result: [load plugin](https://z-shell.pages.dev/search/?q=load+plugin)), 
-- `[ice コマンドは](/ja/search?q=ice+コマンドは)` - result: [ice コマンドは](https://z-shell.pages.dev/ja/search?q=ice+%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AF)), 
+- `[load plugin](/search/?q=load+plugin)` - result: [load plugin](https://z-shell.pages.dev/search/?q=load+plugin)),
+- `[ice コマンドは](/ja/search?q=ice+コマンドは)` - result: [ice コマンドは](https://z-shell.pages.dev/ja/search?q=ice+%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AF)),
 
   - It is required at least once for the first mention on a page.
   - If the link of the first mentioning exists, then it can be ignored.
@@ -86,8 +85,7 @@ This command generates static content into the `build` directory and can be serv
 
 ### [Cloudflare Pages](https://developers.cloudflare.com/pages/)
 
-ZI Wiki is powered by Cloudflare Pages.
-Pages are super fast, always up-to-date, and deployed directly from GitHub account.
+ZI Wiki is powered by Cloudflare Pages. Pages are super fast, always up-to-date, and deployed directly from GitHub account.
 
 #### Redirects
 
@@ -109,8 +107,7 @@ Format:
 
 #### Headers
 
-Define outgoing HTTP response headers for static or dynamic URLs within a `static/_headers` file.
-Any changes to this file will be applied to the next deployment.
+Define outgoing HTTP response headers for static or dynamic URLs within a `static/_headers` file. Any changes to this file will be applied to the next deployment.
 
 Attaching headers example:
 
@@ -129,6 +126,7 @@ https://z-shell.pages.dev/*
 ```
 
 Format:
+
 ```
 [url]
   [name]: [value]
