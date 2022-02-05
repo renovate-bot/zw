@@ -12,8 +12,8 @@ function HomepageHeader() {
 	return (
 		<header className={styles.heroBanner}>
 			<div className="container">
-				<img className={styles.heroLogo} src={zshellLogo} alt={siteConfig.title}></img>
-				<h2 className="hero__title">{siteConfig.title}</h2>
+				<img className={styles.heroLogo} src={zshellLogo} alt="ZI Logo" title={siteConfig.title} />
+				<h3 className="hero__title">{siteConfig.title}</h3>
 				<p className="hero__subtitle">{siteConfig.tagline}</p>
 				<div className={styles.buttons}>
 					<Link className="button button--secondary button--lg" to="/docs/intro">
@@ -30,7 +30,7 @@ function HomepageHeader() {
 export default function Home() {
 	const {siteConfig} = useDocusaurusContext();
 	return (
-		<Layout title={`${siteConfig.tagline}`} description="The home page title tagline">
+		<Layout title={`${siteConfig.tagline}`} description="The homepage title tagline">
 			<HomepageHeader />
 			<main>
 				<HomepageFeatures />
