@@ -33,7 +33,7 @@ function HomepageHeader() {
 export default function Home() {
 	const {siteConfig} = useDocusaurusContext();
 	return (
-		<Layout title={`${siteConfig.tagline}`} description="The homepage title tagline">
+		<Layout title={`${siteConfig.tagline}`} description="Open Source Society with a passion for Zsh">
 			<HomepageHeader />
 			<main>
 				<HomepageFeatures />
