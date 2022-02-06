@@ -97,6 +97,16 @@
       "src": "img/logo/zi/png/z_git.png",
       "type": "image/png",
       "sizes": "1820x380"
+    },
+    {
+      "src": "img/logo/zi/png/c2.png",
+      "type": "image/png",
+      "sizes": "398x330"
+    },
+    {
+      "src": "img/logo/zi/png/c3.png",
+      "type": "image/png",
+      "sizes": "380x320"
     }
   ]
 }

@@ -1,23 +1,23 @@
 @import 'include/footer.css';
 @import 'include/logo/github.css';
-/**
+
 * {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-*/
+
 :root {
   /*
   See css var + hsl color palette technique:
   https://blog.maximeheckel.com/posts/the-power-of-composition-with-css-variables/
   */
-  --site-primary-hue-saturation: 160 70%;
+  --site-primary-hue-saturation: 167 70%;
   --site-primary-hue-saturation-light: 167 68%;
-  --ifm-color-primary: hsl(var(--site-primary-hue-saturation) 45%);
+
+  --ifm-color-primary: hsl(var(--site-primary-hue-saturation) 30%);
   --ifm-color-primary-dark: hsl(var(--site-primary-hue-saturation) 26%);
   --ifm-color-primary-darker: hsl(var(--site-primary-hue-saturation) 23%);
   --ifm-color-primary-darkest: hsl(var(--site-primary-hue-saturation) 17%);
-
   --ifm-color-primary-light: hsl(var(--site-primary-hue-saturation-light) 39%);
   --ifm-color-primary-lighter: hsl(
     var(--site-primary-hue-saturation-light) 47%
@@ -47,14 +47,13 @@
   --ra-color-caution: var(--ifm-color-warning);
   --ra-color-warning: var(--ifm-color-danger);
   --ra-color-text-dark: var(--ifm-color-gray-900);
-  --ifm-color-primary-lightest: #4fddbf;
-
-  /**--collapse-button-bg-color-dark*/
+  /**--ifm-color-primary-lightest: #4fddbf;
+  --collapse-button-bg-color-dark*/
   --ifm-code-font-size: 95%;
 }
 
 html[data-theme='dark'] {
-  --ifm-color-primary: hsl(var(--site-primary-hue-saturation) 45%);
+  --ifm-color-primary: hsl(var(--site-primary-hue-saturation) 40%);
   --ifm-color-primary-dark: hsl(var(--site-primary-hue-saturation) 41%);
   --ifm-color-primary-darker: hsl(var(--site-primary-hue-saturation) 38%);
   --ifm-color-primary-darkest: hsl(var(--site-primary-hue-saturation) 32%);
@@ -67,7 +66,6 @@ html[data-theme='dark'] {
   );
   --ifm-background-color: #0d1117;
   --ifm-background-surface-color: #161B22;
-
   --site-color-feedback-background: #f0f8ff;
   --site-color-favorite-background: #1d1e1e;
   --site-color-checkbox-checked-bg: hsl(167deg 56% 73% / 10%);
@@ -110,8 +108,8 @@ h3 {
 */
 
 h4 {
-	padding-top: 12px;
-	padding-bottom: 12px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	border-bottom: 1px solid #D8D8D8;
 	border-top: 1px solid #D8D8D8;
 }
