@@ -1,23 +1,26 @@
 import React from "react";
+import clsx from "clsx";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 import HomepageFeatures from "../components/HomepageFeatures";
 import Translate from "@docusaurus/Translate";
-import zshellLogo from "@site/static/img/logo/zi/png/c2.png";
 
 function HomepageHeader() {
 	const {siteConfig} = useDocusaurusContext();
 	return (
-		<header className={styles.heroBanner}>
+		<header className={clsx("hero hero--primary", styles.heroBanner)}>
 			<div className="container">
-				<img className={styles.heroLogo} src={zshellLogo} alt="ZI Logo" title={siteConfig.title} />
 				<h3 className="hero__title">{siteConfig.title}</h3>
 				<p className="hero__subtitle">{siteConfig.tagline}</p>
 				<div className={styles.buttons}>
-					<Link className="button button--secondary button--lg" to="/docs/intro">
-						<Translate id="homepage.button" description="The homepage button to wiki introduction">
+					<Link
+						className="button button--secondary button--lg"
+						to="/docs/intro">
+						<Translate
+							id="homepage.button"
+							description="The homepage button to wiki introduction">
 							✨ Make it work, make it right, make it fast ✨
 						</Translate>
 					</Link>

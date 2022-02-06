@@ -28,16 +28,6 @@ const config = {
 	themes: ["live-codeblock"],
 	plugins: [
 		[
-			"@docusaurus/plugin-ideal-image",
-			{
-				quality: 70,
-				max: 1030, // max resized image's size.
-				min: 640, // min resized image's size. if original is lower, use that size.
-				steps: 2, // the max number of images generated between min and max (inclusive)
-				disableInDev: false,
-			},
-		],
-		[
 			"@docusaurus/plugin-pwa",
 			{
 				/* https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-pwa#configuration */
@@ -91,6 +81,16 @@ const config = {
 						content: "#000",
 					},
 				],
+			},
+		],
+		[
+			"@docusaurus/plugin-ideal-image",
+			{
+				quality: 70,
+				max: 1030, // max resized image's size.
+				min: 640, // min resized image's size. if original is lower, use that size.
+				steps: 2, // the max number of images generated between min and max (inclusive)
+				disableInDev: false,
 			},
 		],
 	],
@@ -153,7 +153,7 @@ const config = {
 			}),
 		],
 	],
-	stylesheets: [],
+	/*stylesheets: [],*/
 	themeConfig:
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
@@ -199,7 +199,7 @@ const config = {
 			},
 			tableOfContents: {
 				minHeadingLevel: 2,
-				maxHeadingLevel: 5,
+				maxHeadingLevel: 4,
 			},
 			navbar: {
 				hideOnScroll: true,

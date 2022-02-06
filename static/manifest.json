@@ -99,9 +99,14 @@
       "sizes": "1820x380"
     },
     {
-      "src": "/img/logo/zi/png/c2.png",
+      "src": "img/logo/zi/png/c2.png",
       "type": "image/png",
       "sizes": "398x335"
+    },
+    {
+      "src": "img/logo/zi/png/c3.png",
+      "type": "image/png",
+      "sizes": "380x320"
     }
   ]
 }
