@@ -2,47 +2,11 @@
 
 You may tell Cloudflare Pages how your site needs to be built as well as where its output files will be located.
 
-## Build commands and directories
-
-You should provide a build command to tell Cloudflare Pages how to build your application. For projects not listed here, consider reading the tool's documentation or framework, and submit a pull request to add it here.
-
-Build directories indicates where your project's build command outputs the built version of your Cloudflare Pages site. Often, this defaults to the industry-standard `public`, but you may find that you need to customize it.
-
-## Framework presets
-
-Cloudflare maintains a list of build configurations for popular frameworks and tools. These are accessible during project creation. Below are some standard build commands and directories for popular frameworks and tools.
-
-If you are not using a framework, you may input `exit 0` into the **Build command** field.
-
 <TableWrap>
 
 | Framework/tool               | Build command                        | Build directory             |
 | ---------------------------- | ------------------------------------ | --------------------------- |
-| Angular (Angular CLI)        | `ng build`                           | `dist`                      |
-| Brunch                       | `brunch build --production`          | `public`                    |
-| Docusaurus                   | `npm run build`                      | `build`                     |
-| Eleventy                     | `eleventy`                           | `_site`                     |
-| Ember.js                     | `ember build`                        | `dist`                      |
-| Expo                         | `expo build:web`                     | `web-build`                 |
-| Gatsby                       | `gatsby build`                       | `public`                    |
-| GitBook                      | `gitbook build`                      | `_book`                     |
-| Gridsome                     | `gridsome build`                     | `dist`                      |
-| Hugo                         | `hugo`                               | `public`                    |
-| Jekyll                       | `jekyll build`                       | `_site`                     |
-| Jigsaw                       | `vendor/bin/jigsaw build production` | `build_production`          |
-| Mkdocs                       | `mkdocs build`                       | `site`                      |
-| Next.js (Static HTML Export) | `next build && next export`          | `out`                       |
-| Nuxt.js                      | `nuxt generate`                      | `dist`                      |
-| Pelican                      | `pelican $content [-s settings.py]`  | `output`                    |
-| Quasar                       | `quasar build`                       | `dist/spa`                  |
-| React (create-react-app)     | `npm run build`                      | `build`                     |
-| React Static                 | `react-static build`                 | `dist`                      |
-| Remix                        | `npm run build`                      | `public`                    |
-| Slate                        | `./deploy.sh`                        | `build`                     |
-| Svelte                       | `npm run build`                      | `public`                    |
-| Umi                          | `umi build`                          | `dist`                      |
-| Vue                          | `npm run build`                      | `public`                    |
-| VuePress                     | `vuepress build $directory`          | `$directory/.vuepress/dist` |
+| Docusaurus                   | `yarn build`                         | `build`                     |
 
 </TableWrap>
 
