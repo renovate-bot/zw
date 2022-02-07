@@ -11,7 +11,7 @@
 
 </div>
 
-## Glabally distributed
+## Globally distributed
 
 Interconnected with over 10,000 major service providers, cloud providers, and enterprise networks, Cloudflare is your own fast lane on the Internet. By avoiding network hops and optimizing traffic paths, we drastically reduce latency while improving application performance and the end user experience.
 
