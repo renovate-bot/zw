@@ -12,11 +12,10 @@ const isDev = process.env.NODE_ENV === "development";
 const isDeployPreview = !!process.env.NETLIFY && process.env.CONTEXT === "netlify-deploy-preview";
 const CloudflarePages = !!process.env.CF_PAGES && process.env.CONTEXT === "cloudflare-pages-deploy";
 */
-const rewUrl = process.env.HOSTNAME || 'https://z-shell.pages.dev';
 const config = {
-	url,
 	title: "❮ ZI ❯",
 	tagline: "A Swiss Army Knife for Zsh - Unix shell",
+	url: "https://z-shell.pages.dev",
 	baseUrl: "/",
 	titleDelimiter: "|",
 	organizationName: "z-shell",
