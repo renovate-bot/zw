@@ -51,5 +51,8 @@
   "keywords": [
     "ZI, Wiki, Zsh"
   ],
-  "description": "ZI Wiki Pages"
+  "description": "ZI Wiki Pages",
+  "engines": {
+    "node": ">=16"
+  }
 }

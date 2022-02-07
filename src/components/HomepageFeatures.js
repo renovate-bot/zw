@@ -6,7 +6,7 @@ import Translate, {translate} from "@docusaurus/Translate";
 const FeatureList = [
 	{
 		title: "Yields 50-80% Faster Zsh Startup",
-		Svg: require("../../static/img/svg/turbo.svg").default,
+		Svg: require("@site/static/img/svg/turbo.svg").default,
 		description: (
 			<Translate
 				id="home.fetaure1" description="Description of first featured banner in homepage">
@@ -17,7 +17,7 @@ const FeatureList = [
 	},
 	{
 		title: "Focus on What Matters",
-		Svg: require("../../static/img/svg/stats.svg").default,
+		Svg: require("@site/static/img/svg/stats.svg").default,
 		description: (
 			<Translate
 				id="home.fetaure2" description="Description of second featured banner in homepage">
@@ -29,7 +29,7 @@ const FeatureList = [
 	},
 	{
 		title: "Wide Scope for Integration",
-		Svg: require("../../static/img/svg/zsh.svg").default,
+		Svg: require("@site/static/img/svg/zsh.svg").default,
 		description: (
 			<Translate
 				id="home.fetaure3" description="Description of third featured banner in homepage">

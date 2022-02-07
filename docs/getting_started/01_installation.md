@@ -16,9 +16,12 @@ keywords: [install, setup, zsh, zinit, zi, oh-my-zsh, ohmyzsh]
 - [GitLab Mirror](https://z-shell.pages.dev/i-lab): `https://z-shell.pages.dev/i-lab`
 - [Direct](https://raw.githubusercontent.com/z-shell/zi-src/main/lib/sh/install.sh): `https://raw.githubusercontent.com/z-shell/zi-src/main/lib/sh/install.sh`
 
-> Report an [issue](https://github.com/z-shell/zi/issues/new/choose)
+> - Report an [issue](https://github.com/z-shell/zi/issues/new/choose)
 
 :::
+
+> - Support required: [Gitee.com/z-shell](https://gitee.com/z-shell).
+> - Join [/r/gitee](https://www.reddit.com/r/gitee/) or start a [discussion](https://github.com/z-shell/zi/discussions/new) on GitHub.
 
 ## Quick install {#quick-install}
 

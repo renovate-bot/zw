@@ -61,11 +61,14 @@
 - name: "invalid ⚠️"
   color: 0b467f
   description: "This is off-topic or incorrect."
-- name: "beginner-friendly 💕"
-  color: 0e8a16
+- name: "beginner-friendly"
+  color: 5319E7
+  description: "Beginner friendy to people wanting to contribute to this project."
+- name: "good first issue"
+  color: 5319E7
   description: "Good first issue for people wanting to contribute to this project."
-- name: "help-wanted 👥"
-  color: 832Aeb
+- name: "help-wanted"
+  color: 5319E7
   description: "We need some extra helping hands or expertise in order to resolve this!"
 - name: "feature-request 💡"
   color: 0e8a16
