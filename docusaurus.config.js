@@ -12,8 +12,9 @@ const isDev = process.env.NODE_ENV === "development";
 const isDeployPreview = !!process.env.NETLIFY && process.env.CONTEXT === "netlify-deploy-preview";
 const CloudflarePages = !!process.env.CF_PAGES && process.env.CONTEXT === "cloudflare-pages-deploy";
 */
+const rewUrl = process.env.HOSTNAME || 'https://z-shell.pages.dev';
 const config = {
-	url: "https://z-shell.pages.dev",
+	url,
 	title: "❮ ZI ❯",
 	tagline: "A Swiss Army Knife for Zsh - Unix shell",
 	baseUrl: "/",
@@ -65,12 +66,6 @@ const config = {
 						href: "/img/logo.png",
 					},
 					{
-						tagName: "link",
-						rel: "mask-icon",
-						href: "img/logo.png",
-						color: "rgb(46, 184, 138)",
-					},
-					{
 						tagName: "meta",
 						name: "msapplication-TileImage",
 						content: "/img/logo.png",
@@ -86,10 +81,10 @@ const config = {
 		[
 			"@docusaurus/plugin-ideal-image",
 			{
-				quality: 70,
+				quality: 85,
 				max: 1030, // max resized image's size.
 				min: 640, // min resized image's size. if original is lower, use that size.
-				steps: 2, // the max number of images generated between min and max (inclusive)
+				steps: 2, // the max number of images generated between min and maxm (inclusive)
 				disableInDev: false,
 			},
 		],
@@ -144,7 +139,7 @@ const config = {
 					customCss: [require.resolve("./src/css/custom.css")],
 				},
 				sitemap: {
-					changefreq: "weekly",
+					changefreq: "daily",
 				},
 				gtag: {
 					trackingID: "UA-219199352-1",
@@ -157,6 +152,10 @@ const config = {
 	themeConfig:
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
+			liveCodeBlock: {
+				playgroundPosition: "bottom",
+			},
+			image: "/img/logo/zi/png/501x501.png",
 			announcementBar: {
 				id: "announcemnt",
 				content: `If you like ❮ ZI ❯, give it a ⭐️ on <a target="_blank" rel="noopener noreferrer" href="https://github.com/z-shell/zi">GitHub</a> and follow us on <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/zshell_zi" >Twitter</a> ${TwitterSvg}`,
@@ -164,8 +163,7 @@ const config = {
 				textColor: "#F5F6F7",
 				isCloseable: true,
 			},
-			image: "/img/logo/zi/png/c2.png",
-			metadata: [{name: "twitter:card", content: "summary_large_image"}],
+			metadata: [{name: "twitter:card", content: "summary"}],
 			autoCollapseSidebarCategories: true,
 			hideableSidebar: true,
 			colorMode: {
@@ -173,14 +171,14 @@ const config = {
 				disableSwitch: false,
 				respectPrefersColorScheme: true,
 				switchConfig: {
-					darkIcon: "🌙",
+				/**	darkIcon: "🌙",
 					lightIcon: "\u2600",
 					darkIconStyle: {
 						marginLeft: "1px",
 					},
 					lightIconStyle: {
 						marginLeft: "1px",
-					},
+					},*/
 				},
 			},
 			algolia: {
@@ -193,9 +191,6 @@ const config = {
 				theme: require("prism-react-renderer/themes/github"),
 				darkTheme: require("prism-react-renderer/themes/dracula"),
 				defaultLanguage: "shell",
-			},
-			liveCodeBlock: {
-				playgroundPosition: "bottom",
 			},
 			tableOfContents: {
 				minHeadingLevel: 2,
