@@ -140,7 +140,7 @@ const config = {
 					changefreq: "daily",
 				},
 				gtag: {
-					trackingID: "UA-219199352-1",
+					trackingID: "G-624MLFHGMC",
 					anonymizeIP: true,
 				},
 			}),
