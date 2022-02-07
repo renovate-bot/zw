@@ -7,3 +7,8 @@
   height: 160px;
   width: 840px;
 }
+
+.ScreenView {
+  align-items: center;
+  width: 100%;
+}

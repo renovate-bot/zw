@@ -1,14 +1,14 @@
 ---
 id: startify
 title: ⚙️ Startify
-image: /img/z-shell_501x501.png
+image: img/z-shell_501x501.png
 description: Zsh Plugin Startify documentation
 keywords: [startify, plugin, zsh, z-shell, zi]
 ---
 
 A plugin that aims at providing what [vim-startify](https://github.com/mhinz/vim-startify) plugin does, but in Zsh. The analogy isn't fully easy to make. `vim-startify` states - it provides dynamically created headers or footers and uses configurable lists to show recently used or bookmarked files and persistent sessions.
 
-## Zsh Startify overview {#zsh-startify-overview}
+## Zsh Startify overview
 
 - Shows recently used files if used by a shell-util command, with name of the command(s) on other right
 - Shows recently used vim files
@@ -22,11 +22,11 @@ A plugin that aims at providing what [vim-startify](https://github.com/mhinz/vim
 - Show recently ran `git` commands, with analysis of e.g. recently checked-out branches
 - Can cooperate with any bookmarking plugins to show their bookmarks
 
-## Quick Start {#quick-start}
+## Quick Start
 
 `zsh-startify` accumulates data in its own history file. To pre-fill it quickly with a few of entries (basing on the regular history) you can run the `__from-zhistory-accumulate` command.
 
-## [Zstyles](/search?q=zstyle) for Startify {#zstyles-for-startify}
+## [Zstyles](/search?q=zstyle) for Startify
 
 The zstyles used to configure the plugin (add such commands anywhere in the `zshrc`):
 
@@ -35,7 +35,7 @@ zstyle ":plugin:zsh-startify:shellutils" size 5  # The size of the recently used
 zstyle ":plugin:zsh-startify:vim" size 5         # The size of the recently opened in Vim list (default: 5)
 ```
 
-## Startify installation with ZI {#startify-installation-with-zi}
+## Startify installation with ZI
 
 Option A – normal load without [turbo mode](/search?q=turbo+mode).
 
@@ -53,6 +53,6 @@ zi load z-shell/zsh-startify
 
 The first option (A) loads the plugin synchronously, at the time of execution of the `zi load ...` command. The second option (B) loads in an asynchronous manner, 0 seconds after the prompt being first displayed.
 
-## Other Startify installations {#other-startify-installations}
+## Other Startify installations
 
 Issue the regular loading command of your plugin manager, pointing it to `z-shell/zsh-startify`. Then, add invocation of `zsh-startify` to the end of `~/.zshrc`:
