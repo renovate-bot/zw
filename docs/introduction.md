@@ -12,7 +12,7 @@ import TabItem from '@theme/TabItem';
 import Image from '@theme/IdealImage';
 import ZGitImg from '@site/static/img/logo/zi/png/z_git.png';
 
-<Image img={ZGitImg} alt="Install almost everything from GitHub" />
+<Image className="ZGitLogo" img={ZGitImg} alt="Install almost everything from GitHub" />
 
 <Tabs>
   <TabItem value="gems" label="RubyGems">

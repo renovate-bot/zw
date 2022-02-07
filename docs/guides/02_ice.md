@@ -5,11 +5,14 @@ image: /img/include/ice-239x200.png
 description: Ice syntax documentation
 keywords: [ice, syntax, zsh, z-shell, zi]
 ---
-
+import Image from '@theme/IdealImage';
 import APITable from '@site/src/components/APITable';
+import ZIceImg from '@site/static//img/logo/zi/png/ice-239x200.png';
 
 <div align="right">
-<img src="/img/logo/zi/png/ice-239x200.png" alt="ice" width="239" height="200" />
+
+<Image className="IceLogo" img={ZIceImg} alt="What is ice" />
+
 </div>
 
 :::info F&A: What is ice?
