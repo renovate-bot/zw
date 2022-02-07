@@ -1,18 +1,36 @@
 documentation 📝:
-  - any: ["docs/**/*.md", "i18n/**/docusaurus-plugin-content-docs/**"]
+  - "docs/**/*.md"
+  - "i18n/**/docusaurus-plugin-content-docs/**"
+good first issue:
+  - "docs/**/*.md"
 dependencies 📦:
-  - any: ["package.json", "yarn.lock"]
+  - "yarn.lock"
+  - "package.json"
 enhancement ✨:
-  - any: [".prettierrc", ".prettierignore", ".markdownlint.json", "tsconfig.json"]
+  - "tsconfig.json"
+  - ".prettierrc"
+  - ".prettierignore"
+  - ".markdownlint.json"
 maintenance 📈:
-  - any: [".github/CODEOWNERS", ".github/*.md", ".github/*.yml", ".github/*.json"]
+  - ".github/CODEOWNERS"
+  - ".github/*.md"
+  - ".github/*.yml"
+  - ".github/*.json"
+  - "crowdin.yml"
+  - "docusaurus.config.js"
+l10n:
+  - any: ["crowdin.yml"]
 i18n 🌐:
   - any: ["i18n/**"]
 annex 💠:
-  - any: ["docs/ecosystem/annexes/**", "i18n/**/docusaurus-plugin-content-docs/current/ecosystem/annexes/*"]
+  - "docs/ecosystem/annexes/*.md"
+  - "i18n/**/docusaurus-plugin-content-docs/current/ecosystem/annexes/*.md"
 package 📦:
-  - any: ["docs/ecosystem/packages*", "i18n/**/docusaurus-plugin-content-docs/current/ecosystem/packages/*"]
+  - "docs/ecosystem/packages*.md"
+  - "i18n/**/docusaurus-plugin-content-docs/current/ecosystem/packages/*.md"
 plugin 🧿:
-  - any: ["docs/ecosystem/plugins/**", "i18n/**/docusaurus-plugin-content-docs/current/ecosystem/plugins/*"]
+  - "docs/ecosystem/plugins/*.md"
+  - "i18n/**/docusaurus-plugin-content-docs/current/ecosystem/plugins/*.md"
 ci 🤖:
-  - any: [".github/workflows/*.yml", ".all-contributorsrc"]
+  - ".github/workflows/*.yml"
+  - ".all-contributorsrc"
