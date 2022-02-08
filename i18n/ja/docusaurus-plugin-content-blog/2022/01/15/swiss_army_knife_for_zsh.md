@@ -3,7 +3,7 @@ slug: swiss-army-knife-for-zsh
 title: Fast and feature-rich plugin manager for Zsh
 sidebar_position: 1
 hide_title: false
-hide_table_of_contents: false
+hide_table_of_contents: true
 sidebar_label: Swiss Arm Knife for Zsh
 description: Introduction to a Swiss Army Knife for Zsh - Unix shell
 keywords:
@@ -22,7 +22,7 @@ authors:
   - 
     name: Salvydas Lukosius
     title: Maintainer
-    url: https://github.com/ss-o
+    url: https://ss-o.github.io
     image_url: https://github.com/ss-o.png
 ---
 
