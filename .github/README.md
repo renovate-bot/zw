@@ -16,10 +16,10 @@
 Interconnected with over 10,000 major service providers, cloud providers, and enterprise networks, Cloudflare is your own fast lane on the Internet. By avoiding network hops and optimizing traffic paths, we drastically reduce latency while improving application performance and the end user experience.
 
 1. [Cloudflare Global Network](https://www.cloudflare.com/en-gb/network/):
-    - https://z-shell.pages.dev
-    - https://z.digitalclouds.dev
+    - https://z-shell.pages.dev/
+    - https://z.digitalclouds.dev/
 
-2. [IC: Mainnet blockchain](https://dfinity.org/): canister ID: oiffc-pyaaa-aaaad-qbjlq-cai
+2. [IC: Mainnet](https://dfinity.org/) ID: oiffc-pyaaa-aaaad-qbjlq-cai
     - https://icz.digitalclouds.dev/
     - https://oiffc-pyaaa-aaaad-qbjlq-cai.ic.fleek.co/
 
