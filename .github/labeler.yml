@@ -1,8 +1,8 @@
 documentation 📝:
   - "docs/**/*.md"
   - "i18n/**/docusaurus-plugin-content-docs/**"
-good first issue:
-  - "docs/**/*.md"
+#good first issue:
+#  - "docs/**/*.md"
 dependencies 📦:
   - "yarn.lock"
   - "package.json"
