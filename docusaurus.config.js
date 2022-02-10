@@ -271,6 +271,15 @@ const config = {
 							/**{ html: ``, },*/
 						],
 					},
+					{
+						title: "Legal",
+						items: [
+							{
+								label: "Privacy Policy",
+								href: "legal/privacy_policy/",
+							},
+						],
+					}
 				],
 				copyright: `Copyright © ${new Date().getFullYear()} Z-Shell Community.`,
 			},

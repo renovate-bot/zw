@@ -9,7 +9,7 @@
   "related_applications": [
     {
       "platform": "webapp",
-      "url": "https://z-shell.pages.dev/manifest.json"
+      "url": "https://z.digitalclouds.dev/manifest.json"
     }
   ],
   "icons": [
@@ -57,41 +57,6 @@
       "src": "img/logo/zi/png/501x501.png",
       "type": "image/png",
       "sizes": "501x501"
-    },
-    {
-      "src": "img/logo/other/png/dl.png",
-      "type": "image/png",
-      "sizes": "620x620"
-    },
-    {
-      "src": "img/logo/gem/gem/gem.png",
-      "type": "image/png",
-      "sizes": "620x480"
-    },
-    {
-      "src": "img/include/i18n.png",
-      "type": "image/png",
-      "sizes": "1024x860"
-    },
-    {
-      "src": "img/logo/zi/png/ice-239x200.png",
-      "type": "image/png",
-      "sizes": "220x200"
-    },
-    {
-      "src": "img/logo/zi/png/ice.png",
-      "type": "image/png",
-      "sizes": "920x800"
-    },
-    {
-      "src": "img/logo/node/png/node.png",
-      "type": "image/png",
-      "sizes": "1024x1024"
-    },
-    {
-      "src": "img/logo/other/png/piece.png",
-      "type": "image/png",
-      "sizes": "920x800"
     },
     {
       "src": "img/logo/zi/png/z_git.png",

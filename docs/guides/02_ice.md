@@ -15,7 +15,7 @@ import ZIceImg from '@site/static//img/logo/zi/png/ice-239x200.png';
 
 </div>
 
-:::FAQ  What is ice?
+:::info FAQ  What is ice?
 
 The word **ice** means something that's added (like ice to a drink) – and in ZI syntax it means adding a modifier to a next zi command, and also something that's temporary because it melts – and this means that the modification will last only for a single next zi command.
 
