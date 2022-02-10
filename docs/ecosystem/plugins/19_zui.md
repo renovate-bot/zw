@@ -1,7 +1,7 @@
 ---
 id: zui
 title: ⚙️ ZUI
-image: img/z-shell_501x501.png
+image: img/logo/zi/png/501x501.png
 description: The Rapid Application Development textual user interface library for Zsh.
 keywords: [zui, zsh-plugin, zsh, zinit, zi]
 ---

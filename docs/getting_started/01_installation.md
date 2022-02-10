@@ -2,7 +2,7 @@
 id: installation
 title: Installation
 sidebar_position: 1
-image: /img/logo/501x501.png
+image: /img/logo/zi/png/501x501.png
 description: ZI Installation Guide
 keywords: [install, setup, zsh, zinit, zi, oh-my-zsh, ohmyzsh]
 ---

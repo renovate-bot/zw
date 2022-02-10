@@ -1,7 +1,7 @@
 ---
 id: modules
 title: ⚙️ Modules
-image: img/z-shell_501x501.png
+image: img/logo/zi/png/501x501.png
 description: Zsh modules & plugins documentation
 keywords: [modules, zsh, z-shell, zi]
 ---

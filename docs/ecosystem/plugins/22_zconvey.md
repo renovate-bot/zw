@@ -1,7 +1,7 @@
 ---
 id: zconvey
 title: ⚙️ ZConvey
-image: img/z-shell_501x501.png
+image: img/logo/zi/png/501x501.png
 description: Zsh Plugin ZConvey documentation
 keywords: [zconvey, plugin, zsh, z-shell, zi]
 ---

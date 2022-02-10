@@ -1,7 +1,7 @@
 ---
 id: startify
 title: ⚙️ Startify
-image: img/z-shell_501x501.png
+image: img/logo/zi/png/501x501.png
 description: Zsh Plugin Startify documentation
 keywords: [startify, plugin, zsh, z-shell, zi]
 ---

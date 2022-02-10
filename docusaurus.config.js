@@ -153,7 +153,7 @@ const config = {
 			liveCodeBlock: {
 				playgroundPosition: "bottom",
 			},
-			image: "/img/logo/zi/png/501x501.png",
+			image: "img/logo/zi/png/501x501.png",
 			announcementBar: {
 				id: "announcemnt",
 				content: `If you like ❮ ZI ❯, give it a ⭐️ on <a target="_blank" rel="noopener noreferrer" href="https://github.com/z-shell/zi">GitHub</a> and follow us on <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/zshell_zi" >Twitter</a> ${TwitterSvg}`,
@@ -221,7 +221,7 @@ const config = {
 						],
 					},
 					{
-						href: "https://github.com/z-shell/zi",
+						href: "https://github.com/z-shell/zi/",
 						position: "right",
 						className: "header-github-link",
 						"aria-label": "GitHub repository",
@@ -249,11 +249,11 @@ const config = {
 						items: [
 							{
 								label: "Github Discussions",
-								href: "https://github.com/z-shell/zi/discussions",
+								href: "https://github.com/z-shell/zi/discussions/",
 							},
 							{
 								label: "Crowdin Translations",
-								href: "https://crowdin.com/project/z-shell-zi/discussions",
+								href: "https://crowdin.com/project/z-shell-zi/discussions/",
 							},
 						],
 					},
@@ -262,11 +262,11 @@ const config = {
 						items: [
 							{
 								label: "GitHub",
-								href: "https://github.com/z-shell",
+								href: "https://github.com/z-shell/",
 							},
 							{
 								label: "Twitter",
-								href: "https://twitter.com/zshell_zi",
+								href: "https://twitter.com/zshell_zi/",
 							},
 							/**{ html: ``, },*/
 						],

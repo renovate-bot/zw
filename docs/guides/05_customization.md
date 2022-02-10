@@ -1,7 +1,7 @@
 ---
 id: customization
 title: Preferences & Customization
-image: https://github.com/z-shell.png
+image: /img/logo/zi/png/501x501.png
 description: User Preferences & Customization
 keywords: [customization, preferences, zsh, z-shell, zi]
 ---

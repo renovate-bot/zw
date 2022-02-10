@@ -1,7 +1,7 @@
 ---
 id: commands
 title: 🛠 Commands
-image: /img/logo/501x501.png
+image: /img/logo/zi/png/501x501.png
 description: ZI Commands
 keywords: [commands, zsh, z-shell, zi]
 ---

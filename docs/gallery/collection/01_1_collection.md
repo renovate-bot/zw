@@ -2,7 +2,7 @@
 slug: /gallery/collection
 title: 🔺 Collection Guide
 sidebar_position: 1
-image: /img/z-shell_501x501.png
+image: /img/logo/zi/png/501x501.png
 description: The gallery of invocations
 keywords: [collection, zsh, z-shell, zi]
 ---

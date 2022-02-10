@@ -2,7 +2,7 @@
 id: migration
 title: Migration
 sidebar_position: 4
-image: /img/z-shell_501x501.png
+image: /img/logo/zi/png/501x501.png
 description: Migration to ZI
 keywords: [migration, zsh, z-shell, zi]
 ---

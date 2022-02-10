@@ -1,7 +1,7 @@
 ---
 id: benchmark
 title: Statistics & Benchmark
-image: /img/logo.png
+image: /img/logo/zi/png/501x501.png
 description: Benchamarking and profiling for Z-Shell ZI
 keywords: [statistics, benchmark, zsh, z-shell, zi]
 ---

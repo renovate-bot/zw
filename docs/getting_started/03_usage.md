@@ -2,7 +2,7 @@
 id: useage
 title: Usage
 sidebar_position: 3
-image: /img/z-shell_501x501.png
+image: /img/logo/zi/png/501x501.png
 description: How to use ZI
 keywords: [how-to-use, zsh, z-shell, zi]
 ---
