@@ -13,7 +13,6 @@
     },
     "collect": {
       "settings": {
-        "preset": "desktop",
         "skipAudits": [
           "robots-txt",
           "canonical",
