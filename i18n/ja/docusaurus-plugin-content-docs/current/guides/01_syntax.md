@@ -1,7 +1,7 @@
 ---
 id: syntax
 title: '✍️ Syntax'
-image: /img/logo/501x501.png
+image: /img/logo/zi/png/501x501.png
 description: ZI Syntax
 keywords:
   - syntax

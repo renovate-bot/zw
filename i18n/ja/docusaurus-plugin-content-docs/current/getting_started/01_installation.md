@@ -2,7 +2,7 @@
 id: installation
 title: Installation
 sidebar_position: 1
-image: /img/logo/501x501.png
+image: /img/logo/zi/png/501x501.png
 description: ZI Installation Guide
 keywords:
   - install
@@ -23,9 +23,12 @@ keywords:
 - [GitLab Mirror](https://z-shell.pages.dev/i-lab): `https://z-shell.pages.dev/i-lab`
 - [Direct](https://raw.githubusercontent.com/z-shell/zi-src/main/lib/sh/install.sh): `https://raw.githubusercontent.com/z-shell/zi-src/main/lib/sh/install.sh`
 
-> [の問題](https://github. com/z-shell/zi/issues/new/choose)を報告する
+> - [の問題](https://github. com/z-shell/zi/issues/new/choose)を報告する
 
 :::
+
+> - Support required: [Gitee.com/z-shell](https://gitee.com/z-shell).
+> - Join [/r/gitee](https://www.reddit.com/r/gitee/) or start a [discussion](https://github.com/z-shell/zi/discussions/new) on GitHub.
 
 ## Quick install {#quick-install}
 

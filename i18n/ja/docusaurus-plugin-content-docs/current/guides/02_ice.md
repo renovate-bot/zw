@@ -1,7 +1,7 @@
 ---
 id: ice
 title: '🧊 Ice Syntax'
-image: /img/include/ice-239x200.png
+image: /img/logo/zi/png/ice-239x200.png
 description: Ice syntax documentation
 keywords:
   - ice
@@ -11,13 +11,17 @@ keywords:
   - zi
 ---
 
+import Image from '@theme/IdealImage';
 import APITable from '@site/src/components/APITable';
+import ZIceImg from '@site/static//img/logo/zi/png/ice-239x200.png';
 
 <div align="right">
-<img src="/img/logo/zi/png/ice-239x200.png" alt="ice" width="239" height="200" />
+
+<Image className="IceLogo" img={ZIceImg} alt="What is ice" />
+
 </div>
 
-:::info F&A: What is ice?
+:::FAQ  What is ice?
 
 The word **ice** means something that's added (like ice to a drink) – and in ZI syntax it means adding a modifier to a next zi command, and also something that's temporary because it melts – and this means that the modification will last only for a single next zi command.
 

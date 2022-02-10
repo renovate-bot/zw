@@ -1,7 +1,7 @@
 ---
 id: customization
 title: 環境設定 & カスタマイズ
-image: https://github.com/z-shell.png
+image: /img/logo/zi/png/501x501.png
 description: ユーザプリファレンス & カスタマイズ
 keywords:
   - カスタマイズ

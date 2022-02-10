@@ -1,7 +1,7 @@
 ---
 id: commands
 title: '🛠コマンド'
-image: /img/logo/501x501.png
+image: /img/logo/zi/png/501x501.png
 description: ZI コマンド
 keywords:
   - コマンド

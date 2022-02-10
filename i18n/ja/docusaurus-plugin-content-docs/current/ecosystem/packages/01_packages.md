@@ -2,7 +2,7 @@
 id: packages
 slug: /ecosystem/packages
 title: '📦 Quick overview'
-image: /img/logo/501x501.png
+image: img/logo/zi/png/501x501.png
 description: Packages documentation
 keywords:
   - package

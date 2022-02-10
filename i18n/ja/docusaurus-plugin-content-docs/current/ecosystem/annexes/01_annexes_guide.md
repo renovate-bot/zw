@@ -3,7 +3,7 @@ id: annexes
 slug: /ecosystem/annexes
 sidebar_position: 1
 title: '💠 Quick overview'
-image: https://github.com/z-shell.png
+image: /img/logo/zi/png/501x501.png
 description: Annexes documentation
 keywords:
   - annex

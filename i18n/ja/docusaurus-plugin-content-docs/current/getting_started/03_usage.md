@@ -2,7 +2,7 @@
 id: useage
 title: 使い方
 sidebar_position: 3
-image: /img/z-shell_501x501.png
+image: /img/logo/zi/png/501x501.png
 description: ZIの使い方
 keywords:
   - how-to-use

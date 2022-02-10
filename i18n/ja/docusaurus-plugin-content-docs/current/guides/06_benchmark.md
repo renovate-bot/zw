@@ -1,7 +1,7 @@
 ---
 id: benchmark
 title: 統計 & ベンチマーク
-image: /img/logo.png
+image: /img/logo/zi/png/501x501.png
 description: Z-Shell ZI のベンチマークとプロファイリング
 keywords:
   - 統計学
