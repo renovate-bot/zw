@@ -1,6 +1,6 @@
 {
   "name": "ZI Wiki",
-  "short_name": "ZI",
+  "short_name": "ZW",
   "theme_color": "#2196f3",
   "background_color": "#424242",
   "display": "standalone",
@@ -52,6 +52,11 @@
       "src": "img/logo/zi/png/128x128.png",
       "type": "image/png",
       "sizes": "128x128"
+    },
+    {
+      "src": "img/logo/zi/png/320x320.png",
+      "type": "image/png",
+      "sizes": "320x320"
     },
     {
       "src": "img/logo/zi/png/501x501.png",
