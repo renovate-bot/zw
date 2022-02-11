@@ -6,15 +6,15 @@ description: Zsh modules & plugins documentation
 keywords: [modules, zsh, z-shell, zi]
 ---
 
-## Module [zpmod](https://github.com/z-shell/zpmod) {#module-zpmod}
+## Module [zpmod](https://github.com/z-shell/zpmod)
 
 [![👾 CodeQL](https://github.com/z-shell/zpmod/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/z-shell/zpmod/actions/workflows/codeql-analysis.yml)
 
 The module is a binary Zsh module (think about `zmodload` Zsh command, it's that topic) which transparently and automatically **compiles sourced scripts**. Many plugin managers do not offer a compilation of plugins, the module is a solution to this. Even if a plugin manager does compile the plugin's main script (like ZI does).
 
-## Installation {#installation}
+## Install zpmod
 
-### Without [ZI](https://github.com/z-shell/zi) {#without-zi}
+### Without [ZI](https://github.com/z-shell/zi)
 
 Install just the **standalone** binary which can be used with any other plugin manager.
 
@@ -44,7 +44,7 @@ zi module build
 
 This command will compile the module and display instructions on what to add to `~/.zshrc`.
 
-## Measuring Time of sources {#measuring-time-of-sources}
+## Measuring Time of sources
 
 Besides the compilation feature, the module also measures **duration** of each script sourcing. Issue `zpmod source-study` after loading the module at top of `~/.zshrc` to see a list of all sourced files with the time the sourcing took in milliseconds on the left. This feature allows profiling the shell startup. Also, no script can pass through that check and you will obtain a complete list of all loaded scripts, like if Zshell itself was investigating this. The list can be surprising.
 
@@ -56,7 +56,7 @@ To enable debug messages from the module set:
 typeset -g ZI_MOD_DEBUG=1
 ```
 
-## Module [zgdbm](https://github.com/z-shell/zgdbm) {#module-zgdbm}
+## Module [zgdbm](https://github.com/z-shell/zgdbm)
 
 Provides GDBM module as plugin
 
