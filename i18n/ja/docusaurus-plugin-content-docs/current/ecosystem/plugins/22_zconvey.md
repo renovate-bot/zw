@@ -11,11 +11,25 @@ keywords:
   - zi
 ---
 
+import Image from '@theme/IdealImage'; import Asciinema1 from '@site/static/img/assets/asciinema/156726.png';
+
 ZConvey integrates multiple Zsh sessions. They are given an ID, optionally a NAME (both unique), and can send commands to each other. Use this to switch all your Zshells to given directory, via `zc-all cd $PWD`! Also, there's `zc-bg-notify` **script** (not a function), that will show notification under prompt of every active Zsh session. You can call this script from any program, Bash or GUI.
 
-Video – view on [asciinema](https://asciinema.org/a/156726). You can resize the video by pressing `Ctrl-+` or `Cmd-+`.
+---
 
-[![asciicast](https://asciinema.org/a/156726.png)](https://asciinema.org/a/156726)
+:::tip
+
+You can resize the video by pressing `Ctrl-+` or `Cmd-+`.
+
+:::
+
+<a href="https://asciinema.org/a/156726">
+<Image className="ScreenView" img={Asciinema1} alt="ZConvey view on Asciinema" />
+</a>
+
+Video source: [Asciinema](https://asciinema.org/a/156726)
+
+---
 
 ## [Zstyles](/search?q=zstyle) for ZConvey {#zstyles-for-zconvey}
 
