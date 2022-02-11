@@ -9,7 +9,6 @@ const TwitterSvg =
 /**const isDev = process.env.NODE_ENV === "development";
 const isDeployPreview = !!process.env.NETLIFY && process.env.CONTEXT === "netlify-deploy-preview";
 const CloudflarePages = !!process.env.CF_PAGES && process.env.CONTEXT === "cloudflare-pages-deploy";*/
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 	url: "https://z-shell.pages.dev",
@@ -26,6 +25,22 @@ const config = {
 	staticDirectories: ["static"],
 	themes: ["live-codeblock", "@saucelabs/theme-github-codeblock"],
 	plugins: [
+		[
+			/** @type {import("@docusaurus/plugin-content-docs").ContentDocsPluginOptions} */
+			/** No translations for zsh docs, until reasonable. It allows easily propose changes from the UI. */
+			"@docusaurus/plugin-content-docs",
+			{
+				id: "docsz",
+				path: "docsz",
+				routeBasePath: "docsz/zsh-docs",
+				editUrl: "https://github.com/facebook/docusaurus/edit/main",
+				remarkPlugins: [],
+				rehypePlugins: [],
+				showLastUpdateAuthor: true,
+				showLastUpdateTime: true,
+				sidebarPath: require.resolve("./sidebarsz.js"),
+			},
+		],
 		[
 			"@docusaurus/plugin-pwa",
 			{
@@ -79,7 +94,7 @@ const config = {
 		[
 			"@docusaurus/plugin-ideal-image",
 			{
-				quality: 75,
+				quality: 70,
 				max: 1030, // max resized image's size.
 				min: 640, // min resized image's size. if original is lower, use that size.
 				steps: 2, // the max number of images generated between min and maxm (inclusive)
@@ -235,8 +250,12 @@ const config = {
 						title: "More",
 						items: [
 							{
-								label: "Introduction",
+								label: "Introduction to ZI",
 								to: "docs/intro",
+							},
+							{
+								label: "Zsh Documentation",
+								to: "docsz/zsh-docs",
 							},
 							{
 								label: "Blog Posts",

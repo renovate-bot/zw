@@ -6,13 +6,25 @@ description: Check variables of a possible loop.
 keywords: [zbrowse, zsh-plugin, variable, zinit, zi]
 ---
 
+import Image from '@theme/IdealImage'; import Screen1 from '@site/static/img/assets/zbrowse.png'; import Asciinema1 from '@site/static/img/assets/asciinema/122018.png';
+
 When doing shell work, it is often the case that `echo $variable` is invoked multiple times, to check result of a loop, etc. With ZBrowse, you just need to press `Ctrl-B`, which invokes the `ZBrowse` – `Zshell` variable browser:
 
-![ZBrowse](https://github.com/z-shell/zbrowse/edit/main/docs/images/zbrowse.png)
+<Image className="ScreenView" img={Screen1} alt="ZBrowse preview" />
 
-(you can resize the video like any web page)
+---
 
-[![asciicast](https://asciinema.org/a/122018.png)](https://asciinema.org/a/122018)
+:::tip
+
+You can resize the video by pressing `Ctrl-+` or `Cmd-+`.
+
+:::
+
+<a href="https://asciinema.org/a/122018">
+<Image className="ScreenView" img={Asciinema1} alt="ZBrowse view on Asciinema" />
+</a>
+
+Video source: [Asciinema](https://asciinema.org/a/122018)
 
 ## Install zbrowse
 

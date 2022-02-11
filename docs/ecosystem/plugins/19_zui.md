@@ -2,6 +2,7 @@
 id: zui
 title: ⚙️ ZUI
 image: img/logo/zi/png/501x501.png
+toc_max_heading_level: 3
 description: The Rapid Application Development textual user interface library for Zsh.
 keywords: [zui, zsh-plugin, zsh, zinit, zi]
 ---
@@ -393,7 +394,7 @@ Generators use parameters `reply`, `reply2`, `reply3`, `reply4`. This functions 
 
 Generator output should be mapped onto parameters:
 
-```
+```shell
 mod${midx}_ice${iidx}_output
 mod${midx}_ice${iidx}_size
 mod${midx}_ice${iidx}_nonselectables

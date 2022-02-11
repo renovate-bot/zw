@@ -1,14 +1,15 @@
 .IceLogo {
-  height: 240px;
-  width: 320px;
+  width: 30%;
+  height: auto;
 }
 
 .ZGitLogo {
-  height: 160px;
-  width: 840px;
+  width: 90%;
+  height: auto;
 }
 
 .ScreenView {
   align-items: center;
-  width: 100%;
+  width: 90%;
+  height: auto;
 }

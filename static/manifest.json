@@ -6,6 +6,9 @@
   "display": "standalone",
   "scope": "./",
   "start_url": "./index.html",
+  "description": "ZI Wiki PWA App",
+  "orientation": "any",
+  "prefer_related_applications": false,
   "related_applications": [
     {
       "platform": "webapp",
@@ -31,9 +34,7 @@
     {
       "src": "img/logo.svg",
       "type": "image/svg+xml",
-      "sizes": "192x192",
-      "purpose": "any"
-
+      "sizes": "192x192"
     },
     {
       "src": "img/favicon.svg",
@@ -100,5 +101,15 @@
       "sizes": "512x512",
       "density": "5.5"
     }
+  ],
+  "features": [
+    "Cross Platform",
+    "fast",
+    "simple"
+  ],
+  "categories": [
+    "website",
+    "utility",
+    "wiki"
   ]
 }
