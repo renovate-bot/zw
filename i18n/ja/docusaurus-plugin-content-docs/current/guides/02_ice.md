@@ -11,9 +11,7 @@ keywords:
   - zi
 ---
 
-import Image from '@theme/IdealImage';
-import APITable from '@site/src/components/APITable';
-import ZIceImg from '@site/static//img/logo/zi/png/ice-239x200.png';
+import Image from '@theme/IdealImage'; import APITable from '@site/src/components/APITable'; import ZIceImg from '@site/static//img/logo/zi/png/ice-239x200.png';
 
 <div align="right">
 
@@ -21,7 +19,7 @@ import ZIceImg from '@site/static//img/logo/zi/png/ice-239x200.png';
 
 </div>
 
-:::info FAQ  What is ice?
+:::info FAQ What is ice?
 
 The word **ice** means something that's added (like ice to a drink) – and in ZI syntax it means adding a modifier to a next zi command, and also something that's temporary because it melts – and this means that the modification will last only for a single next zi command.
 
@@ -450,12 +448,12 @@ There are four code-receiving ices: `atclone'…'`, `atpull'…'`, `atinit'…'`
 
 <APITable>
 
-| Syntax | Execution moment |
-| :-: | :-- |
+|    Syntax    | Execution moment                                                |
+| :----------: | :-------------------------------------------------------------- |
 | `atclone'…'` | **after cloning** the associated plugin or snippet to the disk. |
-| `atpull'…'` | **after updating** the associated plugin or snippet. |
-| `atinit'…'` | **before loading** of the associated plugin or snippet. |
-| `atload'…'` | **after loading** of the associated plugin or snippet. |
+| `atpull'…'`  | **after updating** the associated plugin or snippet.            |
+| `atinit'…'`  | **before loading** of the associated plugin or snippet.         |
+| `atload'…'`  | **after loading** of the associated plugin or snippet.          |
 
 </APITable>
 
