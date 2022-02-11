@@ -24,7 +24,7 @@ const config = {
 	onBrokenMarkdownLinks: "warn",
 	favicon: "img/favicon.svg",
 	staticDirectories: ["static"],
-	themes: ["live-codeblock"],
+	themes: ["live-codeblock", "@saucelabs/theme-github-codeblock"],
 	plugins: [
 		[
 			"@docusaurus/plugin-pwa",
@@ -153,7 +153,7 @@ const config = {
 			liveCodeBlock: {
 				playgroundPosition: "bottom",
 			},
-			image: "img/logo/zi/png/501x501.png",
+			image: "img/logo/zi/png/320x320.png",
 			announcementBar: {
 				id: "announcemnt",
 				content: `If you like ❮ ZI ❯, give it a ⭐️ on <a target="_blank" rel="noopener noreferrer" href="https://github.com/z-shell/zi">GitHub</a> and follow us on <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/zshell_zi" >Twitter</a> ${TwitterSvg}`,
@@ -281,7 +281,7 @@ const config = {
 						],
 					}
 				],
-				copyright: `Copyright © ${new Date().getFullYear()} Z-Shell Community.`,
+				copyright: `Copyright © ${new Date().getFullYear()} Z-Shell ZI Community.`,
 			},
 		}),
 };
