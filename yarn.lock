@@ -1901,7 +1901,7 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
-"@saucelabs/theme-github-codeblock@^0.1.1":
+"@saucelabs/theme-github-codeblock@0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@saucelabs/theme-github-codeblock/-/theme-github-codeblock-0.1.1.tgz#d2caa3fbf56c38ae2fe974871f1188226bb57d92"
   integrity sha512-iHzODYjcUAYI4eJzLrNCw/Iq9SWxCKB/cMgEKHjRmNMb2NKch1dsI2ZSCg8lNedIPmOaRfqHT29hLyMoc/5Wpg==
