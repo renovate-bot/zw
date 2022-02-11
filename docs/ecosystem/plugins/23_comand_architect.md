@@ -56,14 +56,14 @@ Add `antigen bundle z-shell/zsh-cmd-architect` to `.zshrc`. There also should be
 
 After extracting `ZCA` to `{some-directory}` add following two lines to `~/.zshrc`:
 
-```zsh
+```shell
 fpath+=( {some-directory} )
 source "{some-directory}/zsh-cmd-architect.plugin.zsh"
 ```
 
 As you can see, no plugin manager is needed to use the `*.plugin.zsh` file. The above two lines of code are all that almost **all** plugin managers do. In fact, what's actually needed is only:
 
-```zsh
+```shell
 source "{some-directory}/zsh-cmd-architect.plugin.zsh"
 ```
 
@@ -81,13 +81,13 @@ Running script `doc/generate_single_file` will create single-file version of `ZC
 
 If `TERM=screen-256color` (often a case for `tmux` and `screen` sessions) then `ncv` terminfo capability will have `2`nd bit set. This in general means that underline won't work. To fix this by creating your own `ncv=0`-equipped terminfo file, run:
 
-```zsh
+```shell
 { infocmp -x screen-256color; printf '\t%s\n' 'ncv@,'; } > /tmp/t && tic -x /tmp/t
 ```
 
 A file will be created in directory `~/.terminfo` and will be automatically used, `tmux` and `screen` will work. Similar is for Linux virtual terminal:
 
-```zsh
+```shell
 { infocmp -x linux; printf '\t%s\n' 'ncv@,'; } > /tmp/t && tic -x /tmp/t
 ```
 
