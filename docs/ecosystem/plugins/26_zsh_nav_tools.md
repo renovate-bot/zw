@@ -1,10 +1,12 @@
 ---
 id: zsh-nav-tools
-title: ⚙️ Zsh Navigation Tools
+title: ⚙️ ZNT
 image: img/logo/zi/png/501x501.png
 description: Multi-word history searcher, `n-cd` – directory bookmark manager, `n-kill` – `htop` like kill utility, and more.
 keywords: [zsh-navigation-tools, zsh-plugin, zsh, zinit, zi]
 ---
+
+## Zsh Navigation Tools
 
 The tools available:
 
@@ -44,7 +46,7 @@ All tools support horizontal scroll with `<`,`>`, `{`,`}`, `h`,`l` or left and r
 
 Set of tools like `n-history` – multi-word history searcher, `n-cd` – directory bookmark manager, `n-kill` – `htop` like kill utility, and more. Based on `n-list`, a tool generating selectable curses-based list of elements that has access to current `Zsh` session, i.e. has broad capabilities to work together with it. Feature highlights include incremental multi-word searching, approximate matching, ANSI coloring, themes, unique mode, horizontal scroll, grepping, advanced history management and various integrations with `Zsh`.
 
-## Install Zsh navigation tools
+### Install Zsh navigation tools
 
 ```sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/z-shell/zsh-navigation-tools/main/doc/install.sh)"
@@ -56,23 +58,23 @@ To update run the command again.
 
 After installing and reloading shell give `ZNT` a quick try with `Ctrl-R` – this keyboard shortcut will open `n-history`.
 
-### With [ZI](https://github.com/z-shell/zi)
+#### With [ZI](https://github.com/z-shell/zi)
 
 Add `zi load z-shell/zsh-navigation-tools` to `.zshrc`. The config files will be in `~/.config/znt`.
 
-### Installation With Zgen
+#### Installation With Zgen
 
 Add `zgen load z-shell/zsh-navigation-tools` to `.zshrc` and issue a `zgen reset` (this assumes that there is a proper `zgen save` construct in `.zshrc`). The config files will be available in `~/.config/znt`.
 
-### Installation With Antigen
+#### Installation With Antigen
 
 Add `antigen bundle z-shell/zsh-navigation-tools` to `.zshrc`. There also should be `antigen apply`. The config files will be in `~/.config/znt`.
 
-### Single File Manual Installation
+#### Single File Manual Installation
 
 Running script `doc/generate_single_file` will create single-file version of `ZNT`. It can be sourced from `.zshrc`. Don't forget about configuration files as described above.
 
-### Manual Installation
+#### Manual Installation
 
 After extracting `ZNT` to `{some-directory}` add following two lines to `~/.zshrc`:
 
@@ -89,7 +91,7 @@ source "{some-directory}/zsh-navigation-tools.plugin.zsh"
 
 because `ZNT` detects if it is used by **any** plugin manager and can handle `$fpath` update by itself.
 
-## Truly Manual Installation
+### Truly Manual Installation
 
 Copy (or link) all `n-*` and `znt-*` files to **/usr/share/zsh/site-functions/** (or **/usr/local/share/zsh/site-functions/**, check with `echo $fpath[1]`) and then add:
 
@@ -110,7 +112,7 @@ setopt AUTO_PUSHD
 
 in `.zshrc` (also recommend `PUSHD_IGNORE_DUPS`). Without the option `n-cd` will just work as incremental searcher of directory bookmarks.
 
-## History Widget
+### History Widget
 
 To have `n-history` as the incremental searcher bound to `Ctrl-R` copy `znt-*` files into the `*/site-functions` dir (unless you do single file install) and add:
 
@@ -129,7 +131,7 @@ zle -N znt-kill-widget
 bindkey "^Y" znt-kill-widget
 ```
 
-## Configuration
+### Configuration
 
 `ZNT` has configuration files located in `~/.config/znt`. The files are:
 
@@ -188,7 +190,7 @@ znt_list_instant_select - should pressing enter in search mode leave tool (0 or 
 
 If you used `ZNT` before `v2.1.12`, remove old configuration files `~/.config/znt/*.conf` so that `ZNT` can update them to the latest versions that support integration with `Zshrc`. If you used installer then run it again (after the remove of configuration files).
 
-## Programming
+### Programming
 
 The function `n-list` is used as follows:
 
@@ -225,7 +227,7 @@ n-list "This is a number 123" "This line too has a number: 456"
 
 Blue is the default color, it doesn't have to be set. See `zshexpn` man page for more information on `Zsh` patterns. Briefly, comparing to regular expressions, `(#s)` is `^`, `(#e)` is `$`, `#` is `*`, `##` is `+`. Alternative will work when in parenthesis, i.e. `(a|b)`. BTW by using this method you can colorize output of the tools, via their config files (check out e.g. n-cd.conf, it is using this).
 
-## Performance
+### Performance
 
 `ZNT` are fastest with `Zsh` before `5.0.6` and starting from `5.2`
 
@@ -246,7 +248,7 @@ Be aware of [this](https://github.com/z-shell/zsh-navigation-tools/blob/f49f910d
 
 :::
 
-## Fixing tmux, screen and linux vt
+### Fixing tmux, screen and linux vt
 
 If `TERM=screen-256color` (often a case for `tmux` and `screen` sessions) then `ncv` terminfo capability will have `2`nd bit set. This in general means that underline won't work. To fix this by creating your own `ncv=0`-equipped terminfo file, run:
 
@@ -261,7 +263,3 @@ A file will be created in directory `~/.terminfo` and will be automatically used
 ```
 
 It will not display underline properly, but will instead highlight by a color, which is quite nice. The same will not work for FreeBSD's vt, `ZNT` will detect if that vt is used and will revert to highlighting elements via `reverse` mode.
-
-## See also
-
-Also check out [Zsh Command Architect](https://github.com/z-shell/zsh-cmd-architect) and [Zconvey](https://github.com/z-shell/zconvey)
