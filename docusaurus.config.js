@@ -79,7 +79,7 @@ const config = {
 		[
 			"@docusaurus/plugin-ideal-image",
 			{
-				quality: 85,
+				quality: 75,
 				max: 1030, // max resized image's size.
 				min: 640, // min resized image's size. if original is lower, use that size.
 				steps: 2, // the max number of images generated between min and maxm (inclusive)
@@ -169,7 +169,7 @@ const config = {
 				disableSwitch: false,
 				respectPrefersColorScheme: true,
 				switchConfig: {
-				darkIcon: "🌙",
+					darkIcon: "🌙",
 					lightIcon: "\u2600",
 					darkIconStyle: {
 						marginLeft: "1px",
@@ -279,7 +279,7 @@ const config = {
 								href: "legal/privacy_policy/",
 							},
 						],
-					}
+					},
 				],
 				copyright: `Copyright © ${new Date().getFullYear()} Z-Shell ZI Community.`,
 			},

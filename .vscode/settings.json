@@ -5,6 +5,7 @@
     "general",
     "gallery",
     "i18n",
-    "optimization"
+    "optimization",
+    "UI"
   ]
 }
