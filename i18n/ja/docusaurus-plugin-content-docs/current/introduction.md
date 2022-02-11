@@ -13,10 +13,7 @@ keywords:
   - ohmyzsh
 ---
 
-import Tabs from '@theme/Tabs'; 
-import TabItem from '@theme/TabItem';
-import Image from '@theme/IdealImage';
-import ZGitImg from '@site/static/img/logo/zi/png/z_git.png';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'; import Image from '@theme/IdealImage'; import ZGitImg from '@site/static/img/logo/zi/png/z_git.png';
 
 <Image className="ZGitLogo" img={ZGitImg} alt="Install almost everything from GitHub" />
 
@@ -63,7 +60,7 @@ Install almost everything from [GitHub](https://github.com):
 - [Packages](/search?q=packages) offload the user from providing long and complex commands.
 - [Annexes](/search?q=annexes) allow to extend the plugin manager with new commands.
 
-## ☑️  Neat and flexible
+## ☑️ Neat and flexible
 
 - [Customize paths](guides/customization#customizing-paths), use [multiple prompts](guides/customization#multiple-prompts) or create [your own](guides/customization#non-github-local-plugins) plugins.
 - Supports [Oh My Zsh](getting_started/overview#oh-my-zsh-prezto) and [Prezto](getting_started/overview#oh-my-zsh-prezto) plugins and libraries ([migration](getting_started/migration)).
@@ -96,5 +93,5 @@ Install almost everything from [GitHub](https://github.com):
 
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
 
+<!-- ALL-CONTRIBUTORS-LIST:END -->

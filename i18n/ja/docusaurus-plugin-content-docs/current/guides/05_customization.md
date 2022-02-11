@@ -115,20 +115,20 @@ zi light-mode for z-shell/z-a-meta-plugins @annexes @ext-git
 
 <APITable>
 
-| Option | Description |
-| --- | --- |
-| `setopt hist_ignore_all_dups` | Remove older duplicate entries from history. |
-| `setopt hist_expire_dups_first` | Expire A Duplicate Event First When Trimming History. |
-| `setopt hist_ignore_dups` | Do Not Record An Event That Was Just Recorded Again. |
-| `setopt hist_reduce_blanks` | Remove superfluous blanks from history items. |
-| `setopt hist_find_no_dups` | Do Not Display A Previously Found Event. |
-| `setopt hist_ignore_space` | Do Not Record An Event Starting With A Space. |
-| `setopt hist_save_no_dups` | Do Not Write A Duplicate Event To The History File. |
-| `setopt hist_verify` | Do Not Execute Immediately Upon History Expansion. |
-| `setopt append_history` | Allow multiple terminal sessions to all append to one zsh command history. |
-| `setopt extended_history` | Show Timestamp In History. |
-| `setopt inc_append_history` | Write To The History File Immediately, Not When The Shell Exits. |
-| `setopt share_history` | Share history between different instances of the shell |
+| Option                          | Description                                                                |
+| ------------------------------- | -------------------------------------------------------------------------- |
+| `setopt hist_ignore_all_dups`   | Remove older duplicate entries from history.                               |
+| `setopt hist_expire_dups_first` | Expire A Duplicate Event First When Trimming History.                      |
+| `setopt hist_ignore_dups`       | Do Not Record An Event That Was Just Recorded Again.                       |
+| `setopt hist_reduce_blanks`     | Remove superfluous blanks from history items.                              |
+| `setopt hist_find_no_dups`      | Do Not Display A Previously Found Event.                                   |
+| `setopt hist_ignore_space`      | Do Not Record An Event Starting With A Space.                              |
+| `setopt hist_save_no_dups`      | Do Not Write A Duplicate Event To The History File.                        |
+| `setopt hist_verify`            | Do Not Execute Immediately Upon History Expansion.                         |
+| `setopt append_history`         | Allow multiple terminal sessions to all append to one zsh command history. |
+| `setopt extended_history`       | Show Timestamp In History.                                                 |
+| `setopt inc_append_history`     | Write To The History File Immediately, Not When The Shell Exits.           |
+| `setopt share_history`          | Share history between different instances of the shell                     |
 
 </APITable>
 
@@ -225,10 +225,10 @@ skip_global_compinit=1
 
 <APITable>
 
-| Syntax | Description |
-| --- | :-- |
+| Syntax       | Description                                                                                           |
+| ------------ | :---------------------------------------------------------------------------------------------------- |
 | `atload'!…'` | run the `precmd` hooks to make the prompts fully initialized when loaded in the middle of the prompt. |
-| `precmd` | hooks are being normally run before each **new** prompt. |
+| `precmd`     | hooks are being normally run before each **new** prompt.                                              |
 
 </APITable>
 

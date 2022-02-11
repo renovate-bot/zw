@@ -29,6 +29,7 @@ Documentation automatically updated every `Thursday 4:30 UTC` at [z-shell/docs](
 | [install.zsh](https://github.com/z-shell/zi/blob/main/lib/zsh/install.zsh) | [adoc](https://github.com/z-shell/docs/blob/main/code/zsdoc/asciidoc/install.zsh.adoc), [pdf](https://github.com/z-shell/docs/blob/main/code/zsdoc/pdf/install.zsh.pdf), [html](https://z-shell.github.io/docs/code/html/install.zsh.html) | Functions used only when installing a plugin or snippet |
 | [autoload.zsh](https://github.com/z-shell/zi/blob/main/lib/zsh/autoload.zsh) | [adoc](https://github.com/z-shell/docs/blob/main/code/zsdoc/asciidoc/autoload.zsh.adoc), [pdf](https://github.com/z-shell/docs/blob/main/code/zsdoc/pdf/autoload.zsh.pdf), [html](https://z-shell.github.io/docs/code/html/autoload.zsh.html) | Functions used only in interactive `ZI` invocations |
 | [additional.zsh](https://github.com/z-shell/zi/blob/main/lib/zsh/additional.zsh) | [adoc](https://github.com/z-shell/docs/blob/main/code/zsdoc/asciidoc/additional.zsh.adoc), [pdf](https://github.com/z-shell/docs/blob/main/code/zsdoc/pdf/additional.zsh.pdf), [html](https://z-shell.github.io/docs/code/html/additional.zsh.html) | Additonal support for functions |
+
 </APITable>
 
 :::info

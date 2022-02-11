@@ -254,13 +254,13 @@ zi from"gh-r" as"program" mv"direnv* -> direnv" \
 
 <APITable>
 
-| Syntax | Description |
-| --- | :-- |
-| `from'gh-r'` | Install from [Github releases](https://github.com/direnv/direnv/releases/). |
-| `mv'direnv* -> direnv'` | After installation, rename `direnv.linux-386` or similar file to `direnv`. |
-| `atclone'…'`, `atpull'…'` | As in previous example |
-| `pick'direnv'` | As in previous example. |
-| `as'program'` | As in previous example |
+| Syntax                    | Description                                                                 |
+| ------------------------- | :-------------------------------------------------------------------------- |
+| `from'gh-r'`              | Install from [Github releases](https://github.com/direnv/direnv/releases/). |
+| `mv'direnv* -> direnv'`   | After installation, rename `direnv.linux-386` or similar file to `direnv`.  |
+| `atclone'…'`, `atpull'…'` | As in previous example                                                      |
+| `pick'direnv'`            | As in previous example.                                                     |
+| `as'program'`             | As in previous example                                                      |
 
 </APITable>
 
@@ -285,13 +285,13 @@ zi light vim/vim
 
 <APITable>
 
-| Syntax | Description |
-| --- | :-- |
-| `as'program'` | Add file selected by `pick'…'` to `$PATH`, and do not source it. |
-| `atclone'…'` | Execute code after downloading. |
-| `atpull'%atclone'` | Execute the same code `atclone'…'` is given, but after successful update. |
-| `make` |  Run `make` after `atclone'…'` and `atpull'…'` (note: `make'!'` will execute before them). |
-| `pick'src/vim'` | Set executable flag on `src/vim`, hint that `src/` should be added to `$PATH`. |
+| Syntax             | Description                                                                                |
+| ------------------ | :----------------------------------------------------------------------------------------- |
+| `as'program'`      | Add file selected by `pick'…'` to `$PATH`, and do not source it.                           |
+| `atclone'…'`       | Execute code after downloading.                                                            |
+| `atpull'%atclone'` | Execute the same code `atclone'…'` is given, but after successful update.                  |
+| `make`             |  Run `make` after `atclone'…'` and `atpull'…'` (note: `make'!'` will execute before them). |
+| `pick'src/vim'`    | Set executable flag on `src/vim`, hint that `src/` should be added to `$PATH`.             |
 
 </APITable>
 
@@ -305,12 +305,12 @@ zi light vim/vim
 
 <APITable>
 
-| Syntax | Description |
-| --- | :-- |
-| `as'program'` | As above. |
-| `atclone'…'` | As above **plus** pass `--prefix=$ZPFX` to `./configure`, to set the installation directory. |
-| `atpull'%atclone'` | As above. |
-| `make` |  As above, but also run the `install` target. |
-| `pick'src/vim'` | as above, but for different path (`$ZPFX/bin/vim`). |
+| Syntax             | Description                                                                                  |
+| ------------------ | :------------------------------------------------------------------------------------------- |
+| `as'program'`      | As above.                                                                                    |
+| `atclone'…'`       | As above **plus** pass `--prefix=$ZPFX` to `./configure`, to set the installation directory. |
+| `atpull'%atclone'` | As above.                                                                                    |
+| `make`             |  As above, but also run the `install` target.                                                |
+| `pick'src/vim'`    | as above, but for different path (`$ZPFX/bin/vim`).                                          |
 
 </APITable>
