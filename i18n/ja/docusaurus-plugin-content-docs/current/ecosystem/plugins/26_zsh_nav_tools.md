@@ -13,7 +13,7 @@ keywords:
 
 ## Zsh Navigation Tools
 
-The tools available:
+The available tools
 
 - `n-aliases` - browses aliases, relegates editing to `vared`
 - `n-cd` - browses dirstack and bookmarked directories, allows to enter selected directory
@@ -23,6 +23,8 @@ The tools available:
 - `n-env` - browses environment, relegates editing to `vared`
 - `n-options` - browses options, allows to toggle their state
 - `n-panelize` - loads output of given command into the list for browsing
+
+---
 
 All tools support horizontal scroll with `<`,`>`, `{`,`}`, `h`,`l` or left and right cursors. Other keys are:
 
@@ -51,7 +53,9 @@ All tools support horizontal scroll with `<`,`>`, `{`,`}`, `h`,`l` or left and r
 
 Set of tools like `n-history` – multi-word history searcher, `n-cd` – directory bookmark manager, `n-kill` – `htop` like kill utility, and more. Based on `n-list`, a tool generating selectable curses-based list of elements that has access to current `Zsh` session, i.e. has broad capabilities to work together with it. Feature highlights include incremental multi-word searching, approximate matching, ANSI coloring, themes, unique mode, horizontal scroll, grepping, advanced history management and various integrations with `Zsh`.
 
-### Install Zsh navigation tools
+---
+
+### Install ZNT
 
 ```sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/z-shell/zsh-navigation-tools/main/doc/install.sh)"
@@ -63,21 +67,31 @@ To update run the command again.
 
 After installing and reloading shell give `ZNT` a quick try with `Ctrl-R` – this keyboard shortcut will open `n-history`.
 
+---
+
 #### With [ZI](https://github.com/z-shell/zi)
 
 Add `zi load z-shell/zsh-navigation-tools` to `.zshrc`. The config files will be in `~/.config/znt`.
+
+---
 
 #### Installation With Zgen
 
 Add `zgen load z-shell/zsh-navigation-tools` to `.zshrc` and issue a `zgen reset` (this assumes that there is a proper `zgen save` construct in `.zshrc`). The config files will be available in `~/.config/znt`.
 
+---
+
 #### Installation With Antigen
 
 Add `antigen bundle z-shell/zsh-navigation-tools` to `.zshrc`. There also should be `antigen apply`. The config files will be in `~/.config/znt`.
 
+---
+
 #### Single File Manual Installation
 
 Running script `doc/generate_single_file` will create single-file version of `ZNT`. It can be sourced from `.zshrc`. Don't forget about configuration files as described above.
+
+---
 
 #### Manual Installation
 
@@ -95,6 +109,8 @@ source "{some-directory}/zsh-navigation-tools.plugin.zsh"
 ```
 
 because `ZNT` detects if it is used by **any** plugin manager and can handle `$fpath` update by itself.
+
+---
 
 ### Truly Manual Installation
 
@@ -117,6 +133,8 @@ setopt AUTO_PUSHD
 
 in `.zshrc` (also recommend `PUSHD_IGNORE_DUPS`). Without the option `n-cd` will just work as incremental searcher of directory bookmarks.
 
+---
+
 ### History Widget
 
 To have `n-history` as the incremental searcher bound to `Ctrl-R` copy `znt-*` files into the `*/site-functions` dir (unless you do single file install) and add:
@@ -135,6 +153,8 @@ bindkey "^B" znt-cd-widget
 zle -N znt-kill-widget
 bindkey "^Y" znt-kill-widget
 ```
+
+---
 
 ### Configuration
 
@@ -195,6 +215,8 @@ znt_list_instant_select - should pressing enter in search mode leave tool (0 or 
 
 If you used `ZNT` before `v2.1.12`, remove old configuration files `~/.config/znt/*.conf` so that `ZNT` can update them to the latest versions that support integration with `Zshrc`. If you used installer then run it again (after the remove of configuration files).
 
+---
+
 ### Programming
 
 The function `n-list` is used as follows:
@@ -232,6 +254,8 @@ n-list "This is a number 123" "This line too has a number: 456"
 
 Blue is the default color, it doesn't have to be set. See `zshexpn` man page for more information on `Zsh` patterns. Briefly, comparing to regular expressions, `(#s)` is `^`, `(#e)` is `$`, `#` is `*`, `##` is `+`. Alternative will work when in parenthesis, i.e. `(a|b)`. BTW by using this method you can colorize output of the tools, via their config files (check out e.g. n-cd.conf, it is using this).
 
+---
+
 ### Performance
 
 `ZNT` are fastest with `Zsh` before `5.0.6` and starting from `5.2`
@@ -252,6 +276,8 @@ That's it. When one contributes to Oh-My-Zsh or creates a plugin for any plugin 
 Be aware of [this](https://github.com/z-shell/zsh-navigation-tools/blob/f49f910d239ae5bc6e1a5bb34930307b4f4e3ffe/zsh-navigation-tools.plugin.zsh#L35-L49)
 
 :::
+
+---
 
 ### Fixing tmux, screen and linux vt
 
