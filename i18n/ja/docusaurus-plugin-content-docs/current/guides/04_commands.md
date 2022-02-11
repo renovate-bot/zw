@@ -238,11 +238,11 @@ Following commands are passed to `zi …` to obtain described effects.
 
 <APITable>
 
-| Command | Description |
-| :-: | --- |
-| `compile` `'…'` `--all` | Compile plugin. `--all` – compile all plugins. |
+|          Command          | Description                                                         |
+| :-----------------------: | ------------------------------------------------------------------- |
+|  `compile` `'…'` `--all`  | Compile plugin. `--all` – compile all plugins.                      |
 | `uncompile` `'…'` `--all` | Remove compiled version of plugin. `--all` – do it for all plugins. |
-| `compiled` | List plugins that are compiled. |
+|        `compiled`         | List plugins that are compiled.                                     |
 
 </APITable>
 
