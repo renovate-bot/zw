@@ -65,21 +65,31 @@ It recognizes the following options:
 3. `--norm` - prevents the archive file removal.
 4. And also one option specific only to the function: `--nobkp`, which prevents clearing of the plugin's dir before the extraction – normally all the files except the archive are being moved into `._backup` directory and after that the extraction is performed. - `extract` ice also skips creating the backup **if** more than one archive is found or given as the argument.
 
-### Supported File Formats {#supported-file-formats}
+### Supported File Formats
 
-- Zip,
-- RAR,
-- tar.gz,
-- tar.bz2,
-- tar.xz,
-- tar.7z,
-- tar,
-- gz,
-- bz2,
-- xz,
-- 7z,
-- deb **debian packages**,
-- OS X **dmg images**.
+<APITable>
+
+| File format             | Status |
+| :---------------------- | ------ |
+| Zip                     | ✓      |
+| RAR                     | ✓      |
+| tar.gz                  | ✓      |
+| tar.bz2                 | ✓      |
+| tar.xz                  | ✓      |
+| tar.7z                  | ✓      |
+| tar                     | ✓      |
+| tgz                     | ✓      |
+| tbz2                    | ✓      |
+| gz                      | ✓      |
+| bz2                     | ✓      |
+| txz                     | ✓      |
+| xz                      | ✓      |
+| 7z                      | ✓      |
+| exe                     | ✓      |
+| deb **debian packages** | ✓      |
+| OS X **dmg images**     | ✓      |
+
+</APITable>
 
 ## `from'…'` {#from}
 
@@ -90,27 +100,49 @@ zi ice from"user@github.com"
 zi load user/fsh-auto-themes
 ```
 
-:::tip
+Current preset:
 
-If the `from'…'` ice isn't one of `gh`, `github`, `gl`, `gitlab`, `bb`, `bitbucket`, `nb`, `notabug`, `gh-r`, `github-rel` then **it is treaten as a domain name** and inserted into the domain position into the `git clone` url:
+<APITable>
+
+| Ice name   | Domain name / URL                    |
+| :--------- | :----------------------------------- |
+| ge         | gitee.com                            |
+| gitee      | gitee.com                            |
+| github     | github.com                           |
+| gh         | github.com                           |
+| gitlab     | gitlab.com                           |
+| gl         | gitlab.com                           |
+| notabug    | notabug.org                          |
+| nb         | notabug.org                          |
+| bitbucket  | bitbucket.org                        |
+| bb         | bitbucket.org                        |
+| github-rel | github.com/$remote_url_path/releases |
+| gh-r       | github.com/$remote_url_path/releases |
+| cygwin     | cygwin                               |
+
+</APITable>
+
+:::note
+
+If the `from'…'` ice isn't one of above table, then **it is treaten as a domain name** and inserted into the domain position into the `git clone` url:
 
 ```shell
 git clone https://{from-ice-contents}/user/plugin
 ```
 
-:::
-
 In order to change the protocol, use the `proto'…'` ice.
 
-### Summary of `from'…'` {#summary-of-from}
+:::
+
+### Summary of `from'…'`
 
 By using this method you can clone plugins from e.g. GitHub Enterprise or embed the passwords as plain text in `.zshrc`.
 
-## `id-as'…'` {#id-as}
+## `id-as'…'`
 
 ### Nickname a plugin or snippet {#nickname-a-plugin-or-snippet}
 
-Zi supports loading a plugin or snippet with a nickname. Set the nickname through the `id-as` ice-mod. For example, one could try to load [**docker/compose**](https://github.com/docker/compose) from GitHub binary releases:
+Zi supports loading a plugin or snippet with a nickname. Set the nickname through the `id-as` ice-modifier. For example, one could try to load [**docker/compose**](https://github.com/docker/compose) from GitHub binary releases:
 
 ```shell
 zi ice as"program" from"gh-r" mv"docker-c* -> docker-compose"
