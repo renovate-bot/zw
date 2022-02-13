@@ -8,6 +8,8 @@ keywords: [commands, zsh, z-shell, zi]
 
 import APITable from '@site/src/components/APITable';
 
+<!-- import Image from '@theme/IdealImage'; import Screen1 from '@site/static/img/assets/'; -->
+
 ## Commands available with <kbd>^TAB</kbd> completion {#commands-available-with-tab-completion}
 
 ```shell title="zi ^TAB"
@@ -68,7 +70,7 @@ To update ZI issue `zi self-update` in the command line.
 
 To update all plugins and snippets, issue `zi update`.
 
-<div align="center"><img src="/img/include/update.png" alt="Update" /></div>
+To update all in parallel (up to 40 at the time) `zi update -p 40`
 
 If you wish to update only a single plugin/snippet instead issue `zi update NAME_OF_PLUGIN`. A list of commits will be shown if any.
 
@@ -84,7 +86,7 @@ The `cdreplay` subcommand is provided to re-play all caught `compdef` calls. The
 
 The `compdef` function is provided by `compinit` call. As it should be called later, after loading all of the plugins, ZI provides its own `compdef` function that catches (i.e.: records in an array) the arguments of the call, so that the loaded plugins can freely call `compdef`. Then, the `cdreplay` (compdef-replay) can be used, after `compinit` will be called (and the original `compdef` function will become available), to execute all detected `compdef` calls. To summarize:
 
-```shell title=~/.zshrc
+```shell title="~/.zshrc"
 source ~/.zi/bin/zi.zsh
 
 zi load "some/plugin"

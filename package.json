@@ -5,6 +5,7 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
+    "start:worker": "wrangler pages dev -k worker-KV_ZI_WIKI --live-reload -- docusaurus start --port 3300",
     "build": "docusaurus build",
     "build:en": "docusaurus build --locale en",
     "swizzle": "docusaurus swizzle",
@@ -45,9 +46,11 @@
     ]
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^3.3.1",
     "@docusaurus/module-type-aliases": "2.0.0-beta.15",
     "@tsconfig/docusaurus": "1.0.4",
-    "typescript": "4.5.5"
+    "typescript": "4.5.5",
+    "wrangler": "0.0.16"
   },
   "keywords": [
     "ZI, Wiki, Zsh"

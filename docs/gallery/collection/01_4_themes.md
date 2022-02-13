@@ -6,9 +6,7 @@ description: Themes & Prompts Collection
 keywords: [collection, themes, prompts, zsh, z-shell, zi]
 ---
 
-:::info
-
-Related:
+:::info Related
 
 1. [Multiple prompts](../../guides/customization#multiple-prompts)
 2. [Automatic load/unload based on condition](../../getting_started/overview#automatic-loadunload-based-on-condition)
@@ -32,7 +30,7 @@ Zsh tweak - map colours to the nearest colour in the available palette.
 
 For powerlevel10k include at the top of `.zshrc`:
 
-```shell title=~/.zshrc
+```shell title="~/.zshrc"
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
