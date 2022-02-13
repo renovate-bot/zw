@@ -250,7 +250,7 @@ const config = {
 						title: "More",
 						items: [
 							{
-								label: "Introduction to ZI",
+								label: "Introduction",
 								to: "docs/intro",
 							},
 							{

@@ -14,10 +14,10 @@ Available types:
 a11y, audio, blog, bug,
 business, code, content,
 data, design, doc, eventorganizing,
-example, financial, ideas, infra, 
-maintenance, mentoring, platform, 
+example, financial, ideas, infra,
+maintenance, mentoring, platform,
 plugin, projectManagement, question,
-fundingfinding, review, security, 
+fundingfinding, review, security,
 talk, test, tool, translation,
 tutorial, usertesting, video.
 ```

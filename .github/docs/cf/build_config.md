@@ -4,9 +4,9 @@ You may tell Cloudflare Pages how your site needs to be built as well as where i
 
 <TableWrap>
 
-| Framework/tool               | Build command                        | Build directory             |
-| ---------------------------- | ------------------------------------ | --------------------------- |
-| Docusaurus                   | `yarn build`                         | `build`                     |
+| Framework/tool | Build command | Build directory |
+| -------------- | ------------- | --------------- |
+| Docusaurus     | `yarn build`  | `build`         |
 
 </TableWrap>
 
