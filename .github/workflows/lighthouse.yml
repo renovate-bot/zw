@@ -22,7 +22,8 @@ jobs:
         uses: treosh/lighthouse-ci-action@8.2.0
         with:
           urls: |
-            https://deploy-preview-$PR_NUMBER--z-shell.netlify.app/
+            https://deploy-preview-$PR_NUMBER--zstaging.netlify.app/
+#            https://deploy-preview-$PR_NUMBER--z-shell.netlify.app/
           configPath: ./.github/workflows/lighthouserc.json
           uploadArtifacts: true
           temporaryPublicStorage: true
