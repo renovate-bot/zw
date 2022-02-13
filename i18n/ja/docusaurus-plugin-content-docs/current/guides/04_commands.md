@@ -12,6 +12,8 @@ keywords:
 
 import APITable from '@site/src/components/APITable';
 
+<!-- import Image from '@theme/IdealImage'; import Screen1 from '@site/static/img/assets/'; -->
+
 ## で使用可能なコマンド <kbd>^ TAB</kbd> 完了 {#commands-available-with-tab-completion}
 
 ```shell title="zi ^TAB"
@@ -72,7 +74,7 @@ ZI を更新するには、コマンドラインで `zi self-update` を発行�
 
 すべてのプラグインとスニペットを更新するには、 `zi update`を発行します。
 
-<div align="center"><img src="/img/include/update.png" alt="Update" /></div>
+To update all in parallel (up to 40 at the time) `zi update -p 40`
 
 プラグイン/スニペットを 1 つだけ更新したい場合は、 `zi update NAME_OF_PLUGIN`を発行します。 コミットのリストがあれば表示されます。
 
@@ -88,7 +90,7 @@ The `cdreplay` subcommand is provided to re-play all caught `compdef` calls. The
 
 The `compdef` function is provided by `compinit` call. As it should be called later, after loading all of the plugins, ZI provides its own `compdef` function that catches (i.e.: records in an array) the arguments of the call, so that the loaded plugins can freely call `compdef`. Then, the `cdreplay` (compdef-replay) can be used, after `compinit` will be called (and the original `compdef` function will become available), to execute all detected `compdef` calls. To summarize:
 
-```shell title=~/.zshrc
+```shell title="~/.zshrc"
 source ~/.zi/bin/zi.zsh
 
 zi load "some/plugin"

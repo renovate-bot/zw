@@ -83,49 +83,49 @@ zi light denisidoro/navi
 ### GH-R: [junegunn/fzf](https://github.com/junegunn/fzf) {#gh-r-junegunnfzf}
 
 ```shell
-zi ice from"gh-r" as'program'
+zi ice from'gh-r' as'program'
 zi light @junegunn/fzf
 ```
 
 ### GH-R: [sharkdp/fd](https://github.com/sharkdp/fd) {#gh-r-sharkdpfd}
 
 ```shell
-zi ice as"command" from"gh-r" mv"fd* fd" sbin"**/fd(.exe|) -> fd"
+zi ice from'gh-r' as'program' mv'fd* fd' sbin'**/fd(.exe|) -> fd'
 zi light @sharkdp/fd
 ```
 
 ### GH-R: [sharkdp/bat](https://github.com/sharkdp/bat) {#gh-r-sharkdpbat}
 
 ```shell
-zi ice as"command" from"gh-r" mv"bat* bat" sbin"**/bat(.exe|) -> bat"
+zi ice from'gh-r' as'program' mv'bat* bat' sbin'**/bat(.exe|) -> bat'
 zi light @sharkdp/bat
 ```
 
 ### GH-R: [sharkdp/hexyl](https://github.com/sharkdp/hexyl) {#gh-r-sharkdphexyl}
 
 ```shell
-zi ice as"command" from"gh-r" mv"hexyl* hexyl" sbin"**/hexyl(.exe|) -> hexyl"
+zi ice from'gh-r' as'program' mv'hexyl* hexyl' sbin'**/hexyl(.exe|) -> hexyl'
 zi light @sharkdp/hexyl
 ```
 
 ### GH-R: [sharkdp/hyperfine](https://github.com/sharkdp/hyperfine) {#gh-r-sharkdphyperfine}
 
 ```shell
-zi ice as"command" from"gh-r" mv"hyperfine* hyperfine" sbin"**/hyperfine(.exe|) -> hyperfine"
+zi ice from'gh-r' as'program' mv"hyperfine* hyperfine" sbin"**/hyperfine(.exe|) -> hyperfine"
 zi light @sharkdp/hyperfine
 ```
 
 ### GH-R: [sharkdp/vivid](https://github.com/sharkdp/vivid) {#gh-r-sharkdpvivid}
 
 ```shell
-zi ice as"command" from"gh-r" mv"vivid* vivid" sbin"**/vivid(.exe|) -> vivid"
+zi ice from'gh-r' as'program' mv'vivid* vivid' sbin'**/vivid(.exe|) -> vivid'
 zi light @sharkdp/vivid
 ```
 
 ### GH-R: [ogham/exa](https://github.com/ogham/exa) {#gh-r-oghamexa}
 
 ```shell
-zi ice as'program' from'gh-r' sbin'**/exa -> exa' atclone'cp -vf completions/exa.zsh _exa'
+zi ice from'gh-r' as'program' sbin'**/exa -> exa' atclone'cp -vf completions/exa.zsh _exa'
 zi light ogham/exa
 ```
 
@@ -302,6 +302,21 @@ zi ice lucid wait as'program' has'jq'
 zi snippet 'https://github.com/DanielG/dxld-mullvad/blob/master/am-i-mullvad.sh'
 ```
 
+### B: [abishekvashok/cmatrix](https://github.com/abishekvashok/cmatrix/)
+
+```shell
+# Regular syntax
+zi ice lucid as'program' atclone"autoreconf -i && PREFIX=$ZPFX ./configure" \
+  atpull'%atclone' pick"$ZPFX/cmatrix" make"PREFIX=$ZPFX"
+zi light abishekvashok/cmatrix
+```
+
+```shell
+# With the for syntax
+zi for as'program' atclone"autoreconf -i && PREFIX=$ZPFX ./configure" \
+  atpull'%atclone' pick"$ZPFX/cmatrix" make"PREFIX=$ZPFX" abishekvashok/cmatrix
+```
+
 ### B: [tj/git-extras](https://github.com/tj/git-extras) {#b-tjgit-extras}
 
 ```shell
@@ -373,7 +388,7 @@ zi light mptre/yank
 ```shell
 zi ice atclone'PYENV_ROOT="$PWD" ./libexec/pyenv init - > zpyenv.zsh' \
   atinit'export PYENV_ROOT="$PWD"' atpull"%atclone" \
-  as'command' pick'bin/pyenv' src"zpyenv.zsh" nocompile'!'
+  as'program' pick'bin/pyenv' src"zpyenv.zsh" nocompile'!'
 zi light pyenv/pyenv
 ```
 
@@ -390,7 +405,7 @@ zi light z-shell/null
 ### B: [asciinema/asciinema](https://github.com/asciinema/asciinema) {#b-asciinemaasciinema}
 
 ```shell
-zi ice as"command" wait lucid atinit"export PYTHONPATH=$ZPFX/lib/python3.10/site-packages/" \
+zi ice as"program" wait lucid atinit"export PYTHONPATH=$ZPFX/lib/python3.10/site-packages/" \
   atclone"PYTHONPATH=$ZPFX/lib/python3.10/site-packages/ python3 setup.py --quiet install --prefix $ZPFX" \
   atpull"%atclone" test"0" pick"$ZPFX/bin/asciinema"
 zi load asciinema/asciinema
@@ -426,7 +441,7 @@ zi load z-shell/null
 
 ```shell
 # exposes their binaries by altering $PATH
-zi ice rustup cargo'exa;lsd' as"command" pick"bin/(exa|lsd)"
+zi ice rustup cargo'exa;lsd' as"program" pick"bin/(exa|lsd)"
 zi load z-shell/null
 ```
 
@@ -504,7 +519,7 @@ zi pick"misc/quitcd/quitcd.zsh" sbin make light-mode for jarun/nnn
 
 ```shell
 # Just install rust and make it available globally in the system
-zi ice id-as"rust" wait"0" lucid rustup as"command" pick"bin/rustc" atload="export \
+zi ice id-as"rust" wait"0" lucid rustup as"program" pick"bin/rustc" atload="export \
 CARGO_HOME=\$PWD RUSTUP_HOME=\$PWD/rustup"
 zi load z-shell/null
 ```
