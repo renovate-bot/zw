@@ -266,5 +266,37 @@
   "home.fetaure3": {
     "message": "Supports Oh My Zsh, Prezto and creation of your own plugins, and libraries. The implementation isn't framework-specific - include only if and when required.",
     "description": "Description of third featured banner in homepage"
+  },
+  "homepage.feature1.title": {
+    "message": "Yields 50-80% Faster Zsh Startup",
+    "description": "Title of feature 1 (left) on the home page"
+  },
+  "homepage.feature2.title": {
+    "message": "Focus on What Matters",
+    "description": "Title of feature 2 (middle) on the home page"
+  },
+  "homepage.feature3.title": {
+    "message": "Wide Scope for Integration",
+    "description": "Title of feature 3 (right) on the home page"
+  },
+  "theme.IdealImageMessage.loading": {
+    "message": "Loading...",
+    "description": "When the full-scale image is loading"
+  },
+  "theme.IdealImageMessage.load": {
+    "message": "Click to load{sizeMessage}",
+    "description": "To prompt users to load the full image. sizeMessage is a parenthesized size figure."
+  },
+  "theme.IdealImageMessage.offline": {
+    "message": "Your browser is offline. Image not loaded",
+    "description": "When the user is viewing an offline document"
+  },
+  "theme.IdealImageMessage.404error": {
+    "message": "404. Image not found",
+    "description": "When the image is not found"
+  },
+  "theme.IdealImageMessage.error": {
+    "message": "Error. Click to reload",
+    "description": "When the image fails to load for unknown error"
   }
 }
