@@ -1,22 +1,22 @@
-import React, {lazy, Suspense} from "react";
-import clsx from "clsx";
-import Layout from "@theme/Layout";
+import React from "react";
 import Link from "@docusaurus/Link";
-const useDocusaurusContext = lazy(() => import("@docusaurus/useDocusaurusContext"));
-const styles = lazy(() => import("./index.module.css"));
-import Translate from "@docusaurus/Translate";
+import Translate, {translate} from "@docusaurus/Translate";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Layout from "@theme/Layout";
+import clsx from "clsx";
+import styles from "./index.module.css";
 
 function HomepageHeader() {
 	const {siteConfig} = useDocusaurusContext();
 	return (
 		<header className={clsx("hero hero--primary", styles.heroBanner)}>
 			<div className="container">
-				<h3 className="hero__title">{siteConfig.title}</h3>
+				<h4 className="hero__title">{siteConfig.title}</h4>
 				<p className="hero__subtitle">{siteConfig.tagline}</p>
 				<div className={styles.buttons}>
 					<Link className="button button--secondary button--lg" to="/docs/intro">
 						<Translate id="homepage.button" description="The homepage button to wiki introduction">
-							✨ Make it work, make it right, make it fast ✨
+							✨ Make it work, make it right, make it Fast ✨
 						</Translate>
 					</Link>
 				</div>
@@ -27,7 +27,11 @@ function HomepageHeader() {
 
 const FeatureList = [
 	{
-		title: "Yields 50-80% Faster Zsh Startup",
+		title: translate({
+			id: "homepage.feature1.title",
+			message: "Yields 50-80% Faster Zsh Startup",
+			description: "Title of feature 1 (left) on the home page",
+		}),
 		Svg: require("@site/static/img/svg/turbo.svg").default,
 		description: (
 			<Translate id="home.fetaure1" description="Description of first featured banner in homepage">
@@ -37,7 +41,11 @@ const FeatureList = [
 		),
 	},
 	{
-		title: "Focus on What Matters",
+		title: translate({
+			id: "homepage.feature2.title",
+			message: "Focus on What Matters",
+			description: "Title of feature 2 (middle) on the home page",
+		}),
 		Svg: require("@site/static/img/svg/stats.svg").default,
 		description: (
 			<Translate id="home.fetaure2" description="Description of second featured banner in homepage">
@@ -47,7 +55,11 @@ const FeatureList = [
 		),
 	},
 	{
-		title: "Wide Scope for Integration",
+		title: translate({
+			id: "homepage.feature3.title",
+			message: "Wide Scope for Integration",
+			description: "Title of feature 3 (right) on the home page",
+		}),
 		Svg: require("@site/static/img/svg/zsh.svg").default,
 		description: (
 			<Translate id="home.fetaure3" description="Description of third featured banner in homepage">

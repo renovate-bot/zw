@@ -3,36 +3,36 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.tutorialSidebar.category.🚀 Getting Started": {
+  "sidebar.defaultSidebar.category.🚀 Getting Started": {
     "message": "🚀 Getting Started",
-    "description": "The label for category 🚀 Getting Started in sidebar tutorialSidebar"
+    "description": "The label for category 🚀 Getting Started in sidebar defaultSidebar"
   },
-  "sidebar.tutorialSidebar.category.💡 User Guide": {
+  "sidebar.defaultSidebar.category.💡 User Guide": {
     "message": "💡 User Guide",
-    "description": "The label for category 💡 User Guide in sidebar tutorialSidebar"
+    "description": "The label for category 💡 User Guide in sidebar defaultSidebar"
   },
-  "sidebar.tutorialSidebar.category.✨ Gallery of Invocations": {
+  "sidebar.defaultSidebar.category.✨ Gallery of Invocations": {
     "message": "✨ Gallery of Invocations",
-    "description": "The label for category ✨ Gallery of Invocations in sidebar tutorialSidebar"
+    "description": "The label for category ✨ Gallery of Invocations in sidebar defaultSidebar"
   },
-  "sidebar.tutorialSidebar.category.📌 Collection": {
+  "sidebar.defaultSidebar.category.📌 Collection": {
     "message": "📌 Collection",
-    "description": "The label for category 📌 Collection in sidebar tutorialSidebar"
+    "description": "The label for category 📌 Collection in sidebar defaultSidebar"
   },
-  "sidebar.tutorialSidebar.category.🌐 Ecosystem": {
+  "sidebar.defaultSidebar.category.🌐 Ecosystem": {
     "message": "🌐 Ecosystem",
-    "description": "The label for category 🌐 Ecosystem in sidebar tutorialSidebar"
+    "description": "The label for category 🌐 Ecosystem in sidebar defaultSidebar"
   },
-  "sidebar.tutorialSidebar.category.💠 Annexes": {
+  "sidebar.defaultSidebar.category.💠 Annexes": {
     "message": "💠 Annexes",
-    "description": "The label for category 💠 Annexes in sidebar tutorialSidebar"
+    "description": "The label for category 💠 Annexes in sidebar defaultSidebar"
   },
-  "sidebar.tutorialSidebar.category.📦 Packages": {
+  "sidebar.defaultSidebar.category.📦 Packages": {
     "message": "📦 Packages",
-    "description": "The label for category 📦 Packages in sidebar tutorialSidebar"
+    "description": "The label for category 📦 Packages in sidebar defaultSidebar"
   },
-  "sidebar.tutorialSidebar.category.⚙️ Plugins & Modules": {
+  "sidebar.defaultSidebar.category.⚙️ Plugins & Modules": {
     "message": "⚙️ Plugins & Modules",
-    "description": "The label for category ⚙️ Plugins & Modules in sidebar tutorialSidebar"
+    "description": "The label for category ⚙️ Plugins & Modules in sidebar defaultSidebar"
   }
 }
