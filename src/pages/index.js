@@ -1,9 +1,9 @@
-import React from "react";
+import React, {lazy, Suspense} from "react";
 import clsx from "clsx";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import styles from "./index.module.css";
+const useDocusaurusContext = lazy(() => import("@docusaurus/useDocusaurusContext"));
+const styles = lazy(() => import("./index.module.css"));
 import Translate from "@docusaurus/Translate";
 
 function HomepageHeader() {
