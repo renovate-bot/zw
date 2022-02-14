@@ -188,7 +188,7 @@ themes=( "white/black/1" "green/black/0" "green/black/1" "white/blue/0" "white/b
 
 Read remaining configuration files to see what's in them. Nevertheless, configuration can be also set from `zshrc`. There are `5` standard `zshrc` configuration variables:
 
-```jsx
+```sh
 znt_history_active_text - underline or reverse - how should be active element highlighted
 znt_history_nlist_coloring_pattern - pattern that can be used to colorize elements
 znt_history_nlist_coloring_color - color with which to colorize
@@ -200,7 +200,7 @@ Above variables will work for `n-history` tool. For other tools, change `_histor
 
 Common configuration of the tools uses variables with `_list_` in them:
 
-```jsx
+```sh
 znt_list_bold - should draw text in bold (0 or 1)
 znt_list_colorpair - main pair of colors to be used, e.g "green/black"
 znt_list_border - should draw borders around windows (0 or 1)

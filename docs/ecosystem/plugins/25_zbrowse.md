@@ -21,7 +21,7 @@ You can resize the video by pressing `Ctrl-+` or `Cmd-+`.
 :::
 
 <a href="https://asciinema.org/a/122018">
-<Image className="ScreenView" img={Asciinema1} alt="ZBrowse view on Asciinema" />
+  <Image className="ScreenView" img={Asciinema1} alt="ZBrowse view on Asciinema" />
 </a>
 
 Video source: [Asciinema](https://asciinema.org/a/122018)
