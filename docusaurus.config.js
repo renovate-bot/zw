@@ -100,7 +100,7 @@ const config = {
 	],
 	i18n: {
 		defaultLocale: 'en',
-		locales: ['en', 'ja'],
+		locales: ['en', 'ja', 'ko'],
 	},
 	/**
 	customFields: {

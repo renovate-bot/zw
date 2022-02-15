@@ -21,7 +21,7 @@
   },
   "link.item.label.Zsh Documentation": {
     "message": "Zsh Documentation",
-    "description": "The label of footer link with label=Zsh Documentation linking to docsz/zsh-docs"
+    "description": "The label of footer link with label=Zsh Documentation linking to zsh-docs/intro"
   },
   "link.item.label.Blog Posts": {
     "message": "Blog Posts",

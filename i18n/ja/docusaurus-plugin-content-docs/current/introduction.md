@@ -48,7 +48,7 @@ Install [Rust](https://crates.io) packages with [rust annex](ecosystem/annexes/r
 
 Install almost everything from [GitHub](https://github.com):
 
-[Annexes](ecosystem/annexes) | [Packages](ecosystem/packages) | [Meta Plugins](ecosystem/annexes/meta-plugins) | [Gallery of Invocations](gallery/collection)
+[Annexes](ecosystem/annexes) | [Packages](ecosystem/packages/packages-overview) | [Meta Plugins](ecosystem/annexes/meta-plugins) | [Gallery of Invocations](gallery/collection)
 
 </TabItem>
 </Tabs>

@@ -40,8 +40,8 @@ For the [search](https://z-shell.pages.dev/search/?q=GH-R), prefixed tags helps 
 
 :::tip Additional installation methods
 
-1. [Meta plugins](/docs/ecosystem/annexes/meta-plugins)
-2. [Packages](/docs/ecosystem/packages/packages-overview)
+1. [Meta plugins](docs/ecosystem/annexes/meta-plugins)
+2. [Packages](docs/ecosystem/packages/packages-overview)
 
 :::
 
