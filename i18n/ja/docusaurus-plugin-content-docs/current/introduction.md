@@ -95,3 +95,11 @@ Install almost everything from [GitHub](https://github.com):
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+---
+
+<div align="center">
+
+[**GitHub**](https://github.com/z-shell) - [**Twitter**](https://twitter.com/zshell_zi) - [**Join the team**](https://github.com/z-shell/community/issues/new?assignees=&labels=%F0%9F%91%A5+member&template=membership.yml&title=team%3A+)
+
+</div>
