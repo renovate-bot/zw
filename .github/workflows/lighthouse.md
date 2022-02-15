@@ -1,5 +1,5 @@
 ---
-name: 📲 Lighthouse Report
+name: 📊 Lighthouse Report
 on:
   pull_request_target:
     branches: [main]
@@ -16,12 +16,11 @@ jobs:
         with:
           site_name: zeie
           max_timeout: 600
-      - name: 📲 Audit URLs using Lighthouse
+      - name: ☑️ Audit URLs using Lighthouse
         id: lighthouse_audit
         uses: treosh/lighthouse-ci-action@8.2.0
         with:
           urls: |
-            ${{ steps.netlify.outputs.url }}
             https://deploy-preview-$PR_NUMBER--zeie.netlify.app/
             https://deploy-preview-$PR_NUMBER--zeie.netlify.app/docs/
             https://deploy-preview-$PR_NUMBER--zeie.netlify.app/blog/
