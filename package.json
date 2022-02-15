@@ -58,6 +58,7 @@
     "ZI, Wiki, Zsh"
   ],
   "description": "ZI Wiki Pages",
+  "license": "MIT",
   "engines": {
     "node": ">=16"
   }

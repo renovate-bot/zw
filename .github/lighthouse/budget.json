@@ -1,48 +1,48 @@
 [
-   {
-      "path":"/*",
-      "resourceSizes":[
-         {
-            "resourceType":"total",
-            "budget":300
-         },
-         {
-            "resourceType":"script",
-            "budget":150
-         },
-      ],
-      "resourceCounts":[
-         {
-            "resourceType":"third-party",
-            "budget":10
-         }
-      ]
-   },
-   {
-      "path":"/blog",
-      "resourceSizes":[
-         {
-            "resourceType":"total",
-            "budget":200
-         }
-      ]
-   },
-   {
-      "path":"/docs",
-      "resourceSizes":[
-         {
-            "resourceType":"total",
-            "budget":200
-         }
-      ]
-   },
-   {
-      "path":"/docsz",
-      "resourceSizes":[
-         {
-            "resourceType":"total",
-            "budget":200
-         }
-      ]
-   }
+  {
+    "path": "/*",
+    "resourceSizes": [
+      {
+        "resourceType": "total",
+        "budget": 300
+      },
+      {
+        "resourceType": "script",
+        "budget": 150
+      }
+    ],
+    "resourceCounts": [
+      {
+        "resourceType": "third-party",
+        "budget": 10
+      }
+    ]
+  },
+  {
+    "path": "/blog",
+    "resourceSizes": [
+      {
+        "resourceType": "total",
+        "budget": 200
+      }
+    ]
+  },
+  {
+    "path": "/docs",
+    "resourceSizes": [
+      {
+        "resourceType": "total",
+        "budget": 200
+      }
+    ]
+  },
+  {
+    "path": "/zsh-docs",
+    "resourceSizes": [
+      {
+        "resourceType": "total",
+        "budget": 200
+      }
+    ]
+  }
 ]

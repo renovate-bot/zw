@@ -22,9 +22,10 @@ jobs:
         with:
           urls: |
             ${{ steps.netlify.outputs.url }}
-            ${{ steps.netlify.outputs.url }}/docs/
-            ${{ steps.netlify.outputs.url }}/blog/
             https://deploy-preview-$PR_NUMBER--zeie.netlify.app/
+            https://deploy-preview-$PR_NUMBER--zeie.netlify.app/docs/
+            https://deploy-preview-$PR_NUMBER--zeie.netlify.app/blog/
+            https://deploy-preview-$PR_NUMBER--zeie.netlify.app/zsh-docs/
           budgetPath: ./.github/lighthouse/budget.json
           configPath: ./.github/lighthouse/lighthouserc.json
           uploadArtifacts: true
