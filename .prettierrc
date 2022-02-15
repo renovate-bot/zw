@@ -4,7 +4,7 @@
   "bracketSameLine": true,
   "printWidth": 120,
   "proseWrap": "never",
-  "singleQuote": false,
+  "singleQuote": true,
   "trailingComma": "all",
   "tabWidth": 2
 }

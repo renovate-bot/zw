@@ -3,6 +3,6 @@
 Theme elements:
 
 ```jsx
-import TOCInline from "@theme/TOCInline";
-import APITable from "@site/src/components/APITable";
+import TOCInline from '@theme/TOCInline';
+import APITable from '@site/src/components/APITable';
 ```

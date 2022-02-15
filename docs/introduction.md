@@ -42,7 +42,7 @@ Install [Rust](https://crates.io) packages with [rust annex](ecosystem/annexes/r
 
 Install almost everything from [GitHub](https://github.com):
 
-[Annexes](ecosystem/annexes) | [Packages](ecosystem/packages) | [Meta Plugins](ecosystem/annexes/meta-plugins) | [Gallery of Invocations](gallery/collection)
+[Annexes](ecosystem/annexes) | [Packages](ecosystem/packages/packages-overview) | [Meta Plugins](ecosystem/annexes/meta-plugins) | [Gallery of Invocations](gallery/collection)
 
 </TabItem>
 </Tabs>
@@ -89,3 +89,11 @@ Install almost everything from [GitHub](https://github.com):
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+---
+
+<div align="center">
+
+[**GitHub**](https://github.com/z-shell) - [**Twitter**](https://twitter.com/zshell_zi) - [**Join the team**](https://github.com/z-shell/community/issues/new?assignees=&labels=%F0%9F%91%A5+member&template=membership.yml&title=team%3A+)
+
+</div>

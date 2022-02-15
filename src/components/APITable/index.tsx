@@ -15,12 +15,12 @@ import React, {
   useRef,
   useEffect,
   forwardRef,
-} from "react";
+} from 'react';
 import {useHistory} from "@docusaurus/router";
-import styles from "./styles.module.css";
+import styles from './styles.module.css';
 
 interface Props {
-  readonly children: ReactElement<ComponentProps<"table">>;
+  readonly children: ReactElement<ComponentProps<'table'>>;
   readonly name?: string;
 }
 
@@ -35,7 +35,7 @@ function getText(node: ReactElement): string {
 
 const APITableRow = forwardRef(
   (
-    {name, children}: {name: string | undefined; children: ReactElement<ComponentProps<"tr">>},
+    {name, children}: {name: string | undefined; children: ReactElement<ComponentProps<'tr'>>},
     ref: React.ForwardedRef<HTMLTableRowElement>,
   ) => {
     const entryName = getText(children);
@@ -51,7 +51,7 @@ const APITableRow = forwardRef(
           history.push(anchor);
         }}
         onKeyDown={(e: React.KeyboardEvent) => {
-          if (e.key === "Enter") {
+          if (e.key === 'Enter') {
             history.push(anchor);
           }
         }}>
@@ -72,7 +72,7 @@ export default function APITable({children, name}: Props): JSX.Element {
   useEffect(() => {
     highlightedRow.current?.focus();
   }, [highlightedRow]);
-  const rows = Children.map(tbody.props.children, (row: ReactElement<ComponentProps<"tr">>) => (
+  const rows = Children.map(tbody.props.children, (row: ReactElement<ComponentProps<'tr'>>) => (
     <APITableRow name={name} ref={highlightedRow}>
       {row}
     </APITableRow>

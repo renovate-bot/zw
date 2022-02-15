@@ -1,6 +1,6 @@
-@import "include/footer.css";
-@import "include/logo/github.css";
-@import "include/images.css";
+@import 'include/footer.css';
+@import 'include/logo/github.css';
+@import 'include/images.css';
 
 :root {
   /*
@@ -33,7 +33,7 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
-html[data-theme="dark"] .docusaurus-highlight-code-line {
+html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgb(66 66 66 / 30%);
 }
 
@@ -49,15 +49,15 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
   background-color: var(--ifm-tabs-color-active);
 }
 
-html[data-theme="light"] .themedDocusaurus [fill="#FFFF50"] {
+html[data-theme='light'] .themedDocusaurus [fill='#FFFF50'] {
   fill: greenyellow;
 }
 
-html[data-theme="dark"] .themedDocusaurus [fill="#FFFF50"] {
+html[data-theme='dark'] .themedDocusaurus [fill='#FFFF50'] {
   fill: seagreen;
 }
 
-html[data-theme="light"] .DocSearch {
+html[data-theme='light'] .DocSearch {
   /* --docsearch-primary-color: var(--ifm-color-primary); */
   /* --docsearch-text-color: var(--ifm-font-color-base); */
   --docsearch-muted-color: var(--ifm-color-emphasis-700);
@@ -75,7 +75,7 @@ html[data-theme="light"] .DocSearch {
   --docsearch-footer-background: var(--ifm-color-white);
 }
 
-html[data-theme="dark"] {
+html[data-theme='dark'] {
   --ifm-color-primary: hsl(var(--site-primary-hue-saturation) 50%);
   --ifm-color-primary-dark: hsl(var(--site-primary-hue-saturation) 41%);
   --ifm-color-primary-darker: hsl(var(--site-primary-hue-saturation) 38%);
@@ -107,12 +107,12 @@ html[data-theme="dark"] {
   white-space: nowrap;
 }
 
-html[data-theme="light"] img[src$="#gh-dark-mode-only"],
-html[data-theme="dark"] img[src$="#gh-light-mode-only"] {
+html[data-theme='light'] img[src$='#gh-dark-mode-only'],
+html[data-theme='dark'] img[src$='#gh-light-mode-only'] {
   display: none;
 }
 
 /* Used to test CSS insertion order */
 .test-marker-site-custom-css-unique-rule {
-  content: "site-custom-css-unique-rule";
+  content: 'site-custom-css-unique-rule';
 }

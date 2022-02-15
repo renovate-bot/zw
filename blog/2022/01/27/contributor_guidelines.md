@@ -1,7 +1,7 @@
 ---
 title: Contributor Guidelines (v1.0.0)
 hide_title: false
-description: "Contributing is a great way to learn more about social coding on Github, new technologies and and their ecosystems."
+description: 'Contributing is a great way to learn more about social coding on Github, new technologies and and their ecosystems.'
 slug: contributors
 keywords:
   - zi

@@ -1,18 +1,18 @@
-import React from "react";
-import Link from "@docusaurus/Link";
-import Translate, {translate} from "@docusaurus/Translate";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import Layout from "@theme/Layout";
-import clsx from "clsx";
-import styles from "./index.module.css";
+import React from 'react';
+import Link from '@docusaurus/Link';
+import Translate, {translate} from '@docusaurus/Translate';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Layout from '@theme/Layout';
+import clsx from 'clsx';
+import styles from './index.module.css';
 
 function HomepageHeader() {
 	const {siteConfig} = useDocusaurusContext();
 	return (
-		<header className={clsx("hero hero--primary", styles.heroBanner)}>
+		<header className={clsx('hero hero--primary', styles.heroBanner)}>
 			<div className="container">
-				<h4 className={clsx("hero__title")}>{siteConfig.title}</h4>
-				<p className={clsx("hero__subtitle")}>{siteConfig.tagline}</p>
+				<h4 className={clsx('hero__title')}>{siteConfig.title}</h4>
+				<p className={clsx('hero__subtitle')}>{siteConfig.tagline}</p>
 				<div className={styles.buttons}>
 					<Link className="button button--secondary button--lg" to="/docs/intro">
 						<Translate id="homepage.button" description="The homepage button to wiki introduction">
@@ -28,11 +28,11 @@ function HomepageHeader() {
 const FeatureList = [
 	{
 		title: translate({
-			id: "homepage.feature1.title",
-			message: "Yields 50-80% Faster Zsh Startup",
-			description: "Title of feature 1 (left) on the home page",
+			id: 'homepage.feature1.title',
+			message: 'Yields 50-80% Faster Zsh Startup',
+			description: 'Title of feature 1 (left) on the home page',
 		}),
-		Svg: require("@site/static/img/svg/turbo.svg").default,
+		Svg: require('@site/static/img/svg/turbo.svg').default,
 		description: (
 			<Translate id="home.fetaure1" description="Description of first featured banner in homepage">
 				It allows postponing the loading of a plugin to the moment when the processing of `.zshrc` is finished and the
@@ -42,11 +42,11 @@ const FeatureList = [
 	},
 	{
 		title: translate({
-			id: "homepage.feature2.title",
-			message: "Focus on What Matters",
-			description: "Title of feature 2 (middle) on the home page",
+			id: 'homepage.feature2.title',
+			message: 'Focus on What Matters',
+			description: 'Title of feature 2 (middle) on the home page',
 		}),
-		Svg: require("@site/static/img/svg/stats.svg").default,
+		Svg: require('@site/static/img/svg/stats.svg').default,
 		description: (
 			<Translate id="home.fetaure2" description="Description of second featured banner in homepage">
 				Provides the statistics about the plugins, such as describing what aliases, functions, bindkeys, Zle widgets,
@@ -56,11 +56,11 @@ const FeatureList = [
 	},
 	{
 		title: translate({
-			id: "homepage.feature3.title",
-			message: "Wide Scope for Integration",
-			description: "Title of feature 3 (right) on the home page",
+			id: 'homepage.feature3.title',
+			message: 'Wide Scope for Integration',
+			description: 'Title of feature 3 (right) on the home page',
 		}),
-		Svg: require("@site/static/img/svg/zsh.svg").default,
+		Svg: require('@site/static/img/svg/zsh.svg').default,
 		description: (
 			<Translate id="home.fetaure3" description="Description of third featured banner in homepage">
 				Supports Oh My Zsh, Prezto and creation of your own plugins, and libraries. The implementation isn't
@@ -72,7 +72,7 @@ const FeatureList = [
 
 function Feature({Svg, title, description}) {
 	return (
-		<div className={clsx("col col--4")}>
+		<div className={clsx('col col--4')}>
 			<div className="text--center">
 				<Svg className={styles.featureSvg} alt={title} />
 			</div>

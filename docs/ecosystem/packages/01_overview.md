@@ -1,9 +1,8 @@
 ---
-id: packages
-slug: /ecosystem/packages
+id: packages-overview
 title: 📦 Quick overview
 image: img/logo/zi/png/501x501.png
-description: Packages documentation
+description: Introduction to the packages
 keywords: [package, zsh, z-shell, zi]
 ---
 
@@ -28,7 +27,7 @@ The Unicode arrow is allowed in ZI syntax as in example below.
 zi id-as=jekyll pack param='GEM → jekyll' for any-gem
 ```
 
-The binaries will be exposed without altering the PATH via shims ([bin-gem-node](../ecosystem/annexes/bin-gem-node) annex is needed). Shims are correctly removed when deleting a plugin with `zi delete ……`
+The binaries will be exposed without altering the PATH via shims ([bin-gem-node](/docs/ecosystem/annexes/bin-gem-node) annex is needed). Shims are correctly removed when deleting a plugin with `zi delete ……`
 
 The so-called packages are GitHub repositories holding a `package.json` file with the meta-data in them. This way you don't have to (but still can) specify ices, which might be handy when the ice-mod list is long and complex.
 
@@ -75,7 +74,7 @@ The installation is real, package-manager -like, because you don't need to invok
 
 You can also update the package with `zi update fzf` – it'll cause the project to refresh and rebuild, like with a "normal" package manager such as `apt-get`. However, it'll actually be more like to `emerge` from Gentoo, because the installation will be from the source… unless… the user will pick up a binary installation by profile-argument specified in the `pack''` ice :)
 
-## Pros Of Using ZI Package For Regular Software Installations {#pros-of-using-zi-package-for-regular-software-installations}
+## Pros Of Using ZI Package For Regular Software Installations
 
 Using ZI to install software where one could use a regular package manager has several advantages:
 
@@ -100,35 +99,6 @@ Using ZI to install software where one could use a regular package manager has s
 5. **Con:** You're somewhat "on your own", with no support from any package maintainer.
 
 Thus, summing up 1. with 4., it might be nice/convenient too, for example, have the latest ECS CLI binary installed in the home directory, without using root access and always the latest, and – summing up with 2. and 3. – to, for example, have always the latest `README` downloaded by additional ice: `dl'https://raw.githubusercontent.com/aws/amazon-ecs-cli/master/README.md'` (and then to have the `README` converted into a man page by the `remark` Markdown processor or other via an `atclone''` ice, as the tool doesn't have any official man page).
-
-## The `Z-Shell` Organization {#the-z-shell-organization}
-
-The home for the packages is [Z-Shell](https://github.com/z-shell) GitHub organization. You can find the available packages [here](https://github.com/search?q=topic%3Az-packages+org%3Az-shell&type=Repositories), which as of `2021-11-11` include:
-
-- **[any-node](https://github.com/z-shell/any-node)** - Special package – it is designed for easy installing of any Node modules inside the plugin directory.
-- **[any-gem](https://github.com/z-shell/any-gem)** – Special package – it is designed for easy installing of any Ruby Gems locally inside the plugin directory.
-- **[apr](https://github.com/z-shell/apr)** – Provides [apache/apr](https://github.com/apache/apr) library by compiling and installing it to the `$ZPFX/bin`.
-- **[fzf](https://github.com/z-shell/fzf)** - Fuzzy finder via Makefile installation of the [junegunn/fzf](https://github.com/junegunn/fzf) binary under `$ZPFX/bin`.
-- **[fzy](https://github.com/z-shell/fzy)** – Fuzzy finder via Makefile-installation of the [jhawthorn/fzy](https://github.com/jhawthorn/fzy) binary under `$ZPFX/bin`.
-- **[pyenv](https://github.com/z-shell/pyenv)** – Provides [pyenv/pyenv](https://github.com/pyenv/pyenv)\*\* version manager command by extending `$PATH` to make it point into the bin subdirectory of the plugin.
-- **[remark](https://github.com/z-shell/remark)** - Provides the CLI command for [remarkjs/remark](https://github.com/remarkjs/remark) with two plugins:
-  - Man,
-  - HTML
-- **[doctoc](https://github.com/z-shell/doctoc)** – Provides the [thlorenz/doctoc](https://github.com/thlorenz/doctoc) CLI command.
-- **[ls_colors](https://github.com/z-shell/ls_colors)** – Provides the [trapd00r/LS_COLORS](https://github.com/trapd00r/LS_COLORS) and setups a zsh-completion system to use the definitions with:
-  - GNU 'ls',
-  - [ogham/exa](https://github.com/ogham/exa)'
-- **[dircolors-material](https://github.com/z-shell/dircolors-material)** – The package provides the [zpm-zsh/dircolors-material](https://github.com/zpm-zsh/dircolors-material) definitions and also setups zsh-completion system to use the definitions with:
-  - GNU 'ls',
-  - '[ogham/exa](https://github.com/ogham/exa)'
-- **[asciidoctor](https://github.com/z-shell/asciidoctor)** – Provides the CLI command for [asciidoctor](https://github.com/asciidoctor/asciidoctor)\*\*.
-- **[zsh-system-completions](https://github.com/z-shell/zsh-system-completions)** – A package that brings stock Zsh completions under the control of ZI.
-- **[ecs-cli](https://github.com/z-shell/ecs-cli)** – Provides the command for Amazon [ecs-cli](https://github.com/aws/amazon-ecs-cli)\*\* by copying it to `$ZPFX/bin`.
-- **[subversion](https://github.com/z-shell/subversion)** – Provides the [apache/subversion](https://github.com/apache/subversion)\*\* revision control system by compiling and installing it to the `$ZPFX/bin`.
-- **[github-issues](https://github.com/z-shell/github-issues)** – ZI invocations that'll install z-shell/zsh-github-issues.
-- **[github-issues-srv](https://github.com/z-shell/github-issues-srv)** - The package is the puller-thread service for the z-shell/zsh-github-issues plugin. It runs the background service that downloads the new issues from GitHub.
-- **[firefox-dev](https://github.com/z-shell/firefox-dev)** - Provides the CLI commands firefox-bin and [firefox](https://www.mozilla.org/en-GB/firefox/developer) by extending the `$PATH/bin`.
-- **[zsh](https://github.com/z-shell/zsh)** - Builds and installs the newest [zsh-users/zsh](https://github.com/zsh-users/zsh).
 
 ## Adding Your Own Package {#adding-your-own-package}
 
