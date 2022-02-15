@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: 😪 Wait for the Netlify Preview
+      - name: 💤 Wait for the Netlify Preview
         uses: jakepartusch/wait-for-netlify-action@v1
         id: netlify
         with:
@@ -21,8 +21,12 @@ jobs:
         uses: treosh/lighthouse-ci-action@8.2.0
         with:
           urls: |
+            ${{ steps.netlify.outputs.url }}
+            ${{ steps.netlify.outputs.url }}/docs/
+            ${{ steps.netlify.outputs.url }}/blog/
             https://deploy-preview-$PR_NUMBER--zeie.netlify.app/
-          configPath: ./.github/workflows/lighthouserc.json
+          budgetPath: ./.github/lighthouse/budget.json
+          configPath: ./.github/lighthouse/lighthouserc.json
           uploadArtifacts: true
           temporaryPublicStorage: true
         env:
