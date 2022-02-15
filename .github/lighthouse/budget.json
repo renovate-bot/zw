@@ -1,20 +1,30 @@
 [
   {
     "path": "/*",
-    "resourceSizes": [
+    "timings": [
       {
-        "resourceType": "total",
-        "budget": 300
+        "metric": "interactive",
+        "budget": 5000
       },
+      {
+        "metric": "first-meaningful-paint",
+        "budget": 2000
+      }
+    ],
+    "resourceSizes": [
       {
         "resourceType": "script",
         "budget": 150
+      },
+      {
+        "resourceType": "total",
+        "budget": 300
       }
     ],
     "resourceCounts": [
       {
         "resourceType": "third-party",
-        "budget": 10
+        "budget": 100
       }
     ]
   },
@@ -23,7 +33,7 @@
     "resourceSizes": [
       {
         "resourceType": "total",
-        "budget": 200
+        "budget": 300
       }
     ]
   },
@@ -32,7 +42,7 @@
     "resourceSizes": [
       {
         "resourceType": "total",
-        "budget": 200
+        "budget": 300
       }
     ]
   },
@@ -41,7 +51,7 @@
     "resourceSizes": [
       {
         "resourceType": "total",
-        "budget": 200
+        "budget": 300
       }
     ]
   }
