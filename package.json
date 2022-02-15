@@ -16,7 +16,8 @@
     "crowdin:sync": "docusaurus write-translations && crowdin upload && crowdin download",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "format": "prettier --write '**/*.{js,css,json,md}'"
+    "format:check": "prettier --check '**/*.{ts,js,css,json,md}'",
+    "format:write": "prettier --write '**/*.{ts,js,css,json,md}'"
   },
   "dependencies": {
     "@crowdin/cli": "3.7.7",
