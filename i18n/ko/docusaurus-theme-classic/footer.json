@@ -1,0 +1,54 @@
+{
+  "link.title.More": {
+    "message": "More",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.title.Community": {
+    "message": "Community",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.Social": {
+    "message": "Social",
+    "description": "The title of the footer links column with title=Social in the footer"
+  },
+  "link.title.Legal": {
+    "message": "Legal",
+    "description": "The title of the footer links column with title=Legal in the footer"
+  },
+  "link.item.label.Introduction": {
+    "message": "Introduction",
+    "description": "The label of footer link with label=Introduction linking to docs/intro"
+  },
+  "link.item.label.Zsh Documentation": {
+    "message": "Zsh Documentation",
+    "description": "The label of footer link with label=Zsh Documentation linking to zsh-docs/intro"
+  },
+  "link.item.label.Blog Posts": {
+    "message": "Blog Posts",
+    "description": "The label of footer link with label=Blog Posts linking to blog"
+  },
+  "link.item.label.Github Discussions": {
+    "message": "Github Discussions",
+    "description": "The label of footer link with label=Github Discussions linking to https://github.com/z-shell/zi/discussions/"
+  },
+  "link.item.label.Crowdin Translations": {
+    "message": "Crowdin Translations",
+    "description": "The label of footer link with label=Crowdin Translations linking to https://crowdin.com/project/z-shell-zi/discussions/"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/z-shell/"
+  },
+  "link.item.label.Twitter": {
+    "message": "Twitter",
+    "description": "The label of footer link with label=Twitter linking to https://twitter.com/zshell_zi/"
+  },
+  "link.item.label.Privacy Policy": {
+    "message": "Privacy Policy",
+    "description": "The label of footer link with label=Privacy Policy linking to legal/privacy_policy/"
+  },
+  "copyright": {
+    "message": "Copyright © 2022 Z-Shell ZI Community.",
+    "description": "The footer copyright"
+  }
+}
