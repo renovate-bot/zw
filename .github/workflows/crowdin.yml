@@ -3,11 +3,10 @@ name: '🌐 Crowdin'
 
 on:
   workflow_dispatch:
-  push:
-    branches: [ main ]
-    paths:
-      - 'i18n/**'
-      - 'docs/**'
+#  push:
+#    branches: [ main ]
+#    paths:
+#      - 'docs/**'
 jobs:
   sync-crowdin:
     runs-on: ubuntu-latest
