@@ -1,5 +1,5 @@
 {
-  "name": "zi-wiki",
+  "name": "zw",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -7,6 +7,7 @@
     "start": "docusaurus start",
     "start:worker": "wrangler pages dev -k worker-KV_ZI_WIKI --live-reload -- docusaurus start",
     "build": "docusaurus build",
+    "build:ci": "yarn install --immutable && yarn build",
     "build:en": "docusaurus build --locale en",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
@@ -19,9 +20,7 @@
     "format:check": "prettier --check '**/*.{js,css,json,md}'",
     "format:write": "prettier --write '**/*.{js,css,json,md}'",
     "format:diff": "prettier --list-different .",
-    "format:style": "stylelint '**/*.css'",
-    "postinstall": "yarn lock:update",
-    "lock:update": "npx yarn-deduplicate"
+    "format:style": "stylelint '**/*.css'"
   },
   "dependencies": {
     "@crowdin/cli": "3.7.7",
@@ -68,7 +67,7 @@
   "description": "ZI Wiki Pages",
   "license": "MIT",
   "engines": {
-    "node": ">=16",
-    "yarn": "1.22.17"
-  }
+    "node": ">=16"
+  },
+  "packageManager": "yarn@3.1.1"
 }
