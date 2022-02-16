@@ -2,7 +2,7 @@ project_id_env: CROWDIN_PROJECT_ID
 api_token_env: CROWDIN_PERSONAL_TOKEN
 preserve_hierarchy: true
 commit_message": '[ci skip]'
-languages_mapping: &languages_mapping
+#languages_mapping: '&languages_mapping'
 #  two_letters_code:
 #    pt-BR: pt-BR
 files: [
@@ -19,11 +19,11 @@ files: [
       languages_mapping: '*languages_mapping',
     },
     # Community Docs Markdown files
-    #{
-    #  source: '/community/**/*',
-    #  translation: '/i18n/%two_letters_code%/docusaurus-plugin-content-docs-community/current/**/%original_file_name%',
-    #  languages_mapping: '*languages_mapping',
-    #},
+    {
+      source: '/community/**/*',
+      translation: '/i18n/%two_letters_code%/docusaurus-plugin-content-docs-community/current/**/%original_file_name%',
+      languages_mapping: '*languages_mapping',
+    },
     # Blog Markdown files
     #{
     #  source: '/blog/**/*',
