@@ -3,11 +3,11 @@ name: '🌐 Crowdin'
 
 on:
   workflow_dispatch:
-#  push:
-#    branches: [ main ]
-#    paths:
-#      - 'i18n/**'
-#      - 'docs/**'
+  push:
+    branches: [ main ]
+    paths:
+      - 'i18n/**'
+      - 'docs/**'
 jobs:
   sync-crowdin:
     runs-on: ubuntu-latest
@@ -17,12 +17,12 @@ jobs:
     - name: '🚀 Run Crowdin action'
       uses: crowdin/github-action@1.4.6
       with:
-        upload_sources: true
-        upload_translations: true
+        upload_sources: false
+        upload_translations: false
         download_translations: true
         push_translations: true
-        pull_request_labels: 'enhancement ✨'
         create_pull_request: true
+        #pull_request_labels: 'enhancement ✨'
       env:
         GITHUB_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
         CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
