@@ -13991,9 +13991,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zwiki@workspace:.":
+"zw@workspace:.":
   version: 0.0.0-use.local
-  resolution: "zwiki@workspace:."
+  resolution: "zw@workspace:."
   dependencies:
     "@cloudflare/workers-types": 3.4.0
     "@crowdin/cli": 3.7.7

@@ -1,5 +1,5 @@
 {
-  "name": "zwiki",
+  "name": "zw",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -19,9 +19,7 @@
     "format:check": "prettier --check '**/*.{js,css,json,md}'",
     "format:write": "prettier --write '**/*.{js,css,json,md}'",
     "format:diff": "prettier --list-different .",
-    "format:style": "stylelint '**/*.css'",
-    "postinstall": "yarn lock:update",
-    "lock:update": "npx yarn-deduplicate"
+    "format:style": "stylelint '**/*.css'"
   },
   "dependencies": {
     "@crowdin/cli": "3.7.7",
