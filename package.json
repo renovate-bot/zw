@@ -59,7 +59,7 @@
     "stylelint-config-prettier": "9.0.3",
     "stylelint-config-standard": "25.0.0",
     "typescript": "4.5.5",
-    "wrangler": "0.0.16"
+    "wrangler": "0.0.17"
   },
   "keywords": [
     "ZI, Wiki, Zsh"
