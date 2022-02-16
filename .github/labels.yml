@@ -37,6 +37,9 @@
   description: "Work that improves the continuous integration."
 - name: "dependencies 📦"
   color: fbca04
+  description: "Change in project Javascript dependencies."
+- name: "javasrcipt 📦"
+  color: fbca04
   description: "Change in project dependencies."
 - name: "submodules ⚙️"
   color: fbca04
