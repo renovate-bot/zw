@@ -1,8 +1,5 @@
 documentation 📝:
   - "docs/**/*.md"
-  - "i18n/**/docusaurus-plugin-content-docs/**"
-#good first issue:
-#  - "docs/**/*.md"
 dependencies 📦:
   - "yarn.lock"
   - "package.json"
@@ -18,10 +15,8 @@ maintenance 📈:
   - ".github/*.json"
   - "crowdin.yml"
   - "docusaurus.config.js"
-l10n:
-  - any: ["crowdin.yml"]
 i18n 🌐:
-  - any: ["i18n/**"]
+  - "i18n/**"
 annex 💠:
   - "docs/ecosystem/annexes/*.md"
   - "i18n/**/docusaurus-plugin-content-docs/current/ecosystem/annexes/*.md"
