@@ -7,6 +7,7 @@
     "start": "docusaurus start",
     "start:worker": "wrangler pages dev -k worker-KV_ZI_WIKI --live-reload -- docusaurus start",
     "build": "docusaurus build",
+    "build:ci": "yarn install --immutable && yarn build",
     "build:en": "docusaurus build --locale en",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
