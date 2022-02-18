@@ -1,9 +1,16 @@
 ---
 id: syntax
-title: ✍️ Syntax
+title: '✍️ Syntax'
 image: /img/logo/zi/png/501x501.png
 description: ZI Syntax
-keywords: [syntax, zsh, zinit, zi, oh-my-zsh, ohmyzsh, how-to-use]
+keywords:
+  - syntax
+  - zsh
+  - zinit
+  - zi
+  - oh-my-zsh
+  - ohmyzsh
+  - how-to-use
 ---
 
 ## The fundamental syntax
