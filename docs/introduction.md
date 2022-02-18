@@ -4,7 +4,7 @@ title: 🎉 Introduction
 sidebar_position: 1
 image: img/logo/zi/png/501x501.png
 description: Introduction to a Swiss Army Knife for Zsh, formely known as zplugin, zinit.
-keywords: 
+keywords:
   - introduction
   - zsh
   - zinit
