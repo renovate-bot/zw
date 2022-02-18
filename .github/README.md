@@ -13,22 +13,13 @@
 
 ## Globally distributed
 
-Interconnected with over 10,000 major service providers, cloud providers, and enterprise networks, Cloudflare is your own fast lane on the Internet. By avoiding network hops and optimizing traffic paths, we drastically reduce latency while improving application performance and the end user experience.
+  Interconnected with over 10,000 major service providers, cloud providers, and enterprise networks, Cloudflare is a fast lane on the Internet.
+  By avoiding network hops and optimizing traffic paths, it drastically reduce latency while improving application performance and the end user experience.
 
 1. [Cloudflare Global Network](https://www.cloudflare.com/en-gb/network/):
 
    - https://z-shell.pages.dev/
    - https://z.digitalclouds.dev/
-
-2. [IC: Mainnet](https://dfinity.org/) ID: oiffc-pyaaa-aaaad-qbjlq-cai
-
-   - https://icz.digitalclouds.dev/
-   - https://oiffc-pyaaa-aaaad-qbjlq-cai.ic.fleek.co/
-
-3. [IPFS](https://ipfs.io)
-   - https://ipfsz.digitalclouds.dev/
-   - https://zi-ipfs.on.fleek.co/
-   - https://bafybeicz62nlcowojhrnxo2t7dwsopaf7y6jzr6z4ysxhg75xkhzdiozxy.ipfs.dweb.link/
 
 ## Development Guidelines
 
