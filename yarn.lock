@@ -1632,7 +1632,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/wrangler@npm:^1.19.8":
+"@cloudflare/wrangler@npm:1.19.8":
   version: 1.19.8
   resolution: "@cloudflare/wrangler@npm:1.19.8"
   dependencies:
@@ -13464,7 +13464,7 @@ __metadata:
   resolution: "zw@workspace:."
   dependencies:
     "@cloudflare/workers-types": 3.4.0
-    "@cloudflare/wrangler": ^1.19.8
+    "@cloudflare/wrangler": 1.19.8
     "@crowdin/cli": 3.7.7
     "@docusaurus/core": 2.0.0-beta.15
     "@docusaurus/module-type-aliases": 2.0.0-beta.15
