@@ -3,7 +3,7 @@ id: zsh-editing-wb
 title: ⚙️ Zsh Editing Workbench
 image: img/logo/zi/png/501x501.png
 description: Organized shortcuts for Zsh
-keywords: [zsh-edit, workbench, orginized, zsh, zinit, zi]
+keywords: [zsh-edit, workbench, organized, zsh, zinit, zi]
 ---
 
 Organized shortcuts for various command line editing operations, plus new operations (e.g. incremental history word completion).
