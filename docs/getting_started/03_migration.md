@@ -60,7 +60,7 @@ To use **themes** created for Oh My Zsh it might need:
 - `git` plugin
 - `setopt promptsubst`
 
-If any of above is not followed, the theme will break similar as shown below:
+If any of above is missing, the theme will break similar as shown below:
 
 ```shell
 ... $(build_prompt) ...
@@ -256,30 +256,27 @@ What is `zstyle`?
 
 ## Migration from Zgen
 
-### Load Oh-My-Zsh Library
-
-Zgen vs ZI
+### Load Oh-My-Zsh library
 
 ```diff
 - zgen oh-my-zsh
+
 + zi snippet OMZL::<ANY OF THEM>
 ```
 
-Load oh-my-zsh plugins:
+### Load oh-my-zsh plugins
 
 ```diff
 - zgen oh-my-zsh <PATH>
-+ zi snippet OMZ::<PATH>
+
++ zi snippet OMZP::<PATH>
 ```
 
-### Load Prezto Modules
-
-Zgen vs ZI
-
-Load Prezto:
+### Load Prezto modules
 
 ```diff
 - zgen prezto
+
 + zi snippet PZTM::<ANY FROM LIST BELOW>
 ```
 
@@ -293,10 +290,9 @@ Load Prezto:
 - completion
 - prompt
 
-Load prezto plugins:
-
 ```diff
 - zgen prezto <modulename>
+
 + zi snippet PZTM::<modulename>
 ```
 
@@ -304,8 +300,9 @@ Load a repositories as prezto plugins:
 
 ```diff
 - zgen pmodule <reponame> <branch>
+
 + zi ice ver"<branch>"
-+ zi load <repo/plugin
++ zi load <repo/plugin>
 ```
 
 ### Summarized Zgen
@@ -316,11 +313,11 @@ For the `location`: refer [selection of files](../guides/ice#src-pick-multisrc)
 
 :::
 
-```shell
-zgen load <repo> [location] [branch]
+```diff
+- zgen load <repo> [location] [branch]
 
-zi ice ver"[branch]"
-zi load <repo>
++ zi ice ver"[branch]"
++ zi load <repo>
 ```
 
 ## Migration from Zplug
