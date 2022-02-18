@@ -14,7 +14,7 @@ jobs:
     - name: '⤵️ Check out code from GitHub'
       uses: actions/checkout@v2
     - name: '🚀 Run Crowdin action'
-      uses: crowdin/github-action@1.4.6
+      uses: crowdin/github-action@1.4.7
       with:
         upload_sources: false
         upload_translations: false
