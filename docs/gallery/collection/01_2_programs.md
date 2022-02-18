@@ -11,7 +11,7 @@ keywords: [collection, programs, zsh, z-shell, zi]
 Related:
 
 1. [Overview: as'program'](../../getting_started/overview#asprogram)
-2. [Turbo and Lucid](../../getting_started/useage#turbo-and-lucid)
+2. [Turbo and Lucid](../../getting_started/overview#turbo-and-lucid)
 3. [The `for` syntax](../../guides/syntax#the-for-syntax)
 4. [The `make` syntax](../../guides/syntax#the-make-syntax)
 5. [Ice Syntax](../../guides/ice)

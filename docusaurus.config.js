@@ -26,15 +26,15 @@ const config = {
 			/** No translations for zsh docs, until reasonable. It allows easily propose changes from the UI. */
 			'@docusaurus/plugin-content-docs',
 			{
-				id: 'zsh-docs',
-				path: 'zsh-docs',
-				routeBasePath: 'zsh-docs/intro',
+				id: 'community',
+				path: 'community',
+				routeBasePath: 'community/intro',
 				editUrl: 'https://github.com/facebook/docusaurus/edit/main',
 				remarkPlugins: [],
 				rehypePlugins: [],
 				showLastUpdateAuthor: true,
 				showLastUpdateTime: true,
-				sidebarPath: require.resolve('./sidebars_2.js'),
+				sidebarPath: require.resolve('./lib/js/sidebars_2.js'),
 			},
 		],
 		[
@@ -117,7 +117,7 @@ const config = {
 				debug: true,
 				docs: {
 					/* https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs#configuration */
-					sidebarPath: require.resolve('./sidebars_1.js'),
+					sidebarPath: require.resolve('./lib/js/sidebars_1.js'),
 					editUrl: ({locale, versionDocsDirPath, docPath}) => {
 						if (locale !== 'en') {
 							return `https://crowdin.com/project/z-shell-zi/${locale}`;
@@ -253,7 +253,7 @@ const config = {
 							},
 							{
 								label: 'Zsh Documentation',
-								to: 'zsh-docs/intro',
+								to: 'community/intro',
 							},
 							{
 								label: 'Blog Posts',

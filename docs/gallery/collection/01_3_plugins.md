@@ -10,7 +10,7 @@ keywords: [collection, plugins, zsh, z-shell, zi]
 
 Related:
 
-1. [Usage: Turbo and Lucid](../../getting_started/useage#turbo-and-lucid)
+1. [Usage: Turbo and Lucid](../../getting_started/overview#turbo-and-lucid)
 2. [Syntax: The `for` syntax](../../guides/syntax#the-for-syntax)
 3. [Guides: Ice Syntax](../../guides/ice)
 4. [Guides: Ice Modifiers](../../guides/ice-modifiers)

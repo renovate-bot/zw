@@ -59,13 +59,11 @@ Using `curl`, `wget`, etc. along with Subversion allows to almost completely avo
 
 ## Ice-Modifiers {#ice-modifiers}
 
-:::info
+The command `zi ice` provides [ice modifiers][1] for single next command.
 
-See: [ice-modifiers](../guides/ice-modifiers) for more information.
+The logic is that "ice" is something that’s added (e.g. to a drink or a coffee) – and in the ZI sense this means that ice is a modifier added to the next ZI command, and also something that melts (so it doesn’t last long) – and in the ZI use it means that the modifier lasts for only single next ZI command.
 
-:::
-
-The command `zi ice` provides ice-modifiers for single next command. The logic is that "ice" is something that’s added (e.g. to a drink or a coffee) – and in the ZI sense this means that ice is a modifier added to the next ZI command, and also something that melts (so it doesn’t last long) – and in the ZI use it means that the modifier lasts for only single next ZI command. Using one other ice-modifier "**pick**" users can explicitly **select the file to source**:
+Using one other ice modifier "**pick**" users can explicitly **select the file to source**:
 
 ```shell {1}
 zi ice svn pick"init.zsh"
@@ -122,7 +120,7 @@ zi snippet \
 
 :::tip
 
-Snippets also support `atpull` [ice-modifier](/search?q=ice-modifier), so it’s possible to do e.g. `atpull'!svn revert'`. There’s also `atinit` ice-modifier, executed before each loading of plugin or snippet.
+Snippets also support `atpull`, so it’s possible to do e.g. `atpull'!svn revert'`. There’s also `atinit` ice-modifier, executed before each loading of plugin or snippet.
 
 :::
 
@@ -339,3 +337,235 @@ Two prompts, each active in different directories. This technique can be used to
 See: [multiple prompts](../guides/customization#multiple-prompts) for more information. It contains more real-world examples of a multi-prompt setup, which is being close to what the author uses in his setup.
 
 :::
+
+## Plugins and snippets
+
+Plugins can be loaded using `load` or `light`.
+
+```shell
+zi load  <repo/plugin> # Load with reporting/investigating.
+zi light <repo/plugin> # Load without reporting/investigating.
+```
+
+If you want to source local or remote files (using direct URL), you can do so with `snippet`.
+
+```shell
+zi snippet <URL>
+```
+
+Such lines should be added to `.zshrc`. Snippets are cached locally, use the `-f` option to download a fresh version of a snippet, or `zi update {URL}`. Can also use `zi update --all` to update all snippets (and plugins).
+
+### Basic use case examples
+
+Plugin history-search-multi-word loaded with investigating:
+
+```shell
+zi load z-shell/H-S-MW
+```
+
+Two regular plugins loaded without investigating:
+
+```shell
+zi light zsh-users/zsh-autosuggestions
+zi light z-shell/F-Sy-H
+```
+
+Snippet:
+
+```shell
+zi snippet https://gist.githubusercontent.com/hightemp/5071909/raw/
+```
+
+### Loading prompts examples
+
+This is [powerlevel10k](https://github.com/romkatv/powerlevel10k), [pure](https://github.com/sindresorhus/pure), [starship](https://github.com/starship/starship) sample:
+
+Load powerlevel10k theme.
+
+```shell title="~/.zshrc"
+zi ice depth"1"
+zi light romkatv/powerlevel10k
+```
+
+Load pure theme
+
+- Will pick the `async.zsh` library and will source it.
+
+```shell title="~/.zshrc"
+zi ice pick"async.zsh" src"pure.zsh"
+zi light sindresorhus/pure
+```
+
+Load starship theme:
+
+- will pick `starship` binary as command, from github release
+- `starship` setup: `atclone` create `init.zsh` and `completion`
+- `atpull` behavior same as `atclone` and will be user when run `zi update`
+- `src` will source init.zsh
+
+```shell title="~/.zshrc"
+zi ice as"command" from"gh-r" \
+  atclone"./starship init zsh > init.zsh; ./starship completions zsh > _starship" \
+  atpull"%atclone" src"init.zsh"
+zi light starship/starship
+```
+
+## Upgrade ZI and plugins
+
+ZI can be updated to `self-update` and plugins to `update`.
+
+Self-update
+
+```shell title="~/.zshrc"
+zi self-update
+```
+
+Update all plugins
+
+```shell title="~/.zshrc"
+zi update
+```
+
+Update specific plugin. Default is GitHub, but can specify any with ice [from''][2]
+
+```shell title="~/.zshrc"
+zi update <user>/<repo>
+```
+
+Plugin parallel update plugins
+
+```shell title="~/.zshrc"
+zi update --parallel
+```
+
+Increase the number of jobs in a concurrent set to 40
+
+```shell title="~/.zshrc"
+zi update --parallel 40
+```
+
+## Turbo and lucid
+
+Turbo and lucid are the most used options.
+
+### Turbo Mode
+
+Turbo mode is the key to performance. It can be loaded asynchronously, which makes a huge difference when the amount of plugins increases.
+
+Usually used as `zi ice wait"<SECONDS>"`, let's use the previous example:
+
+`wait` and `wait"0"` is the same:
+
+```shell title="~/.zshrc"
+zi ice wait
+zi load z-shell/history-search-multi-word
+```
+
+Load after 2 seconds:
+
+```shell title="~/.zshrc"
+zi ice wait"2"
+zi load z-shell/history-search-multi-word
+```
+
+Also can be used in `light` and `snippet`:
+
+```shell title="~/.zshrc"
+zi ice wait
+zi snippet https://gist.githubusercontent.com/hightemp/5071909/raw/
+```
+
+### Lucid {#lucid}
+
+Turbo mode is verbose, so you need an option for quiet. You can use with `lucid`:
+
+```shell
+zi ice wait lucid
+zi load z-shell/history-search-multi-word
+```
+
+## More examples on how to use ZI
+
+After installing ZI you can start adding some actions (load some plugins) to `~/.zshrc`, at the bottom. Some examples: Load the pure theme, with the zsh-async library that's bundled with it.
+
+```shell title="~/.zshrc"
+zi ice pick"async.zsh" src"pure.zsh"
+zi light sindresorhus/pure
+```
+
+# A glance at the <code>for</code> syntax – load all of the above plugins with a single command.
+
+:::tip
+
+To find more information about anything use [search][3] or just <kbd>CTRL+K</kbd>.
+
+:::
+
+```shell title="~/.zshrc"
+zi light-mode for \
+    zsh-users/zsh-autosuggestions \
+    z-shell/F-Sy-H \
+    z-shell/H-S-MW \
+  pick"async.zsh" src"pure.zsh" \
+    sindresorhus/pure
+```
+
+Binary release in the archive, from GitHub-releases page. After automatic unpacking it provides program "fzf".
+
+```shell title="~/.zshrc"
+zi ice from"gh-r" as"program"
+zi light junegunn/fzf
+```
+
+One other binary release, needs renaming from `docker-compose-Linux-x86_64`. This is done by [ice modifier][1]: `mv'{from} -> {to}'`. There are multiple packages per single version, for OS X, Linux, and Windows – so ice modifier `bpick` is used to select Linux package – in this case, this is not needed, ZI will grep operating system name and architecture automatically when there's no `bpick`.
+
+```shell title="~/.zshrc"
+zi ice from"gh-r" as"program" mv"docker* -> docker-compose" bpick"*linux*"
+zi load docker/compose
+```
+
+Vim repository on GitHub – a typical source code that needs compilation, ZI can manage it for you if you like, run `./configure` and other `make` stuff. Ice modifier `pick` selects a binary program to add to $PATH. You could also install the package under the path $ZPFX.
+
+```shell title="~/.zshrc"
+zi ice as"program" atclone"rm -f src/auto/config.cache; ./configure" \
+  atpull"%atclone" make pick"src/vim"
+zi light vim/vim
+```
+
+Scripts that are built at install (there's single default make target, "install", and it constructs scripts). The `make''` ice could also be: `make"install PREFIX=$ZPFX"`, if "install" wouldn't be the only, default target.
+
+```shell title="~/.zshrc"
+zi ice as"program" pick"$ZPFX/bin/git-*" make"PREFIX=$ZPFX"
+zi light tj/git-extras
+```
+
+Handle completions without loading any plugin, see `clist` command. This one is to be run just once, in an interactive session.
+
+```shell title="~/.zshrc"
+zi creinstall %HOME/my_completions
+```
+
+For GNU ls (the binaries can be gls, gdircolors, e.g. on OS X when installing the coreutils package from Homebrew).
+
+```shell title="~/.zshrc"
+zi ice atclone"dircolors -b LS_COLORS > c.zsh" atpull'%atclone' pick"c.zsh" nocompile'!'
+zi light trapd00r/LS_COLORS
+```
+
+`make'!'` -> run make before `atclone` & `atpull`.
+
+```shell title="~/.zshrc"
+zi ice as"program" make'!' atclone'./direnv hook zsh > zhook.zsh' atpull'%atclone' src"zhook.zsh"
+zi light direnv/direnv
+```
+
+If you're interested in more examples then check out the [playground repository](https://github.com/z-shell/playground) where users have uploaded the `~/.zshrc` and other ZI configurations. Feel free to [submit](https://github.com/z-shell/playground/issues/new?template=request-to-add-zshrc-to-the-zi-configs-repo.md) your `~/.zshrc` there if it contains ZI commands.
+
+For some additional examples you can also check out the:
+
+- [Collection](../gallery/collection),
+- [Oh-My-Zsh](../gallery/collection#oh-my-zsh).
+
+[1]: /search?q=ice+modifiers
+[2]: /search?q=from
+[3]: /search?q=for+syntax

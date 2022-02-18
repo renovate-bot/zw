@@ -14,7 +14,7 @@ Some Ice-modifiers are highlighted and clicking on them will take you to the app
 
 You may safely assume given ice works with both plugins and snippets unless explicitly stated otherwise.
 
-## Cloning options {#cloning-options}
+## Cloning options
 
 <APITable>
 
@@ -31,7 +31,7 @@ You may safely assume given ice works with both plugins and snippets unless expl
 
 </APITable>
 
-## Selection of files (`source '…'`) {#selection-of-files-source}
+## Selection of files (`source '…'`)
 
 <APITable>
 
@@ -60,7 +60,7 @@ You may safely assume given ice works with both plugins and snippets unless expl
 
 </APITable>
 
-## Plugin output {#plugin-output}
+## Plugin output
 
 <APITable>
 
@@ -72,7 +72,7 @@ You may safely assume given ice works with both plugins and snippets unless expl
 
 </APITable>
 
-## Completions {#completions}
+## Completions
 
 <APITable>
 
@@ -83,7 +83,7 @@ You may safely assume given ice works with both plugins and snippets unless expl
 
 </APITable>
 
-## Command execution after cloning, updating or loading {#command-execution-after-cloning-updating-or-loading}
+## Command execution after cloning, updating or loading
 
 <APITable>
 
