@@ -11,13 +11,18 @@
   Cache-Control: max-age=365000000
   Cache-Control: immutable
 
-# Prevents browsers from interpreting a response as any other
-# content-type than what is defined with the Content-Type header.
-
-X-Content-Type-Options: nosniff
+/ko/assets/*
+  Cache-Control: public
+  Cache-Control: max-age=365000000
+  Cache-Control: immutable
 
 # Google and other search engines often support the X-Robots-Tag header to instruct its crawlers
 # how your website should be indexed, to prevent your *.pages.dev deployment from being indexed:
 
 https://:z-shell.pages.dev/*
   X-Robots-Tag: noindex
+
+# Prevents browsers from interpreting a response as any other
+# content-type than what is defined with the Content-Type header.
+
+  X-Content-Type-Options: nosniff
