@@ -6,6 +6,8 @@ description: Provides a **unique number** that identifies a **running** Zshell s
 keywords: [zsh-unique-id, unique-id, zsh, zinit, zi]
 ---
 
+Repository: [zsh-unique-id](https://github.com/z-shell/zsh-unique-id)
+
 This plugin provides a **unique number** that identifies a **running** Zshell session, in its shell variable `$ZUID_ID`.
 
 Besides this unique number, also a unique _codename_ is provided, in shell variable `$ZUID_CODENAME`.
@@ -52,7 +54,7 @@ Zstyle configuration allows to customize the codenames:
 zstyle :plugin:zuid codenames paper metal wood plastic # first 4 shells will have those codenames
 ```
 
-## Install zsh-unique-id
+## Install Zsh Unique ID
 
 **The plugin is "standalone"**, which means that only sourcing it is needed (without using a plugin manager). So to install, unpack `zsh-unique-id` somewhere and add:
 
