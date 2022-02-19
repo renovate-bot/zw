@@ -59,8 +59,8 @@ sh -c "$(curl -fsSL https://git.io/get-zi)" -- -a zunit
 
 # 最低限の設定 with loader
 sh -c "$(curl -fsSL https://git.io/get-zi)" -- -a loader
-# あなたの .zshrc の設定を教えてください
 
+# あなたの .zshrc の設定を教えてください
 # https://github.com/z-shell/playground
 sh -c "$(curl -fsSL https://git.io/get-zi)" -- -a ???
 ```
