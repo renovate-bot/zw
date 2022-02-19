@@ -6,11 +6,13 @@ description: Organized shortcuts for Zsh
 keywords: [zsh-edit, workbench, organized, zsh, zinit, zi]
 ---
 
+Repository: [zsh-editing-workbench](https://github.com/z-shell/zsh-editing-workbench)
+
 Organized shortcuts for various command line editing operations, plus new operations (e.g. incremental history word completion).
 
-Incremental history _word_ completing (started with `Alt-h/H` or `Option-h/H` on Mac):
+Incremental history _word_ completing (started with <kbd>Alt-h/H</kbd> or <kbd>Option-h/H</kbd> on Mac):
 
-## Install zsh-editing-workbench
+## Install Zsh Editing Workbench
 
 ### With [ZI](https://github.com/z-shell/zi)
 
