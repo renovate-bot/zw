@@ -13,7 +13,7 @@ keywords:
 
 ## Oh-My-ZSHからの移行
 
-### Oh-My-Zsh: 基本
+### Oh-My-Zshの基本
 
 ```shell
 zi snippet <URL>        # URL付きの生の構文
