@@ -1,9 +1,9 @@
 ---
 id: migration
-title: Migration
+title: マイグレーション
 sidebar_position: 4
 image: /img/logo/zi/png/501x501.png
-description: Migration to ZI
+description: ZIへの移行
 keywords:
   - migration
   - zsh
@@ -11,19 +11,19 @@ keywords:
   - zi
 ---
 
-## Migration from Oh-My-ZSH
+## Oh-My-ZSHからの移行
 
-### Oh-My-Zsh basics
+### Oh-My-Zsh: 基本
 
 ```shell
-zi snippet <URL>        # Raw Syntax with URL
-zi snippet OMZ::<PATH>  # Shorthand OMZ/ (http://github.com/ohmyzsh/ohmyzsh/raw/master/)
-zi snippet OMZL::<PATH> # Shorthand OMZ/lib/
-zi snippet OMZT::<PATH> # Shorthand OMZ/themes/
-zi snippet OMZP::<PATH> # Shorthand OMZ/plugins/
+zi snippet <URL>        # URL付きの生の構文
+zi snippet OMZ::<PATH>  # OMZから略記(http://github.com/ohmyzsh/ohmyzsh/raw/master/)
+zi snippet OMZL::<PATH> # OMZ/lib/から
+zi snippet OMZT::<PATH> # OMZ/themes/から
+zi snippet OMZP::<PATH> # OMZ/plugins/から
 ```
 
-### Oh-My-Zsh library
+### Oh-My-Zshライブラリ
 
 Importing the [clipboard](https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/clipboard.zsh) and [termsupport](https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/termsupport.zsh) from the Oh-My-Zsh library Sample:
 
