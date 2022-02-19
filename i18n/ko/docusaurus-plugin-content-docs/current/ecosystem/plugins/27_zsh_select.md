@@ -13,6 +13,8 @@ keywords:
 
 import Image from '@theme/IdealImage'; import Asciinema1 from '@site/static/img/assets/asciinema/48490.png';
 
+Repository: [zsh-select](https://github.com/z-shell/zsh-select)
+
 A shell command that will display selection list. It is similar to `selecta`, but uses curses library to do display, and when compared to `fzf`, the main difference is approximate matching instead of fuzzy matching. It is written in Zshell and has it's capabilities:
 
 - Patterns, allowing multi-term searching
@@ -37,7 +39,7 @@ Video: source: [asciinema](https://asciinema.org/a/48490)
 
 ---
 
-## Install zsh-select
+## Install Zsh Select
 
 Simply copy file `zsh-select` to any `bin` directory such as `/usr/local/bin`. The package is also available as plugin. `zsh-select` will be available in interactive `Zsh` sessions only when using this method. Nevertheless, integration with `Vim` and other uses will simply work when `Zsh` is your main shell. Also, plugin managers often allow easy updates.
 
