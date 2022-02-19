@@ -10,7 +10,7 @@ import APITable from '@site/src/components/APITable';
 
 <!-- import Image from '@theme/IdealImage'; import Screen1 from '@site/static/img/assets/'; -->
 
-## Commands available with <kbd>^TAB</kbd> completion {#commands-available-with-tab-completion}
+## Commands available with <kbd>^TAB</kbd> completion
 
 ```shell title="zi ^TAB"
 self-update          -- "Updates and Compile ❮ ZI ❯"
@@ -72,19 +72,39 @@ To update all plugins and snippets, issue `zi update`.
 
 To update all in parallel (up to 40 at the time) `zi update -p 40`
 
-If you wish to update only a single plugin/snippet instead issue `zi update NAME_OF_PLUGIN`. A list of commits will be shown if any.
+If you wish to update only a single plugin/snippet instead issue `zi update NAME_OF_PLUGIN`.
 
-Some plugins require performing an action each time they're updated. One way you can do this is by using the `atpull` ice modifier. For example, writing `zi ice atpull'./configure'` before loading a plugin will execute `./configure` after a successful update. Refer to [Ice Modifiers](/search/?q=ice-modifiers) for more information.
+A list of commits will be shown if any.
 
-The ice modifiers for any plugin or snippet are stored in their directory in a `._zi` subdirectory, hence the plugin doesn't have to be loaded to be correctly updated. There's one other file created there, `.zi_lstupd` – it holds the log of the new commits pulled-in in the last update.
+Some plugins require performing an action each time they're updated.
 
-## Calling `compinit` without turbo mode {#calling-compinit-without-turbo-mode}
+One way you can do this is by using the `atpull` ice modifier.
 
-With no Turbo mode in use, compinit can be called normally, i.e.: as `autoload compinit; compinit`. This should be done after loading of all plugins and before possibly calling `zi cdreplay`.
+For example, writing `zi ice atpull'./configure'` before loading a plugin will execute `./configure` after a successful update.
 
-The `cdreplay` subcommand is provided to re-play all caught `compdef` calls. The `compdef` calls are used to define a completion for a command. For example, `compdef _git git` defines that the `git` command should be completed by a `_git` function.
+Refer to [Ice Modifiers][1] for more information.
 
-The `compdef` function is provided by `compinit` call. As it should be called later, after loading all of the plugins, ZI provides its own `compdef` function that catches (i.e.: records in an array) the arguments of the call, so that the loaded plugins can freely call `compdef`. Then, the `cdreplay` (compdef-replay) can be used, after `compinit` will be called (and the original `compdef` function will become available), to execute all detected `compdef` calls. To summarize:
+The ice modifiers for any plugin or snippet are stored in their directory in a `._zi` subdirectory, hence the plugin doesn't have to be loaded to be correctly updated.
+
+There's one other file created there, `.zi_lstupd` – it holds the log of the new commits pulled-in in the last update.
+
+## Calling `compinit` without turbo mode
+
+With no Turbo mode in use, compinit can be called normally, i.e.: as `autoload compinit; compinit`.
+
+This should be done after loading of all plugins and before possibly calling `zi cdreplay`.
+
+The `cdreplay` subcommand is provided to re-play all caught `compdef` calls.
+
+The `compdef` calls are used to define a completion for a command. For example, `compdef _git git` defines that the `git` command should be completed by a `_git` function.
+
+The `compdef` function is provided by `compinit` call.
+
+As it should be called later, after loading all of the plugins, ZI provides its own `compdef` function that catches (i.e.: records in an array) the arguments of the call, so that the loaded plugins can freely call `compdef`.
+
+Then, the `cdreplay` (compdef-replay) can be used, after `compinit` will be called (and the original `compdef` function will become available), to execute all detected `compdef` calls.
+
+To summarize:
 
 ```shell title="~/.zshrc"
 source ~/.zi/bin/zi.zsh
@@ -124,9 +144,15 @@ Performance gains are huge, for example, shell startup time with double `compini
 
 ## Calling `compinit` with turbo mode
 
-If you load completions using `wait'…'` [turbo mode](/search?q=turbo+mode) then you can add `atinit'zicompinit'` to the syntax-highlighting plugin (which should be the last one loaded, as their (2 projects, [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) & [F-Sy-H](https://github.com/z-shell/F-Sy-H)) documentation state), or `atload'zicompinit'` to last completion-related plugin. `zicompinit` is a function that just runs `autoload compinit; compinit`, created for convenience. There's also `zicdreplay` which will replay any caught compdefs so you can also do: `atinit'zicompinit; zicdreplay'`, etc. Basically, the whole topic is the same as normal `compinit` call, but it is done in `atinit` or `atload` hook of the last related plugin with the use of the helper functions (`zicompinit`,`zicdreplay` & `zicdclear` – see below for explanation of the last one).
+If you load completions using `wait'…'` [turbo mode][2] then you can add `atinit'zicompinit'` to the syntax-highlighting plugin (which should be the last one loaded, as their (2 projects, [zsh-syntax-highlighting][3] & [F-Sy-H][4]) documentation state), or `atload'zicompinit'` to last completion-related plugin.
 
-### Summary of `compinit` call: {#summary-of-compinit-call}
+`zicompinit` is a function that just runs `autoload compinit; compinit`, created for convenience.
+
+There's also `zicdreplay` which will replay any caught compdefs so you can also do: `atinit'zicompinit; zicdreplay'`, etc.
+
+Basically, the whole topic is the same as normal `compinit` call, but it is done in `atinit` or `atload` hook of the last related plugin with the use of the helper functions (`zicompinit`,`zicdreplay` & `zicdclear` – see below for explanation of the last one).
+
+### Summary of `compinit` call:
 
 ```shell {10} title=~/.zshrc
 source ~/.zi/bin/zi.zsh
@@ -167,7 +193,7 @@ The `cdreplay` is important if you use plugins like `OMZP::kubectl` or `asdf-vm/
 
 Following commands are passed to `zi …` to obtain described effects.
 
-## Loading and unloading {#loading-and-unloading}
+## Loading and unloading
 
 <APITable>
 
@@ -200,7 +226,7 @@ Following commands are passed to `zi …` to obtain described effects.
 
 </APITable>
 
-## Tracking of the active session {#tracking-of-the-active-session}
+## Tracking of the active session
 
 <APITable>
 
@@ -279,3 +305,8 @@ Following commands are passed to `zi …` to obtain described effects.
 |   `man`    | Manual.            |
 
 </APITable>
+
+[1]: /search/?q=ice-modifiers
+[2]: /search?q=turbo+mode
+[3]: https://github.com/zsh-users/zsh-syntax-highlighting
+[4]: https://github.com/z-shell/F-Sy-H

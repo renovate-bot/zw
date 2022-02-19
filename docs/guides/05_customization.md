@@ -34,7 +34,7 @@ declare -A ZI  # initial ZI's hash definition, if configuring before loading ZI,
 
 </APITable>
 
-## Non-GitHub (Local) Plugins {#non-github-local-plugins}
+## Non-GitHub (Local) Plugins
 
 Use `create` subcommand with user name `_local` (the default) to create the plugin's skeleton in `$ZI[PLUGINS_DIR]`. It will be not connected with the GitHub repository (because of the user name being `_local`). To enter the plugin's directory use the `cd` command with just the plugin's name (without `_local`, it's optional).
 
@@ -48,9 +48,9 @@ Several projects provide git extensions. Installing them with ZI has many benefi
 - declarative setup (like Chef or Puppet) – copying `.zshrc` to a different account brings also git-related setup,
 - easy update by e.g: `zi update --all`.
 
-Below is a configuration that adds multiple git extensions, loaded in Turbo mode, 1 second after prompt, with use of the [Bin-Gem-Node](https://github.com/z-shell/z-a-bin-gem-node) annex:
+Below is a configuration that adds multiple git extensions, loaded in Turbo mode, 1 second after prompt, with use of the [bin-gem-node][1] annex:
 
-```shell
+```shell title="~/.zshrc"
 zi as"null" wait"1" lucid for \
     sbin    Fakerr/git-recall \
     sbin    cloneopts paulirish/git-open \
@@ -67,26 +67,26 @@ zi as"null" wait"1" lucid for \
             z-shell/git-url
 ```
 
-The target directory for installed files is `$ZPFX` (`~/.zi/polaris` by default).
+The target directory for installed files is `$ZPFX` - `~/.zi/polaris` by default.
 
-With [meta-plugins](https://github.com/z-shell/zi/wiki/z-a-meta-plugins) consisting of:
+With [meta-plugins][2] consisting of:
 
 Annexes:
 
-1. [z-shell/z-a-readurl](https://github.com/z-shell/z-a-readurl),
-2. [z-shell/z-a-patch-dl](https://github.com/z-shell/z-a-patch-dl),
-3. [z-shell/z-a-rust](https://github.com/z-shell/z-a-rust),
-4. [z-shell/z-a-bin-gem-node](https://github.com/z-shell/z-a-bin-gem-node).
+1. [z-shell/z-a-readurl][3],
+2. [z-shell/z-a-patch-dl][4],
+3. [z-shell/z-a-rust][5],
+4. [z-shell/z-a-bin-gem-node][6].
 
 Git tools:
 
-1. [paulirish/git-open](https://github.com/paulirish/git-open),
-2. [paulirish/git-recent](https://github.com/paulirish/git-recent),
-3. [davidosomething/git-my](https://github.com/davidosomething/git-my),
-4. [arzzen/git-quick-stats](https://github.com/arzzen/git-quick-stats),
-5. [iwata/git-now](https://github.com/iwata/git-now),
-6. [tj/git-extras](https://github.com/tj/git-extras),
-7. [wfxr/forgit](https://github.com/wfxr/forgit).
+1. [paulirish/git-open][7],
+2. [paulirish/git-recent][8],
+3. [davidosomething/git-my][9],
+4. [arzzen/git-quick-stats][10],
+5. [iwata/git-now][11],
+6. [tj/git-extras][12],
+7. [wfxr/forgit][13].
 
 just run:
 
@@ -94,7 +94,7 @@ just run:
 zi light-mode for z-shell/z-a-meta-plugins @annexes @ext-git
 ```
 
-## Zsh options `setopt` {#zsh-options-setopt}
+## Zsh options `setopt`
 
 Options are primarily referred to by name. These names are case insensitive and underscores are ignored. For example, `allexport` is equivalent to `A__lleXP_ort`.
 
@@ -104,9 +104,9 @@ Some options also have one or more single letter names. There are two sets of si
 
 The sense of the single letter options may be inverted by using `+` instead of `-`. Some of the single letter option names refer to an option being off, in which case the inversion of that name refers to the option being on. For example, `+n` is the short name of `exec`, and `-n` is the short name of its inversion, `noexec`.
 
-In strings of single letter options supplied to the shell at startup, trailing whitespace will be ignored; for example the string `-f ` will be treated just as `-f`, but the string `-f i` is an error. This is because many systems which implement the `#!` mechanism for calling scripts do not strip trailing whitespace.
+In strings of single letter options supplied to the shell at startup, trailing whitespace will be ignored; for example the string `-f` will be treated just as `-f`, but the string `-f i` is an error. This is because many systems which implement the `#!` mechanism for calling scripts do not strip trailing whitespace.
 
-### History optimization {#history-optimization}
+### History optimization
 
 <APITable>
 
@@ -127,7 +127,7 @@ In strings of single letter options supplied to the shell at startup, trailing w
 
 </APITable>
 
-### Other tweaks {#other-tweaks}
+### Other tweaks
 
 <APITable>
 
@@ -146,13 +146,17 @@ In strings of single letter options supplied to the shell at startup, trailing w
 
 </APITable>
 
-## Style control for the completion system `zstyle` {#style-control-for-the-completion-system-zstyle}
+## Style control for the completion system `zstyle`
 
-What does `zstyle` do? - [unix.stackexchange.com/questions/214657/what-does-zstyle-do](https://unix.stackexchange.com/questions/214657/what-does-zstyle-do/239980)
+What does `zstyle` do? - [unix.stackexchange.com/what-does-zstyle-do][14]
 
-The `zstyle` handles the obvious style control for the completion system, but it seems to cover more than just that. E.g., the vcs_info module relies on it for display of git status in your prompt. You can start by looking at the few explanatory paragraphs in `man zshmodules` in the `zstyle` section.
+The `zstyle` handles the obvious style control for the completion system, but it seems to cover more than just that.
 
-### Fuzzy matching of completions for when you mistype them: {#fuzzy-matching-of-completions-for-when-you-mistype-them}
+E.g., the vcs_info module relies on it for display of git status in your prompt.
+
+You can start by looking at the few explanatory paragraphs in `man zshmodules` in the `zstyle` section.
+
+### Fuzzy matching of completions
 
 ```shell
 zstyle ':completion:*' completer _complete _match _approximate
@@ -160,7 +164,7 @@ zstyle ':completion:*:match:*' original only
 zstyle -e ':completion:*:approximate:*' max-errors 'reply=($((($#PREFIX+$#SUFFIX)/3>7?7:($#PREFIX+$#SUFFIX)/3))numeric)'
 ```
 
-### Pretty completions {#pretty-completions}
+### Pretty completions
 
 ```shell
 zstyle ':completion:*:matches' group 'yes'
@@ -180,28 +184,31 @@ zstyle ':completion:*' use-cache true
 zstyle ':completion:*' rehash true
 ```
 
-### Do menu-driven completion. {#do-menu-driven-completion}
+### Do menu-driven completion.
 
 ```shell
 zstyle ':completion:*' menu select
 ```
 
-### Color completion for [some things](https://linuxshellaccount.blogspot.com/2008/12/color-completion-using-zsh-modules-on.html) {#color-completion-for-some-things}
+### Color completion for [some things][15]
 
 ```shell
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 ```
 
-## Disabling System-Wide `compinit` Call (Ubuntu) {#disabling-system-wide-compinit-call-ubuntu}
+## Disabling System-Wide `compinit` Call (Ubuntu)
 
-On Ubuntu users might get surprised that e.g. their completions work while they didn't call `compinit` in their `.zshrc`. That's because the function is being called in `/etc/zshrc`. To disable this call – what is needed to avoid the slowdown and if the user loads any completion-equipped plugins, i.e. almost on 100% – add the following lines to `~/.zshenv`:
+On Ubuntu users might get surprised that e.g. their completions work while they didn't call `compinit` in their `.zshrc`.
+
+That's because the function is being called in `/etc/zshrc`.
+
+To disable this call – what is needed to avoid the slowdown and if the user loads any completion-equipped plugins, i.e. almost on 100% – add the following line to `~/.zshenv` to skip the not helping Ubuntu global compinit:
 
 ```shell
-# Skip the not helping Ubuntu global compinit
 skip_global_compinit=1
 ```
 
-## Multiple prompts {#multiple-prompts}
+## Multiple prompts
 
 <APITable>
 
@@ -214,7 +221,7 @@ skip_global_compinit=1
 
 :::note
 
-`zi light ……` loads the plugin without tracking it, while `zi load` tracks the plugin. To be able unload the plugin, it has to be loaded with `zi load ……` instead of `zi light ……`.
+`zi light …` loads the plugin without tracking it, while `zi load` tracks the plugin. To be able unload the plugin, it has to be loaded with `zi load …` instead of `zi light …`.
 
 :::
 
@@ -306,3 +313,19 @@ zi lucid load'![[ $MYPROMPT = 8 ]]' unload'![[ $MYPROMPT != 8 ]]' \
   atload'!_zsh_git_prompt_precmd_hook' nocd for \
     woefe/git-prompt.zsh
 ```
+
+[1]: https://github.com/z-shell/z-a-bin-gem-node
+[2]: https://github.com/z-shell/zi/wiki/z-a-meta-plugins
+[3]: https://github.com/z-shell/z-a-readurl
+[4]: https://github.com/z-shell/z-a-patch-dl
+[5]: https://github.com/z-shell/z-a-rust
+[6]: https://github.com/z-shell/z-a-bin-gem-node
+[7]: https://github.com/paulirish/git-open
+[8]: https://github.com/paulirish/git-recent
+[9]: https://github.com/davidosomething/git-my
+[10]: https://github.com/arzzen/git-quick-stats
+[11]: https://github.com/iwata/git-now
+[12]: https://github.com/tj/git-extras
+[13]: https://github.com/wfxr/forgit
+[14]: https://unix.stackexchange.com/questions/214657/what-does-zstyle-do/239980
+[15]: https://linuxshellaccount.blogspot.com/2008/12/color-completion-using-zsh-modules-on.html
