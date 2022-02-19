@@ -25,7 +25,7 @@ zi snippet OMZP::<PATH> # OMZ/plugins/から
 
 ### Oh-My-Zshライブラリ
 
-Importing the [clipboard](https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/clipboard.zsh) and [termsupport](https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/termsupport.zsh) from the Oh-My-Zsh library Sample:
+Importing the [clipboard][1] and [termsupport][2] from the Oh-My-Zsh library Sample:
 
 Raw Syntax:
 
@@ -95,7 +95,7 @@ zi snippet OMZT::robbyrussell
 
 :::info
 
-External Theme Sample: [NicoSantangelo/Alpharized](https://github.com/nicosantangelo/Alpharized)
+External Theme Sample: [NicoSantangelo/Alpharized][3]
 
 :::
 
@@ -146,8 +146,8 @@ If it consists of a single file, with ZI you can just load it: `zi snippet <some
 
 Use `zi ice svn` if multiple files require an entire subdirectory.
 
-- [gitfast](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gitfast)
-- [osx](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/osx)
+- [gitfast][4]
+- [osx][5]
 
 ```shell
 zi ice svn
@@ -159,8 +159,8 @@ zi snippet OMZP::osx
 
 Use `zi ice as"completion"` to directly add single file completion snippets.
 
-- [docker](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/docker)
-- [fd](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/fd)
+- [docker][6]
+- [fd][7]
 
 ```shell
 zi ice as"completion"
@@ -170,7 +170,7 @@ zi ice as"completion"
 zi snippet OMZP::fd/_fd
 ```
 
-[You can see an extended explanation of Oh-My-Zsh setup in the Wiki](../guides/customization#oh-my-zsh)
+[You can see an extended explanation of Oh-My-Zsh setup in the Wiki][8]
 
 ## Migration from Prezto
 
@@ -184,7 +184,7 @@ zi snippet PZTM::<PATH> # Shorthand PZT/modules/
 
 ### Prezto moduless
 
-Importing the [environment](https://github.com/sorin-ionescu/prezto/tree/master/modules/environment) and [terminal](https://github.com/sorin-ionescu/prezto/tree/master/modules/terminal) Prezto Modules Sample:
+Importing the [environment][9] and [terminal][10] Prezto Modules Sample:
 
 Prezto Setting:
 
@@ -217,8 +217,8 @@ zi snippet PZTM::terminal
 
 Use `zi ice svn` if multiple files require an entire subdirectory.
 
-- [docker](https://github.com/sorin-ionescu/prezto/tree/master/modules/docker)
-- [git](https://github.com/sorin-ionescu/prezto/tree/master/modules/git)
+- [docker][11]
+- [git][12]
 
 ```shell
 zi ice svn
@@ -230,7 +230,7 @@ zi snippet PZTM::git
 
 Use `zi ice as"null"` if don't exist `*.plugin.zsh`, `init.zsh`, `*.zsh-theme*` files in module.
 
-- [archive](https://github.com/sorin-ionescu/prezto/tree/master/modules/archive):
+- [archive][13]:
 
 ```shell
 zi ice svn as"null"
@@ -239,7 +239,7 @@ zi snippet PZTM::archive
 
 Use `zi ice atclone"git clone <repo> <location>"` if module have external module.
 
-- [completion](https://github.com/sorin-ionescu/prezto/tree/master/modules/completion):
+- [completion][14]:
 
 ```shell
 zi ice svn blockf \
@@ -253,8 +253,8 @@ Use `blockf` to prevent any unnecessary additions to fpath, as ZI manages fpath.
 
 What is `zstyle`?
 
-- Official (zsh.sourceforge.net): [zstyle](http://zsh.sourceforge.net/Doc/Release/Zsh-Modules.html#The-zsh_002fzutil-Module)
-- StackExchange: [What does `zstyle` do?](https://unix.stackexchange.com/questions/214657/what-does-zstyle-do)
+- Official (zsh.sourceforge.net): [zstyle][15]
+- StackExchange: [What does `zstyle` do?][16]
 
 :::
 
@@ -313,7 +313,7 @@ Load a repositories as prezto plugins:
 
 :::info
 
-For the `location`: refer [selection of files](../guides/ice#src-pick-multisrc)
+For the `location`: refer [selection of files][17]
 
 :::
 
@@ -352,3 +352,21 @@ For the `location`: refer [selection of files](../guides/ice#src-pick-multisrc)
 - `defer` => `wait`
 - `lazy` => `autoload`
 - `depth` => `depth`
+
+[1]: https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/clipboard.zsh
+[2]: https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/termsupport.zsh
+[3]: https://github.com/nicosantangelo/Alpharized
+[4]: https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gitfast
+[5]: https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/osx
+[6]: https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/docker
+[7]: https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/fd
+[8]: ../guides/customization#oh-my-zsh
+[9]: https://github.com/sorin-ionescu/prezto/tree/master/modules/environment
+[10]: https://github.com/sorin-ionescu/prezto/tree/master/modules/terminal
+[11]: https://github.com/sorin-ionescu/prezto/tree/master/modules/docker
+[12]: https://github.com/sorin-ionescu/prezto/tree/master/modules/git
+[13]: https://github.com/sorin-ionescu/prezto/tree/master/modules/archive
+[14]: https://github.com/sorin-ionescu/prezto/tree/master/modules/completion
+[15]: http://zsh.sourceforge.net/Doc/Release/Zsh-Modules.html#The-zsh_002fzutil-Module
+[16]: https://unix.stackexchange.com/questions/214657/what-does-zstyle-do
+[17]: ../guides/ice#src-pick-multisrc

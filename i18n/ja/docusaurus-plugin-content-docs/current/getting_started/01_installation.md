@@ -16,21 +16,18 @@ keywords:
 
 :::info Available installer links
 
-[![⚙️ Install Library](https://github.com/z-shell/zi-src/actions/workflows/check-sh.yml/badge.svg?branch=main)](https://github.com/z-shell/zi-src/actions/workflows/check-sh.yml)
+[![⚙️ Install Library][1]][2]
 
-- [Git.io](https://git.io/get-zi): `https://git.io/get-zi`
-- [GitHub](https://z-shell.pages.dev/i-hub): `https://z-shell.pages.dev/i-hub`
-- [GitLab Mirror](https://z-shell.pages.dev/i-lab): `https://z-shell.pages.dev/i-lab`
-- [Direct](https://raw.githubusercontent.com/z-shell/zi-src/main/lib/sh/install.sh): `https://raw.githubusercontent.com/z-shell/zi-src/main/lib/sh/install.sh`
+- [Git.io][3]: `https://git.io/get-zi`
+- [GitHub][4]: `https://z-shell.pages.dev/i-hub`
+- [GitLab Mirror][5]: `https://z-shell.pages.dev/i-lab`
+- [Direct][6]: `https://raw.githubusercontent.com/z-shell/zi-src/main/lib/sh/install.sh`
 
-> - Report an [issue](https://github.com/z-shell/zi/issues/new/choose)
+> - Please report an [issue][7] if you have any problems installing.
 
 :::
 
-> - Support required: [Gitee.com/z-shell](https://gitee.com/z-shell).
-> - Join [/r/gitee](https://www.reddit.com/r/gitee/) or start a [discussion](https://github.com/z-shell/zi/discussions/new) on GitHub.
-
-## Quick install {#quick-install}
+## Quick installation
 
 :::tip
 
@@ -65,7 +62,7 @@ sh -c "$(curl -fsSL https://git.io/get-zi)" -- -a loader
 sh -c "$(curl -fsSL https://git.io/get-zi)" -- -a ???
 ```
 
-## Manual install {#manual-install}
+## Manual installation
 
 Clone repository:
 
@@ -84,6 +81,19 @@ autoload -Uz _zi
 (( ${+_comps} )) && _comps[zi]=_zi
 ```
 
-## Post install {#post-install}
+## Post-installation
 
 Reload the shell with `exec zsh` and compile ZI with `zi self-update`.
+
+---
+
+> - Support required: [Gitee.com/z-shell](https://gitee.com/z-shell).
+> - Join [/r/gitee](https://www.reddit.com/r/gitee/) or start a [discussion](https://github.com/z-shell/zi/discussions/new) on GitHub.
+
+[1]: https://github.com/z-shell/zi-src/actions/workflows/check-sh.yml/badge.svg?branch=main
+[2]: https://github.com/z-shell/zi-src/actions/workflows/check-sh.yml
+[3]: https://git.io/get-zi
+[4]: https://z-shell.pages.dev/i-hub
+[5]: https://z-shell.pages.dev/i-lab
+[6]: https://raw.githubusercontent.com/z-shell/zi-src/main/lib/sh/install.sh
+[7]: https://github.com/z-shell/zi/issues/new/choose

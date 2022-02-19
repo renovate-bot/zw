@@ -24,9 +24,11 @@ zi unload …
 zi snippet …
 ```
 
-## The `for` syntax {#the-for-syntax}
+## The `for` syntax
 
-The `for` [syntax](https://z-shell.pages.dev/search/?q=syntax) is a more concise and more optimized. It is best presented by a real-world example:
+The `for` [syntax][1] is a more concise and more optimized.
+
+It is best presented by a real-world example:
 
 ```shell
 zi as"null" wait"3" lucid for \
@@ -38,11 +40,11 @@ zi as"null" wait"3" lucid for \
   make"PREFIX=$ZPFX" tj/git-extras
 ```
 
-Above single command installs 6 plugins ([git extension](https://z-shell.pages.dev/search/?q=git+ext) packages), with the base ices `as"null" wait"3" lucid` that are common to all of the plugins and 6 plugin-specific add-on ices.
+Above single command installs 6 plugins ([git extension][2] packages), with the base ices `as"null" wait"3" lucid` that are common to all of the plugins and 6 plugin-specific add-on ices.
 
-### Use cases of `for` syntax {#use-cases-of-for-syntax}
+### Use cases of `for` syntax
 
-Load a few useful binary (i.e.: [binary packages from the GitHub Releases](https://z-shell.pages.dev/search/?q=GH-R)) utils:
+Load a few useful binary (i.e.: [binary packages from the GitHub Releases][3]) utils:
 
 ```shell
 zi as"null" wait"2" lucid from"gh-r" for \
@@ -53,13 +55,12 @@ zi as"null" wait"2" lucid from"gh-r" for \
 
 :::note
 
-- `sbin'…'` is an [ice](https://z-shell.pages.dev/search/?q=ice) added by the [z-a-bin-gem-node](https://z-shell.pages.dev/search/?q=bin+gem+node) [annex](https://z-shell.pages.dev/search/?q=annex), it provides the command to the command line without altering `$PATH`.
-
+- `sbin'…'` is an [ice][4] added by the [bin-gem-node][5] [annex][6], it provides the command to the command line without altering `$PATH`.
 - If the name of the command is the same as the name of the plugin, the ice contents can be skipped.
 
 :::
 
-[Turbo](https://z-shell.pages.dev/search/?q=turbo+mode) load some plugins, without any plugin-specific ices:
+[Turbo][7] load some plugins, without any plugin-specific ices:
 
 ```shell
 zi wait lucid for \
@@ -67,7 +68,7 @@ zi wait lucid for \
   urbainvaes/fzf-marks
 ```
 
-Load two [Oh My Zsh](https://z-shell.pages.dev/search/?q=oh+my+zsh) files as [snippets](https://z-shell.pages.dev/search/?q=snippets), in turbo mode:
+Load two [Oh My Zsh][8] files as [snippets][9], in turbo mode:
 
 ```shell
 zi wait lucid for \
@@ -75,7 +76,7 @@ zi wait lucid for \
   atload"unalias grv" OMZ::plugins/git/git.plugin.zsh
 ```
 
-## The `make'…'` syntax {#the-make-syntax}
+## The `make'…'` syntax
 
 ```shell
 zi ice as"program" pick"$ZPFX/bin/git-*" make"PREFIX=$ZPFX"
@@ -94,17 +95,21 @@ The `Makefile` with 2 tasks, can use:
 
 :::info
 
-`$ZPFX` is provided by ZI, it is set to `~/.zi/polaris` by default. However it can changed by specifying custom `$ZPFX=` target if required.
+`$ZPFX` is provided by ZI, it is set to `~/.zi/polaris` by default.
 
-More information: [guides/customization](/docs/guides/customization)
+However it can changed by specifying custom `$ZPFX=` target if required.
+
+More information: [guides/customization][10]
 
 :::
 
 ## The `bindmap'…'` keybindings
 
-Sometimes plugins call [bindkey](https://z-shell.pages.dev/search/?q=binkey) to assign keyboard shortucts. This can cause problems, because multiple plugins can bind the same keys. Also, the user might want a different binding(s), which will require a complicated, additional `bindkey` commands in `.zshrc`.
+Sometimes plugins call [bindkey][11] to assign keyboard shortucts. This can cause problems, because multiple plugins can bind the same keys.
 
-ZI provides a solution to this problem – the ability to remap the bindkeys with a short [ice-modifier](https://z-shell.pages.dev/search/?q=ice+modifier) specification with the `bindmap'…'` [ice](/docs/guides/ice).
+Also, the user might want a different binding(s), which will require a complicated, additional `bindkey` commands in `.zshrc`.
+
+ZI provides a solution to this problem – the ability to remap the bindkeys with a short [ice-modifier][12] specification with the `bindmap'…'` [ice][13].
 
 ### Examples for `bindmap'…'`
 
@@ -136,11 +141,17 @@ zi bindmap='!" " -> magic-space; !"^ " -> globalias' nocompletions \
 
 ### Explanation
 
-The `bindmap'…'` ice has two modes of operation: normal and exclamation-mark (`bindmap'!…'`). In the first mode, the remapping is beind done from-key to-key, i.e.: `bindmap'fromkey -> to-key'`. The given key is being changed to the second given key in the `bindkey` command that's being actually issued when loading the plugin.
+The `bindmap'…'` ice has two modes of operation: normal and exclamation-mark (`bindmap'!…'`).
 
-In the second mode, the remapping is being done from-key to-widget, e.g: `bindmap'!from-key -> to-widget'`. In this mode, the given key is being mapped to the given widget instead of the widget specified in the `bindkey` command,
+In the first mode, the remapping is beind done from-key to-key, i.e.: `bindmap'fromkey -> to-key'`.
 
-i.e.: instead of:
+The given key is being changed to the second given key in the `bindkey` command that's being actually issued when loading the plugin.
+
+In the second mode, the remapping is being done from-key to-widget, e.g: `bindmap'!from-key -> to-widget'`.
+
+In this mode, the given key is being mapped to the given widget instead of the widget specified in the `bindkey` command e.g.:
+
+Instead of:
 
 ```shell
 bindkey "^ " magic-space
@@ -158,7 +169,13 @@ bindkey " " magic-space
 
 ### Using `bindmap'…'` in light mode
 
-When the investigation mode is on – i.e.: when the full loading mode is being used (default in the `for` syntax and when `zi load …` is used) – then the `bindmap'…'` ice works normally. In the non-investigation, i.e.: the [light mode](https://z-shell.pages.dev/search/?q=light+mode) – activated when `zi light …` or the `light-mode` ice is being used – the `bindmap'…'` is unavailable, unless the `trackbinds` ice is specified, i.e.:
+When the investigation mode is on i.e.:
+
+- when the full loading mode is being used (default in the `for` syntax and when `zi load …` is used) – then the `bindmap'…'` ice works normally.
+
+In the non-investigation, i.e.:
+
+- the [light mode][14] – activated when `zi light …` or the `light-mode` ice is being used – the `bindmap'…'` is unavailable, unless the `trackbinds` ice is specified, e.g:
 
 ```shell
 # With use of the light-mode ice and the for-syntax:
@@ -178,3 +195,18 @@ zi bindmap='LEFTAR -> ^F; RIGHTAR -> ^G' …
 ```
 
 The benefits of using the <kbd>UPAR</kbd>, … shorthands is that they cover multiple possible cursor-key codes for each of the cursor key, so that they'll work regardless of the terminal being used.
+
+[1]: /search/?q=syntax
+[2]: /search/?q=git+ext
+[3]: /search/?q=GH-R
+[4]: /search/?q=ice
+[5]: /search/?q=bin+gem+node
+[6]: /search/?q=annex
+[7]: /search/?q=turbo+mode
+[8]: /search/?q=oh+my+zsh
+[9]: /search/?q=snippets
+[10]: /docs/guides/customization
+[11]: /search/?q=binkey
+[12]: /search/?q=ice+modifier
+[13]: /docs/guides/ice
+[14]: /search/?q=light+mode

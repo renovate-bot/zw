@@ -8,7 +8,7 @@
     "description": "Title of feature 1 (left) on the home page"
   },
   "home.fetaure1": {
-    "message": ".zshrc` の処理が終了し、最初のプロンプトが表示される時点まで、プラグインの読み込みを遅延できます。",
+    "message": "`.zshrc` の処理が終了し、最初のプロンプトが表示される時点まで、プラグインの読み込みを遅延できます。",
     "description": "Description of first featured banner in homepage"
   },
   "homepage.feature2.title": {
@@ -64,7 +64,7 @@
     "description": "The page & hero description of the blog archive page"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "Blog list page navigation",
+    "message": "ブログ記事一覧のナビゲーション",
     "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {

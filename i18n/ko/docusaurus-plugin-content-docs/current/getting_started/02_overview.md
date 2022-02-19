@@ -274,7 +274,7 @@ Turbo with the empty `wait` ice will postpone the loading `1` ms after that, so 
 
 The ice `lucid` causes the under-prompt message saying `Loaded zsh-users/zsh-autosuggestions` that normally appears for every Turbo-loaded plugin to not show.
 
-## A Quick Glance At [The `for` syntax](../guides/syntax#the-for-syntax) {#a-quick-glance-at-the-for-syntax}
+## A Quick Glance At [The `for` syntax][14] {#a-quick-glance-at-the-for-syntax}
 
 This introduction is based on the classic, two-command syntax (`zi ice …; zi load/light/snippet …`) of ZI. However, there's also available a recently added so-called _for-syntax_. It is the right moment to take a glance at it, by rewriting the above autosuggestions invocation using it:
 
@@ -282,11 +282,11 @@ This introduction is based on the classic, two-command syntax (`zi ice …; zi l
 zi wait lucid atload'_zsh_autosuggest_start' light-mode for zsh-users/zsh-autosuggestions
 ```
 
-The syntax is a more concise one. The single command will work the same as the previous classic-syntax invocation. It also allows solving some typical problems when using ZI, like providing common/default ices for a set of plugins or sourcing multiple files with [`src''` ice](../guides/ice#src-pick-multisrc). For more information refer to the page dedicated to the syntax ([here](../guides/syntax#the-for-syntax)).
+The syntax is a more concise one. The single command will work the same as the previous classic-syntax invocation. It also allows solving some typical problems when using ZI, like providing common/default ices for a set of plugins or sourcing multiple files with [`src''` ice][13]. For more information refer to the page dedicated to the syntax ([here][14]).
 
 ## Turbo Loading sophisticated prompts
 
-For some, mostly advanced themes the initialization of the prompt is being done in a `precmd`-hook, i.e.; in a function that's gets called before each prompt. The hook is installed by the [add-zsh-hook](https://z-shell.github.io/docs/zsh/Zsh-Plugin-Standard.html#azh) Zsh function by adding its name to the `$precmd_functions` array.
+For some, mostly advanced themes the initialization of the prompt is being done in a `precmd`-hook, i.e.; in a function that's gets called before each prompt. The hook is installed by the [add-zsh-hook][12] Zsh function by adding its name to the `$precmd_functions` array.
 
 To make the prompt fully initialized after Turbo loading in the middle of the prompt (the same situation as with the `zsh-autosuggestions` plugin), the hook should be called from `atload''` ice.
 
@@ -305,7 +305,7 @@ zi ice wait'!' lucid nocd \
 zi load robobenklein/zinc
 ```
 
-The exclamation mark in `atload'!…'` is to track the functions allowing the plugin to be unloaded, as described [here](../guides/ice#atclone-atpull-atinit-atload). It might be useful for the multi-prompt setup described next.
+The exclamation mark in `atload'!…'` is to track the functions allowing the plugin to be unloaded, as described [here][11]. It might be useful for the multi-prompt setup described next.
 
 ## Automatic load/unload based on condition {#automatic-loadunload-based-on-condition}
 
@@ -338,7 +338,7 @@ Two prompts, each active in different directories. This technique can be used to
 
 :::tip
 
-See: [multiple prompts](../guides/customization#multiple-prompts) for more information. It contains more real-world examples of a multi-prompt setup, which is being close to what the author uses in his setup.
+See: [multiple prompts][15] for more information. It contains more real-world examples of a multi-prompt setup, which is being close to what the author uses in his setup.
 
 :::
 
@@ -382,7 +382,7 @@ zi snippet https://gist.githubusercontent.com/hightemp/5071909/raw/
 
 ### Loading prompts examples
 
-This is [powerlevel10k](https://github.com/romkatv/powerlevel10k), [pure](https://github.com/sindresorhus/pure), [starship](https://github.com/starship/starship) sample:
+This is [powerlevel10k][18], [pure][17], [starship][16] sample:
 
 Load powerlevel10k theme.
 
@@ -497,7 +497,7 @@ zi ice pick"async.zsh" src"pure.zsh"
 zi light sindresorhus/pure
 ```
 
-# A glance at the <code>for</code> syntax – load all of the above plugins with a single command.
+## A glance at the <code>for</code> syntax – load all of the above plugins with a single command.
 
 :::tip
 
@@ -563,15 +563,28 @@ zi ice as"program" make'!' atclone'./direnv hook zsh > zhook.zsh' atpull'%atclon
 zi light direnv/direnv
 ```
 
-If you're interested in more examples then check out the [playground repository](https://github.com/z-shell/playground) where users have uploaded the `~/.zshrc` and other ZI configurations. Feel free to [submit](https://github.com/z-shell/playground/issues/new?template=request-to-add-zshrc-to-the-zi-configs-repo.md) your `~/.zshrc` there if it contains ZI commands.
+If you're interested in more examples then check out the [playground repository][19] where users have uploaded the `~/.zshrc` and other ZI configurations. Feel free to [submit][20] your `~/.zshrc` there if it contains ZI commands.
 
 For some additional examples you can also check out the:
 
-- [Collection](../gallery/collection),
-- [Oh-My-Zsh](../gallery/collection#oh-my-zsh).
+- [Collection][10],
+- [Oh-My-Zsh][9].
 
 [1]: /search?q=ice+modifiers
 
 [1]: /search?q=ice+modifiers
 [2]: /search?q=from
 [3]: /search?q=for+syntax
+[9]: ../gallery/collection#oh-my-zsh
+[10]: ../gallery/collection
+[11]: ../guides/ice#atclone-atpull-atinit-atload
+[12]: https://z-shell.github.io/docs/zsh/Zsh-Plugin-Standard.html#azh
+[13]: ../guides/ice#src-pick-multisrc
+[14]: ../guides/syntax#the-for-syntax
+[14]: ../guides/syntax#the-for-syntax
+[15]: ../guides/customization#multiple-prompts
+[16]: https://github.com/starship/starship
+[17]: https://github.com/sindresorhus/pure
+[18]: https://github.com/romkatv/powerlevel10k
+[19]: https://github.com/z-shell/playground
+[20]: https://github.com/z-shell/playground/issues/new?template=request-to-add-zshrc-to-the-zi-configs-repo.md
