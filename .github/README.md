@@ -13,8 +13,7 @@
 
 ## Globally distributed
 
-  Interconnected with over 10,000 major service providers, cloud providers, and enterprise networks, Cloudflare is a fast lane on the Internet.
-  By avoiding network hops and optimizing traffic paths, it drastically reduce latency while improving application performance and the end user experience.
+Interconnected with over 10,000 major service providers, cloud providers, and enterprise networks, Cloudflare is a fast lane on the Internet. By avoiding network hops and optimizing traffic paths, it drastically reduce latency while improving application performance and the end user experience.
 
 1. [Cloudflare Global Network](https://www.cloudflare.com/en-gb/network/):
 
