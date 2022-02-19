@@ -1,38 +1,38 @@
 {
   "homepage.button": {
-    "message": "✨ Make it work, make it right, make it Fast ✨",
+    "message": "✨ よりスマートに、より正確に、そしてより高速に。✨",
     "description": "The homepage button to wiki introduction"
   },
   "homepage.feature1.title": {
-    "message": "Yields 50-80% Faster Zsh Startup",
+    "message": "Zshの起動時間が50-80％高速化",
     "description": "Title of feature 1 (left) on the home page"
   },
   "home.fetaure1": {
-    "message": "It allows postponing the loading of a plugin to the moment when the processing of `.zshrc` is finished and the first prompt is being shown.",
+    "message": ".zshrc` の処理が終了し、最初のプロンプトが表示される時点まで、プラグインの読み込みを遅延できます。",
     "description": "Description of first featured banner in homepage"
   },
   "homepage.feature2.title": {
-    "message": "Focus on What Matters",
+    "message": "大事なことに集中する",
     "description": "Title of feature 2 (middle) on the home page"
   },
   "home.fetaure2": {
-    "message": "Provides the statistics about the plugins, such as describing what aliases, functions, bindkeys, Zle widgets, zstyles, completions, variables, `PATH` and `FPATH` elements a plugin has set up",
+    "message": "プラグインが設定したエイリアス、関数、バインドキー、ZLEウィジェット、zstyles、補完、変数、`PATH` 、 `FPATH` 要素など、プラグインに関する情報を提供します。",
     "description": "Description of second featured banner in homepage"
   },
   "homepage.feature3.title": {
-    "message": "Wide Scope for Integration",
+    "message": "幅広い選択肢",
     "description": "Title of feature 3 (right) on the home page"
   },
   "home.fetaure3": {
-    "message": "Supports Oh My Zsh, Prezto and creation of your own plugins, and libraries. The implementation isn't framework-specific - include only if and when required.",
+    "message": "Oh My Zsh、Preztoをサポートし、独自のプラグインやライブラリの作成も可能。実装はフレームワークに依存しないので、必要なときだけ読み込んでください。",
     "description": "Description of third featured banner in homepage"
   },
   "theme.ErrorPageContent.title": {
-    "message": "This page crashed.",
+    "message": "ページがクラッシュしました。",
     "description": "The title of the fallback page when the page crashed"
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "Try again",
+    "message": "もう一度試してください",
     "description": "The label of the button to try again when the page crashed"
   },
   "theme.NotFound.title": {
