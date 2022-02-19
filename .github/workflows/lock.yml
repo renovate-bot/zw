@@ -25,6 +25,7 @@ jobs:
           issue-comment: >
             Issue closed and locked due to lack of activity. If you encounter this same issue, please open a new issue and refer to this closed one.
 
+
           pr-inactive-days: '7'
           pr-lock-reason: ''
           pr-comment: >
