@@ -6,14 +6,14 @@ description: Complete options from manual pages – press Ctrl-F to start the co
 keywords: [zzcomplete, completion, zsh, zinit, zi]
 ---
 
-## Motivation
+Repository: [zzcomplete](https://github.com/z-shell/zzcomplete)
 
-Complete options from manual pages – press Ctrl-F to start the completer.
+Complete options from manual pages – press <kbd>Ctrl-F</kbd> to start the completer.
 
 The completion of options has drawbacks:
 
 1. The user has to remember a part of the option he wants to complete.
-2. OR he is forced to read through all the options (listed after TAB).
+2. OR he is forced to read through all the options (listed after <kbd>TAB</kbd>).
 
 With ZZ Complete, the user can:
 
@@ -27,7 +27,7 @@ With ZZ Complete, the user can:
 
 :::tip
 
-You can resize the video by pressing `Ctrl-+` or `Cmd-+`.
+You can resize the video by pressing <kbd>Ctrl-+</kbd> or <kbd>Cmd-+</kbd>.
 
 :::
 
@@ -39,7 +39,7 @@ Video source: [Asciinema](https://asciinema.org/a/293365)
 
 ---
 
-## Installation
+## Install ZZ Complete
 
 ### Dependencies
 
