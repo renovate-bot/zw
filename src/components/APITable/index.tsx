@@ -16,7 +16,7 @@ import React, {
   useEffect,
   forwardRef,
 } from 'react';
-import {useHistory} from "@docusaurus/router";
+import {useHistory} from '@docusaurus/router';
 import styles from './styles.module.css';
 
 interface Props {

@@ -17,8 +17,8 @@
     "crowdin:sync": "docusaurus write-translations && crowdin upload && crowdin download",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "format:check": "prettier --check '**/*.{js,css,json,md}'",
-    "format:write": "prettier --write '**/*.{js,css,json,md}'",
+    "format:check": "prettier --check '**/*.{js,css,json,md,ts,tsx,yml,yaml}'",
+    "format:write": "prettier --write '**/*.{js,css,json,md,ts,tsx,yml,yaml}'",
     "format:diff": "prettier --list-different . ",
     "format:style": "stylelint '**/*.css'"
   },

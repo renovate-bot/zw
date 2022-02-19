@@ -6,8 +6,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React, {type ReactNode} from "react";
-import styles from "./styles.module.css";
+import React, {type ReactNode} from 'react';
+import styles from './styles.module.css';
 
 interface Props {
   children: ReactNode;
@@ -20,9 +20,9 @@ function BrowserWindow({children, minHeight}: Props): JSX.Element {
     <div className={styles.browserWindow} style={{minHeight}}>
       <div className={styles.browserWindowHeader}>
         <div className={styles.buttons}>
-          <span className={styles.dot} style={{background: "#f25f58"}} />
-          <span className={styles.dot} style={{background: "#fbbe3c"}} />
-          <span className={styles.dot} style={{background: "#58cb42"}} />
+          <span className={styles.dot} style={{background: '#f25f58'}} />
+          <span className={styles.dot} style={{background: '#fbbe3c'}} />
+          <span className={styles.dot} style={{background: '#58cb42'}} />
         </div>
         <div className={styles.browserWindowMenuIcon}>
           <div>
