@@ -1,38 +1,38 @@
 {
   "homepage.button": {
-    "message": "✨ Make it work, make it right, make it Fast ✨",
+    "message": "✨ よりスマートに、より正確に、そしてより高速に。✨",
     "description": "The homepage button to wiki introduction"
   },
   "homepage.feature1.title": {
-    "message": "Yields 50-80% Faster Zsh Startup",
+    "message": "Zshの起動時間が50-80％高速化",
     "description": "Title of feature 1 (left) on the home page"
   },
   "home.fetaure1": {
-    "message": "It allows postponing the loading of a plugin to the moment when the processing of `.zshrc` is finished and the first prompt is being shown.",
+    "message": ".zshrc` の処理が終了し、最初のプロンプトが表示される時点まで、プラグインの読み込みを遅延できます。",
     "description": "Description of first featured banner in homepage"
   },
   "homepage.feature2.title": {
-    "message": "Focus on What Matters",
+    "message": "大事なことに集中する",
     "description": "Title of feature 2 (middle) on the home page"
   },
   "home.fetaure2": {
-    "message": "Provides the statistics about the plugins, such as describing what aliases, functions, bindkeys, Zle widgets, zstyles, completions, variables, `PATH` and `FPATH` elements a plugin has set up",
+    "message": "プラグインが設定したエイリアス、関数、バインドキー、ZLEウィジェット、zstyles、補完、変数、`PATH` 、 `FPATH` 要素など、プラグインに関する情報を提供します。",
     "description": "Description of second featured banner in homepage"
   },
   "homepage.feature3.title": {
-    "message": "Wide Scope for Integration",
+    "message": "幅広い選択肢",
     "description": "Title of feature 3 (right) on the home page"
   },
   "home.fetaure3": {
-    "message": "Supports Oh My Zsh, Prezto and creation of your own plugins, and libraries. The implementation isn't framework-specific - include only if and when required.",
+    "message": "Oh My Zsh、Preztoをサポートし、独自のプラグインやライブラリの作成も可能。実装はフレームワークに依存しないので、必要なときだけ読み込んでください。",
     "description": "Description of third featured banner in homepage"
   },
   "theme.ErrorPageContent.title": {
-    "message": "This page crashed.",
+    "message": "ページがクラッシュしました。",
     "description": "The title of the fallback page when the page crashed"
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "Try again",
+    "message": "もう一度試してください",
     "description": "The label of the button to try again when the page crashed"
   },
   "theme.NotFound.title": {
@@ -76,23 +76,23 @@
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "約{readingTime}分",
+    "message": "One min read|{readingTime} min read",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.post.readMore": {
-    "message": "もっと見る",
+    "message": "Read More",
     "description": "The label used in blog post item excerpts to link to full blog posts"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "ブログ記事のナビゲーション",
+    "message": "Blog post page navigation",
     "description": "The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "新しい記事",
+    "message": "Newer Post",
     "description": "The blog post button label to navigate to the newer/previous post"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "過去の記事",
+    "message": "Older Post",
     "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.blog.sidebar.navAriaLabel": {
@@ -100,39 +100,39 @@
     "description": "The ARIA label for recent posts in the blog sidebar"
   },
   "theme.blog.post.plurals": {
-    "message": "{count}件",
+    "message": "One post|{count} posts",
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {
-    "message": "「{tagName}」タグの記事が{nPosts}あります",
+    "message": "{nPosts} tagged with \"{tagName}\"",
     "description": "The title of the page for a blog tag"
   },
   "theme.tags.tagsPageLink": {
-    "message": "全てのタグを見る",
+    "message": "View All Tags",
     "description": "The label of the link targeting the tag list page"
   },
   "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "クリップボードにコードをコピー",
+    "message": "Copy code to clipboard",
     "description": "The ARIA label for copy code blocks button"
   },
   "theme.CodeBlock.copied": {
-    "message": "コピーしました",
+    "message": "Copied",
     "description": "The copied button label on code blocks"
   },
   "theme.CodeBlock.copy": {
-    "message": "コピー",
+    "message": "Copy",
     "description": "The copy button label on code blocks"
   },
   "theme.docs.sidebar.expandButtonTitle": {
-    "message": "サイドバーを開く",
+    "message": "Expand sidebar",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "サイドバーを開く",
+    "message": "Expand sidebar",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "ドキュメントのナビゲーション",
+    "message": "Docs pages navigation",
     "description": "The ARIA label for the docs pagination"
   },
   "theme.docs.paginator.previous": {
@@ -144,11 +144,11 @@
     "description": "The label used to navigate to the next doc"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "サイドバーを隠す",
+    "message": "Collapse sidebar",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "サイドバーを隠す",
+    "message": "Collapse sidebar",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
@@ -164,107 +164,107 @@
     "description": "The title of the page for a docs tag"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "これはリリース前の{siteTitle} {versionLabel}のドキュメントです。",
+    "message": "This is unreleased documentation for {siteTitle} {versionLabel} version.",
     "description": "The label used to tell the user that he's browsing an unreleased doc version"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "これは{siteTitle} {versionLabel}のドキュメントで現在はアクティブにメンテナンスされていません。",
+    "message": "This is documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.",
     "description": "The label used to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "最新のドキュメントは{latestVersionLink} ({versionLabel}) を見てください。",
+    "message": "For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).",
     "description": "The label used to tell the user to check the latest version"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "最新バージョン",
+    "message": "latest version",
     "description": "The label used for the latest version suggestion link label"
   },
   "theme.common.editThisPage": {
-    "message": "このページを編集",
+    "message": "Edit this page",
     "description": "The link label to edit the current page"
   },
   "theme.common.headingLinkTitle": {
-    "message": "見出しへの直接リンク",
+    "message": "Direct link to heading",
     "description": "Title for link to heading"
   },
   "theme.lastUpdated.atDate": {
-    "message": "{date}に",
+    "message": " {date} に",
     "description": "The words used to describe on which date a page has been last updated"
   },
   "theme.lastUpdated.byUser": {
-    "message": "{user}が",
+    "message": " {user} が",
     "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "{atDate}{byUser}最終更新",
+    "message": "{atDate}{byUser} 最終更新",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Back to main menu",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Versions",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
   "theme.common.skipToMainContent": {
-    "message": "メインコンテンツまでスキップ",
+    "message": "Skip to main content",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
     "message": "On this page",
     "description": "The label used by the button on the collapsible TOC component"
   },
-  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "← Back to main menu",
-    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
-  },
   "theme.tags.tagsListLabel": {
-    "message": "タグ:",
+    "message": "Tags:",
     "description": "The label alongside a tag list"
   },
-  "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "Versions",
-    "description": "The label for the navbar versions dropdown on mobile view"
-  },
   "theme.SearchBar.label": {
-    "message": "検索",
+    "message": "Search",
     "description": "The ARIA label and placeholder for search button"
   },
   "theme.SearchPage.documentsFound.plurals": {
-    "message": "{count}件のドキュメントが見つかりました",
+    "message": "One document found|{count} documents found",
     "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.SearchPage.existingResultsTitle": {
-    "message": "『{query}』の検索結果",
+    "message": "Search results for \"{query}\"",
     "description": "The search page title for non-empty query"
   },
   "theme.SearchPage.emptyResultsTitle": {
-    "message": "ドキュメントを検索",
+    "message": "Search the documentation",
     "description": "The search page title for empty query"
   },
   "theme.SearchPage.inputPlaceholder": {
-    "message": "ここに検索するキーワードを入力してください",
+    "message": "Type your search here",
     "description": "The placeholder for search page input"
   },
   "theme.SearchPage.inputLabel": {
-    "message": "検索",
+    "message": "Search",
     "description": "The ARIA label for search page input"
   },
   "theme.SearchPage.algoliaLabel": {
-    "message": "Algoliaで検索",
+    "message": "Search by Algolia",
     "description": "The ARIA label for Algolia mention"
   },
   "theme.SearchPage.noResultsText": {
-    "message": "検索結果が見つかりませんでした",
+    "message": "No results were found",
     "description": "The paragraph for empty search result"
   },
   "theme.SearchPage.fetchingNewResults": {
-    "message": "新しい検索結果を取得しています...",
+    "message": "Fetching new results...",
     "description": "The paragraph for fetching new search results"
   },
   "theme.PwaReloadPopup.info": {
-    "message": "新しいバージョンがあります",
+    "message": "New version available",
     "description": "The text for PWA reload popup"
   },
   "theme.PwaReloadPopup.refreshButtonText": {
-    "message": "更新",
+    "message": "Refresh",
     "description": "The text for PWA reload button"
   },
   "theme.PwaReloadPopup.closeButtonAriaLabel": {
-    "message": "閉じる",
+    "message": "Close",
     "description": "The ARIA label for close button of PWA reload popup"
   },
   "theme.IdealImageMessage.loading": {
@@ -296,7 +296,7 @@
     "description": "The live editor label of the live codeblocks"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "タグ",
+    "message": "Tags",
     "description": "The title of the tag list page"
   }
 }
