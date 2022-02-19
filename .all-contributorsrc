@@ -38,6 +38,15 @@
         "maintenance",
         "security"
       ]
+    },
+    {
+      "login": "borley1211",
+      "name": "Borley",
+      "avatar_url": "https://avatars.githubusercontent.com/u/47778507?v=4",
+      "profile": "https://github.com/borley1211",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,
