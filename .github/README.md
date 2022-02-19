@@ -76,6 +76,7 @@ Do not modify files under in the repository as it will conflict and will be over
     <td align="center"><a href="https://github.com/lunarxlark"><img src="https://avatars.githubusercontent.com/u/18758150?v=4?s=80" width="80px;" alt=""/><br /><sub><b>lunarxlark</b></sub></a><br /><a href="#translation-lunarxlark" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/the-ryujin"><img src="https://avatars.githubusercontent.com/u/98503588?v=4?s=80" width="80px;" alt=""/><br /><sub><b>竜神信仰</b></sub></a><br /><a href="#maintenance-the-ryujin" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://github.com/wicoop"><img src="https://avatars.githubusercontent.com/u/60315017?v=4?s=80" width="80px;" alt=""/><br /><sub><b>William Cooper</b></sub></a><br /><a href="#maintenance-wicoop" title="Maintenance">🚧</a> <a href="#security-wicoop" title="Security">🛡️</a></td>
+    <td align="center"><a href="https://github.com/borley1211"><img src="https://avatars.githubusercontent.com/u/47778507?v=4?s=80" width="80px;" alt=""/><br /><sub><b>Borley</b></sub></a><br /><a href="#translation-borley1211" title="Translation">🌍</a></td>
   </tr>
 </table>
 
