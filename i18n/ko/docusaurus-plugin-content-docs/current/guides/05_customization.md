@@ -13,7 +13,7 @@ keywords:
 
 import APITable from '@site/src/components/APITable';
 
-## Customizing Paths {#customizing-paths}
+## Customizing Paths
 
 Following variables can be set to custom values, before sourcing ZI.
 
@@ -261,8 +261,11 @@ To allow better unloading, conditions are checked every second, you can use cond
 
 </APITable>
 
+### Loading and unloading themes (8 examples)
+
+Theme 1 - zprompts
+
 ```shell
-# Theme no. 1 - zprompts
 zi lucid \
   load'![[ $MYPROMPT = 1 ]]' \
   unload'![[ $MYPROMPT != 1 ]]' \
@@ -270,54 +273,63 @@ zi lucid \
     z-shell/zprompts
 ```
 
+Theme 2 – lambda-mod-zsh-theme
+
 ```shell
-# Theme no. 2 – lambda-mod-zsh-theme
 zi lucid load'![[ $MYPROMPT = 2 ]]' unload'![[ $MYPROMPT != 2 ]]' nocd for \
     halfo/lambda-mod-zsh-theme
 ```
 
+Theme 3 – lambda-gitster
+
 ```shell
-# Theme no. 3 – lambda-gitster
 zi lucid load'![[ $MYPROMPT = 3 ]]' unload'![[ $MYPROMPT != 3 ]]' nocd for \
     ergenekonyigit/lambda-gitster
 ```
 
+Theme 4 – geometry
+
 ```shell
-# Theme no. 4 – geometry
 zi lucid load'![[ $MYPROMPT = 4 ]]' unload'![[ $MYPROMPT != 4 ]]' \
   atload'!geometry::prompt' nocd \
   atinit'GEOMETRY_COLOR_DIR=63 GEOMETRY_PATH_COLOR=63' for \
     geometry-zsh/geometry
 ```
 
+Theme 5 – pure
+
 ```shell
-# Theme no. 5 – pure
 zi lucid load'![[ $MYPROMPT = 5 ]]' unload'![[ $MYPROMPT != 5 ]]' \
   pick"/dev/null" multisrc"{async,pure}.zsh" atload'!prompt_pure_precmd' nocd for \
     sindresorhus/pure
 ```
 
+Theme 6 - agkozak-zsh-theme
+
 ```shell
-# Theme no. 6 - agkozak-zsh-theme
 zi lucid load'![[ $MYPROMPT = 6 ]]' unload'![[ $MYPROMPT != 6 ]]' \
   atload'!_agkozak_precmd' nocd atinit'AGKOZAK_FORCE_ASYNC_METHOD=subst-async' for \
     agkozak/agkozak-zsh-theme
 ```
 
+Theme 7 - zinc
+
 ```shell
-# Theme no. 7 - zinc
 zi load'![[ $MYPROMPT = 7 ]]' unload'![[ $MYPROMPT != 7 ]]' \
   compile"{zinc_functions/*,segments/*,zinc.zsh}" nocompletions \
   atload'!prompt_zinc_setup; prompt_zinc_precmd' nocd for \
     robobenklein/zinc
 ```
 
+Theme 8 - git-prompt
+
 ```shell
-# Theme no. 8 - git-prompt
 zi lucid load'![[ $MYPROMPT = 8 ]]' unload'![[ $MYPROMPT != 8 ]]' \
   atload'!_zsh_git_prompt_precmd_hook' nocd for \
     woefe/git-prompt.zsh
 ```
+
+---
 
 [1]: https://github.com/z-shell/z-a-bin-gem-node
 [2]: https://github.com/z-shell/zi/wiki/z-a-meta-plugins
