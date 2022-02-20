@@ -21,10 +21,10 @@ jobs:
           upload_translations: true
           push_translations: true
           download_translations: true
-          skip_untranslated_strings: true
-          skip_untranslated_files: true
-          export_only_approved: true
-          create_pull_request: true
+          #skip_untranslated_strings: true
+          #skip_untranslated_files: true
+          #export_only_approved: true
+          #create_pull_request: true
           #pull_request_labels: 'enhancement ✨'
         env:
           GITHUB_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
