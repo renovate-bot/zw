@@ -39,4 +39,7 @@ Documentation automatically updated every `Thursday 4:30 UTC` at [z-shell/docs][
 | [Zsh Native Scripting Handbook][23] | Handbook to keep Zsh constructs that are fast, robust, and do not depend on external tools. Such code is similar to Ruby or Perl and less like top-down shell scripts. |
 
 </APITable>
+
+---
+
 [1]: https://github.com/z-shell/docs
