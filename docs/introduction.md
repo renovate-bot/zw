@@ -41,7 +41,7 @@ import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'; import Ima
   </TabItem>
   <TabItem value="rust" label="Rust">
 
-u[Rust](https://crates.io) packages with [rust annex][4]
+[Rust](https://crates.io) packages with [rust annex][4]
 
   </TabItem>
   <TabItem value="github" label="GitHub" default>
