@@ -98,11 +98,9 @@ Install almost everything from [GitHub](https://github.com):
 
 ---
 
-<div align="center">
+<div align="center"><a href="https://github.com/z-shell">GitHub</a> - <a href="https://twitter.com/zshell_zi">Twitter</a> - <a href="https://github.com/z-shell/community/issues/new?assignees=&labels=%F0%9F%91%A5+member&template=membership.yml&title=team%3A+">Join The Team</a></div>
 
-[**GitHub**](https://github.com/z-shell) - [**Twitter**](https://twitter.com/zshell_zi) - [**Join the team**](https://github.com/z-shell/community/issues/new?assignees=&labels=%F0%9F%91%A5+member&template=membership.yml&title=team%3A+)
-
-</div>
+---
 
 [1]: ecosystem/annexes/bin-gem-node
 [2]: https://github.com/z-shell/any-gem
