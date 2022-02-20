@@ -2631,13 +2631,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@saucelabs/theme-github-codeblock@npm:0.1.1":
-  version: 0.1.1
-  resolution: "@saucelabs/theme-github-codeblock@npm:0.1.1"
-  checksum: c78878dcddd109a17fbd2e4b6137b38fc3f150ab78c2d495399e2c53c19d8820fe150b3a09d2f4c2359252aa729dbb2a4c978d9865dfd1d78170cd60be1b3b23
-  languageName: node
-  linkType: hard
-
 "@sideway/address@npm:^4.1.3":
   version: 4.1.3
   resolution: "@sideway/address@npm:4.1.3"
@@ -13577,7 +13570,6 @@ __metadata:
     "@docusaurus/preset-classic": 2.0.0-beta.15
     "@docusaurus/theme-live-codeblock": 2.0.0-beta.15
     "@mdx-js/react": 1.6.22
-    "@saucelabs/theme-github-codeblock": 0.1.1
     "@tsconfig/docusaurus": 1.0.4
     clsx: 1.1.1
     prettier: 2.5.1
@@ -13589,9 +13581,6 @@ __metadata:
     stylelint-config-prettier: 9.0.3
     stylelint-config-standard: 25.0.0
     typescript: 4.5.5
-  dependenciesMeta:
-    "@crowdin/cli":
-      optional: true
   languageName: unknown
   linkType: soft
 
