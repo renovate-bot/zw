@@ -102,13 +102,11 @@ const config = {
 		defaultLocale: 'en',
 		locales: ['en', 'ja', 'ko'],
 	},
-	/**
 	customFields: {
-    image: "",
-    keywords: [],
-  },
+		image: '',
+		keywords: [],
+	},
 	scripts: [],
-	*/
 	presets: [
 		[
 			'classic',
@@ -127,7 +125,7 @@ const config = {
 					remarkPlugins: [],
 					rehypePlugins: [],
 					showLastUpdateTime: true,
-					showLastUpdateAuthor: true,
+					showLastUpdateAuthor: false,
 				},
 				/* https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog#configuration */
 				blog: {
@@ -285,7 +283,9 @@ const config = {
 								label: 'Twitter',
 								href: 'https://twitter.com/zshell_zi/',
 							},
-							/**{ html: ``, },*/
+							/**{
+								html: ``,
+							},*/
 						],
 					},
 					{
