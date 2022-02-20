@@ -3,10 +3,10 @@ name: '🌐 Crowdin'
 
 on:
   workflow_dispatch:
-#  push:
-#    branches: [ main ]
-#    paths:
-#      - 'docs/**'
+  push:
+    branches: [ main ]
+    paths:
+      - 'docs/**'
 
 jobs:
   sync-crowdin:
@@ -20,8 +20,8 @@ jobs:
           upload_sources: true
           upload_translations: true
           download_translations: true
-          push_translations: true
-          create_pull_request: true
+          #push_translations: true
+          #create_pull_request: true
           #pull_request_labels: 'enhancement ✨'
         env:
           GITHUB_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
