@@ -33,6 +33,8 @@ Documentation automatically updated every `Thursday 4:30 UTC` at [z-shell/docs][
 
 </APITable>
 
+---
+
 [1]: https://github.com/z-shell/docs
 [2]: https://github.com/z-shell/zi/blob/main/zi.zsh
 [3]: https://github.com/z-shell/docs/blob/main/code/zsdoc/asciidoc/zi.zsh.adoc
