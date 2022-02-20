@@ -20,7 +20,7 @@ jobs:
           upload_sources: true
           upload_translations: true
           download_translations: true
-          #push_translations: true
+          push_translations: true
           #create_pull_request: true
           #pull_request_labels: 'enhancement ✨'
         env:
