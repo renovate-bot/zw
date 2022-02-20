@@ -2,8 +2,8 @@
 id: benchmark
 title: Statistics & Benchmark
 image: /img/logo/zi/png/501x501.png
-description: Benchamarking and profiling for Z-Shell ZI
-keywords: [statistics, benchmark, zsh, z-shell, zi]
+description: Benchamarking & Profiling
+keywords: [statistics, benchmark, profiling]
 ---
 
 ## Profile plugins
@@ -27,7 +27,7 @@ Less code is being run in the background – (i.e. the automatic data gathering,
 
 - Example `zprof` report:
 
-```shell
+```shell {3} title="zprof"
 num calls    time                self                 name
 ---------------------------------------------------------------------------
  1)  1 57,76 57,76 57,91%  57,76 57,76 57,91% _zsh_highlight_bind_widgets
@@ -61,9 +61,9 @@ num calls    time                self                 name
 
 ## Profile `.zshrc` startup
 
-Place at the top of `.zshrc`
-
 > `PROFILE_STARTUP=true` to enable profiling.
+
+Place snippet below at the top of `.zshrc`.
 
 ```shell title="~/.zshrc"
 PROFILE_STARTUP=false

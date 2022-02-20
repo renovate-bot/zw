@@ -1,9 +1,9 @@
 ---
 id: customization
-title: Preferences & Customization
+title: Preferences & Configuration
 image: /img/logo/zi/png/501x501.png
-description: User Preferences & Customization
-keywords: [customization, preferences, zsh, z-shell, zi]
+description: User Preferences & Configuration
+keywords: [customization, preferences, config]
 ---
 
 import APITable from '@site/src/components/APITable';
@@ -12,9 +12,13 @@ import APITable from '@site/src/components/APITable';
 
 Following variables can be set to custom values, before sourcing ZI.
 
-```shell
-declare -A ZI  # initial ZI's hash definition, if configuring before loading ZI, and then:
+Initial ZI's hash definition:
+
+```shell title="~/.zshrc"
+declare -A ZI
 ```
+
+Variables below has to be set before loading ZI:
 
 <APITable>
 
@@ -40,7 +44,7 @@ Use `create` subcommand with user name `_local` (the default) to create the plug
 
 If the user name will not be `_local`, then ZI will create a repository also on GitHub and set up the correct repository origin.
 
-## Extending Git {#extending-git}
+## Extending Git
 
 Several projects provide git extensions. Installing them with ZI has many benefits:
 
@@ -90,7 +94,7 @@ Git tools:
 
 just run:
 
-```shell
+```shell title="~/.zshrc"
 zi light-mode for z-shell/z-a-meta-plugins @annexes @ext-git
 ```
 
@@ -104,26 +108,28 @@ Some options also have one or more single letter names. There are two sets of si
 
 The sense of the single letter options may be inverted by using `+` instead of `-`. Some of the single letter option names refer to an option being off, in which case the inversion of that name refers to the option being on. For example, `+n` is the short name of `exec`, and `-n` is the short name of its inversion, `noexec`.
 
-In strings of single letter options supplied to the shell at startup, trailing whitespace will be ignored; for example the string `-f` will be treated just as `-f`, but the string `-f i` is an error. This is because many systems which implement the `#!` mechanism for calling scripts do not strip trailing whitespace.
+In strings of single letter options supplied to the shell at startup, trailing whitespace will be ignored; for example the string `-f` will be treated just as `-f`, but the string `-f i` is an error.
+
+This is because many systems which implement the `#!` mechanism for calling scripts do not strip trailing whitespace.
 
 ### History optimization
 
 <APITable>
 
-| Option                          | Description                                                                |
-| ------------------------------- | -------------------------------------------------------------------------- |
-| `setopt hist_ignore_all_dups`   | Remove older duplicate entries from history.                               |
-| `setopt hist_expire_dups_first` | Expire A Duplicate Event First When Trimming History.                      |
-| `setopt hist_ignore_dups`       | Do Not Record An Event That Was Just Recorded Again.                       |
-| `setopt hist_reduce_blanks`     | Remove superfluous blanks from history items.                              |
-| `setopt hist_find_no_dups`      | Do Not Display A Previously Found Event.                                   |
-| `setopt hist_ignore_space`      | Do Not Record An Event Starting With A Space.                              |
-| `setopt hist_save_no_dups`      | Do Not Write A Duplicate Event To The History File.                        |
-| `setopt hist_verify`            | Do Not Execute Immediately Upon History Expansion.                         |
-| `setopt append_history`         | Allow multiple terminal sessions to all append to one zsh command history. |
-| `setopt extended_history`       | Show Timestamp In History.                                                 |
-| `setopt inc_append_history`     | Write To The History File Immediately, Not When The Shell Exits.           |
-| `setopt share_history`          | Share history between different instances of the shell                     |
+| Option                            | Description                                                                |
+| --------------------------------- | -------------------------------------------------------------------------- |
+| `setopt` `hist_ignore_all_dups`   | Remove older duplicate entries from history.                               |
+| `setopt` `hist_expire_dups_first` | Expire A Duplicate Event First When Trimming History.                      |
+| `setopt` `hist_ignore_dups`       | Do Not Record An Event That Was Just Recorded Again.                       |
+| `setopt` `hist_reduce_blanks`     | Remove superfluous blanks from history items.                              |
+| `setopt` `hist_find_no_dups`      | Do Not Display A Previously Found Event.                                   |
+| `setopt` `hist_ignore_space`      | Do Not Record An Event Starting With A Space.                              |
+| `setopt` `hist_save_no_dups`      | Do Not Write A Duplicate Event To The History File.                        |
+| `setopt` `hist_verify`            | Do Not Execute Immediately Upon History Expansion.                         |
+| `setopt` `append_history`         | Allow multiple terminal sessions to all append to one zsh command history. |
+| `setopt` `extended_history`       | Show Timestamp In History.                                                 |
+| `setopt` `inc_append_history`     | Write To The History File Immediately, Not When The Shell Exits.           |
+| `setopt` `share_history`          | Share history between different instances of the shell                     |
 
 </APITable>
 
@@ -132,17 +138,17 @@ In strings of single letter options supplied to the shell at startup, trailing w
 <APITable>
 
 | Option | Description |
-| --- | :-- |
-| `setopt bang_hist` | Treat The '!' Character Specially During Expansion. |
-| `setopt multios` | Perform implicit tees or cats when multiple redirections are attempted. |
-| `setopt interactive_comments` | Allow comments even in interactive shells (especially for Muness). |
-| `setopt pushd_ignore_dups` | Don't push multiple copies of the same directory onto the directory stack. |
-| `setopt auto_cd` | Use cd by typing directory name if it's not a command. |
-| `setopt no_beep` | Don't beep on error. |
-| `setopt auto_list` | Automatically list choices on ambiguous completion. |
-| `setopt auto_pushd` | Make cd push the old directory onto the directory stack. |
-| `setopt pushdminus` | Swapped the meaning of cd +1 and cd -1; we want them to mean the opposite of what they mean. |
-| `setopt promptsubst` | Enables the substitution of parameters inside the prompt each time the prompt is drawn. |
+| --- | --- |
+| `setopt` `bang_hist` | Treat The '!' Character Specially During Expansion. |
+| `setopt` `multios` | Perform implicit tees or cats when multiple redirections are attempted. |
+| `setopt` `interactive_comments` | Allow comments even in interactive shells (especially for Muness). |
+| `setopt` `pushd_ignore_dups` | Don't push multiple copies of the same directory onto the directory stack. |
+| `setopt` `auto_cd` | Use cd by typing directory name if it's not a command. |
+| `setopt` `no_beep` | Don't beep on error. |
+| `setopt` `auto_list` | Automatically list choices on ambiguous completion. |
+| `setopt` `auto_pushd` | Make cd push the old directory onto the directory stack. |
+| `setopt` `pushdminus` | Swapped the meaning of cd +1 and cd -1; we want them to mean the opposite of what they mean. |
+| `setopt` `promptsubst` | Enables the substitution of parameters inside the prompt each time the prompt is drawn. |
 
 </APITable>
 
@@ -158,7 +164,7 @@ You can start by looking at the few explanatory paragraphs in `man zshmodules` i
 
 ### Fuzzy matching of completions
 
-```shell
+```shell title="~/.zshrc"
 zstyle ':completion:*' completer _complete _match _approximate
 zstyle ':completion:*:match:*' original only
 zstyle -e ':completion:*:approximate:*' max-errors 'reply=($((($#PREFIX+$#SUFFIX)/3>7?7:($#PREFIX+$#SUFFIX)/3))numeric)'
@@ -166,7 +172,7 @@ zstyle -e ':completion:*:approximate:*' max-errors 'reply=($((($#PREFIX+$#SUFFIX
 
 ### Pretty completions
 
-```shell
+```shell title="~/.zshrc"
 zstyle ':completion:*:matches' group 'yes'
 zstyle ':completion:*:options' description 'yes'
 zstyle ':completion:*:options' auto-description '%d'
@@ -186,13 +192,13 @@ zstyle ':completion:*' rehash true
 
 ### Do menu-driven completion.
 
-```shell
+```shell title="~/.zshrc"
 zstyle ':completion:*' menu select
 ```
 
 ### Color completion for [some things][15]
 
-```shell
+```shell title="~/.zshrc"
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 ```
 
@@ -204,7 +210,7 @@ That's because the function is being called in `/etc/zshrc`.
 
 To disable this call – what is needed to avoid the slowdown and if the user loads any completion-equipped plugins, i.e. almost on 100% – add the following line to `~/.zshenv` to skip the not helping Ubuntu global compinit:
 
-```shell
+```shell title="~/.zshenv"
 skip_global_compinit=1
 ```
 
@@ -258,7 +264,7 @@ To allow better unloading, conditions are checked every second, you can use cond
 
 ### Loading and unloading themes (8 examples)
 
-Theme 1 - zprompts
+1 - zprompts
 
 ```shell
 zi lucid \
@@ -268,21 +274,21 @@ zi lucid \
     z-shell/zprompts
 ```
 
-Theme 2 – lambda-mod-zsh-theme
+2 – lambda-mod-zsh-theme
 
 ```shell
 zi lucid load'![[ $MYPROMPT = 2 ]]' unload'![[ $MYPROMPT != 2 ]]' nocd for \
     halfo/lambda-mod-zsh-theme
 ```
 
-Theme 3 – lambda-gitster
+3 – lambda-gitster
 
 ```shell
 zi lucid load'![[ $MYPROMPT = 3 ]]' unload'![[ $MYPROMPT != 3 ]]' nocd for \
     ergenekonyigit/lambda-gitster
 ```
 
-Theme 4 – geometry
+4 – geometry
 
 ```shell
 zi lucid load'![[ $MYPROMPT = 4 ]]' unload'![[ $MYPROMPT != 4 ]]' \
@@ -291,7 +297,7 @@ zi lucid load'![[ $MYPROMPT = 4 ]]' unload'![[ $MYPROMPT != 4 ]]' \
     geometry-zsh/geometry
 ```
 
-Theme 5 – pure
+5 – pure
 
 ```shell
 zi lucid load'![[ $MYPROMPT = 5 ]]' unload'![[ $MYPROMPT != 5 ]]' \
@@ -299,7 +305,7 @@ zi lucid load'![[ $MYPROMPT = 5 ]]' unload'![[ $MYPROMPT != 5 ]]' \
     sindresorhus/pure
 ```
 
-Theme 6 - agkozak-zsh-theme
+6 - agkozak-zsh-theme
 
 ```shell
 zi lucid load'![[ $MYPROMPT = 6 ]]' unload'![[ $MYPROMPT != 6 ]]' \
@@ -307,7 +313,7 @@ zi lucid load'![[ $MYPROMPT = 6 ]]' unload'![[ $MYPROMPT != 6 ]]' \
     agkozak/agkozak-zsh-theme
 ```
 
-Theme 7 - zinc
+7 - zinc
 
 ```shell
 zi load'![[ $MYPROMPT = 7 ]]' unload'![[ $MYPROMPT != 7 ]]' \
@@ -316,7 +322,7 @@ zi load'![[ $MYPROMPT = 7 ]]' unload'![[ $MYPROMPT != 7 ]]' \
     robobenklein/zinc
 ```
 
-Theme 8 - git-prompt
+8 - git-prompt
 
 ```shell
 zi lucid load'![[ $MYPROMPT = 8 ]]' unload'![[ $MYPROMPT != 8 ]]' \
