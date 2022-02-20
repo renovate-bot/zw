@@ -41,7 +41,7 @@ import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'; import Ima
   </TabItem>
   <TabItem value="rust" label="Rust">
 
-u[Rust](https://crates.io) packages with [rust annex][4]
+[Rust](https://crates.io) packages with [rust annex][4]
 
   </TabItem>
   <TabItem value="github" label="GitHub" default>
@@ -98,11 +98,10 @@ Install almost everything from [GitHub](https://github.com):
 
 ---
 
-<div align="center">
+<div align="center"><a href="https://github.com/z-shell">GitHub</a> - <a href="https://twitter.com/zshell_zi">Twitter</a> - <a href="https://github.com/z-shell/community/issues/new?assignees=&labels=%F0%9F%91%A5+member&template=membership.yml&title=team%3A+">Join The Team</a></div>
 
-[**GitHub**](https://github.com/z-shell) - [**Twitter**](https://twitter.com/zshell_zi) - [**Join the team**](https://github.com/z-shell/community/issues/new?assignees=&labels=%F0%9F%91%A5+member&template=membership.yml&title=team%3A+)
+---
 
-</div>
 [8]: getting_started/overview#turbo-mode-zsh--53
 [9]: guides/customization#customizing-paths
 [10]: guides/customization#multiple-prompts
