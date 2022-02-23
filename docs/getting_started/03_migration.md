@@ -1,31 +1,53 @@
 ---
-id: migration
 title: Migration
-sidebar_position: 4
-image: /img/logo/zi/png/501x501.png
-description: Migration to ZI
-keywords:
-  - migration
-  - zsh
-  - z-shell
-  - zi
+image: zw/logo/320x320.png
+description: Migration guide to ZI
+keywords: [migration, setup]
 ---
 
-## Migration from Oh-My-ZSH
+## Oh-My-Zsh Basics
 
-### Oh-My-Zsh basics
+Raw Syntax with URL:
 
 ```shell
-zi snippet <URL>        # Raw Syntax with URL
-zi snippet OMZ::<PATH>  # Shorthand OMZ/ (http://github.com/ohmyzsh/ohmyzsh/raw/master/)
-zi snippet OMZL::<PATH> # Shorthand OMZ/lib/
-zi snippet OMZT::<PATH> # Shorthand OMZ/themes/
-zi snippet OMZP::<PATH> # Shorthand OMZ/plugins/
+zi snippet <URL>
 ```
 
-### Oh-My-Zsh library
+OMZ Shorthand Syntax:
 
-Importing the [clipboard][1] and [termsupport][2] from the Oh-My-Zsh library Sample:
+<https://github.com/ohmyzsh/ohmyzsh/raw/master/>
+
+```shell
+zi snippet OMZ::<PATH>
+```
+
+OMZ Library:
+
+<http://github.com/ohmyzsh/ohmyzsh/raw/master/lib>
+
+```shell
+zi snippet OMZL::<PATH>
+```
+
+OMZP: Plugins:
+
+<http://github.com/ohmyzsh/ohmyzsh/raw/master/plugins>
+
+```shell
+zi snippet OMZP::<PATH>
+```
+
+OMZT: Themes:
+
+<http://github.com/ohmyzsh/ohmyzsh/raw/master/themes>
+
+```shell
+zi snippet OMZT::<PATH>
+```
+
+### Library
+
+Importing the [clipboard][1] and [termsupport][2] from the Oh-My-Zsh library sample:
 
 Raw Syntax:
 
@@ -48,83 +70,53 @@ zi snippet OMZL::clipboard.zsh
 zi snippet OMZL::termsupport.zsh
 ```
 
-### Oh-My-Zsh themes
+### Plugins
 
-Setup with Oh-My-Zsh:
+```diff
+- plugins=(
+-  git
+-  dotenv
+-  rake
+-  rbenv
+-  ruby
+-)
 
-```shell
-ZSH_THEME="robbyrussell"
++ zi snippet OMZP::git
++ zi snippet OMZP::dotenv
++ zi snippet OMZP::rake
++ zi snippet OMZP::rbenv
++ zi snippet OMZP::ruby
 ```
 
-ZI:
+If it consists of a single file, with ZI you can just load it: `zi snippet <some/path/or/url/undled-snnippets.zsh`
 
-To use **themes** created for Oh My Zsh it might need:
+Use `zi ice svn` if multiple files require an entire subdirectory.
 
-- `git` library
-- `git` plugin
-- `setopt promptsubst`
-
-If any of above is missing, the theme will break similar as shown below:
+- [gitfast][4]
+- [osx][5]
 
 ```shell
-... $(build_prompt) ...
+zi ice svn
+zi snippet OMZP::gitfast
+
+zi ice svn
+zi snippet OMZP::osx
 ```
 
-If the `git` library will not be loaded or not loaded in the correct order, then similar to following errors will be appearing:
+Use `zi ice as"completion"` to directly add single file completion snippets.
+
+- [docker][6]
+- [fd][7]
 
 ```shell
-........:1: command not found: git_prompt_status
-........:1: command not found: git_prompt_short_sha
+zi ice as"completion"
+zi snippet OMZP::docker/_docker
+
+zi ice as"completion"
+zi snippet OMZP::fd/_fd
 ```
 
-All together it look like this:
-
-```shell
-zi snippet OMZL::git.zsh
-
-zi snippet OMZP::git
-zi cdclear -q
-```
-
-Then load prompt:
-
-```shell
-setopt promptsubst
-zi snippet OMZT::robbyrussell
-```
-
-:::info
-
-External Theme Sample: [NicoSantangelo/Alpharized][3]
-
-:::
-
-Oh-My-Zsh Setting:
-
-```shell
-ZSH_THEME="alpharized"
-```
-
-ZI Setting:
-
-Must Load OMZ Git library first as mentioned above. As it would be same as Oh-My-Zsh does in the background.
-
-```shell
-zi snippet OMZL::git.zsh
-```
-
-Load `Git` plugin from Oh-My-Zsh:
-
-```shell
-zi snippet OMZP::git
-zi cdclear -q
-
-setopt promptsubst
-
-zi light NicoSantangelo/Alpharized
-```
-
-### Oh-My-Zsh Plugins
+[You can see an extended explanation of Oh-My-Zsh setup in the Wiki][8]### Plugins
 
 ```diff
 - plugins=(
@@ -172,14 +164,95 @@ zi snippet OMZP::fd/_fd
 
 [You can see an extended explanation of Oh-My-Zsh setup in the Wiki][8]
 
-## Migration from Prezto
+### Themes
 
-### Prezto basics
+Oh-My-Zsh themes are stored in the `themes` directory. All and loaded in thee background. with simple syntax:
 
 ```shell
-zi snippet <URL>        # Raw Syntax with URL
-zi snippet PZT::<PATH>  # Shorthand PZT/ (https://github.com/sorin-ionescu/prezto/tree/master/)
-zi snippet PZTM::<PATH> # Shorthand PZT/modules/
+ZSH_THEME="robbyrussell"
+```
+
+However, ZI don't support the `ZSH_THEME` variable natively.
+
+To use **themes** created for Oh-My-Zsh, it requires loading shown below as it would be same as Oh-My-Zsh does in the background.
+
+> Some themes may require additional configuration it can be determined from theme configuration file.
+
+- Load `Git` library
+- Load `Git` plugin
+- Enable `setopt promptsubst`
+
+If any of above not in order or missing, the theme will break similar as shown below:
+
+```shell
+... $(build_prompt) ...
+```
+
+If the `Git` library not loaded or loaded in wrong order, then it may appear similar to the following:
+
+```shell
+........:1: command not found: git_prompt_status
+........:1: command not found: git_prompt_short_sha
+```
+
+All together it look like this:
+
+```shell
+zi snippet OMZL::git.zsh
+zi snippet OMZP::git
+zi cdclear -q
+```
+
+Then load prompt:
+
+```shell
+setopt promptsubst
+zi snippet OMZT::robbyrussell
+```
+
+### External theme sample: [NicoSantangelo/Alpharized][3]
+
+Load with Oh-My-Zsh:
+
+```shell
+ZSH_THEME="alpharized"
+```
+
+Load with ZI:
+
+```shell
+zi snippet OMZL::git.zsh
+```
+
+Load `Git` plugin from Oh-My-Zsh:
+
+```shell
+zi snippet OMZP::git
+zi cdclear -q
+
+setopt promptsubst
+
+zi light NicoSantangelo/Alpharized
+```
+
+## Prezto basics
+
+Raw Syntax with URL:
+
+```shell
+zi snippet <URL>
+```
+
+Shorthand PZT: <https://github.com/sorin-ionescu/prezto/tree/master/>
+
+```shell
+zi snippet PZT::<PATH>
+```
+
+Shorthand PZT/modules:
+
+```shell
+zi snippet PZTM::<PATH>
 ```
 
 ### Prezto moduless
@@ -258,7 +331,7 @@ What is `zstyle`?
 
 :::
 
-## Migration from Zgen
+## Zgen
 
 ### Load Oh-My-Zsh library
 
@@ -324,9 +397,7 @@ For the `location`: refer [selection of files][17]
 + zi load <repo>
 ```
 
-## Migration from Zplug
-
-### Zplug basics
+## Zplug Basics
 
 ```diff
 - zplug <repo/plugin>, tag1:<option1>, tag2:<option2>

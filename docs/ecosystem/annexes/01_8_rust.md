@@ -1,6 +1,7 @@
 ---
 id: rust
 title: 💠 Rust
+image: zw/logo/320x320.png
 description: Annex - Rust documentation
 keywords: [annex, rust, zsh, z-shell, zi]
 ---
@@ -25,7 +26,7 @@ lsd "$@"
 
 As it can be seen shim ultimately provides the binary to the command line.
 
-## Usage {#usage}
+## Usage of the annex
 
 The ZI Annex provides two new ices: `rustup` and `cargo''`. The first one installs rust inside the plugin's folder using the official `rustup` installer. The second one has the following syntax:
 

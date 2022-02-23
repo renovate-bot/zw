@@ -1,15 +1,9 @@
 ---
-id: syntax
 title: ✍️ Syntax
-image: /img/logo/zi/png/501x501.png
+image: zw/logo/501x501.png
 description: ZI Syntax
 keywords:
   - syntax
-  - zsh
-  - zinit
-  - zi
-  - oh-my-zsh
-  - ohmyzsh
   - how-to-use
 ---
 
@@ -44,7 +38,7 @@ Above single command installs 6 plugins ([git extension][2] packages), with the 
 
 ### Use cases of `for` syntax
 
-Load a few useful binary (i.e.: [binary packages from the GitHub Releases][3]) utils:
+Load a few useful binary packages from the [GitHub releases][3], utils:
 
 ```shell
 zi as"null" wait"2" lucid from"gh-r" for \

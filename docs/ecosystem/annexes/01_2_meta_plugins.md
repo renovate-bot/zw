@@ -1,8 +1,9 @@
 ---
 id: meta-plugins
 title: 💠 Meta Plugins
+image: zw/logo/320x320.png
 description: Annex - meta plugins documentation
-keywords: [annex, meta-plugins, zsh, z-shell, zi]
+keywords: [annex, meta-plugins]
 ---
 
 import APITable from '@site/src/components/APITable';
@@ -24,11 +25,15 @@ import APITable from '@site/src/components/APITable';
 
 To be able to install meta plugins, the annex of meta plugins itself has to be installed, e.g.:
 
-```shell
-# Install meta plugins annex
-zi light z-shell/z-a-meta-plugins
+Install meta plugins annex
 
-# Install meta plugins annex and meta plugins group with the same command.
+```shell
+zi light z-shell/z-a-meta-plugins
+```
+
+Install meta plugins annex and meta plugins group with the same command.
+
+```shell
 zi light-mode for z-a-meta-plugins @annexes @ext-git @zsh-users
 ```
 
@@ -55,7 +60,7 @@ zi light-mode for @annexes skip'zsh-completions' @zsh-users \
 skip'vivid exa tig' @console-tools
 ```
 
-## The list of the currently available meta-plugin groups {#the-list-of-the-currently-available-meta-plugin-groups}
+## The list of the currently available meta-plugin groups
 
 <APITable>
 
@@ -85,7 +90,7 @@ skip'vivid exa tig' @console-tools
 
 ---
 
-## Meta Plugins Annex basics {#meta-plugins-annex-basics}
+## Meta Plugins Annex basics
 
 It consumes time to:
 

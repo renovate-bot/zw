@@ -1,8 +1,7 @@
 ---
-id: benchmark
 title: Statistics & Benchmark
-image: /img/logo/zi/png/501x501.png
-description: Benchamarking & Profiling
+image: zw/logo//320x320.png
+description: Benchamarking
 keywords: [statistics, benchmark, profiling]
 ---
 
@@ -16,14 +15,14 @@ zi light z-shell/F-Sy-H
 
 | Syntax | Description |
 | --- | :-- |
-| `atinit'…'` | loads `zsh/zprof` module (shipped with Zsh) before loading the plugin – this starts the profiling. |
-| `atload'…'` | works after loading the plugin – shows profiling results (`zprof / head`), unloads `zsh/zprof` - this stops the profiling. |
+| `atinit'…'` | loads `zsh/zprof` module, shipped with Zsh, before loading the plugin – this starts the profiling. |
+| `atload'…'` | works after loading the plugin – shows profiling results `zprof / head`, unloads `zsh/zprof` - this stops the profiling. |
 
-While in effect, only a single plugin (in this case `z-shell/F-Sy-H`) will be profiled.
+While in effect, only a single plugin, in this case `z-shell/F-Sy-H`, will be profiled.
 
 The rest plugins will go on completely normally, as when plugins are loaded with `light` - reporting is disabled.
 
-Less code is being run in the background – (i.e. the automatic data gathering, during loading of a plugin, for the reports and the possibility to unload the plugin) will be activated and the functions will not appear in the `zprof` report.
+Less code is being run in the background, the automatic data gathering, during loading of a plugin, for the reports and the possibility to unload the plugin, will be activated and the functions will not appear in the `zprof` report.
 
 - Example `zprof` report:
 

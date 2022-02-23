@@ -1,16 +1,14 @@
 ---
 id: packages
 title: 📦 Available packages
-image: img/logo/zi/png/501x501.png
+image: zw/logo/320x320.png
 description: The Z-Shell Organization packages
-keywords: [package, zsh, z-shell, zi]
+keywords: [zpackage]
 ---
 
 import APITable from '@site/src/components/APITable';
 
 You can find the available packages [here](https://github.com/search?q=topic%3Azpackages+org%3Az-shell&type=Repositories).
-
-Updated: `2021-11-11`
 
 <APITable>
 
@@ -37,6 +35,8 @@ Updated: `2021-11-11`
 | [nb][19] | Bookmarking, and archiving with linking, tagging, search, Git syncing, Pandoc conversion, + more |
 
 </APITable>
+
+> List updated: `2021-11-11`
 
 [1]: https://github.com/z-shell/any-node
 [2]: https://github.com/z-shell/any-gem

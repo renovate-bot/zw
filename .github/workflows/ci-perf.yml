@@ -1,5 +1,5 @@
 ---
-name: 📊 Build Performance
+name: '📊 Build Performance'
 
 # Note! you can't safely use "pull_request_target" here
 # This workflow is mostly useful for "internal PRs"
@@ -12,46 +12,58 @@ on:
     branches:
       - main
     paths-ignore:
-      - docs/**
-
-#jobs:
-# Requires to update workflow due to yarn 3 syntax: renamed --frozen-lockfile into --immutable
-# build-size:
-#   name: 📊 Build Size Report
-#   timeout-minutes: 30
-#   runs-on: ubuntu-latest
-#   steps:
-#     - uses: actions/checkout@v2
-#     - uses: actions/setup-node@v2
-#       with:
-#         node-version: '16'
-#         cache: yarn
-#     - uses: preactjs/compressed-size-action@v2
-#       with:
-#         repo-token: ${{ secrets.GITHUB_TOKEN }}
-#         build: ' && yarn build'
-#         pattern: '{build/assets/js/main*js,build/assets/css/styles*css,.docusaurus/globalData.json,build/index.html,build/blog/index.html,build/blog/**/swiss-army-knife-for-zsh/*,build/docs/index.html,build/docs/getting_started/installation.html}'
-#         strip-hash: '\.([^;]\w{7})\.'
-#         minimum-change-threshold: 30
-#         compression: none
+      - 'docs/**'
 
 jobs:
+  build-size:
+    name: ' 📊 Build Size Report'
+    timeout-minutes: 30
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: pnpm/action-setup@v2.1.0
+        with:
+          version: 6.32.1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+      - uses: preactjs/compressed-size-action@v2
+        with:
+          build-script: 'build:en'
+          pattern: '{build/assets/js/main*js,build/assets/css/styles*css,.docusaurus/globalData.json,build/index.html,build/blog/index.html,build/blog/**/swiss-army-knife-for-zsh/*,build/docs/index.html,build/docs/getting_started/installation.html}'
+          strip-hash: '\.([^;]\w{7})\.'
+          minimum-change-threshold: 30
+          compression: none
+
   build-time:
     name: 💹 Build Time Perf
     timeout-minutes: 30
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16]
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: pnpm/action-setup@v2.1.0
         with:
-          cache: yarn
+          version: 6.32.1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
       - name: ✨ Installation
-        run: yarn
+        run: pnpm i
       # Ensure build with a cold cache does not increase too much
       - name: Build (cold cache)
-        run: yarn build --locale en
+        run: pnpm build:en
         timeout-minutes: 8
       # Ensure build with a warm cache does not increase too much
       - name: Build (warm cache)
-        run: yarn build --locale en
+        run: pnpm build:en
         timeout-minutes: 2

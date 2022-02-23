@@ -1,12 +1,12 @@
 ---
 id: packages-overview
 title: 📦 Quick overview
-image: img/logo/zi/png/501x501.png
+image: zw/logo/320x320.png
 description: Introduction to the packages
-keywords: [package, zsh, z-shell, zi]
+keywords: [package, zsh, zpackage]
 ---
 
-## The [any-gem](https://github.com/z-shell/any-gem) and [any-node](https://github.com/z-shell/any-node) packages {#the-any-gem-and-any-node-packages}
+## The [any-gem][1] and [any-node][2] packages
 
 They allow to install any Gem(s) or Node module(s) locally in a newly created plugin directory. For example:
 
@@ -27,9 +27,13 @@ The Unicode arrow is allowed in ZI syntax as in example below.
 zi id-as=jekyll pack param='GEM → jekyll' for any-gem
 ```
 
-The binaries will be exposed without altering the PATH via shims ([bin-gem-node](/docs/ecosystem/annexes/bin-gem-node) annex is needed). Shims are correctly removed when deleting a plugin with `zi delete ……`
+The binaries will be exposed without altering the PATH via shims ([bin-gem-node][3] annex is needed).
 
-The so-called packages are GitHub repositories holding a `package.json` file with the meta-data in them. This way you don't have to (but still can) specify ices, which might be handy when the ice-mod list is long and complex.
+Shims are correctly removed when deleting a plugin with `zi delete ……`
+
+The so-called packages are GitHub repositories holding a `package.json` file with the meta-data in them.
+
+This way you don't have to (but still can) specify ices, which might be handy when the ice-mod list is long and complex.
 
 ## Motivation behind packages {#motivation-behind-packages}
 
@@ -45,7 +49,7 @@ The motivation for adding such functionality was:
 
 3. In general, ZI has many hooks which allow surprising things, however, their content often evolves to a gradually better and better one and it's hard to keep track of the current version of them.
 
-4. So a solution appeared: why not publish a package at GitHub with the plugin configurations (i.e.: [ice-modifiers](../../guides/ice-modifiers lists) stored in a file?
+4. So a solution appeared: why not publish a package at GitHub with the plugin configurations (i.e.: [ice modifiers][3] stored in a file?
 
 ## Introductory Example {#introductory-example}
 
@@ -72,13 +76,15 @@ to get the complete setup of the fuzzy finder, including:
 
 The installation is real, package-manager -like, because you don't need to invoke ZI anymore once installed to use `fzf` (that's because `fzf` is just a binary program and not e.g.: a shell function).
 
-You can also update the package with `zi update fzf` – it'll cause the project to refresh and rebuild, like with a "normal" package manager such as `apt-get`. However, it'll actually be more like to `emerge` from Gentoo, because the installation will be from the source… unless… the user will pick up a binary installation by profile-argument specified in the `pack''` ice :)
+You can also update the package with `zi update fzf` – it'll cause the project to refresh and rebuild, like with a "normal" package manager such as `apt-get`.
+
+However, it'll actually be more like to `emerge` from Gentoo, because the installation will be from the source… unless… the user will pick up a binary installation by profile-argument specified in the `pack''` ice :)
 
 ## Pros Of Using ZI Package For Regular Software Installations
 
 Using ZI to install software where one could use a regular package manager has several advantages:
 
-1. **Pro:** The ZI packages typically use the URLs to the official and _latest_ distributions of the software (like e.g.: the [ecs-cli](https://github.com/z-shell/ecs-cli) package, which uses the URL: `https://amazon-ecs-cli.s3.amazonaws.com/ecs-cli-linux-amd64-latest` when installing on Linux).
+1. **Pro:** The ZI packages typically use the URLs to the official and _latest_ distributions of the software (like e.g.: the [ecs-cli][5] package, which uses the URL: `https://amazon-ecs-cli.s3.amazonaws.com/ecs-cli-linux-amd64-latest` when installing on Linux).
 
 2. **Pro:** You can influence the installation easily by specifying ZI ice-mods, e.g.:
 
@@ -102,10 +108,17 @@ Thus, summing up 1. with 4., it might be nice/convenient too, for example, have 
 
 ## Adding Your Own Package {#adding-your-own-package}
 
-1. Contact the author to have the repository at the [Z-Shell](https://github.com/z-shell) organization.
+1. Contact the author to have the repository at the [Z-Shell][6] organization.
 
 2. Populate the `package.json` – I suggest grabbing the one for `fzf` or `doctoc` and doing a few substitutions like `doctoc` → `your-project` and then simply filling the `default` profile in the `zi-ices` object – it's obvious how to do this.
 
 3. The project name in the `package.json` should start with `zsh-`. The prefix will be skipped when specifying it with ZI.
 
 4. Commit and push.
+
+[1]: https://github.com/z-shell/any-gem
+[2]: https://github.com/z-shell/any-node
+[3]: /docs/ecosystem/annexes/bin-gem-node
+[4]: /docs/guides/ice-modifiers
+[5]: https://github.com/z-shell/ecs-cli
+[6]: https://github.com/z-shell

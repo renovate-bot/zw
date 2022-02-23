@@ -1,35 +1,39 @@
 ---
-name: 🚀 Deploy GH Pages
+name: '🚀 GH Pages [ Deploy ]'
 
-# GitHub Pages can be used as alternative.
 on:
-  workflow_dispatch:
-#  workflow_run:
-#    workflows:
-#      - 👾 CodeQL
-#    types:
-#      - completed
+  push:
+    branches: [main]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
+    strategy:
+      matrix:
+        node-version: [16]
     steps:
-      - name: ⤵️ Check out code from GitHub
-        uses: actions/checkout@v2
-      - name: ♻️ Prepare
+      - uses: actions/checkout@v2
+      - name: '♻️ Deployment [ install ]'
+        uses: pnpm/action-setup@v2.1.0
+        with:
+          version: 6.32.1
+          run_install: |
+            - recursive: true
+              args: [--frozen-lockfile, --strict-peer-dependencies]
+      - name: '♻️  Node.js ${{ matrix.node-version }}'
         uses: actions/setup-node@v2
         with:
-          node-version: '16'
-          cache: 'yarn'
-      - run: yarn
-      - run: yarn build
-      - name: 🚀 Deploy
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+      - name: '♻️ Deployment [ build ]'
+        run: pnpm build
+      - name: 🚀 Deploy GH Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: build
-          allow_empty_commit: true
-          keep_files: true
+          publish_dir: ./build
+          user_name: digital-teams[bot]
+          user_email: digital-teams@pm.me

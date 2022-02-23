@@ -1,9 +1,9 @@
 ---
 id: bin-gem-node
 title: 💠 Bin Gem Node
-image: /img/logo/zi/png/501x501.png
+image: zw/logo/320x320.png
 description: Annex - Bin Gem Node documentation
-keywords: [annex, bin-gem-node, zsh, z-shell, zi]
+keywords: [annex, bin-gem-node]
 ---
 
 import APITable from '@site/src/components/APITable';
@@ -101,7 +101,9 @@ There are 7 ice modifiers provided and handled by the annex:
 
 `sbin'[{g|n|c|N|E|O}:]{path-to-binary}[ -> {name-of-the-script}]; …'`
 
-It creates the so called `shim` known from `rbenv` – a wrapper script that forwards the call to the actual binary. The script is created always under the same, standard and single `$PATH` entry: `$ZPFX/bin` (which is `~/.zi/polaris/bin` by default).
+It creates the so called `shim` known from `rbenv` – a wrapper script that forwards the call to the actual binary.
+
+The script is created always under the same, standard and single `$PATH` entry: `$ZPFX/bin` (which is `~/.zi/polaris/bin` by default).
 
 The flags have the same meaning as with `fbin''` ice.
 

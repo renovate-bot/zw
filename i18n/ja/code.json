@@ -1,38 +1,38 @@
 {
-  "homepage.button": {
-    "message": "✨ よりスマートに、より正確に、そしてより高速に。✨",
-    "description": "The homepage button to wiki introduction"
-  },
   "homepage.feature1.title": {
-    "message": "Zshの起動時間が50-80％高速化",
+    "message": "Zsh Startup 50-80% Faster",
     "description": "Title of feature 1 (left) on the home page"
   },
   "home.fetaure1": {
-    "message": "`.zshrc` の処理が終了し、最初のプロンプトが表示される時点まで、プラグインの読み込みを遅延できます。",
+    "message": "Instant prompt postponing plugins loading to a moment when the processing of .zshrc file is finished.",
     "description": "Description of first featured banner in homepage"
   },
   "homepage.feature2.title": {
-    "message": "大事なことに集中する",
+    "message": "Focus on What Matters",
     "description": "Title of feature 2 (middle) on the home page"
   },
   "home.fetaure2": {
-    "message": "プラグインが設定したエイリアス、関数、バインドキー、ZLEウィジェット、zstyles、補完、変数、`PATH` 、 `FPATH` 要素など、プラグインに関する情報を提供します。",
+    "message": "Statistics about the plugins, describing what functions, bindkeys, completions, and other elements a plugin has set up.",
     "description": "Description of second featured banner in homepage"
   },
   "homepage.feature3.title": {
-    "message": "幅広い選択肢",
+    "message": "Wide Range of Features",
     "description": "Title of feature 3 (right) on the home page"
   },
   "home.fetaure3": {
-    "message": "Oh My Zsh、Preztoをサポートし、独自のプラグインやライブラリの作成も可能。実装はフレームワークに依存しないので、必要なときだけ読み込んでください。",
+    "message": "Supports Oh-My-Zsh and Prezto - not framework-specific. Produce your plugins, libraries, and themes effortlessly.",
     "description": "Description of third featured banner in homepage"
   },
+  "homepage.button": {
+    "message": "💢 Make it work, make it right, make it Fast 💢",
+    "description": "The homepage button to wiki introduction"
+  },
   "theme.ErrorPageContent.title": {
-    "message": "ページがクラッシュしました。",
+    "message": "This page crashed.",
     "description": "The title of the fallback page when the page crashed"
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "もう一度試してください",
+    "message": "Try again",
     "description": "The label of the button to try again when the page crashed"
   },
   "theme.NotFound.title": {
@@ -99,18 +99,6 @@
     "message": "Blog recent posts navigation",
     "description": "The ARIA label for recent posts in the blog sidebar"
   },
-  "theme.blog.post.plurals": {
-    "message": "{count}件",
-    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
-  "theme.blog.tagTitle": {
-    "message": "「{tagName}」タグの記事が{nPosts}あります",
-    "description": "The title of the page for a blog tag"
-  },
-  "theme.tags.tagsPageLink": {
-    "message": "全てのタグを見る",
-    "description": "The label of the link targeting the tag list page"
-  },
   "theme.CodeBlock.copyButtonAriaLabel": {
     "message": "クリップボードにコードをコピー",
     "description": "The ARIA label for copy code blocks button"
@@ -122,6 +110,18 @@
   "theme.CodeBlock.copy": {
     "message": "コピー",
     "description": "The copy button label on code blocks"
+  },
+  "theme.blog.post.plurals": {
+    "message": "{count}件",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "「{tagName}」タグの記事が{nPosts}あります",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "全てのタグを見る",
+    "description": "The label of the link targeting the tag list page"
   },
   "theme.docs.sidebar.expandButtonTitle": {
     "message": "サイドバーを開く",
@@ -219,41 +219,13 @@
     "message": "タグ:",
     "description": "The label alongside a tag list"
   },
-  "theme.SearchBar.label": {
-    "message": "検索",
-    "description": "The ARIA label and placeholder for search button"
+  "theme.Playground.result": {
+    "message": "Result",
+    "description": "The result label of the live codeblocks"
   },
-  "theme.SearchPage.documentsFound.plurals": {
-    "message": "{count}件のドキュメントが見つかりました",
-    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
-  "theme.SearchPage.existingResultsTitle": {
-    "message": "『{query}』の検索結果",
-    "description": "The search page title for non-empty query"
-  },
-  "theme.SearchPage.emptyResultsTitle": {
-    "message": "ドキュメントを検索",
-    "description": "The search page title for empty query"
-  },
-  "theme.SearchPage.inputPlaceholder": {
-    "message": "ここに検索するキーワードを入力してください",
-    "description": "The placeholder for search page input"
-  },
-  "theme.SearchPage.inputLabel": {
-    "message": "検索",
-    "description": "The ARIA label for search page input"
-  },
-  "theme.SearchPage.algoliaLabel": {
-    "message": "Algoliaで検索",
-    "description": "The ARIA label for Algolia mention"
-  },
-  "theme.SearchPage.noResultsText": {
-    "message": "検索結果が見つかりませんでした",
-    "description": "The paragraph for empty search result"
-  },
-  "theme.SearchPage.fetchingNewResults": {
-    "message": "新しい検索結果を取得しています...",
-    "description": "The paragraph for fetching new search results"
+  "theme.Playground.liveEditor": {
+    "message": "Live Editor",
+    "description": "The live editor label of the live codeblocks"
   },
   "theme.PwaReloadPopup.info": {
     "message": "新しいバージョンがあります",
@@ -286,14 +258,6 @@
   "theme.IdealImageMessage.error": {
     "message": "Error. Click to reload",
     "description": "When the image fails to load for unknown error"
-  },
-  "theme.Playground.result": {
-    "message": "Result",
-    "description": "The result label of the live codeblocks"
-  },
-  "theme.Playground.liveEditor": {
-    "message": "Live Editor",
-    "description": "The live editor label of the live codeblocks"
   },
   "theme.tags.tagsPageTitle": {
     "message": "タグ",

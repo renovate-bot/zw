@@ -1,10 +1,9 @@
 ---
 slug: /gallery/collection
 title: 🔺 Collection Guide
-sidebar_position: 1
-image: /img/logo/zi/png/501x501.png
-description: The gallery of invocations
-keywords: [collection, zsh, z-shell, zi]
+image: zw/logo/320x320.png
+description: The Gallery of Invocations
+keywords: [collection]
 ---
 
 import APITable from '@site/src/components/APITable';
@@ -17,50 +16,49 @@ Some installations may require additional functionally, it can be done by instal
 zi light-mode for z-shell/z-a-meta-plugins @annexes
 ```
 
-More info: [ecosystem/annexes](/docs/ecosystem/annexes)
+More info: [ecosystem/annexes][1]
 
 :::
 
-## Header pefixed tags {#header-pefixed-tags}
+## Pefixed header tags
 
-For the [search](https://z-shell.pages.dev/search/?q=GH-R), prefixed tags helps as minimal description to the visible results.
+For the [search][17], prefixed tags helps as minimal description to the visible results.
 
 <APITable>
 
-| Tag name | Install type                               |
-| -------- | ------------------------------------------ |
-| GH-R     | GitHub release                             |
-| SC       | Script                                     |
-| B        | Build                                      |
-| RA       | [Rust Annex](/docs/ecosystem/annexes/rust) |
-| THP      | Theme / Prompt                             |
-| COMP     | Completion                                 |
+| Tag name | Install type    |
+| -------- | --------------- |
+| GH-R     | GitHub release  |
+| COMP     | Completion      |
+| ZS       | Service         |
+| SC       | Script          |
+| B        | Build           |
+| RA       | [Rust Annex][2] |
+| THP      | Themes/Prompts  |
 
 </APITable>
 
 :::tip Additional installation methods
 
-1. [Meta plugins](docs/ecosystem/annexes/meta-plugins)
-2. [Packages](docs/ecosystem/packages/packages-overview)
+1. [Meta plugins][3]
+2. [Packages][4]
 
 :::
 
 :::note
 
-- [Report issues](https://github.com/z-shell/zi/issues/new/choose)
-- [Suggestions](https://github.com/z-shell/zi/discussions/categories/ideas)
+- [Issue report][5]
+- [Suggestions][6]
 
 Any contributions you make will benefit everybody else and are greatly appreciated.
 
 :::
 
-## Quick overview of invocations {#quick-overview-of-invocations}
+## A Glance at The Gallery of Invocations
 
-### Minimal {#minimal}
+### With [turbo mode][7] and the [for][8] syntax
 
-#### With [Turbo mode](../getting_started/overview#turbo-mode-zsh--53) and with [`for`](/docs/guides/syntax#the-for-syntax) syntax {#with-turbo-mode-and-with-for-syntax}
-
-```shell {1} title=~/.zshrc
+```shell {1}
 zi wait lucid light-mode for \
   atinit"zicompinit; zicdreplay" \
     z-shell/F-Sy-H \
@@ -74,7 +72,7 @@ zi wait lucid light-mode for \
 
 | Syntax | Description |
 | --- | :-- |
-| `wait` |  Load 0 seconds (about 5 ms exactly) after prompt ([Turbo mode](/docs/getting_started/overview#turbo-mode-zsh--53)). |
+| `wait` |  Load 0 seconds (about 5 ms exactly) after prompt ([turbo mode][7]). |
 | `lucid` | Silence the under-prompt messages ("`Loaded {name of the plugin}`"). |
 | `light-mode` | Load the plugin in `light` mode, in which the tracking of plugin (i.e. activity report gathering, accessible via the `zi report {plugin-name}` subcommand) is being disabled; note that for Turbo mode, the performance gains are almost `0`, so in this mode, you can load all plugins with the tracking, i.e.: the `light-mode` ice can be removed from the command. |
 | `atpull'…'` | Execute after updating the plugin – the command in the ice will install any new completions. |
@@ -85,10 +83,11 @@ zi wait lucid light-mode for \
 
 </APITable>
 
-- syntax-highlighting plugins (like [F-Sy-H](https://github.com/z-shell/F-Sy-H) or [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)) theoretically expect to be loaded last, even after the completion initialization (i.e. `compinit` function), however, in practice, you just have to ensure that such plugin is loaded after plugins that are issuing `compdef` – which basically means completions that aren't using the underscore-starting function file; the completion initialization still has to be performed before syntax-highlighting plugin, hence the `atinit'…'` ice, which will load `compinit` right before loading the plugin,
-- the syntax-highlighting and suggestions plugins are loaded early for a better user experience.
+- syntax-highlighting plugins, like [F-Sy-H][9] or [zsh-syntax-highlighting][10], theoretically expect to be loaded last, even after the completion initialization, i.e. `compinit` function.
 
-#### Without using [Turbo mode](/docs/getting_started/overview#turbo-mode-zsh--53) and without the [`for`](/docs/guides/syntax#the-for-syntax) syntax {#without-using-turbo-mode-and-without-the-for-syntax}
+However in practice, you just have to ensure that such plugin is loaded after plugins that are issuing `compdef` – which basically means completions that aren't using the underscore-starting function file; the completion initialization still has to be performed before syntax-highlighting plugin, hence the `atinit'…'` ice, which will load `compinit` right before loading the plugin, the syntax-highlighting and suggestions plugins are loaded early for a better user experience.
+
+### Without [turbo mode][7] and without the [for][8] syntax
 
 ```shell
 zi ice blockf atpull'zi creinstall -q .'
@@ -105,11 +104,11 @@ zi light z-shell/F-Sy-H
 zi light zsh-users/zsh-autosuggestions
 ```
 
-Without [Turbo](/docs/getting_started/overview#turbo-mode-zsh--53) the syntax-highlighting plugin can be loaded at the end, as it doesn't make any difference (the prompt will appear after loading all objects, anyway).
+Without [turbo mode][7] the syntax-highlighting plugin can be loaded at the end, as it doesn't make any difference, the prompt will appear after loading all objects, anyway.
 
-### Oh-My-Zsh {#oh-my-zsh}
+### Oh-My-Zsh
 
-#### With [Turbo mode](/docs/getting_started/overview#turbo-mode-zsh--53) and [`for`](/docs/guides/syntax#the-for-syntax) syntax {#with-turbo-mode-and-for-syntax}
+#### With [turbo mode][7] and [for][8] syntax
 
 ```shell
 # A.
@@ -130,10 +129,10 @@ zi wait'!' lucid for \
 
 # D.
 zi wait lucid for \
-  atinit"zicompinit; zicdreplay" \
-  z-shell/fast-syntax-highlighting \
+    atinit"zicompinit; zicdreplay" \
+    z-shell/fast-syntax-highlighting \
   OMZP::colored-man-pages \
-  as"completion" \
+    as"completion" \
   OMZP::docker/_docker
 ```
 
@@ -149,11 +148,13 @@ zi wait lucid for \
 
 :::
 
-Above setup loads everything after prompt, because of preceding `wait` ice. That is called **Turbo mode**, it shortens Zsh startup time by <u>50%-80%</u>, e.g. instead of 200 ms, it'll be getting your shell started up after **40 ms**.
+Above setup loads everything after prompt, because of preceding `wait` ice. That is called **turbo mode**, it shortens Zsh startup time by <u>50%-80%</u>, e.g. instead of 200 ms, it'll be getting your shell started up after **40 ms**.
 
-#### Without [Turbo](/docs/getting_started/overview#turbo-mode-zsh--53) and [`for`](/docs/guides/syntax#the-for-syntax) syntax {#without-turbo-and-for-syntax}
+#### Without [turbo mode][7] and [for][8] syntax
 
-The same setup using the classic syntax and without Turbo mode (prompt will be initially set like in typical, normal setup – **you can remove `wait` only from the theme plugin** and its dependencies to have the same effect while still using Turbo for everything remaining):
+The same setup using the classic syntax and without turbo mode, prompt will be initially set like in typical.
+
+With normal setup – **you can remove `wait` only from the theme plugin** and its dependencies to have the same effect while still using turbo mode for everything remaining:
 
 ```shell
 # A.
@@ -181,15 +182,15 @@ zi ice atinit"zicompinit; zicdreplay"
 zi light z-shell/F-Sy-H
 ```
 
-In general, [Turbo](/docs/getting_started/overview#turbo-mode-zsh--53) can be optionally enabled only for a subset of plugins or for all plugins.
+In general, [turbo mode][7] can be optionally enabled only for a subset of plugins or for all plugins.
 
-### LS_COLORS {#ls_colors}
+### LS_COLORS
 
-A repository [trapd00r/LS_COLORS](https://github.com/trapd00r/LS_COLORS) provides a file with color definitions for GNU `ls` command (and also for [ogham/exa](https://github.com/ogham/exa).
+A repository [trapd00r/LS_COLORS][11] provides a file with color definitions for GNU `ls` command, and also for [ogham/exa][12].
 
-Typically one does `eval $( dircolors -b $HOME/LS_COLORS)` to process this file and set the environment for `ls`. However this means `dircolors` is run every shell startup.
+Typically one does `eval $( dircolors -b $HOME/LS_COLORS)` to process this file and set the environment for `ls`. This means `dircolors` is run every shell startup.
 
-This costs much time because a fork has to be done and the program (i.e. `dircolors`) binary needs to be loaded and executed, and because `dircolors` loads the colors' definitions and processes them. Following ZI invocation solves this problem:
+This costs much time because a fork has to be done and the program, i.e. `dircolors`, binary needs to be loaded and executed, and because `dircolors` loads the colors' definitions and processes them. Following ZI invocation solves this problem:
 
 ```shell
 zi ice atclone'dircolors -b LS_COLORS > clrs.zsh' \
@@ -202,19 +203,21 @@ zi light trapd00r/LS_COLORS
 
 | Syntax | Description |
 | --- | :-- |
-| `atclone'…'` | Generate shell script, but instead of passing it to `eval`, save it to file. The `atclone'…'` is being ran on the **installation** while the `atpull'…'` hook is being run on an **update** of the [**trapd00r/LS_COLORS**](https://github.com/trapd00r/LS_COLORS) plugin. |
+| `atclone'…'` | Generate shell script, but instead of passing it to `eval`, save it to file. The `atclone'…'` is being ran on the **installation** while the `atpull'…'` hook is being run on an **update** of the [**trapd00r/LS_COLORS**][11] plugin. |
 | `atpull'%atclone'` | Do the same at any update of the plugin the `%atclone` is just a special string that denotes the `atclone'…'` hook and is copied onto the `atpull'…'` hook. |
 | `pick"clrs.zsh"` | Source the previously generated file `clrs.zsh`. |
-| `nocompile'!'` | Invokes compilation **after** the `atclone'…'` [ice-modifier](/docs/guides/ice-modifiers) (the exclamation mark causes this). |
+| `nocompile'!'` | Invokes compilation **after** the `atclone'…'` [ice-modifier][13] and the [exclamation mark][14] causes this. |
 | `atload'…'` | Additionally sets up the Zsh completion to use the colors provided by the trapd00r package. |
 
 </APITable>
 
-This way, except for the plugin installation and update, `dircolors` isn't ran, just normal sourcing is done. The everyday sourced file (i.e. `clrs.zsh`) is even being compiled to speed up the loading.
+This way, except for the plugin installation and update, `dircolors` isn't ran, just normal sourcing is done.
 
-### Direnv {#direnv}
+The everyday sourced file, i.e. `clrs.zsh`, is being compiled to speed up the loading.
 
-The project [**direnv/direnv**](https://github.com/direnv/direnv) registers itself in Z shell to modify the environment on directory change. This registration is most often done by `eval "$(direnv hook zsh)"` added to zshrc.
+### Direnv
+
+The project [**direnv/direnv**][15] registers itself in Z shell to modify the environment on directory change. This registration is most often done by `eval "$(direnv hook zsh)"` added to `.zshrc`.
 
 The drawback of this standard procedure is that the `direnv` binary is run on every shell startup and significantly slows it down. ZI allows to solve this in the following way:
 
@@ -239,7 +242,7 @@ zi as"program" make'!' atclone'./direnv hook zsh > zhook.zsh' \
 
 This way registration code is generated once every installation and update, to then be simply sourced without running `direnv`.
 
-The project is also available as a binary [Github releases](https://github.com/direnv/direnv/releases/). This distribution can be installed by:
+The project is also available as a binary [Github releases]. This distribution can be installed by:
 
 ```shell
 zi from"gh-r" as"program" mv"direnv* -> direnv" \
@@ -250,13 +253,13 @@ zi from"gh-r" as"program" mv"direnv* -> direnv" \
 
 <APITable>
 
-| Syntax                    | Description                                                                 |
-| ------------------------- | :-------------------------------------------------------------------------- |
-| `from'gh-r'`              | Install from [Github releases](https://github.com/direnv/direnv/releases/). |
-| `mv'direnv* -> direnv'`   | After installation, rename `direnv.linux-386` or similar file to `direnv`.  |
-| `atclone'…'`, `atpull'…'` | As in previous example                                                      |
-| `pick'direnv'`            | As in previous example.                                                     |
-| `as'program'`             | As in previous example                                                      |
+| Syntax | Description |
+| --- | :-- |
+| `from'gh-r'` | Install from `direnv` from [GitHub releases][16]. |
+| `mv'direnv* -> direnv'` | After installation, rename `direnv.linux-386` or similar file to `direnv`. |
+| `atclone'…'`, `atpull'…'` | As in previous example |
+| `pick'direnv'` | As in previous example. |
+| `as'program'` | As in previous example |
 
 </APITable>
 
@@ -269,9 +272,13 @@ zi light direnv/direnv
 - `make'!'` – execute `make` before `atclone'…'` and before `atpull'…'` (see `make` above),
 - `src'zhook.zsh'` – source file `zhook.zsh`.
 
-In general, Direnv works by hooking up to Zsh. The code that does this is provided by program `direnv` (built by `make'…'`). Above `atclone'…'` puts this code into file `zhook.zsh`, `src''` sources it. This way `direnv hook zsh` is executed only on clone and update, and Zsh starts faster.
+In general, direnv works by hooking up to Zsh. The code that does this is provided by program `direnv` (built by `make'…'`).
 
-### Compiling programs {#compiling-programs}
+Above `atclone'…'` puts this code into file `zhook.zsh`, `src''` sources it.
+
+This way `direnv hook zsh` is executed only on clone and update, and Zsh starts faster.
+
+### Compiling programs
 
 ```shell
 zi ice as"program" atclone"rm -f src/auto/config.cache; ./configure" \
@@ -281,17 +288,17 @@ zi light vim/vim
 
 <APITable>
 
-| Syntax             | Description                                                                                |
-| ------------------ | :----------------------------------------------------------------------------------------- |
-| `as'program'`      | Add file selected by `pick'…'` to `$PATH`, and do not source it.                           |
-| `atclone'…'`       | Execute code after downloading.                                                            |
-| `atpull'%atclone'` | Execute the same code `atclone'…'` is given, but after successful update.                  |
-| `make`             |  Run `make` after `atclone'…'` and `atpull'…'` (note: `make'!'` will execute before them). |
-| `pick'src/vim'`    | Set executable flag on `src/vim`, hint that `src/` should be added to `$PATH`.             |
+| Syntax | Description |
+| --- | :-- |
+| `as'program'` | Add file selected by `pick'…'` to `$PATH`, and do not source it. |
+| `atclone'…'` | Execute code after downloading. |
+| `atpull'%atclone'` | Execute the same code `atclone'…'` is given, but after successful update. |
+| `make` |  Run `make` after `atclone'…'` and `atpull'…'` (note: `make'!'` will execute before them). |
+| `pick'src/vim'` | Set executable flag on `src/vim`, hint that `src/` should be added to `$PATH`. |
 
 </APITable>
 
-The same but with **installation** (i.e. `make install` is being run) under `$ZPFX` (`~/.zi/polaris` by default):
+The same but with **installation** (`make install`) under [$ZPFX][18] by default:
 
 ```shell
 zi ice as'program' atclone'rm -f src/auto/config.cache; \
@@ -299,14 +306,29 @@ zi ice as'program' atclone'rm -f src/auto/config.cache; \
 zi light vim/vim
 ```
 
-<APITable>
+| Syntax | Description |
+| --- | :-- |
+| `as'program'` | As above. |
+| `atclone'…'` | As above **plus** pass `--prefix=$ZPFX` to `./configure`, to set the installation directory. |
+| `atpull'%atclone'` | As above. |
+| `make` | As above, but also run the `install` target. |
+| `pick'src/vim'` | as above, but for different path `$ZPFX/bin/vim`. |
 
-| Syntax             | Description                                                                                  |
-| ------------------ | :------------------------------------------------------------------------------------------- |
-| `as'program'`      | As above.                                                                                    |
-| `atclone'…'`       | As above **plus** pass `--prefix=$ZPFX` to `./configure`, to set the installation directory. |
-| `atpull'%atclone'` | As above.                                                                                    |
-| `make`             |  As above, but also run the `install` target.                                                |
-| `pick'src/vim'`    | as above, but for different path (`$ZPFX/bin/vim`).                                          |
-
-</APITable>
+[1]: /docs/ecosystem/annexes
+[2]: /docs/ecosystem/annexes/rust
+[3]: /docs/ecosystem/annexes/meta-plugins
+[4]: /docs/ecosystem/packages/packages-overview
+[5]: https://github.com/z-shell/zi/issues/new/choose
+[6]: https://github.com/z-shell/zi/discussions/categories/ideas
+[7]: /docs/getting_started/overview#turbo-mode-zsh--53
+[8]: /docs/guides/syntax#the-for-syntax
+[9]: https://github.com/z-shell/F-Sy-H
+[10]: https://github.com/zsh-users/zsh-syntax-highlighting
+[11]: https://github.com/trapd00r/LS_COLORS
+[12]: https://github.com/ogham/exa
+[13]: /docs/guides/ice-modifiers
+[14]: /search?q=exclamation+mark
+[15]: https://github.com/direnv/direnv
+[16]: https://github.com/direnv/direnv/releases/
+[17]: /search/?q=GH-R
+[18]: /docs/guides/customization#$ZPFX

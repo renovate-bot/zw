@@ -1,8 +1,9 @@
 ---
 name: 📊 Lighthouse Report
 on:
-  pull_request_target:
-    branches: [main]
+  workflow_dispatch:
+#  pull_request_target:
+#    branches: [main]
 
 jobs:
   lighthouse-report:
@@ -51,7 +52,7 @@ jobs:
                 ' ',
                 `*Lighthouse ran on [${Object.keys(links)[0]}](${Object.keys(links)[0]})*`
             ].join('\n')
-             core.setOutput("comment", comment);
+            core.setOutput("comment", comment);
       - name: 📥 Add Lighthouse stats as comment
         id: comment_to_pr
         uses: marocchino/sticky-pull-request-comment@v2.2.0

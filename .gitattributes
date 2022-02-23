@@ -31,3 +31,5 @@
 # Yarn 3
 /.yarn/releases/** binary
 /.yarn/plugins/** binary
+/.yarn/cache/** binary
+/pnpm/** binary

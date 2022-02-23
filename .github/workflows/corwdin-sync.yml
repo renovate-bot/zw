@@ -1,0 +1,24 @@
+---
+name: '🌐 Crowdin'
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['i18n/**', 'docs/**', 'community/**']
+
+jobs:
+  sync-crowdin:
+    runs-on: ubuntu-latest
+    steps:
+      - name: '⤵️ Check out code from GitHub'
+        uses: actions/checkout@v2
+      - name: '🚀 Run Crowdin action'
+        uses: crowdin/github-action@1.4.7
+        with:
+          upload_translations: true
+          download_translations: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROJECT_ID: ${{ secrets.PROJECT_ID }}
+          ZI_CROWDIN_TOKEN: ${{ secrets.ZI_CROWDIN_TOKEN }}

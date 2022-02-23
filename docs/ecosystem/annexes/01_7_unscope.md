@@ -1,8 +1,9 @@
 ---
 id: unscope
 title: 💠 Unscope
+image: zw/logo/320x320.png
 description: Annex - Unscope documentation
-keywords: [annex, unscope, zsh, z-shell, zi]
+keywords: [annex, unscope]
 ---
 
 import APITable from '@site/src/components/APITable';

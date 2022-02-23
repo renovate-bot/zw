@@ -1,12 +1,12 @@
 ---
 id: ice
 title: 🧊 Ice Syntax
-image: /img/logo/zi/png/ice-239x200.png
+image: zw/img/ice-239x200.png
 description: Ice syntax documentation
 keywords: [ice, syntax, zsh, z-shell, zi]
 ---
 
-import Image from '@theme/IdealImage'; import APITable from '@site/src/components/APITable'; import ZIceImg from '@site/static//img/logo/zi/png/ice-239x200.png';
+import Image from '@theme/IdealImage'; import APITable from '@site/src/components/APITable'; import ZIceImg from '@site/static/zw/img/ice-239x200.png';
 
 <div align="right">
 
@@ -486,12 +486,12 @@ Their role is to **receive a portion of Zsh code and execute it in certain momen
 
 <APITable>
 
-|    Syntax    | Execution moment                                                |
-| :----------: | :-------------------------------------------------------------- |
+| Syntax | Execution moment |
+| :-: | :-- |
 | `atclone'…'` | **after cloning** the associated plugin or snippet to the disk. |
-| `atpull'…'`  | **after updating** the associated plugin or snippet.            |
-| `atinit'…'`  | **before loading** of the associated plugin or snippet.         |
-| `atload'…'`  | **after loading** of the associated plugin or snippet.          |
+| `atpull'…'` | **after updating** the associated plugin or snippet. |
+| `atinit'…'` | **before loading** of the associated plugin or snippet. |
+| `atload'…'` | **after loading** of the associated plugin or snippet. |
 
 </APITable>
 

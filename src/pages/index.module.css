@@ -12,29 +12,13 @@
 
 @media screen and (max-width: 966px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 1.6rem;
   }
-}
-
-.heroLogo {
-  max-width: 100%;
-  max-height: 240px;
 }
 
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
-}
-
-.featureSvg {
-  height: 200px;
-  width: 200px;
+  margin-top: 1rem;
 }

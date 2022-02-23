@@ -1,8 +1,9 @@
 ---
 id: test
 title: 💠 Test
+image: zw/logo/320x320.png
 description: Annex - Test documentation
-keywords: [annex, test, zsh, z-shell, zi]
+keywords: [annex, test, zsh]
 ---
 
 [Test](https://github.com/z-shell/z-a-test) annex runs tests (via `make test`, for example) – if it finds any of them – after installing and updating a plugin or snippet. Simply load it like any other plugin to make it active:

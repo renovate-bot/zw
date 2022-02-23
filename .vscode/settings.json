@@ -1,3 +1,13 @@
 {
-  "conventionalCommits.scopes": ["ecosystem", "workspace", "general", "gallery", "i18n", "optimization", "UI"]
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.markdownlint": true
+  },
+  "markdownlint.config": {
+    "MD033": false
+  },
+  "markdownlint.ignore": ["ignored.md"]
 }
