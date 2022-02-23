@@ -29,7 +29,7 @@ jobs:
           cache: 'pnpm'
       - name: '♻️ Deployment [ build ]'
         run: pnpm build
-      - name: 🚀 Deploy GH Pages
+      - name: '🚀 Deploy GH Pages'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -37,3 +37,5 @@ jobs:
           publish_dir: ./build
           user_name: digital-teams[bot]
           user_email: digital-teams@pm.me
+      - name: '🚀 Deploy to Cloudflare'
+        run: curl -X POST "${{ secrets.CF_WEBHOOK }}"
