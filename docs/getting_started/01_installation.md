@@ -1,7 +1,7 @@
 ---
 title: Installation
 sidebar_position: 1
-image: zw/logo/501x501.png
+image: zw/logo/320x320.png
 description: Installation Guide
 keywords: [installation, setup]
 ---
@@ -10,7 +10,11 @@ keywords: [installation, setup]
 
 [![⚙️ Install Library][1]][2]
 
-| Host | URL | | [Git.io][3]: |<https://git.io/get-zi>| | [GitHub][4]: |<https://z-shell.pages.dev/i-hub>| | [GitLab Mirror][5]: |<https://z-shell.pages.dev/i-lab>| | [Direct][6]: |<https://raw.githubusercontent.com/z-shell/zi-src/main/lib/sh/install.sh>|
+| Host | URL | 
+| [Git.io][3]: | <https://git.io/get-zi> | 
+| [GitHub][4]: | <https://z-shell.pages.dev/i-hub> | 
+| [GitLab Mirror][5]: |<https://z-shell.pages.dev/i-lab> | 
+| [Direct][6]: | <https://raw.githubusercontent.com/z-shell/zi-src/main/lib/sh/install.sh> |
 
 > - Please report an [issue][7] if you have any problems installing.
 

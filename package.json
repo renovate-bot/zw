@@ -15,8 +15,6 @@
   "homepage": "https://github.com/z-shell",
   "scripts": {
     "docusaurus": "docusaurus",
-    "get:pnpm": "curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm",
-    "set:pnpm": "pnpm i && pnpm build",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "build:en": "docusaurus build --locale en",
