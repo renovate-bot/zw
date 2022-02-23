@@ -10,7 +10,7 @@ const config = {
   url: 'https://z.digitalclouds.dev',
   baseUrl: '/',
   titleDelimiter: '|',
-  trailingSlash: true,
+  trailingSlash: false,
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'ignore',
   favicon: 'zw/favicon.ico',
