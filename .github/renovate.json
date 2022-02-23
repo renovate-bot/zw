@@ -1,4 +1,5 @@
 {
+  "gitAuthor": ["digital-teams@pm.me"],
   "extends": ["config:base"],
   "lockFileMaintenance": {
     "enabled": true
