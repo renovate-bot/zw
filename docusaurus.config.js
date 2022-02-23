@@ -19,7 +19,7 @@ const config = {
 	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/favicon.svg',
 	staticDirectories: ['static'],
-	themes: ['live-codeblock', '@saucelabs/theme-github-codeblock'],
+	themes: [],
 	plugins: [
 		[
 			/** @type {import("@docusaurus/plugin-content-docs").ContentDocsPluginOptions} */
