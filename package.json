@@ -1,16 +1,16 @@
 {
-  "name": "wiki",
+  "name": "zw",
   "version": "1.0.0",
   "private": true,
   "description": "ZI & Zsh Wiki",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/z-shell/wiki.git"
+    "url": "git+https://github.com/z-shell/zw.git"
   },
   "author": "Salvydas Lukosius",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/z-shell/wiki/issues"
+    "url": "https://github.com/z-shell/zw/issues"
   },
   "homepage": "https://github.com/z-shell",
   "scripts": {
