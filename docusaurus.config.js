@@ -10,7 +10,7 @@ const config = {
   url: 'https://z.digitalclouds.dev',
   baseUrl: '/',
   titleDelimiter: '|',
-  trailingSlash: true,
+  trailingSlash: false,
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'ignore',
   favicon: 'zw/favicon.ico',
@@ -255,7 +255,7 @@ const config = {
             position: 'right',
             dropdownItemsAfter: [
               {
-                href: 'https://digitalclouds.crowdin.com/',
+                href: 'https://digitalclouds.crowdin.com/z-shell',
                 label: 'Help Us Translate',
               },
             ],
@@ -311,6 +311,10 @@ const config = {
               {
                 label: 'GitHub',
                 href: 'https://github.com/z-shell/',
+              },
+              {
+                label: 'Crowdin',
+                href: 'https://digitalclouds.crowdin.com/z-shell',
               },
               {
                 label: 'Blog',

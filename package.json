@@ -16,7 +16,9 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
+    "prebuild": "test \"$CI\" = true && npx pnpm install -r --store=node_modules/.pnpm-store || echo skipping pnpm install",
     "build": "docusaurus build",
+    "build:cf": "npx pnpm i --store=node_modules/.pnpm-store && npm run build",
     "build:en": "docusaurus build --locale en",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
@@ -39,6 +41,7 @@
     "@docusaurus/plugin-ideal-image": "2.0.0-beta.15",
     "@docusaurus/plugin-pwa": "2.0.0-beta.15",
     "@docusaurus/preset-classic": "2.0.0-beta.15",
+    "@docusaurus/theme-classic": "^2.0.0-beta.15",
     "@docusaurus/theme-live-codeblock": "2.0.0-beta.15",
     "@mdx-js/react": "1.6.22",
     "clsx": "1.1.1",
@@ -67,7 +70,7 @@
     "@types/jest": "27.4.0",
     "@types/react": "17.0.0",
     "prettier": "2.5.1",
-    "prop-types": "15",
+    "prop-types": "^15.8.1",
     "stylelint": "14.5.2",
     "stylelint-config-prettier": "9.0.3",
     "stylelint-config-standard": "25.0.0",
@@ -90,6 +93,5 @@
     "@babel/core": "7.13.0",
     "prop-types": "15",
     "webpack": "5.0.0"
-  },
-  "packageManager": "pnpm@6.32.1"
+  }
 }

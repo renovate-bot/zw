@@ -7,7 +7,13 @@
     "source.fixAll.markdownlint": true
   },
   "markdownlint.config": {
-    "MD033": false
+    "MD033": false,
+    "MD029": false
   },
-  "markdownlint.ignore": ["ignored.md"]
+  "markdownlint.ignore": [
+    "ignored.md"
+  ],
+  "conventionalCommits.scopes": [
+    "workspace"
+  ]
 }

@@ -1,0 +1,54 @@
+{
+  "projectName": "zw",
+  "projectOwner": "z-shell",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "docs/introduction.md",
+    ".github/README.md"
+  ],
+  "imageSize": 80,
+  "commit": false,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "lunarxlark",
+      "name": "lunarxlark",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18758150?v=4",
+      "profile": "https://github.com/lunarxlark",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "the-ryujin",
+      "name": "竜神信仰",
+      "avatar_url": "https://avatars.githubusercontent.com/u/98503588?v=4",
+      "profile": "https://github.com/the-ryujin",
+      "contributions": [
+        "maintenance"
+      ]
+    },
+    {
+      "login": "wicoop",
+      "name": "William Cooper",
+      "avatar_url": "https://avatars.githubusercontent.com/u/60315017?v=4",
+      "profile": "https://github.com/wicoop",
+      "contributions": [
+        "maintenance",
+        "security"
+      ]
+    },
+    {
+      "login": "borley1211",
+      "name": "Borley",
+      "avatar_url": "https://avatars.githubusercontent.com/u/47778507?v=4",
+      "profile": "https://github.com/borley1211",
+      "contributions": [
+        "translation"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true
+}

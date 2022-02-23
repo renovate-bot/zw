@@ -4,11 +4,11 @@
     "timings": [
       {
         "metric": "interactive",
-        "budget": 8000
+        "budget": 10000
       },
       {
         "metric": "first-meaningful-paint",
-        "budget": 6000
+        "budget": 10000
       }
     ],
     "resourceSizes": [
@@ -39,15 +39,6 @@
   },
   {
     "path": "/docs",
-    "resourceSizes": [
-      {
-        "resourceType": "total",
-        "budget": 300
-      }
-    ]
-  },
-  {
-    "path": "/zsh-docs",
     "resourceSizes": [
       {
         "resourceType": "total",
