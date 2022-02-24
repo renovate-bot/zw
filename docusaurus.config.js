@@ -7,7 +7,7 @@ const TwitterSvg =
 const config = {
   title: '❮ ZI ❯',
   tagline: 'A Swiss Army Knife for Zsh Unix shell',
-  url: 'https://z.digitalclouds.dev',
+  url: 'https://z-shell.pages.dev',
   baseUrl: '/',
   titleDelimiter: '|',
   trailingSlash: false,
