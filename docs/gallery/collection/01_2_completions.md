@@ -13,7 +13,7 @@ Related:
 2. [Calling compinit without turbo mode](../../guides/commands#calling-compinit-without-turbo-mode)
 3. [Calling compinit with turbo mode](../../guides/commands#calling-compinit-with-turbo-mode)
 4. [Ice modifiers/completions](../../guides/ice-modifiers#completions)
-5. [Ice: `src''`, `pick''`, `multisrc''`](../../guides/ice#src-pick-multisrc)
+5. [Ice: `src'…'`, `pick'…'`, `multisrc'…'`](../../guides/ice#src-pick-multisrc)
 
 :::
 
@@ -26,29 +26,29 @@ Create your own syntax e.g:
 
 ```shell
 z_lucid() {
-zi ice lucid ver'master' "$@"
+  zi ice lucid ver'master' "$@"
 }
 
 zi0a() {
-z_lucid wait'0a' "$@"
+  z_lucid wait'0a' "$@"
 }
 
 zi_completion() {
-zi0a as'completion' blockf "$@"
+  zi0a as'completion' blockf "$@"
 }
 ```
 
 Then load as:
 
 ```shell
-zi_completion has'...'
-zi snippet ...
+zi_completion has'…'
+zi snippet …
 
-zi_completion has'...' pick'...' from'...'
-zi light ...
+zi_completion has'…' pick'…' from'…'
+zi light …
 
-zi_completion has'...'
-zi snippet ...
+zi_completion has'…'
+zi snippet …
 ```
 
 :::
