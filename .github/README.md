@@ -90,18 +90,16 @@ Do not modify files under in the repository as it will conflict and will be over
 ### Installation
 
 ```shell
-yarn
+pnpm i
 ```
 
 ### Local Development
 
-For all available commands please see: [docusaurus cli commands](https://docusaurus.io/docs/cli#docusaurus-cli-commands)
-
 ```shell
-yarn start
+pnpm start
 
 # Specify available locale
-yarn start --locale ja
+pnpm exec docusaurus start --locale ja
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
@@ -109,13 +107,13 @@ This command starts a local development server and opens up a browser window. Mo
 ### Build
 
 ```shell
-yarn build
+pnpm build
 ```
 
 ### Serve built directory
 
 ```shell
-yarn serve
+pnpm serve
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
