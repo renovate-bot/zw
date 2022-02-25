@@ -45,14 +45,14 @@ zi_program() {
 Then load as:
 
 ```shell
-zi_program has'...'
-zi light ...
+zi_program has'…'
+zi light …
 
-zi_program has'...' pick'...' from'...'
-zi light ...
+zi_program has'…' pick'…' from'…'
+zi light …
 
-zi_program has'...'
-zi light ...
+zi_program has'…'
+zi light …
 ```
 
 :::
