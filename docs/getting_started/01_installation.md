@@ -6,7 +6,7 @@ description: Installation Guide
 keywords: [installation, setup]
 ---
 
-:::info Available installer links
+## Available installer links
 
 [![⚙️ Install Library][1]][2] | [Status page: :heavy_check_mark:](https://digitalclouds.dev/status)
 
@@ -19,8 +19,6 @@ keywords: [installation, setup]
 
 - Please report an [issue][7] if you have any problems installing.
 - Help us [translate](https://digitalclouds.crowdin.com/z-shell).
-
-:::
 
 ## Quick installation
 
