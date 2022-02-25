@@ -3,9 +3,9 @@ name: '🌐 Crowdin'
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: ['i18n/**', 'docs/**', 'community/**']
+#  push:
+#    branches: [main]
+#    paths: ['i18n/**', 'docs/**', 'community/**']
 
 jobs:
   sync-crowdin:
