@@ -34,9 +34,9 @@ They are [extensions](https://github.com/z-shell/zannexes) which increase functi
 
 ### Required for default functionality: {#required-for-default-functionality}
 
-1. [bin-gem-node](https://github.com/z-shell/z-a-bin-gem-node)
-2. [readurl](https://github.com/z-shell/z-a-readurl)
-3. [patch-dl](https://github.com/z-shell/z-a-patch-dl)
+1. [z-a-bin-gem-node](https://github.com/z-shell/z-a-bin-gem-node)
+2. [z-a-readurl](https://github.com/z-shell/z-a-readurl)
+3. [z-a-patch-dl](https://github.com/z-shell/z-a-patch-dl)
 4. [z-a-rust](https://github.com/z-shell/z-a-rust)
 
 ### Recommeded for additional functionality: {#recommeded-for-additional-functionality}
