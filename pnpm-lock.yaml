@@ -18,7 +18,7 @@ specifiers:
   '@docusaurus/theme-live-codeblock': 2.0.0-beta.15
   '@mdx-js/react': 1.6.22
   '@tsconfig/docusaurus': 1.0.4
-  '@types/jest': 27.4.0
+  '@types/jest': 27.4.1
   '@types/react': 17.0.0
   clsx: 1.1.1
   prettier: 2.5.1
@@ -54,7 +54,7 @@ devDependencies:
   '@babel/core': 7.13.0
   '@docusaurus/module-type-aliases': 2.0.0-beta.16_react-dom@17.0.2+react@17.0.2
   '@tsconfig/docusaurus': 1.0.4
-  '@types/jest': 27.4.0
+  '@types/jest': 27.4.1
   '@types/react': 17.0.0
   prettier: 2.5.1
   prop-types: 15.8.1
@@ -4411,10 +4411,10 @@ packages:
       '@types/node': 17.0.21
     dev: false
 
-  /@types/jest/27.4.0:
-    resolution: {integrity: sha512-gHl8XuC1RZ8H2j5sHv/JqsaxXkDDM9iDOgu0Wp8sjs4u/snb2PVehyWXJPr+ORA0RPpgw231mnutWI1+0hgjIQ==}
+  /@types/jest/27.4.1:
+    resolution: {integrity: sha512-23iPJADSmicDVrWk+HT58LMJtzLAnB2AgIzplQuq/bSrGaxCrlvRFjGbXmamnnk/mAmCdLStiGqggu28ocUyiw==}
     dependencies:
-      jest-diff: 27.5.1
+      jest-matcher-utils: 27.5.1
       pretty-format: 27.5.1
     dev: true
 
@@ -7903,6 +7903,16 @@ packages:
   /jest-get-type/27.5.1:
     resolution: {integrity: sha512-2KY95ksYSaK7DMBWQn6dQz3kqAf3BB64y2udeG+hv4KfSOb9qwcYQstTJc1KCbsix+wLZWZYN8t7nwX3GOBLRw==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
+    dev: true
+
+  /jest-matcher-utils/27.5.1:
+    resolution: {integrity: sha512-z2uTx/T6LBaCoNWNFWwChLBKYxTMcGBRjAt+2SbP929/Fflb9aa5LGma654Rz8z9HLxsrUaYzxE9T/EFIL/PAw==}
+    engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
+    dependencies:
+      chalk: 4.1.2
+      jest-diff: 27.5.1
+      jest-get-type: 27.5.1
+      pretty-format: 27.5.1
     dev: true
 
   /jest-worker/26.6.2:
