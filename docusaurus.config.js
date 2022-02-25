@@ -18,8 +18,8 @@ const config = {
   organizationName: 'z-shell',
   staticDirectories: ['static'],
   plugins: [
-    '@docusaurus/theme-live-codeblock',
     /**    [
+      '@docusaurus/theme-live-codeblock',
       "@docusaurus/plugin-client-redirects",
       {
         fromExtensions: ["html", "htm"],
@@ -238,7 +238,7 @@ const config = {
         title: '❮ ZI ❯',
         logo: {
           alt: '❮ ZI ❯ Logo',
-          src: 'zw/logo.svg',
+          src: '/zw/logo.svg',
           width: 32,
           height: 32,
         },
@@ -283,7 +283,7 @@ const config = {
                 to: '/docs/intro',
               },
               {
-                label: 'Commuinity',
+                label: 'Community',
                 to: '/community/intro',
               },
             ],
