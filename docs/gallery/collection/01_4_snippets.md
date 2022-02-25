@@ -14,7 +14,7 @@ Related:
 
 :::
 
-### SC: [OMZL](https://github.com/ohmyzsh/ohmyzsh/tree/master/lib)
+### SC: [OMZ::lib](https://github.com/ohmyzsh/ohmyzsh/tree/master/lib)
 
 ```shell
 zi ice svn pick"completion.zsh" src"git.zsh"
@@ -27,7 +27,7 @@ zi ice svn pick"completion.zsh" multisrc'git.zsh \
 zi snippet OMZ::lib
 ```
 
-### SC: [OMZP/osx](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/osx)
+### SC: [OMZ::plugin/osx](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/osx)
 
 ```shell
 zi ice svn
