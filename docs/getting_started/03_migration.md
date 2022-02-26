@@ -185,7 +185,7 @@ To use **themes** created for Oh-My-Zsh, it requires loading shown below as it w
 If any of above not in order or missing, the theme will break similar as shown below:
 
 ```shell
-... $(build_prompt) ...
+… $(build_prompt) …
 ```
 
 If the `Git` library not loaded or loaded in wrong order, then it may appear similar to the following:
@@ -414,7 +414,7 @@ For the `location`: refer [selection of files][17]
 - `from` => `from`
 - `at` => `ver`
 - `rename-to` => `mv`, `cp`
-- `dir` => Selection(`pick`, ...) with rename
+- `dir` => Selection(`pick`, …) with rename
 - `if` => `if`
 - `hook-build` => `atclone`, `atpull`
 - `hook-load` => `atload`
@@ -431,7 +431,7 @@ For the `location`: refer [selection of files][17]
 [5]: https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/osx
 [6]: https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/docker
 [7]: https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/fd
-[8]: ../guides/customization#oh-my-zsh
+[8]: /docs/guides/customization#oh-my-zsh
 [9]: https://github.com/sorin-ionescu/prezto/tree/master/modules/environment
 [10]: https://github.com/sorin-ionescu/prezto/tree/master/modules/terminal
 [11]: https://github.com/sorin-ionescu/prezto/tree/master/modules/docker
@@ -440,4 +440,4 @@ For the `location`: refer [selection of files][17]
 [14]: https://github.com/sorin-ionescu/prezto/tree/master/modules/completion
 [15]: http://zsh.sourceforge.net/Doc/Release/Zsh-Modules.html#The-zsh_002fzutil-Module
 [16]: https://unix.stackexchange.com/questions/214657/what-does-zstyle-do
-[17]: ../guides/ice#src-pick-multisrc
+[17]: /docs/guides/ice#src-pick-multisrc
