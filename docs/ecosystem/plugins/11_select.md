@@ -8,7 +8,7 @@ keywords: [zsh-plugin, zsh-select]
 
 import Image from '@theme/IdealImage'; import Asciinema1 from '@site/static/img/asciinema/48490.png';
 
-Repository: [zsh-select](https://github.com/z-shell/zsh-select)
+- [z-shell/zsh-select](https://github.com/z-shell/zsh-select)
 
 A shell command that will display selection list. It is similar to `selecta`, but uses curses library to do display, and when compared to `fzf`, the main difference is approximate matching instead of fuzzy matching.
 
@@ -24,7 +24,7 @@ Pressing `o` will make elements uniqe. To search again after pressing enter, pre
 
 :::tip
 
-You can resize the video by pressing `Ctrl-+` or `Cmd-+`.
+You can resize the video by pressing <kbd>Ctrl-+</kbd> or <kbd>CtrlCmd-+</kbd>.
 
 :::
 
