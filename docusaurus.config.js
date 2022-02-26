@@ -121,10 +121,6 @@ const config = {
             } /* If locale NOT en (English), then redirect to translation files (Crowdin) */
             return `https://github.com/z-shell/zw/edit/main/${versionDocsDirPath}/${docPath}`;
           },
-          /*remarkPlugins: [],*/
-          /*rehypePlugins: [],*/
-          /*beforeDefaultRemarkPlugins: [],*/
-          /*beforeDefaultRehypePlugins: [],*/
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           disableVersioning: false,
@@ -141,10 +137,6 @@ const config = {
         },
         pages: {
           /* https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-pages#configuration */
-          /*remarkPlugins: [],*/
-          /*rehypePlugins: [],*/
-          /*beforeDefaultRemarkPlugins: [],*/
-          /*beforeDefaultRehypePlugins: [],*/
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -176,16 +168,9 @@ const config = {
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: false,
-        respectPrefersColorScheme: false,
+        respectPrefersColorScheme: true,
         switchConfig: {
           darkIcon: '🌙',
-          darkIconStyle: {
-            marginLeft: '2px',
-          },
-          lightIcon: '\u{1F602}',
-          lightIconStyle: {
-            marginLeft: '1px',
-          },
         },
       },
       algolia: {
