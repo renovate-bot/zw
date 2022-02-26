@@ -1,14 +1,14 @@
 ---
 id: ice-modifiers
 title: 🧊 Ice Modifiers
-image: /img/logo.png
+image: zw/logo/320x320.png
 description: Documentation for the ice Modifiers
 keywords: [ice-modifiers, zsh, z-shell, zi]
 ---
 
 import APITable from '@site/src/components/APITable';
 
-Following ice modifiers are to be [passed](#alternate-syntax) to `zi ice...` to obtain described effects. The word `ice` means something that's added (like ice to a drink) – and in ZI it means adding a modifier to a next `zi` command, and also something that's temporary because it melts – and this means that the modification will last only for a **single** next `zi` command.
+Following ice modifiers are to be [passed](#alternate-syntax) to `zi ice …` to obtain described effects. The word `ice` means something that's added (like ice to a drink) – and in ZI it means adding a modifier to a next `zi` command, and also something that's temporary because it melts – and this means that the modification will last only for a **single** next `zi` command.
 
 Some Ice-modifiers are highlighted and clicking on them will take you to the appropriate Wiki page for an extended explanation.
 
@@ -21,7 +21,7 @@ You may safely assume given ice works with both plugins and snippets unless expl
 | Modifier | Description |
 | :-: | --- |
 | `proto` | Change protocol to `git`,`ftp`,`ftps`,`ssh`, `rsync`, etc. Default is `https`. **Does not work with snippets.** |
-| [`from`](ice#from) | Clone plugin from given site. Supported are `from"github"` (default), `..."github-rel"`, `..."gitlab"`, `..."bitbucket"`, `..."notabug"` (short names: `gh`, `gh-r`, `gl`, `bb`, `nb`). Can also be a full domain name (e.g. for GitHub enterprise). **Does not work with snippets.** |
+| [`from`](ice#from) | Clone plugin from given site. Supported are `from"github"` (default), `…"github-rel"`, `…"gitlab"`, `…"bitbucket"`, `…"notabug"` (short names: `gh`, `gh-r`, `gl`, `bb`, `nb`). Can also be a full domain name (e.g. for GitHub enterprise). **Does not work with snippets.** |
 | `ver` | Used with `from"gh-r"` (i.e. downloading a binary release, e.g. for use with `as"program"`) – selects which version to download. Default is latest, can also be explicitly `ver"latest"`. Works also with regular plugins, checkouts e.g. `ver"abranch"`, i.e. a specific version. **Does not work with snippets.** |
 | `bpick` | Used to select which release from GitHub Releases to download, e.g. `zi ice from"gh-r" as"program" bpick"*Darwin*"; zi load docker/compose`. **Does not work with snippets.** |
 | `depth` | Pass `--depth` to `git`, i.e. limit how much of history to download. **Does not work with snippets.** |
@@ -49,12 +49,12 @@ You may safely assume given ice works with both plugins and snippets unless expl
 
 | Modifier | Description |
 | :-: | --- |
-| [`wait`][2] | Postpone loading a plugin or snippet. For `wait'1'`, loading is done `1` second after prompt. For `wait'[[ ... ]]'`, `wait'(( ... ))'`, loading is done when given condition is meet. For `wait'!...'`, prompt is reset after load. Zsh can start 80% (i.e.: 5x) faster thanks to postponed loading. **Fact:** when `wait` is used without value, it works as `wait'0'`. |
+| [`wait`][2] | Postpone loading a plugin or snippet. For `wait'1'`, loading is done `1` second after prompt. For `wait'[[ … ]]'`, `wait'(( … ))'`, loading is done when given condition is meet. For `wait'!…'`, prompt is reset after load. Zsh can start 80% (i.e.: 5x) faster thanks to postponed loading. **Fact:** when `wait` is used without value, it works as `wait'0'`. |
 | [`load`][3] | A condition to check which should cause plugin to load. It will load once, the condition can be still true, but will not trigger second load (unless plugin is unloaded earlier, see `unload` below). E.g.: `load'[[ $PWD = */github* ]]'`. |
 | [`unload`][3] | A condition to check causing plugin to unload. It will unload once, then only if loaded again. E.g.: `unload'[[ $PWD != */github* ]]'`. |
 | `cloneonly` | Don't load the plugin / snippet, only download it |
-| `if` | Load plugin or snippet only when given condition is fulfilled, for example: `zi ice if'[[ -n "$commands[otool]" ]]'; zi load ...` or `zi ice if'[[ $OSTYPE = darwin* ]]'; zi load ...` |
-| `has` | Load plugin or snippet only when given command is available (in \$PATH), e.g. `zi ice has'git' ...` |
+| `if` | Load plugin or snippet only when given condition is fulfilled, for example: `zi ice if'[[ -n "$commands[otool]" ]]'; zi load …` or `zi ice if'[[ $OSTYPE = darwin* ]]'; zi load …` |
+| `has` | Load plugin or snippet only when given command is available (in \$PATH), e.g. `zi ice has'git' …` |
 | `subscribe` / `on-update-of` | Postpone loading of a plugin or snippet until the given file(s) get updated, e.g. `subscribe'{~/files-*,/tmp/files-*}'` |
 | `trigger-load` | Creates a function that loads the associated plugin/snippet, with an option (to use it, precede the ice content with `!`) to automatically forward the call afterwards, to a command of the same name as the function. Can obtain multiple functions to create – sparate with `;`. |
 
@@ -66,8 +66,8 @@ You may safely assume given ice works with both plugins and snippets unless expl
 
 | Modifier | Description |
 | :-: | --- |
-| `silent` | Mute plugin's or snippet's `stderr` & `stdout`. Also skip `Loaded ...` message under prompt for `wait`, etc. loaded plugins, and completion-installation messages. |
-| `lucid` | Skip `Loaded ...` message under prompt for `wait`, etc. loaded plugins (a subset of `silent`). |
+| `silent` | Mute plugin's or snippet's `stderr` & `stdout`. Also skip `Loaded …` message under prompt for `wait`, etc. loaded plugins, and completion-installation messages. |
+| `lucid` | Skip `Loaded …` message under prompt for `wait`, etc. loaded plugins (a subset of `silent`). |
 | `notify` | Output given message under-prompt after successfully loading a plugin/snippet. In case of problems with the loading, output a warning message and the return code. If starts with `!` it will then always output the given message. Hint: if the message is empty, then it will just notify about problems. |
 
 </APITable>
@@ -124,12 +124,12 @@ You may safely assume given ice works with both plugins and snippets unless expl
 | :-: | --- |
 | `as` | Can be `as"program"` (also the alias: `as"command"`), and will cause to add script/program to `$PATH` instead of sourcing (see `pick`). Can also be `as"completion"` – use with plugins or snippets in whose only underscore-starting `_*` files you are interested in. The third possible value is `as"null"` – a shorthand for `pick"/dev/null" nocompletions` – i.e.: it disables the default script-file sourcing and also the installation of completions. |
 | [`id-as`][6] | Nickname a plugin or snippet, to e.g. create a short handler for long-url snippet. |
-| `compile` | Pattern (+ possible `{...}` expansion, like `{a/*,b*}`) to select additional files to compile, e.g. `compile"(pure\|async).zsh"` for `sindresorhus/pure`. |
+| `compile` | Pattern (+ possible `{…}` expansion, like `{a/*,b*}`) to select additional files to compile, e.g. `compile"(pure\|async).zsh"` for `sindresorhus/pure`. |
 | `nocompile` | Don't try to compile `pick`-pointed files. If passed the exclamation mark (i.e. `nocompile'!'`), then do compile, but after `make'…'` and `atclone'…'` (useful if Makefile installs some scripts, to point `pick'…'` at the location of their installation). |
 | `service` | Make following plugin or snippet a _service_, which will be ran in background, and only in single Zshell instance. See [#zservice][7] topic. |
 | `reset-prompt` | Reset the prompt after loading the plugin/snippet (by issuing `zle .reset-prompt`). Note: normally it's sufficient to precede the value of `wait'…'` ice with `!`. |
 | [`bindmap`][8] | To hold `;`-separated strings like `Key(s)A -> Key(s)B`, e.g. `^R -> ^T; ^A -> ^B`. In general, `bindmap'…'`changes bindings (done with the `bindkey` builtin) the plugin does. The example would cause the plugin to map Ctrl-T instead of Ctrl-R, and Ctrl-B instead of Ctrl-A. **Does not work with snippets.** |
-| [`trackbinds`][8] | Shadow but only `bindkey` calls even with `zi light ...`, i.e. even with investigating disabled (fast loading), to allow `bindmap` to remap the key-binds. The same effect has `zi light -b ...`, i.e. additional `-b` option to the `light`-subcommand. **Does not work with snippets.** |
+| [`trackbinds`][8] | Shadow but only `bindkey` calls even with `zi light …`, i.e. even with investigating disabled (fast loading), to allow `bindmap` to remap the key-binds. The same effect has `zi light -b …`, i.e. additional `-b` option to the `light`-subcommand. **Does not work with snippets.** |
 | [`wrap-track`][9] | Takes a `;`-separated list of function names that are to be investigated (meaning gathering report and unload data) **once** during execution. It works by wrapping the functions with a investigating-enabling and disabling snippet of code. In summary, `wrap-track` allows to extend the investigating beyond the moment of loading of a plugin. Example use is to `wrap-track` a precmd function of a prompt (like `_p9k_precmd()` of powerlevel10k) or other plugin that _postpones its initialization till the first prompt_ (like e.g.: zsh-autosuggestions). **Does not work with snippets.** |
 | `aliases` | Load the plugin with the aliases mechanism enabled. Use with plugins that define **and use** aliases in their scripts. |
 | `light-mode` | Load the plugin without the investigating, i.e.: as if it would be loaded with the `light` command. Useful for the for-syntax, where there is no `load` nor `light` subcommand |
@@ -194,7 +194,7 @@ It's up to the user which syntax to choose. The original motivation behind the s
 
 [1]: ice#src-pick-multisrc
 [2]: ice#wait
-[3]: ../guides/customization#multiple-prompts
+[3]: /docs/guides/customization#multiple-prompts
 [4]: ice#atclone-atpull-atinit-atload
 [5]: syntax#the-make-syntax
 [6]: ice#id-as
