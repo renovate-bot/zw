@@ -8,9 +8,9 @@ keywords: [zsh-theme, prompt, zsh]
 
 import Image from '@theme/IdealImage'; import Asciinema1 from '@site/static/img/asciinema/48122.png';
 
-Zsh themes (prompts) that use original Zsh theming subsystem. To use first load the plugin with (or use a plugin manager):
+- [z-shell/zprompts][1]
 
-Repository: [z-shell/zprompts][1]
+Zsh themes (prompts) that use original Zsh theming subsystem. To use first load the plugin with (or use a plugin manager):
 
 ```shell
 source {where-zprompts-is}/zprompts.plugin.zsh
