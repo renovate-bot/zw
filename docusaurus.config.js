@@ -154,7 +154,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // https://docusaurus.io/docs/api/configuration/themeConfig
       announcementBar: {
         id: 'announcemnt',
         content: `If you like ❮ ZI ❯, give it a ⭐️ on <a target="_blank" rel="noopener noreferrer" href="https://github.com/z-shell/zi">GitHub</a> and follow us on <a target="_blank" rel="noopener noreferrer" className='TwitterSvg' href="https://twitter.com/zshell_zi" >Twitter</a> ${TwitterSvg}`,
