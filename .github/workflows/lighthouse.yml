@@ -1,9 +1,11 @@
 ---
-name: 📊 Lighthouse Report
+name: '📊 Lighthouse Report'
+
 on:
-  workflow_dispatch:
   pull_request_target:
     branches: [main]
+    paths-ignore:
+      - 'docs/**'
 
 jobs:
   lighthouse-report:
@@ -11,13 +13,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: 💤 Wait for the Netlify Preview
+      - name: '💤 Wait for the Netlify Preview'
         uses: jakepartusch/wait-for-netlify-action@v1
         id: netlify
         with:
           site_name: ziw
           max_timeout: 600
-      - name: ☑️ Audit URLs using Lighthouse
+      - name: '☑️ Audit URLs using Lighthouse'
         id: lighthouse_audit
         uses: treosh/lighthouse-ci-action@9.3.0
         with:
@@ -29,7 +31,7 @@ jobs:
           temporaryPublicStorage: true
         env:
           PR_NUMBER: ${{ github.event.pull_request.number}}
-      - name: ♻️ Format lighthouse score
+      - name: '♻️ Format lighthouse score'
         id: format_lighthouse_score
         uses: actions/github-script@v6
         with:
@@ -53,7 +55,7 @@ jobs:
                 `*Lighthouse ran on [${Object.keys(links)[0]}](${Object.keys(links)[0]})*`
             ].join('\n')
             core.setOutput("comment", comment);
-      - name: 📥 Add Lighthouse stats as comment
+      - name: '📥 Add Lighthouse stats as comment'
         id: comment_to_pr
         uses: marocchino/sticky-pull-request-comment@v2.2.0
         with:
