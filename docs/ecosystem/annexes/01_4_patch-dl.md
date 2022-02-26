@@ -6,7 +6,7 @@ description: Annex - Patch DL documentation
 keywords: [annex, patch-dl]
 ---
 
-[Patch DL](https://github.com/z-shell/z-a-patch-dl) annex downloads files and applies patches and adds two ice modifiers:
+- [z-shell/z-a-patch-dl](https://github.com/z-shell/z-a-patch-dl) annex downloads files and applies patches and adds two ice modifiers:
 
 ```shell
 zi ice dl'{URL} [-> {optional-output-file-name}]; …' …
