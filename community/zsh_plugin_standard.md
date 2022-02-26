@@ -546,9 +546,9 @@ The use of this method is very unproblematic.
 
 The author reduced the number of global parameters in one of the projects by 21 by using an automatic conversion with Vim substitution patterns with backreferences without any problems.
 
-Following the [Standard Plugins Hash](#standart-plugins-hash) section, the plugin could even use a common hash name – `Plugins` – to lower the pollution even more.
+Following the [Standard Plugins Hash](#standard-plugins-hash) section, the plugin could even use a common hash name – `Plugins` – to lower the pollution even more.
 
-## Revision History (History Of Updates To The Document)
+## Revision History
 
 | Versions | Date       | Description                                                              |
 | -------- | ---------- | ------------------------------------------------------------------------ |
