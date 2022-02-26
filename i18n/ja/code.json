@@ -1,38 +1,38 @@
 {
   "homepage.feature1.title": {
-    "message": "Zsh Startup 50-80% Faster",
+    "message": "Zshの起動が50～80%高速に",
     "description": "Title of feature 1 (left) on the home page"
   },
   "home.fetaure1": {
-    "message": "Instant prompt postponing plugins loading to a moment when the processing of .zshrc file is finished.",
+    "message": ".zshrc の処理が終了するまでプラグインの読み込みを遅延し、即座にプロンプトを表示します。",
     "description": "Description of first featured banner in homepage"
   },
   "homepage.feature2.title": {
-    "message": "Focus on What Matters",
+    "message": "大事なことに集中する",
     "description": "Title of feature 2 (middle) on the home page"
   },
   "home.fetaure2": {
-    "message": "Statistics about the plugins, describing what functions, bindkeys, completions, and other elements a plugin has set up.",
+    "message": "プラグインに関する統計情報。プラグインがどのような機能、バインドキー、補完などの要素を設定しているかをまとめます。",
     "description": "Description of second featured banner in homepage"
   },
   "homepage.feature3.title": {
-    "message": "Wide Range of Features",
+    "message": "幅広い選択肢",
     "description": "Title of feature 3 (right) on the home page"
   },
   "home.fetaure3": {
-    "message": "Supports Oh-My-Zsh and Prezto - not framework-specific. Produce your plugins, libraries, and themes effortlessly.",
+    "message": "Oh-My-ZshとPreztoをサポート(フレームワークに依存しません)。プラグイン、ライブラリ、テーマを簡単に作成できます。",
     "description": "Description of third featured banner in homepage"
   },
   "homepage.button": {
-    "message": "💢 Make it work, make it right, make it Fast 💢",
+    "message": "💢 よりスマートに、より正確に、そしてより高速に！💢",
     "description": "The homepage button to wiki introduction"
   },
   "theme.ErrorPageContent.title": {
-    "message": "This page crashed.",
+    "message": "ページがクラッシュしました。",
     "description": "The title of the fallback page when the page crashed"
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "Try again",
+    "message": "やり直す",
     "description": "The label of the button to try again when the page crashed"
   },
   "theme.NotFound.title": {
@@ -52,15 +52,15 @@
     "description": "The ARIA label for close button of announcement bar"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "Scroll back to top",
+    "message": "最上部にスクロール",
     "description": "The ARIA label for the back to top button"
   },
   "theme.blog.archive.title": {
-    "message": "Archive",
+    "message": "アーカイブする",
     "description": "The page & hero title of the blog archive page"
   },
   "theme.blog.archive.description": {
-    "message": "Archive",
+    "message": "アーカイブする",
     "description": "The page & hero description of the blog archive page"
   },
   "theme.blog.paginator.navAriaLabel": {

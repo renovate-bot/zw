@@ -44,7 +44,7 @@
     "description": "The label of footer link with label=Crowdin linking to https://digitalclouds.crowdin.com/z-shell/"
   },
   "link.item.label.Blog": {
-    "message": "Blog",
+    "message": "ブログ",
     "description": "The label of footer link with label=Blog linking to /blog"
   },
   "link.item.label.Privacy Policy": {
