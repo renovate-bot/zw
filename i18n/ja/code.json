@@ -20,11 +20,11 @@
     "description": "Title of feature 3 (right) on the home page"
   },
   "home.fetaure3": {
-    "message": "Oh-My-ZshとPreztoをサポート(フレームワークに依存しません)。プラグイン、ライブラリ、テーマを簡単に作成できます。",
+    "message": "Supports Oh-My-Zsh and Prezto - not framework-specific. Produce your plugins, libraries, and themes effortlessly.",
     "description": "Description of third featured banner in homepage"
   },
   "homepage.button": {
-    "message": "💢 よりスマートに、より正確に、そしてより高速に！💢",
+    "message": "💢 Make it work, make it right, make it Fast 💢",
     "description": "The homepage button to wiki introduction"
   },
   "theme.ErrorPageContent.title": {
@@ -100,7 +100,7 @@
     "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.blog.sidebar.navAriaLabel": {
-    "message": "Blog recent posts navigation",
+    "message": "最近のブログ記事のナビゲーション",
     "description": "The ARIA label for recent posts in the blog sidebar"
   },
   "theme.blog.post.plurals": {
