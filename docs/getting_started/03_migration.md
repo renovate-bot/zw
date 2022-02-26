@@ -255,7 +255,7 @@ Shorthand PZT/modules:
 zi snippet PZTM::<PATH>
 ```
 
-### Prezto moduless
+### Prezto modules
 
 Importing the [environment][9] and [terminal][10] Prezto Modules Sample:
 
