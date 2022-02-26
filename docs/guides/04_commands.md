@@ -1,14 +1,12 @@
 ---
 id: commands
 title: 🛠 Commands
-image: /img/logo/zi/png/501x501.png
+image: zw/logo/320x320.png
 description: ZI Commands
 keywords: [commands, zsh, z-shell, zi]
 ---
 
 import APITable from '@site/src/components/APITable';
-
-<!-- import Image from '@theme/IdealImage'; import Screen1 from '@site/static/img/assets/'; -->
 
 ## Commands available with <kbd>^TAB</kbd> completion
 
@@ -46,8 +44,8 @@ glance               -- "Look at plugin's source (pygmentize, {,source-}highligh
 load                 -- "Load plugin"
 loaded        list   -- "Show what plugins are loaded"
 ls                   -- "List snippets in formatted and colorized manner"
-module               -- "Manage binary Zsh module shipped with ❮ ZI ❯, see `zi module help'"
-recall               -- "Fetch saved ice modifiers and construct `zi ice ……' command"
+module               -- "Manage binary Zsh module shipped with ❮ ZI ❯, see `zi module help`"
+recall               -- "Fetch saved ice modifiers and construct `zi ice …` command"
 recently             -- "Show plugins that changed recently, argument is e.g. 1 month 2 days"
 run                  -- "Execute code inside plugin's folder"
 snippet              -- "Source (or add to PATH with --command) local or remote file"
@@ -152,7 +150,7 @@ There's also `zicdreplay` which will replay any caught compdefs so you can also 
 
 Basically, the whole topic is the same as normal `compinit` call, but it is done in `atinit` or `atload` hook of the last related plugin with the use of the helper functions (`zicompinit`,`zicdreplay` & `zicdclear` – see below for explanation of the last one).
 
-### Summary of `compinit` call:
+### Summary of `compinit` call
 
 ```shell {10} title=~/.zshrc
 source ~/.zi/bin/zi.zsh
@@ -262,11 +260,11 @@ Following commands are passed to `zi …` to obtain described effects.
 
 <APITable>
 
-| Command | Description |
-| :-: | --- |
-| `compile` `'…'` `--all` | Compile plugin. `--all` – compile all plugins. |
+|          Command          | Description                                                         |
+| :-----------------------: | ------------------------------------------------------------------- |
+|  `compile` `'…'` `--all`  | Compile plugin. `--all` – compile all plugins.                      |
 | `uncompile` `'…'` `--all` | Remove compiled version of plugin. `--all` – do it for all plugins. |
-| `compiled` | List plugins that are compiled. |
+|        `compiled`         | List plugins that are compiled.                                     |
 
 </APITable>
 
