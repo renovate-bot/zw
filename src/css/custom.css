@@ -62,12 +62,8 @@ html[data-theme='dark'] img[src$='#gh-light-mode-only'] {
 }
 
 div[class^='announcementBar_'] {
-  --site-announcement-bar-stripe-color1: hsl(
-    var(--site-primary-hue-saturation) 85%
-  );
-  --site-announcement-bar-stripe-color2: hsl(
-    var(--site-primary-hue-saturation) 95%
-  );
+  --site-announcement-bar-stripe-color1: hsl(var(--site-primary-hue-saturation) 85%);
+  --site-announcement-bar-stripe-color2: hsl(var(--site-primary-hue-saturation) 95%);
   font-weight: bold;
 }
 

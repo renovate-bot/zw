@@ -17,12 +17,11 @@ const config = {
   organizationName: 'z-shell',
   staticDirectories: ['static'],
   plugins: [
-    /** '@docusaurus/theme-live-codeblock',*/
     [
       '@docusaurus/plugin-pwa',
       {
         /* https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-pwa#configuration */
-        debug: false,
+        debug: true,
         offlineModeActivationStrategies: ['appInstalled', 'standalone', 'queryString'],
         pwaHead: [
           {
@@ -131,7 +130,7 @@ const config = {
               return `https://digitalclouds.crowdin.com/z-shell/${locale}`;
             } /* If locale NOT en (English), then redirect to translation files (Crowdin) */
             return `https://github.com/z-shell/zw/tree/main/${blogDirPath}/${blogPath}`;
-          }, /* If locale IS en (English), then redirect to latest source files. (GitHub) */
+          } /* If locale IS en (English), then redirect to latest source files. (GitHub) */,
         },
         pages: {
           /* https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-pages#configuration */
@@ -209,7 +208,7 @@ const config = {
           /**{
               type: 'docsVersionDropdown',
               position: 'right',
-            },*/
+          },*/
           {
             href: 'https://github.com/z-shell/',
             position: 'right',
