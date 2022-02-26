@@ -123,8 +123,6 @@ const config = {
           },
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
-          disableVersioning: false,
-          lastVersion: 'current',
         },
         blog: {
           showReadingTime: true,
