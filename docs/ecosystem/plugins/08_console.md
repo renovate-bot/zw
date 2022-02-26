@@ -6,6 +6,8 @@ description: A console based on the `zsh/zcurses` Zshell module.
 keywords: [console, zsh-plugin, zi-console]
 ---
 
+- [z-shell/zi-console](https://github.com/z-shell/zi-console)
+
 A console for [ZI][1] – based on the `zsh/zcurses` Zshell module allows the user to:
 
 - View the currently loaded plugins in a colorful list, in one of 3 different display modes,
@@ -18,19 +20,19 @@ A console for [ZI][1] – based on the `zsh/zcurses` Zshell module allows the us
 
 Start the console by <kbd>Ctrl-O</kbd> <kbd>Ctrl-J</kbd> keyboard shortcut, or by running `ziconsole` function in the shell. Then, in the console:
 
-| Key(s) | Description |
-| --- | --- |
-| `Ctrl-U`,`Ctrl-D` | Half page up; half page down |
-| `Ctrl-P`,`Ctrl-N` | Previous line, centered; next line, centered |
-| `Ctrl-L` | Redraw of whole display |
-| `[`, `]` | Jump to next and previous section (e.g.: next plugin or snippet) |
-| `g`, `G` | Jump to beginning and end of whole interface |
-| `<`,`>` or `{`,`}` | Horizontal scroll (i.e.: left or right) |
-| `/` | Show incremental search |
-| `F1` | Jump to result (in incremental search) and back |
-| `Esc` | Exit incremental search, clearing query |
-| `Ctrl-W` | Delete whole word (in incremental search) |
-| `Ctrl-K` | Delete whole line (in incremental search) |
+| Key(s)             | Description                                                      |
+| ------------------ | ---------------------------------------------------------------- |
+| `Ctrl-U`,`Ctrl-D`  | Half page up; half page down                                     |
+| `Ctrl-P`,`Ctrl-N`  | Previous line, centered; next line, centered                     |
+| `Ctrl-L`           | Redraw of whole display                                          |
+| `[`, `]`           | Jump to next and previous section (e.g.: next plugin or snippet) |
+| `g`, `G`           | Jump to beginning and end of whole interface                     |
+| `<`,`>` or `{`,`}` | Horizontal scroll (i.e.: left or right)                          |
+| `/`                | Show incremental search                                          |
+| `F1`               | Jump to result (in incremental search) and back                  |
+| `Esc`              | Exit incremental search, clearing query                          |
+| `Ctrl-W`           | Delete whole word (in incremental search)                        |
+| `Ctrl-K`           | Delete whole line (in incremental search)                        |
 
 ## Screencast
 
