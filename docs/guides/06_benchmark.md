@@ -1,7 +1,7 @@
 ---
-title: Statistics & Benchmark
+title: Benchmarking
 image: zw/logo//320x320.png
-description: Benchamarking
+description: Benchmarking, Profiling & Statistics
 keywords: [statistics, benchmark, profiling]
 ---
 
