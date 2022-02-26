@@ -16,7 +16,7 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "build:cf": "npx pnpm i --store=node_modules/.pnpm-store && npx run build",
+    "build:cf": "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build",
     "build": "docusaurus build",
     "build:en": "docusaurus build --locale en",
     "swizzle": "docusaurus swizzle",
@@ -70,7 +70,7 @@
     "@types/react": "16.8.0"
   },
   "engines": {
-    "node": ">=14",
+    "node": ">=16",
     "yarn": ">=3",
     "pnpm": ">=6"
   },
