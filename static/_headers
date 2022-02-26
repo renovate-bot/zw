@@ -26,3 +26,6 @@ https://:z-shell.pages.dev/*
 # content-type than what is defined with the Content-Type header.
 
   X-Content-Type-Options: nosniff
+
+/*
+  Access-Control-Allow-Origin: *

@@ -33,7 +33,7 @@
   },
   "link.item.label.Twitter": {
     "message": "Twitter",
-    "description": "The label of footer link with label=Twitter linking to https://twitter.com/zshell_zi"
+    "description": "The label of footer link with label=Twitter linking to https://twitter.com/zshell_zi/"
   },
   "link.item.label.GitHub": {
     "message": "GitHub",
@@ -41,7 +41,7 @@
   },
   "link.item.label.Crowdin": {
     "message": "Crowdin",
-    "description": "The label of footer link with label=Crowdin linking to https://digitalclouds.crowdin.com/z-shell"
+    "description": "The label of footer link with label=Crowdin linking to https://digitalclouds.crowdin.com/z-shell/"
   },
   "link.item.label.Blog": {
     "message": "Blog",
