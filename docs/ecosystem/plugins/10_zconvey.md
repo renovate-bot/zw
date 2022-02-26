@@ -1,12 +1,14 @@
 ---
 id: zconvey
 title: ⚙️ ZConvey
-image: img/logo/zi/png/320x320.png
+image: zw/logo/320x320.png
 description: Zsh Plugin ZConvey documentation
 keywords: [zconvey, zsh-plugin]
 ---
 
 import Image from '@theme/IdealImage'; import Asciinema1 from '@site/static/img/asciinema/156726.png';
+
+- [z-shell/zconvey](https://github.com/z-shell/zconvey)
 
 ZConvey integrates multiple Zsh sessions. They are given an ID, optionally a NAME (both unique), and can send commands to each other.
 
@@ -16,7 +18,7 @@ Use this to switch all your Zshells to given directory, via `zc-all cd $PWD`! Al
 
 :::tip
 
-You can resize the video by pressing `Ctrl-+` or `Cmd-+`.
+You can resize the video by pressing <kbd>Ctrl-+</kbd> or <kbd>Cmd-+</kbd>.
 
 :::
 
@@ -48,16 +50,16 @@ zstyle ":plugin:zconvey" timestamp_from "datetime"  # Use zsh/datetime module fo
 
 ## ZConvey commands
 
-| Command | Description |
-| --- | :-- |
-| `zc` | Sends to other session; use "-a" option to be asked for target and a command to send |
-| `zc-ls` | Lists all active and named sessions |
-| `zc-id` | Shows ID and NAME of current session |
-| `zc-all` | The same as `zc`, but targets are all other active sessions (with `-f` also busy sessions) |
-| `zc-take` | Takes a name for current or selected sessions, schematically renames any conflicting sessions |
-| `zc-logo` | The same as `zc-id`, but in a form of an on-screen logo; bound to Ctrl-O Ctrl-I |
-| `zc-rename` | Assigns name to current or selected session; won't rename if there's a session with the same name |
-| `zc-bg-notify` | In subdirectory `cmds`, link it to `/usr/local/bin`, etc. or load with e.g. ZI |
+| Command        | Description                                                                                       |
+| -------------- | :------------------------------------------------------------------------------------------------ |
+| `zc`           | Sends to other session; use "-a" option to be asked for target and a command to send              |
+| `zc-ls`        | Lists all active and named sessions                                                               |
+| `zc-id`        | Shows ID and NAME of current session                                                              |
+| `zc-all`       | The same as `zc`, but targets are all other active sessions (with `-f` also busy sessions)        |
+| `zc-take`      | Takes a name for current or selected sessions, schematically renames any conflicting sessions     |
+| `zc-logo`      | The same as `zc-id`, but in a form of an on-screen logo; bound to Ctrl-O Ctrl-I                   |
+| `zc-rename`    | Assigns name to current or selected session; won't rename if there's a session with the same name |
+| `zc-bg-notify` | In subdirectory `cmds`, link it to `/usr/local/bin`, etc. or load with e.g. ZI                    |
 
 The main command is `zc` (yet it is rather rarely used, I'm always sending to all sessions with `zc-all`). It is used to execute commands on other sessions. `zc-ls` is the main tool to obtain overall information on sessions. `zc-take` is a nice rename tool to quickly name a few sessions. Keyboard shortcut Ctrl-O Ctrl-I will show current session's ID and NAME in form of an on-screen logo.
 
