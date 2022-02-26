@@ -226,18 +226,18 @@ const config = {
           },
         },
       },
-                              algolia: {
-                                appId: '4FTAL4NR6O',
-                                apiKey: '9ec9227571a8499464ac9389f1ab1616',
-                                indexName: 'dev-z-shell',
-                                contextualSearch: true,
-                        },
+      algolia: {
+        appId: '4FTAL4NR6O',
+        apiKey: '9ec9227571a8499464ac9389f1ab1616',
+        indexName: 'dev-z-shell',
+        contextualSearch: true,
+      },
       navbar: {
         hideOnScroll: true,
         title: '❮ ZI ❯',
         logo: {
           alt: '❮ ZI ❯ Logo',
-          src: '/zw/logo.svg',
+          src: 'zw/logo.svg',
           width: 32,
           height: 32,
         },
