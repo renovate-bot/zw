@@ -57,18 +57,14 @@
     ]
   },
   "devDependencies": {
-    "@algolia/client-search": "4.9.1",
+    "@algolia/client-search": "^4.12.1",
     "@crowdin/cli": "3.7.8",
     "@docusaurus/module-type-aliases": "^2.0.0-beta.16",
     "@tsconfig/docusaurus": "1.0.4",
-    "@types/react": "16.8.0",
+    "@types/react": "^17.0.39",
     "prettier": "2.5.1",
     "prop-types": "^15.8.1",
     "typescript": "4.5.5"
-  },
-  "peerDependencies": {
-    "@algolia/client-search": "4.9.1",
-    "@types/react": "16.8.0"
   },
   "engines": {
     "node": ">=16",
@@ -80,5 +76,9 @@
       "nth-check@<2.0.1": ">=2.0.1",
       "trim@<0.0.3": ">=0.0.3"
     }
+  },
+  "peerDependencies": {
+    "@algolia/client-search": "^4.12.1",
+    "@types/react": "^17.0.39"
   }
 }

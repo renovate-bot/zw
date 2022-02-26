@@ -79,7 +79,12 @@ const config = {
         id: 'community',
         path: 'community',
         routeBasePath: 'community',
-        editUrl: 'https://github.com/z-shell/zw/tree/main',
+        editUrl: ({locale, versionDocsDirPath, docPath}) => {
+          if (locale !== 'en') {
+            return `https://digitalclouds.crowdin.com/z-shell/${locale}`;
+          } /* If locale NOT en (English), then redirect to translation files (Crowdin) */
+          return `https://github.com/z-shell/zw/tree/main/${versionDocsDirPath}/${docPath}`;
+        },
         sidebarPath: require.resolve('./lib/js/sidebars_2.js'),
       },
     ],
