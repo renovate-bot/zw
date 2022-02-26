@@ -6,7 +6,7 @@ description: Complete options from manual pages – press Ctrl-F to start the co
 keywords: [zzcomplete, completion]
 ---
 
-Repository: [zzcomplete](https://github.com/z-shell/zzcomplete)
+- [z-shell/zzcomplete](https://github.com/z-shell/zzcomplete)
 
 Complete options from manual pages – press <kbd>Ctrl-F</kbd> to start the completer.
 
