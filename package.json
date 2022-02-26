@@ -16,7 +16,6 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "prebuild": "[[ $CI = true ]] && npx pnpm install -r --store=node_modules/.pnpm-store || echo skiping pnpm install",
     "build:cf": "npx pnpm i --store=node_modules/.pnpm-store && npx run build",
     "build": "docusaurus build",
     "build:en": "docusaurus build --locale en",
