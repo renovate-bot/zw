@@ -6,8 +6,9 @@ files:
   - source: /i18n/en/**/*.json
     translation: /i18n/%two_letters_code%/**/%original_file_name%
   - source: /docs/**/*.md
+    ignore_settings: 1
     ignore:
-      - /docs/ecosystem/**
+      - /docs/ecosystem/**/*.md
     translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/**/%original_file_name%
   - source: /community/**/*.md
     translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs-community/**/%original_file_name%
