@@ -486,12 +486,12 @@ Their role is to **receive a portion of Zsh code and execute it in certain momen
 
 <APITable>
 
-| Syntax | Execution moment |
-| :-: | :-- |
+|    Syntax    | Execution moment                                                |
+| :----------: | :-------------------------------------------------------------- |
 | `atclone'…'` | **after cloning** the associated plugin or snippet to the disk. |
-| `atpull'…'` | **after updating** the associated plugin or snippet. |
-| `atinit'…'` | **before loading** of the associated plugin or snippet. |
-| `atload'…'` | **after loading** of the associated plugin or snippet. |
+| `atpull'…'`  | **after updating** the associated plugin or snippet.            |
+| `atinit'…'`  | **before loading** of the associated plugin or snippet.         |
+| `atload'…'`  | **after loading** of the associated plugin or snippet.          |
 
 </APITable>
 
@@ -555,6 +555,6 @@ zi load romkatv/powerlevel10k
 [4]: https://asciinema.org/a/149725
 [5]: https://zsh.sourceforge.net/Doc/Release/Functions.html#Hook-Functions
 [6]: https://github.com/romkatv/powerlevel10k
-[7]: ../guides/customization#multiple-prompts
+[7]: /docs/guides/customization#multiple-prompts
 [8]: syntax#the-for-syntax
-[9]: ../gallery/collection#direnv
+[9]: /docs/gallery/collection#direnv

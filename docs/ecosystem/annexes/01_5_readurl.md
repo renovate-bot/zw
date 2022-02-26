@@ -6,7 +6,7 @@ description: Annex - Read URL documentation
 keywords: [annex, readurl]
 ---
 
-[Read URL](https://github.com/z-shell/z-a-readurl) annex allows to automatically download the newest version of a file to which URL is hosted on a webpage.
+- [z-shell/z-a-readurl](https://github.com/z-shell/z-a-readurl) annex allows to automatically download the newest version of a file to which URL is hosted on a webpage.
 
 It works as follows:
 

@@ -6,7 +6,7 @@ description: Organized shortcuts for Zsh
 keywords: [zsh-edit, workbench, organized]
 ---
 
-Repository: [zsh-editing-workbench](https://github.com/z-shell/zsh-editing-workbench)
+- [zsh-editing-workbench](https://github.com/z-shell/zsh-editing-workbench)
 
 Organized shortcuts for various command line editing operations, plus new operations (e.g. incremental history word completion).
 

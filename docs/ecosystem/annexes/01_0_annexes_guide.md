@@ -1,7 +1,6 @@
 ---
 id: annexes
 slug: /ecosystem/annexes
-sidebar_position: 1
 title: 💠 Quick overview
 image: zw/logo/320x320.png
 description: Annexes documentation

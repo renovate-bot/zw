@@ -79,7 +79,7 @@ The assignment uses quoting to make it resilient to the combination of `GLOB_SUB
 
 When you’ll set e.g.: the `zsh` emulation in a function, you in general don’t have to quote assignments.
 
-## Adopted [ zero-handling ]
+### Adopted [ zero-handling ]
 
 1. Plugin managers: [ZI](https://github.com/z-shell/zi), [Zinit](https://github.com/zdharma-continuum/zinit), [Zpm](https://github.com/zpm-zsh/zpm), [Zgenom](https://github.com/jandamm/zgenom), Zgen (after and if the [PR](https://github.com/tarjoilija/zgen/pull/124) will be merged).
 
@@ -115,7 +115,7 @@ The above snippet added to the `plugin.zsh` file will add the directory to the `
 
 The existence of the `functions` subdirectory cancels the normal adding of the main plugin directory to `$fpath`.
 
-## Adopted [ functions-directory ]
+### Adopted [ functions-directory ]
 
 1. Plugin managers: [Zpm](https://github.com/zpm-zsh/zpm), [ZI](https://github.com/z-shell/zi), [Zinit](https://github.com/zdharma-continuum/zinit), [Zgenom](https://github.com/jandamm/zgenom).
 
@@ -147,7 +147,7 @@ if [[ $PMSPEC != *b* ]] {
 }
 ```
 
-## Adopted [ binaries-directory ]
+### Adopted [ binaries-directory ]
 
 1. Plugin managers: [Zpm](https://github.com/zpm-zsh/zpm), [Zgenom](https://github.com/jandamm/zgenom) (when you set `ZGENOM_AUTO_ADD_BIN=1`).
 
@@ -165,7 +165,7 @@ However, an interesting compromise approach is available – to withdraw only th
 
 Note that the unload function should contain `unfunction $0` (or better `unfunction kalc_plugin_unload` etc., for compatibility with the `*_argzero` options), to also delete the function itself.
 
-## Adopted [ unload-function ]
+### Adopted [ unload-function ]
 
 - [ZI](https://github.com/z-shell/zi), implements plugin unloading and calls the function.
 
@@ -195,7 +195,7 @@ The code should be executed in the plugin’s directory, in the current shell.
 
 The mechanism thus provides another way, side to the [unload function](#unload-function), for the plugin to participate in the process of unloading it.
 
-## Adopted [ run-on-unload-call ]
+### Adopted [ run-on-unload-call ]
 
 1. Plugin managers: [ZI](https://github.com/z-shell/zi), [Zinit](https://github.com/zdharma-continuum/zinit).
 
@@ -215,7 +215,7 @@ The execution of the code should be done by the `eval` built-in in the same orde
 
 The code should be executed in the plugin’s directory, possibly in a subshell **After downloading any new commits** to the repository.
 
-## Adopted [ run-on-update-call ]
+### Adopted [ run-on-update-call ]
 
 1. Plugin managers: [ZI](https://github.com/z-shell/zi), [Zinit](https://github.com/zdharma-continuum/zinit).
 
@@ -249,7 +249,7 @@ This will allow the user to reliably source the plugin without using a plugin ma
 
 The code uses the wrapping braces around variables (i.e.: e.g.: `${fpath…}`) to make it compatible with the `KSH_ARRAYS` option and the quoting around `${0:h}` to make it compatible with the `SH_WORD_SPLIT` option.
 
-## Adopted [ activity-indicator ]
+### Adopted [ activity-indicator ]
 
 1. Plugin managers: [ZI](https://github.com/z-shell/zi), [Zinit](https://github.com/zdharma-continuum/zinit), [Zpm](https://github.com/zpm-zsh/zpm), [Zgenom](https://github.com/jandamm/zgenom), Zgen (after and if the [PR](https://github.com/tarjoilija/zgen/pull/124) will be merged).
 
@@ -279,7 +279,7 @@ No-narration facts-list related to `$ZPFX`:
 
 6. `zi … hook-build:"make PREFIX=$PFX install"`
 
-## Adopted [ global-parameter-with-prefix ]
+### Adopted [ global-parameter-with-prefix ]
 
 1. Plugin managers: [ZI](https://github.com/z-shell/zi), [Zinit](https://github.com/zdharma-continuum/zinit), [Zpm](https://github.com/zpm-zsh/zpm), [Zgenom](https://github.com/jandamm/zgenom).
 
@@ -321,7 +321,7 @@ if [[ $PMSPEC != *f* ]] {
 }
 ```
 
-## Adopted [ global-parameter-with-capabilities ]
+### Adopted [ global-parameter-with-capabilities ]
 
 1. Plugin managers: [ZI](https://github.com/z-shell/zi), [Zinit](https://github.com/zdharma-continuum/zinit), [Zpm](https://github.com/zpm-zsh/zpm), [Zgenom](https://github.com/jandamm/zgenom).
 
@@ -550,31 +550,31 @@ Following the [Standard Plugins Hash](#standart-plugins-hash) section, the plugi
 
 ## Revision History (History Of Updates To The Document)
 
-| Versions | Date | Description |
-| --- | --- | --- |
-| v1.1.6 | 26/02/2022 | Document has been translated to markdown format. |
-| v1.1.5 | 06/11/2020 | Changed the `$0=…` assignment to a more straightforward one. |
-| v1.1.1 | 21/02/2020 | Added `Binaries Directory` section. |
-| v1.1 | 21/02/2020 | Changed the handler-function prefix character to `→`. |
-| v1.09 | 01/29/2020 | 1/ Added `Standard Parameter Naming` section. |
-| v1.09 | 01/29/2020 | 2/ Added `Standard Plugins Hash` section. |
-| v1.08 | 01/29/2020 | Added the `PMSPEC` section. |
-| v1.07 | 01/29/2020 | Added the `functions`-directory section. |
-| v1.05 | 11/22/2019 | Restored the quoting to the `$0` assignments + justification. |
-| v1.0 | 11/22/2019 | Removed quoting from the `$0` assignments. |
-| v0.99 | 10/26/2019 | Added `Adoption Status` sub-sections. |
-| v0.98 | 10/25/2019 | 1/ Added `Standard Recommended Variables` section. |
-| v0.98 | 10/25/2019 | 2/ Added `Standard Function Name-Space Prefixes` section. |
-| v0.98 | 10/25/2019 | 3/ Added `Preventing Function Pollution` section. |
-| v0.98 | 10/25/2019 | 4/ Added `Preventing Parameter Pollution` section. |
-| v0.97 | 10/23/2019 | Added `Standard Recommended Options` section. |
-| v0.96 | 10/23/2019 | Added `@zsh-plugin-run-on-unload` and `@zsh-plugin-run-on-update` calls. |
-| v0.95 | 07/31/2019 | Plugin unload function `*_unload_plugin` -→ `*_plugin_unload`. |
-| v0.94 | 07/20/2019 | Add initial version of the best practices section. |
-| v0.93 | 07/20/2019 | 1/ Add the second line to the `$0` handling. |
-| v0.93 | 07/20/2019 | 2/ Reformat to 80 columns. |
-| v0.92 | 07/14/2019 | 1/ Rename LOADED_PLUGINS to zsh_loaded_plugins. |
-| v0.92 | 07/14/2019 | 2/ Suggest that $ZPFX is optional. |
-| v0.91 | 06/02/2018 | Fix the link to the PDF for Github. |
+| Versions | Date       | Description                                                              |
+| -------- | ---------- | ------------------------------------------------------------------------ |
+| v1.1.6   | 26/02/2022 | Document has been translated to markdown format.                         |
+| v1.1.5   | 06/11/2020 | Changed the `$0=…` assignment to a more straightforward one.             |
+| v1.1.1   | 21/02/2020 | Added `Binaries Directory` section.                                      |
+| v1.1     | 21/02/2020 | Changed the handler-function prefix character to `→`.                    |
+| v1.09    | 01/29/2020 | 1/ Added `Standard Parameter Naming` section.                            |
+| v1.09    | 01/29/2020 | 2/ Added `Standard Plugins Hash` section.                                |
+| v1.08    | 01/29/2020 | Added the `PMSPEC` section.                                              |
+| v1.07    | 01/29/2020 | Added the `functions`-directory section.                                 |
+| v1.05    | 11/22/2019 | Restored the quoting to the `$0` assignments + justification.            |
+| v1.0     | 11/22/2019 | Removed quoting from the `$0` assignments.                               |
+| v0.99    | 10/26/2019 | Added `Adoption Status` sub-sections.                                    |
+| v0.98    | 10/25/2019 | 1/ Added `Standard Recommended Variables` section.                       |
+| v0.98    | 10/25/2019 | 2/ Added `Standard Function Name-Space Prefixes` section.                |
+| v0.98    | 10/25/2019 | 3/ Added `Preventing Function Pollution` section.                        |
+| v0.98    | 10/25/2019 | 4/ Added `Preventing Parameter Pollution` section.                       |
+| v0.97    | 10/23/2019 | Added `Standard Recommended Options` section.                            |
+| v0.96    | 10/23/2019 | Added `@zsh-plugin-run-on-unload` and `@zsh-plugin-run-on-update` calls. |
+| v0.95    | 07/31/2019 | Plugin unload function `*_unload_plugin` -→ `*_plugin_unload`.           |
+| v0.94    | 07/20/2019 | Add initial version of the best practices section.                       |
+| v0.93    | 07/20/2019 | 1/ Add the second line to the `$0` handling.                             |
+| v0.93    | 07/20/2019 | 2/ Reformat to 80 columns.                                               |
+| v0.92    | 07/14/2019 | 1/ Rename LOADED_PLUGINS to zsh_loaded_plugins.                          |
+| v0.92    | 07/14/2019 | 2/ Suggest that $ZPFX is optional.                                       |
+| v0.91    | 06/02/2018 | Fix the link to the PDF for Github.                                      |
 
 Reminder: The date format that uses slashes is `MM/DD/YYYY`.

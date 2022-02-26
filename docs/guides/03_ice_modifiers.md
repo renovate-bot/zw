@@ -1,7 +1,7 @@
 ---
 id: ice-modifiers
 title: 🧊 Ice Modifiers
-image: /img/logo.png
+image: zw/logo/320x320.png
 description: Documentation for the ice Modifiers
 keywords: [ice-modifiers, zsh, z-shell, zi]
 ---
@@ -194,7 +194,7 @@ It's up to the user which syntax to choose. The original motivation behind the s
 
 [1]: ice#src-pick-multisrc
 [2]: ice#wait
-[3]: ../guides/customization#multiple-prompts
+[3]: /docs/guides/customization#multiple-prompts
 [4]: ice#atclone-atpull-atinit-atload
 [5]: syntax#the-make-syntax
 [6]: ice#id-as

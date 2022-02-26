@@ -6,7 +6,7 @@ description: Provides a **unique number** that identifies a **running** Zshell s
 keywords: [zsh-unique-id, unique-id]
 ---
 
-Repository: [zsh-unique-id](https://github.com/z-shell/zsh-unique-id)
+- [z-shell/zsh-unique-id](https://github.com/z-shell/zsh-unique-id)
 
 This plugin provides a **unique number** that identifies a **running** Zshell session, in its shell variable `$ZUID_ID`.
 

@@ -6,6 +6,8 @@ description: Multi-word history searcher, `n-cd` – directory bookmark manager,
 keywords: [zsh-navigation-tools, zsh-plugin]
 ---
 
+- [z-shell/zsh-navigation-tools](https://github.com/z-shell/zsh-navigation-tools)
+
 ## Zsh Navigation Tools
 
 The available tools

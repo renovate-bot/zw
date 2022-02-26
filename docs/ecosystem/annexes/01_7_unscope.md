@@ -8,7 +8,7 @@ keywords: [annex, unscope]
 
 import APITable from '@site/src/components/APITable';
 
-[Unscope](https://github.com/z-shell/z-a-unscope) annex allows to install plugins without specifying the GitHub user name.
+- [z-shell/z-a-unscope](https://github.com/z-shell/z-a-unscope) annex allows to install plugins without specifying the GitHub user name.
 
 It works as follows:
 

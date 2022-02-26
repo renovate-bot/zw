@@ -8,6 +8,8 @@ keywords: [zbrowse, zsh-plugin, variable]
 
 import Image from '@theme/IdealImage'; import Screen1 from '@site/static/img/plugins/zbrowse.png'; import Asciinema1 from '@site/static/img/asciinema/122018.png';
 
+- [z-shell/zbrowse](https://github.com/z-shell/zbrowse)
+
 When doing shell work, it is often the case that `echo $variable` is invoked multiple times, to check result of a loop, etc.
 
 With ZBrowse, you just need to press `Ctrl-B`, which invokes the `ZBrowse` – `Zshell` variable browser:

@@ -1,10 +1,8 @@
 ---
 title: ✍️ Syntax
-image: zw/logo/501x501.png
+image: zw/logo/320x320.png
 description: ZI Syntax
-keywords:
-  - syntax
-  - how-to-use
+keywords: [syntax, how-to-use]
 ---
 
 ## The fundamental syntax

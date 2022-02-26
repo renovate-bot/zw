@@ -8,7 +8,7 @@ keywords: [annex, bin-gem-node]
 
 import APITable from '@site/src/components/APITable';
 
-[Bin Gem Node](https://github.com/z-shell/z-a-bin-gem-node) annex provides functionality, which allows to:
+- [z-shell/z-a-bin-gem-node](https://github.com/z-shell/z-a-bin-gem-node) annex provides functionality, which allows to:
 
 1. Run programs and scripts without adding anything to `$PATH`,
 2. Install and run Ruby [Gems](https://github.com/rubygems/rubygems), [Node](https://github.com/npm/cli), and [Python](https://python.org) modules from within a local directory with [$GEM_HOME](https://guides.rubygems.org/command-reference/#gem-environment), [$NODE_PATH](https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders), and [$VIRTUALENV](https://docs.python.org/3/tutorial/venv.html) automatically set,

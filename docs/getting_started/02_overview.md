@@ -1,12 +1,9 @@
 ---
 title: Quick overview
-image: img/logo/zi/png/501x501.png
+image: zw/logo/320x320.png
 description: Overview of use cases for Z-Shell ZI
-keywords:
-  - overview
+keywords: [overview]
 ---
-
-<!--
 
 In this overview will cover basics for:
 
@@ -14,8 +11,6 @@ In this overview will cover basics for:
 2. [Completions](/search?q=completions)
 3. [Turbo mode](/search?q=turbo+mode)
 4. [Ice modifiers](/search?q=ice+modifiers)
-
--->
 
 ## Basics of the loading pluginss
 
@@ -626,25 +621,21 @@ Feel free to [submit][20] your `~/.zshrc` there if it contains ZI commands.
 
 For some additional examples you can also check out the:
 
-<!--
-
 - [Collection][10],
 - [Oh-My-Zsh][9].
 
 [1]: /search?q=ice+modifiers
 [2]: /search?q=from
 [3]: /search?q=for+syntax
-[9]: ../gallery/collection#oh-my-zsh
-[10]: ../gallery/collection
-[11]: ../guides/ice#atclone-atpull-atinit-atload
-[12]: https://z-shell.github.io/docs/zsh/Zsh-Plugin-Standard.html#azh
-[13]: ../guides/ice#src-pick-multisrc
-[14]: ../guides/syntax#the-for-syntax
-[15]: ../guides/customization#multiple-prompts
+[9]: /docs/gallery/collection#oh-my-zsh
+[10]: /docs/gallery/collection
+[11]: /docs/guides/ice#atclone-atpull-atinit-atload
+[12]: /community/intro#use-of-add-zsh-hook-to-install-hooks
+[13]: /docs/guides/ice#src-pick-multisrc
+[14]: /docs/guides/syntax#the-for-syntax
+[15]: /docs/guides/customization#multiple-prompts
 [16]: https://github.com/starship/starship
 [17]: https://github.com/sindresorhus/pure
 [18]: https://github.com/romkatv/powerlevel10k
 [19]: https://github.com/z-shell/playground
 [20]: https://github.com/z-shell/playground/issues/new?template=request-to-add-zshrc-to-the-zi-configs-repo.m
-
--->

@@ -12,11 +12,8 @@ const FeatureList = [
     }),
     Svg: require('@site/static/zw/svg/turbo.svg').default,
     description: (
-      <Translate
-        id="home.fetaure1"
-        description="Description of first featured banner in homepage">
-        Instant prompt postponing plugins loading to a moment when the
-        processing of .zshrc file is finished.
+      <Translate id="home.fetaure1" description="Description of first featured banner in homepage">
+        Instant prompt postponing plugins loading to a moment when the processing of .zshrc file is finished.
       </Translate>
     ),
   },
@@ -28,11 +25,9 @@ const FeatureList = [
     }),
     Svg: require('@site/static/zw/svg/stats.svg').default,
     description: (
-      <Translate
-        id="home.fetaure2"
-        description="Description of second featured banner in homepage">
-        Statistics about the plugins, describing what functions, bindkeys,
-        completions, and other elements a plugin has set up.
+      <Translate id="home.fetaure2" description="Description of second featured banner in homepage">
+        Statistics about the plugins, describing what functions, bindkeys, completions, and other elements a plugin has
+        set up.
       </Translate>
     ),
   },
@@ -44,11 +39,9 @@ const FeatureList = [
     }),
     Svg: require('@site/static/zw/svg/zsh.svg').default,
     description: (
-      <Translate
-        id="home.fetaure3"
-        description="Description of third featured banner in homepage">
-        Supports Oh-My-Zsh and Prezto - not framework-specific. Produce your
-        plugins, libraries, and themes effortlessly.
+      <Translate id="home.fetaure3" description="Description of third featured banner in homepage">
+        Supports Oh-My-Zsh and Prezto - not framework-specific. Produce your plugins, libraries, and themes
+        effortlessly.
       </Translate>
     ),
   },

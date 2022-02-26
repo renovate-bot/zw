@@ -10,12 +10,12 @@ keywords: [installation, setup]
 
 [![⚙️ Install Library][1]][2] | [Status page: :heavy_check_mark:](https://digitalclouds.dev/status)
 
-| Host | URL |
-| :-- | --- |
-| [Git.io][3]: | <https://git.io/get-zi> |
-| [GitHub][4]: | <https://z-shell.pages.dev/i-hub> |
-| [GitLab Mirror][5]: | <https://z-shell.pages.dev/i-lab> |
-| [Direct][6]: | <https://raw.githubusercontent.com/z-shell/zi-src/main/lib/sh/install.sh> |
+| Host                | URL                                                                       |
+| :------------------ | ------------------------------------------------------------------------- |
+| [Git.io][3]:        | <https://git.io/get-zi>                                                   |
+| [GitHub][4]:        | <https://z-shell.pages.dev/i-hub>                                         |
+| [GitLab Mirror][5]: | <https://z-shell.pages.dev/i-lab>                                         |
+| [Direct][6]:        | <https://raw.githubusercontent.com/z-shell/zi-src/main/lib/sh/install.sh> |
 
 - Please report an [issue][7] if you have any problems installing.
 - Help us [translate](https://digitalclouds.crowdin.com/z-shell).
