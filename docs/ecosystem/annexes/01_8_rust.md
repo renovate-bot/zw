@@ -6,7 +6,7 @@ description: Annex - Rust documentation
 keywords: [annex, rust, zsh, z-shell, zi]
 ---
 
-[Rust](https://github.com/z-shell/z-a-rust) annex installs rust and cargo packages locally inside the plugin or snippet directories.
+- [z-shell/z-a-rust](https://github.com/z-shell/z-a-rust) annex installs rust and cargo packages locally inside the plugin or snippet directories.
 
 The crate can then have a so called _shim_ created (name borrowed from `rbenv`) – a script that's located in the standard `$PATH` entry "`$ZPFX/bin`" of following contents (example):
 
