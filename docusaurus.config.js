@@ -158,7 +158,7 @@ const config = {
             if (locale !== 'en') {
               return `https://digitalclouds.crowdin.com/z-shell/${locale}`;
             }   /* If locale NOT en (English), then redirect to translation files (Crowdin) */
-            return `https://github.com/z-shell/zw/tree/main/${versionDocsDirPath}/${docPath}`;
+            return `https://github.com/z-shell/zw/edit/main/${versionDocsDirPath}/${docPath}`;
           },
           /*remarkPlugins: [],*/
           /*rehypePlugins: [],*/
@@ -174,8 +174,7 @@ const config = {
             if (locale !== 'en') {
               return `https://digitalclouds.crowdin.com/z-shell/${locale}`;
             } /* If locale NOT en (English), then redirect to translation files (Crowdin) */
-            return `https://github.com/z-shell/zw/tree/main/${blogDirPath}/${blogPath}`;
-            return `https://github.com/z-shell/zw/tree/main/${blogDirPath}/${blogPath}`;
+            return `https://github.com/z-shell/zw/edit/main/${blogDirPath}/${blogPath}`;
           }   /* If locale IS en (English), then redirect to latest source files. (GitHub) */,
         },
         pages: {
@@ -301,7 +300,7 @@ const config = {
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/zshell_zi',
+                href: 'https://twitter.com/zshell_zi/',
               },
             ],
           },
@@ -314,7 +313,7 @@ const config = {
               },
               {
                 label: 'Crowdin',
-                href: 'https://digitalclouds.crowdin.com/z-shell',
+                href: 'https://digitalclouds.crowdin.com/z-shell/',
               },
               {
                 label: 'Blog',
