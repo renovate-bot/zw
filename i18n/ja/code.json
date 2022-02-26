@@ -1,8 +1,4 @@
 {
-  "homepage.button": {
-    "message": "💢 Make it work, make it right, make it Fast 💢",
-    "description": "The homepage button to wiki introduction"
-  },
   "homepage.feature1.title": {
     "message": "Zsh Startup 50-80% Faster",
     "description": "Title of feature 1 (left) on the home page"
@@ -27,6 +23,10 @@
     "message": "Supports Oh-My-Zsh and Prezto - not framework-specific. Produce your plugins, libraries, and themes effortlessly.",
     "description": "Description of third featured banner in homepage"
   },
+  "homepage.button": {
+    "message": "💢 Make it work, make it right, make it Fast 💢",
+    "description": "The homepage button to wiki introduction"
+  },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
     "description": "The title of the fallback page when the page crashed"
@@ -47,13 +47,13 @@
     "message": "このページにリンクしているサイトの所有者に連絡をしてリンクが壊れていることを伝えてください。",
     "description": "The 2nd paragraph of the 404 page"
   },
-  "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "Scroll back to top",
-    "description": "The ARIA label for the back to top button"
-  },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
     "message": "閉じる",
     "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Scroll back to top",
+    "description": "The ARIA label for the back to top button"
   },
   "theme.blog.archive.title": {
     "message": "Archive",
@@ -190,13 +190,13 @@
     "message": "最新バージョン",
     "description": "The label used for the latest version suggestion link label"
   },
-  "theme.common.headingLinkTitle": {
-    "message": "見出しへの直接リンク",
-    "description": "Title for link to heading"
-  },
   "theme.common.editThisPage": {
     "message": "このページを編集",
     "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "見出しへの直接リンク",
+    "description": "Title for link to heading"
   },
   "theme.lastUpdated.atDate": {
     "message": "{date}に",
