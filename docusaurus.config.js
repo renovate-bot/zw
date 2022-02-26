@@ -21,7 +21,7 @@ const config = {
       '@docusaurus/plugin-pwa',
       {
         /* https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-pwa#configuration */
-        debug: true,
+        debug: false,
         offlineModeActivationStrategies: ['appInstalled', 'standalone', 'queryString'],
         pwaHead: [
           {
@@ -102,7 +102,7 @@ const config = {
   ],
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ja'], // ko
+    locales: ['en', 'ja', 'ko', 'ru', 'de'],
     localeConfigs: {
       en: {
         htmlLang: 'en-GB',

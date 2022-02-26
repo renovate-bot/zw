@@ -11,3 +11,5 @@ files:
       - /docs/gallery/**/*.md
       - /docs/guides/**/*.md
     translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/**/%original_file_name%
+  - source: /community/**/*.md
+    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs-community/**/%original_file_name%
