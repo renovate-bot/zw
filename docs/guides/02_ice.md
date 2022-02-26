@@ -266,7 +266,7 @@ As it can be seen, the second plugin has been loaded first. That's because there
 
 In other words, instead of `wait'1'` you can enter `wait'1a'`, `wait'1b'` and `wait'1c'` – to this way **impose order** on the loadings **regardless of the order of `zi` commands**.
 
-### `zi-turbo '…' for ……` {#zi-turbo--for}
+### `zi-turbo '…' for …` {#zi-turbo--for}
 
 The `zi-turbo` is a funtion to simplify `wait`. This is how the function looks like:
 
@@ -391,7 +391,7 @@ zi snippet OMZ::lib
 | Syntax | Description |
 | :-: | :-- |
 | `svn` | Use Subversion to clone `OMZ::lib` (the whole Oh My Zsh `lib/` directory), note that `atload'…'` uses apostrophes not double quotes, to literally put `$f` into the string, `atload`'s code is automatically being run **within the snippet's (or plugin's) directory**. |
-| `atload'…'` | Code isn't tracked by ZI, e.g: cannot be unloaded, unless you load a plugin (not a snippet) with `zi load ……` and prepend the value of the ice with exclamation mark, e.g: `atload'!local f; for ……'`. The `atload'…'` is executed after loading main files (`pick'…'` and `src'…'` ones). |
+| `atload'…'` | Code isn't tracked by ZI, e.g: cannot be unloaded, unless you load a plugin (not a snippet) with `zi load …` and prepend the value of the ice with exclamation mark, e.g: `atload'!local f; for …'`. The `atload'…'` is executed after loading main files (`pick'…'` and `src'…'` ones). |
 
 </APITable>
 
@@ -486,16 +486,16 @@ Their role is to **receive a portion of Zsh code and execute it in certain momen
 
 <APITable>
 
-| Syntax | Execution moment |
-| :-: | :-- |
+|    Syntax    | Execution moment                                                |
+| :----------: | :-------------------------------------------------------------- |
 | `atclone'…'` | **after cloning** the associated plugin or snippet to the disk. |
-| `atpull'…'` | **after updating** the associated plugin or snippet. |
-| `atinit'…'` | **before loading** of the associated plugin or snippet. |
-| `atload'…'` | **after loading** of the associated plugin or snippet. |
+| `atpull'…'`  | **after updating** the associated plugin or snippet.            |
+| `atinit'…'`  | **before loading** of the associated plugin or snippet.         |
+| `atload'…'`  | **after loading** of the associated plugin or snippet.          |
 
 </APITable>
 
-For convenience, you can use each of the ices multiple times in single `zi ice ……` invocation – all the passed commands will be executed in the given order.
+For convenience, you can use each of the ices multiple times in single `zi ice …` invocation – all the passed commands will be executed in the given order.
 
 The `atpull'…'` ice recognizes a special value: `%atclone` (so the code looks i.e.: `atpull'%atclone'`). It causes the contents of the `atclone'…'` ice to be copied into the contents of the `atpull` ice. This is handy when the same tasks have to be performed on clone **and** on update of plugin or snippet, like e.g.: in the [**Direnv example**][9].
 
@@ -555,6 +555,6 @@ zi load romkatv/powerlevel10k
 [4]: https://asciinema.org/a/149725
 [5]: https://zsh.sourceforge.net/Doc/Release/Functions.html#Hook-Functions
 [6]: https://github.com/romkatv/powerlevel10k
-[7]: ../guides/customization#multiple-prompts
+[7]: /docs/guides/customization#multiple-prompts
 [8]: syntax#the-for-syntax
-[9]: ../gallery/collection#direnv
+[9]: /docs/gallery/collection#direnv
