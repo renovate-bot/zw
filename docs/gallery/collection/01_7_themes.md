@@ -7,9 +7,9 @@ keywords: [collection, themes, prompts]
 
 :::info Related
 
-1. [Multiple prompts](../../guides/customization#multiple-prompts)
-2. [Automatic load/unload based on condition](../../getting_started/overview#automatic-loadunload-based-on-condition)
-3. [Ice `atclone`, `atpull`, `atinit`, `atload`](../../guides/ice#atclone-atpull-atinit-atload)
+1. [Multiple prompts](/docs/guides/customization#multiple-prompts)
+2. [Automatic load/unload based on condition](/docs/getting_started/overview#automatic-loadunload-based-on-condition)
+3. [Ice `atclone`, `atpull`, `atinit`, `atload`](/docs/guides/ice#atclone-atpull-atinit-atload)
 
 :::
 
