@@ -185,7 +185,7 @@ To use **themes** created for Oh-My-Zsh, it requires loading shown below as it w
 If any of above not in order or missing, the theme will break similar as shown below:
 
 ```shell
-... $(build_prompt) ...
+… $(build_prompt) …
 ```
 
 If the `Git` library not loaded or loaded in wrong order, then it may appear similar to the following:
@@ -414,7 +414,7 @@ For the `location`: refer [selection of files][17]
 - `from` => `from`
 - `at` => `ver`
 - `rename-to` => `mv`, `cp`
-- `dir` => Selection(`pick`, ...) with rename
+- `dir` => Selection(`pick`, …) with rename
 - `if` => `if`
 - `hook-build` => `atclone`, `atpull`
 - `hook-load` => `atload`

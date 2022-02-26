@@ -9,13 +9,13 @@ keywords: [collection, plugins]
 
 Related:
 
-1. [Usage: Turbo and Lucid](../../getting_started/overview#turbo-and-lucid)
-2. [Syntax: The `for` syntax](../../guides/syntax#the-for-syntax)
-3. [Guides: Ice Syntax](../../guides/ice)
-4. [Guides: Ice Modifiers](../../guides/ice-modifiers)
-5. [Compiling programs](../../gallery/collection#compiling-programs)
-6. [Customizing paths](../../guides/customization#customizing-paths)
-7. [The Ice modifiers by `bin-gem-node` annex](../../ecosystem/annexes/bin-gem-node#the-ice-modifiers-provided-by-the-annex)
+1. [Usage: Turbo and Lucid](/docs/getting_started/overview#turbo-and-lucid)
+2. [Syntax: The `for` syntax](/docs/guides/syntax#the-for-syntax)
+3. [Guides: Ice Syntax](/docs/guides/ice)
+4. [Guides: Ice Modifiers](/docs/guides/ice-modifiers)
+5. [Compiling programs](/docs/gallery/collection#compiling-programs)
+6. [Customizing paths](/docs/guides/customization#customizing-paths)
+7. [The Ice modifiers by `bin-gem-node` annex](/docs/ecosystem/annexes/bin-gem-node#the-ice-modifiers-provided-by-the-annex)
 
 :::
 
@@ -67,12 +67,12 @@ zi0b
 zi light …
 
 zi0c
-zi light ...
+zi light …
 ```
 
 :::
 
-## Without [`for`](../../guides/syntax#the-for-syntax) syntax {#without-for-syntax}
+## Without [`for`](/docs/guides/syntax#the-for-syntax) syntax {#without-for-syntax}
 
 ### SC: [trapd00r/LS_COLORS](https://github.com/trapd00r/LS_COLORS) {#sc-trapd00rls_colors}
 
@@ -218,7 +218,7 @@ zi ice wait lucid atload"ztie -d db/redis -a 127.0.0.1:4815/5 -zSL main rdhash"
 zi load z-shell/zredis
 ```
 
-## With [`for`](../../guides/syntax#the-for-syntax) syntax {#with-for-syntax}
+## With [`for`](/docs/guides/syntax#the-for-syntax) syntax {#with-for-syntax}
 
 ### GH-R: [pemistahl/grex](https://github.com/pemistahl/grex) {#gh-r-pemistahlgrex}
 

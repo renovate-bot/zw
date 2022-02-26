@@ -57,7 +57,7 @@ zi light …
 
 :::
 
-## Without [`for`](../../guides/syntax#the-for-syntax) syntax {#without-for-syntax}
+## Without [`for`](/docs/guides/syntax#the-for-syntax) syntax {#without-for-syntax}
 
 ### GH-R: [dandavison/delta](https://github.com/dandavison/delta)
 
@@ -438,7 +438,7 @@ zi ice rustup cargo'exa;lsd' as"program" pick"bin/(exa|lsd)"
 zi load z-shell/null
 ```
 
-## With [`for`](../../guides/syntax#the-for-syntax) syntax {#with-for-syntax}
+## With [`for`](/docs/guides/syntax#the-for-syntax) syntax {#with-for-syntax}
 
 ### GH-R: [argoproj/argo-cd](https://github.com/argoproj/argo-cd) {#gh-r-argoprojargo-cd}
 
