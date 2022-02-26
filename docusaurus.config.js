@@ -27,7 +27,7 @@ const config = {
           {
             tagName: 'link',
             rel: 'icon',
-            href: '/zw/logo.png',
+            href: '/zw/logo.svg',
           },
           {
             tagName: 'link',
