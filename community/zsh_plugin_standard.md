@@ -1,6 +1,6 @@
 ---
 id: intro
-title: Zsh Plugin Standart
+title: Zsh Plugin Standard
 sidebar_position: 1
 ---
 
