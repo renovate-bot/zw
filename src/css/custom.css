@@ -1,24 +1,6 @@
 :root {
-  /*
-  See css var + hsl color palette technique:
-  https://blog.maximeheckel.com/posts/the-power-of-composition-with-css-variables/
-   */
   --site-primary-hue-saturation: 167 68%;
-  --site-color-favorite-background: #f6fdfd;
-  --site-color-tooltip: #fff;
-  --site-color-tooltip-background: #161b22;
-  --site-color-svg-icon-favorite: #e9669e;
-  --site-color-checkbox-checked-bg: hsl(167deg 56% 73% / 25%);
-  --site-color-feedback-background: #fff;
   --ifm-code-font-size: 95%;
-}
-
-html[data-theme='dark'] {
-  --ifm-background-color: #0d1117;
-  --ifm-background-surface-color: #161b22;
-  --site-color-feedback-background: #f0f8ff;
-  --site-color-favorite-background: #161b22;
-  --site-color-checkbox-checked-bg: hsl(167deg 56% 73% / 10%);
 }
 
 [data-theme='light'] {
@@ -39,6 +21,11 @@ html[data-theme='dark'] {
   --ifm-color-primary-light: hsl(var(--site-primary-hue-saturation) 54%);
   --ifm-color-primary-lighter: hsl(var(--site-primary-hue-saturation) 62%);
   --ifm-color-primary-lightest: hsl(var(--site-primary-hue-saturation) 73%);
+}
+
+html[data-theme='dark'] {
+  --ifm-background-color: #0d1117;
+  --ifm-background-surface-color: #161b22;
 }
 
 .docusaurus-highlight-code-line {
