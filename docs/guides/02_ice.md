@@ -14,7 +14,7 @@ import Image from '@theme/IdealImage'; import APITable from '@site/src/component
 
 </div>
 
-:::info FAQ What is ice?
+:::info FAQ: What is ice?
 
 The word **ice** means something that's added (like ice to a drink) – and in ZI syntax it means adding a modifier to a next zi command, and also something that's temporary because it melts – and this means that the modification will last only for a single next zi command.
 
@@ -197,15 +197,16 @@ zi ice as"program" id-as"auto"
 zi snippet https://github.com/Osse/git-scripts/blob/master/git-unique
 ```
 
-will work the same as before, e.g: like if the ice used was `id-as'git-unique'`. Example with a plugin:
+will work the same as before, e.g: like if the ice used was `id-as'git-unique'`.
+
+Will work as if id-as'zsh-autopair' was passed:
 
 ```shell
-# Will work as if id-as'zsh-autopair' was passed
 zi ice wait lucid id-as"auto"
 zi load hlissner/zsh-autopair
 ```
 
-### Empty `id-as'…'` {#empty-id-as}
+### Empty `id-as'…'`
 
 An empty `id-as'…'` will work the same as `id-as'auto'`, i.e.:
 
@@ -215,7 +216,7 @@ zi ice wait lucid id-as
 zi load hlissner/zsh-autopair
 ```
 
-## `wait` {#wait}
+## `wait`
 
 :::note
 
@@ -266,7 +267,7 @@ As it can be seen, the second plugin has been loaded first. That's because there
 
 In other words, instead of `wait'1'` you can enter `wait'1a'`, `wait'1b'` and `wait'1c'` – to this way **impose order** on the loadings **regardless of the order of `zi` commands**.
 
-### `zi-turbo '…' for …` {#zi-turbo--for}
+### `zi-turbo '…' for …`
 
 The `zi-turbo` is a funtion to simplify `wait`. This is how the function looks like:
 
@@ -297,7 +298,7 @@ zi-turbo '1b' for \
    MichaelAquilina/zsh-you-should-use
 ```
 
-## `wrap-track'…'` {#wrap-track}
+## `wrap-track'…'`
 
 The `wrap-track'…'` ice-mod allows to extend the tracking (e.g: gathering of report and unload data) of a plugin beyond the moment of sourcing it's main file(s). It works by wrapping the given functions with a tracking-enabling and disabling snippet of code. This is useful especially with prompts, as they very often do their initialization in the first call to their `precmd` [**hook**][5] function. For example, [**romkatv/powerlevel10k**][6] works this way.
 
@@ -310,10 +311,11 @@ zi ice wrap-track"func1;func2;…" …
 
 ### Use case for `wrap-track'…'` {#use-case-for-wrap-track}
 
-Therefore, to e.g. load and unload the example powerlevel10k prompt in the fashion of [**Multiple prompts**][7] article, the `precmd` function of the plugin – called `_p9k_precmd` (to get the name of the function do `echo $precmd_functions` after loading a theme) – should be passed to `wrap-track'…'` ice, like so:
+Therefore, to e.g. load and unload the example powerlevel10k prompt in the fashion of [**Multiple prompts**][7] article, the `precmd` function of the plugin – called `_p9k_precmd` (to get the name of the function do `echo $precmd_functions` after loading a theme) – should be passed to `wrap-track'…'` ice.
+
+Load when `MYPROMPT == 4`
 
 ```shell
-# Load when MYPROMPT == 4
 zi ice load'![[ $MYPROMPT = 4 ]]' unload'![[ $MYPROMPT != 4 ]]' \
   atload'source ~/.p10k.zsh; _p9k_precmd' wrap-track'_p9k_precmd'
 zi load romkatv/powerlevel10k
@@ -405,46 +407,51 @@ zi ice svn pick"completion.zsh" multisrc'git.zsh \
 zi snippet OMZ::lib
 ```
 
-The all possible ways to use the `multisrc'…'` ice-mod:
+The all possible ways to use the `multisrc'…'` ice-modifier:
 
 ```shell
 zi ice depth"1" multisrc="lib/{functions,misc}.zsh" pick"/dev/null"
 zi load robbyrussell/oh-my-zsh
+```
 
-# Can use patterns
+Can use patterns:
+
+```shell
 zi ice svn multisrc"{funct*,misc}.zsh" pick"/dev/null"
 zi snippet OMZ::lib
+```
 
-array=({functions,misc}.zsh)
-zi ice svn multisrc"$array" pick"/dev/null"
+```shell
+zi ice svn multisrc"misc.zsh functions.zsh" pick"/dev/null"
 zi snippet OMZ::lib
+```
 
-# Will use the array's value at the moment of plugin load
-# – this can matter in case of using Turbo mode
+Will use the array's value at the moment of plugin load:
+
+> This can matter in case of using turbo mode.
+
+```shell
 array=({functions,misc}.zsh)
 zi ice svn multisrc"\$array" pick"/dev/null"
 zi snippet OMZ::lib
+```
 
-# Compatible with KSH_ARRAYS option
+Compatible with KSH_ARRAYS option:
+
+```shell
 array=({functions,misc}.zsh)
 zi ice svn multisrc"${array[*]}" pick"/dev/null"
 zi snippet OMZ::lib
+```
 
-# Compatible with KSH_ARRAYS option
-array=({functions,misc}.zsh)
-zi ice svn multisrc"\${array[*]}" pick"/dev/null"
-zi snippet OMZ::lib
+Hack with ZI: the ice's contents is simply `eval`-uated like follows: eval "reply=($multisrc)".
 
-zi ice svn multisrc"misc.zsh functions.zsh" pick"/dev/null"
-zi snippet OMZ::lib
+So it might get handy on an occasion to pass code there, but first you must close the paren and then don't forget to assign `reply`, and to provide a trailing
+opening paren.
 
-# Also – hack ZI: the ice's contents is simply `eval'-uated
-# like follows: eval "reply=($multisrc)". So it might get handy on
-# an occasion to pass code there, but first you must close the paren
-# and then don't forget to assign `reply', and to provide a trailing
-# opening paren. In the code be careful to not redefine any variable
-# used internally by ZI – e.g.: `i' is safe:
+In the code be careful to not redefine any variable used internally by ZI – e.g.: `i` is safe:
 
+```shell
 array=({functions,misc}.zsh)
 zi ice svn multisrc'); local i; for i in $array; do \
             reply+=( ${i/.zsh/.sh} ); \
@@ -474,11 +481,17 @@ zi for \
 
 which is somewhat easier on eyes.
 
-Also – an **important** property: the multiple snippets loaded with the for-syntax are being loaded _separately_, which means that they will not cause a longer keyboard blockage, which could have been noticeable – when using Turbo.
+:::info Important Property
 
-The ZI scheduler will distribute the work over time and will allow activation of keyboard in between the snippets. The `multisrc'…'` way doesn't work this way – sourcing many files can cause noticeable keyboard freezes (in Turbo).
+The multiple snippets loaded with the `for` syntax are being loaded _separately_, which means that they will not cause a longer keyboard blockage, which could have been noticeable – when using Turbo.
 
-## `atclone'…'` `atpull'…'` `atinit'…'` `atload'…'` {#atclone-atpull-atinit-atload}
+:::
+
+The ZI scheduler will distribute the work over time and will allow activation of keyboard in between the snippets.
+
+The `multisrc'…'` way doesn't work this way – sourcing many files can cause noticeable keyboard freezes (in Turbo).
+
+## `atclone'…'` `atpull'…'` `atinit'…'` `atload'…'`
 
 There are four code-receiving ices: `atclone'…'`, `atpull'…'`, `atinit'…'`, `atload'…'`.
 
@@ -497,11 +510,19 @@ Their role is to **receive a portion of Zsh code and execute it in certain momen
 
 For convenience, you can use each of the ices multiple times in single `zi ice …` invocation – all the passed commands will be executed in the given order.
 
-The `atpull'…'` ice recognizes a special value: `%atclone` (so the code looks i.e.: `atpull'%atclone'`). It causes the contents of the `atclone'…'` ice to be copied into the contents of the `atpull` ice. This is handy when the same tasks have to be performed on clone **and** on update of plugin or snippet, like e.g.: in the [**Direnv example**][9].
+The `atpull'…'` ice recognizes a special value: `%atclone`, so the code looks: `atpull'%atclone'`.
+
+It causes the contents of the `atclone'…'` ice to be copied into the contents of the `atpull` ice.
+
+This is handy when the same tasks have to be performed on clone **and** on update of plugin or snippet, like e.g.: in the [**Direnv example**][9].
 
 ### `atload'!…'` with exclamation mark preceded
 
-The `wrap-track` ice allows to track and unload plugins that defer their initialization into a function run later after sourcing the plugin's script – when the function is called, the plugin is then being fully initialized. However, if the function is being called from the `atload` ice, then there is a simpler method than the `wrap-track` ice – an _exclamation mark_-preceded `atload` contents. The exclamation mark causes the effects of the execution of the code passed to `atload` ice to be recorded.
+The `wrap-track` ice allows to track and unload plugins that defer their initialization into a function run later after sourcing the plugin's script – when the function is called, the plugin is then being fully initialized.
+
+However, if the function is being called from the `atload` ice, then there is a simpler method than the `wrap-track` ice – an _exclamation mark_-preceded `atload` contents
+
+The exclamation mark causes the effects of the execution of the code passed to `atload` ice to be recorded.
 
 ### Use case for `atload'…'`
 
@@ -542,8 +563,9 @@ Plugin report saved to $LASTREPORT
 
 The same example as in the [**Tracking precmd-based Plugins**](#wrap-track) article, but using the _exclamation mark_-preceded `atload` instead of `wrap-track`:
 
+Load when - `MYPROMPT == 4`
+
 ```shell
-# Load when MYPROMPT == 4
 zi ice load'![[ $MYPROMPT = 4 ]]' unload'![[ $MYPROMPT != 4 ]]' \
   atload'!source ~/.p10k.zsh; _p9k_precmd'
 zi load romkatv/powerlevel10k
