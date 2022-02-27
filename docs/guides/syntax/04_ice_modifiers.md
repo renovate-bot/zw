@@ -50,7 +50,7 @@ You may safely assume given ice works with both plugins and snippets unless expl
 
 </APITable>
 
-## Conditional loading {#conditional-loading}
+## Conditional loading
 
 <APITable>
 
@@ -149,7 +149,7 @@ You may safely assume given ice works with both plugins and snippets unless expl
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 
-## Order of execution {#order-of-execution}
+## Order of execution
 
 Order of execution of related Ice-modifiers is as follows:
 
@@ -165,57 +165,14 @@ Order of execution of related Ice-modifiers is as follows:
 - If the plugin name collides with an ice name, precede the plugin name with `@`, e.g.: `@sharkdp/fd` (collides with the
   `sh` ice, ZI will take the plugin name as `sh"arkdp/fd"`), see the next section for an example.
 
-## Alternate syntax
-
-### The standard syntax
-
-The normal way of specifying ices and their values is by concatenating the ice name and its value quoted, i.e.:
-
-```shell
-zi wait"1" from"gh-r" atload"print Hello World"
-zi load …
-```
-
-(note that there's no `ice` subcommand - that is currently being fully allowed)
-
-### The alternative syntaxes
-
-However, ZI supports also other syntaxes: the equal (`=`) syntax:
-
-```shell
-zi wait=1 from=gh-r atload="print Hello World"
-zi load …
-```
-
-the colon (`:`) syntax:
-
-```shell
-zi wait:1 from:gh-r atload:"print Hello World"
-zi load …
-```
-
-and also – in conjunction with all of the above – the GNU syntax:
-
-```shell
-zi --wait=1 --from=gh-r --atload="print Hello World"
-zi load …
-```
-
-## Summary
-
-It's up to the user which syntax to choose. The original motivation behind the standard syntax was: to utilize the
-syntax highlighting of editors like Vim – and have the strings following ice names colorized with a distinct color and
-this way separated from them. However, with the [zi/zi-vim-syntax][11] syntax definition this motivation can be
-superseded with the ZI-specific highlighting, at least for Vim.
-
-[1]: ice#src-pick-multisrc
-[2]: ice#wait
+[1]: /docs/guides/syntax/ice#src-pick-multisrc
+[2]: /docs/guides/syntax/ice#wait
 [3]: /docs/guides/customization#multiple-prompts
-[4]: ice#atclone-atpull-atinit-atload
-[5]: syntax#the-make-syntax
-[6]: ice#id-as
+[4]: /docs/guides/syntax/ice#atclone-atpull-atinit-atload
+[5]: /docs/guides/syntax/common#the-make-syntax
+[6]: /docs/guides/syntax/ice#id-as
 [7]: https://github.com/search?q=topic%3Azservice+org%3Az-shell&type=Repositories
-[8]: syntax#the-bindmap-keybindings
-[9]: ice#wrap-track
-[10]: ice#extract
+[8]: /docs/guides/syntax/keybindings
+[9]: /docs/guides/syntax/ice#wrap-track
+[10]: /docs/guides/syntax/ice#extract
 [11]: https://github.com/z-shell/zi-vim-syntax

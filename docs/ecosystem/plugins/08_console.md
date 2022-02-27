@@ -94,5 +94,5 @@ Then, to update, rebuild and reinstall the `zsh`, you can do `zi update zsh`. Th
 [3]: https://asciinema.org/a/272994.svg
 [3-1]: https://asciinema.org/a/272994
 [4]: /docs/getting_started/overview#turbo-mode-zsh--53
-[5]: /docs/guides/syntax#the-for-syntax
+[5]: /docs/guides/syntax/for
 [6]: https://github.com/z-shell/z-a-patch-dl

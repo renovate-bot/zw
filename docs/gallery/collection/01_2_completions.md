@@ -12,8 +12,8 @@ Related:
 1. [Completions managment](/docs/guides/commands#completions-management)
 2. [Calling compinit without turbo mode](/docs/guides/commands#calling-compinit-without-turbo-mode)
 3. [Calling compinit with turbo mode](/docs/guides/commands#calling-compinit-with-turbo-mode)
-4. [Ice modifiers/completions](/docs/guides/ice-modifiers#completions)
-5. [Ice: `src'…'`, `pick'…'`, `multisrc'…'`](/docs/guides/ice#src-pick-multisrc)
+4. [Ice modifiers/completions](/docs/guides/syntax/ice-modifiers#completions)
+5. [Ice: `src'…'`, `pick'…'`, `multisrc'…'`](/docs/guides/syntax/ice#src-pick-multisrc)
 
 :::
 

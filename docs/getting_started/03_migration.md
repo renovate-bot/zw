@@ -166,37 +166,37 @@ zi snippet OMZP::fd/_fd
 
 ### Themes
 
-Oh-My-Zsh themes are stored in the `themes` directory. All and loaded in thee background. with simple syntax:
+Oh-My-Zsh themes are stored in the `themes` directory. All and loaded in the background. with the simple syntax:
 
 ```shell
 ZSH_THEME="robbyrussell"
 ```
 
-However, ZI don't support the `ZSH_THEME` variable natively.
+However, ZI doesn't support the `ZSH_THEME` variable natively.
 
-To use **themes** created for Oh-My-Zsh, it requires loading shown below as it would be same as Oh-My-Zsh does in the
-background.
+To use **themes** created for Oh-My-Zsh, it requires loading shown below as it would be the same as Oh-My-Zsh does in
+the background.
 
-> Some themes may require additional configuration it can be determined from theme configuration file.
+> Some themes may require additional configuration it can be determined from the theme configuration file.
 
 - Load `Git` library
 - Load `Git` plugin
 - Enable `setopt promptsubst`
 
-If any of above not in order or missing, the theme will break similar as shown below:
+If any of the above are not in order or missing, the theme will break similar as shown below:
 
 ```shell
 … $(build_prompt) …
 ```
 
-If the `Git` library not loaded or loaded in wrong order, then it may appear similar to the following:
+If the `Git` library is not loaded or loaded in the wrong order, then it may appear similar to the following:
 
 ```shell
 ........:1: command not found: git_prompt_status
 ........:1: command not found: git_prompt_short_sha
 ```
 
-All together it look like this:
+All together it looks like this:
 
 ```shell
 zi snippet OMZL::git.zsh
@@ -204,7 +204,7 @@ zi snippet OMZP::git
 zi cdclear -q
 ```
 
-Then load prompt:
+Then load the prompt:
 
 ```shell
 setopt promptsubst
@@ -374,7 +374,7 @@ What is `zstyle`?
 + zi snippet PZTM::<modulename>
 ```
 
-Load a repositories as prezto plugins:
+Load repositories as prezto plugins:
 
 ```diff
 - zgen pmodule <reponame> <branch>
@@ -441,4 +441,4 @@ For the `location`: refer [selection of files][17]
 [14]: https://github.com/sorin-ionescu/prezto/tree/master/modules/completion
 [15]: http://zsh.sourceforge.net/Doc/Release/Zsh-Modules.html#The-zsh_002fzutil-Module
 [16]: https://unix.stackexchange.com/questions/214657/what-does-zstyle-do
-[17]: /docs/guides/ice#src-pick-multisrc
+[17]: /docs/guides/syntax/ice#src-pick-multisrc

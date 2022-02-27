@@ -11,13 +11,17 @@
     "message": "💡 Guides",
     "description": "The label for category 💡 Guides in sidebar autoSideBar_1"
   },
+  "sidebar.autoSideBar_1.category.✍️ Syntax": {
+    "message": "✍️ Syntax",
+    "description": "The label for category ✍️ Syntax in sidebar autoSideBar_1"
+  },
   "sidebar.autoSideBar_1.category.✨ Gallery of Invocations": {
     "message": "✨ Gallery of Invocations",
     "description": "The label for category ✨ Gallery of Invocations in sidebar autoSideBar_1"
   },
-  "sidebar.autoSideBar_1.category.📌 Collection": {
-    "message": "📌 Collection",
-    "description": "The label for category 📌 Collection in sidebar autoSideBar_1"
+  "sidebar.autoSideBar_1.category.✨ Collection": {
+    "message": "✨ Collection",
+    "description": "The label for category ✨ Collection in sidebar autoSideBar_1"
   },
   "sidebar.autoSideBar_1.category.🌐 Ecosystem": {
     "message": "🌐 Ecosystem",
