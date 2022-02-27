@@ -102,7 +102,7 @@ const config = {
   ],
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ja', 'ko', 'ru', 'de'],
+    locales: ['en', 'ja', 'ru'],
     localeConfigs: {
       en: {
         htmlLang: 'en-GB',
@@ -169,7 +169,6 @@ const config = {
         apiKey: '9ec9227571a8499464ac9389f1ab1616',
         indexName: 'dev-z-shell',
         contextualSearch: true,
-        searchPagePath: 'search',
       },
       metadata: [{name: 'twitter:card', content: 'summary'}],
       autoCollapseSidebarCategories: true,
