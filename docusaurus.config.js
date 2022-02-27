@@ -1,4 +1,7 @@
 // @ts-nocheck
+/**import algoliasearch from 'algoliasearch/lite';
+const client = algoliasearch('8A6CKETM6G', '1750c7420e10ff8acf4d4f1f7ca0de90');
+const index = client.initIndex('z-digitalclouds.dev');*/
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const TwitterSvg =
@@ -166,9 +169,13 @@ const config = {
       },
       algolia: {
         appId: '8A6CKETM6G',
-        apiKey: '500d89bcba2f4a37376565d627c4d83c',
+        apiKey: '1750c7420e10ff8acf4d4f1f7ca0de90',
         indexName: 'z-digitalclouds',
         contextualSearch: true,
+        autocomplete: {
+          container: '#autocomplete',
+          placeholder: 'Search for products',
+        },
       },
       /**algolia: {
         appId: '4FTAL4NR6O',

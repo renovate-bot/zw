@@ -4,3 +4,13 @@
 [build]
   publish = "build"
   command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build"
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+  [plugins.inputs.thresholds]
+    performance = 0.9
+    accessibility = 0.9
+    best-practices = 0.9
+    seo = 0.9
+    pwa = 0.9
+  [plugins.inputs]
+    output_path = "static/zw/lighthouse.html"
