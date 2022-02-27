@@ -6,9 +6,11 @@ description: Annex - Rust documentation
 keywords: [annex, rust, zsh, z-shell, zi]
 ---
 
-- [z-shell/z-a-rust](https://github.com/z-shell/z-a-rust) annex installs rust and cargo packages locally inside the plugin or snippet directories.
+- [z-shell/z-a-rust](https://github.com/z-shell/z-a-rust) annex installs rust and cargo packages locally inside the
+  plugin or snippet directories.
 
-The crate can then have a so called _shim_ created (name borrowed from `rbenv`) – a script that's located in the standard `$PATH` entry "`$ZPFX/bin`" of following contents (example):
+The crate can then have a so called _shim_ created (name borrowed from `rbenv`) – a script that's located in the
+standard `$PATH` entry "`$ZPFX/bin`" of following contents (example):
 
 ```shell
 #!/usr/bin/env zsh
@@ -28,7 +30,8 @@ As it can be seen shim ultimately provides the binary to the command line.
 
 ## Usage of the annex
 
-The ZI Annex provides two new ices: `rustup` and `cargo''`. The first one installs rust inside the plugin's folder using the official `rustup` installer. The second one has the following syntax:
+The ZI Annex provides two new ices: `rustup` and `cargo''`. The first one installs rust inside the plugin's folder using
+the official `rustup` installer. The second one has the following syntax:
 
 `cargo"[name-of-the-binary-or-path <-] [[!][c|N|E|O]:]{crate-name} [-> {shim-script-name}]'`
 
@@ -79,7 +82,8 @@ Flags meanings:
 - `O` – redirect standard output to `/dev/null`
 - `c` – change the current directory to the plugin's or snippet's directory before executing the command
 
-As the examples showed, the name of the binary to run and the shim name are by default equal to the name of the crate. Specifying `{binary-name} <- …` and/or `… -> {shim-name}` allows to override them.
+As the examples showed, the name of the binary to run and the shim name are by default equal to the name of the crate.
+Specifying `{binary-name} <- …` and/or `… -> {shim-name}` allows to override them.
 
 ## Install rust annex {#install-rust-annex}
 
@@ -93,7 +97,8 @@ This installs the annex and makes the `rustup` and `cargo''` ices available.
 
 ## Rust tools meta plugin {#rust-tools-meta-plugin}
 
-To install [Rust utilities](meta-plugins#@rust-utils), simply run `zi light @rust-utils`, it will install and setup as following:
+To install [Rust utilities](meta-plugins#@rust-utils), simply run `zi light @rust-utils`, it will install and setup as
+following:
 
 ```shell
 bin-gem-node annex: Created the cargo shim and set +x on the cargo binary

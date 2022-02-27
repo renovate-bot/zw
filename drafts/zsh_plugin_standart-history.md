@@ -1,4 +1,4 @@
-## Revision History
+# Revision History
 
 | Versions | Date       | Description                                                              |
 | -------- | ---------- | ------------------------------------------------------------------------ |
@@ -26,5 +26,3 @@
 | v0.92    | 07/14/2019 | 1/ Rename LOADED_PLUGINS to zsh_loaded_plugins.                          |
 | v0.92    | 07/14/2019 | 2/ Suggest that $ZPFX is optional.                                       |
 | v0.91    | 06/02/2018 | Fix the link to the PDF for Github.                                      |
-
-Reminder: The date format that uses slashes is `MM/DD/YYYY`.

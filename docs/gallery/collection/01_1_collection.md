@@ -68,24 +68,36 @@ zi wait lucid light-mode for \
     zsh-users/zsh-completions
 ```
 
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+
 <APITable>
 
-| Syntax | Description |
-| --- | :-- |
-| `wait` |  Load 0 seconds (about 5 ms exactly) after prompt ([turbo mode][7]). |
-| `lucid` | Silence the under-prompt messages ("`Loaded {name of the plugin}`"). |
+| Syntax       | Description                                                                                                                                                                                                                                                                                                                                                            |
+|--------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `wait`       | Load 0 seconds (about 5 ms exactly) after prompt ([turbo mode][7]).                                                                                                                                                                                                                                                                                                    |
+| `lucid`      | Silence the under-prompt messages ("`Loaded {name of the plugin}`").                                                                                                                                                                                                                                                                                                   |
 | `light-mode` | Load the plugin in `light` mode, in which the tracking of plugin (i.e. activity report gathering, accessible via the `zi report {plugin-name}` subcommand) is being disabled; note that for Turbo mode, the performance gains are almost `0`, so in this mode, you can load all plugins with the tracking, i.e.: the `light-mode` ice can be removed from the command. |
-| `atpull'…'` | Execute after updating the plugin – the command in the ice will install any new completions. |
-| `atinit'…'` | Execute code before loading plugin. |
-| `atload'…'` | Execute code after loading plugin. |
-| `zicompinit` | Equals to `autoload compinit; compinit`. |
-| `zicdreplay` | Execute `compdef …` calls that plugins did – they were recorded, so that `compinit` can be called later (`compinit` provides the `compdef` function, so it must be ran before issuing the taken-over `compdef`s with `zicdreplay`). |
+| `atpull'…'`  | Execute after updating the plugin – the command in the ice will install any new completions.                                                                                                                                                                                                                                                                           |
+| `atinit'…'`  | Execute code before loading plugin.                                                                                                                                                                                                                                                                                                                                    |
+| `atload'…'`  | Execute code after loading plugin.                                                                                                                                                                                                                                                                                                                                     |
+| `zicompinit` | Equals to `autoload compinit; compinit`.                                                                                                                                                                                                                                                                                                                               |
+| `zicdreplay` | Execute `compdef …` calls that plugins did – they were recorded, so that `compinit` can be called later (`compinit` provides the `compdef` function, so it must be ran before issuing the taken-over `compdef`s with `zicdreplay`).                                                                                                                                    |
 
 </APITable>
 
-- syntax-highlighting plugins, like [F-Sy-H][9] or [zsh-syntax-highlighting][10], theoretically expect to be loaded last, even after the completion initialization, i.e. `compinit` function.
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
 
-However in practice, you just have to ensure that such plugin is loaded after plugins that are issuing `compdef` – which basically means completions that aren't using the underscore-starting function file; the completion initialization still has to be performed before syntax-highlighting plugin, hence the `atinit'…'` ice, which will load `compinit` right before loading the plugin, the syntax-highlighting and suggestions plugins are loaded early for a better user experience.
+- syntax-highlighting plugins, like [F-Sy-H][9] or [zsh-syntax-highlighting][10], theoretically expect to be loaded
+  last, even after the completion initialization, i.e. `compinit` function.
+
+However in practice, you just have to ensure that such plugin is loaded after plugins that are issuing `compdef` – which
+basically means completions that aren't using the underscore-starting function file; the completion initialization still
+has to be performed before syntax-highlighting plugin, hence the `atinit'…'` ice, which will load `compinit` right
+before loading the plugin, the syntax-highlighting and suggestions plugins are loaded early for a better user
+experience.
 
 ### Without [turbo mode][7] and without the [for][8] syntax
 
@@ -104,7 +116,8 @@ zi light z-shell/F-Sy-H
 zi light zsh-users/zsh-autosuggestions
 ```
 
-Without [turbo mode][7] the syntax-highlighting plugin can be loaded at the end, as it doesn't make any difference, the prompt will appear after loading all objects, anyway.
+Without [turbo mode][7] the syntax-highlighting plugin can be loaded at the end, as it doesn't make any difference, the
+prompt will appear after loading all objects, anyway.
 
 ### Oh-My-Zsh
 
@@ -140,21 +153,26 @@ zi wait lucid for \
 
 **A** - Most themes use this option.
 
-**B** - OMZ themes use this library and some other use also the plugin. It provides many aliases – `atload'…'` shows how to disable some of them (e.g.: to use program `rgburke/grv`).
+**B** - OMZ themes use this library and some other use also the plugin. It provides many aliases – `atload'…'` shows how
+to disable some of them (e.g.: to use program `rgburke/grv`).
 
-**C** - Set OMZ theme. Loaded separately because the theme needs the `!` passed to the `wait` ice to reset the prompt after loading the snippet in Turbo.
+**C** - Set OMZ theme. Loaded separately because the theme needs the `!` passed to the `wait` ice to reset the prompt
+after loading the snippet in Turbo.
 
-**D** - Some plugins: a) syntax-highlighting, loaded possibly early for a better user experience), b) example functional plugin, c) Docker completion.
+**D** - Some plugins: a) syntax-highlighting, loaded possibly early for a better user experience), b) example functional
+plugin, c) Docker completion.
 
 :::
 
-Above setup loads everything after prompt, because of preceding `wait` ice. That is called **turbo mode**, it shortens Zsh startup time by <u>50%-80%</u>, e.g. instead of 200 ms, it'll be getting your shell started up after **40 ms**.
+Above setup loads everything after prompt, because of preceding `wait` ice. That is called **turbo mode**, it shortens
+Zsh startup time by <u>50%-80%</u>, e.g. instead of 200 ms, it'll be getting your shell started up after **40 ms**.
 
 #### Without [turbo mode][7] and [for][8] syntax
 
 The same setup using the classic syntax and without turbo mode, prompt will be initially set like in typical.
 
-With normal setup – **you can remove `wait` only from the theme plugin** and its dependencies to have the same effect while still using turbo mode for everything remaining:
+With normal setup – **you can remove `wait` only from the theme plugin** and its dependencies to have the same effect
+while still using turbo mode for everything remaining:
 
 ```shell
 # A.
@@ -186,11 +204,15 @@ In general, [turbo mode][7] can be optionally enabled only for a subset of plugi
 
 ### LS_COLORS
 
-A repository [trapd00r/LS_COLORS][11] provides a file with color definitions for GNU `ls` command, and also for [ogham/exa][12].
+A repository [trapd00r/LS_COLORS][11] provides a file with color definitions for GNU `ls` command, and also for
+[ogham/exa][12].
 
-Typically one does `eval $( dircolors -b $HOME/LS_COLORS)` to process this file and set the environment for `ls`. This means `dircolors` is run every shell startup.
+Typically one does `eval $( dircolors -b $HOME/LS_COLORS)` to process this file and set the environment for `ls`. This
+means `dircolors` is run every shell startup.
 
-This costs much time because a fork has to be done and the program, i.e. `dircolors`, binary needs to be loaded and executed, and because `dircolors` loads the colors' definitions and processes them. Following ZI invocation solves this problem:
+This costs much time because a fork has to be done and the program, i.e. `dircolors`, binary needs to be loaded and
+executed, and because `dircolors` loads the colors' definitions and processes them. Following ZI invocation solves this
+problem:
 
 ```shell
 zi ice atclone'dircolors -b LS_COLORS > clrs.zsh' \
@@ -199,15 +221,22 @@ zi ice atclone'dircolors -b LS_COLORS > clrs.zsh' \
 zi light trapd00r/LS_COLORS
 ```
 
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+
 <APITable>
 
-| Syntax | Description |
-| --- | :-- |
-| `atclone'…'` | Generate shell script, but instead of passing it to `eval`, save it to file. The `atclone'…'` is being ran on the **installation** while the `atpull'…'` hook is being run on an **update** of the [**trapd00r/LS_COLORS**][11] plugin. |
-| `atpull'%atclone'` | Do the same at any update of the plugin the `%atclone` is just a special string that denotes the `atclone'…'` hook and is copied onto the `atpull'…'` hook. |
-| `pick"clrs.zsh"` | Source the previously generated file `clrs.zsh`. |
-| `nocompile'!'` | Invokes compilation **after** the `atclone'…'` [ice-modifier][13] and the [exclamation mark][14] causes this. |
-| `atload'…'` | Additionally sets up the Zsh completion to use the colors provided by the trapd00r package. |
+| Syntax             | Description                                                                                                                                                                                                                             |
+| ------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `atclone'…'`       | Generate shell script, but instead of passing it to `eval`, save it to file. The `atclone'…'` is being ran on the **installation** while the `atpull'…'` hook is being run on an **update** of the [**trapd00r/LS_COLORS**][11] plugin. |
+| `atpull'%atclone'` | Do the same at any update of the plugin the `%atclone` is just a special string that denotes the `atclone'…'` hook and is copied onto the `atpull'…'` hook.                                                                             |
+| `pick"clrs.zsh"`   | Source the previously generated file `clrs.zsh`.                                                                                                                                                                                        |
+| `nocompile'!'`     | Invokes compilation **after** the `atclone'…'` [ice-modifier][13] and the [exclamation mark][14] causes this.                                                                                                                           |
+| `atload'…'`        | Additionally sets up the Zsh completion to use the colors provided by the trapd00r package.                                                                                                                                             |
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
 
 </APITable>
 
@@ -217,9 +246,11 @@ The everyday sourced file, i.e. `clrs.zsh`, is being compiled to speed up the lo
 
 ### Direnv
 
-The project [**direnv/direnv**][15] registers itself in Z shell to modify the environment on directory change. This registration is most often done by `eval "$(direnv hook zsh)"` added to `.zshrc`.
+The project [**direnv/direnv**][15] registers itself in Z shell to modify the environment on directory change. This
+registration is most often done by `eval "$(direnv hook zsh)"` added to `.zshrc`.
 
-The drawback of this standard procedure is that the `direnv` binary is run on every shell startup and significantly slows it down. ZI allows to solve this in the following way:
+The drawback of this standard procedure is that the `direnv` binary is run on every shell startup and significantly
+slows it down. ZI allows to solve this in the following way:
 
 ```shell
 zi as"program" make'!' atclone'./direnv hook zsh > zhook.zsh' \
@@ -227,20 +258,29 @@ zi as"program" make'!' atclone'./direnv hook zsh > zhook.zsh' \
     direnv/direnv
 ```
 
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+
+
 <APITable>
 
-| Syntax | Description |
-| --- | :-- |
-| `make'!'` | Compile `direnv` (it's written in Go lang); the exclamation mark means: run the `make` first, before `atclone'…'` and `atpull'…'` hooks. |
-| `atclone'…'` | Initially (right after installing the plugin) generate the registration code and save it to `zhook.zsh` (instead of passing to `eval`). |
+| Syntax             | Description                                                                                                                                    |
+| ------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------- |
+| `make'!'`          | Compile `direnv` (it's written in Go lang); the exclamation mark means: run the `make` first, before `atclone'…'` and `atpull'…'` hooks.       |
+| `atclone'…'`       | Initially (right after installing the plugin) generate the registration code and save it to `zhook.zsh` (instead of passing to `eval`).        |
 | `atpull'%atclone'` | Regenerate the registration code also on update. The `atclone'…'` runs on **installation** while `atpull'…'` runs on **update** of the plugin. |
-| `src'zhook.zsh'` | Load (`source`) the generated registration code |
-| `pick'direnv'` | Ensure `+x` permission on the binary |
-| `as'program'` | The plugin is a program, there's no main file to the source. |
+| `src'zhook.zsh'`   | Load (`source`) the generated registration code                                                                                                |
+| `pick'direnv'`     | Ensure `+x` permission on the binary                                                                                                           |
+| `as'program'`      | The plugin is a program, there's no main file to the source.                                                                                   |
 
 </APITable>
 
-This way registration code is generated once every installation and update, to then be simply sourced without running `direnv`.
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+This way registration code is generated once every installation and update, to then be simply sourced without running
+`direnv`.
 
 The project is also available as a binary [Github releases]. This distribution can be installed by:
 
@@ -272,7 +312,8 @@ zi light direnv/direnv
 - `make'!'` – execute `make` before `atclone'…'` and before `atpull'…'` (see `make` above),
 - `src'zhook.zsh'` – source file `zhook.zsh`.
 
-In general, direnv works by hooking up to Zsh. The code that does this is provided by program `direnv` (built by `make'…'`).
+In general, direnv works by hooking up to Zsh. The code that does this is provided by program `direnv` (built by
+`make'…'`).
 
 Above `atclone'…'` puts this code into file `zhook.zsh`, `src''` sources it.
 
@@ -288,13 +329,13 @@ zi light vim/vim
 
 <APITable>
 
-| Syntax             | Description                                                                                |
-| ------------------ | :----------------------------------------------------------------------------------------- |
-| `as'program'`      | Add file selected by `pick'…'` to `$PATH`, and do not source it.                           |
-| `atclone'…'`       | Execute code after downloading.                                                            |
-| `atpull'%atclone'` | Execute the same code `atclone'…'` is given, but after successful update.                  |
-| `make`             |  Run `make` after `atclone'…'` and `atpull'…'` (note: `make'!'` will execute before them). |
-| `pick'src/vim'`    | Set executable flag on `src/vim`, hint that `src/` should be added to `$PATH`.             |
+| Syntax             | Description                                                                               |
+| ------------------ | :---------------------------------------------------------------------------------------- |
+| `as'program'`      | Add file selected by `pick'…'` to `$PATH`, and do not source it.                          |
+| `atclone'…'`       | Execute code after downloading.                                                           |
+| `atpull'%atclone'` | Execute the same code `atclone'…'` is given, but after successful update.                 |
+| `make`             | Run `make` after `atclone'…'` and `atpull'…'` (note: `make'!'` will execute before them). |
+| `pick'src/vim'`    | Set executable flag on `src/vim`, hint that `src/` should be added to `$PATH`.            |
 
 </APITable>
 

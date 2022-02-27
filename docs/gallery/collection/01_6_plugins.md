@@ -88,21 +88,21 @@ zi ice wait lucid reset \
 zi light trapd00r/LS_COLORS
 ```
 
-### SC: [paoloantinori/hhighlighter](https://github.com/paoloantinori/hhighlighter) {#sc-paoloantinorihhighlighter}
+### SC: [paoloantinori/hhighlighter](https://github.com/paoloantinori/hhighlighter)
 
 ```shell
 zi ice wait lucid pick"h.sh"
 zi light paoloantinori/hhighlighter
 ```
 
-### SC: [wfxr/forgit](https://github.com/wfxr/forgit) {#sc-wfxrforgit}
+### SC: [wfxr/forgit](https://github.com/wfxr/forgit)
 
 ```shell
 zi ice wait lucid
 zi load wfxr/forgit
 ```
 
-### SC: [urbainvaes/fzf-marks](https://github.com/urbainvaes/fzf-marks) {#sc-urbainvaesfzf-marks}
+### SC: [urbainvaes/fzf-marks](https://github.com/urbainvaes/fzf-marks)
 
 ```shell
 zi ice wait lucid
@@ -116,14 +116,14 @@ zi ice wait lucid pick'autopair.zsh'
 zi load hlissner/zsh-autopair
 ```
 
-### SC: [voronkovich/gitignore.plugin.zsh](https://github.com/voronkovich/gitignore.plugin.zsh) {#sc-voronkovichgitignorepluginzsh}
+### SC: [voronkovich/gitignore.plugin.zsh](https://github.com/voronkovich/gitignore.plugin.zsh)
 
 ```shell
 zi ice wait lucid
 zi load voronkovich/gitignore.plugin.zsh
 ```
 
-### SC: [xPMo/zsh-toggle-command-prefix](https://github.com/xPMo/zsh-toggle-command-prefix) {#sc-xpmozsh-toggle-command-prefix}
+### SC: [xPMo/zsh-toggle-command-prefix](https://github.com/xPMo/zsh-toggle-command-prefix)
 
 ```shell
 zi ice wait lucid
@@ -137,21 +137,21 @@ zi ice wait lucid
 zi light leonjza/history-here
 ```
 
-### SC: [hkbakke/bash-insulter](https://github.com/hkbakke/bash-insulter) {#sc-hkbakkebash-insulter}
+### SC: [hkbakke/bash-insulter](https://github.com/hkbakke/bash-insulter)
 
 ```shell
 zi ice wait lucid pick'src/bash.command-not-found'
 zi light hkbakke/bash-insulter
 ```
 
-### SC: [leophys/zsh-plugin-fzf-finder](https://github.com/leophys/zsh-plugin-fzf-finder) {#sc-leophyszsh-plugin-fzf-finder}
+### SC: [leophys/zsh-plugin-fzf-finder](https://github.com/leophys/zsh-plugin-fzf-finder)
 
 ```shell
 zi ice wait lucid has'fzf' pick'fzf-finder.plugin.zsh'
 zi light leophys/zsh-plugin-fzf-finder
 ```
 
-### SC: [autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) & [fast-syntax-highlighting](https://github.com/z-shell/F-Sy-H) {#sc-autosuggestions--fast-syntax-highlighting}
+### SC: [autosuggestions][1], [fast-syntax-highlighting][2]
 
 ```shell
 zi ice wait lucid atinit"ZI[COMPINIT_OPTS]=-C; zpcompinit; zpcdreplay"
@@ -161,7 +161,7 @@ zi ice wait lucid atload"!_zsh_autosuggest_start"
 zi load zsh-users/zsh-autosuggestions
 ```
 
-### SC: [z-shell/zsh-github-issues](https://github.com/z-shell/zsh-github-issues) {#sc-z-shellzsh-github-issues}
+### SC: [z-shell/zsh-github-issues](https://github.com/z-shell/zsh-github-issues)
 
 ```shell
 zi ice lucid id-as"GitHub-notify" on-update-of"~/.cache/zsh-github-issues/new_titles.log" \
@@ -169,21 +169,21 @@ zi ice lucid id-as"GitHub-notify" on-update-of"~/.cache/zsh-github-issues/new_ti
 zi light z-shell/zsh-github-issues
 ```
 
-### SC: [zsh-shell/zsh-startify](https://github.com/z-shell/zsh-startify) {#sc-zsh-shellzsh-startify}
+### SC: [zsh-shell/zsh-startify](https://github.com/z-shell/zsh-startify)
 
 ```shell
 zi ice wait lucid atload"zsh-startify"
 zi load z-shell/zsh-startify
 ```
 
-### SC: [z-shell/declare-zsh](https://github.com/z-shell/declare-zsh) {#sc-z-shelldeclare-zsh}
+### SC: [z-shell/declare-zsh](https://github.com/z-shell/declare-zsh)
 
 ```shell
 zi ice wait lucid
 zi load z-shell/declare-zsh
 ```
 
-### SC: [z-shell/zsh-navigation-tools](https://github.com/z-shell/zsh-navigation-tools) {#sc-z-shellzsh-navigation-tools}
+### SC: [z-shell/zsh-navigation-tools](https://github.com/z-shell/zsh-navigation-tools)
 
 ```shell
 zi ice wait lucid
@@ -198,7 +198,7 @@ zi ice wait lucid
 zi load z-shell/H-S-MW
 ```
 
-### SC: [z-shell/zui](https://github.com/z-shell/zui) & [z-shell/zi-crasis](https://github.com/z-shell/zi-crasis) {#sc-z-shellzui--z-shellzi-crasis}
+### SC: [z-shell/zui](https://github.com/z-shell/zui), [z-shell/zi-crasis](https://github.com/z-shell/zi-crasis)
 
 ```shell
 zi ice wait lucid
@@ -208,7 +208,7 @@ zi ice wait"[[ -n ${ZLAST_COMMANDS[(r)cra*]} ]]" lucid
 zi load z-shell/zi-crasis
 ```
 
-### SC: [z-shell/zredis](https://github.com/z-shell/zredis) {#sc-z-shellzredis}
+### SC: [z-shell/zredis](https://github.com/z-shell/zredis)
 
 ```shell
 zstyle ":plugin:zredis" configure_opts "--without-tcsetpgrp"
@@ -218,16 +218,16 @@ zi ice wait lucid atload"ztie -d db/redis -a 127.0.0.1:4815/5 -zSL main rdhash"
 zi load z-shell/zredis
 ```
 
-## With [`for`](/docs/guides/syntax#the-for-syntax) syntax {#with-for-syntax}
+## With [`for`](/docs/guides/syntax#the-for-syntax) syntax
 
-### GH-R: [pemistahl/grex](https://github.com/pemistahl/grex) {#gh-r-pemistahlgrex}
+### GH-R: [pemistahl/grex](https://github.com/pemistahl/grex)
 
 ```shell
 zi wait lucid for as"command" from"gh-r" sbin"grex" \
     pemistahl/grex
 ```
 
-### GH-R: [ahmetb/kubectx](https://github.com/ahmetb/kubectx) {#gh-r-ahmetbkubectx}
+### GH-R: [ahmetb/kubectx](https://github.com/ahmetb/kubectx)
 
 ```shell
 zi wait lucid for bpick"kubectx;kubens" from"gh-r" \
@@ -249,3 +249,6 @@ zi wait lucid for atclone"autoreconf -fi && ./configure --with-oniguruma=builtin
 zi wait lucid for as"command" from"gh-r" sbin"git-sizer" \
     @github/git-sizer
 ```
+
+[1]: https://github.com/zsh-users/zsh-autosuggestions
+[2]: https://github.com/z-shell/F-Sy-H

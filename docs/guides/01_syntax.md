@@ -32,7 +32,8 @@ zi as"null" wait"3" lucid for \
   make"PREFIX=$ZPFX" tj/git-extras
 ```
 
-Above single command installs 6 plugins ([git extension][2] packages), with the base ices `as"null" wait"3" lucid` that are common to all of the plugins and 6 plugin-specific add-on ices.
+Above single command installs 6 plugins ([git extension][2] packages), with the base ices `as"null" wait"3" lucid` that
+are common to all of the plugins and 6 plugin-specific add-on ices.
 
 ### Use cases of `for` syntax
 
@@ -47,7 +48,8 @@ zi as"null" wait"2" lucid from"gh-r" for \
 
 :::note
 
-- `sbin'…'` is an [ice][4] added by the [bin-gem-node][5] [annex][6], it provides the command to the command line without altering `$PATH`.
+- `sbin'…'` is an [ice][4] added by the [bin-gem-node][5] [annex][6], it provides the command to the command line
+  without altering `$PATH`.
 - If the name of the command is the same as the name of the plugin, the ice contents can be skipped.
 
 :::
@@ -97,11 +99,14 @@ More information: [guides/customization][10]
 
 ## The `bindmap'…'` keybindings
 
-Sometimes plugins call [bindkey][11] to assign keyboard shortucts. This can cause problems, because multiple plugins can bind the same keys.
+Sometimes plugins call [bindkey][11] to assign keyboard shortucts. This can cause problems, because multiple plugins can
+bind the same keys.
 
-Also, the user might want a different binding(s), which will require a complicated, additional `bindkey` commands in `.zshrc`.
+Also, the user might want a different binding(s), which will require a complicated, additional `bindkey` commands in
+`.zshrc`.
 
-ZI provides a solution to this problem – the ability to remap the bindkeys with a short [ice-modifier][12] specification with the `bindmap'…'` [ice][13].
+ZI provides a solution to this problem – the ability to remap the bindkeys with a short [ice-modifier][12] specification
+with the `bindmap'…'` [ice][13].
 
 ### Examples for `bindmap'…'`
 
@@ -112,7 +117,8 @@ zi bindmap'^R -> ^G' for z-shell/history-search-multi-word
 
 ```
 
-Map Ctrl-Shift-Left and …-Right used by URxvt instead of the Xterms' ones. Load with the bindkey-tracking ↔ with light-loading for anything else.
+Map Ctrl-Shift-Left and …-Right used by URxvt instead of the Xterms' ones. Load with the bindkey-tracking ↔ with
+light-loading for anything else.
 
 ```shell
 # Could also separate the bindmaps with a semicolon, i.e.:
@@ -123,7 +129,8 @@ zi wait light-mode trackbinds bindmap'"\\e[1\;6D" -> \\e[1\;5D"' \
   michaelxmcbride/zsh-dircycle
 ```
 
-Map space to regular space and Ctrl-Space to the `globalias' widget, which expands the alias entered on the left (provided by OMZ globalias plugin).
+Map space to regular space and Ctrl-Space to the `globalias' widget, which expands the alias entered on the left
+(provided by OMZ globalias plugin).
 
 ```shell
 zi bindmap='!" " -> magic-space; !"^ " -> globalias' nocompletions \
@@ -137,11 +144,13 @@ The `bindmap'…'` ice has two modes of operation: normal and exclamation-mark (
 
 In the first mode, the remapping is beind done from-key to-key, i.e.: `bindmap'fromkey -> to-key'`.
 
-The given key is being changed to the second given key in the `bindkey` command that's being actually issued when loading the plugin.
+The given key is being changed to the second given key in the `bindkey` command that's being actually issued when
+loading the plugin.
 
 In the second mode, the remapping is being done from-key to-widget, e.g: `bindmap'!from-key -> to-widget'`.
 
-In this mode, the given key is being mapped to the given widget instead of the widget specified in the `bindkey` command e.g.:
+In this mode, the given key is being mapped to the given widget instead of the widget specified in the `bindkey` command
+e.g.:
 
 Instead of:
 
@@ -163,11 +172,13 @@ bindkey " " magic-space
 
 When the investigation mode is on i.e.:
 
-- when the full loading mode is being used (default in the `for` syntax and when `zi load …` is used) – then the `bindmap'…'` ice works normally.
+- when the full loading mode is being used (default in the `for` syntax and when `zi load …` is used) – then the
+  `bindmap'…'` ice works normally.
 
 In the non-investigation, i.e.:
 
-- the [light mode][14] – activated when `zi light …` or the `light-mode` ice is being used – the `bindmap'…'` is unavailable, unless the `trackbinds` ice is specified, e.g:
+- the [light mode][14] – activated when `zi light …` or the `light-mode` ice is being used – the `bindmap'…'` is
+  unavailable, unless the `trackbinds` ice is specified, e.g:
 
 ```shell
 # With use of the light-mode ice and the for-syntax:
@@ -180,13 +191,15 @@ zi light z-shell/history-search-multi-word
 
 ### Using the <kbd>UPAR</kbd> shorthands
 
-There are four special values that can be used on the left side of the bind-map: <kbd>UPAR</kbd>, <kbd>DOWNAR</kbd>, <kbd>LEFTAR</kbd>, <kbd>RIGHTAR</kbd>. They'll match up arrow, down arrow, etc. So that it's possible to do:
+There are four special values that can be used on the left side of the bind-map: <kbd>UPAR</kbd>, <kbd>DOWNAR</kbd>,
+<kbd>LEFTAR</kbd>, <kbd>RIGHTAR</kbd>. They'll match up arrow, down arrow, etc. So that it's possible to do:
 
 ```shell
 zi bindmap='LEFTAR -> ^F; RIGHTAR -> ^G' …
 ```
 
-The benefits of using the <kbd>UPAR</kbd>, … shorthands is that they cover multiple possible cursor-key codes for each of the cursor key, so that they'll work regardless of the terminal being used.
+The benefits of using the <kbd>UPAR</kbd>, … shorthands is that they cover multiple possible cursor-key codes for each
+of the cursor key, so that they'll work regardless of the terminal being used.
 
 [1]: /search/?q=syntax
 [2]: /search/?q=git+ext

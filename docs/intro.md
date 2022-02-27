@@ -17,14 +17,16 @@ import Image from '@theme/IdealImage'; import ZGitImg from '@site/static/zw/img/
 <Tabs>
   <TabItem value="gems" label="RubyGems">
 
-[RubyGems](https://rubygems.org), [$GEM_HOME](https://guides.rubygems.org/command-reference/#gem-environment) automatically set.
+[RubyGems](https://rubygems.org), [$GEM_HOME](https://guides.rubygems.org/command-reference/#gem-environment)
+automatically set.
 
 [Annex Bin-Gem-Node][1] | [Package Any Gem][2]
 
   </TabItem>
   <TabItem value="node" label="Node">
 
-[Node](https://www.npmjs.com) modules, [$NODE_PATH](https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders) automatically set.
+[Node](https://www.npmjs.com) modules,
+[$NODE_PATH](https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders) automatically set.
 
 [Annex Bin-Gem-Node][1] | [Package Any Node][3]
 
@@ -61,14 +63,17 @@ Install almost everything from [GitHub](https://github.com):
 
 - [Customize paths][9], use [multiple prompts][10] or create [your own][11] plugins.
 - Supports [Oh My Zsh][12] and [Prezto][12] plugins and libraries ([migration][13]).
-- Does not use `$FPATH`, loading multiple plugins doesn't clutter `$FPATH` with the same number of entries (e.g. 10, 15, or more).
+- Does not use `$FPATH`, loading multiple plugins doesn't clutter `$FPATH` with the same number of entries (e.g. 10, 15,
+  or more).
 - Code is immune to `KSH_ARRAYS` and other options typically causing compatibility problems.
 - Do not require `sudo`, and provide many workarounds (e.g: setting so-called **shims** locally).
 
 ## 📈 Familiarize and control
 
-- Visualise **aliases**, **functions**, **bindkeys**, **Zle widgets**, **zstyles**, **completions**, **variables**, `$PATH`, and `$FPATH` elements a plugin has set up.
-- Quickly familiarize oneself with a new plugin and provides rich and easy-to-digest information that might be helpful on various occasions.
+- Visualise **aliases**, **functions**, **bindkeys**, **Zle widgets**, **zstyles**, **completions**, **variables**,
+  `$PATH`, and `$FPATH` elements a plugin has set up.
+- Quickly familiarize oneself with a new plugin and provides rich and easy-to-digest information that might be helpful
+  on various occasions.
 - [Load or unload][14] plugins, use the ability to [manage][15] completions.
 
 - Docker [playground](https://github.com/z-shell/playground) to test or propose configurations.
@@ -92,10 +97,14 @@ Install almost everything from [GitHub](https://github.com):
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+<!-- markdownlint-disable -->
+<div align="center">
+<a href="https://github.com/z-shell">GitHub</a>
+ - <a href="https://twitter.com/zshell_zi">Twitter</a>
+ - <a href="https://github.com/z-shell/community/issues/new?assignees=&labels=%F0%9F%91%A5+member&template=membership.yml&title=team%3A+">Join The Team</a>
+</div>
 
-<div align="center"><a href="https://github.com/z-shell">GitHub</a> - <a href="https://twitter.com/zshell_zi">Twitter</a> - <a href="https://github.com/z-shell/community/issues/new?assignees=&labels=%F0%9F%91%A5+member&template=membership.yml&title=team%3A+">Join The Team</a></div>
-
----
+<!-- markdownlint-restore -->
 
 [1]: ecosystem/annexes/bin-gem-node
 [2]: https://github.com/z-shell/any-gem

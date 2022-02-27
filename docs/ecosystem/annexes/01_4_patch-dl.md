@@ -6,7 +6,8 @@ description: Annex - Patch DL documentation
 keywords: [annex, patch-dl]
 ---
 
-- [z-shell/z-a-patch-dl](https://github.com/z-shell/z-a-patch-dl) annex downloads files and applies patches and adds two ice modifiers:
+- [z-shell/z-a-patch-dl](https://github.com/z-shell/z-a-patch-dl) annex downloads files and applies patches and adds two
+  ice modifiers:
 
 ```shell
 zi ice dl'{URL} [-> {optional-output-file-name}]; …' …
@@ -18,9 +19,12 @@ and
 zi ice patch'{file-name-with-the-patch-to-apply}; …' …
 ```
 
-The annex (i.e. ZI extension) will download the given `{URL}` under the path `{optional-output-file-name}` (if no file name given, then it is taken from last segment of the URL) in case of the `dl''` ice modifier, and apply a patch given by the `{file-name-with-the-patch-to-apply}` in case of the `patch''` ice-mod.
+The annex (i.e. ZI extension) will download the given `{URL}` under the path `{optional-output-file-name}` (if no file
+name given, then it is taken from last segment of the URL) in case of the `dl''` ice modifier, and apply a patch given
+by the `{file-name-with-the-patch-to-apply}` in case of the `patch''` ice-mod.
 
-You can use this functionality to download and apply patches. For example, to install `fbterm`, two patches are being needed, one to fix the operation, the other one to fix the build:
+You can use this functionality to download and apply patches. For example, to install `fbterm`, two patches are being
+needed, one to fix the operation, the other one to fix the build:
 
 ```shell
 zi ice \

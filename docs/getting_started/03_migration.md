@@ -174,7 +174,8 @@ ZSH_THEME="robbyrussell"
 
 However, ZI don't support the `ZSH_THEME` variable natively.
 
-To use **themes** created for Oh-My-Zsh, it requires loading shown below as it would be same as Oh-My-Zsh does in the background.
+To use **themes** created for Oh-My-Zsh, it requires loading shown below as it would be same as Oh-My-Zsh does in the
+background.
 
 > Some themes may require additional configuration it can be determined from theme configuration file.
 

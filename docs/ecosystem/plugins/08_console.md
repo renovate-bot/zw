@@ -18,7 +18,8 @@ A console for [ZI][1] – based on the `zsh/zcurses` Zshell module allows the us
 
 ## ZI console usage
 
-Start the console by <kbd>Ctrl-O</kbd> <kbd>Ctrl-J</kbd> keyboard shortcut, or by running `ziconsole` function in the shell. Then, in the console:
+Start the console by <kbd>Ctrl-O</kbd> <kbd>Ctrl-J</kbd> keyboard shortcut, or by running `ziconsole` function in the
+shell. Then, in the console:
 
 | Key(s)             | Description                                                      |
 | ------------------ | ---------------------------------------------------------------- |
@@ -68,9 +69,11 @@ zi ice id-as"zsh" atclone"./.preconfig
 zi load zsh-users/zsh
 ```
 
-The command will build a custom `zsh` and install it under `$ZPFX` (`~/.zi/polaris` by default). The path `$ZPFX/bin` is already added to `$PATH` by ZI at first position, so starting `zsh` will run the new Zshell.
+The command will build a custom `zsh` and install it under `$ZPFX` (`~/.zi/polaris` by default). The path `$ZPFX/bin` is
+already added to `$PATH` by ZI at first position, so starting `zsh` will run the new Zshell.
 
-When on Gentoo, and possibly other systems, the `zsh` can still not have the ncurses library linked. To address this, utilize the [z-a-patch-dl][6] annex and automatically patch the source first:
+When on Gentoo, and possibly other systems, the `zsh` can still not have the ncurses library linked. To address this,
+utilize the [z-a-patch-dl][6] annex and automatically patch the source first:
 
 ```shell
 zi light z-shell/z-a-patch-dl
@@ -83,7 +86,8 @@ zi ice id-as"zsh" atclone"./.preconfig
 zi load zsh-users/zsh
 ```
 
-Then, to update, rebuild and reinstall the `zsh`, you can do `zi update zsh`. The binary can be safely copied over `/bin/zsh` as it has paths to all needed directories built-in.
+Then, to update, rebuild and reinstall the `zsh`, you can do `zi update zsh`. The binary can be safely copied over
+`/bin/zsh` as it has paths to all needed directories built-in.
 
 [1]: https://github.com/z-shell/zi
 [2]: https://github.com/z-shell/zui
