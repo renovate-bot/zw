@@ -156,6 +156,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      image: 'zw/logo/320x320.png',
       announcementBar: {
         id: 'announcemnt',
         content: `If you like ❮ ZI ❯, give it a ⭐️ on <a target="_blank" rel="noopener noreferrer" href="https://github.com/z-shell/zi">GitHub</a> and follow us on <a target="_blank" rel="noopener noreferrer" className='TwitterSvg' href="https://twitter.com/zshell_zi" >Twitter</a> ${TwitterSvg}`,
@@ -163,7 +164,13 @@ const config = {
         textColor: '#F5F6F7',
         isCloseable: true,
       },
-      image: 'zw/logo/320x320.png',
+      algolia: {
+        appId: '4FTAL4NR6O',
+        apiKey: '9ec9227571a8499464ac9389f1ab1616',
+        indexName: 'dev-z-shell',
+        contextualSearch: true,
+        searchPagePath: 'search',
+      },
       metadata: [{name: 'twitter:card', content: 'summary'}],
       autoCollapseSidebarCategories: true,
       hideableSidebar: true,
@@ -174,13 +181,6 @@ const config = {
         switchConfig: {
           darkIcon: '🌙',
         },
-      },
-      algolia: {
-        appId: '4FTAL4NR6O',
-        apiKey: '9ec9227571a8499464ac9389f1ab1616',
-        indexName: 'dev-z-shell',
-        contextualSearch: true,
-        searchPagePath: 'search',
       },
       navbar: {
         hideOnScroll: true,

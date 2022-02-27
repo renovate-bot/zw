@@ -446,8 +446,7 @@ zi snippet OMZ::lib
 
 Hack with ZI: the ice's contents is simply `eval`-uated like follows: eval "reply=($multisrc)".
 
-So it might get handy on an occasion to pass code there, but first you must close the paren and then don't forget to assign `reply`, and to provide a trailing
-opening paren.
+So it might get handy on an occasion to pass code there, but first you must close the paren and then don't forget to assign `reply`, and to provide a trailing opening paren.
 
 In the code be careful to not redefine any variable used internally by ZI – e.g.: `i` is safe:
 
