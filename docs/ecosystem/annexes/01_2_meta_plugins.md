@@ -9,7 +9,7 @@ keywords: [annex, meta-plugins]
 import APITable from '@site/src/components/APITable';
 
 - [z-a-meta-plugins](https://github.com/z-shell/z-a-meta-plugins) annex have the curated, optimal
-  [ice](/docs/guides/ice) lists automatically applied.
+  [ice](/docs/guides/syntax/ice) lists automatically applied.
 - It's possible to create your own group of plugins by requesting it at [annexes](https://github.com/z-shell/zannexes)
   repository.
 

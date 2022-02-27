@@ -9,8 +9,8 @@ keywords: [collection, snippets]
 
 Related:
 
-1. [Ice: svn](/docs/guides/ice#svn)
-2. [Ice: multisrc'…'](/docs/guides/ice#the-multisrc-ice)
+1. [Ice: svn](/docs/guides/syntax/ice#svn)
+2. [Ice: multisrc'…'](/docs/guides/syntax/ice#the-multisrc-ice)
 
 :::
 

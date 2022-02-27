@@ -689,10 +689,10 @@ For some additional examples you can also check out the:
 [3]: /search?q=for+syntax
 [9]: /docs/gallery/collection#oh-my-zsh
 [10]: /docs/gallery/collection
-[11]: /docs/guides/ice#atclone-atpull-atinit-atload
+[11]: /docs/guides/syntax/ice#atclone-atpull-atinit-atload
 [12]: /community/intro#use-of-add-zsh-hook-to-install-hooks
-[13]: /docs/guides/ice#src-pick-multisrc
-[14]: /docs/guides/syntax#the-for-syntax
+[13]: /docs/guides/syntax/ice#src-pick-multisrc
+[14]: /docs/guides/syntax/for
 [15]: /docs/guides/customization#multiple-prompts
 [16]: https://github.com/starship/starship
 [17]: https://github.com/sindresorhus/pure

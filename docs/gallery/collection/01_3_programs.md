@@ -9,15 +9,15 @@ keywords: [collection, programs]
 
 Related:
 
-1. [Overview: as'program'](/docs/getting_started/overview#asprogram)
-2. [Turbo and Lucid](/docs/getting_started/overview#turbo-and-lucid)
-3. [The `for` syntax](/docs/guides/syntax#the-for-syntax)
-4. [The `make` syntax](/docs/guides/syntax#the-make-syntax)
-5. [Ice Syntax](/docs/guides/ice)
-6. [Ice Modifiers](/docs/guides/ice-modifiers)
-7. [Compiling programs](/docs/gallery/collection#compiling-programs)
-8. [Customizing paths](/docs/guides/customization#customizing-paths)
-9. [The Ice modifiers by `bin-gem-node` annex](/docs/ecosystem/annexes/bin-gem-node#the-ice-modifiers-provided-by-the-annex)
+1. [Overview: as'program'][100]
+2. [Turbo and Lucid][101]
+3. [The `for` syntax][102]
+4. [The `make` syntax][103]
+5. [Ice Syntax][104]
+6. [Ice Modifiers][105]
+7. [Compiling programs][106]
+8. [Customizing paths][107]
+9. [The Ice modifiers by `bin-gem-node` annex][108]
 
 :::
 
@@ -57,93 +57,93 @@ zi light …
 
 :::
 
-## Without [`for`](/docs/guides/syntax#the-for-syntax) syntax {#without-for-syntax}
+## Without [`for`][102] syntax
 
-### GH-R: [dandavison/delta](https://github.com/dandavison/delta)
+### GH-R: [dandavison/delta][5]
 
 ```shell
 zi ice wait lucid as'program' from'gh-r' sbin'**/delta -> delta'
 zi light dandavison/delta
 ```
 
-### GH-R: [denisidoro/navi](https://github.com/denisidoro/navi) {#gh-r-denisidoronavi}
+### GH-R: [denisidoro/navi][6]
 
 ```shell
 zi ice lucid wait as'program' from"gh-r" has'fzf'
 zi light denisidoro/navi
 ```
 
-### GH-R: [junegunn/fzf](https://github.com/junegunn/fzf) {#gh-r-junegunnfzf}
+### GH-R: [junegunn/fzf][1]
 
 ```shell
 zi ice from'gh-r' as'program'
 zi light @junegunn/fzf
 ```
 
-### GH-R: [sharkdp/fd](https://github.com/sharkdp/fd) {#gh-r-sharkdpfd}
+### GH-R: [sharkdp/fd][2]
 
 ```shell
 zi ice from'gh-r' as'program' mv'fd* fd' sbin'**/fd(.exe|) -> fd'
 zi light @sharkdp/fd
 ```
 
-### GH-R: [sharkdp/bat](https://github.com/sharkdp/bat) {#gh-r-sharkdpbat}
+### GH-R: [sharkdp/bat][3]
 
 ```shell
 zi ice from'gh-r' as'program' mv'bat* bat' sbin'**/bat(.exe|) -> bat'
 zi light @sharkdp/bat
 ```
 
-### GH-R: [sharkdp/hexyl](https://github.com/sharkdp/hexyl) {#gh-r-sharkdphexyl}
+### GH-R: [sharkdp/hexyl][7]
 
 ```shell
 zi ice from'gh-r' as'program' mv'hexyl* hexyl' sbin'**/hexyl(.exe|) -> hexyl'
 zi light @sharkdp/hexyl
 ```
 
-### GH-R: [sharkdp/hyperfine](https://github.com/sharkdp/hyperfine) {#gh-r-sharkdphyperfine}
+### GH-R: [sharkdp/hyperfine][8]
 
 ```shell
 zi ice from'gh-r' as'program' mv"hyperfine* hyperfine" sbin"**/hyperfine(.exe|) -> hyperfine"
 zi light @sharkdp/hyperfine
 ```
 
-### GH-R: [sharkdp/vivid](https://github.com/sharkdp/vivid) {#gh-r-sharkdpvivid}
+### GH-R: [sharkdp/vivid][9]
 
 ```shell
 zi ice from'gh-r' as'program' mv'vivid* vivid' sbin'**/vivid(.exe|) -> vivid'
 zi light @sharkdp/vivid
 ```
 
-### GH-R: [ogham/exa](https://github.com/ogham/exa) {#gh-r-oghamexa}
+### GH-R: [ogham/exa][4]
 
 ```shell
 zi ice from'gh-r' as'program' sbin'**/exa -> exa' atclone'cp -vf completions/exa.zsh _exa'
 zi light ogham/exa
 ```
 
-### GH-R: [docker/compose](https://github.com/docker/compose) {#gh-r-dockercompose}
+### GH-R: [docker/compose][10]
 
 ```shell
 zi ice from"gh-r" as'program' mv'docker* -> docker-compose'
 zi light docker/compose
 ```
 
-### GH-R: [neovim/neovim](https://github.com/neovim/neovim) {#gh-r-neovimneovim}
+### GH-R: [neovim/neovim][11]
 
 ```shell
 zi ice as'program' bpick'${bpick}' from'gh-r' sbin'**/bin/nvim -> nvim'
 zi light neovim/neovim
 ```
 
-### GH-R: [direnv/direnv](https://github.com/direnv/direnv) {#gh-r-direnvdirenv}
+### GH-R: [direnv/direnv][12]
 
 ```shell
 zi ice as'program' from'gh-r' mv'direnv* -> direnv'
 zi light direnv/direnv
 ```
 
-### GH-R: [mvdan/sh](https://github.com/mvdan/sh) {#gh-r-mvdansh}
+### GH-R: [mvdan/sh][13]
 
 ```shell
 zi ice as'program' from'gh-r' mv'shfmt* -> shfmt'
@@ -425,7 +425,7 @@ zi ice rustup cargo"!E:exa"
 zi load z-shell/null
 ```
 
-### RA: Rust and [ogham/exa](https://github.com/ogham/exa), [Peltoche/lsd](https://github.com/Peltoche/lsd) {#ra-rust-and-oghamexa-peltochelsd}
+### RA: Rust and [ogham/exa][4], [Peltoche/lsd][14]
 
 ```shell
 zi ice rustup cargo"exa;lsd"
@@ -438,7 +438,7 @@ zi ice rustup cargo'exa;lsd' as"program" pick"bin/(exa|lsd)"
 zi load z-shell/null
 ```
 
-## With [`for`](/docs/guides/syntax#the-for-syntax) syntax {#with-for-syntax}
+## With [`for`][102] syntax
 
 ### GH-R: [argoproj/argo-cd](https://github.com/argoproj/argo-cd) {#gh-r-argoprojargo-cd}
 
@@ -527,5 +527,24 @@ export CARGO_HOME=\$PWD; export RUSTUP_HOME=\$PWD/rustup" for \
 
 [1]: https://github.com/junegunn/fzf
 [2]: https://github.com/shakrdp/fd
-[3]: https://github.com/sharkdp/batt
+[3]: https://github.com/sharkdp/bat
 [4]: https://github.com/sharkdp/exa
+[5]: https://github.com/dandavison/delta
+[6]: https://github.com/denisidoro/navi
+[7]: https://github.com/sharkdp/hexyl
+[8]: https://github.com/sharkdp/hyperfine
+[9]: https://github.com/sharkdp/vivid
+[10]: https://github.com/docker/compose
+[11]: https://github.com/neovim/neovim
+[12]: https://github.com/direnv/direnv
+[13]: https://github.com/mvdan/sh
+[14]: https://github.com/Peltoche/lsd
+[100]: /docs/getting_started/overview#asprogram
+[101]: /docs/getting_started/overview#turbo-and-lucid
+[102]: /docs/guides/syntax/for
+[103]: /docs/guides/syntax/common#the-make-syntax
+[104]: /docs/guides/syntax/ice
+[105]: /docs/guides/syntax/ice-modifiers
+[106]: /docs/gallery/collection#compiling-programs
+[107]: /docs/guides/customization#customizing-paths
+[108]: /docs/ecosystem/annexes/bin-gem-node#the-ice-modifiers-provided-by-the-annex

@@ -165,9 +165,9 @@ const config = {
         isCloseable: true,
       },
       algolia: {
-        appId: '4FTAL4NR6O',
-        apiKey: '9ec9227571a8499464ac9389f1ab1616',
-        indexName: 'dev-z-shell',
+        appId: '8A6CKETM6G',
+        apiKey: '500d89bcba2f4a37376565d627c4d83c',
+        indexName: 'z-digitalclouds',
         contextualSearch: true,
       },
       metadata: [{name: 'twitter:card', content: 'summary'}],

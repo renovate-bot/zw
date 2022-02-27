@@ -9,13 +9,13 @@ keywords: [collection, plugins]
 
 Related:
 
-1. [Usage: Turbo and Lucid](/docs/getting_started/overview#turbo-and-lucid)
-2. [Syntax: The `for` syntax](/docs/guides/syntax#the-for-syntax)
-3. [Guides: Ice Syntax](/docs/guides/ice)
-4. [Guides: Ice Modifiers](/docs/guides/ice-modifiers)
-5. [Compiling programs](/docs/gallery/collection#compiling-programs)
-6. [Customizing paths](/docs/guides/customization#customizing-paths)
-7. [The Ice modifiers by `bin-gem-node` annex](/docs/ecosystem/annexes/bin-gem-node#the-ice-modifiers-provided-by-the-annex)
+1. [Usage: Turbo and Lucid][3]
+2. [Syntax: The `for` syntax][4]
+3. [Guides: Ice Syntax][5]
+4. [Guides: Ice Modifiers][6]
+5. [Compiling programs][7]
+6. [Customizing paths][8]
+7. [The Ice modifiers by `bin-gem-node` annex][9]
 
 :::
 
@@ -72,9 +72,9 @@ zi light …
 
 :::
 
-## Without [`for`](/docs/guides/syntax#the-for-syntax) syntax {#without-for-syntax}
+## Without [for][4] syntax
 
-### SC: [trapd00r/LS_COLORS](https://github.com/trapd00r/LS_COLORS) {#sc-trapd00rls_colors}
+### SC: [trapd00r/LS_COLORS](https://github.com/trapd00r/LS_COLORS)
 
 ```shell
 # ogham/exa also uses the definitions
@@ -218,7 +218,7 @@ zi ice wait lucid atload"ztie -d db/redis -a 127.0.0.1:4815/5 -zSL main rdhash"
 zi load z-shell/zredis
 ```
 
-## With [`for`](/docs/guides/syntax#the-for-syntax) syntax
+## With [for][4] syntax
 
 ### GH-R: [pemistahl/grex](https://github.com/pemistahl/grex)
 
@@ -252,3 +252,10 @@ zi wait lucid for as"command" from"gh-r" sbin"git-sizer" \
 
 [1]: https://github.com/zsh-users/zsh-autosuggestions
 [2]: https://github.com/z-shell/F-Sy-H
+[3]: /docs/getting_started/overview#turbo-and-lucid
+[4]: /docs/guides/syntax/for
+[5]: /docs/guides/syntax/ice
+[6]: /docs/guides/syntax/ice-modifiers
+[7]: /docs/guides/syntax/common#compiling-programs
+[8]: /docs/guides/customization#customizing-paths
+[9]: /docs/ecosystem/annexes/bin-gem-node#the-ice-modifiers-provided-by-the-annex
