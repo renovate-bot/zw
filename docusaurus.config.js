@@ -102,7 +102,7 @@ const config = {
   ],
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ja'],
+    locales: ['en', 'ru', 'ja', 'ko'],
     localeConfigs: {
       en: {
         htmlLang: 'en-GB',
