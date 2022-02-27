@@ -10,7 +10,8 @@ import Image from '@theme/IdealImage'; import Asciinema1 from '@site/static/img/
 
 - [z-shell/zsh-select](https://github.com/z-shell/zsh-select)
 
-A shell command that will display selection list. It is similar to `selecta`, but uses curses library to do display, and when compared to `fzf`, the main difference is approximate matching instead of fuzzy matching.
+A shell command that will display selection list. It is similar to `selecta`, but uses curses library to do display, and
+when compared to `fzf`, the main difference is approximate matching instead of fuzzy matching.
 
 It is written in Zshell and has it's capabilities:
 
@@ -18,9 +19,11 @@ It is written in Zshell and has it's capabilities:
 - Curses module
 - Approximate matching (`Ctrl-F`)
 
-The file `zsh-select` can be copied to any `bin` directory. `Zsh` will serve as say `Ruby`, and `zsh-select` will be a regular program available in system.
+The file `zsh-select` can be copied to any `bin` directory. `Zsh` will serve as say `Ruby`, and `zsh-select` will be a
+regular program available in system.
 
-Pressing `o` will make elements uniqe. To search again after pressing enter, press `/`. Approximate matching mode is activated by `Ctrl-F`.
+Pressing `o` will make elements uniqe. To search again after pressing enter, press `/`. Approximate matching mode is
+activated by `Ctrl-F`.
 
 :::tip
 
@@ -40,7 +43,8 @@ Video: source: [asciinema](https://asciinema.org/a/48490)
 
 Simply copy file `zsh-select` to any `bin` directory such as `/usr/local/bin`.
 
-The package is also available as plugin. `zsh-select` will be available in interactive `Zsh` sessions only when using this method. Nevertheless, integration with `Vim` and other uses will simply work when `Zsh` is your main shell.
+The package is also available as plugin. `zsh-select` will be available in interactive `Zsh` sessions only when using
+this method. Nevertheless, integration with `Vim` and other uses will simply work when `Zsh` is your main shell.
 
 Also, plugin managers often allow easy updates.
 
@@ -48,7 +52,8 @@ Also, plugin managers often allow easy updates.
 
 Adding following snippet to `vimrc` will provide `\f` keyboard shortcut that will run `zsh-select` as file-selector.
 
-Multi-term searching and approximate matching (`Ctrl-F`) will be available. The snippet is based on code from `selecta` github page (MIT license):
+Multi-term searching and approximate matching (`Ctrl-F`) will be available. The snippet is based on code from `selecta`
+github page (MIT license):
 
 ```vim
 " Run a given vim command on the results of fuzzy selecting from a given shell
@@ -94,7 +99,8 @@ To update issue `zi update z-shell/zsh-select` from command line.
 
 ### Zgen
 
-Add `zgen load z-shell/zsh-select` to `.zshrc` and issue a `zgen reset` (this assumes that there is a proper `zgen save` construct in `.zshrc`).
+Add `zgen load z-shell/zsh-select` to `.zshrc` and issue a `zgen reset` (this assumes that there is a proper `zgen save`
+construct in `.zshrc`).
 
 ### Antigen
 

@@ -13,16 +13,21 @@ zi ice atinit'zmodload zsh/zprof' \
 zi light z-shell/F-Sy-H
 ```
 
-| Syntax | Description |
-| --- | :-- |
-| `atinit'…'` | loads `zsh/zprof` module, shipped with Zsh, before loading the plugin – this starts the profiling. |
+<!-- markdownlint-disable MD013 -->
+
+| Syntax      | Description                                                                                                              |
+| ----------- | :----------------------------------------------------------------------------------------------------------------------- |
+| `atinit'…'` | loads `zsh/zprof` module, shipped with Zsh, before loading the plugin – this starts the profiling.                       |
 | `atload'…'` | works after loading the plugin – shows profiling results `zprof / head`, unloads `zsh/zprof` - this stops the profiling. |
+
+<!-- markdownlint-enable MD013 -->
 
 While in effect, only a single plugin, in this case `z-shell/F-Sy-H`, will be profiled.
 
 The rest plugins will go on completely normally, as when plugins are loaded with `light` - reporting is disabled.
 
-Less code is being run in the background, the automatic data gathering, during loading of a plugin, for the reports and the possibility to unload the plugin, will be activated and the functions will not appear in the `zprof` report.
+Less code is being run in the background, the automatic data gathering, during loading of a plugin, for the reports and
+the possibility to unload the plugin, will be activated and the functions will not appear in the `zprof` report.
 
 - Example `zprof` report:
 
@@ -52,7 +57,9 @@ num calls    time                self                 name
   - It denotes the amount of time spent in a function in total.
   - For example, `--zi-shadow-autoload` consumed 10.71 ms of the execution time,
 
-- The fourth column is also a time in milliseconds, but it denotes the amount of time spent on executing only of function's **own code**, it doesn't count the time spent in **descendant functions** that are called from the function;
+- The fourth column is also a time in milliseconds, but it denotes the amount of time spent on executing only of
+  function's **own code**, it doesn't count the time spent in **descendant functions** that are called from the
+  function;
 
   - For example, `--zi-shadow-autoload` spent 8.71 ms on executing only its own code.
 
@@ -88,7 +95,5 @@ if [["$PROFILE_STARTUP" == true]]; then unsetopt xtrace exec 2>&3 3>&- zprof > ~
 ```
 
 The next time your `.zshrc` is sourced it will generate 2 files in the `$HOME` directory.
-
----
 
 [1]: https://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html

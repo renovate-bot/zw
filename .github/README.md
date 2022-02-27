@@ -5,17 +5,24 @@
 ❮ ZI ❯ Wiki Pages
 </h1><div align="center">
 
-[![Tweet][twitter-badge]][twitter-link] [![Visual Studio Code](https://img.shields.io/badge/--007ACC?logo=visual%20studio%20code&logoColor=ffffff)](https://open.vscode.dev/z-shell/z-shell.pages.dev) [![Crowdin](https://badges.crowdin.net/e/f108c12713ee8526ac878d5671ad6e29/localized.svg)](https://digitalclouds.crowdin.com/z-shell)
+[![Tweet][twitter-badge]][twitter-link]
+[![Visual Studio Code](https://img.shields.io/badge/--007ACC?logo=visual%20studio%20code&logoColor=ffffff)](https://open.vscode.dev/z-shell/z-shell.pages.dev)
+[![Crowdin](https://badges.crowdin.net/e/f108c12713ee8526ac878d5671ad6e29/localized.svg)](https://digitalclouds.crowdin.com/z-shell)
 
-<a href="https://github.com/z-shell/zi/issues/new?assignees=&labels=bug+%F0%9F%90%9E&template=01_bug_report.yml&title=bug%3A+">《 Report an issue 》</a> · <a href="https://github.com/z-shell/z-shell.pages.dev/issues/new?assignees=&labels=documentation+%F0%9F%92%A1&template=01_request_documentation.yml&title=feat%3A+">《 Request a documentation 》</a> · <a href="https://github.com/z-shell/zi/discussions">《 Ask a Question 》</a>
+<a href="https://github.com/z-shell/zi/issues/new?assignees=&labels=bug+%F0%9F%90%9E&template=01_bug_report.yml&title=bug%3A+">《
+Report an issue 》</a> ·
+<a href="https://github.com/z-shell/z-shell.pages.dev/issues/new?assignees=&labels=documentation+%F0%9F%92%A1&template=01_request_documentation.yml&title=feat%3A+">《
+Request a documentation 》</a> · <a href="https://github.com/z-shell/zi/discussions">《 Ask a Question 》</a>
 
 </div>
 
 ## Globally distributed
 
-Interconnected with over 10,000 major service providers, cloud providers, and enterprise networks, Cloudflare is a fast lane on the Internet.
+Interconnected with over 10,000 major service providers, cloud providers, and enterprise networks, Cloudflare is a fast
+lane on the Internet.
 
-By avoiding network hops and optimizing traffic paths, it drastically reduce latency while improving application performance and the end user experience.
+By avoiding network hops and optimizing traffic paths, it drastically reduce latency while improving application
+performance and the end user experience.
 
 1. [Cloudflare Global Network](https://www.cloudflare.com/en-gb/network/):
 
@@ -24,14 +31,17 @@ By avoiding network hops and optimizing traffic paths, it drastically reduce lat
 
 ## Development Guidelines
 
-> General [contributing guidelines](https://github.com/z-shell/zi/blob/main/docs/CONTRIBUTING.md) for the [Z-Shell](https://github.com/z-shell) organization.
+> General [contributing guidelines](https://github.com/z-shell/zi/blob/main/docs/CONTRIBUTING.md) for the
+> [Z-Shell](https://github.com/z-shell) organization.
 
 #### Any changes made will be crawled `every 2 days at 01:10 am (UTC)` and reflected in the search
 
-When referring to something that might need additional information - it has to be linked to a search or a specific place in a wiki e.g:
+When referring to something that might need additional information - it has to be linked to a search or a specific place
+in a wiki e.g:
 
 - `[load plugin](/search/?q=load+plugin)` - result: [load plugin](https://z-shell.pages.dev/search/?q=load+plugin)),
-- `[ice コマンドは](/search?q=ice+コマンドは)` - result: [ice コマンドは](https://z-shell.pages.dev/ja/search?q=ice+%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AF)),
+- `[ice コマンドは](/search?q=ice+コマンドは)` - result:
+  [ice コマンドは](https://z-shell.pages.dev/ja/search?q=ice+%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AF)),
 
   - It is required at least once for the first mention on a page.
   - If the link of the first mentioning exists, then it can be ignored.
@@ -66,7 +76,8 @@ My Document Markdown content
 
 🔥 **Breaking change:**
 
-Do not modify files under in the repository as it will conflict and will be overwritten. Please see [Discussions](https://github.com/z-shell/zw/discussions/73) to collaborate on translations. 💕
+Do not modify files under in the repository as it will conflict and will be overwritten. Please see
+[Discussions](https://github.com/z-shell/zw/discussions/73) to collaborate on translations. 💕
 
 ## 🥇 Contributors
 
@@ -102,7 +113,8 @@ pnpm start
 pnpm exec docusaurus start --locale ja
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+This command starts a local development server and opens up a browser window. Most changes are reflected live without
+having to restart the server.
 
 ### Build
 
@@ -116,8 +128,10 @@ pnpm build
 pnpm serve
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+This command generates static content into the `build` directory and can be served using any static contents hosting
+service.
 
 [twitter-badge]: https://badgen.net/badge/icon/twitter?icon=twitter&label
 [twitter-acc]: https://twitter.com/zshell_zi
-[twitter-link]: https://twitter.com/intent/tweet?text=A%20Swiss%20Army%20Knife%20for%20Zsh%20-%20Unix%20shell%20%20@zshell_zi&url=https://github.com/z-shell/zi&hashtags=zsh,zi,zshell
+[twitter-link]:
+  https://twitter.com/intent/tweet?text=A%20Swiss%20Army%20Knife%20for%20Zsh%20-%20Unix%20shell%20%20@zshell_zi&url=https://github.com/z-shell/zi&hashtags=zsh,zi,zshell

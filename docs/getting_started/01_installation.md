@@ -32,7 +32,8 @@ sh -c "$(curl -fsSL https://git.io/get-zi)" -- -i skip -b v1.0.0
 
 :::
 
-Following commands installs ZI and modifies `.zshrc` with the chosen option unless the `.zshrc` file contains command `zi` - then will be skipped.
+Following commands installs ZI and modifies `.zshrc` with the chosen option unless the `.zshrc` file contains command
+`zi` - then will be skipped.
 
 ```shell
 # Will add minimal configuration
@@ -74,7 +75,8 @@ autoload -Uz _zi
 Reload the shell with `exec zsh` and compile ZI with `zi self-update`.
 
 > - Support required: [Gitee.com/z-shell](https://gitee.com/z-shell).
-> - Join [/r/gitee](https://www.reddit.com/r/gitee/) or start a [discussion](https://github.com/z-shell/zi/discussions/new) on GitHub.
+> - Join [/r/gitee](https://www.reddit.com/r/gitee/) or start a
+>   [discussion](https://github.com/z-shell/zi/discussions/new) on GitHub.
 
 [1]: https://github.com/z-shell/zi-src/actions/workflows/check-sh.yml/badge.svg?branch=main
 [2]: https://github.com/z-shell/zi-src/actions/workflows/check-sh.yml

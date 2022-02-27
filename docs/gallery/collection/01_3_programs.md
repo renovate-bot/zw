@@ -288,7 +288,7 @@ zi ice lucid wait as'program' has'tmux' pick'bin/xpanes'
 zi light greymd/tmux-xpanes
 ```
 
-### SC: [DanielG/dxld-mullvad/blob/master/am-i-mullvad.sh](https://github.com/DanielG/dxld-mullvad/blob/master/am-i-mullvad.sh) {#sc-danielgdxld-mullvadblobmasteram-i-mullvadsh}
+### SC: [DanielG/dxld-mullvad/blob/master/am-i-mullvad.sh](https://github.com/DanielG/dxld-mullvad/blob/master/am-i-mullvad.sh)
 
 ```shell
 zi ice lucid wait as'program' has'jq'
@@ -310,35 +310,35 @@ zi for as'program' atclone"autoreconf -i && PREFIX=$ZPFX ./configure" \
   atpull'%atclone' pick"$ZPFX/cmatrix" make"PREFIX=$ZPFX" abishekvashok/cmatrix
 ```
 
-### B: [tj/git-extras](https://github.com/tj/git-extras) {#b-tjgit-extras}
+### B: [tj/git-extras](https://github.com/tj/git-extras)
 
 ```shell
 zi ice wait lucid as'program' pick'$ZPFX/bin/git-*' make'PREFIX=$ZPFX' nocompile
 zi light tj/git-extras
 ```
 
-### B: [k4rthik/git-cal](https://github.com/k4rthik/git-cal) {#b-k4rthikgit-cal}
+### B: [k4rthik/git-cal](https://github.com/k4rthik/git-cal)
 
 ```shell
 zi ice wait lucid as'program' atclone'perl Makefile.PL PREFIX=$ZPFX' atpull'%atclone' make'install' pick'$ZPFX/bin/git-cal'
 zi light k4rthik/git-cal
 ```
 
-### B: [aaronNG/reddio](https://gitlab.com/aaronNG/reddio) {#b-aaronngreddio}
+### B: [aaronNG/reddio](https://gitlab.com/aaronNG/reddio)
 
 ```shell
 zi ice lucid wait as'program' has'jq' pick'reddio' from'gitlab'
 zi light aaronNG/reddio
 ```
 
-### B: [TheLocehiliosan/yadm](https://github.com/TheLocehiliosan/yadm) {#b-thelocehiliosanyadm}
+### B: [TheLocehiliosan/yadm](https://github.com/TheLocehiliosan/yadm)
 
 ```shell
 zi ice lucid wait as'program' has'git' pick'yadm' atclone"cp yadm.1 $ZPFX/man/man1" atpull'%atclone'
 zi light TheLocehiliosan/yadm
 ```
 
-### B: [sdushantha/farge](https://github.com/sdushantha/farge) {#b-sdushanthafarge}
+### B: [sdushantha/farge](https://github.com/sdushantha/farge)
 
 ```shell
 if [ -n "$WAYLAND_DISPLAY" ]; then
@@ -347,14 +347,14 @@ if [ -n "$WAYLAND_DISPLAY" ]; then
 fi
 ```
 
-### B: [dylanaraps/neofetch](https://github.com/dylanaraps/neofetch) {#b-dylanarapsneofetch}
+### B: [dylanaraps/neofetch](https://github.com/dylanaraps/neofetch)
 
 ```shell
 zi ice lucid wait as'program' pick'neofetch' atclone"cp neofetch.1 $ZPFX/man/man1" atpull'%atclone'
 zi light dylanaraps/neofetch
 ```
 
-### B: [vim/vim](https://github.com/vim/vim) {#b-vimvim}
+### B: [vim/vim](https://github.com/vim/vim)
 
 ```shell
 zi ice as'program' atclone'rm -f src/auto/config.cache; ./configure' \
@@ -362,14 +362,14 @@ zi ice as'program' atclone'rm -f src/auto/config.cache; ./configure' \
 zi light vim/vim
 ```
 
-### B: [direnv/direnv](https://github.com/direnv/direnv) {#b-direnvdirenv}
+### B: [direnv/direnv](https://github.com/direnv/direnv)
 
 ```shell
 zi ice as'program' make'!' atclone'./direnv hook zsh > zhook.zsh' atpull'%atclone' src'zhook.zsh'
 zi light direnv/direnv
 ```
 
-### B: [mptre/yank](https://github.com/mptre/yank) {#b-mptreyank}
+### B: [mptre/yank](https://github.com/mptre/yank)
 
 ```shell
 zi ice as'program' pick'yank' make
@@ -464,7 +464,7 @@ zi for \
     @junegunn/fzf
 ```
 
-### GH-R: [junegunn/fzf](https://github.com/junegunn/fzf), [sharkdp/fd](https://github.com/sharkdp/fd), [sharkdp/bat](https://github.com/sharkdp/bat) & [ogham/exa](https://github.com/ogham/exa) {#gh-r-junegunnfzf-sharkdpfd-sharkdpbat--oghamexa}
+### GH-R: [junegunn/fzf][1], [sharkdp/fd][2], [sharkdp/bat][3], [ogham/exa][4]
 
 ```shell
 zi from"gh-r" as"null" for \
@@ -474,7 +474,7 @@ zi from"gh-r" as"null" for \
   sbin"**/exa -> exa" atclone"cp -vf completions/exa.zsh _exa" ogham/exa
 ```
 
-### SC: [molovo/revolver](https://github.com/molovo/revolver) & [zunit-zsh/zunit](https://github.com/zunit-zsh/zunit) {#sc-molovorevolver--zunit-zshzunit}
+### SC: [molovo/revolver](https://github.com/molovo/revolver), [zunit-zsh/zunit](https://github.com/zunit-zsh/zunit)
 
 ```shell
 zi wait lucid for \
@@ -486,7 +486,7 @@ zi wait lucid for \
     @zunit-zsh/zunit
 ```
 
-### GH-R: [yarnpkg/yarn](https://github.com/yarnpkg/yarn) {#gh-r-yarnpkgyarn}
+### GH-R: [yarnpkg/yarn](https://github.com/yarnpkg/yarn)
 
 ```shell
 zi light-mode for from'gh-r' as'program' \
@@ -494,7 +494,7 @@ zi light-mode for from'gh-r' as'program' \
     yarnpkg/yarn
 ```
 
-### SC: [tj/n](https://github.com/tj/n) {#sc-tjn}
+### SC: [tj/n](https://github.com/tj/n)
 
 ```shell
 zi light-mode for as'program' atinit'export N_PREFIX="$HOME/n"; \
@@ -502,13 +502,13 @@ zi light-mode for as'program' atinit'export N_PREFIX="$HOME/n"; \
     tj/n
 ```
 
-### B: [jarun/nnn](https://github.com/jarun/nnn) {#b-jarunnnn}
+### B: [jarun/nnn](https://github.com/jarun/nnn)
 
 ```shell
 zi pick"misc/quitcd/quitcd.zsh" sbin make light-mode for jarun/nnn
 ```
 
-### RA: Rust compiler environment {#ra-rust-compiler-environment}
+### RA: Rust compiler environment
 
 ```shell
 # Just install rust and make it available globally in the system
@@ -524,3 +524,8 @@ zi id-as"rust" wait=1 as=null sbin="bin/*" lucid rustup \
 export CARGO_HOME=\$PWD; export RUSTUP_HOME=\$PWD/rustup" for \
   z-shell/null
 ```
+
+[1]: https://github.com/junegunn/fzf
+[2]: https://github.com/shakrdp/fd
+[3]: https://github.com/sharkdp/batt
+[4]: https://github.com/sharkdp/exa
