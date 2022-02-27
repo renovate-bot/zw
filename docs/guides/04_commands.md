@@ -177,7 +177,7 @@ zi wait lucid atload"zicompinit; zicdreplay" blockf for \
     zsh-users/zsh-completions
 ```
 
-### Ignoring compdefs {#ignoring-compdefs}
+### Ignoring compdefs
 
 If you want to ignore compdefs provided by some plugins or snippets, place their load commands before commands loading
 other plugins or snippets, and issue `zi cdclear` (or `zicdclear`, designed to be used in hooks like `atload'…'`):
@@ -219,7 +219,7 @@ Following commands are passed to `zi …` to obtain described effects.
 
 </APITable>
 
-## Completions management {#completions-management}
+## Completions management
 
 <APITable>
 
@@ -253,7 +253,7 @@ Following commands are passed to `zi …` to obtain described effects.
 
 </APITable>
 
-## Reports and statistics {#reports-and-statistics}
+## Reports and statistics
 
 <APITable>
 
@@ -283,7 +283,7 @@ Following commands are passed to `zi …` to obtain described effects.
 
 </APITable>
 
-## Other commands {#other-commands}
+## Other commands
 
 <APITable>
 
@@ -310,7 +310,7 @@ Following commands are passed to `zi …` to obtain described effects.
 
 <!-- markdownlint-enable MD013 -->
 
-## Help & Manual {#help--manual}
+## Help & Manual
 
 |  Command   | Description        |
 | :--------: | ------------------ |
