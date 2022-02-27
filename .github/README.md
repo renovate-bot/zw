@@ -29,6 +29,9 @@ performance and the end user experience.
    - <https://z-shell.pages.dev/>
    - <https://z.digitalclouds.dev/>
 
+2. Make content multilingual fast and easy with [enterprise-level tools and services](https://support.crowdin.com/enterprise/overview/).
+   - <https://digitalclouds.crowdin.com/>
+
 ## Development Guidelines
 
 > General [contributing guidelines](https://github.com/z-shell/zi/blob/main/docs/CONTRIBUTING.md) for the
