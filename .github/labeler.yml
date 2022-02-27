@@ -1,5 +1,6 @@
 documentation 📝:
   - 'docs/**/*.md'
+  - 'community/**/*.md'
 dependencies 📦:
   - 'yarn.lock'
   - 'package.json'
@@ -13,7 +14,7 @@ maintenance 📈:
   - '.github/*.md'
   - '.github/*.yml'
   - '.github/*.json'
-  - 'crowdin.yml'
+  - '.vscode'
   - 'docusaurus.config.js'
 i18n 🌐:
   - 'i18n/**'
@@ -29,3 +30,4 @@ plugin 🧿:
 ci 🤖:
   - '.github/workflows/*.yml'
   - '.all-contributorsrc'
+  - 'crowdin.yml'
