@@ -1,6 +1,6 @@
 ---
 id: intro
-title: 🎉 Introduction
+title: '🎉 Introduction'
 sidebar_position: 1
 image: zw/logo/320x320.png
 description: Introduction to a Swiss Army Knife for Zsh, formely known as zplugin, zinit.

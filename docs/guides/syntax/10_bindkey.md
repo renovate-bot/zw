@@ -1,6 +1,6 @@
 ---
-id: keybindings
-title: Bindmap & Bindkey
+id: bindkey
+title: 🗒 Bindmap
 image: zw/logo/320x320.png
 description: The Bindmap & Bindkey ZI syntax
 keywords: [syntax, how-to-use]

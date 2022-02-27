@@ -1,6 +1,6 @@
 ---
 id: ice
-title: 🧊 Ice
+title: 🧊 Ice Syntax
 image: zw/img/ice-239x200.png
 description: Ice syntax documentation
 keywords: [ice, syntax]

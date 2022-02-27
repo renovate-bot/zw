@@ -1,5 +1,5 @@
 ---
-title: Quick overview
+title: '☑️ Quick overview'
 image: zw/logo/320x320.png
 description: Overview of use cases for Z-Shell ZI
 keywords: [overview]

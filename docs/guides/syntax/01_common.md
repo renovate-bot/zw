@@ -1,6 +1,6 @@
 ---
 id: common
-title: ✍️ Common
+title: 🔀 Common Syntax
 sidebar_position: 1
 image: zw/logo/320x320.png
 description: The Fundamental ZI syntax

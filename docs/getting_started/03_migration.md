@@ -1,5 +1,5 @@
 ---
-title: Migration
+title: '♻️ Migration'
 image: zw/logo/320x320.png
 description: Migration guide to ZI
 keywords: [migration, setup]

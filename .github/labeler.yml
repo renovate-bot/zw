@@ -1,6 +1,6 @@
 documentation 📝:
-- any: ['docs/**/*.md', 'community/**/*.md']
-  all: ['!i18n/**/*.md']
+  - any: ['docs/**/*.md', 'community/**/*.md']
+    all: ['!i18n/**/*.md']
 dependencies 📦:
   - 'yarn.lock'
   - 'package.json'

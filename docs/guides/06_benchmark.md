@@ -1,5 +1,6 @@
 ---
-title: Benchmarking
+id: benchmark
+title: '⏲ Benchmarking'
 image: zw/logo/320x320.png
 description: Benchmarking, Profiling & Statistics
 keywords: [statistics, benchmark, profiling]

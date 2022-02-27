@@ -1,6 +1,6 @@
 ---
 id: customization
-title: Preferences & Configuration
+title: '🏗 Preferences & Configuration'
 image: zw/logo/320x320.png
 description: User Preferences & Configuration
 keywords: [customization, preferences, config]

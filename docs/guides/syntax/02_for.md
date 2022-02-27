@@ -1,6 +1,6 @@
 ---
 id: for
-title: ✨ For
+title: ✨ For Syntax
 image: zw/logo/320x320.png
 description: The For Syntax documentation
 keywords: [syntax, how-to-use]
@@ -8,7 +8,7 @@ keywords: [syntax, how-to-use]
 
 import APITable from '@site/src/components/APITable';
 
-The `for` is more concise and more optimized.
+The `for` syntax is more concise and more optimized.
 
 It is best presented by a real-world example:
 

@@ -95,7 +95,7 @@ const config = {
         quality: 70,
         max: 1030, // max resized image's size.
         min: 640, // min resized image's size. if original is lower, use that size.
-        steps: 2, // the max number of images generated between min and maxm (inclusive)
+        steps: 3, // the max number of images generated between min and maxm (inclusive)
         disableInDev: false,
       },
     ],
@@ -170,6 +170,12 @@ const config = {
         indexName: 'z-digitalclouds',
         contextualSearch: true,
       },
+      /**algolia: {
+        appId: '4FTAL4NR6O',
+        apiKey: '9ec9227571a8499464ac9389f1ab1616',
+        indexName: 'dev-z-shell',
+        contextualSearch: true,
+      },*/
       metadata: [{name: 'twitter:card', content: 'summary'}],
       autoCollapseSidebarCategories: true,
       hideableSidebar: true,

@@ -1,6 +1,6 @@
 ---
 id: commands
-title: 🛠 Commands
+title: '🛠 Commands'
 image: zw/logo/320x320.png
 description: ZI Commands
 keywords: [commands]
