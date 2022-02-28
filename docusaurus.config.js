@@ -1,7 +1,4 @@
 // @ts-nocheck
-/**import algoliasearch from 'algoliasearch/lite';
-const client = algoliasearch('8A6CKETM6G', '1750c7420e10ff8acf4d4f1f7ca0de90');
-const index = client.initIndex('z-digitalclouds.dev');*/
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const TwitterSvg =
@@ -23,7 +20,6 @@ const config = {
     [
       '@docusaurus/plugin-pwa',
       {
-        /* https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-pwa#configuration */
         debug: false,
         offlineModeActivationStrategies: ['appInstalled', 'standalone', 'queryString'],
         pwaHead: [
@@ -105,7 +101,7 @@ const config = {
   ],
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ru', 'ja', 'ko'],
+    locales: ['en', 'ru', 'ja'],
     localeConfigs: {
       en: {
         htmlLang: 'en-GB',
@@ -170,20 +166,9 @@ const config = {
       algolia: {
         appId: '8A6CKETM6G',
         apiKey: '1750c7420e10ff8acf4d4f1f7ca0de90',
-        indexName: 'z-digitalclouds'
+        indexName: 'z-digitalclouds',
         contextualSearch: true,
-
       },
-/**      algolia: {
-        appId: '4FTAL4NR6O',
-        apiKey: '9ec9227571a8499464ac9389f1ab1616',
-        indexName: 'code-strip',
-        contextualSearch: true,
-        autocomplete: {
-          container: '#autocomplete',
-          placeholder: 'Search for docs',
-        },
-      },*/
       metadata: [{name: 'twitter:card', content: 'summary'}],
       autoCollapseSidebarCategories: true,
       hideableSidebar: true,
