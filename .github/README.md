@@ -26,18 +26,19 @@ performance and the end user experience.
 
 ### [Cloudflare Global Network](https://www.cloudflare.com/en-gb/network/):
 
-   - <https://z-shell.pages.dev/>
-   - <https://z.digitalclouds.dev/>
+- <https://z-shell.pages.dev/>
+- <https://z.digitalclouds.dev/>
 
 ### Enterprise-level tools and services.
 
-  - Make content multilingual fast and easy
-    - <https://digitalclouds.crowdin.com/>
-    - <https://support.crowdin.com/enterprise/overview/>
+- Make content multilingual fast and easy
 
-  - Quikly find anything on the site.
-    - <https://z.digitalclouds.dev/search/>
-    - <https://www.algolia.com/doc/>
+  - <https://digitalclouds.crowdin.com/>
+  - <https://support.crowdin.com/enterprise/overview/>
+
+- Quikly find anything on the site.
+  - <https://z.digitalclouds.dev/search/>
+  - <https://www.algolia.com/doc/>
 
 ## Development Guidelines
 
