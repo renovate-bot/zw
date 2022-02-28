@@ -18,10 +18,7 @@ files:
     translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/**/%original_file_name%
   - source: /community/**/*.md
     translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs-community/**/%original_file_name%
-    languages_mapping: []
-  - source: /src/pages/**/*
   - source: /blog/**/*.md
-    ignore_settings: 1
     translation: /i18n/%two_letters_code%/docusaurus-plugin-content-blog/**/%original_file_name%
   - source: /src/pages/**/*.md
     translation: /i18n/%two_letters_code%/docusaurus-plugin-content-pages/**/%original_file_name%
@@ -31,6 +28,5 @@ files:
       - /**/*.ts
       - /**/*.tsx
       - /**/*.css
-    languages_mapping: []
   - source: /blog/**/*.md
     translation: /i18n/%two_letters_code%/docusaurus-plugin-content-blog/**/%original_file_name%
