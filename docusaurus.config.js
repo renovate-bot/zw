@@ -167,22 +167,22 @@ const config = {
         textColor: '#F5F6F7',
         isCloseable: true,
       },
-      algolia: {
+      /**algolia: {
         appId: '8A6CKETM6G',
-        apiKey: '1750c7420e10ff8acf4d4f1f7ca0de90',
+        apiKey: '',
         indexName: 'z-digitalclouds',
         contextualSearch: true,
-        autocomplete: {
-          container: '#autocomplete',
-          placeholder: 'Search for products',
-        },
-      },
-      /**algolia: {
+      },*/
+      algolia: {
         appId: '4FTAL4NR6O',
         apiKey: '9ec9227571a8499464ac9389f1ab1616',
         indexName: 'dev-z-shell',
         contextualSearch: true,
-      },*/
+        autocomplete: {
+          container: '#autocomplete',
+          placeholder: 'Search for docs',
+        },
+      },
       metadata: [{name: 'twitter:card', content: 'summary'}],
       autoCollapseSidebarCategories: true,
       hideableSidebar: true,
