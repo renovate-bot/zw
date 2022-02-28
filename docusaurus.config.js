@@ -175,7 +175,7 @@ const config = {
       },*/
       algolia: {
         appId: '4FTAL4NR6O',
-        apiKey: '9ec9227571a8499464ac9389f1ab1616',
+        apiKey: '401cd76efa04e3e28176389dcfc088df',
         indexName: 'dev-z-shell',
         contextualSearch: true,
         autocomplete: {
