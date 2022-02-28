@@ -16,6 +16,7 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "preinstall": "npx only-allow pnpm",
+    "push": "git add -A && git checkout -b devauto && git commit -m '$(date)' && git push -u origin devauto",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "build:cf": "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build",
