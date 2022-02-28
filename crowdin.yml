@@ -1,15 +1,26 @@
 project_id_env: PROJECT_ID
 api_token_env: ZI_CROWDIN_TOKEN
 base_url: 'https://digitalclouds.crowdin.com'
+commit_message: '[ci skip]'
 preserve_hierarchy: true
+languages_mapping: &languages_mapping
+  two_letters_code:
+    pt-BR: pt-BR
 files:
   - source: /i18n/en/**/*.json
     translation: /i18n/%two_letters_code%/**/%original_file_name%
+    languages_mapping: *languages_mapping
   - source: /docs/**/*.md
     ignore:
       - /docs/ecosystem/**/*.md
       - /docs/gallery/**/*.md
       - /docs/guides/**/*.md
     translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/**/%original_file_name%
+    languages_mapping: *languages_mapping
   - source: /community/**/*.md
     translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs-community/**/%original_file_name%
+    languages_mapping: *languages_mapping
+  - source: /src/pages/**/*
+    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-pages/**/%original_file_name%
+    ignore: [/**/*.js, /**/*.jsx, /**/*.ts, /**/*.tsx, /**/*.css]
+    languages_mapping: *languages_mapping
