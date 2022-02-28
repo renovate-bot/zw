@@ -1,8 +1,4 @@
 {
-  "homepage.button": {
-    "message": "💢 Make it work, make it right, make it Fast 💢",
-    "description": "The homepage button to wiki introduction"
-  },
   "homepage.feature1.title": {
     "message": "Zsh Startup 50-80% Faster",
     "description": "Title of feature 1 (left) on the home page"
@@ -27,56 +23,60 @@
     "message": "Supports Oh-My-Zsh and Prezto - not framework-specific. Produce your plugins, libraries, and themes effortlessly.",
     "description": "Description of third featured banner in homepage"
   },
+  "homepage.button": {
+    "message": "💢 Make it work, make it right, make it Fast 💢",
+    "description": "The homepage button to wiki introduction"
+  },
   "theme.ErrorPageContent.title": {
-    "message": "This page crashed.",
+    "message": "Questa pagina è andata in crash.",
     "description": "The title of the fallback page when the page crashed"
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "Try again",
+    "message": "Prova di nuovo",
     "description": "The label of the button to try again when the page crashed"
   },
   "theme.NotFound.title": {
-    "message": "Page Not Found",
+    "message": "Pagina non trovata",
     "description": "The title of the 404 page"
   },
   "theme.NotFound.p1": {
-    "message": "We could not find what you were looking for.",
+    "message": "Non siamo riusciti a trovare quello che stavi cercando.",
     "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
-    "message": "Please contact the owner of the site that linked you to the original URL and let them know their link is broken.",
+    "message": "Contatta il proprietario del sito che ti ha collegato all'URL originale e fagli sapere che il loro collegamento è interrotto.",
     "description": "The 2nd paragraph of the 404 page"
   },
-  "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "Close",
-    "description": "The ARIA label for close button of announcement bar"
-  },
   "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "Scroll back to top",
+    "message": "Torna indietro all'inizio",
     "description": "The ARIA label for the back to top button"
   },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Chiudi",
+    "description": "The ARIA label for close button of announcement bar"
+  },
   "theme.blog.archive.title": {
-    "message": "Archive",
+    "message": "Archivio",
     "description": "The page & hero title of the blog archive page"
   },
   "theme.blog.archive.description": {
-    "message": "Archive",
+    "message": "Archivio",
     "description": "The page & hero description of the blog archive page"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "Blog list page navigation",
+    "message": "Navigazione nella pagina dei post del blog ",
     "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "Newer Entries",
+    "message": "Post più recenti",
     "description": "The label used to navigate to the newer blog posts page (previous page)"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "Older Entries",
+    "message": "Post più vecchi",
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "One min read|{readingTime} min read",
+    "message": "Lettura di 1 minuto|{readingTime} minuti di lettura",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.post.readMoreLabel": {
@@ -84,47 +84,47 @@
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
   "theme.blog.post.readMore": {
-    "message": "Read More",
+    "message": "Leggi di più",
     "description": "The label used in blog post item excerpts to link to full blog posts"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "Blog post page navigation",
+    "message": "Navigazione nella pagina dei post del blog ",
     "description": "The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "Newer Post",
+    "message": "Post più recente",
     "description": "The blog post button label to navigate to the newer/previous post"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "Older Post",
+    "message": "Post più vecchio",
     "description": "The blog post button label to navigate to the older/next post"
   },
-  "theme.blog.sidebar.navAriaLabel": {
-    "message": "Blog recent posts navigation",
-    "description": "The ARIA label for recent posts in the blog sidebar"
-  },
   "theme.blog.post.plurals": {
-    "message": "One post|{count} posts",
+    "message": "Un post|{count} post",
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {
-    "message": "{nPosts} tagged with \"{tagName}\"",
+    "message": "{nPosts} etichettati con \"{tagName}\"",
     "description": "The title of the page for a blog tag"
   },
   "theme.tags.tagsPageLink": {
-    "message": "View All Tags",
+    "message": "Guarda tutte le etichette",
     "description": "The label of the link targeting the tag list page"
   },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Navigazione dei post recenti del blog",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
   "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "Copy code to clipboard",
+    "message": "Copia il codice negli appunti",
     "description": "The ARIA label for copy code blocks button"
   },
   "theme.CodeBlock.copied": {
-    "message": "Copied",
+    "message": "Copiato",
     "description": "The copied button label on code blocks"
   },
   "theme.CodeBlock.copy": {
-    "message": "Copy",
+    "message": "Copia",
     "description": "The copy button label on code blocks"
   },
   "theme.docs.DocCard.categoryDescription": {
@@ -132,102 +132,102 @@
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.sidebar.expandButtonTitle": {
-    "message": "Expand sidebar",
+    "message": "Espandi la barra laterale",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "Expand sidebar",
+    "message": "Espandi la barra laterale",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "Docs pages navigation",
+    "message": "Navigazione delle pagine dei documenti",
     "description": "The ARIA label for the docs pagination"
   },
   "theme.docs.paginator.previous": {
-    "message": "Previous",
+    "message": "Precedente",
     "description": "The label used to navigate to the previous doc"
   },
   "theme.docs.paginator.next": {
-    "message": "Next",
+    "message": "Successivo",
     "description": "The label used to navigate to the next doc"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "Collapse sidebar",
+    "message": "Collassa la barra laterale",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "Collapse sidebar",
+    "message": "Collassa la barra laterale",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
-    "message": "Toggle the collapsible sidebar category '{label}'",
+    "message": "Attiva/disattiva la categoria '{label}' della barra laterale collassabile",
     "description": "The ARIA label to toggle the collapsible sidebar category"
-  },
-  "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "One doc tagged|{count} docs tagged",
-    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
-  "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} with \"{tagName}\"",
-    "description": "The title of the page for a docs tag"
   },
   "theme.docs.versionBadge.label": {
     "message": "Version: {versionLabel}"
   },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "Un documento etichettato|{count} documenti etichettati",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} con \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "This is unreleased documentation for {siteTitle} {versionLabel} version.",
+    "message": "Questa è documentazione inedita per {siteTitle} versione {versionLabel}.",
     "description": "The label used to tell the user that he's browsing an unreleased doc version"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "This is documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.",
+    "message": "Questa è la documentazione per {siteTitle} {versionLabel}, che non è più attivamente mantenuta.",
     "description": "The label used to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).",
+    "message": "Per la documentazione aggiornata, guarda la {latestVersionLink} ({versionLabel}).",
     "description": "The label used to tell the user to check the latest version"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "latest version",
+    "message": "ultima versione",
     "description": "The label used for the latest version suggestion link label"
   },
   "theme.common.editThisPage": {
-    "message": "Edit this page",
+    "message": "Modifica questa pagina",
     "description": "The link label to edit the current page"
   },
   "theme.common.headingLinkTitle": {
-    "message": "Direct link to heading",
+    "message": "Link diretto all'intestazione",
     "description": "Title for link to heading"
   },
   "theme.lastUpdated.atDate": {
-    "message": " on {date}",
+    "message": " il {date}",
     "description": "The words used to describe on which date a page has been last updated"
   },
   "theme.lastUpdated.byUser": {
-    "message": " by {user}",
+    "message": " da {user}",
     "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "Last updated{atDate}{byUser}",
+    "message": "Ultimo aggiornamento{atDate}{byUser}",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "← Back to main menu",
+    "message": "← Indietro al menu principale",
     "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "Versions",
+    "message": "Versioni",
     "description": "The label for the navbar versions dropdown on mobile view"
   },
   "theme.common.skipToMainContent": {
-    "message": "Skip to main content",
+    "message": "Passa al contenuto principale",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "On this page",
+    "message": "Su questa pagina",
     "description": "The label used by the button on the collapsible TOC component"
   },
   "theme.tags.tagsListLabel": {
-    "message": "Tags:",
+    "message": "Etichette:",
     "description": "The label alongside a tag list"
   },
   "theme.colorToggle.ariaLabel": {
@@ -246,55 +246,55 @@
     "message": "Languages",
     "description": "The label for the mobile language switcher dropdown"
   },
-  "theme.SearchPage.documentsFound.plurals": {
-    "message": "One document found|{count} documents found",
-    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
-  "theme.SearchPage.existingResultsTitle": {
-    "message": "Search results for \"{query}\"",
-    "description": "The search page title for non-empty query"
-  },
-  "theme.SearchPage.emptyResultsTitle": {
-    "message": "Search the documentation",
-    "description": "The search page title for empty query"
-  },
-  "theme.SearchPage.inputPlaceholder": {
-    "message": "Type your search here",
-    "description": "The placeholder for search page input"
-  },
-  "theme.SearchPage.inputLabel": {
-    "message": "Search",
-    "description": "The ARIA label for search page input"
-  },
-  "theme.SearchPage.algoliaLabel": {
-    "message": "Search by Algolia",
-    "description": "The ARIA label for Algolia mention"
-  },
-  "theme.SearchPage.noResultsText": {
-    "message": "No results were found",
-    "description": "The paragraph for empty search result"
-  },
-  "theme.SearchPage.fetchingNewResults": {
-    "message": "Fetching new results...",
-    "description": "The paragraph for fetching new search results"
-  },
   "theme.SearchBar.seeAll": {
     "message": "See all {count} results"
   },
   "theme.SearchBar.label": {
-    "message": "Search",
+    "message": "Cerca",
     "description": "The ARIA label and placeholder for search button"
   },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "Un documento trovato|{count} documenti trovati",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "Risultati di ricerca per \"{query}\"",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "Cerca nella documentazione",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "Digita qui la tua ricerca",
+    "description": "The placeholder for search page input"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "Cerca",
+    "description": "The ARIA label for search page input"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "Ricerca tramite Algolia",
+    "description": "The ARIA label for Algolia mention"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "Nessun risultato trovato",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "Recuperando nuovi risultati...",
+    "description": "The paragraph for fetching new search results"
+  },
   "theme.PwaReloadPopup.info": {
-    "message": "New version available",
+    "message": "Nuova versione disponibile",
     "description": "The text for PWA reload popup"
   },
   "theme.PwaReloadPopup.refreshButtonText": {
-    "message": "Refresh",
+    "message": "Aggiorna",
     "description": "The text for PWA reload button"
   },
   "theme.PwaReloadPopup.closeButtonAriaLabel": {
-    "message": "Close",
+    "message": "Chiudi",
     "description": "The ARIA label for close button of PWA reload popup"
   },
   "theme.IdealImageMessage.loading": {
@@ -318,7 +318,7 @@
     "description": "When the image fails to load for unknown error"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "Tags",
+    "message": "Etichette",
     "description": "The title of the tag list page"
   }
 }
