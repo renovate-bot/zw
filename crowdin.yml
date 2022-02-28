@@ -1,5 +1,5 @@
-project_id_env: PROJECT_ID
-api_token_env: ZI_CROWDIN_TOKEN
+project_id_env: CROWDIN_PROJECT
+apit_token_env: CROWDIN_TOKEN
 languages_mapping:
   two_letters_code:
     pt-BR: pt-BR
@@ -9,7 +9,7 @@ preserve_hierarchy: true
 files:
   - source: /i18n/en/**/*.json
     translation: /i18n/%two_letters_code%/**/%original_file_name%
-  - source: /docs/**/.md
+  - source: /docs/**/*.md
     ignore_settings: 1
     ignore:
       - /docs/ecosystem/**/*.md
@@ -20,6 +20,10 @@ files:
     translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs-community/**/%original_file_name%
     languages_mapping: []
   - source: /src/pages/**/*
+  - source: /blog/**/*.md
+    ignore_settings: 1
+    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-blog/**/%original_file_name%
+  - source: /src/pages/**/*.md
     translation: /i18n/%two_letters_code%/docusaurus-plugin-content-pages/**/%original_file_name%
     ignore:
       - /**/*.js
