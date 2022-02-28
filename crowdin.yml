@@ -9,8 +9,7 @@ preserve_hierarchy: true
 files:
   - source: /i18n/en/**/*.json
     translation: /i18n/%two_letters_code%/**/%original_file_name%
-    languages_mapping: []
-  - source: /docs/**/*
+  - source: /docs/**/.md
     ignore_settings: 1
     ignore:
       - /docs/ecosystem/**/*.md
@@ -29,3 +28,5 @@ files:
       - /**/*.tsx
       - /**/*.css
     languages_mapping: []
+  - source: /blog/**/*.md
+    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-blog/**/%original_file_name%
