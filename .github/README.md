@@ -24,14 +24,20 @@ lane on the Internet.
 By avoiding network hops and optimizing traffic paths, it drastically reduce latency while improving application
 performance and the end user experience.
 
-1. [Cloudflare Global Network](https://www.cloudflare.com/en-gb/network/):
+### [Cloudflare Global Network](https://www.cloudflare.com/en-gb/network/):
 
    - <https://z-shell.pages.dev/>
    - <https://z.digitalclouds.dev/>
 
-2. Make content multilingual fast and easy with
-   [enterprise-level tools and services](https://support.crowdin.com/enterprise/overview/).
-   - <https://digitalclouds.crowdin.com/>
+### Enterprise-level tools and services.
+
+  - Make content multilingual fast and easy
+    - <https://digitalclouds.crowdin.com/>
+    - <https://support.crowdin.com/enterprise/overview/>
+
+  - Quikly find anything on the site.
+    - <https://z.digitalclouds.dev/search/>
+    - <https://www.algolia.com/doc/>
 
 ## Development Guidelines
 
