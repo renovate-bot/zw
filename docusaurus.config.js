@@ -169,7 +169,7 @@ const config = {
       },
       /**algolia: {
         appId: '8A6CKETM6G',
-        apiKey: '',
+        apiKey: '1750c7420e10ff8acf4d4f1f7ca0de90',
         indexName: 'z-digitalclouds',
         contextualSearch: true,
       },*/
