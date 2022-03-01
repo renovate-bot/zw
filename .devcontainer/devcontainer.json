@@ -14,7 +14,11 @@
   // Set *default* container specific settings.json values on container create.
   "settings": {},
   // Add the IDs of extensions you want installed when the container is created.
-  "extensions": ["dbaeumer.vscode-eslint", "silvenon.mdx"],
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "silvenon.mdx",
+    "mgmcdermott.vscode-language-babel"
+  ],
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
   // Use 'postCreateCommand' to run commands after the container is created.
@@ -23,7 +27,6 @@
   "remoteUser": "node",
   "features": {
     "github-cli": "latest",
-    "sshd": "latest",
-    "rust": "latest"
+    "sshd": "latest"
   }
 }

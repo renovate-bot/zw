@@ -1,7 +1,7 @@
 ---
 id: zsh_plugin_standard
 title: Zsh Plugin Standard
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 ## What Is A Zsh Plugin?

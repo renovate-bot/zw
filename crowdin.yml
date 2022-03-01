@@ -1,5 +1,5 @@
-project_id_env: CROWDIN_PROJECT
-apit_token_env: CROWDIN_TOKEN
+'project_id_env': CROWDIN_PROJECT
+'api_token_env': CROWDIN_TOKEN
 languages_mapping:
   two_letters_code:
     pt-BR: pt-BR

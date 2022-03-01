@@ -1,6 +1,6 @@
 :root {
   --site-primary-hue-saturation: 167 68%;
-  --site-primary-hue-saturation-light: 167 56%; /* do we really need this extra one? */
+  --site-primary-hue-saturation-light: 167 56%;
   --site-color-favorite-background: #f6fdfd;
   --site-color-tooltip: #fff;
   --site-color-tooltip-background: #161b22;
@@ -27,8 +27,8 @@ html[data-theme='dark'] {
 }
 
 [data-theme='dark'] {
-  --ifm-color-primary: hsl(var(--site-primary-hue-saturation) 50%);
-  --ifm-color-primary-dark: hsl(var(--site-primary-hue-saturation) 45%);
+  --ifm-color-primary: hsl(var(--site-primary-hue-saturation) 43%);
+  --ifm-color-primary-dark: hsl(var(--site-primary-hue-saturation) 40%);
   --ifm-color-primary-darker: hsl(var(--site-primary-hue-saturation) 35%);
   --ifm-color-primary-darkest: hsl(var(--site-primary-hue-saturation) 30%);
 
@@ -38,14 +38,14 @@ html[data-theme='dark'] {
 }
 
 .docusaurus-highlight-code-line {
-  background-color: rgba(0 0 0 10%);
+  background-color: rgba(0 0 0 / 10%);
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0 0 0 / 10%);
 }
 
 .red > a {

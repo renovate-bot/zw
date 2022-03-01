@@ -1,7 +1,6 @@
 ---
 id: zsh_handbook
 title: Zsh Native Scripting Handbook
-sidebar_position: 2
 ---
 
 ## Information
@@ -17,7 +16,7 @@ So what use has `@` in the Zsh-world? It is: "`keep array form`" or "`do not joi
 quotes the array, i.e. invokes `"$array"`, he induces _joining_ of all array elements (into a single string). `@` is to
 have elements still quoted (so empty elements are preserved), but not joined.
 
-Two forms are available, `"$array[@]"` and `"${(@)array}"`. The first form has an additional effect – when option
+Two forms are available, `"$array[@]"` and `"${(@)array}"`. The first form has an additional effect – when an option
 `KSH_ARRAYS` is set, it indeed induces referencing to the whole array instead of a first element only. It should then
 use braces, i.e. `${array[@]}`, `"${array[@]}"` (`KSH_ARRAYS` requirement).
 
@@ -33,18 +32,17 @@ is one of the main features of Zsh.
 
 ### Reading a file
 
-````shell
-declare -a lines; lines=( "${(@f)"$(<path/file)"}" )
 ```shell
+declare -a lines; lines=( "${(@f)"$(<path/file)"}" )
+```
 
-This preserves empty lines because of double-quoting (the outside one).
-`@`-flag is used to obtain an array instead of a scalar. If you don't want empty
-lines preserved, you can also skip `@`-splitting, as is explained in
-Information section:
+This preserves empty lines because of double-quoting (the outside one). `@`-flag is used to obtain an array instead of a
+scalar. If you don't want empty lines preserved, you can also skip `@`-splitting, as is explained in the
+[Information](#information) section:
 
 ```shell
 declare -a lines; lines=( ${(f)"$(<path/file)"} )
-````
+```
 
 Note: `$(<...)` construct strips trailing empty lines.
 
@@ -59,7 +57,7 @@ declare -a lines; lines=( ${(f)"$(command arg1 ...)"} )
 ```
 
 This will read the `command's` output into the array `lines`. The version that does `@` splitting and retains any empty
-lines is:
+lines are:
 
 ```shell
 declare -a lines; lines=( "${(f@)$(command arg1 ...)}" )
@@ -80,7 +78,7 @@ local dirname="${PWD:h}"
 local basename="${PWD:t}"
 ```
 
-Read more about [modifiers](http://zsh.sourceforge.net/Doc/Release/Expansion.html#Modifiers).
+Read more: [zsh: 14 Expansion](http://zsh.sourceforge.net/Doc/Release/Expansion.html#Modifiers).
 
 ### Resolve Symlinks
 
@@ -97,11 +95,11 @@ declare -a lines; lines=( "${(@f)"$(<path/file)"}" )
 declare -a grepped; grepped=( ${(M)lines:#*query*} )
 ```
 
-To have the `grep -v` effect, skip `M`-flag. To grep case-insensitively, use `\#i` glob flag (`...:#(#i)\*query*}`).
+To have the `grep -v` effect, skip the `M`-flag. To grep case-insensitively, use `\#i` glob flag (`...:#(#i)\*query*}`).
 
 As it can be seen, `${...:#...}` substitution is filtering of the array, which by default filters-out elements (`(M)`
-flag induces the opposite behavior). When used with string, not an array, it behaves similarly: returns empty string
-when `{input_string_var:#pattern}` matches whole input string.
+flag induces the opposite behavior). When used with string, not an array, it behaves similarly: returns an empty string
+when `{input_string_var:#pattern}` matches the whole input string.
 
 Side-note: `(M)` flag can be used also with `${(M)var#pattern}` and other substitutions, to retain what's matched by the
 pattern instead of removing that.
@@ -143,14 +141,14 @@ if [[ "$svn_status" = (\?*|*$nl\?*) ]]; then
 fi
 ```
 
-In general, multi-line matching falls into the following idiom (`extended glob version):
+In general, multi-line matching falls into the following idiom (`extended glob` version):
 
 ```shell
 local needle="?" required_preceding='[[:space:]]#'
 [[ "$(svn status)" = *((#s)|$nl)${~required_preceding}${needle}* ]] && echo found
 ```
 
-It does a single fork (calls `svn status). The`${~variable}`means (the`~` init): "the variable is holding a pattern,
+It does a single fork (calls `svn` status). The `${~variable}` means (the`~` init): "the variable is holding a pattern,
 interpret it". All in all, instead of regular expressions we were using patterns (globs) (see
 [this section](#built-in-regular-expressions-engine)).
 
@@ -184,10 +182,10 @@ HELP="yes"; print ${${HELP:+help enabled}:-help disabled} ▶ help enabled
 HELP=""; print ${${HELP:+help enabled}:-help disabled} ▶ help disabled
 ```
 
-Ternary expression is known from `C` language but exists also in Zsh, but directly only in math context, i.e.
-`\(( a = a > 0 ? b : c ))`. Flexibility of Zsh allows such expressions also in a normal context. Above is an example.
-`:+` is "if not empty, substitute …" `:-` is "if empty, substitute …". You can save a great number of lines of code with
-those substitutions, it's normally at least 4-lines `if` condition or lengthy `&&`/`||` use.
+Ternary expression is known from `C` language but exists also in Zsh, but directly only in a math context, i.e.
+`\(( a = a > 0 ? b : c ))`. The flexibility of Zsh allows such expressions also in a normal context. Above is an
+example. `:+` is "if not empty, substitute …" `:-` is "if empty, substitute …". You can save a great number of lines of
+code with those substitutions, it's normally at least 4-lines `if` condition or lengthy `&&`/`||` use.
 
 ### Ternary expressions with `:#` substitution
 
@@ -233,7 +231,7 @@ print "${list[@]/(#b)([^,]##,)(#c3,3)([^,]##)*/${match[2]}}" ▶ 1 2
 
 The pattern specifies 3 blocks of `[^,]##,` so 3 "not-comma multiple times, then comma", then the single block of
 "not-comma multiple times" in second parentheses -- and then replaces this with second parentheses. The result is the
-4th column extracted from multiple lines of text, something `awk` is often used for. Another method is the use of
+4th column extracted from multiple lines of text, something `awk` is often used for. Another method is the use of the
 `s`-flag. For a single line of text:
 
 ```shell
@@ -249,7 +247,7 @@ print "${list[@]/(#m)*/${${(s:,:)MATCH}[4]}}" ▶ 1 2
 
 There is a problem with the `(s::)` flag that can be solved if Zsh is version `5.4` or higher: if there will be single
 input column, e.g. `list=( "column1" "a,b")` instead of two or more columns (i.e. `list=( "column1,column2" "a,b" )`),
-then `(s::)` will return **string** instead of 1-element **array**. So the index `[4]` in above snippet will index a
+then `(s::)` will return **string** instead of 1-element **array**. So the index `[4]` in the above snippet will index a
 string, and show its 4-th letter. Starting with Zsh 5.4, thanks to a patch by Bart Schaefer
 (`40640: the (A) parameter flag forces array result even if...`), it is possible to force **array**-kind of result even
 for a single column, by adding `(A)` flag, i.e.:
@@ -314,10 +312,10 @@ printf -v serialized "%q " "${array[@]}"
 eval "deserialized=($serialized)"
 ```
 
-This method works also with Zsh. The drawback is the use of `eval`, however, it's impossible that any problem will occur
-unless someone compromises variable's value, but as always, `eval` should be avoided if possible.
+This method works also with Zsh. The drawback is the use of `eval`, however, no problem may occur unless someone
+compromises variable's value, but as always, `eval` should be avoided if possible.
 
-## Real world examples
+## Real-world examples
 
 ### Testing for Git subcommand
 
@@ -343,7 +341,7 @@ The result is just `1` fork.
 ### Counting unquoted-only apostrophes
 
 A project was needing this to do some Zle line-continuation tricks (when you put a backslash-\ at the end of the line
-and press enter – it is the line-continuation that occurs at that moment).
+and press enters – it is the line-continuation that occurs at that moment).
 
 The required functionality is: in the given string, count the number of apostrophes, but _only the unquoted ones_. This
 means that only apostrophes with null or an even number of preceding backslashes should be accepted into the count:
@@ -375,17 +373,12 @@ ones) with `the-apostrope(s)` (and then count them with `${#buf}`).
 
 ### Parsing INI file
 
-With Zshell's `extended_glob` parsing an `ini` file is an easy task. It will not result in a nested-arrays data
-structure (Zsh doesn't support nested hashes), but the hash keys like `$DB_CONF[db1_<connection>_host]` are actually
-really intuitive.
+With Zshell `extended_glob` parsing an `ini` file is an easy task. It will not result in a nested-arrays data structure
+(Zsh doesn't support nested hashes), but the hash keys like `$DB_CONF[db1_<connection>_host]` is actually intuitive.
 
 The code should be placed in a file named `read-ini-file`, in `$fpath`, and `autoload read-ini-file` should be invoked.
 
-.read-ini-file
-
 ```shell
-# Copyright (c) 2018 Sebastian Gniazdowski
-#
 # $1 - path to the ini file to parse
 # $2 - the name of output hash
 # $3 - prefix for keys in the hash
