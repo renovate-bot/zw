@@ -1,32 +1,28 @@
-'project_id_env': CROWDIN_PROJECT
-'api_token_env': CROWDIN_TOKEN
-languages_mapping:
-  two_letters_code:
-    pt-BR: pt-BR
+project_id_env: CROWDIN_PROJECT
+api_token_env: CROWDIN_TOKEN
 base_url: 'https://digitalclouds.crowdin.com'
 commit_message: '[ci skip]'
 preserve_hierarchy: true
 files:
-  - source: /i18n/en/**/*.json
-    translation: /i18n/%two_letters_code%/**/%original_file_name%
-  - source: /docs/**/*.md
+  - source: '/i18n/en/**/*.json'
+    translation: '/i18n/%two_letters_code%/**/%original_file_name%'
+  - source: '/docs/**/*.md'
     ignore_settings: 1
     ignore:
-      - /docs/ecosystem/**/*.md
-      - /docs/gallery/**/*.md
-      - /docs/guides/**/*.md
-    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/**/%original_file_name%
-  - source: /community/**/*.md
-    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs-community/**/%original_file_name%
-  - source: /blog/**/*.md
-    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-blog/**/%original_file_name%
-  - source: /src/pages/**/*.md
-    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-pages/**/%original_file_name%
-    ignore:
-      - /**/*.js
-      - /**/*.jsx
-      - /**/*.ts
-      - /**/*.tsx
-      - /**/*.css
-  - source: /blog/**/*.md
-    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-blog/**/%original_file_name%
+      - '/docs/ecosystem/**/*.md'
+      - '/docs/gallery/**/*.md'
+      - '/docs/guides/**/*.md'
+    translation: '/i18n/%two_letters_code%/docusaurus-plugin-content-docs/**/%original_file_name%'
+#  - source: '/blog/**/*.md'
+#    translation: '/i18n/%two_letters_code%/docusaurus-plugin-content-blog/**/%original_file_name%'
+  - source: '/community/**/*.md'
+    translation: '/i18n/%two_letters_code%/docusaurus-plugin-content-docs-community/**/%original_file_name%'
+#  - source: '/src/pages/**/*.md'
+#    translation: '/i18n/%two_letters_code%/docusaurus-plugin-content-pages/**/%original_file_name%'
+#    ignore:
+#      - '/**/*.js'
+#      - '/**/*.jsx'
+#      - '/**/*.ts'
+#      - '/**/*.tsx'
+#      - '/**/*.css'
+#      - 'src/pages/legal/privacy_policy.md'
