@@ -3102,7 +3102,7 @@ packages:
       dotenv: 10.0.0
       express: 4.17.3
       lighthouse: 8.6.0
-      puppeteer: 13.4.0
+      puppeteer: 13.4.1
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -4395,7 +4395,7 @@ packages:
       camelcase: 6.3.0
       chalk: 4.1.2
       cli-boxes: 3.0.0
-      string-width: 5.1.1
+      string-width: 5.1.2
       type-fest: 2.12.0
       widest-line: 4.0.1
       wrap-ansi: 8.0.1
@@ -4419,7 +4419,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001312
-      electron-to-chromium: 1.4.73
+      electron-to-chromium: 1.4.75
       escalade: 3.1.1
       node-releases: 2.0.2
       picocolors: 1.0.0
@@ -5551,8 +5551,8 @@ packages:
       jake: 10.8.2
     dev: false
 
-  /electron-to-chromium/1.4.73:
-    resolution: {integrity: sha512-RlCffXkE/LliqfA5m29+dVDPB2r72y2D2egMMfIy3Le8ODrxjuZNVo4NIC2yPL01N4xb4nZQLwzi6Z5tGIGLnA==}
+  /electron-to-chromium/1.4.75:
+    resolution: {integrity: sha512-LxgUNeu3BVU7sXaKjUDD9xivocQLxFtq6wgERrutdY/yIOps3ODOZExK1jg8DTEg4U8TUCb5MLGeWFOYuxjF3Q==}
 
   /emoji-regex/8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -6533,7 +6533,7 @@ packages:
       he: 1.2.0
       param-case: 3.0.4
       relateurl: 0.2.7
-      terser: 5.11.0
+      terser: 5.12.0
     dev: false
 
   /html-tags/3.1.0:
@@ -8936,8 +8936,8 @@ packages:
     dependencies:
       escape-goat: 2.1.1
 
-  /puppeteer/13.4.0:
-    resolution: {integrity: sha512-WrHtFF2WpYC6KWFP4OCPOHWCjW4f8tFk+FkYZeNQ8/lHn+asjXBEXiIWauune8CY2xIHBVExGas+WI6Ay8/MgQ==}
+  /puppeteer/13.4.1:
+    resolution: {integrity: sha512-2arcYPEGvLV9HvOw01Zv1b1IAXrMWHqsFJn0Hn00qe9HtCmaF0b8FlrbdLjCIbkaFc6icH5+GqcG8R5KxlJSRg==}
     engines: {node: '>=10.18.1'}
     requiresBuild: true
     dependencies:
@@ -9537,7 +9537,7 @@ packages:
       jest-worker: 26.6.2
       rollup: 2.68.0
       serialize-javascript: 4.0.0
-      terser: 5.11.0
+      terser: 5.12.0
     dev: false
 
   /rollup/2.68.0:
@@ -10048,8 +10048,8 @@ packages:
       is-fullwidth-code-point: 3.0.0
       strip-ansi: 6.0.1
 
-  /string-width/5.1.1:
-    resolution: {integrity: sha512-V4jFFhDoJzUOpG491nUrDginBuZi+wKtG+omlT5hgdBLYGPNNVT/o75JWwsSqClbrYMEV9Dvm3fXjZzxyOjk2w==}
+  /string-width/5.1.2:
+    resolution: {integrity: sha512-HnLOCR3vjcY8beoNLtcjZ5/nxn2afmME6lhrDrebokqMap+XbeW8n9TXpPDOqdGK5qcI3oT0GKTW6wC7EMiVqA==}
     engines: {node: '>=12'}
     dependencies:
       eastasianwidth: 0.2.0
@@ -10375,12 +10375,12 @@ packages:
       schema-utils: 3.1.1
       serialize-javascript: 6.0.0
       source-map: 0.6.1
-      terser: 5.11.0
+      terser: 5.12.0
       webpack: 5.69.1
     dev: false
 
-  /terser/5.11.0:
-    resolution: {integrity: sha512-uCA9DLanzzWSsN1UirKwylhhRz3aKPInlfmpGfw8VN6jHsAtu8HJtIpeeHHK23rxnE/cDc+yvmq5wqkIC6Kn0A==}
+  /terser/5.12.0:
+    resolution: {integrity: sha512-R3AUhNBGWiFc77HXag+1fXpAxTAFRQTJemlJKjAgD9r8xXTpjNKqIXwHM/o7Rh+O0kUJtS3WQVdBeMKFk5sw9A==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -11122,7 +11122,7 @@ packages:
   /wide-align/1.1.5:
     resolution: {integrity: sha512-eDMORYaPNZ4sQIuuYPDHdQvf4gyCF9rEEV/yPxGfwPkRodwEgiMUUXTx/dex+Me0wxx53S+NgUHaP7y3MGlDmg==}
     dependencies:
-      string-width: 4.2.3
+      string-width: 1.0.2
     dev: false
 
   /widest-line/3.1.0:
@@ -11135,7 +11135,7 @@ packages:
     resolution: {integrity: sha512-o0cyEG0e8GPzT4iGHphIOh0cJOV8fivsXxddQasHPHfoZf1ZexrfeA21w2NaEN1RHE+fXlfISmOE8R9N3u3Qig==}
     engines: {node: '>=12'}
     dependencies:
-      string-width: 5.1.1
+      string-width: 5.1.2
     dev: false
 
   /wildcard/2.0.0:
@@ -11310,7 +11310,7 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       ansi-styles: 6.1.0
-      string-width: 5.1.1
+      string-width: 5.1.2
       strip-ansi: 7.0.1
     dev: false
 
