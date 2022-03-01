@@ -121,7 +121,7 @@ const config = {
           editUrl: ({locale, versionDocsDirPath, docPath}) => {
             if (locale !== 'en') {
               return `https://digitalclouds.crowdin.com/z-shell/${locale}`;
-            } /* If locale NOT en (English), then redirect to translation files (Crowdin) */
+            }
             return `https://github.com/z-shell/zw/tree/main/${versionDocsDirPath}/${docPath}`;
           },
           showLastUpdateAuthor: true,
@@ -129,12 +129,12 @@ const config = {
         },
         blog: {
           showReadingTime: true,
-          editUrl: ({locale, blogDirPath, blogPath, permalink}) => {
+          editUrl: ({locale, blogDirPath, blogPath}) => {
             if (locale !== 'en') {
               return `https://digitalclouds.crowdin.com/z-shell/${locale}`;
-            } /* If locale NOT en (English), then redirect to translation files (Crowdin) */
+            }
             return `https://github.com/z-shell/zw/tree/main/${blogDirPath}/${blogPath}`;
-          } /* If locale IS en (English), then redirect to latest source files. (GitHub) */,
+          },
         },
         pages: {
           /* https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-pages#configuration */
