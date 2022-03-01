@@ -3,9 +3,11 @@ name: '🌐 Crowdin'
 
 on:
   workflow_dispatch:
-#  push:
-#    branches: [main]
-#    paths: ['i18n/**', 'docs/**', 'community/**']
+  schedule:
+    - cron: '0 */3 * * *'
+  push:
+    branches: ['main']
+    paths: ['docs/**', 'community/**']
 
 jobs:
   sync-crowdin:
@@ -20,5 +22,5 @@ jobs:
           download_translations: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PROJECT_ID: ${{ secrets.PROJECT_ID }}
-          ZI_CROWDIN_TOKEN: ${{ secrets.ZI_CROWDIN_TOKEN }}
+          CROWDIN_PROJECT: ${{ secrets.CROWDIN_PROJECT }}
+          CROWDIN_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
