@@ -137,7 +137,7 @@ const config = {
           },
         },
         pages: {
-        /* https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-pages#configuration */
+          /* https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-pages#configuration */
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
