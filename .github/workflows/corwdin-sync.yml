@@ -3,8 +3,8 @@ name: '🌐 Crowdin'
 
 on:
   workflow_dispatch:
-  #  schedule:
-  #    - cron: '45 0 * * *'
+  schedule:
+      - cron: '45 0 * * *'
   push:
     branches: ['main']
     paths: ['docs/**', 'community/**', 'src/**']
