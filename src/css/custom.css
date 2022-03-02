@@ -1,6 +1,9 @@
 :root {
+  --ifm-background-color:var(--fill);
+  transition: 0.6s all;
   --site-primary-hue-saturation: 167 68%;
   --site-primary-hue-saturation-light: 167 56%;
+/**
   --site-color-favorite-background: #f6fdfd;
   --site-color-tooltip: #fff;
   --site-color-tooltip-background: #161b22;
@@ -8,6 +11,11 @@
   --site-color-checkbox-checked-bg: hsl(167deg 56% 73% / 25%);
   --site-color-feedback-background: #fff;
   --ifm-code-font-size: 95%;
+*/
+}
+
+code {
+  font-family: 'Fira Mono', Consolas, 'Liberation Mono', Menlo, Courier, monospace
 }
 
 html[data-theme='dark'] {
@@ -16,8 +24,8 @@ html[data-theme='dark'] {
 }
 
 [data-theme='light'] {
-  --ifm-color-primary: hsl(var(--site-primary-hue-saturation) 26%);
-  --ifm-color-primary-dark: hsl(var(--site-primary-hue-saturation) 23%);
+  --ifm-color-primary: hsl(var(--site-primary-hue-saturation) 30%) !important;
+  --ifm-color-primary-dark: hsl(var(--site-primary-hue-saturation) 26%);
   --ifm-color-primary-darker: hsl(var(--site-primary-hue-saturation) 20%);
   --ifm-color-primary-darkest: hsl(var(--site-primary-hue-saturation) 17%);
   --ifm-color-primary-light: hsl(var(--site-primary-hue-saturation-light) 36%);
@@ -26,7 +34,7 @@ html[data-theme='dark'] {
 }
 
 [data-theme='dark'] {
-  --ifm-color-primary: hsl(var(--site-primary-hue-saturation) 45%);
+  --ifm-color-primary: hsl(var(--site-primary-hue-saturation) 45%) !important;
   --ifm-color-primary-dark: hsl(var(--site-primary-hue-saturation) 40%);
   --ifm-color-primary-darker: hsl(var(--site-primary-hue-saturation) 35%);
   --ifm-color-primary-darkest: hsl(var(--site-primary-hue-saturation) 30%);
@@ -83,10 +91,12 @@ div[class^='announcementBar_'] {
 
 .footer--dark a[href] {
   color: #1e8ad6;
+  transition: color .5s;
 }
 
 .footer--dark a[href]:hover {
   color: #3ba0e6;
+  transition: color .5s;
 }
 
 .IceLogo {

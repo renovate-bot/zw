@@ -102,7 +102,7 @@ const config = {
   ],
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ja'],
+    locales: ['en', 'ja', 'ru'],
     /**
     localeConfigs: {
       en: {
@@ -119,6 +119,7 @@ const config = {
         debug: true,
         docs: {
           path: 'docs',
+          routeBasePath: 'docs',
           breadcrumbs: true,
           sidebarPath: require.resolve('./lib/js/sidebars_1.js'),
           editUrl: ({locale, versionDocsDirPath, docPath}) => {
@@ -129,6 +130,8 @@ const config = {
           },
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
+          disableVersioning: false,
+          includeCurrentVersion: true,
         },
         blog: {
           showReadingTime: true,
