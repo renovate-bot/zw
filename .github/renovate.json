@@ -3,15 +3,5 @@
   "gitAuthor": ["digital-teams@pm.me"],
   "lockFileMaintenance": {
     "enabled": false
-  },
-  "packageRules": [
-    {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true
-    },
-    {
-      "matchDepTypes": ["devDependencies"],
-      "automerge": true
-    }
-  ]
+  }
 }
