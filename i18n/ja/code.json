@@ -1,8 +1,4 @@
 {
-  "homepage.button": {
-    "message": "💢 Make it work, make it right, make it Fast 💢",
-    "description": "The homepage button to wiki introduction"
-  },
   "homepage.feature2.title": {
     "message": "大事なことに集中する",
     "description": "Title of feature 2 (middle) on the home page"
@@ -10,6 +6,10 @@
   "homepage.feature3.title": {
     "message": "幅広い選択肢",
     "description": "Title of feature 3 (right) on the home page"
+  },
+  "homepage.button": {
+    "message": "💢 Make it work, make it right, make it Fast 💢",
+    "description": "The homepage button to wiki introduction"
   },
   "theme.ErrorPageContent.title": {
     "message": "ページがクラッシュしました。",
