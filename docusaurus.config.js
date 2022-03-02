@@ -16,7 +16,6 @@ const config = {
   favicon: '/zw/favicon.ico',
   projectName: 'zw',
   organizationName: 'z-shell',
-  trailingSlash: 'false',
   staticDirectories: ['static'],
   plugins: [
     [
@@ -33,17 +32,17 @@ const config = {
           {
             tagName: 'link',
             rel: 'manifest',
-            href: '/zw/manifest.json',
+            href: '/manifest.json',
           },
           {
             tagName: 'link',
             rel: 'browserconfig',
-            href: '/zw/browserconfig.xml',
+            href: '/browserconfig.xml',
           },
           {
             tagName: 'meta',
             name: 'theme-color',
-            content: 'rgb(34, 195, 142)',
+            content: 'rgb(35, 184, 152)',
           },
           {
             tagName: 'meta',
@@ -83,7 +82,7 @@ const config = {
         editUrl: ({locale, versionDocsDirPath, docPath}) => {
           if (locale !== 'en') {
             return `https://digitalclouds.crowdin.com/z-shell/${locale}`;
-          } /* If locale NOT en (English), then redirect to translation files (Crowdin) */
+          }
           return `https://github.com/z-shell/zw/tree/main/${versionDocsDirPath}/${docPath}`;
         },
         sidebarPath: require.resolve('./lib/js/sidebars_2.js'),
@@ -103,12 +102,14 @@ const config = {
   ],
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ru', 'ja'],
+    locales: ['en', 'ja'],
+/**
     localeConfigs: {
       en: {
         htmlLang: 'en-GB',
       },
     },
+*/
   },
   presets: [
     [
