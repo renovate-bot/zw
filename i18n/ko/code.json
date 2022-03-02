@@ -211,6 +211,10 @@
     "message": "밝은 모드",
     "description": "The name for the light color mode"
   },
+  "theme.SearchBar.label": {
+    "message": "검색",
+    "description": "The ARIA label and placeholder for search button"
+  },
   "theme.SearchPage.documentsFound.plurals": {
     "message": "{count}개 문서를 찾았습니다.",
     "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
@@ -238,10 +242,6 @@
   "theme.SearchPage.fetchingNewResults": {
     "message": "새로운 검색 결과를 얻을 수 있습니다...",
     "description": "The paragraph for fetching new search results"
-  },
-  "theme.SearchBar.label": {
-    "message": "검색",
-    "description": "The ARIA label and placeholder for search button"
   },
   "theme.PwaReloadPopup.info": {
     "message": "새로운 버전이 있습니다.",
