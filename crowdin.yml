@@ -11,15 +11,14 @@ files:
       - '/docs/ecosystem/**/*.md'
       - '/docs/gallery/**/*.md'
       - '/docs/guides/**/*.md'
-      - '/docs/**/*.json'
     translation: '/i18n/%two_letters_code%/docusaurus-plugin-content-docs/**/%original_file_name%'
-  #  - source: '/blog/**/*.md'
-  #    translation: '/i18n/%two_letters_code%/docusaurus-plugin-content-blog/**/%original_file_name%'
-  - source: '/community/**/*'
-    ignore:
-      - '/community/**/*.json'
+#  - source: '/community/**/*'
+#    ignore:
+#      - '/community/**/*.json'
 #    translation: '/i18n/%two_letters_code%/docusaurus-plugin-content-docs-community/**/%original_file_name%'
-#  - source: '/src/pages/**/*.md'
+#  - source: '/blog/**/*'
+#    translation: '/i18n/%two_letters_code%/docusaurus-plugin-content-blog/**/%original_file_name%'
+#  - source: '/src/pages/**/*'
 #    translation: '/i18n/%two_letters_code%/docusaurus-plugin-content-pages/**/%original_file_name%'
 #    ignore:
 #      - '/**/*.js'
@@ -27,4 +26,4 @@ files:
 #      - '/**/*.ts'
 #      - '/**/*.tsx'
 #      - '/**/*.css'
-#      - 'src/pages/legal/privacy_policy.md'
+#      - '/**/privacy_policy.md'
