@@ -103,7 +103,7 @@ const config = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'ja'],
-/**
+    /**
     localeConfigs: {
       en: {
         htmlLang: 'en-GB',
