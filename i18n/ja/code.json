@@ -1,4 +1,8 @@
 {
+  "homepage.button": {
+    "message": "💢 Make it work, make it right, make it Fast 💢",
+    "description": "The homepage button to wiki introduction"
+  },
   "homepage.feature2.title": {
     "message": "大事なことに集中する",
     "description": "Title of feature 2 (middle) on the home page"
@@ -6,10 +10,6 @@
   "homepage.feature3.title": {
     "message": "幅広い選択肢",
     "description": "Title of feature 3 (right) on the home page"
-  },
-  "homepage.button": {
-    "message": "💢 Make it work, make it right, make it Fast 💢",
-    "description": "The homepage button to wiki introduction"
   },
   "theme.ErrorPageContent.title": {
     "message": "ページがクラッシュしました。",
@@ -179,6 +179,10 @@
     "message": "ダークモード",
     "description": "The name for the dark color mode"
   },
+  "theme.SearchBar.label": {
+    "message": "検索",
+    "description": "The ARIA label and placeholder for search button"
+  },
   "theme.SearchPage.documentsFound.plurals": {
     "message": "{count}件のドキュメントが見つかりました",
     "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
@@ -210,10 +214,6 @@
   "theme.SearchPage.fetchingNewResults": {
     "message": "新しい検索結果を取得しています...",
     "description": "The paragraph for fetching new search results"
-  },
-  "theme.SearchBar.label": {
-    "message": "検索",
-    "description": "The ARIA label and placeholder for search button"
   },
   "theme.PwaReloadPopup.info": {
     "message": "新しいバージョンがあります",

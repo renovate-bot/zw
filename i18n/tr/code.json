@@ -179,6 +179,10 @@
     "message": "Etiketler:",
     "description": "The label alongside a tag list"
   },
+  "theme.SearchBar.label": {
+    "message": "Ara",
+    "description": "The ARIA label and placeholder for search button"
+  },
   "theme.SearchPage.documentsFound.plurals": {
     "message": "Bir döküman bulundu|{count} döküman bulundu",
     "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
@@ -210,10 +214,6 @@
   "theme.SearchPage.fetchingNewResults": {
     "message": "Yeni sonuçlar getiriliyor...",
     "description": "The paragraph for fetching new search results"
-  },
-  "theme.SearchBar.label": {
-    "message": "Ara",
-    "description": "The ARIA label and placeholder for search button"
   },
   "theme.PwaReloadPopup.info": {
     "message": "Yeni sürüm mevcut",
