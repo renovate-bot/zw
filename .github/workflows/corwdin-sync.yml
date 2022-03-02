@@ -4,10 +4,10 @@ name: '🌐 Crowdin'
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */3 * * *'
+    - cron: '45 0 * * *'
   push:
     branches: ['main']
-    paths: ['docs/**', 'community/**', 'i18n/**']
+    paths: ['docs/**', 'community/**', '/src/**', 'i18n/**']
 
 jobs:
   sync-crowdin:
