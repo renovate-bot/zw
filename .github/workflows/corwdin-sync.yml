@@ -7,7 +7,7 @@ on:
   #    - cron: '45 0 * * *'
   push:
     branches: ['main']
-    paths: ['docs/**', 'community/**', '/src/**', 'i18n/**']
+    paths: ['docs/**', 'community/**', 'src/**']
 
 jobs:
   sync-crowdin:
