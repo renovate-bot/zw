@@ -20,6 +20,7 @@
     "build": "docusaurus build",
     "build:cf": "npx pnpm i --store=node_modules/.pnpm-store --no-frozen-lockfile && npx pnpm run build",
     "get:pnpm": "curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm",
+    "pre:pnpm": "npx pnpm i --store=node_modules/.pnpm-store --no-frozen-lockfile",
     "build:en": "docusaurus build --locale en",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
