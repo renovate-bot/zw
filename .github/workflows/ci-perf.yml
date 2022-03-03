@@ -32,11 +32,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
-      - name: ' ✨ Installation'
-        run: 'pnpm i --no-frozen-lockfile'
       - uses: preactjs/compressed-size-action@v2
         with:
-          build-script: 'build:en'
+          build-script: 'pnpm i --no-frozen-lockfile && build:en'
           pattern: '{build/assets/js/main*js,build/assets/css/styles*css,.docusaurus/globalData.json,build/index.html,build/blog/index.html,build/blog/**/swiss-army-knife-for-zsh/*,build/docs/index.html,build/docs/getting_started/installation.html}'
           strip-hash: '\.([^;]\w{7})\.'
           minimum-change-threshold: 30
