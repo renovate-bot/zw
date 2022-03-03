@@ -4,7 +4,7 @@ name: '🌐 Crowdin'
 on:
   workflow_dispatch:
   schedule:
-      - cron: '0 */3 * * *'
+    - cron: '0 */3 * * *'
   pull_request:
     branches: ['main']
   push:

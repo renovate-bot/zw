@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'fontawesome';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/fontawesome.eot?14663396'); /* IE9 Compat Modes */
+  src: url('fonts/fontawesome.eot?14663396#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/fontawesome.woff2?14663396') format('woff2'), /* Super Modern Browsers */
+       url('fonts/fontawesome.woff?14663396') format('woff'), /* Modern Browsers */
+       url('fonts/fontawesome.ttf?14663396') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/fontawesome.svg?14663396#fontawesome') format('svg'); /* Legacy iOS */
+  font-display: swap;
+}
+
+.fa {
+display:inline-block;
+font:normal normal normal 14px/1 fontawesome;
+font-size:inherit;
+text-rendering:auto;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+transform:translate(0, 0);
+}
+.fa-2x {
+ font-size:2em;
+}
+
+.fa-home:before {content:'\e800';}
+.fa-globe:before {content:'\e801';}
+.fa-search:before {content:'\e802'; }
+.fa-thumbs-o-up:before {content:'\e803';}
+.fa-save:before {content: '\e804'; }
+.fa-envelope:before { content: '\e805'; }
+.fa-facebook-square:before {content:'\e806';}
+.fa-discord:before {content:'\e807';}
+.fa-twitter-square:before {content:'\e808';}
+.fa-caret-down:before {content:'\e809';}
+.fa-caret-up:before {content:'\e80a';}
+.fa-adjust:before { content: '\e80b'; }
+.fa-copy:before {content:'\e80c';}
+.fa-rotate:before {content: '\e813'; }
+.fa-close:before {content:'\e815';}
+.fa-user:before { content: '\e816'; }
+.fa-check:before {content:'\e817';}
+.fa-js:before { content: '\e819'; }
+.fa-python:before { content: '\e81a'; }
+.fa-php:before { content: '\e81b'; }
+.fa-bootstrap:before { content: '\e81c'; }
+.fa-java:before { content: '\e821'; }
+.fa-logo:before { content: '\e822'; }
+.fa-logow3:before {content:'\e823';}
+.fa-certified:before {content:'\e829';}
+.fa-menu:before {content: '\f0c9';}
+.fa-code:before { content: '\f121'; }
+.fa-html5:before { content: '\f13b'; }
+.fa-css3:before { content: '\f13c'; }
+.fa-instagram:before {content:'\f16d';}
+.fa-graduation-cap:before { content: '\f19d'; }
+.fa-trash:before {content:'\f1f8';}
+.fa-linkedin-square:before {content:'\f30c';}
+.fa-smiley-1:before {content:'\f330';}
+.fa-smiley-2:before {content:'\f32e';}
+.fa-smiley-3:before {content:'\f32d';}
+.fa-smiley-4:before {content:'\f344';}
+.fa-smiley-5:before {content:'\f32c';}
+.fa-smiley-6:before {content:'\f32f';}
+.fa-smiley-7:before {content:'\f331';}
+.fa-smiley-8:before {content:'\f32b';}
+.fa-smiley-9:before {content:'\f32a';}
+.fa-smiley-10:before {content:'\f329';}

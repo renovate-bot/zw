@@ -105,19 +105,20 @@ Install almost everything from [GitHub](https://github.com):
 </div>
 
 <!-- markdownlint-restore -->
+<!-- END introduction -->
 
-[1]: ecosystem/annexes/bin-gem-node
+[1]: /docs/ecosystem/annexes/bin-gem-node
 [2]: https://github.com/z-shell/any-gem
 [3]: https://github.com/z-shell/any-node
-[4]: ecosystem/annexes/rust
-[5]: ecosystem/annexes
-[6]: ecosystem/packages/packages-overview
-[7]: gallery/collection
-[8]: getting_started/overview#turbo-mode-zsh--53
-[9]: guides/customization#customizing-paths
-[10]: guides/customization#multiple-prompts
-[11]: guides/customization#non-github-local-plugins
-[12]: getting_started/overview#oh-my-zsh-prezto
-[13]: getting_started/migration
-[14]: guides/commands#loading-and-unloading
-[15]: guides/commands#completions-management
+[4]: /docs/ecosystem/annexes/rust
+[5]: /docs/ecosystem/annexes
+[6]: /docs/ecosystem/packages/packages-overview
+[7]: /docs/gallery/collection
+[8]: /docs/getting_started/overview#turbo-mode-zsh--53
+[9]: /docs/guides/customization#customizing-paths
+[10]: /docs/guides/customization#multiple-prompts
+[11]: /docs/guides/customization#non-github-local-plugins
+[12]: /docs/getting_started/overview#oh-my-zsh-prezto
+[13]: /docs/getting_started/migration
+[14]: /docs/guides/commands#loading-and-unloading
+[15]: /docs/guides/commands#completions-management

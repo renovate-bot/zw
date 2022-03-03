@@ -1,3 +1,4 @@
+i18n
 dist
 node_modules
 .yarn
@@ -16,7 +17,6 @@ create-docusaurus/templates/*/docusaurus.config.js
 stylelint-copyright/lib
 __fixtures__
 
-i18n
 versions.json
 versioned_sidebars/*.json
 

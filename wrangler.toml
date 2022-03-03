@@ -1,0 +1,18 @@
+name = "zw"
+type = "webpack"
+route = ''
+zone_id = '7600c132f040aea60b0533ad801986d5'
+account_id = "2db2112b269ed3616ed3a863a222f3e8"
+usage_model = ''
+compatibility_flags = []
+workers_dev = true
+site = {bucket = "./build",entry-point = "service-worker"}
+compatibility_date = "2022-03-03"
+kv_namespaces = [
+    { binding = "ZW_KW", preview_id = "1d84793ab7374a17ba28c0e06f78b5ff", id = "dd74ab5c102e4289858a9ea81af44adc" }
+]
+[build]
+command = "pnpm i && pnpm build"
+
+[build.upload]
+format = "service-worker"

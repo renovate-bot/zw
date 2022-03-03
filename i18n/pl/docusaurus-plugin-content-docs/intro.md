@@ -63,14 +63,17 @@ Install almost everything from [GitHub](https://github.com):
 
 - [Customize paths][9], use [multiple prompts][10] or create [your own][11] plugins.
 - Supports [Oh My Zsh][12] and [Prezto][12] plugins and libraries ([migration][13]).
-- Does not use `$FPATH`, loading multiple plugins doesn't clutter `$FPATH` with the same number of entries (e.g. 10, 15, or more).
+- Does not use `$FPATH`, loading multiple plugins doesn't clutter `$FPATH` with the same number of entries (e.g. 10, 15,
+  or more).
 - Code is immune to `KSH_ARRAYS` and other options typically causing compatibility problems.
 - Do not require `sudo`, and provide many workarounds (e.g: setting so-called **shims** locally).
 
 ## 📈 Familiarize and control
 
-- Visualise **aliases**, **functions**, **bindkeys**, **Zle widgets**, **zstyles**, **completions**, **variables**, `$PATH`, and `$FPATH` elements a plugin has set up.
-- Quickly familiarize oneself with a new plugin and provides rich and easy-to-digest information that might be helpful on various occasions.
+- Visualise **aliases**, **functions**, **bindkeys**, **Zle widgets**, **zstyles**, **completions**, **variables**,
+  `$PATH`, and `$FPATH` elements a plugin has set up.
+- Quickly familiarize oneself with a new plugin and provides rich and easy-to-digest information that might be helpful
+  on various occasions.
 - [Load or unload][14] plugins, use the ability to [manage][15] completions.
 
 - Docker [playground](https://github.com/z-shell/playground) to test or propose configurations.
