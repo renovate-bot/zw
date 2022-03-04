@@ -117,7 +117,7 @@
           ASSET_NAMESPACE: __STATIC_CONTENT,
           ASSET_MANIFEST: __STATIC_CONTENT_MANIFEST,
           cacheControl: o,
-          defaultMimeType: 'text/plain',
+          defaultMimeType: 'text/html',
           defaultDocument: 'index.html',
         },
         a,
