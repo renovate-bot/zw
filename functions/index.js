@@ -86,7 +86,6 @@
       (i.InternalError =
         i.NotFoundError =
         i.MethodNotAllowedError =
-        i.serveSinglePageApp =
         i.mapRequestToAsset =
         i.getAssetFromKV =
           void 0);
@@ -117,8 +116,6 @@
           ASSET_NAMESPACE: __STATIC_CONTENT,
           ASSET_MANIFEST: __STATIC_CONTENT_MANIFEST,
           cacheControl: o,
-          defaultMimeType: 'text/html',
-          defaultDocument: 'index.html',
         },
         a,
       );
