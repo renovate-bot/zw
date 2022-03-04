@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "ZI & Zsh Wiki",
+  "main": "functions/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/z-shell/zw.git"
@@ -36,8 +37,8 @@
     "format:text:fix": "markdownlint-cli2-fix \"**/*.{md,mkd,mdwn,mdown,markdown}\" \"#node_modules\"",
     "format": "prettier --config .prettierrc --write \"**/*.{js,jsx,ts,tsx,md,mdx,yml,yaml}\"",
     "crowdin:sync": "docusaurus write-translations && crowdin upload && crowdin download",
-    "pages:dev": "wrangler pages dev build --live-reload",
-    "publish": "npx pnpm i && npx pnpm build && npx wrangler publish"
+    "pages:dev": "wrangler pages dev build -l --live-reload --script-path './functions/index.js' --kv '__zw-workers_sites_assets'",
+    "worker:pub": "npx pnpm i && npx pnpm build && npx wrangler publish --site './build' --experimental-public './static' --name 'zw' --env 'production'"
   },
   "dependencies": {
     "@cloudflare/kv-asset-handler": "0.2.0",
