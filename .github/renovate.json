@@ -1,7 +1,3 @@
 {
   "extends": ["config:base"],
-  "gitAuthor": ["digital-teams@pm.me"],
-  "lockFileMaintenance": {
-    "enabled": false
-  }
 }
