@@ -17,3 +17,5 @@ kv_namespaces = [
 kv_namespaces = [
   { binding = "ASSETS", preview_id = "fa28fe85c02f4c0d960912e0cfe09e5c", id = "aba18f9703964c78918cb4f65cf06349" }
 ]
+[build.upload]
+main = "./functions/index.js"

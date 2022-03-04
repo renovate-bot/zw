@@ -29,6 +29,14 @@ performance and the end user experience.
 - <https://z-shell.pages.dev/>
 - <https://z.digitalclouds.dev/>
 
+> References:
+>
+> - [Pages](https://developers.cloudflare.com/pages/)
+> - [Workers](https://developers.cloudflare.com/workers/)
+> - [Cache](https://developers.cloudflare.com/cache/)
+> - [Analytics](https://developers.cloudflare.com/analytics/)
+> - [Firewall](https://developers.cloudflare.com/firewall/)
+
 ### Enterprise-level tools and services.
 
 - Make content multilingual fast and easy
