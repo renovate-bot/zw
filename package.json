@@ -36,7 +36,7 @@
     "format:text:fix": "markdownlint-cli2-fix \"**/*.{md,mkd,mdwn,mdown,markdown}\" \"#node_modules\"",
     "format": "prettier --config .prettierrc --write \"**/*.{js,jsx,ts,tsx,md,mdx,yml,yaml}\"",
     "crowdin:sync": "docusaurus write-translations && crowdin upload && crowdin download",
-    "pages:dev": "wrangler pages dev",
+    "pages:dev": "wrangler pages dev build --live-reload",
     "pages:pub": "npx pnpm i && npx pnpm build && npx wrangler publish"
   },
   "dependencies": {
