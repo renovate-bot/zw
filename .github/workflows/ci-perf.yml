@@ -13,6 +13,7 @@ on:
       - main
     paths-ignore:
       - 'docs/**'
+      - 'community/**'
 
 jobs:
   build-size:
@@ -58,7 +59,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
       - name: ' ✨ Installation'
-        run: 'pnpm i --no-frozen-lockfile'
+        run: 'pnpm install --no-prefer-frozen-lockfile --strict-peer-dependencies'
       # Ensure build with a cold cache does not increase too much
       - name: 'Build (cold cache)'
         run: pnpm build:en
