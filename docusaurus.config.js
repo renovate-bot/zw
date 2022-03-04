@@ -183,9 +183,6 @@ const config = {
         defaultMode: 'dark',
         disableSwitch: false,
         respectPrefersColorScheme: true,
-        switchConfig: {
-          darkIcon: '🌙',
-        },
       },
       navbar: {
         hideOnScroll: true,
