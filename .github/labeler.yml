@@ -1,21 +1,24 @@
 documentation 📝:
-  - any: ['docs/**/*.md', 'community/**/*.md']
+  - any: ['blog/**.md', 'docs/**/*.md', 'community/**/*.md']
     all: ['!i18n/**/*.md']
 dependencies 📦:
-  - 'yarn.lock'
   - 'package.json'
 enhancement ✨:
-  - 'tsconfig.json'
-  - '.prettierrc'
-  - '.prettierignore'
-  - '.markdownlint.json'
+  - 'functions/**'
 maintenance 📈:
   - '.github/CODEOWNERS'
   - '.github/*.md'
   - '.github/*.yml'
   - '.github/*.json'
   - '.vscode'
+  - 'tsconfig.json'
+  - 'babel.config.js'
   - 'docusaurus.config.js'
+  - '.prettierrc'
+  - '.prettierignore'
+  - '.markdownlint.json'
+  - 'pnpm-lock.yaml'
+  - 'yarn.lock'
 i18n 🌐:
   - 'i18n/**'
 annex 💠:
@@ -31,3 +34,4 @@ ci 🤖:
   - '.github/workflows/*.yml'
   - '.all-contributorsrc'
   - 'crowdin.yml'
+  - 'netlify.toml'
