@@ -16,13 +16,5 @@
   Cache-Control: max-age=365000000
   Cache-Control: immutable
 
-#/ko/assets/*
-#  Cache-Control: public
-#  Cache-Control: max-age=365000000
-#  Cache-Control: immutable
-
-/search/*
-  Content-Type: text/html; charset=UTF-8
-
 https://:z-shell.pages.dev/*
   X-Robots-Tag: noindex
