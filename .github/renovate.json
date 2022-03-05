@@ -1,8 +1,7 @@
 {
   "extends": ["config:base"],
-  "lockFileMaintenance": {
-    "enabled": true
-  },
+  "dependencyDashboardApproval": true,
+  "lockFileMaintenance": { "enabled": true },
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
@@ -11,6 +10,10 @@
     {
       "matchDepTypes": ["devDependencies"],
       "automerge": true
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "labels": ["major"]
     }
   ]
 }
