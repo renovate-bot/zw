@@ -125,7 +125,7 @@ For exclamation marks to not be expanded by Zsh an interactive session, use `'�
 
 :::
 
-## Snippets as`` commands
+## Snippets as'…' commands
 
 Commands can also be added to `$PATH` using **snippets**. For example:
 
@@ -144,7 +144,7 @@ There’s also an `atinit` ice-modifier, executed before each loading of plugin 
 
 :::
 
-## Snippets as`` completions
+## Snippets as'…' completions
 
 By using the `as''` ice modifier with value `completion` you can point the `snippet` subcommand directly to a completion file:
 
