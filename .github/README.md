@@ -20,11 +20,11 @@ Request a documentation 》</a> · <a href="https://github.com/z-shell/zi/discus
 
 #### Cloudflare Global Network
 
-> Interconnected with over 10,000 major service providers, cloud providers, and enterprise networks, Cloudflare is a fast
-lane on the Internet.
+> Interconnected with over 10,000 major service providers, cloud providers, and enterprise networks, Cloudflare is a
+> fast lane on the Internet.
 
 > By avoiding network hops and optimizing traffic paths, it drastically reduce latency while improving application
-performance and the end user experience.
+> performance and the end user experience.
 
 - <https://z-shell.pages.dev/>
 - <https://z.digitalclouds.dev/>
