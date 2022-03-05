@@ -1,14 +1,12 @@
 name = "zw"
 type = "javascript"
 workers_dev = false
-route = 'z.digitalclouds.dev/*'
+routes = ["z.digitalclouds.dev", "z.digitalclouds.dev/assets/*", "z.digitalclouds.dev/img/*", "z.digitalclouds.dev/zw/*"]
 zone_id = '7600c132f040aea60b0533ad801986d5'
 account_id = "2db2112b269ed3616ed3a863a222f3e8"
 usage_model = ''
 compatibility_flags = []
 compatibility_date = "2022-03-03"
-site = { bucket = "./build" }
-build.upload.main = "./functions"
-
-[triggers]
-crons = ["0 0 * JAN-JUN FRI", "0 0 LW JUL-DEC *"]
+site.bucket = "build"
+build.upload.main = "functions"
+triggers.crons = ["0 0 * JAN-JUN FRI", "0 0 LW JUL-DEC *"]

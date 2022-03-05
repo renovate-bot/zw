@@ -25,9 +25,9 @@ async function handleEvent(event) {
   //  ASSET_NAMESPACE: __STATIC_CONTENT,
   //  ASSET_MANIFEST: __STATIC_CONTENT_MANIFEST,
 
-  options.defaultMimeType = {
-    defaultMimeType: 'text/html',
-  }
+  // options.defaultMimeType = {
+  //   defaultMimeType: 'text/html',
+  // }
 
   try {
     if (DEBUG) {
