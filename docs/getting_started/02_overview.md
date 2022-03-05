@@ -145,7 +145,7 @@ For exclamation marks to not be expanded by Zsh an interactive session, use `'â€
 
 :::
 
-## Snippets as`` commands
+## Snippets as'â€¦' commands
 
 Commands can also be added to `$PATH` using **snippets**. For example:
 
