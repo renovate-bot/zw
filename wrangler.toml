@@ -1,8 +1,8 @@
 name = "zw"
 type = "javascript"
 workers_dev = false
-routes = ["z.digitalclouds.dev", "z.digitalclouds.dev/assets/*", "z.digitalclouds.dev/img/*", "z.digitalclouds.dev/zw/*"]
-zone_id = '7600c132f040aea60b0533ad801986d5'
+routes = ["z.digitalclouds.dev"]
+zone_id = "7600c132f040aea60b0533ad801986d5"
 account_id = "2db2112b269ed3616ed3a863a222f3e8"
 usage_model = ''
 compatibility_flags = []
