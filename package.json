@@ -36,9 +36,10 @@
     "format:text:fix": "markdownlint-cli2-fix \"**/*.{md,mkd,mdwn,mdown,markdown}\" \"#node_modules\"",
     "format": "prettier --config .prettierrc --write \"**/*.{js,jsx,ts,tsx,md,mdx,yml,yaml}\"",
     "crowdin:sync": "docusaurus write-translations && crowdin upload && crowdin download",
-    "dev": "wrangler pages dev build -l --live-reload --script-path './functions/index.js' --kv '__zw-workers_sites_assets'",
-    "worker:pub": "wrangler publish",
-    "worker:build:pub": "npx pnpm i && npx pnpm build && npx pnpm wrangler publish"
+    "w:dev": "wrangler pages dev build -l --live-reload",
+    "w:pub": "wrangler publish",
+    "w:build:pub": "npx pnpm i && npx pnpm build && npx pnpm wrangler publish",
+    "kv:list": "wrangler kv:namespace list | jq '.'"
   },
   "dependencies": {
     "@cloudflare/kv-asset-handler": "0.2.0",

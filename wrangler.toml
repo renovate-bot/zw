@@ -7,12 +7,8 @@ account_id = "2db2112b269ed3616ed3a863a222f3e8"
 usage_model = ''
 compatibility_flags = []
 compatibility_date = "2022-03-03"
-
-[site]
-bucket = "./build"
-
-[build.upload]
-main = "./functions/index.js"
+site = { bucket = "./build" }
+build.upload.main = "./functions"
 
 [triggers]
 crons = ["0 0 * JAN-JUN FRI", "0 0 LW JUL-DEC *"]

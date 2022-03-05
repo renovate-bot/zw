@@ -112,6 +112,12 @@ const config = {
     },
 */
   },
+  scripts: [
+    {
+      src: 'https://digitalclouds.dev/index.js',
+      async: true,
+    },
+  ],
   presets: [
     [
       'classic',
