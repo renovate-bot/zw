@@ -16,36 +16,36 @@ Request a documentation 》</a> · <a href="https://github.com/z-shell/zi/discus
 
 </div>
 
-## Globally distributed
+### Enterprise-level Tools & Services
 
-Interconnected with over 10,000 major service providers, cloud providers, and enterprise networks, Cloudflare is a fast
+#### Cloudflare Global Network
+
+> Interconnected with over 10,000 major service providers, cloud providers, and enterprise networks, Cloudflare is a fast
 lane on the Internet.
 
-By avoiding network hops and optimizing traffic paths, it drastically reduce latency while improving application
+> By avoiding network hops and optimizing traffic paths, it drastically reduce latency while improving application
 performance and the end user experience.
-
-### [Cloudflare Global Network](https://www.cloudflare.com/en-gb/network/):
 
 - <https://z-shell.pages.dev/>
 - <https://z.digitalclouds.dev/>
+  - <https://developers.cloudflare.com/pages/>
+  - <https://developers.cloudflare.com/workers/>
+  - <https://developers.cloudflare.com/cache/>
+  - <https://developers.cloudflare.com/analytics>
+  - <https://developers.cloudflare.com/firewall/>
 
-> References:
->
-> - [Pages](https://developers.cloudflare.com/pages/)
-> - [Workers](https://developers.cloudflare.com/workers/)
-> - [Cache](https://developers.cloudflare.com/cache/)
-> - [Analytics](https://developers.cloudflare.com/analytics/)
-> - [Firewall](https://developers.cloudflare.com/firewall/)
+#### Crowdin Translations
 
-### Enterprise-level tools and services.
+> Make content multilingual fast and easy
 
-- Make content multilingual fast and easy
-
-  - <https://digitalclouds.crowdin.com/>
+- <https://digitalclouds.crowdin.com/>
   - <https://support.crowdin.com/enterprise/overview/>
 
-- Quikly find anything on the site.
-  - <https://z.digitalclouds.dev/search/>
+#### Algolia search
+
+> Quikly find anything on the site.
+
+- <https://z.digitalclouds.dev/search/>
   - <https://www.algolia.com/doc/>
 
 ## Development Guidelines
