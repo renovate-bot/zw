@@ -19,7 +19,7 @@ const config = {
   trailingSlash: 'false',
   staticDirectories: ['static'],
   plugins: [
-    [
+    /**[
       '@docusaurus/plugin-pwa',
       {
         debug: false,
@@ -72,7 +72,7 @@ const config = {
           },
         ],
       },
-    ],
+    ],*/
     [
       /** @type {import("@docusaurus/plugin-content-docs").ContentDocsPluginOptions} */
       '@docusaurus/plugin-content-docs',
