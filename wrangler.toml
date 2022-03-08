@@ -1,7 +1,7 @@
 name = "zw"
 type = "javascript"
 workers_dev = false
-routes = ["z.digitalclouds.dev"]
+routes = ["z.digitalclouds.dev", "z.digitalclouds.dev/assets/*", "z.digitalclouds.dev/zw/*", "z.digitalclouds.dev/img/*"]
 zone_id = "7600c132f040aea60b0533ad801986d5"
 account_id = "2db2112b269ed3616ed3a863a222f3e8"
 usage_model = ''
