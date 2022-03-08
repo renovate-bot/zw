@@ -1583,7 +1583,7 @@ packages:
       commander: 5.1.0
       copy-webpack-plugin: 10.2.4_webpack@5.70.0
       core-js: 3.21.1
-      css-loader: 6.7.0_webpack@5.70.0
+      css-loader: 6.7.1_webpack@5.70.0
       css-minimizer-webpack-plugin: 3.4.1_clean-css@5.2.4+webpack@5.70.0
       cssnano: 5.1.0_postcss@8.4.8
       del: 6.0.0
@@ -4363,8 +4363,8 @@ packages:
     engines: {node: '>=12.22'}
     dev: true
 
-  /css-loader/6.7.0_webpack@5.70.0:
-    resolution: {integrity: sha512-S7HCfCiDHLA+VXKqdZwyRZgoO0R9BnKDnVIoHMq5grl3N86zAu7MB+FBWHr5xOJC8SmvpTLha/2NpfFkFEN/ig==}
+  /css-loader/6.7.1_webpack@5.70.0:
+    resolution: {integrity: sha512-yB5CNFa14MbPJcomwNh3wLThtkZgcNyI2bNMRt8iE5Z8Vwl7f8vQXFAzn2HDOJvtDq2NTZBUGMSUNNyrv3/+cw==}
     engines: {node: '>= 12.13.0'}
     peerDependencies:
       webpack: ^5.0.0
