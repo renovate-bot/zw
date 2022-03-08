@@ -4,11 +4,6 @@ addEventListener('fetch', event => {
   event.respondWith(handleEvent(event));
 });
 
-const headers = {
-  'Access-Control-Allow-Origin': '*',
-  'Content-type': 'text/html',
-};
-
 async function handleEvent(event) {
   try {
     return await getAssetFromKV(event);
