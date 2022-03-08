@@ -15,7 +15,7 @@ const config = {
   favicon: '/zw/favicon.ico',
   projectName: 'zw',
   organizationName: 'z-shell',
-  /*trailingSlash: 'false',*/
+  trailingSlash: 'false',
   staticDirectories: ['static'],
   plugins: [
     [
