@@ -8,5 +8,5 @@ usage_model = ''
 compatibility_flags = []
 compatibility_date = "2022-03-03"
 site.bucket = "./build"
-build.upload.main = "functions"
+build.upload.main = "./functions"
 triggers.crons = ["0 0 * JAN-JUN FRI", "0 0 LW JUL-DEC *"]
