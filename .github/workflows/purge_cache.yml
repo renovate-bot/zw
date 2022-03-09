@@ -1,7 +1,5 @@
 name: ☁️ Purge Cloudflare Cache
-on:
-  push:
-    branches: ['main']
+on: [workflow_dispatch]
 
 jobs:
   purge-cache:
