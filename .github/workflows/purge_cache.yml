@@ -13,4 +13,4 @@ jobs:
           CLOUDFLARE_ZONE: ${{ secrets.CF_ZONE }}
           CLOUDFLARE_TOKEN: ${{ secrets.CF_PURGE_CACHE }}
           PURGE_URLS:
-            '[https://z.digitalclouds.dev"]'
+            '["https://z.digitalclouds.dev"]'
