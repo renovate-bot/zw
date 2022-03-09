@@ -39,7 +39,7 @@ The default invocation is: ":: " cyan cyan magenta
 
 ## Video
 
-<a href="https://asciinema.org/a/48448122">
+<a href="https://asciinema.org/a/48122">
   <Image className="ScreenView" img={Asciinema1} alt="Zprompts view on Asciinema" />
 </a>
 
