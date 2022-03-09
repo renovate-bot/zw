@@ -7,7 +7,7 @@ keywords:
   - setup
 ---
 
-## Oh-My-Zsh Basics
+## OMZ Basics
 
 Raw Syntax with URL:
 
@@ -23,7 +23,7 @@ OMZ Shorthand Syntax:
 zi snippet OMZ::<PATH>
 ```
 
-OMZ Library:
+OMZL:
 
 <http://github.com/ohmyzsh/ohmyzsh/raw/master/lib>
 
@@ -31,7 +31,7 @@ OMZ Library:
 zi snippet OMZL::<PATH>
 ```
 
-OMZP: Plugins:
+OMZP:
 
 <http://github.com/ohmyzsh/ohmyzsh/raw/master/plugins>
 
@@ -39,7 +39,7 @@ OMZP: Plugins:
 zi snippet OMZP::<PATH>
 ```
 
-OMZT: Themes:
+OMZT:
 
 <http://github.com/ohmyzsh/ohmyzsh/raw/master/themes>
 
@@ -47,9 +47,9 @@ OMZT: Themes:
 zi snippet OMZT::<PATH>
 ```
 
-### Library
+### OMZ Library
 
-Importing the [clipboard][1] and [termsupport][2] from the Oh-My-Zsh library sample:
+Importing the [clipboard][1] and [termsupport][2] from the OMZ library sample:
 
 Raw Syntax:
 
@@ -72,7 +72,7 @@ zi snippet OMZL::clipboard.zsh
 zi snippet OMZL::termsupport.zsh
 ```
 
-### Plugins
+### OMZ Plugins
 
 ```diff
 - plugins=(
@@ -118,7 +118,7 @@ zi ice as"completion"
 zi snippet OMZP::fd/_fd
 ```
 
-[You can see an extended explanation of Oh-My-Zsh setup in the Wiki][8]### Plugins
+[You can see an extended explanation of OMZ setup in the Wiki][8]### Plugins
 
 ```diff
 - plugins=(
@@ -164,11 +164,11 @@ zi ice as"completion"
 zi snippet OMZP::fd/_fd
 ```
 
-[You can see an extended explanation of Oh-My-Zsh setup in the Wiki][8]
+[You can see an extended explanation of OMZ setup in the Wiki][8]
 
-### Themes
+### OMZ Themes
 
-Oh-My-Zsh themes are stored in the `themes` directory. All and loaded in the background. with the simple syntax:
+Themes are stored in the `themes` directory. All and loaded in the background. with the simple syntax:
 
 ```shell
 ZSH_THEME="robbyrussell"
@@ -176,7 +176,7 @@ ZSH_THEME="robbyrussell"
 
 However, ZI doesn't support the `ZSH_THEME` variable natively.
 
-To use **themes** created for Oh-My-Zsh, it requires loading shown below as it would be the same as Oh-My-Zsh does in the background.
+To use **themes** created for OMZ, it requires loading shown below as it would be the same as OMZ does in the background.
 
 > Some themes may require additional configuration it can be determined from the theme configuration file.
 
@@ -214,7 +214,7 @@ zi snippet OMZT::robbyrussell
 
 ### External theme sample: [NicoSantangelo/Alpharized][3]
 
-Load with Oh-My-Zsh:
+Load with OMZ:
 
 ```shell
 ZSH_THEME="alpharized"
@@ -226,7 +226,7 @@ Load with ZI:
 zi snippet OMZL::git.zsh
 ```
 
-Load `Git` plugin from Oh-My-Zsh:
+Load `Git` plugin from OMZ:
 
 ```shell
 zi snippet OMZP::git
@@ -335,7 +335,7 @@ What is `zstyle`?
 
 ## Zgen
 
-### Load Oh-My-Zsh library
+### Load OMZ library
 
 ```diff
 - zgen oh-my-zsh
@@ -343,7 +343,7 @@ What is `zstyle`?
 + zi snippet OMZL::<ANY OF THEM>
 ```
 
-### Load oh-my-zsh plugins
+### Load OMZ plugins
 
 ```diff
 - zgen oh-my-zsh <PATH>
