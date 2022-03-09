@@ -22,31 +22,31 @@ keywords: [installation, setup]
 
 ## Quick installation
 
-Add minimal configuration
+Add minimal configuration:
 
 ```shell
 sh -c "$(curl -fsSL https://git.io/get-zi)" --
 ```
 
-Skip configuration. Just clone or update repository.
+Skip configuration. Just clone or update repository:
 
 ```shell
 sh -c "$(curl -fsSL https://git.io/get-zi)" -- -i skip
 ```
 
-Minimal configuration + annexes.
+Minimal configuration + annexes:
 
 ```shell
 sh -c "$(curl -fsSL https://git.io/get-zi)" -- -a annex
 ```
 
-Minimal configuration + annexes + zunit.
+Minimal configuration + annexes + zunit:
 
 ```shell
 sh -c "$(curl -fsSL https://git.io/get-zi)" -- -a zunit
 ```
 
-Minimal configuration with loader
+Minimal configuration with loader:
 
 ```shell
 sh -c "$(curl -fsSL https://git.io/get-zi)" -- -a loader
