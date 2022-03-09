@@ -1,5 +1,7 @@
 name: ☁️ Purge Cloudflare Cache
-on: [workflow_dispatch]
+on:
+  push:
+    branches: ['main']
 
 jobs:
   purge-cache:
@@ -11,4 +13,4 @@ jobs:
           CLOUDFLARE_ZONE: ${{ secrets.CF_ZONE }}
           CLOUDFLARE_TOKEN: ${{ secrets.CF_PURGE_CACHE }}
           PURGE_URLS:
-            '["https://staging.z-shell.pages.dev", "https://z-shell.pages.dev", "https://z.digitalclouds.dev"]'
+            '[https://z.digitalclouds.dev"]'
