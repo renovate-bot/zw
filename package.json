@@ -20,7 +20,7 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "preinstall": "npx only-allow pnpm",
-    "build:cf": "npx pnpm i '--no-prefer-frozen-lockfile' '--strict-peer-dependencies' '--store=node_modules/.pnpm-store' && npx pnpm run build",
+    "build:cf": "npx pnpm i '--no-prefer-frozen-lockfile' '--strict-peer-dependencies' '--store=node_modules/.pnpm-store' && npx pnpm run build && npx wrangler publish",
     "get:pnpm": "curl -f 'https://get.pnpm.io/v6.16.js' | node - add '--global pnpm'",
     "pre:pnpm": "npx pnpm i '--store=node_modules/.pnpm-store'",
     "build:en": "docusaurus build --locale en",

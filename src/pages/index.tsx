@@ -1,11 +1,10 @@
+// @ts-nocheck
 import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import Translate from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import useBaseUrl, {useBaseUrlUtils} from '@docusaurus/useBaseUrl';
-import Image from '@theme/IdealImage';
 import styles from './index.module.css';
 import HomepageFeatures from '@site/src/components/Homepage/Features';
 

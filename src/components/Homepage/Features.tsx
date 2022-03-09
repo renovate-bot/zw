@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react';
 import Translate, {translate} from '@docusaurus/Translate';
 import clsx from 'clsx';
