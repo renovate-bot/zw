@@ -94,28 +94,15 @@ const config = {
         quality: 70,
         max: 1030, // max resized image's size.
         min: 640, // min resized image's size. if original is lower, use that size.
-        steps: 3, // the max number of images generated between min and maxm (inclusive)
+        steps: 2, // the max number of images generated between min and maxm (inclusive)
         disableInDev: false,
       },
     ],
   ],
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ja', 'ru'],
-    /**
-    localeConfigs: {
-      en: {
-        htmlLang: 'en-GB',
-      },
-    },
-*/
+    locales: ['en', 'ja', 'ru', 'zh-Hans'],
   },
-  /**scripts: [
-    {
-      src: 'https://digitalclouds.dev/index.js',
-      async: true,
-    },
-  ],*/
   presets: [
     [
       'classic',

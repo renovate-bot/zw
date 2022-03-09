@@ -22,10 +22,7 @@ keywords: [installation, setup]
 
 ## Quick installation
 
-Following commands installs ZI and modifies `.zshrc` with the chosen option unless the `.zshrc` file contains command
-`zi` - then will be skipped.
-
-Will add minimal configuration
+Add minimal configuration
 
 ```shell
 sh -c "$(curl -fsSL https://git.io/get-zi)" --
