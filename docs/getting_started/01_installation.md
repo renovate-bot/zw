@@ -31,7 +31,7 @@ Will add minimal configuration
 sh -c "$(curl -fsSL https://git.io/get-zi)" --
 ```
 
-Non interactive. Just clone or update repository.
+Skip configuration. Just clone or update repository.
 
 ```shell
 sh -c "$(curl -fsSL https://git.io/get-zi)" -- -i skip
