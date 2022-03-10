@@ -226,7 +226,7 @@ const config = {
                 to: '/docs/intro',
               },
               {
-                label: 'Community',
+                label: 'Community Docs',
                 to: '/community/intro',
               },
             ],
@@ -243,7 +243,7 @@ const config = {
                 href: 'https://matrix.to/#/#zi:matrix.org',
               },
               {
-                label: 'Twitter',
+                label: 'Twitter.com',
                 href: 'https://twitter.com/zshell_zi/',
               },
             ],
@@ -252,11 +252,11 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'GitHub',
+                label: 'GitHub Organization',
                 href: 'https://github.com/z-shell/',
               },
               {
-                label: 'Crowdin',
+                label: 'Crowdin Translations',
                 href: 'https://digitalclouds.crowdin.com/z-shell/',
               },
               {
@@ -283,7 +283,7 @@ const config = {
       },
       tableOfContents: {
         minHeadingLevel: 2,
-        maxHeadingLevel: 3,
+        maxHeadingLevel: 6,
       },
     }),
 };

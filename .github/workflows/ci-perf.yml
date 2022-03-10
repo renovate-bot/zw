@@ -30,6 +30,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
+      - name: ' ✨ Installation'
+        run: 'pnpm install --no-frozen-lockfile --strict-peer-dependencies'
       - uses: preactjs/compressed-size-action@v2
         with:
           build-script: 'build:en'
