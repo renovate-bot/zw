@@ -16,37 +16,44 @@ Request a documentation 》</a> · <a href="https://github.com/z-shell/zi/discus
 
 </div>
 
-### Enterprise-level Tools & Services
+## Enterprise-level Tools & Services
 
-#### Cloudflare Global Network
+### Cloudflare Global Network
 
 > Interconnected with over 10,000 major service providers, cloud providers, and enterprise networks, Cloudflare is a
 > fast lane on the Internet.
 
-> By avoiding network hops and optimizing traffic paths, it drastically reduce latency while improving application
-> performance and the end user experience.
-
 - <https://z-shell.pages.dev/>
 - <https://z.digitalclouds.dev/>
-  - <https://developers.cloudflare.com/pages/>
-  - <https://developers.cloudflare.com/workers/>
-  - <https://developers.cloudflare.com/cache/>
-  - <https://developers.cloudflare.com/analytics>
-  - <https://developers.cloudflare.com/firewall/>
 
-#### Crowdin Translations
+#### Reference
+
+- <https://miniflare.dev/>
+- <https://developers.cloudflare.com/pages/>
+- <https://developers.cloudflare.com/workers/>
+- <https://developers.cloudflare.com/cache/>
+- <https://developers.cloudflare.com/analytics>
+- <https://developers.cloudflare.com/firewall/>
+
+### Crowdin Translations
 
 > Make content multilingual fast and easy
 
 - <https://digitalclouds.crowdin.com/>
-  - <https://support.crowdin.com/enterprise/overview/>
 
-#### Algolia search
+#### Getting started support
+
+- <https://support.crowdin.com/enterprise/overview/>
+
+### Algolia search
 
 > Quikly find anything on the site.
 
 - <https://z.digitalclouds.dev/search/>
-  - <https://www.algolia.com/doc/>
+
+#### Algolia Docs
+
+- <https://www.algolia.com/doc/>
 
 ## Development Guidelines
 

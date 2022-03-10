@@ -2,7 +2,9 @@
   "name": "zw",
   "version": "1.0.0",
   "private": true,
-  "description": "ZI & Zsh Wiki",
+  "description": "Zsh Wiki",
+  "main": "src/workers/service.js",
+  "module": "src/workers/service.mjs",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/z-shell/zw.git"
@@ -20,7 +22,7 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "preinstall": "npx only-allow pnpm",
-    "build:cf": "npx pnpm i '--no-frozen-lockfile' '--strict-peer-dependencies' '--store=node_modules/.pnpm-store' && npx pnpm build && npx pnpm w:pub",
+    "build:cf": "npx pnpm pre:pnpm && npx pnpm build && npx pnpm w:pub",
     "get:pnpm": "curl -f 'https://get.pnpm.io/v6.16.js' | node - add '--global pnpm'",
     "pre:pnpm": "npx pnpm i '--store=node_modules/.pnpm-store'",
     "build:en": "docusaurus build --locale en",
@@ -76,11 +78,12 @@
     "@tsconfig/docusaurus": "1.0.4",
     "@types/react": "17.0.39",
     "markdownlint-cli2": "0.4.0",
+    "miniflare": "^2.3.0",
     "prettier": "2.5.1",
     "prop-types": "15.8.1",
     "stylelint": "14.5.3",
     "typescript": "4.6.2",
-    "wrangler": "0.0.19"
+    "wrangler": "beta"
   },
   "engines": {
     "node": ">=16",
