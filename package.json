@@ -75,7 +75,7 @@
     "@cloudflare/workers-types": "3.4.0",
     "@crowdin/cli": "3.7.8",
     "@tsconfig/docusaurus": "1.0.4",
-    "@types/react": "17.0.39",
+    "@types/react": "17.0.40",
     "markdownlint-cli2": "0.4.0",
     "miniflare": "^2.3.0",
     "prettier": "2.5.1",
