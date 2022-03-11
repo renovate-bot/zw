@@ -73,14 +73,42 @@ Install almost everything from [GitHub](https://github.com):
 - Quickly familiarize oneself with a new plugin and provides rich and easy-to-digest information that might be helpful on various occasions.
 - [Load or unload][14] plugins, use the ability to [manage][15] completions.
 
-- Docker [playground](https://github.com/z-shell/playground) to test or propose configurations.
-- Preview ZI at [asciinema.org](https://asciinema.org/a/459358).
+- Docker [playground](https://github.com/z-shell/playground), test or propose configurations, preview at [asciinema.org](https://asciinema.org/a/459358).
 
-## 🥇 Our Contributors
+## 📢 Summary
+
+<!-- markdownlint-disable -->
+
+<table>
+  <div>
+  <a href="https://github.com/z-shell">
+    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/github-metrics.svg" width="90%" />
+    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.projects.svg" width="90%" />
+    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.followup.indepth.svg" width="90%" />
+  </a>
+  <a href="https://github.com/z-shell/zw">
+    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.pagespeed.detailed.svg" width="90%" />
+  </a>
+  <a href="https://github.com/z-shell/community">
+    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.discussions.svg" width="90%" />
+  </a>
+  <a href="https://twitter.com/zshell_zi">
+    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.tweets.svg" width="90%" />
+  </a>
+  <a href="https://dev.to/tag/zsh">
+    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.dev.tag.zsh.rss.svg" width="90%" />
+  </a>
+  </div>
+</table>
+
+<!-- markdownlint-restore -->
+
+## 🥇 Credists
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+
 <table>
   <tr>
     <td align="center"><a href="https://github.com/lunarxlark"><img src="https://avatars.githubusercontent.com/u/18758150?v=4?s=80" width="80px;" alt=""/><br /><sub><b>lunarxlark</b></sub></a><br /><a href="#translation-lunarxlark" title="Translation">🌍</a></td>
