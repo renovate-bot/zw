@@ -78,6 +78,7 @@
     "@types/react": "17.0.40",
     "markdownlint-cli2": "0.4.0",
     "miniflare": "^2.3.0",
+    "pre-commit": "^1.2.2",
     "prettier": "2.5.1",
     "prop-types": "15.8.1",
     "stylelint": "14.5.3",
