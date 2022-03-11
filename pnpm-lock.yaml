@@ -21,6 +21,7 @@ specifiers:
   '@tsconfig/docusaurus': 1.0.4
   '@types/react': 17.0.40
   clsx: 1.1.1
+  husky: ^7.0.4
   markdownlint-cli2: 0.4.0
   miniflare: ^2.3.0
   pre-commit: ^1.2.2
@@ -55,6 +56,7 @@ devDependencies:
   '@crowdin/cli': 3.7.8
   '@tsconfig/docusaurus': 1.0.4
   '@types/react': 17.0.40
+  husky: 7.0.4
   markdownlint-cli2: 0.4.0
   miniflare: 2.3.0
   pre-commit: 1.2.2
@@ -6022,6 +6024,12 @@ packages:
     resolution: {integrity: sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==}
     engines: {node: '>=10.17.0'}
     dev: false
+
+  /husky/7.0.4:
+    resolution: {integrity: sha512-vbaCKN2QLtP/vD4yvs6iz6hBEo6wkSzs8HpRah1Z6aGmF2KW5PdYuAd7uX5a+OyBZHBhd+TFLqgjUgytQr4RvQ==}
+    engines: {node: '>=12'}
+    hasBin: true
+    dev: true
 
   /iconv-lite/0.4.24:
     resolution: {integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==}
