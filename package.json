@@ -4,7 +4,6 @@
   "private": true,
   "description": "Zsh Wiki",
   "main": "src/workers/service.js",
-  "module": "src/workers/service.mjs",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/z-shell/zw.git"
@@ -21,9 +20,6 @@
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
-    "get:pnpm": "curl -f 'https://get.pnpm.io/v6.16.js' | node - add '--global pnpm'",
-    "store": "npx pnpm i --store-dir=node_modules/.pnpm-store --no-frozen-lockfile",
-    "build:cf": "npx pnpm run store && npx pnpm run build && npx pnpm run w:pub",
     "build:en": "docusaurus build --locale en",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
@@ -37,6 +33,10 @@
     "format:text:fix": "markdownlint-cli2-fix \"**/*.{md,mkd,mdwn,mdown,markdown}\" \"#node_modules\"",
     "format": "prettier --config .prettierrc --write \"**/*.{js,jsx,ts,tsx,md,mdx,yml,yaml}\"",
     "crowdin:sync": "docusaurus write-translations && crowdin upload && crowdin download",
+    "preinstall": "npx only-allow pnpm",
+    "build:cf": "npx pnpm pre:pnpm && npx pnpm build && npx pnpm w:pub",
+    "get:pnpm": "curl -f 'https://get.pnpm.io/v6.16.js' | node - add '--global pnpm'",
+    "pre:pnpm": "npx pnpm i '--store=node_modules/.pnpm-store'",
     "w:dev": "npx pnpm wrangler pages dev build -l --live-reload",
     "w:pub": "npx pnpm wrangler publish",
     "w:build:pub": "npx pnpm i && npx pnpm build && npx pnpm wrangler publish",
