@@ -1,6 +1,6 @@
 // Attach multiple handlers
 export const onRequest = [
-  async ({ request, next }) => {
+  async ({request, next}) => {
     try {
       // Call the next handler in the stack
       const response = await next();
@@ -14,7 +14,7 @@ export const onRequest = [
       });
     }
   },
-  ({ request, next }) => {
+  ({request, next}) => {
     return new Response('Hello from next base middleware');
   },
 ];

@@ -6,8 +6,5 @@ site.bucket = "./build"
 main = "./src/workers/index.ts"
 compatibility_flags = []
 compatibility_date = "2022-03-10"
-workers_dev = true
-
-[env.production]
 workers_dev = false
 
