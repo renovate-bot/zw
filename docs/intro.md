@@ -68,8 +68,8 @@ Invocations][7].
 
 - [Customize paths][9], use [multiple prompts][10] or create [your own][11] plugins.
 - Supports [Oh My Zsh][12] and [Prezto][12] plugins and libraries ([migration][13]).
-- Does not use `$FPATH`, loading multiple plugins doesn't clutter `$FPATH` with the same number of entries (e.g. 10, 15,
-  or more).
+- Does not use `$FPATH`, loading multiple plugins doesn't clutter `$FPATH` with the same number of entries, e.g: 10, 15,
+  or more.
 - Code is immune to `KSH_ARRAYS` and other options typically causing compatibility problems.
 - Do not require `sudo`, and provide many workarounds e.g: setting so-called **shims** locally.
 
@@ -79,8 +79,8 @@ Invocations][7].
 
 <table><tr><br />
 
-- Visualise **aliases**, **functions**, **bindkeys**, **Zle widgets**, **zstyles**, **completions**, **variables**,
-  `$PATH`, and `$FPATH` elements a plugin has set up.
+- Visualise data: **aliases**, **functions**, **bindkeys**, **Zle widgets**, **zstyles**, **completions**,
+  **variables**, `$PATH`, and `$FPATH` elements a plugin has set up.
 - Quickly familiarize oneself with a new plugin and provides rich and easy-to-digest information that might be helpful
   on various occasions.
 - [Load or unload][14] plugins, use the ability to [manage][15] completions.
@@ -95,29 +95,19 @@ Invocations][7].
 <!-- markdownlint-disable -->
 
 <table><tr align="center"><br />
-
   <a href="https://github.com/z-shell">
     <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.svg" alt="z-shell/metrics" width="80%" />
     <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.projects.svg" alt="z-shell/projects" width="80%" />
     <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.followup.indepth.svg" alt="z-shell/followup" width="80%" />
-  </a>
-  <a href="https://github.com/z-shell/zw">
+  </a><a href="https://github.com/z-shell/zw">
     <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.pagespeed.detailed.svg" alt="z-shell/pagespeed" width="80%" />
-  </a>
-  <a href="https://github.com/z-shell/community">
+  </a><a href="https://github.com/z-shell/community">
     <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.discussions.svg" alt="z-shell/discussions" width="80%" />
-  </a>
-  <a href="https://twitter.com/zshell_zi">
+  </a><a href="https://twitter.com/zshell_zi">
     <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.tweets.svg" alt="z-shell/tweets" width="80%" />
-  </a>
-  <a href="https://dev.to/tag/zsh">
+  </a><a href="https://dev.to/tag/zsh">
     <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.dev.tag.zsh.rss.svg" alt="z-shell/dev.tag.rss" width="80%" />
-  </a>
-</tr></table>
-<div align="center">
-  <a href="https://github.com/z-shell"> GitHub </a>-<a href="https://twitter.com/zshell_zi"> Twitter </a>-
-  <a href="https://github.com/z-shell/community/issues/new?assignees=&labels=%F0%9F%91%A5+member&template=membership.yml&title=team%3A+"> Join The Team </a>
-</div>
+  </a></tr></table><br />
 
 <!-- markdownlint-restore -->
 <!-- END introduction -->
