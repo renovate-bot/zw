@@ -10,8 +10,7 @@ keywords:
 
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'; import Image from '@theme/IdealImage';
 import ZGitImg from '@site/static/zw/img/z_git.png';
-
-<Image className="ZGitLogo" img={ZGitImg} alt="Install almost everything from GitHub" />
+<Image className="ZGitLogo" img={ZGitImg} alt='Install almost everything from GitHub' />
 
 ---
 
@@ -52,18 +51,12 @@ Install and control almost everything from [GitHub](https://github.com): [Annexe
 
 ## ⚡️ Fast and feature-rich
 
-<table><tr><td>
-
-- [Meta plugins][21] allow installing groups of plugins via a single, friendly label.
-- [Packages][22] offload the user from providing long and complex commands.
-- [Annexes][23] allow to extend the plugin manager with new commands.
-- [Turbo][8] mode that yields **50-80%** faster Zsh startup.
-
-</td></tr></table>
+- [Meta plugins][16] allow installing groups of plugins via a single, friendly label.
+- [Packages][6] offload the user from providing long and complex commands.
+- [Annexes][5] allow to extend the plugin manager with new commands.
+- [Turbo][8] mode yields **50-80%** faster Zsh startup.
 
 ## ☑️ Neat and flexible
-
-<table><tr><td>
 
 - [Customize paths][9], use [multiple prompts][10] or create [your own][11] plugins.
 - Supports [Oh My Zsh][12] and [Prezto][12] plugins and libraries. ([migration][13]).
@@ -72,11 +65,7 @@ Install and control almost everything from [GitHub](https://github.com): [Annexe
 - Code is immune to `KSH_ARRAYS` and other options typically causing compatibility problems.
 - Do not require `sudo`, and provide many workarounds e.g: setting so-called **shims** locally.
 
-</td></tr></table>
-
 ## 📈 Familiarize and control
-
-<table><tr><td>
 
 - Visualise data: **aliases**, **functions**, **bindkeys**, **Zle widgets**, **zstyles**, **completions**,
   **variables**, `$PATH`, and `$FPATH` elements a plugin has set up.
@@ -87,23 +76,22 @@ Install and control almost everything from [GitHub](https://github.com): [Annexe
 - Docker [playground](https://github.com/z-shell/playground), test or propose configurations, preview at
   [asciinema.org](https://asciinema.org/a/459358).
 
-</td></tr></table>
-
 ## 📢 Summary
 
-<table align="center"><tr><td>
+<!-- markdownlint-disable -->
 
-[![metrics][metrics]][16]
-[![projects][projects]][16]
-[![followup][followup]][16]
-[![projects][projects]][17]
-[![discussions][discussions]][18]
-[![twitter_zi][twitter_zi]][19]
-[![rss_devto_tag][rss_devto_tag]][20]
+<table><tr><td><div align='center'><br />
+<img align='center' src='https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.svg' alt='metrics' width='70%' />
+<img align='center' src='https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.projects.svg' alt='projects' width='70%' />
+<img align='center' src='https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.followup.indepth.svg' alt='followup' width='70%' />
+</div></td></tr><td><div align='center'>
+<img align='center' src='https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.pagespeed.detailed.svg' alt='Pagespeed' width='70%' />
+<a href='https://github.com/z-shell/community/discussions'><img align='center' src='https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.discussions.svg' alt='Discussions' width='70%' /></a>
+<a href='https://twitter.com/zshell_zi'><img align='center' src='https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.tweets.svg' alt='Tweets' width='70%' /></a>
+<a href='https://dev.to/tag/zsh'><img align='center' src='https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.dev.tag.zsh.rss.svg' alt='RSS-DEV-TAG-ZSH' width='70%' /></a>
+</div></td></table>
 
-</td></tr></table>
-
-<!-- markdownlint-disable-->
+<!-- markdownlint-restore -->
 
 [1]: /docs/ecosystem/annexes/bin-gem-node
 [2]: https://github.com/z-shell/any-gem
@@ -120,18 +108,4 @@ Install and control almost everything from [GitHub](https://github.com): [Annexe
 [13]: /docs/getting_started/migration
 [14]: /docs/guides/commands#loading-and-unloading
 [15]: /docs/guides/commands#completions-management
-[16]: https://github.com/z-shell
-[17]: https://github.com/z-shell/zw
-[18]: https://github.com/z-shell/community/discussions
-[19]: https://twitter.com/zshell_zi
-[20]: https://dev.to/tag/zsh
-[21]: /search?q=meta+plugins
-[22]: /search?q=packages
-[23]: /search?q=annexes
-[metrics]: https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.svg
-[projects]: https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.projects.svg
-[followup]: https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.followup.indepth.svg
-[pagespeed]: https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.pagespeed.detailed.svg
-[discussions]: https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.discussions.svg
-[twitter_zi]: https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.tweets.svg
-[rss_devto_tag]: https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.dev.tag.zsh.rss.svg
+[16]: /search?q=meta+plugins
