@@ -72,7 +72,7 @@ Install and control almost everything from [GitHub](https://github.com): [Annexe
 - Code is immune to `KSH_ARRAYS` and other options typically causing compatibility problems.
 - Do not require `sudo`, and provide many workarounds e.g: setting so-called **shims** locally.
 
-<td></tr></table>
+</td></tr></table>
 
 ## 📈 Familiarize and control
 
