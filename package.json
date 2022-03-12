@@ -40,7 +40,8 @@
     "w:dev": "npx pnpm wrangler pages dev build -l --live-reload",
     "w:pub": "npx pnpm wrangler publish",
     "w:build:pub": "npx pnpm i && npx pnpm build && npx pnpm wrangler publish",
-    "kv:list": "wrangler kv:namespace list | jq '.'"
+    "kv:list": "wrangler kv:namespace list | jq '.'",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@docusaurus/core": "0.0.0-4675",
@@ -76,7 +77,8 @@
     "@crowdin/cli": "3.7.8",
     "@tsconfig/docusaurus": "1.0.4",
     "@types/react": "17.0.40",
-    "husky": "^7.0.4",
+    "git-format-staged": "^2.1.3",
+    "husky": "^7.0.0",
     "markdownlint-cli2": "0.4.0",
     "miniflare": "^2.3.0",
     "pre-commit": "^1.2.2",
