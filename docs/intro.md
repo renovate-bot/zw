@@ -14,61 +14,67 @@ import Image from '@theme/IdealImage'; import ZGitImg from '@site/static/zw/img/
 
 <Image className="ZGitLogo" img={ZGitImg} alt="Install almost everything from GitHub" />
 
+---
+
 <Tabs>
   <TabItem value="gems" label="RubyGems">
 
-[RubyGems](https://rubygems.org), [$GEM_HOME](https://guides.rubygems.org/command-reference/#gem-environment)
-automatically set.
-
-[Annex Bin-Gem-Node][1] | [Package Any Gem][2]
+The [RubyGems](https://rubygems.org) and [$GEM_HOME](https://guides.rubygems.org/command-reference/#gem-environment)
+are automatically managed by the [bin-gem-node][1] annex or installed by the [any-gem][2] package.
 
   </TabItem>
   <TabItem value="node" label="Node">
 
-[Node](https://www.npmjs.com) modules,
-[$NODE_PATH](https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders) automatically set.
-
-[Annex Bin-Gem-Node][1] | [Package Any Node][3]
+The [Node](https://www.npmjs.com) modules and [$NODE_PATH](https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders) are automatically managed by the [bin-gem-node][1] annex or installed by the [any-node][3] package.
 
   </TabItem>
   <TabItem value="pip" label="Python">
 
-[Python](https://python.org) modules, [$VIRTUALENV](https://docs.python.org/3/tutorial/venv.html) automatically set.
-
-[Annex Bin-Gem-Node][1]
+The [Python](https://python.org) modules, [$VIRTUALENV](https://docs.python.org/3/tutorial/venv.html)
+are automatically managed by the [bin-gem-node][1] annex.
 
   </TabItem>
   <TabItem value="rust" label="Rust">
 
-[Rust](https://crates.io) packages with [rust annex][4]
+The [Rust](https://crates.io) packages are managed by the [rust annex][4].
 
   </TabItem>
   <TabItem value="github" label="GitHub" default>
 
-Install almost everything from [GitHub](https://github.com):
-
-[Annexes][5] | [Packages][6] | [Gallery of Invocations][7]
+Install and control almost everything from [GitHub](https://github.com): [Annexes][5], [Packages][6], [Gallery of Invocations][7].
 
 </TabItem>
 </Tabs>
 
+---
+
 ## ⚡️ Fast and feature-rich
+
+<table><tr><br />
 
 - [Turbo mode][8] that yields **50-80%** faster Zsh startup.
 - [Meta plugins](/search?q=meta+plugins) allow installing groups of plugins via a single, friendly label.
 - [Packages](/search?q=packages) offload the user from providing long and complex commands.
 - [Annexes](/search?q=annexes) allow to extend the plugin manager with new commands.
 
+</tr></table>
+
 ## ☑️ Neat and flexible
+
+<table><tr><br />
 
 - [Customize paths][9], use [multiple prompts][10] or create [your own][11] plugins.
 - Supports [Oh My Zsh][12] and [Prezto][12] plugins and libraries ([migration][13]).
 - Does not use `$FPATH`, loading multiple plugins doesn't clutter `$FPATH` with the same number of entries (e.g. 10, 15,
   or more).
 - Code is immune to `KSH_ARRAYS` and other options typically causing compatibility problems.
-- Do not require `sudo`, and provide many workarounds (e.g: setting so-called **shims** locally).
+- Do not require `sudo`, and provide many workarounds e.g: setting so-called **shims** locally.
+
+</tr></table>
 
 ## 📈 Familiarize and control
+
+<table><tr><br />
 
 - Visualise **aliases**, **functions**, **bindkeys**, **Zle widgets**, **zstyles**, **completions**, **variables**,
   `$PATH`, and `$FPATH` elements a plugin has set up.
@@ -79,39 +85,36 @@ Install almost everything from [GitHub](https://github.com):
 - Docker [playground](https://github.com/z-shell/playground), test or propose configurations, preview at
   [asciinema.org](https://asciinema.org/a/459358).
 
+</tr></table>
+
 ## 📢 Summary
 
 <!-- markdownlint-disable -->
 
-<table>
-  <div>
+<table><tr align="center"><br />
+
   <a href="https://github.com/z-shell">
-    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/github-metrics.svg" width="90%" />
-    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.projects.svg" width="90%" />
-    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.followup.indepth.svg" width="90%" />
+    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.svg" alt="z-shell/metrics" width="80%" />
+    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.projects.svg" alt="z-shell/projects" width="80%" />
+    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.followup.indepth.svg" alt="z-shell/followup" width="80%" />
   </a>
   <a href="https://github.com/z-shell/zw">
-    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.pagespeed.detailed.svg" width="90%" />
+    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.pagespeed.detailed.svg" alt="z-shell/pagespeed" width="80%" />
   </a>
   <a href="https://github.com/z-shell/community">
-    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.discussions.svg" width="90%" />
+    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.discussions.svg" alt="z-shell/discussions" width="80%" />
   </a>
   <a href="https://twitter.com/zshell_zi">
-    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.tweets.svg" width="90%" />
+    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.tweets.svg" alt="z-shell/tweets" width="80%" />
   </a>
   <a href="https://dev.to/tag/zsh">
-    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.dev.tag.zsh.rss.svg" width="90%" />
+    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.dev.tag.zsh.rss.svg" alt="z-shell/dev.tag.rss" width="80%" />
   </a>
-  </div>
-</table>
+</tr></table>
 
-<!-- markdownlint-restore -->
+<!-- Temporary disable
 
 ## 🥇 Credists
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
 
 <table>
   <tr>
@@ -122,15 +125,11 @@ Install almost everything from [GitHub](https://github.com):
   </tr>
 </table>
 
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
+-->
 
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-<!-- markdownlint-disable -->
 <div align="center">
-<a href="https://github.com/z-shell">GitHub</a>
- - <a href="https://twitter.com/zshell_zi">Twitter</a>
- - <a href="https://github.com/z-shell/community/issues/new?assignees=&labels=%F0%9F%91%A5+member&template=membership.yml&title=team%3A+">Join The Team</a>
+<a href="https://github.com/z-shell"> GitHub </a>-<a href="https://twitter.com/zshell_zi"> Twitter </a>-
+<a href="https://github.com/z-shell/community/issues/new?assignees=&labels=%F0%9F%91%A5+member&template=membership.yml&title=team%3A+"> Join The Team </a>
 </div>
 
 <!-- markdownlint-restore -->
