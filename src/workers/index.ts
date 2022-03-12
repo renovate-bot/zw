@@ -1,10 +1,16 @@
-import {getAssetFromKV, NotFoundError, MethodNotAllowedError} from '@cloudflare/kv-asset-handler';
+import {getAssetFromKV, NotFoundError, MethodNotAllowedError, mapRequestToAsset} from '@cloudflare/kv-asset-handler';
 import manifestJSON from '__STATIC_CONTENT_MANIFEST';
 const assetManifest = JSON.parse(manifestJSON);
 
 export default {
   async fetch(request, env, ctx) {
-    if (request.url.includes('/docs')) {
+    if (request.url.includes('/build')) {
+      const customKeyModifier = (request) => {
+        let url = request.url;
+        url = url.replace('/build', '').replace(/^\/+/, '');
+        return mapRequestToAsset(new Request(url, request));
+      };
+      let asset = await getAssetFromKV(event, {mapRequestToAsset: customKeyModifier});
       try {
         return await getAssetFromKV(
           {
