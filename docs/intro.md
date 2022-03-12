@@ -43,8 +43,8 @@ The [Rust](https://crates.io) packages are managed by the [rust annex][4].
   </TabItem>
   <TabItem value="github" label="GitHub" default>
 
-Install and control almost everything from [GitHub](https://github.com): [Annexes][5], [Packages][6], [Gallery of
-Invocations][7].
+Install and control almost everything from [GitHub](https://github.com): [Annexes][5], [Packages][6],  
+[Gallery of Invocations][7].
 
 </TabItem>
 </Tabs>
@@ -55,12 +55,12 @@ Invocations][7].
 
 <table><tr><br />
 
-- [Turbo mode][8] that yields **50-80%** faster Zsh startup.
 - [Meta plugins](/search?q=meta+plugins) allow installing groups of plugins via a single, friendly label.
 - [Packages](/search?q=packages) offload the user from providing long and complex commands.
 - [Annexes](/search?q=annexes) allow to extend the plugin manager with new commands.
+- [Turbo][8] mode that yields **50-80%** faster Zsh startup.
 
-</tr></table>
+</tr></table><br />
 
 ## ☑️ Neat and flexible
 
@@ -73,7 +73,7 @@ Invocations][7].
 - Code is immune to `KSH_ARRAYS` and other options typically causing compatibility problems.
 - Do not require `sudo`, and provide many workarounds e.g: setting so-called **shims** locally.
 
-</tr></table>
+</tr></table><br />
 
 ## 📈 Familiarize and control
 
@@ -88,7 +88,7 @@ Invocations][7].
 - Docker [playground](https://github.com/z-shell/playground), test or propose configurations, preview at
   [asciinema.org](https://asciinema.org/a/459358).
 
-</tr></table>
+</tr></table><br />
 
 ## 📢 Summary
 
