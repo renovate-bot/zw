@@ -59,8 +59,8 @@ Request a documentation 》</a> · <a href="https://github.com/z-shell/zi/discus
 
 > General [contributing guidelines](https://github.com/z-shell/zi/blob/main/docs/CONTRIBUTING.md) for the
 > [Z-Shell](https://github.com/z-shell) organization.
-
-#### Any changes made will be crawled `every 2 days at 01:10 am (UTC)` and reflected in the search
+>
+> > Any changes made will be crawled `every 2 days at 01:10 am (UTC)` and reflected in the search
 
 When referring to something that might need additional information - it has to be linked to a search or a specific place
 in a wiki e.g:
@@ -73,7 +73,7 @@ in a wiki e.g:
   - If the link of the first mentioning exists, then it can be ignored.
   - If there is no additional information when it has to be created and documented.
 
-#### Markdown [front matter](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter)
+### Markdown [front matter](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter)
 
 ```md
 ---
@@ -134,7 +134,6 @@ pnpm i
 
 ```shell
 pnpm start
-
 # Specify available locale
 pnpm exec docusaurus start --locale ja
 ```
@@ -159,5 +158,4 @@ service.
 
 [twitter-badge]: https://badgen.net/badge/icon/twitter?icon=twitter&label
 [twitter-acc]: https://twitter.com/zshell_zi
-[twitter-link]:
-  https://twitter.com/intent/tweet?text=A%20Swiss%20Army%20Knife%20for%20Zsh%20-%20Unix%20shell%20%20@zshell_zi&url=https://github.com/z-shell/zi&hashtags=zsh,zi,zshell
+[twitter-link]: https://twitter.com/intent/tweet?text=A%20Swiss%20Army%20Knife%20for%20Zsh%20-%20Unix%20shell%20%20@zshell_zi&url=https://github.com/z-shell/zi&hashtags=zsh,zi,zshell

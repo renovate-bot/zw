@@ -2,8 +2,7 @@
 id: zsh-nav-tools
 title: ⚙️ Navigation Tools
 image: zw/logo/320x320.png
-description:
-  Multi-word history searcher, `n-cd` – directory bookmark manager, `n-kill` – `htop` like kill utility, and more.
+description: Multi-word history searcher, `n-cd` – directory bookmark manager, `n-kill` – `htop` like kill utility, and more.
 keywords: [zsh-navigation-tools, zsh-plugin]
 ---
 
@@ -353,5 +352,4 @@ via `reverse` mode.
 
 [1]: https://github.com/z-shell/zi
 [2]: https://github.com/z-shell/zsh-navigation-tools/tree/main/.config/znt
-[3]:
-  https://github.com/z-shell/zsh-navigation-tools/blob/f49f910d239ae5bc6e1a5bb34930307b4f4e3ffe/zsh-navigation-tools.plugin.zsh#L35-L49
+[3]: https://github.com/z-shell/zsh-navigation-tools/blob/f49f910d239ae5bc6e1a5bb34930307b4f4e3ffe/zsh-navigation-tools.plugin.zsh#L35-L49
