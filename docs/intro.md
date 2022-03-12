@@ -8,9 +8,8 @@ keywords:
   - introduction
 ---
 
-import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
-
-import Image from '@theme/IdealImage'; import ZGitImg from '@site/static/zw/img/z_git.png';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'; import Image from '@theme/IdealImage';
+import ZGitImg from '@site/static/zw/img/z_git.png';
 
 <Image className="ZGitLogo" img={ZGitImg} alt="Install almost everything from GitHub" />
 
@@ -43,7 +42,7 @@ The [Rust](https://crates.io) packages are managed by the [rust annex][4].
   </TabItem>
   <TabItem value="github" label="GitHub" default>
 
-Install and control almost everything from [GitHub](https://github.com): [Annexes][5], [Packages][6],  
+Install and control almost everything from [GitHub](https://github.com): [Annexes][5], [Packages][6],
 [Gallery of Invocations][7].
 
 </TabItem>
@@ -53,31 +52,31 @@ Install and control almost everything from [GitHub](https://github.com): [Annexe
 
 ## ⚡️ Fast and feature-rich
 
-<table><tr><br />
+<table><tr><td>
 
-- [Meta plugins](/search?q=meta+plugins) allow installing groups of plugins via a single, friendly label.
-- [Packages](/search?q=packages) offload the user from providing long and complex commands.
-- [Annexes](/search?q=annexes) allow to extend the plugin manager with new commands.
+- [Meta plugins][21] allow installing groups of plugins via a single, friendly label.
+- [Packages][22] offload the user from providing long and complex commands.
+- [Annexes][23] allow to extend the plugin manager with new commands.
 - [Turbo][8] mode that yields **50-80%** faster Zsh startup.
 
-</tr></table><br />
+</td></tr></table>
 
 ## ☑️ Neat and flexible
 
-<table><tr><br />
+<table><tr><td>
 
 - [Customize paths][9], use [multiple prompts][10] or create [your own][11] plugins.
-- Supports [Oh My Zsh][12] and [Prezto][12] plugins and libraries ([migration][13]).
+- Supports [Oh My Zsh][12] and [Prezto][12] plugins and libraries. ([migration][13]).
 - Does not use `$FPATH`, loading multiple plugins doesn't clutter `$FPATH` with the same number of entries, e.g: 10, 15,
   or more.
 - Code is immune to `KSH_ARRAYS` and other options typically causing compatibility problems.
 - Do not require `sudo`, and provide many workarounds e.g: setting so-called **shims** locally.
 
-</tr></table><br />
+<td></tr></table>
 
 ## 📈 Familiarize and control
 
-<table><tr><br />
+<table><tr><td>
 
 - Visualise data: **aliases**, **functions**, **bindkeys**, **Zle widgets**, **zstyles**, **completions**,
   **variables**, `$PATH`, and `$FPATH` elements a plugin has set up.
@@ -88,29 +87,23 @@ Install and control almost everything from [GitHub](https://github.com): [Annexe
 - Docker [playground](https://github.com/z-shell/playground), test or propose configurations, preview at
   [asciinema.org](https://asciinema.org/a/459358).
 
-</tr></table><br />
+</td></tr></table>
 
 ## 📢 Summary
 
-<!-- markdownlint-disable -->
+<table align="center"><tr><td>
 
-<table><tr align="center"><br />
-  <a href="https://github.com/z-shell">
-    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.svg" alt="z-shell/metrics" width="80%" />
-    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.projects.svg" alt="z-shell/projects" width="80%" />
-    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.followup.indepth.svg" alt="z-shell/followup" width="80%" />
-  </a><a href="https://github.com/z-shell/zw">
-    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.pagespeed.detailed.svg" alt="z-shell/pagespeed" width="80%" />
-  </a><a href="https://github.com/z-shell/community">
-    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.discussions.svg" alt="z-shell/discussions" width="80%" />
-  </a><a href="https://twitter.com/zshell_zi">
-    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.tweets.svg" alt="z-shell/tweets" width="80%" />
-  </a><a href="https://dev.to/tag/zsh">
-    <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.dev.tag.zsh.rss.svg" alt="z-shell/dev.tag.rss" width="80%" />
-  </a></tr></table><br />
+[![metrics][metrics]][16]
+[![projects][projects]][16]
+[![followup][followup]][16]
+[![projects][projects]][17]
+[![discussions][discussions]][18]
+[![twitter_zi][twitter_zi]][19]
+[![rss_devto_tag][rss_devto_tag]][20]
 
-<!-- markdownlint-restore -->
-<!-- END introduction -->
+</td></tr></table>
+
+<!-- markdownlint-disable-->
 
 [1]: /docs/ecosystem/annexes/bin-gem-node
 [2]: https://github.com/z-shell/any-gem
@@ -127,3 +120,18 @@ Install and control almost everything from [GitHub](https://github.com): [Annexe
 [13]: /docs/getting_started/migration
 [14]: /docs/guides/commands#loading-and-unloading
 [15]: /docs/guides/commands#completions-management
+[16]: https://github.com/z-shell
+[17]: https://github.com/z-shell/zw
+[18]: https://github.com/z-shell/community/discussions
+[19]: https://twitter.com/zshell_zi
+[20]: https://dev.to/tag/zsh
+[21]: /search?q=meta+plugins
+[22]: /search?q=packages
+[23]: /search?q=annexes
+[metrics]: https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.svg
+[projects]: https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.projects.svg
+[followup]: https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.followup.indepth.svg
+[pagespeed]: https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.pagespeed.detailed.svg
+[discussions]: https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.discussions.svg
+[twitter_zi]: https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.tweets.svg
+[rss_devto_tag]: https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.dev.tag.zsh.rss.svg

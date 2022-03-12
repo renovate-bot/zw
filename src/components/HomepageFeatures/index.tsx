@@ -2,7 +2,7 @@
 import React from 'react';
 import Translate, {translate} from '@docusaurus/Translate';
 import clsx from 'clsx';
-import styles from './Features.module.css';
+import styles from './styles.module.css';
 
 const FeatureList = [
   {

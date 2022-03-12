@@ -3,7 +3,7 @@
   "bracketSpacing": false,
   "bracketSameLine": true,
   "printWidth": 120,
-  "proseWrap": "always",
+  "proseWrap": "preserve",
   "singleQuote": true,
   "trailingComma": "all"
 }
