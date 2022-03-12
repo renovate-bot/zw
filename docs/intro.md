@@ -19,19 +19,21 @@ import Image from '@theme/IdealImage'; import ZGitImg from '@site/static/zw/img/
 <Tabs>
   <TabItem value="gems" label="RubyGems">
 
-The [RubyGems](https://rubygems.org) and [$GEM_HOME](https://guides.rubygems.org/command-reference/#gem-environment)
-are automatically managed by the [bin-gem-node][1] annex or installed by the [any-gem][2] package.
+The [RubyGems](https://rubygems.org) and [$GEM_HOME](https://guides.rubygems.org/command-reference/#gem-environment) are
+automatically managed by the [bin-gem-node][1] annex or installed by the [any-gem][2] package.
 
   </TabItem>
   <TabItem value="node" label="Node">
 
-The [Node](https://www.npmjs.com) modules and [$NODE_PATH](https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders) are automatically managed by the [bin-gem-node][1] annex or installed by the [any-node][3] package.
+The [Node](https://www.npmjs.com) modules and
+[$NODE_PATH](https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders) are automatically managed by
+the [bin-gem-node][1] annex or installed by the [any-node][3] package.
 
   </TabItem>
   <TabItem value="pip" label="Python">
 
-The [Python](https://python.org) modules, [$VIRTUALENV](https://docs.python.org/3/tutorial/venv.html)
-are automatically managed by the [bin-gem-node][1] annex.
+The [Python](https://python.org) modules, [$VIRTUALENV](https://docs.python.org/3/tutorial/venv.html) are automatically
+managed by the [bin-gem-node][1] annex.
 
   </TabItem>
   <TabItem value="rust" label="Rust">
@@ -41,7 +43,8 @@ The [Rust](https://crates.io) packages are managed by the [rust annex][4].
   </TabItem>
   <TabItem value="github" label="GitHub" default>
 
-Install and control almost everything from [GitHub](https://github.com): [Annexes][5], [Packages][6], [Gallery of Invocations][7].
+Install and control almost everything from [GitHub](https://github.com): [Annexes][5], [Packages][6], [Gallery of
+Invocations][7].
 
 </TabItem>
 </Tabs>
@@ -111,25 +114,9 @@ Install and control almost everything from [GitHub](https://github.com): [Annexe
     <img align="center" src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.dev.tag.zsh.rss.svg" alt="z-shell/dev.tag.rss" width="80%" />
   </a>
 </tr></table>
-
-<!-- Temporary disable
-
-## 🥇 Credists
-
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/lunarxlark"><img src="https://avatars.githubusercontent.com/u/18758150?v=4?s=80" width="80px;" alt=""/><br /><sub><b>lunarxlark</b></sub></a><br /><a href="#translation-lunarxlark" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://github.com/the-ryujin"><img src="https://avatars.githubusercontent.com/u/98503588?v=4?s=80" width="80px;" alt=""/><br /><sub><b>竜神信仰</b></sub></a><br /><a href="#maintenance-the-ryujin" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="https://github.com/wicoop"><img src="https://avatars.githubusercontent.com/u/60315017?v=4?s=80" width="80px;" alt=""/><br /><sub><b>William Cooper</b></sub></a><br /><a href="#maintenance-wicoop" title="Maintenance">🚧</a> <a href="#security-wicoop" title="Security">🛡️</a></td>
-    <td align="center"><a href="https://github.com/borley1211"><img src="https://avatars.githubusercontent.com/u/47778507?v=4?s=80" width="80px;" alt=""/><br /><sub><b>Borley</b></sub></a><br /><a href="#translation-borley1211" title="Translation">🌍</a></td>
-  </tr>
-</table>
-
--->
-
 <div align="center">
-<a href="https://github.com/z-shell"> GitHub </a>-<a href="https://twitter.com/zshell_zi"> Twitter </a>-
-<a href="https://github.com/z-shell/community/issues/new?assignees=&labels=%F0%9F%91%A5+member&template=membership.yml&title=team%3A+"> Join The Team </a>
+  <a href="https://github.com/z-shell"> GitHub </a>-<a href="https://twitter.com/zshell_zi"> Twitter </a>-
+  <a href="https://github.com/z-shell/community/issues/new?assignees=&labels=%F0%9F%91%A5+member&template=membership.yml&title=team%3A+"> Join The Team </a>
 </div>
 
 <!-- markdownlint-restore -->
