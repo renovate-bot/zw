@@ -1,9 +1,11 @@
 dist
 node_modules
+**/node_modules
 .yarn
 build
 .vscode
 coverage
+src/workers/drafts/*
 .docusaurus
 .github/CODE_OF_CONDUCT.md
 .github/SECURITY.md
@@ -15,10 +17,12 @@ create-docusaurus/lib/*
 create-docusaurus/templates/*/docusaurus.config.js
 stylelint-copyright/lib
 __fixtures__
-
 versions.json
 versioned_sidebars/*.json
-
 examples/
 static/katex/katex.min.css
+src/workers/**
+functions/**
+.github/CODE_OF_CONDUCT.md
 pnpm-lock.yaml
+.stylelintrc.jsons

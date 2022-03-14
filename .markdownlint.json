@@ -1,11 +1,5 @@
 {
-  "MD013": {
-    "line_length": 120
-  },
+  "MD013": false,
   "MD033": false,
-  "MD029": false,
-  "code-block-style": true,
-  "ignore": [
-    "service-worker/node_modules"
-  ]
+  "MD029": false
 }

@@ -14,3 +14,8 @@ repos:
     rev: v0.31.1
     hooks:
       - id: markdownlint
+      - id: markdownlint-fix
+# - repo: https://github.com/thibaudcolas/pre-commit-stylelint
+#    rev: v0.1.0
+#    hooks:
+#      - id: stylelint
