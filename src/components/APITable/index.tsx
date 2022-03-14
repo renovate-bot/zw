@@ -11,10 +11,10 @@ import React, {
   ComponentProps,
   ReactElement,
   ReactNode,
-  isValidElement,
-  useRef,
-  useEffect,
   forwardRef,
+  isValidElement,
+  useEffect,
+  useRef,
 } from 'react';
 import {useHistory} from '@docusaurus/router';
 import styles from './styles.module.css';
