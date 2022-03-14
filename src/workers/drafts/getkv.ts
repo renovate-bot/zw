@@ -1,8 +1,4 @@
 import {getAssetFromKV, mapRequestToAsset} from '@cloudflare/kv-asset-handler';
-import analytics from 'workers-google-analytics';
-import redirector from 'lilredirector';
-
-const docsConfig = require('../docs-config.js');
 
 /**
  * The DEBUG flag will do two things that help during development:
@@ -11,9 +7,10 @@ const docsConfig = require('../docs-config.js');
  * 2. we will return an error message on exception in your Response rather
  *    than the default 404.html page.
  */
+
 const DEBUG = false;
 
-addEventListener('fetch', (event) => {
+addEventListener('fetch', event => {
   try {
     event.respondWith(handleEvent(event));
   } catch (e) {
@@ -30,26 +27,13 @@ addEventListener('fetch', (event) => {
 
 async function handleEvent(event) {
   const url = new URL(event.request.url);
-  let options = {};
-
-  /**
-   * You can add custom logic to how we fetch your assets
-   * by configuring the function `mapRequestToAsset`
-   */
-  // options.mapRequestToAsset = handlePrefix(/^\/docs/)
+  const options = {};
+  options.mapRequestToAsset = handlePrefix(/^\/build/)
 
   try {
-    const {response} = await redirector(event, {
-      baseUrl: `${docsConfig.pathPrefix}/_redirects`,
-      validateRedirects: false,
-    });
-    if (response) return response;
-
-    const analyticsResp = await analytics(event, {
-      allowList: ['developers.cloudflare.com'],
-    });
-    if (analyticsResp) return analyticsResp;
-
+    if (response) {
+      return response;
+    }
     if (DEBUG) {
       // customize caching
       options.cacheControl = {
@@ -64,38 +48,29 @@ async function handleEvent(event) {
     }
     return await getAssetFromKV(event, options);
   } catch (e) {
-    // if an error is thrown try to serve the asset at 404.html
     if (!DEBUG) {
       try {
-        let notFoundResponse = await getAssetFromKV(event, {
-          mapRequestToAsset: (req) => new Request(`${new URL(req.url).origin}${docsConfig.pathPrefix}/404.html`, req),
+        const notFoundResponse = await getAssetFromKV(event, {
+          mapRequestToAsset: req => new Request(`${new URL(req.url).origin}/404.html`, req),
         });
-
         return new Response(notFoundResponse.body, {...notFoundResponse, status: 404});
       } catch (e) {}
     }
-
     return new Response(e.message || e.toString(), {status: 500});
   }
 }
-
 /**
  * Here's one example of how to modify a request to
- * remove a specific prefix, in this case `/docs` from
+ * remove a specific prefix, in this case `/build` from
  * the url. This can be useful if you are deploying to a
  * route on a zone, or if you only want your static content
  * to exist at a specific path.
  */
 function handlePrefix(prefix) {
-  return (request) => {
-    // compute the default (e.g. / -> index.html)
-    let defaultAssetKey = mapRequestToAsset(request);
-    let url = new URL(defaultAssetKey.url);
-
-    // strip the prefix from the path for lookup
+  return request => {
+    const defaultAssetKey = mapRequestToAsset(request);
+    const url = new URL(defaultAssetKey.url);
     url.pathname = url.pathname.replace(prefix, '/');
-
-    // inherit all other props from the default request
     return new Request(url.toString(), defaultAssetKey);
   };
 }

@@ -1,17 +1,23 @@
 // @ts-nocheck
 import React from 'react';
-import Translate, {translate} from '@docusaurus/Translate';
 import clsx from 'clsx';
+import Translate, {translate} from '@docusaurus/Translate';
 import styles from './styles.module.css';
 
-const FeatureList = [
+type FeatureItem = {
+  title: string;
+  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  description: JSX.Element;
+};
+
+const FeatureList: FeatureItem[] = [
   {
     title: translate({
       id: 'homepage.feature1.title',
       message: 'Zsh Startup 50-80% Faster',
       description: 'Title of feature 1 (left) on the home page',
     }),
-    Svg: require('@site/static/zw/svg/turbo.svg').default, // eslint-disable-line global-require
+    Svg: require('@site/static/zw/svg/turbo.svg').default,
     description: (
       <Translate id="home.fetaure1" description="Description of first featured banner in homepage">
         Instant prompt postponing plugins loading to a moment when the processing of .zshrc file is finished.
@@ -24,7 +30,7 @@ const FeatureList = [
       message: 'Focus on What Matters',
       description: 'Title of feature 2 (middle) on the home page',
     }),
-    Svg: require('@site/static/zw/svg/stats.svg').default, // eslint-disable-line global-require
+    Svg: require('@site/static/zw/svg/stats.svg').default,
     description: (
       <Translate id="home.fetaure2" description="Description of second featured banner in homepage">
         Statistics about the plugins, describing what functions, bindkeys, completions, and other elements a plugin has
@@ -38,7 +44,7 @@ const FeatureList = [
       message: 'Wide Range of Features',
       description: 'Title of feature 3 (right) on the home page',
     }),
-    Svg: require('@site/static/zw/svg/zsh.svg').default, // eslint-disable-line global-require
+    Svg: require('@site/static/zw/svg/zsh.svg').default,
     description: (
       <Translate id="home.fetaure3" description="Description of third featured banner in homepage">
         Supports Oh-My-Zsh and Prezto - not framework-specific. Produce your plugins, libraries, and themes

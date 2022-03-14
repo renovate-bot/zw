@@ -88,7 +88,13 @@ zi snippet OMZL::termsupport.zsh
 + zi snippet OMZP::ruby
 ```
 
-If it consists of a single file, with ZI you can just load it: `zi snippet <some/path/or/url/undled-snnippets.zsh`
+:::tip
+
+Bundle multiple commands to a single file:
+
+`zi snippet <some/path/or/url/bundled-snippets.zsh`
+
+:::
 
 Use `zi ice svn` if multiple files require an entire subdirectory.
 
@@ -116,7 +122,9 @@ zi ice as"completion"
 zi snippet OMZP::fd/_fd
 ```
 
-[You can see an extended explanation of OMZ setup in the Wiki][8]### Plugins
+[You can see an extended explanation of OMZ setup in the Wiki][8]
+
+### Plugins
 
 ```diff
 - plugins=(

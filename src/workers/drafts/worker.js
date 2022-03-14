@@ -3,9 +3,9 @@ import {getAssetFromKV, mapRequestToAsset} from '@cloudflare/kv-asset-handler';
 const DEBUG = false;
 
 export async function handleRequest(event) {
-  let options = {};
+  const options = {};
 
-  options.mapRequestToAsset = handlePrefix(/^\/docs/);
+  options.mapRequestToAsset = handlePrefix(/^\/build/);
 
   try {
     if (DEBUG) {
@@ -27,8 +27,8 @@ export async function handleRequest(event) {
   } catch (e) {
     if (!DEBUG) {
       try {
-        let notFoundResponse = await getAssetFromKV(event, {
-          mapRequestToAsset: (req) => new Request(`${new URL(req.url).origin}/404.html`, req),
+        const notFoundResponse = await getAssetFromKV(event, {
+          mapRequestToAsset: req => new Request(`${new URL(req.url).origin}/404.html`, req),
         });
 
         return new Response(notFoundResponse.body, {...notFoundResponse, status: 404});
@@ -40,9 +40,9 @@ export async function handleRequest(event) {
 }
 
 function handlePrefix(prefix) {
-  return (request) => {
-    let defaultAssetKey = mapRequestToAsset(request);
-    let url = new URL(defaultAssetKey.url);
+  return request => {
+    const defaultAssetKey = mapRequestToAsset(request);
+    const url = new URL(defaultAssetKey.url);
     url.pathname = url.pathname.replace(prefix, '/');
     return new Request(url.toString(), defaultAssetKey);
   };

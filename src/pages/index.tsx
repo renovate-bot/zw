@@ -1,12 +1,12 @@
 // @ts-nocheck
 import React from 'react';
 import clsx from 'clsx';
+import FeaturesList from '@site/src/components/FeaturesList';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import Translate from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -33,7 +33,7 @@ export default function Home() {
     <Layout title={`${siteConfig.tagline}`} description="The Open Source Society with a passion for Zsh <head />">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <FeaturesList />
       </main>
     </Layout>
   );

@@ -698,4 +698,4 @@ For some additional examples you can also check out the:
 [17]: https://github.com/sindresorhus/pure
 [18]: https://github.com/romkatv/powerlevel10k
 [19]: https://github.com/z-shell/playground
-[20]: https://github.com/z-shell/playground/issues/new?template=request-to-add-zshrc-to-the-zi-configs-repo.m
+[20]: https://github.com/z-shell/playground/issues/new?template=request-to-add-zshrc-to-the-zi-configs-repo.md

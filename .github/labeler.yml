@@ -5,6 +5,7 @@ dependencies 📦:
   - 'package.json'
 enhancement ✨:
   - 'functions/**'
+  - 'src/**'
 maintenance 📈:
   - '.github/CODEOWNERS'
   - '.github/*.md'

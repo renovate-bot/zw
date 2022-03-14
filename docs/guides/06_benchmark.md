@@ -14,14 +14,10 @@ zi ice atinit'zmodload zsh/zprof' \
 zi light z-shell/F-Sy-H
 ```
 
-<!-- markdownlint-disable MD013 -->
-
 | Syntax      | Description                                                                                                              |
 | ----------- | :----------------------------------------------------------------------------------------------------------------------- |
 | `atinit'…'` | loads `zsh/zprof` module, shipped with Zsh, before loading the plugin – this starts the profiling.                       |
 | `atload'…'` | works after loading the plugin – shows profiling results `zprof / head`, unloads `zsh/zprof` - this stops the profiling. |
-
-<!-- markdownlint-enable MD013 -->
 
 While in effect, only a single plugin, in this case `z-shell/F-Sy-H`, will be profiled.
 

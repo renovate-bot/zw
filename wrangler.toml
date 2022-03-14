@@ -1,10 +1,8 @@
 name = "zw"
+workers_dev = false
 route = "z.digitalclouds.dev/*"
 account_id = "2db2112b269ed3616ed3a863a222f3e8"
 usage_model = 'unbound'
 site.bucket = "./build"
-main = "./src/workers/index.ts"
-compatibility_flags = []
+main = "./functions/_assets.ts"
 compatibility_date = "2022-03-10"
-workers_dev = false
-

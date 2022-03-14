@@ -1,4 +1,4 @@
-addEventListener('fetch', (event) => {
+addEventListener('fetch', event => {
   const data =
     event.request.cf !== undefined ? event.request.cf : {error: 'The `cf` object is not available inside the preview.'};
 

@@ -102,8 +102,6 @@ changes are needed!
 
 There are 7 ice modifiers provided and handled by the annex:
 
-<!-- markdownlint-disable MD013 -->
-
 <APITable>
 
 | Ice modifier      | Description                                                                                              |
@@ -118,8 +116,6 @@ There are 7 ice modifiers provided and handled by the annex:
 | [`ferc''`](#ferc) | The same as [`fsrc''`](#fscr), but using an alternate script-loading method.                             |
 
 </APITable>
-
-<!-- markdownlint-enable MD013 -->
 
 ### The Ice Modifiers by the Annex
 
@@ -171,8 +167,6 @@ fzf "$@"
 
 Creates a wrapper function of the name the same as the last segment of the path or as `{name-of-the-function}`.
 
-<!-- markdownlint-disable MD013 -->
-
 <APITable>
 
 | Flag | Description                                                                                                           |
@@ -186,8 +180,6 @@ Creates a wrapper function of the name the same as the last segment of the path 
 | `O`  | Append `>/dev/null` to the call of the binary, i.e. redirect standard output to `/dev/null`.                          |
 
 </APITable>
-
-<!-- markdownlint-enable MD013 -->
 
 Example:
 
@@ -385,8 +377,6 @@ zi shim-list [-h/--help] [-t|--this-dir] [-i|--from-ices] \
       [-o|--one-line] [-s|--short] [-c|--cat]
 ```
 
-<!-- markdownlint-disable MD013 -->
-
 <APITable>
 
 | Flag               | Description                                                                                       |
@@ -403,8 +393,6 @@ zi shim-list [-h/--help] [-t|--this-dir] [-i|--from-ices] \
 > [!] shims created by BGN annex have a fixed structure, this option instructs ZI to show the list of shims that results
 > from the `sbin''` ice of the loaded plugins. If a plugin has `sbin'git-open'`, for example, then this means that there
 > has to be such shim already created.
-
-<!-- markdownlint-enable MD013 -->
 
 ## Cygwin Support
 

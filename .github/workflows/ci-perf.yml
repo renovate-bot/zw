@@ -25,17 +25,18 @@ jobs:
       - uses: pnpm/action-setup@v2.2.1
         with:
           version: 6.32.3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
-      - name: ' ✨ Installation'
-        run: 'pnpm install --no-frozen-lockfile --strict-peer-dependencies'
+      #      - name: Use Node.js ${{ matrix.node-version }}
+      #        uses: actions/setup-node@v3
+      #        with:
+      #          node-version: ${{ matrix.node-version }}
+      #          cache: 'pnpm'
+      #      - name: ' ✨ Installation'
+      #        run: 'pnpm install --no-frozen-lockfile --strict-peer-dependencies'
       - uses: preactjs/compressed-size-action@v2
         with:
           build-script: 'build:en'
           pattern: '{build/assets/js/main*js,build/assets/css/styles*css,.docusaurus/globalData.json,build/index.html,build/blog/index.html,build/blog/**/swiss-army-knife-for-zsh/*,build/docs/index.html,build/docs/getting_started/installation.html}'
+          exclude: '{./build/manifest.json,**/*.map,**/node_modules/**}'
           strip-hash: '\.([^;]\w{7})\.'
           minimum-change-threshold: 30
           compression: none
@@ -58,7 +59,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
       - name: ' ✨ Installation'
-        run: 'pnpm install --no-prefer-frozen-lockfile --strict-peer-dependencies'
+        run: 'pnpm install --no-prefer-frozen-lockfile --strict-peer-dependencies -P'
       # Ensure build with a cold cache does not increase too much
       - name: 'Build (cold cache)'
         run: pnpm build:en

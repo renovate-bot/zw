@@ -8,8 +8,8 @@ keywords:
   - introduction
 ---
 
-import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'; import Image from '@theme/IdealImage';
-import ZGitImg from '@site/static/zw/img/z_git.png';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'; import Image from '@theme/IdealImage'; import
+ZGitImg from '@site/static/zw/img/z_git.png';
 <Image className="ZGitLogo" img={ZGitImg} alt='Install almost everything from GitHub' />
 
 ---
@@ -41,8 +41,8 @@ The [Rust](https://crates.io) packages are managed by the [rust annex][4].
   </TabItem>
   <TabItem value="github" label="GitHub" default>
 
-Install and control almost everything from [GitHub](https://github.com): [Annexes][5], [Packages][6],
-[Gallery of Invocations][7].
+Install and control almost everything from [GitHub](https://github.com): [Annexes][5], [Packages][6], [Gallery of
+Invocations][7].
 
 </TabItem>
 </Tabs>

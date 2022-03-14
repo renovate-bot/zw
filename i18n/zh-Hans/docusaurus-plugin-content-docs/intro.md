@@ -8,8 +8,7 @@ keywords:
   - introduction
 ---
 
-import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'; import Image from '@theme/IdealImage'; import
-ZGitImg from '@site/static/zw/img/z_git.png';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'; import Image from '@theme/IdealImage'; import ZGitImg from '@site/static/zw/img/z_git.png';
 <Image className="ZGitLogo" img={ZGitImg} alt='Install almost everything from GitHub' />
 
 ---
@@ -60,21 +59,17 @@ Invocations][7].
 
 - [Customize paths][9], use [multiple prompts][10] or create [your own][11] plugins.
 - Supports [Oh My Zsh][12] and [Prezto][12] plugins and libraries. ([migration][13]).
-- Does not use `$FPATH`, loading multiple plugins doesn't clutter `$FPATH` with the same number of entries, e.g: 10, 15,
-  or more.
+- Does not use `$FPATH`, loading multiple plugins doesn't clutter `$FPATH` with the same number of entries, e.g: 10, 15, or more.
 - Code is immune to `KSH_ARRAYS` and other options typically causing compatibility problems.
 - Do not require `sudo`, and provide many workarounds e.g: setting so-called **shims** locally.
 
 ## 📈 Familiarize and control
 
-- Visualise data: **aliases**, **functions**, **bindkeys**, **Zle widgets**, **zstyles**, **completions**,
-  **variables**, `$PATH`, and `$FPATH` elements a plugin has set up.
-- Quickly familiarize oneself with a new plugin and provides rich and easy-to-digest information that might be helpful
-  on various occasions.
+- Visualise data: **aliases**, **functions**, **bindkeys**, **Zle widgets**, **zstyles**, **completions**, **variables**, `$PATH`, and `$FPATH` elements a plugin has set up.
+- Quickly familiarize oneself with a new plugin and provides rich and easy-to-digest information that might be helpful on various occasions.
 - [Load or unload][14] plugins, use the ability to [manage][15] completions.
 
-- Docker [playground](https://github.com/z-shell/playground), test or propose configurations, preview at
-  [asciinema.org](https://asciinema.org/a/459358).
+- Docker [playground](https://github.com/z-shell/playground), test or propose configurations, preview at [asciinema.org](https://asciinema.org/a/459358).
 
 ## 📢 Summary
 

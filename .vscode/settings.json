@@ -9,6 +9,8 @@
   "conventionalCommits.scopes": [
     "workspace",
     "community",
-    "general"
+    "general",
+    "docs",
+    "theme"
   ]
 }

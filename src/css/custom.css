@@ -2,7 +2,9 @@
   --ifm-background-color: var(--fill);
   --site-primary-hue-saturation: 167 68%;
   --site-primary-hue-saturation-light: 167 56%;
+
   transition: 0.6s all;
+
   --ifm-color-primary: hsl(var(--site-primary-hue-saturation) 30%);
   --ifm-color-primary-dark: hsl(var(--site-primary-hue-saturation) 26%);
   --ifm-color-primary-darker: hsl(var(--site-primary-hue-saturation) 20%);
@@ -26,6 +28,26 @@ html[data-theme='dark'] {
   --ifm-background-surface-color: #161b22;
 }
 
+/* stylelint-disable */
+.footer--dark {
+  --ifm-footer-background-color: #161b22;
+  --ifm-footer-color: var(--ifm-footer-link-color);
+  --ifm-footer-link-color: var(--ifm-color-secondary);
+  --ifm-footer-title-color: var(--ifm-color-white);
+}
+
+.footer--dark a[href] {
+  color: #1e8ad6;
+  transition: color 0.5s;
+}
+
+.footer--dark a[href]:hover {
+  color: #3ba0e6;
+  transition: color 0.5s;
+}
+
+/* stylelint-enable */
+
 .docusaurus-highlight-code-line {
   background-color: rgba(0 0 0 / 10%);
   display: block;
@@ -43,7 +65,6 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 .screen-reader-only {
   border: 0;
-  clip: rect(0 0 0 0);
   clip-path: polygon(0 0, 0 0, 0 0);
   height: 1px;
   margin: -1px;
@@ -62,26 +83,11 @@ html[data-theme='dark'] img[src$='#gh-light-mode-only'] {
 div[class^='announcementBar_'] {
   --site-announcement-bar-stripe-color1: hsl(var(--site-primary-hue-saturation) 85%);
   --site-announcement-bar-stripe-color2: hsl(var(--site-primary-hue-saturation) 95%);
+
   font-weight: bold;
 }
 
-.footer--dark {
-  --ifm-footer-background-color: #161b22;
-  --ifm-footer-color: var(--ifm-footer-link-color);
-  --ifm-footer-link-color: var(--ifm-color-secondary);
-  --ifm-footer-title-color: var(--ifm-color-white);
-}
-
-.footer--dark a[href] {
-  color: #1e8ad6;
-  transition: color 0.5s;
-}
-
-.footer--dark a[href]:hover {
-  color: #3ba0e6;
-  transition: color 0.5s;
-}
-
+/* stylelint-disable */
 .IceLogo {
   width: 30%;
   height: auto;
@@ -97,6 +103,7 @@ div[class^='announcementBar_'] {
   width: 90%;
   height: auto;
 }
+/* stylelint-enable */
 
 .header-github-link:hover {
   opacity: 0.6;

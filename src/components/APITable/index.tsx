@@ -8,9 +8,9 @@
 
 import React, {
   Children,
-  type ComponentProps,
-  type ReactElement,
-  type ReactNode,
+  ComponentProps,
+  ReactElement,
+  ReactNode,
   isValidElement,
   useRef,
   useEffect,
@@ -54,7 +54,8 @@ const APITableRow = forwardRef(
           if (e.key === 'Enter') {
             history.push(anchor);
           }
-        }}>
+        }}
+      >
         {children.props.children}
       </tr>
     );
