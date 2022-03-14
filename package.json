@@ -29,7 +29,7 @@
     "write-community-version": "docusaurus docs:version:community",
     "markdownlint": "markdownlint '**/*.md*' --dot --ignore-path .gitignore --ignore-path .prettierignore",
     "prettier": "prettier --config .prettierrc --ignore-path .gitignore --ignore-path '.prettierignore' '**/*.{js,jsx,ts,tsx,mdx,yml,yaml}'",
-    "eslint": "eslint --ignore-path .gitignore --ignore-path .prettierignore --cache --report-unused-disable-directives '**/*.{js,jsx,ts,mjs}'",
+    "eslint": "eslint --ignore-path .gitignore --ignore-path .prettierignore --cache --report-unused-disable-directives '**/*.{js,jsx,ts,tsx,mjs}'",
     "fix": "pnpm eslint --fix && pnpm prettier --write",
     "test": "pnpm eslint && pnpm prettier --check && pnpm markdownlint",
     "crowdin:sync": "docusaurus write-translations && crowdin upload && crowdin download",
@@ -71,6 +71,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.17.5",
+    "@babel/eslint-parser": "^7.17.0",
     "@babel/plugin-syntax-typescript": "7.16.7",
     "@cloudflare/workers-types": "3.4.0",
     "@tsconfig/docusaurus": "1.0.5",

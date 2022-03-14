@@ -1,6 +1,5 @@
-dist
 node_modules
-**/node_modules
+dist
 .yarn
 build
 .vscode
@@ -15,6 +14,9 @@ docusaurus-*/lib/*
 docusaurus-*/lib-next/
 create-docusaurus/lib/*
 create-docusaurus/templates/*/docusaurus.config.js
+src/components/APITable/index.tsx
+src/components/FeaturesList/index.tsx
+src/pages/index.tsx
 stylelint-copyright/lib
 __fixtures__
 versions.json

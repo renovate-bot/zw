@@ -1,3 +1,5 @@
+/*eslint id-length: "error"*/     // default is minimum 1-char ({ "min": 1 })
+/*eslint-env es6*/
 // @ts-nocheck
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -16,9 +18,10 @@ import React, {
   useEffect,
   useRef,
 } from 'react';
-import {useHistory} from '@docusaurus/router';
 import styles from './styles.module.css';
+import {useHistory} from '@docusaurus/router';
 
+// eslint-disable-next-line
 interface Props {
   readonly children: ReactElement<ComponentProps<'table'>>;
   readonly name?: string;
