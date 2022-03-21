@@ -12,7 +12,4 @@ on:
 jobs:
   labels:
     name: ♻️ Sync labels
-    runs-on: ubuntu-latest
-    steps:
-      - name: 🚀 Run Label Syncer
-        uses: z-shell/.github/.github/workflows/sync-labels.yml@refs/heads/main
+    uses: z-shell/.github/.github/workflows/sync-labels.yml@refs/heads/main
