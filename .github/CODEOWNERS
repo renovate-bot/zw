@@ -1,4 +1,4 @@
-* @ss-o @z-shell
+* @z-shell/squadz
 
 # Order is important; the last matching pattern takes the most precedence.
 #*.sh    @z-shell
@@ -10,8 +10,6 @@
 # The `docs/*` pattern will match files like
 # `docs/getting-started.md` but not further nested files like
 # `docs/build-app/troubleshooting.md`.
-i18n/ja/** @lunarxlark @yutkat @borley1211
-i18n/ko/** @black7375
 
 # In this example, @z-shell owns any file in an `lib` directory anywhere in your repository.
 #lib/ @z-shell
