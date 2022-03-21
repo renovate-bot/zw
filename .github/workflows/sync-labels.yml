@@ -17,6 +17,6 @@ jobs:
       - name: ⤵️ Check out code from GitHub
         uses: actions/checkout@v3
       - name: 🚀 Run Label Syncer
-        uses: sync-labels@main
+        uses: z-shell/.github/sync-labels@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
