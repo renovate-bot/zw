@@ -12,4 +12,4 @@ on:
 jobs:
   labels:
     name: ♻️ Sync labels
-    uses: z-shell/.github/.github/workflows/sync-labels.yml@refs/heads/main
+    uses: z-shell/.github/.github/workflows/sync-labels.yml@main
