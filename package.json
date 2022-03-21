@@ -32,7 +32,6 @@
     "prettier": "prettier --config .prettierrc --ignore-path .gitignore --ignore-path '.prettierignore' '**/*.{js,jsx,ts,tsx,mdx,yml,yaml}'",
     "eslint": "eslint --ignore-path .gitignore --ignore-path .prettierignore --cache --report-unused-disable-directives '**/*.{js,jsx,ts,tsx,mjs}'",
     "fix": "pnpm eslint --fix && pnpm prettier --write && pnpm markdownlint --fix",
-    "test": "pre-commit run",
     "crowdin:sync": "docusaurus write-translations && crowdin upload && crowdin download",
     "build:cf:pre": "corepack enable && corepack prepare pnpm@$PNPM_VERSION --activate && pnpm build:cf",
     "build:cf": "pnpm install --strict-peer-dependencies --prefer-frozen-lockfile && pnpm build && pnpm w:pub",
