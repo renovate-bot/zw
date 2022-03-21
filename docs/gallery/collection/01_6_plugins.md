@@ -80,8 +80,7 @@ zi light …
 # ogham/exa also uses the definitions
 zi ice wait lucid reset \
   atclone"local P=${${(M)OSTYPE:#*darwin*}:+g}
-    \${P}sed -i \
-    '/DIR/c\DIR 38;5;63;1' LS_COLORS; \
+    \${P}sed -i '/DIR/c\DIR 38;5;63;1' LS_COLORS
     \${P}dircolors -b LS_COLORS > c.zsh" \
   atpull'%atclone' pick"c.zsh" nocompile'!' \
   atload'zstyle ":completion:*" list-colors “${(s.:.)LS_COLORS}”'
