@@ -6,15 +6,11 @@ description: The Z-Shell Organization packages
 keywords: [zpackage]
 ---
 
-import APITable from '@site/src/components/APITable';
-
 You can find the available packages
-[here](https://github.com/search?q=topic%3Azpackages+org%3Az-shell&type=Repositories).
+[here](https://github.com/search?q=topic%3Azpackage+org%3Az-shell&type=Repositories).
 
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
-
-<APITable>
 
 |       Package Name       | Description                                                                                      |
 | :----------------------: | ------------------------------------------------------------------------------------------------ |
@@ -38,7 +34,6 @@ You can find the available packages
 |        [zsh][18]         | The Zsh mirror of zsh-users                                                                      |
 |         [nb][19]         | Bookmarking, and archiving with linking, tagging, search, Git syncing, Pandoc conversion, + more |
 
-</APITable>
 
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
