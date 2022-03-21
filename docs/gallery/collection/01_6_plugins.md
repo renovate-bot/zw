@@ -79,11 +79,11 @@ zi light …
 ```shell
 # ogham/exa also uses the definitions
 zi ice wait lucid reset \
-  atclone"local P=${${(M)OSTYPE:#*darwin*}:+g}
+ atclone"[[ -z \${commands[dircolors]} ]] && local P=g
     \${P}sed -i '/DIR/c\DIR 38;5;63;1' LS_COLORS
-    \${P}dircolors -b LS_COLORS > c.zsh" \
-  atpull'%atclone' pick"c.zsh" nocompile'!' \
-  atload'zstyle ":completion:*" list-colors “${(s.:.)LS_COLORS}”'
+    \${P}dircolors -b LS_COLORS >! clrs.zsh" \
+ atpull'%atclone' pick"clrs.zsh" nocompile'!' \
+ atload'zstyle ":completion:*:default" list-colors "${(s.:.)LS_COLORS}";'
 zi light trapd00r/LS_COLORS
 ```
 
