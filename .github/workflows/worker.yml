@@ -3,7 +3,7 @@ on: [workflow_dispatch]
 
 env:
   CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
-  CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+  CLOUDLFARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
 
 jobs:
   build-worker:
@@ -23,4 +23,5 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
       - run: pnpm install --strict-peer-dependencies --prefer-frozen-lockfile
-      - run: pnpm build && pnpm w:pub
+      - run: pnpm build
+      - run: pnpm w:pub
