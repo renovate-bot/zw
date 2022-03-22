@@ -8,10 +8,17 @@ keywords:
   - introduction
 ---
 
-import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'; import Image from '@theme/IdealImage'; import ZGitImg from '@site/static/zw/img/z_git.png';
-<Image className="ZGitLogo" img={ZGitImg} alt='Install almost everything from GitHub' />
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'; import Image from '@theme/IdealImage';
+import ZGitImg from '@site/static/zw/img/z_git.png';
 
----
+<Image className="ScreenView" img={ZGitImg} alt='Install almost everything from GitHub' />
+<a href="https://github.com/z-shell">
+  <img
+    className="ScreenView"
+    src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.svg"
+    alt="Z-Shell Organization"
+  />
+</a>
 
 <Tabs>
   <TabItem value="gems" label="RubyGems">
@@ -75,16 +82,26 @@ Invocations][7].
 
 <!-- markdownlint-disable -->
 
-<table><tr><td><div align='center'><br />
-<img align='center' src='https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.svg' alt='metrics' width='70%' />
-<img align='center' src='https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.projects.svg' alt='projects' width='70%' />
-<img align='center' src='https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.followup.indepth.svg' alt='followup' width='70%' />
-</div></td></tr><td><div align='center'>
-<img align='center' src='https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.pagespeed.detailed.svg' alt='Pagespeed' width='70%' />
-<a href='https://github.com/z-shell/community/discussions'><img align='center' src='https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.discussions.svg' alt='Discussions' width='70%' /></a>
-<a href='https://twitter.com/zshell_zi'><img align='center' src='https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.tweets.svg' alt='Tweets' width='70%' /></a>
-<a href='https://dev.to/tag/zsh'><img align='center' src='https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.dev.tag.zsh.rss.svg' alt='RSS-DEV-TAG-ZSH' width='70%' /></a>
-</div></td></table>
+<a href="https://github.com/orgs/z-shell/projects">
+  <img
+    className="ScreenView"
+    src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.projects.svg"
+    alt="Z-Shell Projects"
+  />
+</a>
+<a href="https://github.com/orgs/z-shell/projects">
+  <img
+    className="ScreenView"
+    src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.followup.indepth.svg"
+    alt="Z-Shell Indepth"
+  />
+</a><a href="https://github.com/z-shell/zw">
+  <img
+    className="ScreenView"
+    src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.pagespeed.detailed.svg"
+    alt="ZW PageSpeed"
+  />
+</a>
 
 <!-- markdownlint-restore -->
 
