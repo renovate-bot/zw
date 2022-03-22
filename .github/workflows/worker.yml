@@ -23,6 +23,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
-      - run: pnpm install --strict-peer-dependencies --prefer-frozen-lockfile
+      - run: pnpm install --strict-peer-dependencies --no-prefer-frozen-lockfile
       - run: pnpm build
       - run: pnpm w:pub
