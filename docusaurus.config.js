@@ -214,7 +214,7 @@ const config = {
               position: 'right',
           }, */
           {
-            href: 'https://github.com/z-shell/',
+            href: 'https://github.com/z-shell/zi/',
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub repository',
