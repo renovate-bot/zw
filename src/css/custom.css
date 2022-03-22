@@ -101,15 +101,22 @@ html[data-theme='dark'] div[class^='announcementBar_'] {
   height: auto;
 }
 
-.ScreenView {
+.ScreenViewFull {
   width: 100%;
   height: auto;
   border: 0;
   padding: 0;
 }
 
+.ScreenView {
+  width: 80%;
+  height: auto;
+  border: 0;
+  padding: 0;
+}
+
 .ScreenViewMedium {
-  width: 70%;
+  width: 60%;
   height: auto;
   border: 0;
   padding: 0;
