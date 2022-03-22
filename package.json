@@ -89,7 +89,7 @@
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard": "^25.0.0",
     "typescript": "4.6.2",
-    "wrangler": "^0.0.19"
+    "wrangler": "^0.0.22"
   },
   "engines": {
     "node": ">=14",
