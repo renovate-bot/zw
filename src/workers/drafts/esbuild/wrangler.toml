@@ -1,8 +1,0 @@
-name = "esbuild"
-account_id = ""
-workers_dev = true
-route = ""
-main = "src/index.js"
-kv_namespaces = [
-  { binding = "COUNTER_NAMESPACE", id = "", preview_id = "" },
-]
