@@ -1,6 +1,10 @@
 name: ☁️ Cloudflare Workers
 on: [workflow_dispatch]
 
+env:
+  CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+  CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+
 jobs:
   build-worker:
     runs-on: ubuntu-latest
@@ -11,9 +15,6 @@ jobs:
         node-version: [16]
     steps:
       - uses: actions/checkout@v3
-        env:
-          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
-          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
       - uses: pnpm/action-setup@v2.2.1
         with:
           version: 6.32.3
