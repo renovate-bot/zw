@@ -16,14 +16,11 @@ jobs:
         node-version: [16]
     steps:
       - uses: actions/checkout@v3
-      - name: '♻️ Test deployment [ install ]'
-        uses: pnpm/action-setup@v2.2.1
+      - uses: pnpm/action-setup@v2.2.1
         with:
-          version: 6.32.1
-      - name: '♻️ Node.js ${{ matrix.node-version }}'
-        uses: actions/setup-node@v3
+          version: 6.32.3
+      - uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
-      - name: '♻️ Test deployment [ build ]'
-        run: pnpm install
+      - run: pnpm install --strict-peer-dependencies --prefer-frozen-lockfile
