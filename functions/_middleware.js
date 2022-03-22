@@ -1,11 +1,3 @@
-export default function(req, res, next) {
-  if (req.session.user) {
-    next();
-  } else {
-    res.redirect('/');
-  }
-}
-
 async function errorHandler(context) {
   try {
     // wait for the next function to finish
@@ -15,6 +7,12 @@ async function errorHandler(context) {
     return new Response(`${err.message}\n${err.stack}`, { status: 500 });
   }
 }
-
-// Attach `errorHandler` to all HTTP requests
 export const onRequest = errorHandler;
+
+/**export default function(req, res, next) {
+  if (req.session.user) {
+    next();
+  } else {
+    res.redirect('/');
+  }
+}*/

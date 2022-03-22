@@ -11,33 +11,29 @@ import styles from './index.module.css';
 function SocialHome() {
   return (
     <div className={styles.SocialHome}>
-      <p>
+      <div width="90%">
         <Link href="https://github.com/z-shell/community/discussions">
-          <img
+          <p><img
             className="ScreenViewMedium"
             src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.discussions.svg"
             alt="Discussions"
-          />
+          /></p>
         </Link>
-      </p>
-      <p>
         <Link href="https://twitter.com/zshell_zi">
-          <img
+          <p><img
             className="ScreenViewMedium"
             src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.tweets.svg"
             alt="Recent Tweets"
-          />
+          /></p>
         </Link>
-      </p>
-      <p>
         <Link href="https://dev.to/tag/zsh">
-          <img
+          <p><img
             className="ScreenViewMedium"
             src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.dev.tag.zsh.rss.svg"
             alt="RSS-DEV-TAG-ZSH"
-          />
+          /></p>
         </Link>
-      </p>
+      </div>
     </div>
   );
 }
