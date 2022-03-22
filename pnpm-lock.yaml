@@ -34,7 +34,7 @@ specifiers:
   stylelint-config-prettier: ^9.0.3
   stylelint-config-standard: ^25.0.0
   typescript: 4.6.2
-  wrangler: ^0.0.22
+  wrangler: beta
 
 dependencies:
   '@docusaurus/core': 0.0.0-4727_aeaba09eb00f7665e5acdd7c57ed6790
