@@ -1,0 +1,35 @@
+{
+  "unversionedId": "guides/commands",
+  "id": "guides/commands",
+  "title": "🛠 Commands",
+  "description": "ZI Commands",
+  "source": "@site/docs/guides/04_commands.md",
+  "sourceDirName": "guides",
+  "slug": "/guides/commands",
+  "permalink": "/zh-Hans/docs/guides/commands",
+  "editUrl": "https://digitalclouds.crowdin.com/z-shell/zh-Hans",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1645993180,
+  "formattedLastUpdatedAt": "2022/2/27",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "commands",
+    "title": "🛠 Commands",
+    "image": "zw/logo/320x320.png",
+    "description": "ZI Commands",
+    "keywords": [
+      "commands"
+    ]
+  },
+  "sidebar": "autoSideBar_1",
+  "previous": {
+    "title": "🗒 Bindkeys Map",
+    "permalink": "/zh-Hans/docs/guides/syntax/bindkey"
+  },
+  "next": {
+    "title": "🏗 Preferences & Configuration",
+    "permalink": "/zh-Hans/docs/guides/customization"
+  }
+}

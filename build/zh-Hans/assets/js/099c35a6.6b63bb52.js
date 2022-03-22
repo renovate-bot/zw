@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkzw=self.webpackChunkzw||[]).push([[1296],{6201:function(a){a.exports=JSON.parse('{"allTagsPath":"/zh-Hans/blog/tags","name":"productivity","count":1,"permalink":"/zh-Hans/blog/tags/productivity"}')}}]);

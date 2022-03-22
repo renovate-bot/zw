@@ -1,0 +1,35 @@
+{
+  "unversionedId": "ecosystem/annexes/annexes",
+  "id": "ecosystem/annexes/annexes",
+  "title": "💠 Quick overview",
+  "description": "Annexes documentation",
+  "source": "@site/docs/ecosystem/annexes/01_0_annexes_guide.md",
+  "sourceDirName": "ecosystem/annexes",
+  "slug": "/ecosystem/annexes",
+  "permalink": "/zh-Hans/docs/ecosystem/annexes",
+  "editUrl": "https://digitalclouds.crowdin.com/z-shell/zh-Hans",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1645977796,
+  "formattedLastUpdatedAt": "2022/2/27",
+  "frontMatter": {
+    "id": "annexes",
+    "slug": "/ecosystem/annexes",
+    "title": "💠 Quick overview",
+    "image": "zw/logo/320x320.png",
+    "description": "Annexes documentation",
+    "keywords": [
+      "zannex"
+    ]
+  },
+  "sidebar": "autoSideBar_1",
+  "previous": {
+    "title": "🔺 Themes",
+    "permalink": "/zh-Hans/docs/gallery/collection/themes"
+  },
+  "next": {
+    "title": "💠 Bin Gem Node",
+    "permalink": "/zh-Hans/docs/ecosystem/annexes/bin-gem-node"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "unversionedId": "ecosystem/annexes/patch-dl",
+  "id": "ecosystem/annexes/patch-dl",
+  "title": "💠 Patch DL",
+  "description": "Annex - Patch DL documentation",
+  "source": "@site/docs/ecosystem/annexes/01_4_patch-dl.md",
+  "sourceDirName": "ecosystem/annexes",
+  "slug": "/ecosystem/annexes/patch-dl",
+  "permalink": "/zh-Hans/docs/ecosystem/annexes/patch-dl",
+  "editUrl": "https://digitalclouds.crowdin.com/z-shell/zh-Hans",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1645956898,
+  "formattedLastUpdatedAt": "2022/2/27",
+  "frontMatter": {
+    "id": "patch-dl",
+    "title": "💠 Patch DL",
+    "image": "zw/logo/320x320.png",
+    "description": "Annex - Patch DL documentation",
+    "keywords": [
+      "annex",
+      "patch-dl"
+    ]
+  },
+  "sidebar": "autoSideBar_1",
+  "previous": {
+    "title": "💠 Default Ice",
+    "permalink": "/zh-Hans/docs/ecosystem/annexes/default-ice"
+  },
+  "next": {
+    "title": "💠 Read URL",
+    "permalink": "/zh-Hans/docs/ecosystem/annexes/readurl"
+  }
+}

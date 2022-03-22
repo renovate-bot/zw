@@ -1,0 +1,35 @@
+{
+  "unversionedId": "getting_started/migration",
+  "id": "getting_started/migration",
+  "title": "♻️ Migration",
+  "description": "Migration guide to ZI",
+  "source": "@site/docs/getting_started/03_migration.md",
+  "sourceDirName": "getting_started",
+  "slug": "/getting_started/migration",
+  "permalink": "/zh-Hans/docs/getting_started/migration",
+  "editUrl": "https://digitalclouds.crowdin.com/z-shell/zh-Hans",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1647243319,
+  "formattedLastUpdatedAt": "2022/3/14",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "♻️ Migration",
+    "image": "zw/logo/320x320.png",
+    "description": "Migration guide to ZI",
+    "keywords": [
+      "migration",
+      "setup"
+    ]
+  },
+  "sidebar": "autoSideBar_1",
+  "previous": {
+    "title": "☑️ Quick overview",
+    "permalink": "/zh-Hans/docs/getting_started/overview"
+  },
+  "next": {
+    "title": "🔀 Common Syntax",
+    "permalink": "/zh-Hans/docs/guides/syntax/common"
+  }
+}

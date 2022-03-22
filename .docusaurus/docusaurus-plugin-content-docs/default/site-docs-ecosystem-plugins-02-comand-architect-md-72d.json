@@ -1,0 +1,38 @@
+{
+  "unversionedId": "ecosystem/plugins/zca",
+  "id": "ecosystem/plugins/zca",
+  "title": "⚙️ Command Architect",
+  "description": "Allows to copy segments of commands in history, rearrange segments of current command, delete segments of current command.",
+  "source": "@site/docs/ecosystem/plugins/02_comand_architect.md",
+  "sourceDirName": "ecosystem/plugins",
+  "slug": "/ecosystem/plugins/zca",
+  "permalink": "/zh-Hans/docs/ecosystem/plugins/zca",
+  "editUrl": "https://digitalclouds.crowdin.com/z-shell/zh-Hans",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1645956898,
+  "formattedLastUpdatedAt": "2022/2/27",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "zca",
+    "title": "⚙️ Command Architect",
+    "image": "zw/logo/320x320.png",
+    "description": "Allows to copy segments of commands in history, rearrange segments of current command, delete segments of current command.",
+    "keywords": [
+      "zsh",
+      "command",
+      "architect",
+      "zsh-plugin"
+    ]
+  },
+  "sidebar": "autoSideBar_1",
+  "previous": {
+    "title": "⚙️ Editing Workbench",
+    "permalink": "/zh-Hans/docs/ecosystem/plugins/editing-workbech"
+  },
+  "next": {
+    "title": "⚙️ Navigation Tools",
+    "permalink": "/zh-Hans/docs/ecosystem/plugins/zsh-nav-tools"
+  }
+}

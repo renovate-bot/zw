@@ -1,26 +1,26 @@
 ---
-title: '☑️ Quick overview'
+title: '☑️概览'
 image: zw/logo/320x320.png
-description: Overview of use cases for Z-Shell ZI
+description: 对 Z-Shell ZI 的用例概览。
 keywords:
   - overview
 ---
 
-This overview will cover basics for:
+此概览包括：
 
 1. [Oh My Zsh & Prezto](/search?q=Oh+My+Zsh+%26+Prezto)
-2. [Completions](/search?q=completions)
-3. [Turbo mode](/search?q=turbo+mode)
-4. [Ice modifiers](/search?q=ice+modifiers)
+2. [命令补全](/search?q=completions)
+3. [Turbo 模式](/search?q=turbo+mode)
+4. [Ice 修饰符](/search?q=ice+modifiers)
 
-## Basics of the loading plugins
+## 装载插件的基本用法
 
 ```shell
 zi load z-shell/H-S-MW
 zi light zsh-users/zsh-syntax-highlighting
 ```
 
-The above commands show two ways of basic plugin loading.
+以上命令展示了两种基本插件加载方式。
 
 Using `load` causes reporting to be enabled – you can track what plugin does, view the information with `zi report {plugin-name}` and then also unload the plugin with `zi unload {plugin-name}`.
 
@@ -28,61 +28,61 @@ Using `light` is a significantly faster loading without tracking and reporting, 
 
 :::note
 
-In Turbo mode the slowdown caused by tracking is negligible...
+在 Turbo 模式下，由于跟踪引起的减速可以忽略不计。
 
 :::
 
 ## Oh My Zsh, Prezto
 
-To load Oh My Zsh and Prezto plugins, use the `snippet` feature. Snippets are single files downloaded by `curl`, `wget`, etc., automatic detection of the download tool is being performed, directly from the URL. For example:
+要加载 Oh My Zsh 和 Prezto 插件，请使用 `snippet` 功能。 Snippets are single files downloaded by `curl`, `wget`, etc., automatic detection of the download tool is being performed, directly from the URL. 例如：
 
 ```shell
 zi snippet 'https://github.com/robbyrussell/oh-my-zsh/raw/master/plugins/git/git.plugin.zsh'
 zi snippet 'https://github.com/sorin-ionescu/prezto/blob/master/modules/helper/init.zsh'
 ```
 
-Also, for Oh My Zsh and Prezto, you can use `OMZ::` and `PZT::` shorthands:
+对于 Oh My Zsh 和 Prezto 你可以使用 `OMZ::` 或 `PZT::` 缩写：
 
 ```shell
 zi snippet OMZ::plugins/git/git.plugin.zsh
 zi snippet PZT::modules/helper/init.zsh
 ```
 
-Moreover, snippets support Subversion protocol, supported also by Github. This allows loading snippets that are multi-file (for example, a Prezto module can consist of two or more files, e.g. `init.zsh` and `alias.zsh`).
+此外，snippet 支持 Subversion 协议，Github 也支持该协议。 This allows loading snippets that are multi-file (for example, a Prezto module can consist of two or more files, e.g. `init.zsh` and `alias.zsh`).
 
-Default files that will be sourced are: `*.plugin.zsh`, `init.zsh`, `*.zsh-theme`:
+默认会 source 以下文件：`*.plugin.zsh`, `init.zsh`, `*.zsh-theme`：
 
-URL points to a directory:
+指向文件夹的 URL：
 
 ```shell {3}
 zi ice svn
 zi snippet PZT::modules/docker
 ```
 
-## Snippets and Performance
+## Snippet 和性能
 
 Using `curl`, `wget`, etc. along with Subversion allows to almost completely avoid code dedicated to Oh My Zsh and Prezto, and also to other frameworks.
 
 This gives profits in performance of `ZI`, it is really fast and also compact (causing low memory footprint and short loading time).
 
-## Ice Modifiers
+## Ice 修饰符
 
-The command `zi ice` provides [ice modifiers][1] for the single next command.
+`zi ice` 命令可以对下个命令添加 [ice 修饰符][1].
 
 The logic is that "ice" is something that’s added, e.g. to a drink or a coffee, and in the ZI sense this means that ice is a modifier added to the next ZI command, and also something that melts, so it doesn’t last long, – and in the ZI use it means that the modifier lasts for only single next ZI command.
 
-Using one other ice modifier "**pick**" users can explicitly **select the file to source**:
+使用 "**pick**" 修饰符，用户可以**显式 source 文件**:
 
 ```shell {1}
 zi ice svn pick"init.zsh"
 zi snippet PZT::modules/git
 ```
 
-Content of ice-modifier is simply put into `"…"`, `'…'`, or `$'…'`. No need for `":"` after the ice-mod name (although it's allowed, so as the equal sign `=`, so e.g. `pick="init.zsh"` or `pick=init.zsh` are being correctly recognized).
+ice 修饰符的参数可用以下方式添加：`"…"`, `'…'`, or `$'…'`。 No need for `":"` after the ice-mod name (although it's allowed, so as the equal sign `=`, so e.g. `pick="init.zsh"` or `pick=init.zsh` are being correctly recognized).
 
 This way editors like `vim` and `emacs` and also `zsh-users/zsh-syntax-highlighting` and `z-shell/F-Sy-H` will highlight contents of ice-modifiers.
 
-## About as"program"
+## 关于 as"program"
 
 A plugin might not be a file for sourcing, but a command to be added to `$PATH`. To obtain this effect, use ice-modifier `as` with value `program` (or an alias value `command`).
 
@@ -127,7 +127,7 @@ For exclamation marks to not be expanded by Zsh an interactive session, use `'�
 
 ## Snippets as'…' commands
 
-Commands can also be added to `$PATH` using **snippets**. For example:
+Commands can also be added to `$PATH` using **snippets**. 例如：
 
 ```shell {2,4}
 zi ice mv"httpstat.sh -> httpstat" \
@@ -344,7 +344,7 @@ The exclamation mark in `atload'!…'` is to track the functions allowing the pl
 
 ## Automatic load/unload based on condition {#automatic-loadunload-based-on-condition}
 
-Ices `load` and `unload` allow defining when you want plugins active or inactive. For example:
+Ices `load` and `unload` allow defining when you want plugins active or inactive. 例如：
 
 Load when in ~/tmp
 
@@ -636,7 +636,6 @@ For some additional examples you can also check out the:
 - [Oh-My-Zsh][9].
 
 [1]: /search?q=ice+modifiers
-
 [1]: /search?q=ice+modifiers
 [2]: /search?q=from
 [3]: /search?q=for+syntax

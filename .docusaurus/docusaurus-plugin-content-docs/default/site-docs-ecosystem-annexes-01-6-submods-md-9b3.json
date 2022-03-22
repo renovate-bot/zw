@@ -1,0 +1,35 @@
+{
+  "unversionedId": "ecosystem/annexes/submods",
+  "id": "ecosystem/annexes/submods",
+  "title": "💠 Submods",
+  "description": "Annex - Submods documentation",
+  "source": "@site/docs/ecosystem/annexes/01_6_submods.md",
+  "sourceDirName": "ecosystem/annexes",
+  "slug": "/ecosystem/annexes/submods",
+  "permalink": "/zh-Hans/docs/ecosystem/annexes/submods",
+  "editUrl": "https://digitalclouds.crowdin.com/z-shell/zh-Hans",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1645956898,
+  "formattedLastUpdatedAt": "2022/2/27",
+  "frontMatter": {
+    "id": "submods",
+    "title": "💠 Submods",
+    "image": "zw/logo/320x320.png",
+    "description": "Annex - Submods documentation",
+    "keywords": [
+      "annex",
+      "submods"
+    ]
+  },
+  "sidebar": "autoSideBar_1",
+  "previous": {
+    "title": "💠 Read URL",
+    "permalink": "/zh-Hans/docs/ecosystem/annexes/readurl"
+  },
+  "next": {
+    "title": "💠 Unscope",
+    "permalink": "/zh-Hans/docs/ecosystem/annexes/unscope"
+  }
+}

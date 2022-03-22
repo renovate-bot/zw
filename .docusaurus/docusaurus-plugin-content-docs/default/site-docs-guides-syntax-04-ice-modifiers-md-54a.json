@@ -1,0 +1,35 @@
+{
+  "unversionedId": "guides/syntax/ice-modifiers",
+  "id": "guides/syntax/ice-modifiers",
+  "title": "🧊 Ice Modifiers",
+  "description": "Documentation for the ice Modifiers",
+  "source": "@site/docs/guides/syntax/04_ice_modifiers.md",
+  "sourceDirName": "guides/syntax",
+  "slug": "/guides/syntax/ice-modifiers",
+  "permalink": "/zh-Hans/docs/guides/syntax/ice-modifiers",
+  "editUrl": "https://digitalclouds.crowdin.com/z-shell/zh-Hans",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1645993180,
+  "formattedLastUpdatedAt": "2022/2/27",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "ice-modifiers",
+    "title": "🧊 Ice Modifiers",
+    "image": "zw/logo/320x320.png",
+    "description": "Documentation for the ice Modifiers",
+    "keywords": [
+      "ice-modifiers"
+    ]
+  },
+  "sidebar": "autoSideBar_1",
+  "previous": {
+    "title": "🧊 Ice Syntax",
+    "permalink": "/zh-Hans/docs/guides/syntax/ice"
+  },
+  "next": {
+    "title": "🗒 Bindkeys Map",
+    "permalink": "/zh-Hans/docs/guides/syntax/bindkey"
+  }
+}

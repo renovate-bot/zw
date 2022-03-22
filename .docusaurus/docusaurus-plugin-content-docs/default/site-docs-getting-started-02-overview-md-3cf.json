@@ -1,0 +1,34 @@
+{
+  "unversionedId": "getting_started/overview",
+  "id": "getting_started/overview",
+  "title": "☑️ Quick overview",
+  "description": "Overview of use cases for Z-Shell ZI",
+  "source": "@site/docs/getting_started/02_overview.md",
+  "sourceDirName": "getting_started",
+  "slug": "/getting_started/overview",
+  "permalink": "/zh-Hans/docs/getting_started/overview",
+  "editUrl": "https://digitalclouds.crowdin.com/z-shell/zh-Hans",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1647243319,
+  "formattedLastUpdatedAt": "2022/3/14",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "☑️ Quick overview",
+    "image": "zw/logo/320x320.png",
+    "description": "Overview of use cases for Z-Shell ZI",
+    "keywords": [
+      "overview"
+    ]
+  },
+  "sidebar": "autoSideBar_1",
+  "previous": {
+    "title": "⚡️ Installation",
+    "permalink": "/zh-Hans/docs/getting_started/installation"
+  },
+  "next": {
+    "title": "♻️ Migration",
+    "permalink": "/zh-Hans/docs/getting_started/migration"
+  }
+}

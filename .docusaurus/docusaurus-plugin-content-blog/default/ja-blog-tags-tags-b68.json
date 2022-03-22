@@ -1,0 +1,26 @@
+{
+  "opensource": {
+    "allTagsPath": "/ja/blog/tags",
+    "name": "opensource",
+    "count": 1,
+    "permalink": "/ja/blog/tags/opensource"
+  },
+  "productivity": {
+    "allTagsPath": "/ja/blog/tags",
+    "name": "productivity",
+    "count": 1,
+    "permalink": "/ja/blog/tags/productivity"
+  },
+  "github": {
+    "allTagsPath": "/ja/blog/tags",
+    "name": "github",
+    "count": 1,
+    "permalink": "/ja/blog/tags/github"
+  },
+  "zsh": {
+    "allTagsPath": "/ja/blog/tags",
+    "name": "zsh",
+    "count": 1,
+    "permalink": "/ja/blog/tags/zsh"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "unversionedId": "ecosystem/plugins/zbrowse",
+  "id": "ecosystem/plugins/zbrowse",
+  "title": "⚙️ ZBrowse",
+  "description": "Check variables of a possible loop.",
+  "source": "@site/docs/ecosystem/plugins/09_zbrowse.md",
+  "sourceDirName": "ecosystem/plugins",
+  "slug": "/ecosystem/plugins/zbrowse",
+  "permalink": "/zh-Hans/docs/ecosystem/plugins/zbrowse",
+  "editUrl": "https://digitalclouds.crowdin.com/z-shell/zh-Hans",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1645956898,
+  "formattedLastUpdatedAt": "2022/2/27",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "id": "zbrowse",
+    "title": "⚙️ ZBrowse",
+    "image": "zw/logo/320x320.png",
+    "description": "Check variables of a possible loop.",
+    "keywords": [
+      "zbrowse",
+      "zsh-plugin",
+      "variable"
+    ]
+  },
+  "sidebar": "autoSideBar_1",
+  "previous": {
+    "title": "⚙️ Console",
+    "permalink": "/zh-Hans/docs/ecosystem/plugins/console"
+  },
+  "next": {
+    "title": "⚙️ ZConvey",
+    "permalink": "/zh-Hans/docs/ecosystem/plugins/zconvey"
+  }
+}

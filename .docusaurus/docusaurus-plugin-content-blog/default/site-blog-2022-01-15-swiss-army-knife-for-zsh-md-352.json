@@ -1,0 +1,68 @@
+{
+  "permalink": "/zh-Hans/blog/swiss-army-knife-for-zsh",
+  "editUrl": "https://digitalclouds.crowdin.com/z-shell/zh-Hans",
+  "source": "@site/blog/2022/01/15/swiss_army_knife_for_zsh.md",
+  "title": "Fast and feature-rich plugin manager for Zsh",
+  "description": "Introduction to a Swiss Army Knife for Zsh - Unix shell",
+  "date": "2022-01-15T00:00:00.000Z",
+  "formattedDate": "2022年1月15日",
+  "tags": [
+    {
+      "label": "opensource",
+      "permalink": "/zh-Hans/blog/tags/opensource"
+    },
+    {
+      "label": "productivity",
+      "permalink": "/zh-Hans/blog/tags/productivity"
+    },
+    {
+      "label": "github",
+      "permalink": "/zh-Hans/blog/tags/github"
+    },
+    {
+      "label": "zsh",
+      "permalink": "/zh-Hans/blog/tags/zsh"
+    }
+  ],
+  "readingTime": 2.6,
+  "truncated": true,
+  "authors": [
+    {
+      "name": "Salvydas Lukosius",
+      "title": "Maintainer",
+      "url": "https://ss-o.github.io",
+      "image_url": "https://github.com/ss-o.png",
+      "imageURL": "https://github.com/ss-o.png"
+    }
+  ],
+  "frontMatter": {
+    "slug": "swiss-army-knife-for-zsh",
+    "title": "Fast and feature-rich plugin manager for Zsh",
+    "sidebar_position": 1,
+    "hide_title": false,
+    "hide_table_of_contents": true,
+    "sidebar_label": "Swiss Arm Knife for Zsh",
+    "description": "Introduction to a Swiss Army Knife for Zsh - Unix shell",
+    "keywords": [
+      "zi",
+      "omz",
+      "introduction"
+    ],
+    "tags": [
+      "opensource",
+      "productivity",
+      "github",
+      "zsh"
+    ],
+    "image": "img/logo/501x501.png",
+    "authors": [
+      {
+        "name": "Salvydas Lukosius",
+        "title": "Maintainer",
+        "url": "https://ss-o.github.io",
+        "image_url": "https://github.com/ss-o.png",
+        "imageURL": "https://github.com/ss-o.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "unversionedId": "ecosystem/plugins/startify",
+  "id": "ecosystem/plugins/startify",
+  "title": "⚙️ Startify",
+  "description": "Zsh Plugin Startify documentation",
+  "source": "@site/docs/ecosystem/plugins/06_startify.md",
+  "sourceDirName": "ecosystem/plugins",
+  "slug": "/ecosystem/plugins/startify",
+  "permalink": "/zh-Hans/docs/ecosystem/plugins/startify",
+  "editUrl": "https://digitalclouds.crowdin.com/z-shell/zh-Hans",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1645956898,
+  "formattedLastUpdatedAt": "2022/2/27",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "id": "startify",
+    "title": "⚙️ Startify",
+    "image": "zw/logo/320x320.png",
+    "description": "Zsh Plugin Startify documentation",
+    "keywords": [
+      "startify",
+      "plugin"
+    ]
+  },
+  "sidebar": "autoSideBar_1",
+  "previous": {
+    "title": "⚙️ ZZComplete",
+    "permalink": "/zh-Hans/docs/ecosystem/plugins/zzcomplete"
+  },
+  "next": {
+    "title": "⚙️ ZPrompts",
+    "permalink": "/zh-Hans/docs/ecosystem/plugins/zprompts"
+  }
+}

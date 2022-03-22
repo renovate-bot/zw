@@ -1,0 +1,35 @@
+{
+  "unversionedId": "gallery/collection/themes",
+  "id": "gallery/collection/themes",
+  "title": "🔺 Themes",
+  "description": "The Collection of Themes",
+  "source": "@site/docs/gallery/collection/01_7_themes.md",
+  "sourceDirName": "gallery/collection",
+  "slug": "/gallery/collection/themes",
+  "permalink": "/zh-Hans/docs/gallery/collection/themes",
+  "editUrl": "https://digitalclouds.crowdin.com/z-shell/zh-Hans",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1645990837,
+  "formattedLastUpdatedAt": "2022/2/27",
+  "frontMatter": {
+    "id": "themes",
+    "title": "🔺 Themes",
+    "description": "The Collection of Themes",
+    "keywords": [
+      "collection",
+      "themes",
+      "prompts"
+    ]
+  },
+  "sidebar": "autoSideBar_1",
+  "previous": {
+    "title": "🔺 Plugins",
+    "permalink": "/zh-Hans/docs/gallery/collection/plugins"
+  },
+  "next": {
+    "title": "💠 Quick overview",
+    "permalink": "/zh-Hans/docs/ecosystem/annexes"
+  }
+}

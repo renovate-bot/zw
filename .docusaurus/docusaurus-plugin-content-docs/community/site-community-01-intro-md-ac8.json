@@ -1,0 +1,23 @@
+{
+  "unversionedId": "intro",
+  "id": "intro",
+  "title": "Zsh Knowledge Base",
+  "description": "- Zsh PLugin Standard",
+  "source": "@site/community/01_intro.md",
+  "sourceDirName": ".",
+  "slug": "/intro",
+  "permalink": "/zh-Hans/community/intro",
+  "editUrl": "https://digitalclouds.crowdin.com/z-shell/zh-Hans",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "intro",
+    "title": "Zsh Knowledge Base"
+  },
+  "sidebar": "autoSideBar_2",
+  "next": {
+    "title": "Zsh Plugin Standard",
+    "permalink": "/zh-Hans/community/zsh_plugin_standard"
+  }
+}

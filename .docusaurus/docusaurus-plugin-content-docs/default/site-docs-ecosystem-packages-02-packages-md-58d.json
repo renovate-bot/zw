@@ -1,0 +1,35 @@
+{
+  "unversionedId": "ecosystem/packages/packages",
+  "id": "ecosystem/packages/packages",
+  "title": "📦 Available packages",
+  "description": "The Z-Shell Organization packages",
+  "source": "@site/docs/ecosystem/packages/02_packages.md",
+  "sourceDirName": "ecosystem/packages",
+  "slug": "/ecosystem/packages/packages",
+  "permalink": "/zh-Hans/docs/ecosystem/packages/packages",
+  "editUrl": "https://digitalclouds.crowdin.com/z-shell/zh-Hans",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1647906993,
+  "formattedLastUpdatedAt": "2022/3/21",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "packages",
+    "title": "📦 Available packages",
+    "image": "zw/logo/320x320.png",
+    "description": "The Z-Shell Organization packages",
+    "keywords": [
+      "zpackage"
+    ]
+  },
+  "sidebar": "autoSideBar_1",
+  "previous": {
+    "title": "📦 Quick overview",
+    "permalink": "/zh-Hans/docs/ecosystem/packages/packages-overview"
+  },
+  "next": {
+    "title": "⚙️ Editing Workbench",
+    "permalink": "/zh-Hans/docs/ecosystem/plugins/editing-workbech"
+  }
+}

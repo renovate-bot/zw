@@ -1,0 +1,297 @@
+{
+  "docusaurus-plugin-google-gtag": {
+    "default": {
+      "trackingID": "G-MT10GVL59X",
+      "anonymizeIP": true,
+      "id": "default"
+    }
+  },
+  "docusaurus-plugin-content-docs": {
+    "community": {
+      "path": "/zh-Hans/community",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/zh-Hans/community",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "intro",
+              "path": "/zh-Hans/community/intro",
+              "sidebar": "autoSideBar_2"
+            },
+            {
+              "id": "zsh_handbook",
+              "path": "/zh-Hans/community/zsh_handbook",
+              "sidebar": "autoSideBar_2"
+            },
+            {
+              "id": "zsh_plugin_standard",
+              "path": "/zh-Hans/community/zsh_plugin_standard",
+              "sidebar": "autoSideBar_2"
+            }
+          ],
+          "sidebars": {
+            "autoSideBar_2": {
+              "link": {
+                "path": "/zh-Hans/community/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    },
+    "default": {
+      "path": "/zh-Hans/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/zh-Hans/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "code",
+              "path": "/zh-Hans/docs/code",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "ecosystem/annexes/annexes",
+              "path": "/zh-Hans/docs/ecosystem/annexes",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "ecosystem/annexes/bin-gem-node",
+              "path": "/zh-Hans/docs/ecosystem/annexes/bin-gem-node",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "ecosystem/annexes/default-ice",
+              "path": "/zh-Hans/docs/ecosystem/annexes/default-ice",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "ecosystem/annexes/meta-plugins",
+              "path": "/zh-Hans/docs/ecosystem/annexes/meta-plugins",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "ecosystem/annexes/patch-dl",
+              "path": "/zh-Hans/docs/ecosystem/annexes/patch-dl",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "ecosystem/annexes/readurl",
+              "path": "/zh-Hans/docs/ecosystem/annexes/readurl",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "ecosystem/annexes/rust",
+              "path": "/zh-Hans/docs/ecosystem/annexes/rust",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "ecosystem/annexes/submods",
+              "path": "/zh-Hans/docs/ecosystem/annexes/submods",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "ecosystem/annexes/test",
+              "path": "/zh-Hans/docs/ecosystem/annexes/test",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "ecosystem/annexes/unscope",
+              "path": "/zh-Hans/docs/ecosystem/annexes/unscope",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "ecosystem/packages/packages",
+              "path": "/zh-Hans/docs/ecosystem/packages/packages",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "ecosystem/packages/packages-overview",
+              "path": "/zh-Hans/docs/ecosystem/packages/packages-overview",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "ecosystem/plugins/console",
+              "path": "/zh-Hans/docs/ecosystem/plugins/console",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "ecosystem/plugins/editing-workbech",
+              "path": "/zh-Hans/docs/ecosystem/plugins/editing-workbech",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "ecosystem/plugins/modules",
+              "path": "/zh-Hans/docs/ecosystem/plugins/modules",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "ecosystem/plugins/startify",
+              "path": "/zh-Hans/docs/ecosystem/plugins/startify",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "ecosystem/plugins/zbrowse",
+              "path": "/zh-Hans/docs/ecosystem/plugins/zbrowse",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "ecosystem/plugins/zca",
+              "path": "/zh-Hans/docs/ecosystem/plugins/zca",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "ecosystem/plugins/zconvey",
+              "path": "/zh-Hans/docs/ecosystem/plugins/zconvey",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "ecosystem/plugins/zprompts",
+              "path": "/zh-Hans/docs/ecosystem/plugins/zprompts",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "ecosystem/plugins/zsh-nav-tools",
+              "path": "/zh-Hans/docs/ecosystem/plugins/zsh-nav-tools",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "ecosystem/plugins/zsh-select",
+              "path": "/zh-Hans/docs/ecosystem/plugins/zsh-select",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "ecosystem/plugins/zsh-unique-id",
+              "path": "/zh-Hans/docs/ecosystem/plugins/zsh-unique-id",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "ecosystem/plugins/zui",
+              "path": "/zh-Hans/docs/ecosystem/plugins/zui",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "ecosystem/plugins/zzcomplete",
+              "path": "/zh-Hans/docs/ecosystem/plugins/zzcomplete",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "gallery/collection/01_1_collection",
+              "path": "/zh-Hans/docs/gallery/collection",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "gallery/collection/completions",
+              "path": "/zh-Hans/docs/gallery/collection/completions",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "gallery/collection/plugins",
+              "path": "/zh-Hans/docs/gallery/collection/plugins",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "gallery/collection/programs",
+              "path": "/zh-Hans/docs/gallery/collection/programs",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "gallery/collection/services",
+              "path": "/zh-Hans/docs/gallery/collection/services",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "gallery/collection/snippets",
+              "path": "/zh-Hans/docs/gallery/collection/snippets",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "gallery/collection/themes",
+              "path": "/zh-Hans/docs/gallery/collection/themes",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "getting_started/installation",
+              "path": "/zh-Hans/docs/getting_started/installation",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "getting_started/migration",
+              "path": "/zh-Hans/docs/getting_started/migration",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "getting_started/overview",
+              "path": "/zh-Hans/docs/getting_started/overview",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "guides/benchmark",
+              "path": "/zh-Hans/docs/guides/benchmark",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "guides/commands",
+              "path": "/zh-Hans/docs/guides/commands",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "guides/customization",
+              "path": "/zh-Hans/docs/guides/customization",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "guides/syntax/bindkey",
+              "path": "/zh-Hans/docs/guides/syntax/bindkey",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "guides/syntax/common",
+              "path": "/zh-Hans/docs/guides/syntax/common",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "guides/syntax/for",
+              "path": "/zh-Hans/docs/guides/syntax/for",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "guides/syntax/ice",
+              "path": "/zh-Hans/docs/guides/syntax/ice",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "guides/syntax/ice-modifiers",
+              "path": "/zh-Hans/docs/guides/syntax/ice-modifiers",
+              "sidebar": "autoSideBar_1"
+            },
+            {
+              "id": "intro",
+              "path": "/zh-Hans/docs/intro",
+              "sidebar": "autoSideBar_1"
+            }
+          ],
+          "sidebars": {
+            "autoSideBar_1": {
+              "link": {
+                "path": "/zh-Hans/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkzw=self.webpackChunkzw||[]).push([[7578],{5898:function(t){t.exports=JSON.parse('{"allTagsPath":"/ru/blog/tags","name":"productivity","count":1,"permalink":"/ru/blog/tags/productivity"}')}}]);

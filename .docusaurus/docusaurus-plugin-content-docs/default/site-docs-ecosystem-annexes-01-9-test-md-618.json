@@ -1,0 +1,36 @@
+{
+  "unversionedId": "ecosystem/annexes/test",
+  "id": "ecosystem/annexes/test",
+  "title": "💠 Test",
+  "description": "Annex - Test documentation",
+  "source": "@site/docs/ecosystem/annexes/01_9_test.md",
+  "sourceDirName": "ecosystem/annexes",
+  "slug": "/ecosystem/annexes/test",
+  "permalink": "/zh-Hans/docs/ecosystem/annexes/test",
+  "editUrl": "https://digitalclouds.crowdin.com/z-shell/zh-Hans",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1645956898,
+  "formattedLastUpdatedAt": "2022/2/27",
+  "frontMatter": {
+    "id": "test",
+    "title": "💠 Test",
+    "image": "zw/logo/320x320.png",
+    "description": "Annex - Test documentation",
+    "keywords": [
+      "annex",
+      "test",
+      "zsh"
+    ]
+  },
+  "sidebar": "autoSideBar_1",
+  "previous": {
+    "title": "💠 Rust",
+    "permalink": "/zh-Hans/docs/ecosystem/annexes/rust"
+  },
+  "next": {
+    "title": "📦 Quick overview",
+    "permalink": "/zh-Hans/docs/ecosystem/packages/packages-overview"
+  }
+}

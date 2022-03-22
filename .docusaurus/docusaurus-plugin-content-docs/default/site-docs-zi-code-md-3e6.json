@@ -1,0 +1,30 @@
+{
+  "unversionedId": "code",
+  "id": "code",
+  "title": "🔖 Code documentation",
+  "description": "The documentation lists all functions, interactions between them, their comments, and features.",
+  "source": "@site/docs/zi_code.md",
+  "sourceDirName": ".",
+  "slug": "/code",
+  "permalink": "/zh-Hans/docs/code",
+  "editUrl": "https://digitalclouds.crowdin.com/z-shell/zh-Hans",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1645990837,
+  "formattedLastUpdatedAt": "2022/2/27",
+  "frontMatter": {
+    "id": "code",
+    "title": "🔖 Code documentation",
+    "description": "The documentation lists all functions, interactions between them, their comments, and features.",
+    "keywords": [
+      "code",
+      "documentation"
+    ]
+  },
+  "sidebar": "autoSideBar_1",
+  "previous": {
+    "title": "⚙️ ZUI",
+    "permalink": "/zh-Hans/docs/ecosystem/plugins/zui"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "unversionedId": "ecosystem/plugins/console",
+  "id": "ecosystem/plugins/console",
+  "title": "⚙️ Console",
+  "description": "A console based on the `zsh/zcurses` Zshell module.",
+  "source": "@site/docs/ecosystem/plugins/08_console.md",
+  "sourceDirName": "ecosystem/plugins",
+  "slug": "/ecosystem/plugins/console",
+  "permalink": "/zh-Hans/docs/ecosystem/plugins/console",
+  "editUrl": "https://digitalclouds.crowdin.com/z-shell/zh-Hans",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1645977796,
+  "formattedLastUpdatedAt": "2022/2/27",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "id": "console",
+    "title": "⚙️ Console",
+    "image": "zw/logo/320x320.png",
+    "description": "A console based on the `zsh/zcurses` Zshell module.",
+    "keywords": [
+      "console",
+      "zsh-plugin",
+      "zi-console"
+    ]
+  },
+  "sidebar": "autoSideBar_1",
+  "previous": {
+    "title": "⚙️ ZPrompts",
+    "permalink": "/zh-Hans/docs/ecosystem/plugins/zprompts"
+  },
+  "next": {
+    "title": "⚙️ ZBrowse",
+    "permalink": "/zh-Hans/docs/ecosystem/plugins/zbrowse"
+  }
+}

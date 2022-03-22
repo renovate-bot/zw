@@ -1,0 +1,34 @@
+{
+  "unversionedId": "gallery/collection/programs",
+  "id": "gallery/collection/programs",
+  "title": "🔺 Programs",
+  "description": "The Collection of Programs",
+  "source": "@site/docs/gallery/collection/01_3_programs.md",
+  "sourceDirName": "gallery/collection",
+  "slug": "/gallery/collection/programs",
+  "permalink": "/zh-Hans/docs/gallery/collection/programs",
+  "editUrl": "https://digitalclouds.crowdin.com/z-shell/zh-Hans",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1645990837,
+  "formattedLastUpdatedAt": "2022/2/27",
+  "frontMatter": {
+    "id": "programs",
+    "title": "🔺 Programs",
+    "description": "The Collection of Programs",
+    "keywords": [
+      "collection",
+      "programs"
+    ]
+  },
+  "sidebar": "autoSideBar_1",
+  "previous": {
+    "title": "🔺 Completions",
+    "permalink": "/zh-Hans/docs/gallery/collection/completions"
+  },
+  "next": {
+    "title": "🔺 Snippets",
+    "permalink": "/zh-Hans/docs/gallery/collection/snippets"
+  }
+}

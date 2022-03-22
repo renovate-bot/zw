@@ -1,0 +1,36 @@
+{
+  "unversionedId": "guides/syntax/ice",
+  "id": "guides/syntax/ice",
+  "title": "🧊 Ice Syntax",
+  "description": "Ice syntax documentation",
+  "source": "@site/docs/guides/syntax/03_ice.md",
+  "sourceDirName": "guides/syntax",
+  "slug": "/guides/syntax/ice",
+  "permalink": "/zh-Hans/docs/guides/syntax/ice",
+  "editUrl": "https://digitalclouds.crowdin.com/z-shell/zh-Hans",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1645990837,
+  "formattedLastUpdatedAt": "2022/2/27",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "ice",
+    "title": "🧊 Ice Syntax",
+    "image": "zw/img/ice-239x200.png",
+    "description": "Ice syntax documentation",
+    "keywords": [
+      "ice",
+      "syntax"
+    ]
+  },
+  "sidebar": "autoSideBar_1",
+  "previous": {
+    "title": "✨ For Syntax",
+    "permalink": "/zh-Hans/docs/guides/syntax/for"
+  },
+  "next": {
+    "title": "🧊 Ice Modifiers",
+    "permalink": "/zh-Hans/docs/guides/syntax/ice-modifiers"
+  }
+}

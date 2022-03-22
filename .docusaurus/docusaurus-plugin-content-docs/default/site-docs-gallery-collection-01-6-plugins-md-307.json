@@ -1,0 +1,34 @@
+{
+  "unversionedId": "gallery/collection/plugins",
+  "id": "gallery/collection/plugins",
+  "title": "🔺 Plugins",
+  "description": "The Collection of Plugins",
+  "source": "@site/docs/gallery/collection/01_6_plugins.md",
+  "sourceDirName": "gallery/collection",
+  "slug": "/gallery/collection/plugins",
+  "permalink": "/zh-Hans/docs/gallery/collection/plugins",
+  "editUrl": "https://digitalclouds.crowdin.com/z-shell/zh-Hans",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1647885893,
+  "formattedLastUpdatedAt": "2022/3/21",
+  "frontMatter": {
+    "id": "plugins",
+    "title": "🔺 Plugins",
+    "description": "The Collection of Plugins",
+    "keywords": [
+      "collection",
+      "plugins"
+    ]
+  },
+  "sidebar": "autoSideBar_1",
+  "previous": {
+    "title": "🔺 Services",
+    "permalink": "/zh-Hans/docs/gallery/collection/services"
+  },
+  "next": {
+    "title": "🔺 Themes",
+    "permalink": "/zh-Hans/docs/gallery/collection/themes"
+  }
+}

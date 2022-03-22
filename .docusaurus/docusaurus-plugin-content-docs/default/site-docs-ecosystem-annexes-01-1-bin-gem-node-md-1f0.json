@@ -1,0 +1,35 @@
+{
+  "unversionedId": "ecosystem/annexes/bin-gem-node",
+  "id": "ecosystem/annexes/bin-gem-node",
+  "title": "💠 Bin Gem Node",
+  "description": "Annex - Bin Gem Node documentation",
+  "source": "@site/docs/ecosystem/annexes/01_1_bin_gem_node.md",
+  "sourceDirName": "ecosystem/annexes",
+  "slug": "/ecosystem/annexes/bin-gem-node",
+  "permalink": "/zh-Hans/docs/ecosystem/annexes/bin-gem-node",
+  "editUrl": "https://digitalclouds.crowdin.com/z-shell/zh-Hans",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1647243319,
+  "formattedLastUpdatedAt": "2022/3/14",
+  "frontMatter": {
+    "id": "bin-gem-node",
+    "title": "💠 Bin Gem Node",
+    "image": "zw/logo/320x320.png",
+    "description": "Annex - Bin Gem Node documentation",
+    "keywords": [
+      "annex",
+      "bin-gem-node"
+    ]
+  },
+  "sidebar": "autoSideBar_1",
+  "previous": {
+    "title": "💠 Quick overview",
+    "permalink": "/zh-Hans/docs/ecosystem/annexes"
+  },
+  "next": {
+    "title": "💠 Meta Plugins",
+    "permalink": "/zh-Hans/docs/ecosystem/annexes/meta-plugins"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "unversionedId": "ecosystem/plugins/modules",
+  "id": "ecosystem/plugins/modules",
+  "title": "⚙️ Modules",
+  "description": "Zsh Modules Documentation",
+  "source": "@site/docs/ecosystem/plugins/20_modules.md",
+  "sourceDirName": "ecosystem/plugins",
+  "slug": "/ecosystem/plugins/modules",
+  "permalink": "/zh-Hans/docs/ecosystem/plugins/modules",
+  "editUrl": "https://digitalclouds.crowdin.com/z-shell/zh-Hans",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1645956898,
+  "formattedLastUpdatedAt": "2022/2/27",
+  "sidebarPosition": 20,
+  "frontMatter": {
+    "id": "modules",
+    "title": "⚙️ Modules",
+    "image": "zw/logo/320x320.png",
+    "description": "Zsh Modules Documentation",
+    "keywords": [
+      "modules",
+      "zsh"
+    ]
+  },
+  "sidebar": "autoSideBar_1",
+  "previous": {
+    "title": "⚙️ Select",
+    "permalink": "/zh-Hans/docs/ecosystem/plugins/zsh-select"
+  },
+  "next": {
+    "title": "⚙️ ZUI",
+    "permalink": "/zh-Hans/docs/ecosystem/plugins/zui"
+  }
+}

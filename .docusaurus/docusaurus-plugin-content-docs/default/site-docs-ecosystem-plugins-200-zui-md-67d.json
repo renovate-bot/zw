@@ -1,0 +1,39 @@
+{
+  "unversionedId": "ecosystem/plugins/zui",
+  "id": "ecosystem/plugins/zui",
+  "title": "⚙️ ZUI",
+  "description": "The Rapid Application Development textual user interface library for Zsh.",
+  "source": "@site/docs/ecosystem/plugins/200_zui.md",
+  "sourceDirName": "ecosystem/plugins",
+  "slug": "/ecosystem/plugins/zui",
+  "permalink": "/zh-Hans/docs/ecosystem/plugins/zui",
+  "editUrl": "https://digitalclouds.crowdin.com/z-shell/zh-Hans",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Salvydas Lukosius",
+  "lastUpdatedAt": 1646824087,
+  "formattedLastUpdatedAt": "2022/3/9",
+  "sidebarPosition": 200,
+  "frontMatter": {
+    "id": "zui",
+    "title": "⚙️ ZUI",
+    "image": "zw/logo/320x320.png",
+    "toc_max_heading_level": 3,
+    "description": "The Rapid Application Development textual user interface library for Zsh.",
+    "keywords": [
+      "zui",
+      "zsh-plugin",
+      "user interface",
+      "library"
+    ]
+  },
+  "sidebar": "autoSideBar_1",
+  "previous": {
+    "title": "⚙️ Modules",
+    "permalink": "/zh-Hans/docs/ecosystem/plugins/modules"
+  },
+  "next": {
+    "title": "🔖 Code documentation",
+    "permalink": "/zh-Hans/docs/code"
+  }
+}
