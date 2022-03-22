@@ -4,7 +4,7 @@ const assetManifest = JSON.parse(manifestJSON)
 
 export default {
   async fetch(request, env, ctx) {
-    if (request.url.includes('/docs', '/community', '/blog')) {
+    //if (request.url.includes()) {
       try {
         return await getAssetFromKV(
           {
@@ -21,7 +21,7 @@ export default {
       } catch (e) {
         if (e instanceof NotFoundError) {
           try {
-            const notFoundResponse = await getAssetFromKV(request, {
+            const notFoundResponse = await getAssetFromKV(ctx, {
               mapRequestToAsset: req => new Request(`${new URL(req.url).origin}/404.html`, req),
             });
             return new Response(notFoundResponse.body, { ...notFoundResponse, status: 404 });
@@ -33,6 +33,8 @@ export default {
           return new Response('An unexpected error occurred', { status: 500 })
         }
       }
-    } else {return fetch(request)}
+    //} else {
+      return fetch(request)
+    //}
   },
 }

@@ -34,11 +34,12 @@ specifiers:
   prop-types: 15.8.1
   react: 17.0.2
   react-dom: 17.0.2
+  simple-icons-font: ^6.15.0
   stylelint: 14.6.0
   stylelint-config-prettier: ^9.0.3
   stylelint-config-standard: ^25.0.0
   typescript: 4.6.2
-  wrangler: ^0.0.19
+  wrangler: ^0.0.22
 
 dependencies:
   '@docusaurus/core': 0.0.0-4675_4b989de8ecf9bda244bc13eda9a76581
@@ -52,6 +53,7 @@ dependencies:
   prism-react-renderer: 1.3.1_react@17.0.2
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
+  simple-icons-font: 6.15.0
 
 devDependencies:
   '@algolia/client-search': 4.13.0
@@ -75,7 +77,7 @@ devDependencies:
   stylelint-config-prettier: 9.0.3_stylelint@14.6.0
   stylelint-config-standard: 25.0.0_stylelint@14.6.0
   typescript: 4.6.2
-  wrangler: 0.0.19
+  wrangler: 0.0.22
 
 packages:
 
@@ -1604,7 +1606,7 @@ packages:
       '@slorber/static-site-generator-webpack-plugin': 4.0.1
       '@svgr/webpack': 6.2.1
       autoprefixer: 10.4.4_postcss@8.4.12
-      babel-loader: 8.2.3_fa907c5a4f16ccc493e21649ccc59574
+      babel-loader: 8.2.4_fa907c5a4f16ccc493e21649ccc59574
       babel-plugin-dynamic-import-node: 2.3.0
       boxen: 6.2.1
       chokidar: 3.5.3
@@ -2011,7 +2013,7 @@ packages:
       '@docusaurus/theme-translations': 0.0.0-4675
       '@docusaurus/utils': 0.0.0-4675
       '@docusaurus/utils-validation': 0.0.0-4675
-      babel-loader: 8.2.3_fa907c5a4f16ccc493e21649ccc59574
+      babel-loader: 8.2.4_fa907c5a4f16ccc493e21649ccc59574
       clsx: 1.1.1
       core-js: 3.21.1
       react: 17.0.2
@@ -2795,7 +2797,7 @@ packages:
     dependencies:
       bluebird: 3.7.2
       cheerio: 0.22.0
-      eval: 0.1.6
+      eval: 0.1.7
       url: 0.11.0
       webpack-sources: 1.4.3
     dev: false
@@ -3597,8 +3599,8 @@ packages:
       - debug
     dev: false
 
-  /babel-loader/8.2.3_fa907c5a4f16ccc493e21649ccc59574:
-    resolution: {integrity: sha512-n4Zeta8NC3QAsuyiizu0GkmRcQ6clkV9WFUnUf1iXP//IeSKbWjofW3UHyZVwlOB4y039YQKefawyTn64Zwbuw==}
+  /babel-loader/8.2.4_fa907c5a4f16ccc493e21649ccc59574:
+    resolution: {integrity: sha512-8dytA3gcvPPPv4Grjhnt8b5IIiTcq/zeXOPk4iTYI0SVXcsmuGg7JtBRDp8S9X+gJfhQ8ektjXZlDu1Bb33U8A==}
     engines: {node: '>= 8.9'}
     peerDependencies:
       '@babel/core': ^7.0.0
@@ -3606,7 +3608,7 @@ packages:
     dependencies:
       '@babel/core': 7.17.8
       find-cache-dir: 3.3.2
-      loader-utils: 1.4.0
+      loader-utils: 2.0.2
       make-dir: 3.1.0
       schema-utils: 2.7.1
       webpack: 5.70.0
@@ -5321,10 +5323,11 @@ packages:
     engines: {node: '>= 0.6'}
     dev: false
 
-  /eval/0.1.6:
-    resolution: {integrity: sha512-o0XUw+5OGkXw4pJZzQoXUk+H87DHuC+7ZE//oSrRGtatTmr12oTnLfg6QOq9DyTt0c/p4TwzgmkKrBzWTSizyQ==}
+  /eval/0.1.7:
+    resolution: {integrity: sha512-ju9MU0XxhlibL4H5Ln8jCPJONGOS7unrBY+x1ICub09Ohg0tWTcBVkqgbJpRmczNobY8RxqCdar7hkdg5msVCA==}
     engines: {node: '>= 0.8'}
     dependencies:
+      '@types/node': 17.0.22
       require-like: 0.1.2
     dev: false
 
@@ -6779,13 +6782,6 @@ packages:
     resolution: {integrity: sha1-nbe1lJatPzz+8wp1FC0tkwrXJlE=}
     dev: true
 
-  /json5/1.0.1:
-    resolution: {integrity: sha512-aKS4WQjPenRxiQsC93MNfjx+nbF4PAdYzmd/1JIj8HYzqfbu86beTuNgXDzPknWk0n0uARlyewZo4s++ES36Ow==}
-    hasBin: true
-    dependencies:
-      minimist: 1.2.5
-    dev: false
-
   /json5/2.2.1:
     resolution: {integrity: sha512-1hqLFMSrGHRHxav9q9gNjJ5EXznIxGVO09xQRrwplcS8qs28pZ8s8hupZAmqDwZUmVZ2Qb2jnyPOWcDH8m8dlA==}
     engines: {node: '>=6'}
@@ -6883,15 +6879,6 @@ packages:
   /loader-runner/4.2.0:
     resolution: {integrity: sha512-92+huvxMvYlMzMt0iIOukcwYBFpkYJdpl2xsZ7LrlayO7E8SOv+JJUEK17B/dJIHAOLMfh2dZZ/Y18WgmGtYNw==}
     engines: {node: '>=6.11.5'}
-    dev: false
-
-  /loader-utils/1.4.0:
-    resolution: {integrity: sha512-qH0WSMBtn/oHuwjy/NucEgbx5dbxxnxup9s4PVXJUDHZBQY+s0NWA9rJf53RBnQZxfch7euUui7hpoAPvALZdA==}
-    engines: {node: '>=4.0.0'}
-    dependencies:
-      big.js: 5.2.2
-      emojis-list: 3.0.0
-      json5: 1.0.1
     dev: false
 
   /loader-utils/2.0.2:
@@ -7347,8 +7334,8 @@ packages:
       kind-of: 6.0.3
     dev: true
 
-  /minimist/1.2.5:
-    resolution: {integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==}
+  /minimist/1.2.6:
+    resolution: {integrity: sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==}
 
   /minipass/2.9.0:
     resolution: {integrity: sha512-wxfUjg9WebH+CUDX/CdbRlh5SmfZiy/hpkxaRI16Y9W56Pa75sWgd/rvFilSgrauD9NyFymP/+JFV3KwzIsJeg==}
@@ -7371,7 +7358,7 @@ packages:
     resolution: {integrity: sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==}
     hasBin: true
     dependencies:
-      minimist: 1.2.5
+      minimist: 1.2.6
 
   /mri/1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
@@ -8348,7 +8335,7 @@ packages:
       detect-libc: 2.0.1
       expand-template: 2.0.3
       github-from-package: 0.0.0
-      minimist: 1.2.5
+      minimist: 1.2.6
       mkdirp-classic: 0.5.3
       napi-build-utils: 1.0.2
       node-abi: 3.8.0
@@ -8566,7 +8553,7 @@ packages:
     dependencies:
       deep-extend: 0.6.0
       ini: 1.3.8
-      minimist: 1.2.5
+      minimist: 1.2.6
       strip-json-comments: 2.0.1
     dev: false
 
@@ -9363,6 +9350,10 @@ packages:
       decompress-response: 6.0.0
       once: 1.4.0
       simple-concat: 1.0.1
+    dev: false
+
+  /simple-icons-font/6.15.0:
+    resolution: {integrity: sha512-6dHJjsLrBBWG/AXH0xshHKkXKiv1bfxeDHSc9Quq+6DEd0xvJSqcnYlSfCfpkj7Y973I30HZcvDF8IwTImlu5g==}
     dev: false
 
   /simple-swizzle/0.2.2:
@@ -10389,7 +10380,7 @@ packages:
       axios: 0.25.0
       joi: 17.6.0
       lodash: 4.17.21
-      minimist: 1.2.5
+      minimist: 1.2.6
       rxjs: 7.5.5
     transitivePeerDependencies:
       - debug
@@ -10801,15 +10792,15 @@ packages:
       workbox-core: 6.5.1
     dev: false
 
-  /wrangler/0.0.19:
-    resolution: {integrity: sha512-WRfWf4Kbbo1M3GiXPUXDHCXWe2ANoArTtr8lX7oxiEFahAISgkgMtTupD7hFtVZs6F9MdGv2cV0dzBcg/pgRvA==}
+  /wrangler/0.0.22:
+    resolution: {integrity: sha512-YTj201NrhfEyQwwImjXgWU+Vly3pry9ebsqBSVhyml4XlpwGhu6CT+EGs0gekR7etVcLfhkObkrogSrsD4VZZA==}
     engines: {node: '>=16.7.0'}
     hasBin: true
-    requiresBuild: true
     dependencies:
       esbuild: 0.14.23
       miniflare: 2.3.0
       path-to-regexp: 6.2.0
+      selfsigned: 2.0.0
       semiver: 1.1.0
       xxhash-wasm: 1.0.1
     optionalDependencies:
