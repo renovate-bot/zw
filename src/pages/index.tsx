@@ -14,7 +14,7 @@ function SocialHome() {
       <p>
         <Link href="https://github.com/z-shell/community/discussions">
           <img
-            className="ScreenViewSmall"
+            className="ScreenViewMedium"
             src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.discussions.svg"
             alt="Discussions"
           />
@@ -23,7 +23,7 @@ function SocialHome() {
       <p>
         <Link href="https://twitter.com/zshell_zi">
           <img
-            className="ScreenViewSmall"
+            className="ScreenViewMedium"
             src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.tweets.svg"
             alt="Recent Tweets"
           />
@@ -32,7 +32,7 @@ function SocialHome() {
       <p>
         <Link href="https://dev.to/tag/zsh">
           <img
-            className="ScreenViewSmall"
+            className="ScreenViewMedium"
             src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.dev.tag.zsh.rss.svg"
             alt="RSS-DEV-TAG-ZSH"
           />

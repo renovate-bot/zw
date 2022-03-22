@@ -32,7 +32,6 @@
   },
   "dependencies": {
     "@docusaurus/core": "0.0.0-4727",
-    "@docusaurus/module-type-aliases": "0.0.0-4727",
     "@docusaurus/plugin-ideal-image": "0.0.0-4727",
     "@docusaurus/plugin-pwa": "0.0.0-4727",
     "@docusaurus/preset-classic": "0.0.0-4727",
@@ -50,7 +49,7 @@
     "@cloudflare/kv-asset-handler": "0.2.0",
     "@cloudflare/workers-types": "3.4.0",
     "@crowdin/cli": "3.7.8",
-    "@docusaurus/module-type-aliases": "2.0.0-beta.17",
+    "@docusaurus/module-type-aliases": "0.0.0-4727",
     "@tsconfig/docusaurus": "1.0.5",
     "@types/react": "^17.0.41",
     "husky": "^7.0.4",
@@ -91,9 +90,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "peerDependencies": {
-    "@algolia/client-search": "4.13.0",
-    "@types/react": "^17.0.41"
   }
 }
