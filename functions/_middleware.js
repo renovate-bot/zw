@@ -1,3 +1,11 @@
+export default function(req, res, next) {
+  if (req.session.user) {
+    next();
+  } else {
+    res.redirect('/');
+  }
+}
+
 async function errorHandler(context) {
   try {
     // wait for the next function to finish

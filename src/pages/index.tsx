@@ -7,25 +7,36 @@ import Link from '@docusaurus/Link';
 import Translate from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
-import Image from '@theme/IdealImage';
 
 function SocialHome() {
   return (
     <div className={styles.SocialHome}>
       <p>
-        <Link href='https://github.com/z-shell/community/discussions'>
-          <Image className="ScreenViewSmall" img='https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.discussions.svg' alt='Discussions' />
+        <Link href="https://github.com/z-shell/community/discussions">
+          <img
+            className="ScreenViewSmall"
+            src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.discussions.svg"
+            alt="Discussions"
+          />
         </Link>
       </p>
       <p>
-        <Link href='https://twitter.com/zshell_zi'>
-          <Image className="ScreenViewSmall" img='https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.tweets.svg' alt='Tweets' />
+        <Link href="https://twitter.com/zshell_zi">
+          <img
+            className="ScreenViewSmall"
+            src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.tweets.svg"
+            alt="Recent Tweets"
+          />
         </Link>
       </p>
       <p>
-      <Link href='https://dev.to/tag/zsh'>
-        <Image className="ScreenViewSmall" img='https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.dev.tag.zsh.rss.svg' alt='RSS-DEV-TAG-ZSH' />
-      </Link>
+        <Link href="https://dev.to/tag/zsh">
+          <img
+            className="ScreenViewSmall"
+            src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.dev.tag.zsh.rss.svg"
+            alt="RSS-DEV-TAG-ZSH"
+          />
+        </Link>
       </p>
     </div>
   );

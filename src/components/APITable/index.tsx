@@ -1,5 +1,3 @@
-/*eslint id-length: "error"*/     // default is minimum 1-char ({ "min": 1 })
-/*eslint-env es6*/
 // @ts-nocheck
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.

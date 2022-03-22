@@ -8,12 +8,16 @@ keywords:
   - introduction
 ---
 
-import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'; import Image from '@theme/IdealImage'; import
-ZGitImg from '@site/static/zw/img/z_git.png';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'; import Image from '@theme/IdealImage';
+import ZGitImg from '@site/static/zw/img/z_git.png';
 
-<Image className='ScreenView' img={ZGitImg} alt='Install almost everything from GitHub' />
-<a href='https://github.com/z-shell'>
-  <Image className='ScreenView' img='https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.svg' alt='Z-Shell Metrics' />
+<Image className="ScreenView" img={ZGitImg} alt='Install almost everything from GitHub' />
+<a href="https://github.com/z-shell">
+  <img
+    className="ScreenView"
+    src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.svg"
+    alt="Z-Shell Organization"
+  />
 </a>
 
 <Tabs>
@@ -82,9 +86,26 @@ Invocations][7].
 
 <!-- markdownlint-disable -->
 
-<Image className='ScreenView' img='https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.projects.svg' alt='projects' />
-<Image className='ScreenView' img='https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.followup.indepth.svg' alt='followup' />
-<Image className='ScreenView' img='https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.pagespeed.detailed.svg' alt='Pagespeed' />
+<a href="https://github.com/orgs/z-shell/projects">
+  <img
+    className="ScreenView"
+    src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.projects.svg"
+    alt="Z-Shell Projects"
+  />
+</a>
+<a href="https://github.com/orgs/z-shell/projects">
+  <img
+    className="ScreenView"
+    src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.followup.indepth.svg"
+    alt="Z-Shell Indepth"
+  />
+</a><a href="https://github.com/z-shell/zw">
+  <img
+    className="ScreenView"
+    src="https://raw.githubusercontent.com/z-shell/.github/main/metrics/plugin.pagespeed.detailed.svg"
+    alt="ZW PageSpeed"
+  />
+</a>
 
 <!-- markdownlint-restore -->
 

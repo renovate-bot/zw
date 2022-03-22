@@ -1,6 +1,8 @@
-// @ts-nocheck
+// @ts-check
+
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '❮ ZI ❯',
@@ -14,9 +16,38 @@ const config = {
   projectName: 'zw',
   organizationName: 'z-shell',
   staticDirectories: ['static'],
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'ja', 'ru', 'zh-Hans'],
+  },
+  scripts: [
+    {
+      src: 'https://kit.fontawesome.com/a6c194e645.js',
+      crossorigin: 'anonymous',
+    },
+    {
+      src: 'https://enterprise.crowdin.com/crowdjet/crowdjet.js',
+    },
+  ],
   plugins: [
     [
-      '@docusaurus/plugin-pwa',
+      /** @type {import("@docusaurus/plugin-content-docs").ContentDocsPluginOptions} */
+      'content-docs',
+      {
+        id: 'community',
+        path: 'community',
+        routeBasePath: 'community',
+        editUrl: ({locale, versionDocsDirPath, docPath}) => {
+          if (locale !== 'en') {
+            return `https://digitalclouds.crowdin.com/z-shell/${locale}`;
+          }
+          return `https://github.com/z-shell/zw/tree/main/${versionDocsDirPath}/${docPath}`;
+        },
+        sidebarPath: require.resolve('./lib/js/sidebars_2.js'),
+      },
+    ],
+    [
+      'pwa',
       {
         debug: false,
         offlineModeActivationStrategies: ['appInstalled', 'standalone', 'queryString'],
@@ -70,23 +101,7 @@ const config = {
       },
     ],
     [
-      /** @type {import("@docusaurus/plugin-content-docs").ContentDocsPluginOptions} */
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'community',
-        path: 'community',
-        routeBasePath: 'community',
-        editUrl: ({locale, versionDocsDirPath, docPath}) => {
-          if (locale !== 'en') {
-            return `https://digitalclouds.crowdin.com/z-shell/${locale}`;
-          }
-          return `https://github.com/z-shell/zw/tree/main/${versionDocsDirPath}/${docPath}`;
-        },
-        sidebarPath: require.resolve('./lib/js/sidebars_2.js'),
-      },
-    ],
-    [
-      '@docusaurus/plugin-ideal-image',
+      'ideal-image',
       {
         // https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-ideal-image#configuration
         quality: 70,
@@ -96,19 +111,6 @@ const config = {
         disableInDev: false,
       },
     ],
-  ],
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'ja', 'ru', 'zh-Hans'],
-  },
-  scripts: [
-    {
-      src: 'https://kit.fontawesome.com/a6c194e645.js',
-      crossorigin: 'anonymous',
-    },
-    {
-      src: 'https://enterprise.crowdin.com/crowdjet/crowdjet.js',
-    },
   ],
   presets: [
     [
@@ -163,8 +165,7 @@ const config = {
       image: 'zw/logo/320x320.png',
       announcementBar: {
         id: 'announcemnt',
-        content: `If you like ❮ ZI ❯ - give it a <a target="_blank" rel="noopener noreferrer" href="https://github.com/z-shell/zi">⭐️</a> and follow us on <a target="_blank" rel="noopener noreferrer" href="https://github.com/z-shell"><i class="fa-brands fa-github-alt" width="32" height="32">GitHub</i></a> or <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/zshell_zi"><i class="fa-brands fa-twitter" width="32" height="32">Twitter</i></a>`,
-        isCloseable: true,
+        content: `If you like ❮ ZI ❯ - give it a <a target="_blank" rel="noopener noreferrer" href="https://github.com/z-shell/zi">⭐️</a> and follow us on <a target="_blank" rel="noopener noreferrer" href="https://github.com/z-shell"><i class="fa-brands fa-github-alt" width="16" height="16">GitHub</i></a> or <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/zshell_zi"><i class="fa-brands fa-twitter" width="16" height="16">Twitter</i></a>`,
       },
       algolia: {
         appId: '8A6CKETM6G',
