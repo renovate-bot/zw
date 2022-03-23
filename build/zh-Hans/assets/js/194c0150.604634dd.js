@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkzw=self.webpackChunkzw||[]).push([[7288],{8096:function(a){a.exports=JSON.parse('{"allTagsPath":"/zh-Hans/blog/tags","name":"github","count":1,"permalink":"/zh-Hans/blog/tags/github"}')}}]);

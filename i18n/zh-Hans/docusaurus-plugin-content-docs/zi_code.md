@@ -30,10 +30,10 @@ import APITable from '@site/src/components/APITable';
 </APITable>
 <APITable>
 
-| File                                | Description                                                                                                                                                                 |
-| ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| File                                | Description                                                                                                                                                                                             |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Zsh Plugin Standart][22]           | Proposed enhancements and codifications of the definition of a "Zsh the plugin" and the actions of plugin managers – standardization. 该文档涵盖了如何编写 Zsh 插件的信息。 |
-| [Zsh Native Scripting Handbook][23] | Handbook to keep Zsh constructs that are fast, robust, and do not depend on external tools. Such code is similar to Ruby or Perl and less like top-down shell scripts.      |
+| [Zsh Native Scripting Handbook][23] | Handbook to keep Zsh constructs that are fast, robust, and do not depend on external tools. Such code is similar to Ruby or Perl and less like top-down shell scripts.                                  |
 
 </APITable>
 
