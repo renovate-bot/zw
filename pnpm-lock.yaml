@@ -19,7 +19,7 @@ specifiers:
   '@docusaurus/preset-classic': 0.0.0-4781
   '@docusaurus/theme-search-algolia': 0.0.0-4781
   '@mdx-js/react': 1.6.22
-  '@trunkio/launcher': ^1.0.2
+  '@trunkio/launcher': 1.0.2
   '@tsconfig/docusaurus': 1.0.5
   '@types/react': 17.0.43
   clsx: 1.1.1
