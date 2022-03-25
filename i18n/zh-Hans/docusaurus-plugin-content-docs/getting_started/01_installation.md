@@ -2,7 +2,7 @@
 title: '⚡️ 安装'
 sidebar_position: 1
 image: zw/logo/320x320.png
-description: Installation Guide
+description: 安装指南
 keywords:
   - installation
   - setup
@@ -98,7 +98,7 @@ autoload -Uz _zi
 通过 `exec zsh` 重载 shell，通过 `zi self-update` 编译 ZI。
 
 > - 需要贡献者：[Gitee.com/z-shell](https://gitee.com/z-shell)。
-> - Join [/r/gitee](https://www.reddit.com/r/gitee/) or start a [discussion](https://github.com/z-shell/zi/discussions/new) on GitHub.
+> - 加入 [/r/gitee](https://www.reddit.com/r/gitee/) 或者在 GitHub 上[发起讨论](https://github.com/z-shell/zi/discussions/new)。
 
 [1]: https://github.com/z-shell/zi-src/actions/workflows/check-sh.yml/badge.svg?branch=main
 [2]: https://github.com/z-shell/zi-src/actions/workflows/check-sh.yml

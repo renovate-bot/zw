@@ -1,9 +1,9 @@
 ---
 id: intro
-title: '🎉 Introduction'
+title: '🎉 介绍'
 sidebar_position: 1
 image: zw/logo/320x320.png
-description: Introduction to a Swiss Army Knife for Zsh, formely known as zplugin, zinit.
+description: 介绍 Zsh 的瑞士军刀，正式名称为 zplugin、zinit。
 keywords:
   - introduction
 ---
@@ -23,26 +23,22 @@ import ZGitImg from '@site/static/zw/img/z_git.png';
 <Tabs>
   <TabItem value="gems" label="RubyGems">
 
-The [RubyGems](https://rubygems.org) and [$GEM_HOME](https://guides.rubygems.org/command-reference/#gem-environment) are
-automatically managed by the [bin-gem-node][1] annex or installed by the [any-gem][2] package.
+[RubyGems](https://rubygems.org) 以及 [$GEM_HOME](https://guides.rubygems.org/command-reference/#gem-environment) 被 [bin-gem-node][1] annex 自动管理，或由 [any-gem][2] 包安装。
 
   </TabItem>
   <TabItem value="node" label="Node">
 
-The [Node](https://www.npmjs.com) modules and
-[$NODE_PATH](https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders) are automatically managed by
-the [bin-gem-node][1] annex or installed by the [any-node][3] package.
+[Node](https://www.npmjs.com) 组件和 [$NODE_PATH](https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders) 被 [bin-gem-node][1] annex 自动管理，或由 [any-node][3] 安装。
 
   </TabItem>
   <TabItem value="pip" label="Python">
 
-The [Python](https://python.org) modules, [$VIRTUALENV](https://docs.python.org/3/tutorial/venv.html) are automatically
-managed by the [bin-gem-node][1] annex.
+[Python](https://python.org) 组件和 [$VIRTUALENV](https://docs.python.org/3/tutorial/venv.html) 被 [bin-gem-node][1] annex 自动管理。
 
   </TabItem>
   <TabItem value="rust" label="Rust">
 
-The [Rust](https://crates.io) packages are managed by the [rust annex][4].
+[Rust](https://crates.io) 包被 [rust annex][4] 自动管理。
 
   </TabItem>
   <TabItem value="github" label="GitHub" default>
@@ -62,7 +58,7 @@ Invocations][7].
 - [Annexes][5] 允许在插件管理器的基础上拓展新命令。
 - [Turbo][8] 模式加速了 **50-80%** 的 Zsh 启动速度。
 
-## ☑️ Neat and flexible
+## ☑️ 整洁且灵活
 
 - [Customize paths][9], use [multiple prompts][10] or create [your own][11] plugins.
 - 支持添加 [Oh My Zsh][12] 和 [Prezto][12] 的插件和库。（[迁移][13]） ([migration][13]).

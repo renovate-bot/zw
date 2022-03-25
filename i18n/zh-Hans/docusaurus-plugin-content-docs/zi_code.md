@@ -33,7 +33,7 @@ import APITable from '@site/src/components/APITable';
 | File                                | Description                                                                                                                                                                                             |
 | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Zsh Plugin Standart][22]           | Proposed enhancements and codifications of the definition of a "Zsh the plugin" and the actions of plugin managers – standardization. 该文档涵盖了如何编写 Zsh 插件的信息。 |
-| [Zsh Native Scripting Handbook][23] | Handbook to keep Zsh constructs that are fast, robust, and do not depend on external tools. Such code is similar to Ruby or Perl and less like top-down shell scripts.                                  |
+| [Zsh 原生脚本手册][23] | 手册保证 Zsh 脚本结构快速，健壮，不依赖外部工具。 这样的代码类似于 Ruby 或 Perl，而不像过程式的 shell 脚本。                                  |
 
 </APITable>
 
