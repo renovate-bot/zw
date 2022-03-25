@@ -25,9 +25,8 @@
     "w:pub": "wrangler publish",
     "w:build:pub": "pnpm -s build && pnpm -s wrangler publish",
     "kv:list": "wrangler kv:namespace list | jq '.'",
-    "preinstall": "npm config set store-dir '~/.pnpm-store'",
     "prepare": "husky install",
-    "clean": "rm -rf node_modules",
+    "clean": "pnpm -s exec rm -rf node_modules build",
     "typecheck": "tsc"
   },
   "dependencies": {
