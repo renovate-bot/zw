@@ -1,16 +1,16 @@
 [build.environment]
-  NODE_VERSION = "16"
-  NPM_FLAGS = "--version"
+NODE_VERSION = "16"
+NPM_FLAGS = "--version"
 [build]
-  publish = "build"
-  command = "npx pnpm i --store=node_modules/.pnpm-store --no-frozen-lockfile && npx pnpm run build"
+publish = "build"
+command = "npx pnpm i --store=node_modules/.pnpm-store --no-frozen-lockfile && npx pnpm run build"
 [[plugins]]
-  package = "@netlify/plugin-lighthouse"
-  [plugins.inputs.thresholds]
-    performance = 0.4
-    accessibility = 0.9
-    best-practices = 0.9
-    seo = 0.8
-    pwa = 0.9
-  [plugins.inputs]
-    output_path = "static/zw/lighthouse.html"
+package = "@netlify/plugin-lighthouse"
+[plugins.inputs.thresholds]
+performance = 0.4
+accessibility = 0.9
+best-practices = 0.9
+seo = 0.8
+pwa = 0.9
+[plugins.inputs]
+output_path = "static/zw/lighthouse.html"

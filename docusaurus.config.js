@@ -115,9 +115,6 @@ const config = {
       {
         debug: true,
         docs: {
-          path: 'docs',
-          routeBasePath: 'docs',
-          breadcrumbs: true,
           sidebarPath: require.resolve('./lib/js/sidebars_1.js'),
           editUrl: ({locale, versionDocsDirPath, docPath}) => {
             if (locale !== 'en') {
@@ -127,8 +124,6 @@ const config = {
           },
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
-          disableVersioning: false,
-          includeCurrentVersion: true,
         },
         blog: {
           showReadingTime: true,
@@ -147,6 +142,10 @@ const config = {
         },
         sitemap: {
           changefreq: 'weekly',
+        },
+        googleAnalytics: {
+          trackingID: 'G-MT10GVL59X',
+          anonymizeIP: true,
         },
         gtag: {
           trackingID: 'G-MT10GVL59X',

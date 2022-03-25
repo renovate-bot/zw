@@ -15,16 +15,14 @@
     "write-heading-ids": "docusaurus write-heading-ids",
     "write-docs-version": "docusaurus docs:version",
     "write-community-version": "docusaurus docs:version:community",
-    "md:check": "markdownlint-cli2 '**/*.md' '#node_modules'",
-    "md:fix": "markdownlint-cli2-fix '**/*.md' '#node_modules'",
-    "prettier": "prettier --config .prettierrc --ignore-path .gitignore --ignore-path .prettierignore",
     "crowdin:sync": "docusaurus write-translations && crowdin upload && crowdin download",
     "build:cf:pre": "corepack enable && corepack prepare pnpm@$PNPM_VERSION --activate && pnpm -s install --strict-peer-dependencies --no-prefer-frozen-lockfile && pnpm -s w:build:pub",
     "w:dev": "wrangler pages dev build -l --live-reload",
     "w:pub": "wrangler publish",
     "w:build:pub": "pnpm -s build && pnpm -s w:pub",
     "kv:list": "wrangler kv:namespace list | jq '.'",
-    "prepare": "husky install",
+    "check": "trunk check",
+    "check:all": "trunk check --all",
     "clean": "pnpm -s exec rm -rf node_modules build",
     "typecheck": "tsc"
   },
@@ -48,16 +46,10 @@
     "@cloudflare/workers-types": "3.4.0",
     "@crowdin/cli": "3.7.8",
     "@docusaurus/module-type-aliases": "0.0.0-4765",
+    "@trunkio/launcher": "^1.0.2",
     "@tsconfig/docusaurus": "1.0.5",
     "@types/react": "17.0.43",
-    "husky": "7.0.4",
-    "markdownlint-cli2": "0.4.0",
-    "prettier": "2.6.1",
-    "pretty-quick": "3.1.3",
     "prop-types": "15.8.1",
-    "stylelint": "14.6.1",
-    "stylelint-config-prettier": "9.0.3",
-    "stylelint-config-standard": "25.0.0",
     "typescript": "4.6.3",
     "wrangler": "beta"
   },
@@ -70,11 +62,6 @@
       "nth-check@<2.0.1": ">=2.0.1",
       "trim@<0.0.3": ">=0.0.3",
       "minimist@<=1.2.5": "<0.0.0"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged; pnpm -s md:fix"
     }
   },
   "browserslist": {
