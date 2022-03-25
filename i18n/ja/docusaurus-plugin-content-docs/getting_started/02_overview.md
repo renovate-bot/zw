@@ -636,8 +636,6 @@ For some additional examples you can also check out the:
 - [Oh-My-Zsh][9].
 
 [1]: /search?q=ice+modifiers
-
-[1]: /search?q=ice+modifiers
 [2]: /search?q=from
 [3]: /search?q=for+syntax
 [9]: /docs/gallery/collection#oh-my-zsh
