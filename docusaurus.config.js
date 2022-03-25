@@ -25,9 +25,7 @@ const config = {
       src: 'https://kit.fontawesome.com/a6c194e645.js',
       crossorigin: 'anonymous',
     },
-    {
-      src: 'https://enterprise.crowdin.com/crowdjet/crowdjet.js',
-    },
+    /*{src: 'https://enterprise.crowdin.com/crowdjet/crowdjet.js',},*/
   ],
   plugins: [
     [
@@ -104,10 +102,8 @@ const config = {
       'ideal-image',
       {
         // https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-ideal-image#configuration
-        quality: 70,
         max: 1030,
         min: 640,
-        steps: 2,
         disableInDev: false,
       },
     ],
@@ -165,7 +161,7 @@ const config = {
       image: 'zw/logo/320x320.png',
       announcementBar: {
         id: 'announcemnt',
-        content: `If you like ❮ ZI ❯ - give it a <a target="_blank" rel="noopener noreferrer" href="https://github.com/z-shell/zi">⭐️</a> and follow us on <a target="_blank" rel="noopener noreferrer" href="https://github.com/z-shell"><i class="fa-brands fa-github-alt" width="16" height="16">GitHub</i></a> or <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/zshell_zi"><i class="fa-brands fa-twitter" width="16" height="16">Twitter</i></a>`,
+        content: `If you like ❮ ZI ❯ - give it a <a target="_blank" rel="noopener noreferrer" href="https://github.com/z-shell/zi">⭐️</a> and follow us on <a target="_blank" rel="noopener noreferrer" href="https://github.com/z-shell"><i class="fa-brands fa-github-alt">GitHub</i></a> or <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/zshell_zi"><i class="fa-brands fa-twitter">Twitter</i></a>`,
       },
       algolia: {
         appId: '8A6CKETM6G',
