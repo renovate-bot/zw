@@ -15,10 +15,6 @@
     "message": "社区文档",
     "description": "The label of footer link with label=Community Docs linking to /community/intro"
   },
-  "link.item.label.Twitter.com": {
-    "message": "Twitter.com",
-    "description": "The label of footer link with label=Twitter.com linking to https://twitter.com/zshell_zi/"
-  },
   "link.item.label.GitHub Organization": {
     "message": "GitHub 组织",
     "description": "The label of footer link with label=GitHub Organization linking to https://github.com/z-shell/"

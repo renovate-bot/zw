@@ -61,7 +61,7 @@ Invocations][7].
 ## ☑️ 整洁且灵活
 
 - [Customize paths][9], use [multiple prompts][10] or create [your own][11] plugins.
-- 支持添加 [Oh My Zsh][12] 和 [Prezto][12] 的插件和库。（[迁移][13]） ([migration][13]).
+- 支持添加 [Oh My Zsh][12] 和 [Prezto][12] 的插件和库。 （[迁移][13]） ([migration][13]).
 - 不使用 `$FPATH`，加载多个插件不会污染 `$FPATH`，不会添加相同数量的条目，如 10 个 15 个，或者更多。
 - 代码不受 `KSH_ARRAYS` 或其他可能导致兼容性问题的选项影响。
 - 不需要 `sudo`，或提供所谓的变通方法，如：在本地设置 **shims**。
@@ -107,10 +107,10 @@ Invocations][7].
 [12]: /docs/getting_started/overview#oh-my-zsh-prezto
 [8]: /docs/getting_started/overview#turbo-mode-zsh--53
 [13]: /docs/getting_started/migration
+[13]: /docs/getting_started/migration
 [9]: /docs/guides/customization#customizing-paths
 [10]: /docs/guides/customization#multiple-prompts
 [16]: /search?q=meta+plugins
 [11]: /docs/guides/customization#non-github-local-plugins
-[13]: /docs/getting_started/migration
 [14]: /docs/guides/commands#loading-and-unloading
 [15]: /docs/guides/commands#completions-management

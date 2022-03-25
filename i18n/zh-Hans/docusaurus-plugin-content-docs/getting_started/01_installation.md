@@ -12,8 +12,8 @@ keywords:
 
 [![⚙️ 安装库][1]][2] | [Status page: :heavy_check_mark:](https://digitalclouds.dev/status)
 
-| 域名                | URL                                                                       |
-| :------------------ | ------------------------------------------------------------------------- |
+| 域名                  | URL                                                                       |
+|:------------------- | ------------------------------------------------------------------------- |
 | [Git.io][3]:        | <https://git.io/get-zi>                                                   |
 | [GitHub][4]:        | <https://z-shell.pages.dev/i-hub>                                         |
 | [GitLab Mirror][5]: | <https://z-shell.pages.dev/i-lab>                                         |
@@ -24,7 +24,7 @@ keywords:
 
 ## 快速安装
 
-下面的命令安装 ZI，并且根据选项修改 `.zshrc` 文件。当 `.zshrc` 文件包含 `zi` 时，会自动跳过。
+Add minimal configuration:
 
 ```shell
 sh -c "$(curl -fsSL https://git.io/get-zi)" --

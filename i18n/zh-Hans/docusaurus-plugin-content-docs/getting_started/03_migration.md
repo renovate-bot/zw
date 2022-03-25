@@ -176,7 +176,7 @@ zi snippet OMZP::fd/_fd
 
 ### OMZ Themes
 
-Themes are stored in the `themes` directory. All and loaded in the background. with the simple syntax:
+Themes are stored in the `themes` directory. All and loaded in the background. with the simple syntax: All and loaded in the background. with the simple syntax:
 
 ```shell
 ZSH_THEME="robbyrussell"
@@ -195,7 +195,7 @@ To use **themes** created for OMZ, it requires loading shown below as it would b
 If any of the above are not in order or missing, the theme will break similar as shown below:
 
 ```shell
-… $(build_prompt) …
+… … $(build_prompt) …
 ```
 
 If the `Git` library is not loaded or loaded in the wrong order, then it may appear similar to the following:
